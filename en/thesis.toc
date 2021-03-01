@@ -1,14 +1,21 @@
-\contentsline {chapter}{Seznam pou\IeC {\v z}\IeC {\'\i }van\IeC {\'e}ho zna\IeC {\v c}en\IeC {\'\i }}{2}{chapter*.2}
+\contentsline {chapter}{Some notes to the notation}{2}{chapter*.2}
 \contentsline {chapter}{Introduction}{3}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Motivation}{4}{chapter.1}
-\contentsline {chapter}{\numberline {2}Pure mathematical introduction}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Covariant derivative and parallel transport}{6}{section.2.1}
-\contentsline {section}{\numberline {2.2}Antisymmetric tensors and wedge product}{6}{section.2.2}
-\contentsline {chapter}{\numberline {3}Physical introduction}{7}{chapter.3}
-\contentsline {chapter}{Conclusion}{10}{chapter*.4}
-\contentsline {chapter}{Bibliography}{11}{chapter*.5}
-\contentsline {chapter}{List of Figures}{12}{chapter*.6}
-\contentsline {chapter}{List of Tables}{13}{chapter*.7}
-\contentsline {chapter}{List of Abbreviations}{14}{chapter*.8}
-\contentsline {chapter}{\numberline {A}Attachments}{15}{appendix.A}
-\contentsline {section}{\numberline {A.1}First Attachment}{15}{section.A.1}
+\contentsline {chapter}{\numberline {2}Mathematical introduction}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Pull-back and push forward}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Covariant derivative and parallel transport}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Antisymmetric tensors and wedge product}{7}{section.2.3}
+\contentsline {chapter}{\numberline {3}Physical introduction}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Gauge potentials}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Classical gauge potential}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Quantum gauge potential}{11}{section.3.3}
+\contentsline {section}{\numberline {3.4}Adiabatic gauge potential}{12}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Adiabatic potential}{12}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Adiabatic transformation}{12}{subsection.3.4.2}
+\contentsline {chapter}{Conclusion}{13}{chapter*.4}
+\contentsline {chapter}{Bibliography}{14}{chapter*.5}
+\contentsline {chapter}{List of Figures}{15}{chapter*.6}
+\contentsline {chapter}{List of Tables}{16}{chapter*.7}
+\contentsline {chapter}{List of Abbreviations}{17}{chapter*.8}
+\contentsline {chapter}{\numberline {A}Attachments}{18}{appendix.A}
+\contentsline {section}{\numberline {A.1}First Attachment}{18}{section.A.1}

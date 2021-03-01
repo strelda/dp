@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  24 FEB 2021 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  1 MAR 2021 14:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/thesis.tex
-(/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/thesis.tex
+**/home/strelda/Documents/mff/tf1/diplomka/dp/en/thesis.tex
+(/home/strelda/Documents/mff/tf1/diplomka/dp/en/thesis.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -155,7 +155,7 @@ File: se-pdfdoc.def 2016/05/16 v1.11 stringenc: PDFDocEncoding
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 )
 ** pdfx: Metadata file thesis.xmpdata read successfully.
-(/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/thesis.xmpdata)<<sRGB_IEC61966-2-1_black_scaled.icc>> (/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
+(/home/strelda/Documents/mff/tf1/diplomka/dp/en/thesis.xmpdata)<<sRGB_IEC61966-2-1_black_scaled.icc>> (/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -1947,6 +1947,8 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 ) (/usr/share/texlive/texmf-dist/tex/latex/braket/braket.sty) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks33
 \pgfutil@tempdima=\dimen133
@@ -2184,10 +2186,10 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 136.
 \@input{macros.aux}
 \openout2 = `macros.aux'.
 
-(/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/macros.tex
+(/home/strelda/Documents/mff/tf1/diplomka/dp/en/macros.tex
 \c@thm=\count145
 \c@defn=\count146
-) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/thesis.aux (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/title.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/notation.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/preface.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/chap01.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/chap02.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/epilog.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/bibliography.aux))
+) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/thesis.aux (/home/strelda/Documents/mff/tf1/diplomka/dp/en/title.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/notation.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/preface.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/chap01.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/chap02.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/epilog.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/bibliography.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 142.
@@ -2222,7 +2224,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 142.
 LaTeX Info: Redefining \pageref on input line 142.
 LaTeX Info: Redefining \nameref on input line 142.
- (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/thesis.out) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/thesis.out)
+ (/home/strelda/Documents/mff/tf1/diplomka/dp/en/thesis.out) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
 
@@ -2255,12 +2257,12 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \openout2 = `title.aux'.
 
- (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/title.tex
+ (/home/strelda/Documents/mff/tf1/diplomka/dp/en/title.tex
 Package hyperref Info: Option `pageanchor' set `false' on input line 6.
 
 
 pdfTeX warning: pdflatex (file ../img/logo-en.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/logo-en.pdf, id=65, 506.4591pt x 156.49065pt>
+<../img/logo-en.pdf, id=93, 506.4591pt x 156.49065pt>
 File: ../img/logo-en.pdf Graphic file (type pdf)
 <use ../img/logo-en.pdf>
 Package pdftex.def Info: ../img/logo-en.pdf  used on input line 9.
@@ -2278,7 +2280,7 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 55.
 
 ] [3
 
-]) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/thesis.toc
+]) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/thesis.toc
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 5.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2315,20 +2317,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 \openout2 = `notation.aux'.
 
- (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/notation.tex) [2
+ (/home/strelda/Documents/mff/tf1/diplomka/dp/en/notation.tex) [2
 
 
 ]
 \openout2 = `preface.aux'.
 
- (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/preface.tex) [3
+ (/home/strelda/Documents/mff/tf1/diplomka/dp/en/preface.tex) [3
 
 
 
 ]
 \openout2 = `chap01.aux'.
 
- (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/chap01.tex
+ (/home/strelda/Documents/mff/tf1/diplomka/dp/en/chap01.tex
 Chapter 1.
 ) [4
 
@@ -2337,8 +2339,11 @@ Chapter 1.
 ]
 \openout2 = `chap02.aux'.
 
- (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/chap02.tex
+ (/home/strelda/Documents/mff/tf1/diplomka/dp/en/chap02.tex
 Chapter 2.
+
+Package natbib Warning: Citation `fecko' on page 5 undefined on input line 2.
+
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 27.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2349,69 +2354,72 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 
-] [6]
+] [6] [7]
 Chapter 3.
-[7
+[8
 
-]) [8] [9]
+] [9] [10] [11]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 283.
+ (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)) [12]
 \openout2 = `epilog.aux'.
 
- (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/epilog.tex) [10
+ (/home/strelda/Documents/mff/tf1/diplomka/dp/en/epilog.tex) [13
 
 
 
 ]
 \openout2 = `bibliography.aux'.
 
- (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/bibliography.tex (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/thesis.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 8.
-
-)) [11
+ (/home/strelda/Documents/mff/tf1/diplomka/dp/en/bibliography.tex (/home/strelda/Documents/mff/tf1/diplomka/dp/en/thesis.bbl)) [14
 
 
 
-] (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/thesis.lof)
+] (/home/strelda/Documents/mff/tf1/diplomka/dp/en/thesis.lof)
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [12
+ [15
 
 
-] (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/thesis.lot)
+] (/home/strelda/Documents/mff/tf1/diplomka/dp/en/thesis.lot)
 \tf@lot=\write9
 \openout9 = `thesis.lot'.
 
- [13
+ [16
 
-] [14
+] [17
 
 ]
 Appendix A.
-[15
+[18
 
 ]
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
- (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/thesis.aux (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/title.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/notation.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/preface.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/chap01.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/chap02.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/epilog.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp_text/en/bibliography.aux))
+(/home/strelda/Documents/mff/tf1/diplomka/dp/en/thesis.aux (/home/strelda/Documents/mff/tf1/diplomka/dp/en/title.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/notation.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/preface.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/chap01.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/chap02.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/epilog.aux) (/home/strelda/Documents/mff/tf1/diplomka/dp/en/bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3030BED7AC3A0768CB697BA01E8ACA32;2124.
+(rerunfilecheck)             Checksum: 90D7AC165ED18F13B917D57757A155DB;3312.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 25427 strings out of 492982
- 432767 string characters out of 6134896
- 469111 words of memory out of 5000000
- 28407 multiletter control sequences out of 15000+600000
- 71765 words of font info for 71 fonts, out of 8000000 for 9000
+ 25499 strings out of 492982
+ 433660 string characters out of 6134896
+ 468409 words of memory out of 5000000
+ 28438 multiletter control sequences out of 15000+600000
+ 78235 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,29n,54p,659b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/strelda/Documents/mff/tf1/diplomka/dp_text/en/thesis.pdf (19 pages, 636529 bytes).
+ 55i,29n,54p,654b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /home/strelda/Documents/mff/tf1/diplomka/dp/en/thesis.pdf (22 pages, 672527 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 421 PDF objects out of 1000 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
