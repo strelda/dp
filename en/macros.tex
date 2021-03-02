@@ -37,7 +37,7 @@
 \newtheorem{thm}{Theorem}
 \newtheorem{hypot}{Hypotheses}
 \newtheorem{lemma}[thm]{Lemma}
-\newtheorem{claim}[thm]{Claim}
+\newtheorem{definition}{Definition}
 
 \theoremstyle{plain}
 \newtheorem{defn}{Definition}
@@ -62,12 +62,10 @@
 
 \DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\small, frame=single}
 
-%%% The field of all real and natural numbers
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\N}{\mathbb{N}}
 
 %%% Useful operators for statistics and probability
 \DeclareMathOperator{\sign}{\textrm{sign}}
+\renewcommand{\Im}{\textrm{Im}}
 
 %%% Transposition of a vector/matrix
 \newcommand{\T}[1]{#1^\top}
@@ -90,7 +88,8 @@
 \newcommand{\Der}[2]{\frac{\mathrm{D} #1}{\mathrm{d} #2}}
 
 \renewcommand{\M}{\mathcal{M}}
-\renewcommand{\R}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
 \newcommand{\F}{\mathcal{F}}
 \renewcommand{\T}{\mathbb{T}}
 \newcommand{\TT}{\mathcal{T}}
@@ -102,22 +101,16 @@
 
 
 \newcommand{\A}{\mathcal{A}}
-\newcommand{\llambda}{\bm\lambda}
+\newcommand{\llambda}{{\bm\lambda}}
 \renewcommand{\AA}{\mathcal{\widehat{A}}}
-\newcommand{\oA}{\overset{\sim}{\mathcal{\widehat{A}}}}
-\renewcommand{\M}{\mathcal{M}}
 \renewcommand{\U}{\hat{U}}
-\newcommand{\s}{\hat{\sigma}}
-\renewcommand{\S}{\bm{\hat{S}}}
 \renewcommand{\H}{\mathcal{H}}
 \newcommand{\HH}{\hat{\mathcal{H}}}
-\newcommand{\oHH}{\overset{\sim}{\hat{\mathcal{H}}}}
-\renewcommand{\R}{\mathbb{R}}
 \newcommand{\kpsi}{\ket{\psi}}
+\newcommand{\kpsit}{\ket{\psi(t)}}
 \newcommand{\up}{\ket{\uparrow}}
 \newcommand{\dn}{\ket{\downarrow}}
-\newcommand{\op}{\hat{\mathbf{p}}}
 \newcommand{\ch}{\hat{\chi}}
-
+\newcommand{\Schrodinger}{Schrödinger }
 
 \DeclareMathOperator{\spec}{\sigma}
