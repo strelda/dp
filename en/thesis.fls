@@ -373,9 +373,6 @@ INPUT /home/strelda/Documents/mff/diplomka/dp/en/preface.tex
 OUTPUT /home/strelda/Documents/mff/diplomka/dp/en/chap01.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap01.tex
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap01.tex
-OUTPUT /home/strelda/Documents/mff/diplomka/dp/en/chap02.aux
-INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap02.tex
-INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap02.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmri12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr5.tfm
@@ -401,6 +398,15 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/lmbsy10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmbsy7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmbsy5.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr17.tfm
+OUTPUT /home/strelda/Documents/mff/diplomka/dp/en/chap02.aux
+INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap02.tex
+INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap02.tex
+INPUT /home/strelda/Documents/mff/diplomka/dp/en/../img/manifoldIntuitionTransport.png
+INPUT ../img/manifoldIntuitionTransport.png
+INPUT ../img/manifoldIntuitionTransport.png
+INPUT /home/strelda/Documents/mff/diplomka/dp/en/../img/parallelTransportClosedCurve.png
+INPUT ../img/parallelTransportClosedCurve.png
+INPUT ../img/parallelTransportClosedCurve.png
 INPUT /usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom12.tfm

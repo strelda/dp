@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  2 MAR 2021 20:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  3 MAR 2021 17:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2283,29 +2283,29 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 55.
 ] [3
 
 ]) (/home/strelda/Documents/mff/diplomka/dp/en/thesis.toc
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 5.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 4.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 5.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 4.
  (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 5.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 4.
  (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 5.
+(Font)              <12> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 5.
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+(Font)              <6> on input line 4.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
@@ -2334,31 +2334,38 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  (/home/strelda/Documents/mff/diplomka/dp/en/chap01.tex
 Chapter 1.
-) [4
-
-
-
-]
-\openout2 = `chap02.aux'.
-
- (/home/strelda/Documents/mff/diplomka/dp/en/chap02.tex
-Chapter 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 27.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 27.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 27.
-[5
+[4
 
 
 
-] [6] [7]
-Chapter 3.
-[8
+] [5]) [6]
+\openout2 = `chap02.aux'.
 
-] [9] [10] [11] [12]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 379.
+ (/home/strelda/Documents/mff/diplomka/dp/en/chap02.tex
+Chapter 2.
+<../img/manifoldIntuitionTransport.png, id=226, 1009.7725pt x 544.0325pt>
+File: ../img/manifoldIntuitionTransport.png Graphic file (type png)
+<use ../img/manifoldIntuitionTransport.png>
+Package pdftex.def Info: ../img/manifoldIntuitionTransport.png  used on input line 24.
+(pdftex.def)             Requested size: 330.05322pt x 177.82121pt.
+[7
+
+
+
+ <../img/manifoldIntuitionTransport.png>]
+<../img/parallelTransportClosedCurve.png, id=243, 964.60374pt x 513.92pt>
+File: ../img/parallelTransportClosedCurve.png Graphic file (type png)
+<use ../img/parallelTransportClosedCurve.png>
+Package pdftex.def Info: ../img/parallelTransportClosedCurve.png  used on input line 49.
+(pdftex.def)             Requested size: 330.05322pt x 175.84401pt.
+ [8 <../img/parallelTransportClosedCurve.png>] [9] [10] [11] [12]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 307.
  (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [13] [14] [15]) [16] [17]
@@ -2407,21 +2414,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 501D51404E8FEE275A5CC1C7D4967153;3818.
+(rerunfilecheck)             Checksum: 918AEBCEC064A677F8FA18350B54D260;3799.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 25616 strings out of 492982
- 435125 string characters out of 6134896
- 469573 words of memory out of 5000000
- 28513 multiletter control sequences out of 15000+600000
+ 25640 strings out of 492982
+ 435749 string characters out of 6134896
+ 470110 words of memory out of 5000000
+ 28530 multiletter control sequences out of 15000+600000
  78545 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,29n,54p,723b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,29n,54p,650b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on /home/strelda/Documents/mff/diplomka/dp/en/thesis.pdf (25 pages, 741742 bytes).
+Output written on /home/strelda/Documents/mff/diplomka/dp/en/thesis.pdf (25 pages, 830370 bytes).
 PDF statistics:
- 532 PDF objects out of 1000 (max. 8388607)
- 139 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
+ 224 words of extra memory for PDF output out of 10000 (max. 10000000)
 

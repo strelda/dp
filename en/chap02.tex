@@ -1,114 +1,8 @@
-\chapter{Mathematical introduction}
-The modern approach to the closed system dynamics is using differential geometry formalism. Before we get to the quantum mechanics itself, lets breathly define the formalism recapitulate some definitions of this part of mathematics. More detailed and structured notes can be found for example in \citep{fecko}.
-
-Let's have a manifold $\M$ and curves 
-$$\gamma:\R \overset{open}{\supset} I \rightarrow \M \qquad \xi\mapsto \gamma(\xi).$$ 
-The space of functions is $\F(\M)\equiv\{f:\M\rightarrow \R\}$, where 
-$$f:\M\rightarrow U\overset{open}{\subset} \R \qquad x\mapsto f(x).$$
-To define \emph{vectors} on $\M$, we need to make sense of the \emph{direction}. It is defined using curves satisfying 
-$$\gamma_1(0)=\gamma_2(0)\equiv P$$
-$$\der{}{t}x^i(\gamma_1(t))\big|_{t=0}=\der{}{t}x^i(\gamma_2(t))\big|_{t=0}.$$
-Taking the equivalence class created by those two rules, sometimes noted as $[\gamma]=v$, we have element of the tangent space to $\M$. We will use standard notation for the tangent space to $\M$ in some point $xP$ as $\T_P\M$ and contangent space as $\T^*_P\M$. Unifying all those spaces over all $x$ we get tangent and cotangent bundle, $\TT\M$ and $\TT^*\M$ respective. To generalize this notation to higher tensors, we denote $\T_P\M\in \TT^1\M$, $\T^*_P\M\in \TT_1\M$, thus the space of $p-$times contravariant and $q-$times covariant tensors is denoted $\TT^p_q\M$.
-
-Using the congruence of the curves on $\M$, the expression 
-\begin{equation}
-    \der{}{\xi}f\circ \gamma(\xi)\Big|_{\xi=0}
-\end{equation}
-has a good meaning and we can define the \emph{derivative} in some $P\in\M$ as
-\begin{equation}
-    \bm v: \F(\M)\rightarrow \R \qquad f\mapsto \bm v[f]\equiv \frac{\d f(\gamma(\xi))}{\d \xi}\Big|_P \equiv \partial_\xi\Big|_P f .
-\end{equation}
-It holds, that $\bm v\in \T_P\M$ and can be expressed as the \emph{derivative in direction},\footnote{
-        The direction itself is usually denoted as
-        \begin{equation}
-            \frac{\D}{\d\bm\alpha}\gamma(\xi),
-        \end{equation}
-        where the big D notation is used to point out that it's not a classical derivative, but it maps curves to some entirely new space of directions.
-    } 
-which can be understood in coordinates as
-\begin{equation}
-    \bm v[f] = \der{}{\bm v} f\circ \gamma(\xi)\Big|_{\xi=0}=v^\mu\der{}{x^\mu} f(\bm x)\Big|_{P}.
-\end{equation}
-The directionnal derivative will be denoted 
-$$\nabla_v$$
-and in basis $\bm e_i \equiv \partial/\partial x^i$ we will denote 
-$$\nabla=(\bm e_x, \bm e_y,\bm e_z)$$
-
-
-
-To get some physical application, we need to define one strong structure on manifolds -- differentiable metric tensor $g_{\mu\nu}\in\TT^0_2\M$ -- so the covariant derivatives and parallel transport are well-defined everywhere. 
-
-
-\section{Pull-back and push forward}
-Push-forward and pull-back are used to transport vectors and covectors between manifolds. Let's have two manifolds $\M$, $\mathcal{N}$, a smooth mapping $\phi$ and functions $f,\tilde f$ such that
-\begin{align*}
-    \phi&:\M\rightarrow \mathcal{N}\qquad x\mapsto \phi x\\
-    \tilde f&:\mathcal{N}\rightarrow \R 
-\end{align*}
-\emph{Pull-back of the function} then defines a new function $
-f:\M\rightarrow \R $ as
-$$\phi^*:\F \mathcal{N}\rightarrow \F\M \qquad  \tilde f\mapsto f=(\phi^*\tilde f)(x)\equiv \phi^*\tilde f(x) =\tilde f(\phi x).$$
-\emph{Push-forward of a vector} is defined as
-$$\phi_*: \T_x\M \rightarrow \T_{\phi x}\mathcal N\qquad \phi_* 
-\Der{\gamma(\xi)}{\xi}\Big|_x=\Der{\phi \gamma(\xi)}{\xi}\Big|_x$$
-and \emph{pull-back of a covector} $\bm\tilde\alpha\in \T_{\phi x}\mathcal N$ is
-$$\phi^*: \T_{\phi x}\mathcal N\rightarrow \T_x\M  \qquad (\phi^*\bm \tilde\alpha)_\mu v^\mu\big|_x= \tilde\alpha_\mu (\phi_* \bm v)^\mu\big|_{\phi x}.$$
-If $\phi$ has a smooth inversion, i.e. it is a dippheomorphism, we can define pull-back of vectors as
-\begin{equation}
-    \phi^*=\phi_*^{-1}
-\end{equation}
-and push-forward of covectors
-\begin{equation}
-    \phi_*=(\phi^{-1})^*
-\end{equation}
-
-\section{Covariant derivative and parallel transport}
-Covariant derivative is generally\dots
-Metric covariant derivative is\dots
-
-
-Affine connection can be expressed as
-\begin{equation}
-    \Gamma^{\alpha}_{\mu\nu} = \frac{1}{2}g^{\alpha \beta}\left(g_{\beta\mu,\nu}+g_{\nu\beta,\mu}-g_{\mu\nu,\beta}\right),
-\end{equation}
-where we used comma notation for the coordinate derivative.
-The covariant derivative of $\bm a\in \T_P\M$ is then defined
-\begin{equation}
-    \Der{a^\mu}{x^\nu}=a_{\;,\nu}^\mu-\Gamma^\mu_{\alpha\beta} x^\alpha a^\beta 
-\end{equation}
-and for $\bm\alpha\in \T_P^*\M$ it is
-\begin{equation}
-    \Der{\alpha_\mu}{x^\nu}=\alpha_{\mu,\nu}-\Gamma^\alpha_{\mu\beta}x^\beta \alpha_\alpha 
-\end{equation}
-
-The vector $v\in \T_P\M$ is said to be parallel transported along curve $\gamma(\lambda)$, if it's covariant derivative
-\begin{equation}
-    \Der{v^\mu}{\xi}=0
-\end{equation}
-vanishes along $\gamma$.
-
-\section{Antisymmetric tensors and wedge product}
-p-form $A\in \TT_p \M$ is called \emph{antisymmetric}, if changing the order of the indices has impact only on the sign, symbolically
-$$A_{i_1\dots i_p} = \sign(\sigma)A_{i_{\sigma_1}\dots i_{\sigma_p}},$$
-where $\sigma$ is some permutation.\emph{Antisymmetrisation} is defined as a normalized sum over all permutation
-\begin{equation}
-    A^{[i_1\dots i_p]}\equiv \frac{1}{p!}\sum_\sigma A^{[i_{\sigma_1}\dots i_{\sigma_p}]}. 
-\end{equation}
-
-The \emph{wedge product} of $A\in \TT_p \M$ and $B\in \TT_q \M$ is antisymmetrisation of the tensor product in the sense
-\begin{equation}
-    A\wedge B\equiv \frac{(p+q)!}{p!q!} A^{[i_1\dots i_p}\otimes B^{i_1\dots i_q]}
-\end{equation}
-
-
-
 \chapter{Physical introduction}
 Most parts of this chapter are inspired by \citep{kolodrubez} and original notes \citep{berry1984}, \citep{berry1989}, \citep{berry2009}
 Now we will assign some physical background to the structure defined in the first chapter.
 
-Assume manifold $\M$ generated by eigenstates of some closed system Hamiltonian $\HH(\llambda)$, meaning the Hamiltonian is bounded and dimension of the space is finite. Let's assume the existence of $\mathcal{C}^1$ mapping\footnote{is continuous to the first derivative} (parametrisation) $B: \M\rightarrow \bm\llambda\equiv (\lambda^1,\dots,\lambda^n)\in\R^n$. Therefore, we will denote eigenstates in any instant $\ket{\iota(\bm\llambda)}$ and their energies $E(\bm\llambda)$. This means, that they depend on time, iff Hamiltonian depends on time and because the Hamiltonian is assumed to be finitedimensional, they are discrete.
-
-
+Assume manifold $\M$ generated by eigenstates of some closed system Hamiltonian $\HH(\llambda)$, meaning the Hamiltonian is bounded and dimension of the space is finite. This is truly manifold, because there exists $\mathcal{C}^1$ mapping\footnote{is continuous to the first derivative} $B: \M\rightarrow \bm\llambda\equiv (\lambda^1,\dots,\lambda^n)\in\R^n$. Hamiltonian finitedimentinality implies, that the spectrum is discrete at any point $\llambda$, thus $\sigma=\{\ket{n(\bm\llambda)}\}_n$ with energies $E_n(\bm\llambda)$. 
 \citep{berry1984} The state of the system evolves according to \Schrodinger equation
 \begin{equation}
     i\hbar \d_t\kpsit = \HH(\llambda(t))\kpsit,
@@ -116,20 +10,48 @@ Assume manifold $\M$ generated by eigenstates of some closed system Hamiltonian 
 \end{equation}
 which for eigenstates reads as
 \begin{equation}
-    \HH(\llambda(t))\ket{n(\llambda(t))}=E_n(\llambda(t))\ket{n(\llambda(t))}
+    \HH(\llambda(t))\ket{n(\llambda(t))}=E_n(\llambda(t))\ket{n(\llambda(t))}.
     \label{eq:energySchrodinger}
 \end{equation}
-with solution
+Geometrical meaning of changing parameter $\llambda$ can be understood as parallel transport of vectors along some curve $\gamma=\{\gamma(t)| t\in[0,T]\}$ on $\M$, which gives
 \begin{equation}
-    \kpsit = \exp\left(-\frac{i}{\hbar}\int_0^tE_n(\llambda(\tau)\d\tau)\right)\exp(i\gamma_n(t))\ket{n(\llambda(t))}.
+    \Par_\gamma \ket{n} = \ket{\tilde n}.
 \end{equation}
-The first exponential, the \emph{dynamical phase}, is well known, if we switch of the independence on $\llambda$. The second exponential is called \emph{geometrical phase} and yields, that some topology on $\M$ must be induced. It is generally non-integrable, meaning it cannot be written simply as $\gamma_n(\llambda(t))$ and for some closed curve on $\M$
-\begin{equation}
-    C=\{\llambda(t)|t\in[0,T] \text{, such that }\llambda(0)=\llambda(T)\}
-\end{equation} 
-we generally get $\gamma(0)\neq \gamma(T)$.
+To get some geometrical intuition, see fig. \ref{fig:manifoldIntuition}.
 
-Substituting this general solution to eq. \ref{eq:schrodinger}, we get
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../img/manifoldIntuitionTransport.png}
+\caption{Manifold $\M$ defined by Hamiltonian $\H(\llambda)$, where at every point we can construct tangent space as a defining space for clear quantum states, i.e. can be constructed as superposition of eigenstates. This can be parallelly transported to some other point using $\gamma$.}
+    \label{fig:manifoldIntuition}
+\end{figure}
+
+
+To parallelly transport states, it is sufficient to transport it's basis using $\gamma_n(\xi)$. The solution to eq. \ref{eq:energySchrodinger} is then
+\begin{equation}
+    \kpsit \equiv \Par_{\gamma_n}\ket{n} = \exp\left(-\frac{i}{\hbar}\int_0^tE_n(\llambda(\tau)\d\tau)\right)\exp(i\gamma_n(t))\ket{n(\llambda(t))}.
+    \label{eq:phasesOnManifold}
+\end{equation}
+The first exponential, the \emph{dynamical phase}, is well known if we switch of the dependence on $\llambda$ and depend only on time and energy of states during the transport. The second exponential is called \emph{geometrical phase}. This phase is generally non-integrable, meaning it cannot be written simply as $\gamma_n(\llambda(t))$ and for some closed curve on $\M$
+\begin{equation}
+    C=\{\llambda(\xi)|\xi\in[0,\Xi] \text{, such that }\llambda(0)=\llambda(\Xi)\}
+\end{equation} 
+we generally get $\Par_C \psi(\llambda)\neq \psi(\llambda)$. This property is sometimes more generally called \emph{anholonomy} and should be defined properly.
+\begin{definition}[Anholonomy]
+    Geometrical phenomenon, which causes some variable $V(\gamma(p))$ not to return to it's original value while varying it's parameter $p$ around some closed curve $\gamma(p)$. 
+\end{definition}
+If the transporting variable is quantum state, we can measure some non-zero angle between $\ket{V(\gamma(0))}$ and $\ket{V(\gamma(p))}$, whilst $\gamma(p)=\gamma(0)$, meaning
+$$\braket{V(\gamma(0))|V(\gamma(p))}\neq 0.$$ 
+The geometric intuition of anholonomy can be seen on fig. \ref{fig:parallelTransportClosed}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../img/parallelTransportClosedCurve.png}
+\caption{Parallel transporting of states around some closed curve $C$ induces nonzero phase (in geometry angle $\alpha$) between original and transported vector.}
+    \label{fig:parallelTransportClosed}
+\end{figure}
+
+Substituting general solution \ref{eq:phasesOnManifold} to eq. \ref{eq:schrodinger} yields
 \begin{equation}
     \d_t \gamma(t)=i\braket{n(\llambda(t))|\nabla_\llambda n(\llambda(t))}\cdot \d_t \llambda(t).
 \end{equation}
@@ -138,7 +60,12 @@ Integrating this equation around some closed curve $C$ and assuming the dynamica
     \gamma_n(C)=i\oint_C\braket{n(\llambda)|\nabla_\llambda n(\llambda)}\cdot \d \llambda.
     \label{eq:gammaCoint}
 \end{equation}
-We see, that the geometric phase does not depend on the direction if integration, only on the path itself. The problem of this expression lies in $\partial_\llambda n(\llambda)$, which locally requires single-valued basis $\{\ket{n}\}_n$. This can be avoided in 3-dimensions using Stokes's theorem for $S$ as the surface with boundary $\partial S=C$.
+We see, that the geometric phase does not depend on energy or time, only on the sequence of Hamiltonians, which means it depends only on the path itself.
+
+
+
+
+The problem of this expression lies in $\partial_\llambda n(\llambda)$, which locally requires knowledge of single-valued basis $\{\ket{n}\}_n$. This can be avoided in 3-dimensions using Stokes's theorem for $S$ as the surface with boundary $\partial S=C$
 \begin{equation}
     \begin{split}
         \gamma_n(C) &= -\Im \iint_C \d S \cdot \nabla \times \braket{n(\llambda)|\nabla n(\llambda)}\\
@@ -156,18 +83,22 @@ for
 (E_m(\llambda)-E_n(\llambda))^2
             }
 \end{equation}
-where the element of summation $m=n$ is real, therefore has no influence on $\gamma_n$ and can be omitted. The last equivalence holds, because
+where the element of summation $m=n$ in third step of derivation is real, therefore has no influence on $\gamma_n$ and can be omitted. The last equivalence holds, because if we differentiate the \Schrodinger equation \ref{eq:energySchrodinger},  with any covariant derivative $\nabla$, we get 
 \begin{equation}
-    \braket{m(\llambda)|\nabla n(\llambda)}=
-    \frac{\braket{m(\llambda)|\nabla \HH |n(\llambda)}}
-    { E_n(\llambda)-E_m(\llambda)}, \qquad n\neq m.
+    \begin{split}
+        \nabla \HH\ket{n}+\HH \ket{\nabla n} &= E_n\ket{\nabla n}\\
+        \braket{m|\nabla \HH|n}+\braket{m|E_m|\nabla n} &= \braket{m|\nabla \HH|n}\\
+        \braket{m(\llambda)|\nabla n(\llambda)}&=
+        \frac{\braket{m(\llambda)|\nabla \HH |n(\llambda)}}
+        { E_m(\llambda)-E_n(\llambda)}, \qquad n\neq m.
+    \end{split}
 \end{equation}
-Also comparing the first expression in eq. \ref{eq:stokes} with it's last one we see, that
+Comparing the first expression in eq. \ref{eq:stokes} with its last one we see
 \begin{equation}
     V_n(\llambda)=\nabla\times\braket{n(\llambda)|\nabla m(\llambda)}, 
     \label{eq:vectorPotentialDef}  
 \end{equation}
-defining its vector potential. In addition, it extends our definition from single values basis to any solution of \ref{eq:energySchrodinger}.
+which defines vector potential of $V_n(\llambda)$. In addition, it extends our definition from single valued basis to any solution of \ref{eq:energySchrodinger}.
 
 As was mentioned, the above procedure from eq. \ref{eq:gammaCoint} was performed only for three dimensional space. Proper generalization to n-dimensional space would yield, see \citep{berry1984},
 \begin{equation}
@@ -177,14 +108,9 @@ As was mentioned, the above procedure from eq. \ref{eq:gammaCoint} was performed
 (E_m(\llambda)-E_n(\llambda))^2
              }.
 \end{equation}
-From the fact, that this does not depend on energy of the system, but only on the geometry of the \textcolor{red}{curve on manifold, i.e. on sequence of Hamiltonians along the path and not on it's time history.}
 
 
-\begin{definition}[Anholonomy]
-    Geometrical phenomenon, which causes some variable $V(\gamma(p))$ not to return to it's original value while varying it's parameter $p$ around some closed curve $\gamma(p)$. 
-\end{definition}
-If the transporting variable is quantum state, we can measure some non-zero angle between $\ket{V(\gamma(0))}$ and $\ket{V(\gamma(p))}$, whilst $\gamma(p)=\gamma(0)$, meaning
-$$\braket{V(\gamma(0))|V(\gamma(p))}\neq 0.$$
+
 
 \begin{definition}[Adibaticity]
     Slow change in a sense, that it does not excite the system and allows the system to return to the same energetic state after circulation around any closed path on the manifold. For more see Theorem \ref{adiabaticTheorem}.
@@ -356,22 +282,24 @@ if $\A_t=-\H$. Because the Hamiltonian is generator of the movement in the phase
 
 \section{Quantum gauge potential}
 \citep{kolodrubez}[kap. 2.2]
-The role of Poison brackets in quantum mechanics is taken by commutators, canonical transformations are called \emph{unitar transformations} and calibrational freedom is hidden in the choise of basis. Using Schmidt decomposition\footnote{Schmidt decomposition can be performed in finite dimension, or if the Hamiltonian is compact, which is not automatic in quantum mechanics. What's more, the Hamiltonian is usually not even bounded. Anyway, for simple systems with bounded energy we can assume so.}, we can write the unitar transformation $\U$ between two systems $S$ and $\tilde{S}$
+The role of Poison brackets in quantum mechanics is taken by commutators, canonical transformations are called \emph{unitary transformations} and calibrational freedom is hidden in the choice of basis. We can write the unitary transformation $\U$ between initial system $S$ and the transformed $\tilde{S}$ along some path on $\M$ defined by eigenstates $\{\ket{m(\llambda)}\}_m$. Let the initial state be $\kpsi$ and define unitary transformation
+\begin{equation}
+    \U(\llambda)^+: \kpsi \rightarrow \ket{\tilde\psi(\llambda)},
+    \label{eq:transformationU}
+\end{equation}
+which satisfies
+\begin{equation}
+    i\hbar \partial_\lambda \U(\lambda)=\HH(\lambda)\U(\lambda)
+\end{equation}
+The wavefunction $\kpsi$ in $S$ can be decomposed using Schmidt decomposition\footnote{The Schmidt decomposition can be performed in finite dimension, or if the Hamiltonian is compact, which is not automatic in quantum mechanics. What's more, the Hamiltonian is usually not even bounded. Anyway, for simple systems with bounded energy we can assume so.}, as
 \begin{equation}
     \kpsi = \sum_{m,n}\psi_n \U_{nm}^*\ket{m(\llambda)} = \sum_m \overbrace{\tilde{\psi}_m(\llambda)}^{\braket{m(\llambda)|\psi}}\ket{m(\llambda)}.
-\end{equation}
-We can interpret this in \emph{active} resp. \emph{passive} way, i.e. as a transformation between two different states describing different systems, resp. as a transformation between different observers with different choice of basis. In quantum mechanics the more usual terms are \emph{Heisenberg} resp. \emph{Schrödinger} picture, but we will stick to the interpretation terminology, which makes the psysical meaning clearer.
-
-In active interpretation we can assume the unitary transformation from some basis of $\HH(\llambda)$ to the basis comoving with the state\footnote{Comoving in a sence, that the wavefunction is not changing in this coordinate system.}, noted with \emph{tilde}
-\begin{equation}
-    \U(\llambda): \ket{\tilde\psi(\llambda)} \rightarrow \kpsi.
-    \label{eq:transformationU}
 \end{equation}
 We can define adiabatic potentials analogically to the classical case as
 \begin{equation}
     i\hbar\partial_\lambda \ket{\tilde{\psi}(\llambda)} = i\hbar \partial_\lambda\left(\U^+(\llambda)\ket{\psi} \right)= \underbrace{i\hbar\left(\partial_\lambda \U^+(\llambda)\right)\U(\llambda)}_{-\tilde{\AA_\lambda}}\ket{\tilde{\psi}(\llambda)},
 \end{equation}
-which can be rewritten to non-tilde basis as
+which can be transformed to non-tilde system as
 \begin{equation}
     \begin{split}
         \AA_\lambda&=\U(\llambda)\tilde{\AA_\lambda}\U^+(\llambda) = -i\hbar\big(\U(\llambda)\partial_\lambda \U^+(\llambda)\big) =\\
@@ -402,18 +330,24 @@ we get
     \A_\lambda = i\hbar\partial_\lambda.
     \label{eq:adiabaticPotentialDefinition}
 \end{equation}
-It's good to point out, that we were applying tilde operators to non-tilde states et vice versa. This can be justified only if those states belong to the same Hilbert space, or in the geometrical language, to the same manifold, which we can define as $\HH_{full}=\HH\otimes\tilde\HH$.
+It's good to point out, that we were applying tilde operators to non-tilde states et vice versa. This can be justified only if we consider $\M$ big enough to contain all necessary states, which can be achieved during the transformation.
 
+
+According to eq. \ref{eq:phasesOnManifold}, $\U$ can be explicitly chosen as
+\begin{equation}
+    \U(t)=\sum_n \exp\left(\frac{i}{\hbar}E_n(\tau)\d \tau - \int_0^t \braket{n(\tau)|\partial_\tau n(\tau)}\d\tau\right)\ket{n(t)}\bra{n(0)}.
+\end{equation}
+This was not needed for the derivation of the adiabatic element, but gives us explicit formula for.............
 
 \section{Adiabatic transformations}
-In this chapter, we will be dealing with the system described by finite-dimensional Hamiltonian $\HH=\HH(\llambda)$ which drives the system according to \Schrodinger equation from some initial state $\ket{n(\llambda(0))}$ to $\ket{n(\llambda(t))}$. The action minimalization theorem states, that there exists some path minimiying action, which allows us to reduce the dimantion of $\M$ from the $\R^n$ to $1$ using parametrisation $\gamma(\lambda)$, so we get $\HH=\HH(\lambda)$.
+In this chapter, we will be dealing with the system described by finite-dimensional Hamiltonian $\HH=\HH(\llambda)$ which drives the system according to \Schrodinger equation from some initial state $\ket{n(\llambda(0))}$ to $\ket{n(\llambda(t))}$. The action minimization theorem states, that there exists some path minimizing action, which allows us to reduce the dimension of $\M$ from the $\R^n$ to $1$ using parametrisation $\gamma(\lambda)$, so we get $\HH=\HH(\lambda)$.
 
 \subsection{Adiabatic potential}
-Important knoledge about symmetries of the system is encoded in canonical transformations, or in quantum mechanics more commonly reffered to as \emph{unitar transformations}. In our case, the generators of such canonical transformations are adiabatic potentials. In case of the Hamiltonian $\H(\llambda)$ and it's adiabatic transformation $\H(\llambda+\d \llambda)$, we get
+Important knowledge about symmetries of the system is encoded in canonical transformations, or in quantum mechanics more commonly referred to as \emph{unitar transformations}. In our case, the generators of such canonical transformations are adiabatic potentials. In case of the Hamiltonian $\H(\llambda)$ and it's adiabatic transformation $\H(\llambda+\d \llambda)$, we get
 \begin{equation}
     [\HH(\llambda),\HH(\llambda+\d \llambda)]=0,
 \end{equation}
-meaning Hamiltonian commutes with it's cannonically transformed version.\footnote{This can be easily reformulated to the world of classical physics, where the commutator is replaced by Poisson bracket.}
+meaning Hamiltonian commutes with it's canonically transformed version.\footnote{This can be easily reformulated to the world of classical physics, where the commutator is replaced by Poisson bracket.}
 
 
 \subsection{Adiabatic transformation}
