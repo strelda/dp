@@ -90,15 +90,16 @@ where the element of summation $m=n$ in third step of derivation is real, theref
         \braket{m|\nabla \HH|n}+\braket{m|E_m|\nabla n} &= \braket{m|\nabla \HH|n}\\
         \braket{m(\llambda)|\nabla n(\llambda)}&=
         \frac{\braket{m(\llambda)|\nabla \HH |n(\llambda)}}
-        { E_m(\llambda)-E_n(\llambda)}, \qquad n\neq m.
+        { E_m(\llambda)-E_n(\llambda)}, \qquad n\neq m,
     \end{split}
 \end{equation}
-Comparing the first expression in eq. \ref{eq:stokes} with its last one we see
+$\ket{\nabla i}\equiv\nabla \ket{ i}$
+Comparing the first expression in eq. \ref{eq:stokes} with its last one and extending it to real numbers, we get
 \begin{equation}
     V_n(\llambda)=\nabla\times\braket{n(\llambda)|\nabla m(\llambda)}, 
     \label{eq:vectorPotentialDef}  
 \end{equation}
-which defines vector potential of $V_n(\llambda)$. In addition, it extends our definition from single valued basis to any solution of \ref{eq:energySchrodinger}.
+defining vector potential of $V_n(\llambda)$. In addition, it extends our definition from single valued basis to any solution of \ref{eq:energySchrodinger}.
 
 As was mentioned, the above procedure from eq. \ref{eq:gammaCoint} was performed only for three dimensional space. Proper generalization to n-dimensional space would yield, see \citep{berry1984},
 \begin{equation}
@@ -120,56 +121,72 @@ As was mentioned, the above procedure from eq. \ref{eq:gammaCoint} was performed
 
 
 \section{Metric and geometric tensor}
-Now we need to find some reasonable way to measure the distance on $\M$. Our first guess might be
+From now on we will use natural units, so $\hbar=1$.
+% Our first guess might be
+% \begin{equation}
+%     \d \tilde{s}^2 = \braket{i(\bm\llambda+\d\bm\llambda)|i(\bm\llambda+\d\bm\llambda)} = 1-2\Re{\braket{i(\bm\llambda+\bm\d\llambda)|i(\bm\llambda)}}.
+% \end{equation}
+% This is \emph{gauge dependent}, meaning that it depends on our choice of the wave phase, i.e. on observer. 
+
+Now we need to find some reasonable way to measure distance on $\M$. This is needed to be \emph{gauge dependent}, meaning the change in phase factor $\phi$ of some state $\ket{i(\llambda)}\in \T_\llambda\M$ induces the change 
 \begin{equation}
-    \d \tilde{s}^2 = \braket{\iota(\bm\llambda+\d\bm\llambda)|\iota(\bm\llambda+\d\bm\llambda)} = 1-2\Re{\braket{\iota(\bm\llambda+\bm\d\llambda)|\iota(\bm\llambda)}}.
+    \ket{i(\llambda)}\mapsto e^{i\phi(\llambda)} \ket{i(\llambda)} \implies \braket{i(\llambda)|\nabla i(\llambda)}\mapsto \braket{n(\llambda)|\nabla i(\llambda)} + i\nabla \phi(\llambda) 
+\end{equation} 
+For $\phi(\llambda)\in \mathcal C^2$ we see from eq. \ref{eq:vectorPotentialDef}, that gauge independent choice would be for example
+\begin{equation}
+    f=\braket{i(\bm\llambda+\d\bm\llambda)|i(\bm\llambda)},
 \end{equation}
-This is \emph{gauge dependent}, meaning that it depends on our choice of the wave phase, i.e. on observer. The phase change $\phi$ induces the change as $\ket{n(\llambda)}\rightarrow e^{i\phi(\llambda)} \ket{n(\llambda)}$, leading to $\braket{n(\llambda)|\nabla n(\llambda)}\rightarrow \braket{n(\llambda)|\nabla n(\llambda)} + i\nabla \phi(\llambda)$. For $\phi(\llambda)\in \mathcal C^2$ we see from eq. \ref{eq:vectorPotentialDef}, that gauge independent choice would be for example 
+sometimes referred to as the \emph{fidelity}. We can see it's physical meaning imagining \emph{quantum quench} (rapid change of some Hamiltonian parameters), in which case $f^2$ is the probability that system will remain in the new ground state. $1-f^2$ is therefore probability of exciting the system during this quench, which leads to the definition of \emph{distance on $\M$}
 \begin{equation}
-    f=\braket{\iota(\bm\llambda+\d\bm\llambda)|\iota(\bm\llambda)},
+    \d s \equiv 1-f^2= 1-\left|\braket{i(\bm\llambda+\d\bm\llambda)|i(\bm\llambda)}\right|.
 \end{equation}
-sometimes refered to as the \emph{fidelity}. We can see it's physical meaning imagining \emph{quantum quench} (rapid change of some Hamiltonian parameters), in which case $f^2$ is the probability that system will remain in the new ground state. $1-f^2$ is therefore probability to excite the system during this quench, which leads to the definition of \emph{distance on $\M$}
+We can easily check, that the axioms of metric are for \textcolor{red}{closed systems} satisfied:
+\begin{itemize}
+    \item identity of indiscernibles $s(\kpsi,e^{i\alpha}\kpsi) = 0 \Leftrightarrow \kpsi=\kphi$, $\alpha\in\R$,
+    \item symmetry for any two states $\kpsi$, $\kphi$ is implied by $|\braket{\psi|\phi}|=|\braket{\phi|\psi}|$
+    \item triangle inequality: $s(\kpsi,\ket{\psi_2} <s(\kpsi,\kpsi_1) + s(\ket{\psi_1},\ket{\psi_2})$ for any $\ket{\psi_1}$.
+\end{itemize}
+
+
+Using $\d s^2 = g_{\mu\nu}\d \lambda^\mu \d\lambda^\nu+\O(\lambda^3)$, we get the metric tensor
 \begin{equation}
-    \d s \equiv 1-f^2= 1-\left|\braket{\iota(\bm\llambda+\d\bm\llambda)|\iota(\bm\llambda)}\right|.
-\end{equation}
-Using $\d s^2 = g_{\mu\nu}\d \llambda^\mu \d\llambda^\nu+\O(\llambda^3)$, we get the metric tensor
-\begin{equation}
-    g_{\mu\nu}^{(i)}(\bm\llambda) = \Re\left(\braket{\partial_{\lambda^\mu}\iota(\bm\llambda)|\partial_{\lambda^\nu}\iota(\bm\llambda)} - \braket{\partial_{\lambda^\mu}\iota(\bm\llambda)|\iota(\bm\llambda)}\braket{\iota(\bm\llambda)|\partial_{\lambda^\nu}\iota(\bm\llambda)}\right).
+    g_{\mu\nu}^{(i)}(\bm\llambda) = \Re\left(\braket{\partial_{\lambda^\mu}i(\bm\llambda)|\partial_{\lambda^\nu}i(\bm\llambda)} - \braket{\partial_{\lambda^\mu}i(\bm\llambda)|i(\bm\llambda)}\braket{i(\bm\llambda)|\partial_{\lambda^\nu}i(\bm\llambda)}\right).
     \label{eq:geom.tensorDefinition}
 \end{equation}
 
-Let's have a initial state described by Hamiltonian $\H_\iota=\H(\llambda)$ in eigenstate $\ket{\iota(\llambda)}$, which undergoes the change of parameters $\llambda\rightarrow \llambda+\d \llambda$ resulting in the Hamiltonian $\H_f$ with eigenstates $\ket{\psi_n(\llambda+\d \llambda)}$, $n\in \{1,\dots,dim(\H_f)\}$. Probability amplitude of going to some specific excited state is
+Let's have an initial state described by Hamiltonian $\H_i(\llambda)$ in eigenstate $\ket{i(\llambda)}$, which undergoes change of parameters $\llambda\rightarrow \llambda+\d \llambda$ resulting in Hamiltonian $\H_f$ with eigenstates $\ket{f_n(\llambda+\d \llambda)}$, $n\in \{1,\dots,dim(\H_f)\}$. Probability amplitude of going to some specific excited state is
 \begin{equation}
     \begin{split}
-        a_n&=\braket{\psi_n(\llambda+\d\llambda)|\iota(\llambda)}\approx \d\lambda^\mu\braket{\partial_\mu \psi_n(\llambda)|\iota(\llambda} \\
-        &= -\d\lambda^\mu\braket{\psi_n(\llambda)|\partial_\mu|\iota(\llambda)}\equiv -\d\lambda^\mu\braket{n|\partial_\mu|\iota},
+        a_n&=\braket{f_n(\llambda+\d\llambda)|i(\llambda)}\approx \d\lambda^\mu\braket{\partial_\mu f_n(\llambda)|i(\llambda} \\
+        &= -\d\lambda^\mu\braket{f_n(\llambda)|\partial_\mu|i(\llambda)}.
     \end{split}
 \end{equation}
-where we introduced shortend notation for eigenstates of the Hamiltonian $\H_0$. If we introduce the \emph{gauge potential}, a.k.a \emph{calibration potential} as
+
+If we introduce the \emph{gauge potential}, a.k.a \emph{calibration potential}, as\footnote{in SI units, the gauge potential is $\AA_\mu\equiv i\hbar\partial_{\mu}$}
 \begin{equation}
-    \AA_\mu\equiv i\hbar \partial_{\mu}
+    \AA_\mu\equiv i\partial_{\mu},
 \end{equation}
-and rescale units to $\hbar=1$, as we will use further on, we get
+the probability amplitude can be expressed as
 \begin{equation}
-   a_n=\sum_\mu i\braket{n|\AA_\mu |\iota}\d\lambda^\mu,
+   a_n=\sum_\mu i\braket{f_n(\llambda)|\AA_\mu |i(\llambda)}\d\lambda^\mu,
 \end{equation}
-which has meaning of matrix elements of the gauge potential. Probability of the excitation i.e. transition to any state $n>0$ is then
+which has meaning of matrix elements of the gauge potential. Probability of the excitation i.e. transition to any state $n>0$ from ground state is then
 \begin{equation}
     \begin{split}
-        \sum_{n\neq 0}|a_n|^2&=  \sum_{n\neq 0} \d \lambda^\mu \d \lambda^\nu\braket{\iota|\AA_\mu|n}\braket{n|\AA_\nu|\iota}+\O(|\d \lambda^3|) = \d \lambda^\mu \d \lambda^\nu\braket{\iota|\AA_\mu \AA_\nu|\iota}_c\\
-        &= \d \lambda^\mu \d \lambda^\nu\chi_{\mu\nu}+\O(|\d \lambda^3|)=\d s^2+\O(|\d \lambda^3|),
+        \sum_{n\neq 0}|a_n|^2&=  \sum_{f_n\neq 0} \d \lambda^\mu \d \lambda^\nu\braket{i|\AA_\mu|f_n}\braket{f_n|\AA_\nu|i}+\O(|\d \lambda^3|) \\
+        &= \d \lambda^\mu \d \lambda^\nu\braket{i|\AA_\mu \AA_\nu|i}_c\equiv \d \lambda^\mu \d \lambda^\nu\chi_{\mu\nu}+\O(|\d \lambda^3|),
     \end{split}
 \end{equation}
 where we defined \emph{connected correlation function}, or \emph{covariance}
 \begin{equation}
-    \braket{\iota|\AA_\mu\AA_\nu|\iota}_c\equiv \braket{\iota|\AA_\mu\AA_\nu|\iota} - \braket{\iota|\AA_\mu|\iota}\braket{\iota|\AA_\nu|\iota}.
+    \braket{i|\AA_\mu\AA_\nu|i}_c\equiv \braket{i|\AA_\mu\AA_\nu|i} - \braket{i|\AA_\mu|i}\braket{i|\AA_\nu|i}
     \label{eq:covariance}
 \end{equation}
-If we leave out $\hbar$, we have the \emph{geometric tensor}\footnote{sometimes defined directly as the expression in eq. \ref{eq:covariance}}
+and the \emph{geometric tensor}\footnote{sometimes defined directly as the expression in eq. \ref{eq:covariance}}, which can also be defined directly as
 \begin{equation}
-    \chi_{\mu\nu}\equiv \braket{\partial_\mu \iota|\partial_\nu \iota}_c = \braket{\partial_\mu \iota|\partial_\nu \iota} - \braket{\partial_\mu \iota|\iota}\braket{\iota|\partial_\nu \iota},
+    \chi_{\mu\nu}\equiv \braket{\partial_\mu i|\partial_\nu i}_c = \braket{\partial_\mu i|\partial_\nu i} - \braket{\partial_\mu i|i}\braket{i|\partial_\nu i}.
 \end{equation}
-where $\ket{\partial_\nu \iota}\equiv\partial_\nu \ket{ \iota}$. Because $\chi$ is Hermitian ($\chi_{\mu\nu}=\chi^*_{\nu\mu}$), only the symmetric part adds up to the distance between states 
+Because $\chi$ is Hermitian ($\chi_{\mu\nu}=\chi^*_{\nu\mu}$), only the symmetric part adds up to the distance between states 
 \begin{equation}
     \d s^2= g_{\mu\nu}\d \lambda^\mu \lambda^\nu= \chi_{\mu\nu}\d \lambda^\mu \lambda^\nu.
 \end{equation}
@@ -179,13 +196,13 @@ where $\ket{\partial_\nu \iota}\equiv\partial_\nu \ket{ \iota}$. Because $\chi$ 
 \end{equation}
 where the \emph{Fubini-Study tensor}, as it's called, is
 \begin{equation}
-    g_{\mu\nu} = \frac{\chi_{\mu\nu}+\chi_{\nu\mu}}{2} = \Re\braket{\partial_\mu i|\partial_\nu i}_c = \textcolor{purple}{\Re \sum_{i\neq j}\frac{\braket{\iota|\pder{\H}{\lambda^\mu}|j}\braket{j|\pder{\H}{\lambda^\nu}|\iota}}{(E_i-E_j)^2}},
+    g_{\mu\nu} = \frac{\chi_{\mu\nu}+\chi_{\nu\mu}}{2} = \Re\braket{\partial_\mu i|\partial_\nu i}_c = \textcolor{purple}{\Re \sum_{i\neq j}\frac{\braket{i|\pder{\H}{\lambda^\mu}|j}\braket{j|\pder{\H}{\lambda^\nu}|i}}{(E_i-E_j)^2}},
     \label{eq:geom.tensorREdefinition}
 \end{equation}
 and the \emph{curvature tensor} a.k.a. \emph{Berry curvature} is
 \begin{equation}
     \begin{split}
-        \nu_{\mu\nu} = 2 i(\chi_{\mu\nu}-\chi_{\nu\mu})&= \Im\braket{\iota|[\overleftarrow{\partial}_\nu,\partial_\mu]|\iota}_c = -2 \Im \sum_{i\neq j}\frac{\braket{\iota|\pder{\H}{\lambda^\mu}|j}\braket{j|\pder{\H}{\lambda^\nu}|\iota}}{(E_i-E_j)^2},
+        \nu_{\mu\nu} = 2 i(\chi_{\mu\nu}-\chi_{\nu\mu})&= \Im\braket{i|[\overleftarrow{\partial}_\nu,\partial_\mu]|i}_c = -2 \Im \sum_{i\neq j}\frac{\braket{i|\pder{\H}{\lambda^\mu}|j}\braket{j|\pder{\H}{\lambda^\nu}|i}}{(E_i-E_j)^2},
     \end{split}
 \end{equation}
 where $\overleftarrow{\partial}_\nu$ is the derivative of the covector on the left.
@@ -196,7 +213,7 @@ Fubini-Study tensor can be seen as the Pull-back of the elements of the full Hil
 
 Next we define the \emph{Berry connection}
 \begin{equation}
-    A_\mu\equiv \braket{\iota|\AA_\mu|\iota},
+    A_\mu\equiv \braket{i|\AA_\mu|i},
 \end{equation}
 which empovers us to write
 \begin{equation}
@@ -205,10 +222,10 @@ which empovers us to write
 and \emph{Berry phase}
     \footnote{
         The reasonability of this definition can be seen, if we assume the ground state of a free particle
-            $\braket{\bm{x}|\iota}=\iota(\bm{x},\llambda)= |\iota(\bm{x})|e^{i\phi(\llambda)}$,
+            $\braket{\bm{x}|i}=i(\bm{x},\llambda)= |i(\bm{x})|e^{i\phi(\llambda)}$,
         then the Berry connection is
         \begin{equation}
-            A_\mu=-\int \d \bm{x}|\iota|^2\partial_\mu \phi = -\partial_\mu \phi
+            A_\mu=-\int \d \bm{x}|i|^2\partial_\mu \phi = -\partial_\mu \phi
         \end{equation} 
         and Berry phase
         \begin{equation}

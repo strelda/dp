@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {2.4}Quantum gauge potential}{13}{section.2.4}
 \contentsline {section}{\numberline {2.5}Adiabatic transformations}{14}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Adiabatic potential}{14}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Adiabatic transformation}{14}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Adiabatic transformation}{15}{subsection.2.5.2}
 \contentsline {section}{\numberline {2.6}Counterdiabatic driving}{16}{section.2.6}
 \contentsline {section}{\numberline {2.7}Approximations of adiabatic potentials}{16}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Variational methods}{17}{subsection.2.7.1}

@@ -407,6 +407,8 @@ INPUT ../img/manifoldIntuitionTransport.png
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/../img/parallelTransportClosedCurve.png
 INPUT ../img/parallelTransportClosedCurve.png
 INPUT ../img/parallelTransportClosedCurve.png
+INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
+INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom12.tfm

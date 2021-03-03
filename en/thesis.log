@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  3 MAR 2021 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  3 MAR 2021 18:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2364,11 +2364,18 @@ File: ../img/parallelTransportClosedCurve.png Graphic file (type png)
 <use ../img/parallelTransportClosedCurve.png>
 Package pdftex.def Info: ../img/parallelTransportClosedCurve.png  used on input line 49.
 (pdftex.def)             Requested size: 330.05322pt x 175.84401pt.
- [8 <../img/parallelTransportClosedCurve.png>] [9] [10] [11] [12]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 307.
+ [8 <../img/parallelTransportClosedCurve.png>] [9]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 145.
+ (/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 145.
+ [10] [11] [12]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 324.
  (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [13] [14] [15]) [16] [17]
+) [13] [14] [15] [16]) [17]
 \openout2 = `epilog.aux'.
 
  (/home/strelda/Documents/mff/diplomka/dp/en/epilog.tex) [18
@@ -2418,17 +2425,17 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 25640 strings out of 492982
- 435749 string characters out of 6134896
- 470110 words of memory out of 5000000
- 28530 multiletter control sequences out of 15000+600000
+ 25659 strings out of 492982
+ 436026 string characters out of 6134896
+ 470116 words of memory out of 5000000
+ 28545 multiletter control sequences out of 15000+600000
  78545 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,29n,54p,650b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on /home/strelda/Documents/mff/diplomka/dp/en/thesis.pdf (25 pages, 830370 bytes).
+Output written on /home/strelda/Documents/mff/diplomka/dp/en/thesis.pdf (25 pages, 832322 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 143 named destinations out of 1000 (max. 500000)
+ 552 PDF objects out of 1000 (max. 8388607)
+ 144 named destinations out of 1000 (max. 500000)
  224 words of extra memory for PDF output out of 10000 (max. 10000000)
 
