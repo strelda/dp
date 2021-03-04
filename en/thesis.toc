@@ -7,15 +7,16 @@
 \contentsline {section}{\numberline {1.4}Antisymmetric tensors and wedge product}{6}{section.1.4}
 \contentsline {chapter}{\numberline {2}Physical introduction}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Metric and geometric tensor}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Gauge potentials}{12}{section.2.2}
-\contentsline {section}{\numberline {2.3}Classical gauge potential}{12}{section.2.3}
-\contentsline {section}{\numberline {2.4}Quantum gauge potential}{13}{section.2.4}
-\contentsline {section}{\numberline {2.5}Adiabatic transformations}{14}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Adiabatic potential}{14}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Adiabatic transformation}{15}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Counterdiabatic driving}{16}{section.2.6}
-\contentsline {section}{\numberline {2.7}Approximations of adiabatic potentials}{16}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Variational methods}{17}{subsection.2.7.1}
+\contentsline {section}{\numberline {2.2}Gauge potentials}{11}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Classical gauge potential}{12}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Quantum gauge potential}{12}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Berry phase and curvature}{14}{section.2.3}
+\contentsline {section}{\numberline {2.4}Adiabatic transformations}{14}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Adiabatic potential}{14}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Adiabatic transformation}{15}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Counterdiabatic driving}{16}{section.2.5}
+\contentsline {section}{\numberline {2.6}Approximations of adiabatic potentials}{16}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Variational methods}{17}{subsection.2.6.1}
 \contentsline {chapter}{Conclusion}{18}{chapter*.6}
 \contentsline {chapter}{Bibliography}{19}{chapter*.7}
 \contentsline {chapter}{List of Figures}{20}{chapter*.8}

@@ -1,3 +1,6 @@
 eigenstates
 Hamiltonians
 eigenstate
+Fubini-Study
+covector
+semidefinite

@@ -409,13 +409,13 @@ INPUT ../img/parallelTransportClosedCurve.png
 INPUT ../img/parallelTransportClosedCurve.png
 INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
 INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
+INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr12.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
