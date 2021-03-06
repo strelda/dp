@@ -4,3 +4,7 @@ eigenstate
 Fubini-Study
 covector
 semidefinite
+surjection
+finitedimensinality
+observables
+submanifold
