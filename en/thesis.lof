@@ -1,9 +1,10 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Mappings needed for the bundle definition.\relax }}{5}{figure.caption.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Fiber manifold of states for Hamiltonian $\mathaccentV {hat}05E{\mathcal {H}}({\bm {\lambda }})$.\relax }}{8}{figure.caption.5}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Space of bare states and it's projection to space of rays $\mathcal {PH}\mathrel {\mathop :}\mathrel {\mkern -1.2mu}=\mathcal {H}/U(1)$.\relax }}{9}{figure.caption.6}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Geometrical intuition to fiber manifold cuts defining energetic state manifolds $\mathcal {M}_i$.\relax }}{9}{figure.caption.7}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Fiber bundle over $\mathbb {R}^n$ with Hilbert spaces $\mathcal {H}({\bm {\lambda }})$ as individual fibres.\relax }}{8}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Space of bare states and its projection to space of rays $\mathcal {PH}({\bm {\lambda }})\mathrel {\mathop :}\mathrel {\mkern -1.2mu}=\mathcal {H}({\bm {\lambda }}/U(1)$.\relax }}{9}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Geometrical intuition to transport on fiber manifold sections $\mathcal {M}_i$.\relax }}{9}{figure.caption.7}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces some trip around C, draw angle\relax }}{10}{figure.caption.8}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Parallel transporting around some closed curve $C$ with anholonomy represented by angle $\alpha $.\relax }}{10}{figure.caption.9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Geometrical intuition to transport on fiber manifold sections $\mathcal {M}_i$.\relax }}{10}{figure.caption.9}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Parallel transporting around some closed curve $C$ with anholonomy represented by angle $\alpha $.\relax }}{11}{figure.caption.10}
 \addvspace {10\p@ }

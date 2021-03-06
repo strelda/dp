@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  6 MAR 2021 11:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  6 MAR 2021 20:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2193,10 +2193,10 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 136.
 \c@defn=\count148
 ) (/home/strelda/Documents/mff/diplomka/dp/en/thesis.aux (/home/strelda/Documents/mff/diplomka/dp/en/title.aux) (/home/strelda/Documents/mff/diplomka/dp/en/notation.aux) (/home/strelda/Documents/mff/diplomka/dp/en/preface.aux) (/home/strelda/Documents/mff/diplomka/dp/en/chap01.aux) (/home/strelda/Documents/mff/diplomka/dp/en/chap02.aux
 
+LaTeX Warning: Label `fig:manifoldCutIntuition' multiply defined.
+
+
 LaTeX Warning: Label `fig:parallelTransportClosed' multiply defined.
-
-
-LaTeX Warning: Label `eq:gammaCoint' multiply defined.
 
 ) (/home/strelda/Documents/mff/diplomka/dp/en/epilog.aux) (/home/strelda/Documents/mff/diplomka/dp/en/bibliography.aux))
 \openout1 = `thesis.aux'.
@@ -2271,7 +2271,7 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 6.
 
 
 pdfTeX warning: pdflatex (file ../img/logo-en.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/logo-en.pdf, id=113, 506.4591pt x 156.49065pt>
+<../img/logo-en.pdf, id=121, 506.4591pt x 156.49065pt>
 File: ../img/logo-en.pdf Graphic file (type pdf)
 <use ../img/logo-en.pdf>
 Package pdftex.def Info: ../img/logo-en.pdf  used on input line 9.
@@ -2352,7 +2352,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-<../img/bundle.png, id=214, 557.08125pt x 214.8025pt>
+<../img/bundle.png, id=224, 557.08125pt x 214.8025pt>
 File: ../img/bundle.png Graphic file (type png)
 <use ../img/bundle.png>
 Package pdftex.def Info: ../img/bundle.png  used on input line 54.
@@ -2362,16 +2362,16 @@ Package pdftex.def Info: ../img/bundle.png  used on input line 54.
 
  (/home/strelda/Documents/mff/diplomka/dp/en/chap02.tex
 Chapter 2.
-<../img/wholeBundle.png, id=244, 1736.4875pt x 771.88374pt>
-File: ../img/wholeBundle.png Graphic file (type png)
-<use ../img/wholeBundle.png>
-Package pdftex.def Info: ../img/wholeBundle.png  used on input line 9.
-(pdftex.def)             Requested size: 412.56496pt x 183.38318pt.
-<../img/projectiveHilbertSpace.png, id=246, 1677.26625pt x 819.06pt>
+<../img/manifold_basic.png, id=261, 1912.14375pt x 896.34875pt>
+File: ../img/manifold_basic.png Graphic file (type png)
+<use ../img/manifold_basic.png>
+Package pdftex.def Info: ../img/manifold_basic.png  used on input line 13.
+(pdftex.def)             Requested size: 412.56496pt x 193.39508pt.
+<../img/projectiveHilbertSpace.png, id=263, 1509.64pt x 763.85374pt>
 File: ../img/projectiveHilbertSpace.png Graphic file (type png)
 <use ../img/projectiveHilbertSpace.png>
-Package pdftex.def Info: ../img/projectiveHilbertSpace.png  used on input line 17.
-(pdftex.def)             Requested size: 330.05322pt x 161.17204pt.
+Package pdftex.def Info: ../img/projectiveHilbertSpace.png  used on input line 21.
+(pdftex.def)             Requested size: 330.05322pt x 166.99934pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2379,30 +2379,44 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
- <../img/wholeBundle.png>]
-<../img/manifoldCutIntuition.png, id=259, 1676.2625pt x 994.71625pt>
-File: ../img/manifoldCutIntuition.png Graphic file (type png)
-<use ../img/manifoldCutIntuition.png>
-Package pdftex.def Info: ../img/manifoldCutIntuition.png  used on input line 43.
-(pdftex.def)             Requested size: 412.56496pt x 244.80803pt.
+ <../img/manifold_basic.png>]
+<../img/manifold_full.png, id=280, 2139.995pt x 903.375pt>
+File: ../img/manifold_full.png Graphic file (type png)
+<use ../img/manifold_full.png>
+Package pdftex.def Info: ../img/manifold_full.png  used on input line 50.
+(pdftex.def)             Requested size: 412.56496pt x 174.15178pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9 <../img/projectiveHilbertSpace.png> <../img/manifoldCutIntuition.png>] [10] [11]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 198.
+<../img/manifoldCutIntuition.png, id=282, 1676.2625pt x 994.71625pt>
+File: ../img/manifoldCutIntuition.png Graphic file (type png)
+<use ../img/manifoldCutIntuition.png>
+Package pdftex.def Info: ../img/manifoldCutIntuition.png  used on input line 70.
+(pdftex.def)             Requested size: 412.56496pt x 244.80803pt.
+[9 <../img/projectiveHilbertSpace.png> <../img/manifold_full.png>]
+<../img/parallelTransportClosedCurve.png, id=292, 1726.45pt x 772.8875pt>
+File: ../img/parallelTransportClosedCurve.png Graphic file (type png)
+<use ../img/parallelTransportClosedCurve.png>
+Package pdftex.def Info: ../img/parallelTransportClosedCurve.png  used on input line 91.
+(pdftex.def)             Requested size: 330.05322pt x 147.74643pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10 <../img/manifoldCutIntuition.png>] [11 <../img/parallelTransportClosedCurve.png>]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 192.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 198.
- [12] [13]
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 192.
+ [12] [13] [14]
 
-LaTeX Warning: Reference `fig:manifoldIntuition' on page 14 undefined on input line 328.
+LaTeX Warning: Reference `fig:manifoldIntuition' on page 15 undefined on input line 322.
 
-[14]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 346.
- (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 340.
+(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [15] [16] [17] [18]) [19]
 \openout2 = `epilog.aux'.
@@ -2450,7 +2464,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7952294F1777CF0A15BFEEB9E0CC65E9;4365.
+(rerunfilecheck)             Checksum: A69C373DED8BAD5FD2CEDF786268B8F7;4608.
 
 
 LaTeX Warning: There were undefined references.
@@ -2461,17 +2475,17 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 25697 strings out of 492982
- 436582 string characters out of 6134896
- 470239 words of memory out of 5000000
- 28564 multiletter control sequences out of 15000+600000
+ 25710 strings out of 492982
+ 436963 string characters out of 6134896
+ 472285 words of memory out of 5000000
+ 28576 multiletter control sequences out of 15000+600000
  86987 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,29n,54p,800b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on /home/strelda/Documents/mff/diplomka/dp/en/thesis.pdf (27 pages, 972481 bytes).
+Output written on /home/strelda/Documents/mff/diplomka/dp/en/thesis.pdf (27 pages, 1149750 bytes).
 PDF statistics:
- 601 PDF objects out of 1000 (max. 8388607)
- 159 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 609 PDF objects out of 1000 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
+ 284 words of extra memory for PDF output out of 10000 (max. 10000000)
 

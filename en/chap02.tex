@@ -1,29 +1,33 @@
 \chapter{Physical introduction}
 
+Most parts of this chapter are inspired by \citep{kolodrubez} and original notes \citep{berry1984}, \citep{berry1989}, \citep{berry2009}
+Now we will assign some physical background to the structure defined in the first chapter.
 
-Assume parameter $\llambda\in\R^n$ controlling some Hamiltonian $\HH(\llambda)$, which is bounded from below and the spectrum is discrete for the first $f>1$ energies, where $f$ depends on considered excitation level and will be clear later on. From this we can construct fiber space(see section \ref{sec:bundleDef}), such that at every point of base manifold $\R^n$, we can construct another manifold consisting of all possible states of $\HH$, thus the fiber structure is
-$$\left(\bigcup_\llambda \H(\llambda),\mathcal{U}\subset \R^n,\pi, \H(\llambda) \coloneqq \bigcup_{states}\ket{\psi(\llambda)}  \right),$$
-where for fixed $\llambda$ we have some Hilbert space $\H(\llambda)$ and manifold $\M$ constructed as a union over all physical states with at least $\mathcal{C}^1$ mapping\footnote{is continuous to the first derivative} $B: \M\rightarrow \bm\llambda\equiv (\lambda^1,\dots,\lambda^n)\in\R^n$. The projection is defined as $\pi: \ket{\psi(\llambda)}\mapsto \llambda$. Geometric intuition is displayed in fig. \ref{fig:wholeBundle}
+
+Assume parameter $\llambda\in\R^n$ controlling some Hamiltonian $\HH(\llambda)$, which is bounded from below and the spectrum is discrete for the first $f>1$ energies, where $f$ depends on considered excitation level and will be clear later on. From this we can construct fiber bundle, such that at every point of base manifold $\llambda\in \R^n$, we construct fiber consisting of all possible states of $\HH(\llambda)$, thus the fiber structure, defined in section \ref{sec:bundleDef}, is
+$$\left(\H_{full}\coloneqq \bigcup_\llambda \H(\llambda),\mathcal{U}\subset^{\textcolor{red}{open}} \R^n,\pi, \H(\llambda) \coloneqq \bigcup_{states}\ket{\psi(\llambda)}  \right).$$
+The projection is defined as $\pi(\llambda): \ket{\psi(\llambda)}\mapsto \llambda$ and $\H(\llambda)$ is Hilbert space for all clear states of $\HH(\llambda)$. 
+Geometric intuition is displayed in fig. \ref{fig:wholeBundle}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{../img/wholeBundle.png}
-\caption{Fiber manifold of states for Hamiltonian $\HH(\llambda)$.}
+    \includegraphics[width=\textwidth]{../img/manifold_basic.png}
+\caption{Fiber bundle over $\R^n$ with Hilbert spaces $\H(\llambda)$ as individual fibres.}
     \label{fig:wholeBundle}
 \end{figure}
 
-In quantum mechanics physical observables are not related to the space of \emph{bare states} $\H$, but the \emph{space of rays}, defined as $\PH\coloneqq \H/U(1)$. Elements of $U(1)$ are unitary transformations $e^{i\phi}$ for $\phi\in\R$ defining gauge symmetry of quantum states. This can be intuitively understood as drawn on fig. \ref{fig:projectiveHilbertSpace}
+In quantum mechanics physical observables are not related to the space of \emph{bare states} $\H_{full}$, but the \emph{space of rays}, defined as $\PH\coloneqq \H_{full}/U(1)$. Elements of $U(1)$ are unitary transformations $e^{i\phi}$ for $\phi\in\R$ defining gauge symmetry between quantum states. The geometrical intuition is dispayed for any $\llambda$ on fig. \ref{fig:projectiveHilbertSpace}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{../img/projectiveHilbertSpace.png}
-\caption{Space of bare states and it's projection to space of rays $\PH\coloneqq \H/U(1)$.}
+\caption{Space of bare states and its projection to space of rays $\PH(\llambda)\coloneqq \H(\llambda/U(1)$.}
     \label{fig:projectiveHilbertSpace}
 \end{figure}
 
-Because we are interested only in discrete part of spectrum\footnote{Spectrum of the operator consists of discrete spectrum, which can be calculated as eigenvalue problem, continuous and residual spectrum.}, it will further on be referred to only as \emph{spectrum}. 
+Because we are interested only in discrete part of spectrum\footnote{Spectrum of the operator consists of discrete spectrum, calculable as eigenvalue problem, continuous and residual spectrum.}, it will further on be referred to only as \emph{spectrum}. 
 
-The states of the system evolves according to \Schrodinger equation
+The states of the system evolves according to the \Schrodinger equation
 \begin{equation}
-    i\hbar \d_t\kpsit = \HH(\llambda(t))\kpsit,
+    i\hbar \d_t\kpsilt = \HH(\llambda(t))\kpsilt,
     \label{eq:schrodinger}
 \end{equation}
 which for eigenstates reads as energy \Schrodinger equation
@@ -31,17 +35,20 @@ which for eigenstates reads as energy \Schrodinger equation
     \HH(\llambda(t))\ket{n(\llambda(t))}=E_n(\llambda(t))\ket{n(\llambda(t))}.
     \label{eq:energySchrodinger}
 \end{equation}
-For every $\HH(\llambda)$ the first $f$ energies (their existence was assumed at the beginning of this chapter). This allows bundle cutting such, that every cut creates new submanifold $$\M_s\subset \M \text{, for } \forall s\in\{0,f\},$$
-with special importance of \emph{ground state manifold} for $s=0$.
+For every $\H(\llambda)$ the first $f$ energies (their existence was assumed at the beginning of this chapter) can be sorted from the lowest to create discrete set $\sigma(\HH(\llambda))$. Clearly, there exists bijection between all fibres $\H(\llambda)$, thus defining \emph{section} $\mathrm{sec}_s$, mapping i-th. eigenstate to base manifold 
+$$\mathrm{sec}_s: \ket{i(\llambda)}\mapsto \mathcal{U}\subset \R^n,$$
+which is also bijection, we can create according to sec. \ref{sec:section} new manifold
+$$\M_s\subset \M \text{, for } \forall s\in\{0,f\}.$$
+Special importance among those has the \emph{ground state manifold} for $s=0$, which will be used later on for adiabatic transports of ground states. 
 
-From the fact, that all $\M_i$ are diffeomorphic to each other goes, that manifold $\M$ itself is of fiber manifold structure, with discrete fiber $F$ taken as spectrum $\sigma(\HH(\llambda))\subset \R$ and base manifolds $\M_i$.
+From the fact, that all $\M_s$ are diffeomorphic to each other goes, that manifold $\M$ itself is of fiber manifold structure, with discrete fiber $\mathcal{F}$ taken as spectrum $\sigma(\HH(\llambda))\subset \R$ and base manifolds $\M_s$.
 
 For geometrical intuition, see fig. \ref{fig:manifoldCutIntuition}.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{../img/manifoldCutIntuition.png}
-\caption{Geometrical intuition to fiber manifold cuts defining energetic state manifolds $\M_i$.}
+    \includegraphics[width=\textwidth]{../img/manifold_full.png}
+\caption{Geometrical intuition to transport on fiber manifold sections $\M_i$.}
     \label{fig:manifoldCutIntuition}
 \end{figure}
 
@@ -55,53 +62,40 @@ For geometrical intuition, see fig. \ref{fig:manifoldCutIntuition}.
     \label{fig:parallelTransportClosed}
 \end{figure}
 
-Substituting general solution \ref{eq:phasesOnManifold} to eq. \ref{eq:schrodinger} yields
-\begin{equation}
-    \d_t \gamma(t)=i\braket{n(\llambda(t))|\nabla_\llambda n(\llambda(t))}\cdot \d_t \llambda(t).
-\end{equation}
-Integrating this equation around some closed curve $C$ and assuming the dynamical phase to be zero, thus not exciting the system, we get
-\begin{equation}
-    \gamma_n(C)=i\oint_C\braket{n(\llambda)|\nabla_\llambda n(\llambda)}\cdot \d \llambda.
-    \label{eq:gammaCoint}
-\end{equation}
-We see, that the geometric phase does not depend on energy or time, only on the sequence of Hamiltonians, which means it depends only on the path itself.
-
-
-
-
-Most parts of this chapter are inspired by \citep{kolodrubez} and original notes \citep{berry1984}, \citep{berry1989}, \citep{berry2009}
-Now we will assign some physical background to the structure defined in the first chapter.
-
-Geometrical meaning of changing parameter $\llambda$ can be understood as parallel transport of vectors along some curve $\gamma=\{\gamma(t)| t\in[0,T]\}$ on $\M$, which gives
-\begin{equation}
-    \Par_\gamma \ket{n(\llambda)} = \ket{n(\tilde \llambda)}.
-\end{equation}
-
-
-
-To parallelly transport ground states, it is sufficient to transport its basis using $\gamma_n(\xi)$. The solution to eq. \ref{eq:energySchrodinger} is then
-\begin{equation}
-    \kpsit \equiv \Par_{\gamma_n}\ket{n} = \exp\left(-\frac{i}{\hbar}\int_0^tE_n(\llambda(\tau)\d\tau)\right)\exp(i\gamma_n(t))\ket{n(\llambda(t))}.
-    \label{eq:phasesOnManifold}
-\end{equation}
-The first exponential, the \emph{dynamical phase}, is well known if we switch of the dependence on $\llambda$ and depend only on time and energy of states during the transport. The second exponential is called \emph{geometrical phase}. This phase is generally non-integrable, meaning it cannot be written simply as $\gamma_n(\llambda(t))$ and for some closed curve on $\M$
-\begin{equation}
-    C=\{\llambda(\xi)|\xi\in[0,\Xi] \text{, such that }\llambda(0)=\llambda(\Xi)\}
-\end{equation} 
-we generally get $\Par_C \psi(\llambda)\neq \psi(\llambda)$. This property is sometimes more generally called \emph{anholonomy} and should be defined properly.
-\begin{definition}[Anholonomy]
-    Geometrical phenomenon, which causes some variable $V(\gamma(p))$ not to return to it's original value while varying it's parameter $p$ around some closed curve $\gamma(p)$. 
-\end{definition}
-If the transporting variable is quantum state, we can measure some non-zero angle between $\ket{V(\gamma(0))}$ and $\ket{V(\gamma(p))}$, whilst $\gamma(p)=\gamma(0)$, meaning
-$$\braket{V(\gamma(0))|V(\gamma(p))}\neq 0.$$ 
-The geometric intuition of anholonomy can be seen on fig. \ref{fig:parallelTransportClosed}.
+\section{Transporting states}
+As was pointed out in introduction of this chapter, $\H_{full}$ can be decomposed to different state manifolds $\M_s$, as displayed on figure \ref{fig:manifoldCutIntuition}. 
 
 \begin{figure}[h]
     \centering
-    % \includegraphics[width=0.8\textwidth]{../img/parallelTransportClosedCurve.png}
+    \includegraphics[width=\textwidth]{../img/manifoldCutIntuition.png}
+\caption{Geometrical intuition to transport on fiber manifold sections $\M_i$.}
+    \label{fig:manifoldCutIntuition}
+\end{figure}
+
+Changing state from eigenstate $\ket{s(\llambda(t))}$ to $\ket{\psi(\tilde\llambda)}$ is unitary transformation and can be thought of as \emph{parallel transport} between two vectors in fiber bundle. Assuming the transport goes along curve $\{\gamma_n(\xi)|\xi\in[\xi_1,\xi_2]\subset \R\}\subset \M_s$ This can be written as
+\begin{equation}
+    \kpsit \equiv \Par_{\gamma_s}\ket{s(\llambda(t))} = \exp\left(-\frac{i}{\hbar}\int_0^tE_s(\tau)\d\tau)\right)\exp(i\gamma_s(\xi))\ket{s(\llambda(t))}.
+    \label{eq:phasesOnManifold}
+\end{equation}
+The first exponential, the \emph{dynamical phase}, is well known solution to energy \Schrodinger equation \ref{eq:energySchrodinger} with $\llambda=const.$ and depends only on time and energy of states during the transport. The second exponential is called \emph{geometrical phase}. This phase is generally non-integrable, meaning it cannot be written simply as $\gamma_s(\llambda(t))$ and for some closed curve on $\M$
+\begin{equation}
+    C=\{\llambda(\xi)|\xi\in[0,\Xi] \text{, such that }\llambda(0)=\llambda(\Xi)\}
+\end{equation} 
+we generally get $\Par_C \ket{\psi(\llambda)}\neq \ket{\psi(\llambda)}$. This property is sometimes more generally called an \emph{anholonomy} and should be defined properly.
+\begin{definition}[Anholonomy]
+    Geometrical phenomenon, which causes some variable $V(\gamma(p))$ not to return to it's original value while varying it's parameter $p$ around some closed curve $\gamma(p)$. 
+\end{definition}
+The geometric intuition of anholonomy can be seen on fig. \ref{fig:parallelTransportClosed}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../img/parallelTransportClosedCurve.png}
 \caption{Parallel transporting around some closed curve $C$ with anholonomy represented by angle $\alpha$.}
     \label{fig:parallelTransportClosed}
 \end{figure}
+
+For quantum states, this the anholonomy can be measured as a non-zero angle between $\ket{V}$ and $\Par_C\ket{V}$, meaning
+$$\braket{V|\Par_C|V}\neq 0.$$ 
+
 
 Substituting general solution \ref{eq:phasesOnManifold} to eq. \ref{eq:schrodinger} yields
 \begin{equation}
