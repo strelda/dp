@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -41,5 +41,11 @@ Michael Kolodrubetz, Dries Sels, Pankaj Mehta, and Anatoli Polkovnikov.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0370157317301989}.
 \newblock Geometry and non-adiabatic response in quantum and classical systems.
+
+\bibitem[Loring(20017)]{lu}
+W.~Tu Loring.
+\newblock \emph{Differential Geometry}.
+\newblock Springer International Publishing, 20017.
+\newblock \doi{10.1007/978-3-319-55084-8}.
 
 \end{thebibliography}

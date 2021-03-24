@@ -32,7 +32,7 @@ which can be understood in coordinates as
 The directionnal derivative will be denoted 
 $$\nabla_v$$
 and in basis $\bm e_i \equiv \partial/\partial x^i$ we will denote 
-$$\nabla=(\bm e_x, \bm e_y,\bm e_z)$$
+$$\nabla=(\bm e_x, \bm e_y,\bm e_z).$$
 
 
 
@@ -41,9 +41,9 @@ To get some physical application, we need to define one strong structure on mani
 
 \section{Fiber bundle}
 \label{sec:bundleDef}
-We already know tangent and cotangent spaces. Thinking of manifold $\M$ as a fiber, for which at any point $x$ we create new manifold $\T_x\M$, we and unifying all those tangent spaces, we get so called \emph{fiber bundle}. 
+We already know tangent and cotangent spaces. Thinking of manifold $\M$ as a fiber, for which at any point $x$ we create new manifold $\T_x\M$, we and unifying all those tangent spaces, we get so-called \emph{vector bundle}. 
 \begin{definition}
-    Structure $(\mathcal{E},\mathcal{B},\pi,\mathcal{F})$, for topological spaces $\mathcal{E}$ (\emph{total space}), $\mathcal{B}$ (\emph{base space}), $\emph{F}$ (\emph{fibre}) and a continuous surjection $\pi: \mathcal{E}\rightarrow \mathcal{B}$ satisfying a local triviality\footnote{local triviality} is called a \emph{Fiber bundle} (\emph{projection map}). In addition, the $\mathcal{B}$ is assumed to be connected\footnote{cannot be represented as a union of two disjoint sets} and for every $x\in \mathcal{B}$, there is an open neighborhood $\mathcal{U}\subset \mathcal{B}$ (\emph{trivializing neighborhood}) such that there exists a homeomorphism from $\mathcal{U}$ to so called \emph{product space}
+    Structure $(\mathcal{E},\mathcal{B},\pi,\mathcal{F})$, for topological spaces $\mathcal{E}$ (\emph{total space}), $\mathcal{B}$ (\emph{base space}), $\emph{F}$ (\emph{fibre}) and a continuous surjection $\pi: \mathcal{E}\rightarrow \mathcal{B}$ satisfying a local triviality\footnote{local triviality} is called a \emph{Fiber bundle} (\emph{projection map}). In addition, the $\mathcal{B}$ is assumed to be connected\footnote{can't be represented as a union of two disjoint sets} and for every $x\in \mathcal{B}$, there is an open neighborhood $\mathcal{U}\subset \mathcal{B}$ (\emph{trivializing neighborhood}) such that there exists a homeomorphism from $\mathcal{U}$ to so-called \emph{product space}
     $$\phi: \pi^{-1}(\mathcal{U})\rightarrow \mathcal{U}\times \mathcal{F},$$
     such that $\pi^{-1}\pi(\mathcal{U})=\mathcal{U}$.
 \end{definition}
@@ -56,13 +56,32 @@ The above mappings can be more clear from figure \ref{fig:bundle}. Because proje
     \label{fig:bundle}    
 \end{figure}
 The meaning of definition is, that manifolds at every point $x\in \mathcal{F}$ are all locally diffeomorphic to each other.
+\section{Vector Bundle}
+\textcolor{red}{Conversely, given a fiber bundle (E, X, $\pi$, Rk) with a GL(k) cocycle acting in the standard way on the fiber Rk, there is associated a vector bundle. This is sometimes taken as the definition of a vector bundle}
 
+
+\subsection{Connection on vector bundles}
+\citep{lu}[chap. 10.1]
+Connection maps vector from tangent space to base manifold $\mathcal{X}$ with some element from total space $\mathcal{E}$ to total space
+$$\Gamma: \mathcal{X}\times \mathcal{E}\rightarrow \mathcal{E}$$
+such, that
+\begin{itemize}
+    \item $\Gamma_X s$ is $\mathcal{F}-$linear in $X$ and $\R-$linear in $s$
+    \item Leibniz rule for $f\in \mathcal{C}^\infty$ is satisfied: $\Gamma_X(f s) = (X f)s+f\Gamma_X s$
+\end{itemize}
+
+
+\subsection{Metric on vector bundles}
+Map
+$$g_{\mu\nu}: \mathcal{B}\times \mathcal{B} \rightarrow \R$$
 
 \section{Section}
 \label{sec:section}
 \emph{Section} is a function
 $$f:\mathcal{B}\rightarrow \mathcal{F},$$
 such that $\pi(f(x))=x$ for $\forall x\in \mathcal{B}$. This defines new manifold cutting throw $\mathcal{E}$.
+
+\textcolor{red}{Sectioning of fiber bundles creates vector spaces}
 
 
 \section{Pull-back and push forward}
@@ -94,7 +113,7 @@ and push-forward of covectors
 %     \phi_*\in \textrm{Diff}\M
 % \end{equation}
 \section{Covariant derivative and parallel transport}
-\textcolor{blue}{probably not needed}
+\textcolor{blue}{this section is probably not needed}
 
 
 Covariant derivative is generally\dots
@@ -122,8 +141,12 @@ The vector $v\in \T_P\M$ is said to be parallel transported along curve $\gamma(
 \end{equation}
 vanishes along $\gamma$.
 
-\section{Parallel transport on fiber bundles}
+\section{Parallel transport on vector bundles}
 \textcolor{blue}{this is what we need}
+Parallel transport of vector $V$ along curve $\gamma$ will be denoted
+$$\Par_\gamma V.$$
+It is 
+
 
 \section{Antisymmetric tensors and wedge product}
 p-form $A\in \TT_p \M$ is called \emph{antisymmetric}, if changing the order of the indices has impact only on the sign, symbolically

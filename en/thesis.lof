@@ -1,10 +1,10 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Mappings needed for the bundle definition.\relax }}{5}{figure.caption.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Fiber bundle over $\mathbb {R}^n$ with Hilbert spaces $\mathcal {H}({\bm {\lambda }})$ as individual fibres.\relax }}{8}{figure.caption.5}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Space of bare states and its projection to space of rays $\mathcal {PH}({\bm {\lambda }})\mathrel {\mathop :}\mathrel {\mkern -1.2mu}=\mathcal {H}({\bm {\lambda }}/U(1)$.\relax }}{9}{figure.caption.6}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Geometrical intuition to transport on fiber manifold sections $\mathcal {M}_i$.\relax }}{9}{figure.caption.7}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces some trip around C, draw angle\relax }}{10}{figure.caption.8}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Geometrical intuition to transport on fiber manifold sections $\mathcal {M}_i$.\relax }}{10}{figure.caption.9}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Parallel transporting around some closed curve $C$ with anholonomy represented by angle $\alpha $.\relax }}{11}{figure.caption.10}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Fiber bundle over $\mathbb {R}^n$ with Hilbert spaces $\mathcal {H}({\bm {\lambda }})$ as individual fibers.\relax }}{8}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Geometrical intuition to transport on fiber manifold sections $\mathcal {M}_i$.\relax }}{9}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Space of bare states and its projection to space of rays $\mathcal {P}\mathcal {H}({\bm {\lambda }})\mathrel {\mathop :}\mathrel {\mkern -1.2mu}=\mathcal {H}({\bm {\lambda }}/U(1)$.\relax }}{9}{figure.caption.7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Geometrical intuition to transport on fiber manifold sections $\mathcal {M}_s$.\relax }}{10}{figure.caption.8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Parallel transporting around some closed curve $C$ with anholonomy drawn in yellow.\relax }}{11}{figure.caption.9}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Comparison between transport by Hamiltonian $\mathaccentV {hat}05E{H}$ (blue path $\gamma (\lambda )$ and the one with counter-diabatic potential added (pink path $\gamma (\mathaccentV {tilde}07E\lambda )$), which has zero fidelity. The nonzero fidelity area for path $\gamma (\lambda )$ is marked green and initial and final states $\mathinner {|{\psi (\lambda _i)}\delimiter "526930B }$, resp. $\mathinner {|{\psi (\lambda _f)}\delimiter "526930B }$ are marked purple.\relax }}{20}{figure.caption.10}
 \addvspace {10\p@ }

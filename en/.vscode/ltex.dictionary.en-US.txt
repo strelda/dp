@@ -9,3 +9,8 @@ finitedimensinality
 observables
 submanifold
 anholonomy
+diffeomorphic
+eq
+indiscernibles
+submanifolds
+counter-diabatic
