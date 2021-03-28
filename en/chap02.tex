@@ -1,4 +1,5 @@
 \chapter{Physical introduction}
+\label{chap:physicalIntro}
 
 Most parts of this chapter are inspired by \citep{kolodrubez} and original notes \citep{berry1984}, \citep{berry1989}, \citep{berry2009}
 Now we will assign some physical background to the structure defined in the first chapter. We will see, that the whole space structure is quite complicated, because it's of fiber structure, where every fiber is another fiber bundle. Luckily what we will be using later on are only some much easier Riemannian submanifolds. 
@@ -182,7 +183,7 @@ We can easily check, that the axioms of metric defined using distance as bilinea
     \item symmetry for any two states $\kpsi$, $\kphi$ is implied by $|\braket{\psi|\phi}|=|\braket{\phi|\psi}|$
     \item triangle inequality: $s(\kpsi,\ket{\psi_2}) <s(\kpsi,\kpsi_1) + s(\ket{\psi_1},\ket{\psi_2})$ for any $\ket{\psi_1}$.
 \end{itemize}
-Because $1-f^2>0$, the first term of Taylor expansion is zero, thus we have for metric tensor
+Because $1-f^2>0$, the first term of Taylor expansion is zero, thus we have for a metric tensor
 \begin{equation}
     \d s^2 = g_{\mu\nu}\d \lambda^\mu \d\lambda^\nu+\O(\lambda^3).
 \end{equation} 
@@ -204,18 +205,18 @@ therefore it is practical to decompose it as
 where the \emph{Fubini-Study tensor}\footnote{In some literature, this is called Geometric tensor}, as it's called, is metric on $\P\M_0$ and can be expressed as
 \begin{equation}
     g_{\mu\nu} = \frac{\chi_{\mu\nu}+\chi_{\nu\mu}}{2} = \Re\braket{\partial_\mu o|\partial_\nu o}_c = \Re \sum_{o\neq j}\frac{\braket{o|\pder{\H}{\lambda^\mu}|j}\braket{j|\pder{\H}{\lambda^\nu}|o}}{(E_o-E_j)^2},
-    \label{eq:geom.tensorREdefinition}
+    \label{eq:metrictensorREdefinition}
 \end{equation}
 and the \emph{curvature tensor} a.k.a. \emph{Berry curvature} is
 \begin{equation}
-    \begin{split}
-        \nu_{\mu\nu} = i(\chi_{\mu\nu}-\chi_{\nu\mu})&= \Im\braket{o|[\overleftarrow{\partial}_\nu,\partial_\mu]|o}_c = -2 \Im \sum_{o\neq j}\frac{\braket{o|\pder{\H}{\lambda^\mu}|j}\braket{j|\pder{\H}{\lambda^\nu}|o}}{(E_o-E_j)^2},
-    \end{split}
+        \nu_{\mu\nu} = i(\chi_{\mu\nu}-\chi_{\nu\mu})= \Im\braket{o|[\overleftarrow{\partial}_\nu,\partial_\mu]|o}_c = -2 \Im \sum_{o\neq j}\frac{\braket{o|\pder{\H}{\lambda^\mu}|j}\braket{j|\pder{\H}{\lambda^\nu}|o}}{(E_o-E_j)^2},
+    \label{eq:geom.tensorREdefinition}
 \end{equation}
 where $\overleftarrow{\partial}_\nu$ affects the covector on the left.
 
 
 \section{Derivation of the geometric tensor}
+\label{sec:derivationOfGeometricTensor}
 To prove the correspondence of geometric tensor, described by eq. \ref{eq:geometricTensor}, to distance on $\M_0$, see eq. \ref{eq:distanceOnM0}, we start with eigenstate $\ket{o(\llambda)}\in \M_0\cap \H(\llambda)$. Changing parameters $\llambda$ to $\llambda+\delta \llambda$ results in Hamiltonian $\HH_f$ with eigenstates $\ket{s(\llambda+\delta \llambda)}\in \M_s\cap\H(\llambda+\delta \llambda)$, meaning it can be excited. Probability amplitude of going to such state is
 \begin{equation}
     \begin{split}
@@ -231,6 +232,7 @@ If we introduce the \emph{gauge potential}, aka \emph{calibration potential}, as
 the probability amplitude can be expressed as
 \begin{equation}
    a=i\braket{s(\llambda)|\AA_\mu |o(\llambda)}\delta\lambda^\mu,
+   \label{eq:probabilityOfTransitionIsGauge}
 \end{equation}
 which has meaning of matrix elements of the gauge potential. Probability of the excitation i.e. transition to any state $s>0$ from ground state is then (omitting the $\llambda$ dependence in notation)
 \begin{equation}
@@ -241,174 +243,27 @@ which has meaning of matrix elements of the gauge potential. Probability of the 
 \end{equation}
 where last term defines the geometric tensor.
 
+\textcolor{red}{The gauge transformation means, that if the fidelity $f<1$, this potential can be subtracted from the Hamiltonian leading to $f=1$. This will be discussed later on in chapter \ref{chap:gauge}.}
+
+
 \newpage
 
 
 
 
 
-
-
-
-\section{Gauge potentials}
+\section{Adiabaticity}
 Adiabatic transformation is such a transformation from $\M$ to $\M$, which does not excite the system, meaning the fidelity $f=1$. Generally it can be achieved by two ways -- infinitely slow transformation of states, or adding some \emph{counter-diabatic elements} to the Hamiltonian to counter the excitation.
 
 
-In case of adiabatic gauge potential we choose the basis for $\M$ as eigenstates of the Hamiltonian of the full system $\H$. Adiabatic transformation can be understood as parallel transport on fiber bundle and adiabatic potentials its defining affine connection. To understand more the physical meaning, let's first consider classical system and then move to the quantum mechanics.
-
-
-
-
-
-\subsection{Classical gauge potential}
-In the Hamiltonian classical mechanics, we assume the manifold $\M$ \textcolor{red}{to be an accessible part of the phase space} using the Hamiltonian $\H=\H(p_i,q_i)$, where momentum $p_i$ and position $q_i$ are assumed to form the orthogonal basis of the phase space, i.e.
-\begin{equation}
-    \{q^i,p_j\}=\delta^i_j,
-    \label{eq:canonicalCommutationDelta}
-\end{equation}
-which also defines \emph{calibrational freedom} in their choice. \emph{Canonical transformations} then by definition preserve this formula. Using the \emph{Poisson bracket}, defined as
-\begin{equation}
-    \{A,B\}\equiv \pder{A}{q^j}\pder{B}{p_j}-\pder{B}{q^j}\pder{A}{p_j},
-\end{equation}
-we will examine continuous canonical transformations generated by gauge potential $\A_\lambda$
-\begin{align}
-        q^j(\lambda+\delta\lambda)&=q^j(\lambda)-\pder{\A_\lambda(\bm{p},\bm{q})}{p_j}\delta\lambda \;\Rightarrow\; \pder{q^j}{\lambda}=-\pder{\A_\lambda}{p_j}=\{\A_\lambda,q^j\}
-        \label{eq:gaugeAsGeneratorOfMotion1}\\
-        p_j(\lambda+\delta\lambda)&=p_j(\lambda)-\pder{\A_\lambda(\bm{p},\bm{q})}{q^j}\delta\lambda \;\Rightarrow\; \pder{p_j}{\lambda}=-\pder{\A_\lambda}{q^j}=\{\A_\lambda,p_j\}.
-        \label{eq:gaugeAsGeneratorOfMotion2}
-\end{align}
-Substituting this to eq. \ref{eq:canonicalCommutationDelta}, we get
-\begin{equation}
-    \{q^j(\lambda+\delta\lambda),p_j(\lambda+\delta\lambda)\}=\delta^i_j + \mathcal{O}(\delta\lambda^2).
-\end{equation}
- 
-Equations \ref{eq:gaugeAsGeneratorOfMotion1},\ref{eq:gaugeAsGeneratorOfMotion2} are identical to the Hamilton equations
-\begin{equation}
-\begin{split}
-    \dot{q}^j&=-\{\H,q^j\} = \pder{\H}{p_j}\\
-    \dot{p}_j&=-\{\H,p_j\} = -\pder{\H}{q^j},
-\end{split}
-\end{equation}
-if $\lambda$ is time parameter and $\A_t=-\H$. Because the Hamiltonian is generator of the movement in the phase space $(\bm{q},\bm{p})$, we can interpret $\A_t$ as the generators of the movement on $\M$. Other specific choice might be $\lambda=X^i$, which gives us the momentum components $\A_{X^i}=p_i$.
-
-
-
-
-\subsection{Quantum gauge potential}
-\citep{kolodrubez}[chap. 2.2]
-The role of Poison brackets in quantum mechanics is taken by commutators, canonical transformations are called \emph{unitary transformations} and calibration freedom is hidden in the choice of basis. We can write the unitary transformation $\U$ between initial system $S$ and the transformed $\tilde{S}$ along some path $\gamma(\lambda)$ on $\M\equiv \cup_\llambda \{\ket{m(\llambda)}\}$. Let the initial state be $\kpsi\equiv \ket{\psi(0)}$ and define unitary transformation
-\begin{equation}
-    \U(\lambda)^+ \kpsi=\ket{\tilde\psi(\lambda)},
-    \label{eq:transformationU}
-\end{equation}
-where scalar parameter $\lambda$ is assumed to be changing along the path $\gamma(\lambda)$, corresponding to situation on fig. \ref{fig:manifoldCutIntuition}. This satisfies
-\begin{equation}
-    i\hbar \partial_t \U(\lambda)=\HH(\lambda)\U(\lambda)
-\end{equation}
-for any point on $\gamma$, along which the partial derivative is taken.
-The wave function $\kpsi$ in $S$ can be decomposed using Schmidt decomposition\footnote{The Schmidt decomposition can be performed in finite dimension, or if the Hamiltonian is compact, which is not automatic in quantum mechanics. What's more, the Hamiltonian is usually not even bounded. Anyway, for simple systems with bounded energy we can assume so.}, as
-\begin{equation}
-    \kpsi = \sum_{m,n}\psi_n \U_{nm}^*\ket{m(\llambda)} = \sum_m \overbrace{\tilde{\psi}_m(\llambda)}^{\braket{m(\llambda)|\psi}}\ket{m(\llambda)}.
-\end{equation}
-We can define adiabatic potentials analogically to the classical case as
-\begin{equation}
-    i\hbar\partial_t \ket{\tilde{\psi}(\llambda)} = i\hbar \partial_t\left(\U^+(\llambda)\ket{\psi} \right)= \underbrace{i\hbar\left(\partial_t \U^+(\llambda)\right)\U(\llambda)}_{-\tilde{\AA_\lambda}}\ket{\tilde{\psi}(\llambda)},
-\end{equation}
-where we defined the adiabatic potential $\tilde{\AA_\lambda}$, which can be transformed to non-tilde system as
-\begin{equation}
-    \begin{split}
-        \AA_\lambda&=\U(\llambda)\tilde{\AA_\lambda}\U^+(\llambda) = -i\hbar\big(\U(\llambda)\partial_t \U^+(\llambda)\big) =\\
-        &= -i\hbar\big(\partial_t(\underbrace{U^+(\llambda)U(\llambda)}_{\mathds{1}})-\partial_t(U(\llambda))U^+(\llambda) \big) =i\hbar \big(\partial_t U(\llambda))U^+(\llambda).
-    \end{split}
-\end{equation}
-Thus we get equations for adiabatic potentials
-\begin{align}
-    \AA_\lambda&=i\hbar \big(\partial_t U(\llambda))U^+(\llambda)
-    \label{eq:adiabaticPotential}\\
-    \tilde{\AA_\lambda} &= -i\hbar\left(\partial_t \U^+(\llambda)\right)\U(\llambda)
-    \label{eq:adiabaticPotentialTilde}
-\end{align}
-These potencials are Hermitean
-\begin{equation}
-     \tilde{\AA_\lambda}^+=i\hbar U(\llambda)^+\partial_t\U(\llambda)=-i\hbar\partial_t\U(\llambda)^+\U(\llambda) = \tilde{\AA_\lambda} ,
-\end{equation}
-analogically holds for $\AA_\lambda$ and using the eigenbasis of $\HH$, the matrix elements are
-\begin{equation}
-    \bra{n(\bm 0)}\tilde{\AA_\lambda}\ket{m(\bm 0)}=i\hbar\bra{n(\bm 0)}\U(\llambda)^+\partial_t\U(\llambda)\ket{m(\bm 0)} = i\hbar\bra{\tilde n(\llambda)}\partial_t\ket{\tilde m(\llambda)}.
-\end{equation}
-and because
-\begin{equation}
-    \bra{\tilde n(\llambda)}\AA_\lambda\ket{\tilde m(\llambda)}= \bra{n(\bm 0)}\tilde{\AA_\lambda}\ket{m(\bm 0)},
-\end{equation}
-we get
-\begin{equation}
-    \AA_\lambda = i\hbar\partial_t.
-    \label{eq:adiabaticPotentialDefinition}
-\end{equation}
-It's good to point out, that we were applying tilde operators to non-tilde states et vice versa. This can be justified only if we consider $\M$ big enough to contain all necessary states, which can be achieved during the transformation.
-
-
-If we now consider the parametrization with time $\lambda\coloneqq t$, $\U$ can be explicitly expressed according to eq. \ref{eq:phasesOnManifold} as
-\begin{equation}
-    \U(\lambda)=\sum_n \exp\left(\frac{i}{\hbar}E_n(\tau)\d \tau - \int_0^t \braket{s(\tau)|\partial_\tau n(\tau)}\d\tau\right)\ket{s(\lambda)}\bra{s(0)}.
-    \label{eq:evolutionUduringTransition}
-\end{equation}
-
-\section{Berry phase and curvature}
-Let's now consider only the ground state manifold, because it will be used later on. Thought every step can be easily generalized to any state manifold $\M_m$.
-
-On the ground state manifold $\M_0\equiv \cup_\llambda \{\ket{o(\llambda)}\}$, the \emph{Berry connection} is defined as
-\begin{equation}
-    A_\mu(\llambda)\equiv \braket{o(\llambda)|\AA_\mu|o(\llambda)},
-\end{equation}
-which uses the decomposition of $\llambda$ to some basis, thus it empowers us to take derivatives in any direction in the base manifold $\R^n$ and thus the geometric tensor can be written as
-\begin{equation}
-    \chi_{\mu\nu}(\llambda) = \partial_\mu A_\nu(\llambda)-\partial_\nu A_\mu(\llambda)
-\end{equation}
-and the \emph{Berry phase}\footnote{
-    The reasonability of this definition can be seen, if we assume the ground state of a free particle
-        $\braket{\bm{x}|i(\llambda)}=i(\bm{x},\llambda)= |i(\bm{x})|e^{i\phi(\llambda)}$,
-    then the Berry connection is
-    \begin{equation}
-        A_\mu=-\int \d \bm{x}|i(\bm{x},\llambda)|^2\partial_\mu \phi(\llambda) = -\partial_\mu \phi(\llambda)
-    \end{equation} 
-    and Berry phase
-    \begin{equation}
-        \phi_B=\oint_\mathcal{C} \partial_\mu \phi \d \lambda^\mu,
-    \end{equation}
-    which represents total phase accumulated by the wave function. It is really the analogy for Berry phase in classical mechanics, which for example in the case Foucault pendulum on one trip around the Sun makes $\phi_B=2\pi$
-}
-as the integral of a connection along some closed curve $\mathcal{C}$
-\begin{equation}
-    \phi_B\equiv-\oint_\mathcal{C} A_\mu(\llambda)\d \lambda^\mu=\int_\mathcal{S} \chi_{\mu\nu}(\llambda)\d \lambda^\mu \wedge \d\lambda^\nu,
-\end{equation}
-where we used the Stokes theorem for some area $\mathcal{S}$ with boundary $\partial\mathcal{S}=\mathcal{C}$.
-
-The gauge potentials can then be understood as affine connections defining the parallel transport. Covariant derivative is thus
-\begin{equation}
-    D_\mu=\partial_\mu+i\AA_\mu,
-\end{equation}
-which yields $D_\mu\ket{\psi_n}=0$ for every eigenstate, which is the promissed claim, that the transport of eigenvalues on $\M_0$ is parallel. $\AA_\mu$ is generally defined \ref{eq:adiabaticPotential}, which generally gives non-zero covariant derivative for states outside of $\M_0$.
-
-
-
-
-\section{Adiabatic transformations}
-In this chapter, we will be dealing with the system described by the finite-dimensional Hamiltonian $\HH(\llambda)$ which drives the system according to \Schrodinger equation from some initial state $\ket{s(\llambda}$ to $\ket{s(\tilde\llambda)}$ along some path. Again we reduce the dimension from $\R^n$ to $1$ prescribing the curve $\gamma(\lambda)$ parametrized by time $t$, so we get $\HH=\HH(\lambda)$.
-
-
-Important knowledge about symmetries of the system is encoded in canonical transformations, or in quantum mechanics more commonly referred to as \emph{unitary transformations}. In our case, the generators of such canonical transformations are adiabatic potentials. In case of the Hamiltonian $\H(\llambda)$ and it's adiabatic transformation $\H(\llambda+\d \llambda)$, we get
-\begin{equation}
-    [\HH(\llambda),\HH(\llambda+\delta \llambda)]=0,
-\end{equation}
-meaning Hamiltonian commutes with it's canonically transformed version.\footnote{This can be easily reformulated to the world of classical physics, where the commutator is replaced by Poisson bracket.} Before going throw the details of adiabatic transformations, let's define its meaning properly.
+In this chapter, we will be dealing with the system described by the finite-dimensional Hamiltonian $\HH(\llambda)$ which drives the system according to \Schrodinger equation from some initial state $\ket{s(\llambda}$ to $\ket{s(\tilde\llambda)}$ along some path. Again we reduce the dimension from $\R^n$ to $1$ prescribing the curve $\gamma(\lambda)$ parametrized by time $t$, so we get $\HH=\HH(\lambda)$. Before going throw the details of adiabatic transformations, let's define its meaning properly.
 
 \begin{definition}[Adibaticity]
     Slow change of parameters driving Hamiltonian in a sense, that it does not excite the system and allows the system to return to the same energetic state after circulation around any closed path on the manifold with fidelity $f=1$. For more see Theorem \ref{adiabaticTheorem}.
 \end{definition}
 
 
-\subsection{Adiabatic transformation}
+\subsection{Slow transports}
 \citep{kolodrubez}[chap. 2.3]
 As was mentioned in the introduction to this chapter, one way to change the system parameters without exciting it is to change the driving parameter slowly enough. The meaning of the word "slow" clears up next theorem.
 \begin{thm}[Adiabatic theorem]
@@ -455,17 +310,159 @@ $\hat{M}$ is diagonal in energetic basis and it's elements has meaning of \emph{
 \end{equation}
 This can be used as the definition for \emph{counter-diabatic potential} $\AA_t$. The strength of this equation lies in the fact, that it finds counter-diabatic potential without the need of Hamiltonian diagonalization.}
 
-\section{Counter-diabatic driving}
-\citep{kolodrubez}[page 15--17] The main idea of a counter-diabatic driving is, that any excitation of the system can be countered by adding so called \emph{counter-diabatic potential} to the Hamiltonian. Consider again any eigenstate $\kpsit$ of the Hamiltonian $\HH=\HH(\lambda)$ driven along the curve $\gamma(\lambda(t))$ on $\M_0$ depending on time $t$, during which the fidelity $f\neq 0$. Because the system is not measured during the trip, it can't be stated if or if not it was excited, but the main goal here is to make fidelity zero, which is \textcolor{red}{iff (is it equivalence, or just implication?)} $\tilde\HH$ is diagonal. For diagonalizable Hamiltonian, there exist such transformation (same as eq. \ref{eq:transformationU})
+
+\section{Geodetic driving}
+\label{chap:gauge}
+
+\section{Gauge potentials}
+In section \ref{sec:derivationOfGeometricTensor} we introduced the gauge potential without proving its gauge meaning, but only stating its correspondence to transition probability, see eq. \ref{eq:probabilityOfTransitionIsGauge}.
+\textcolor{red}{
+\emph{Gauge transformations}, in classical mechanics called \emph{canonical}, can be defined such, that they preserve Lagrangian of the system under local transformations from some Lie group.} This implies, that gauge transformed Hamiltonian $\H(\llambda)$ and $\H(\llambda+\d \llambda)$ commutes with its canonically transformed version\footnote{This can be easily reformulated to the world of classical physics, where the commutator is replaced by Poisson bracket.} 
+ \begin{equation}
+     [\HH(\llambda),\HH(\llambda+\delta \llambda)]=0.
+ \end{equation}
+
+ To understand the meaning of gauge symmetries, let's first consider classical system and then move to quantum mechanics.
+
+
+\subsection{Classical gauge potential}
+
+
+
+In the Hamiltonian classical mechanics, we assume the manifold $\M$ part of the phase space defined using Hamiltonian $H=H(p_i,q_i)$, where momentum $p_i$ and position $q_i$ are assumed to form the orthogonal basis of the phase space
 \begin{equation}
-    \U(\lambda)^+:  \ket{\psi(\lambda)} \rightarrow \ket{\tilde\psi(\tilde\llambda)},
-    \label{eq:transformationUtimeDependentH}
+    \{q^i,p_j\}=\delta^i_j,
+    \label{eq:canonicalCommutationDelta}
 \end{equation}
-for which the fidelity will be zero. Such a transformation does not have to be unique, but we can choose any one of them. This can be seen more clearly from direct transformation of the Schrödinger equation
+which also defines \emph{calibrational freedom} in their choice. \emph{Canonical transformations} then by definition preserve this formula. Using the \emph{Poisson bracket}, defined as
+\begin{equation}
+    \{A,B\}\coloneqq \pder{A}{q^j}\pder{B}{p_j}-\pder{B}{q^j}\pder{A}{p_j},
+\end{equation}
+we will examine continuous canonical transformations generated by gauge potential $\A_\lambda$
+\begin{align}
+        q^j(\lambda+\delta\lambda)&=q^j(\lambda)-\pder{\A_\lambda(\bm{p},\bm{q})}{p_j}\delta\lambda \;\Rightarrow\; \pder{q^j}{\lambda}=-\pder{\A_\lambda}{p_j}=\{\A_\lambda,q^j\}
+        \label{eq:gaugeAsGeneratorOfMotion1}\\
+        p_j(\lambda+\delta\lambda)&=p_j(\lambda)-\pder{\A_\lambda(\bm{p},\bm{q})}{q^j}\delta\lambda \;\Rightarrow\; \pder{p_j}{\lambda}=-\pder{\A_\lambda}{q^j}=\{\A_\lambda,p_j\}.
+        \label{eq:gaugeAsGeneratorOfMotion2}
+\end{align}
+Substituting this to relations of orthogonality \ref{eq:canonicalCommutationDelta}, we get
+\begin{equation}
+    \{q^j(\lambda+\delta\lambda),p_j(\lambda+\delta\lambda)\}=\delta^i_j + \mathcal{O}(\delta\lambda^2).
+\end{equation}
+ 
+If $\lambda$ is time parameter and $\A_t=-H$, equations \ref{eq:gaugeAsGeneratorOfMotion1},\ref{eq:gaugeAsGeneratorOfMotion2} are identical to the Hamilton equations
+\begin{equation}
+\begin{split}
+    \dot{q}^j&=-\{H,q^j\} = \pder{H}{p_j}\\
+    \dot{p}_j&=-\{H,p_j\} = -\pder{H}{q^j}.
+\end{split}
+\end{equation}
+Because the Hamiltonian is generator of the movement in the phase space $(\bm{q},\bm{p})$, we can interpret $\A_t$ as the generators of the movement on $\M$. Other specific choice might be $\lambda=X^i$, which gives us the momentum components $\A_{X^i}=p_i$.
+
+Generally every gauge symmetry is generated by its gauge potential and corresponds to some conserved property, as theorem of Emma Nöether states.
+
+
+
+\subsection{Quantum gauge potential}
+\citep{kolodrubez}[chap. 2.2]
+The role of Poison brackets in quantum mechanics is taken by commutators, canonical transformations are called \emph{unitary transformations} and calibration freedom is hidden in the choice of basis. Now let's find some special basis transformations $\U$ between initial system $S$ and the transformed $\tilde{S}$. Both of them describe the system with Hamiltonian $\HH(\llambda)$ with eigenstates $\ket{n(\llambda)}$ and eigenstate manifolds $\M_n\equiv \cup_\llambda \{\ket{n(\llambda)}\}$. 
+
+From fiber structure goes\footnote{especially from the fact, that all spaces $\HH(\llambda)$ are isomorphic to each other}, that any state of $\HH(\llambda)$ for $\forall \llambda\in U\subset \R^n$ can be decomposed as
+    \begin{equation}
+    \ket{\psi(\llambda)}\equiv \sum_n \psi_n(\llambda)\ket{n}
+\end{equation}    
+for some coordinate independent basis $\{\ket{n}\}_n$.
+Then there exist unitary transformation
+\begin{equation}
+    \U(\llambda): \tilde S\rightarrow S,\quad \U(\llambda)\ket{m(\llambda)}=\ket{n}.
+    \label{eq:transformationU}
+\end{equation}
+% where scalar parameter $t$ is assumed to be changing along the path $\gamma(t)$, corresponding to situation on fig. \ref{fig:manifoldCutIntuition}. This satisfies
+% \begin{equation}
+%     i\hbar \partial_t \U(t)=\HH(t)\U(t)
+%     \label{eq:schrodingerForU}
+% \end{equation}
+% for any point on $\tilde\gamma(t)$ and $\HH$ the full Hamiltonian of the system, along which the partial derivative is taken.
+
+
+The wave function $\kpsi$ in $S$ can be decomposed using Schmidt decomposition\footnote{The Schmidt decomposition can be performed in finite dimension, or if the Hamiltonian is compact, which is not automatic in quantum mechanics. What's more, the Hamiltonian is usually not even bounded. Anyway, for simple systems with bounded energy we can assume so.}
+\begin{equation}
+    \ket{\psi(\llambda)} = \sum_{m,n}\psi_n(\llambda) \ket{m(\llambda)}\overbrace{\braket{m(\llambda)|n}}^{U_{mn}(\llambda)} =\sum_m \overbrace{\tilde{\psi}_m(\llambda)}^{\braket{m(\llambda)|\psi_n|n}}\ket{m(\llambda)},
+\end{equation}
+where $U_{mn}(\llambda)$ are matrix elements of unitary transformation $\U(\llambda)$. In this work, we will be interested only in the gauge transformations preserving energy of the system.
+
+
+\subsection{Adiabatic gauge potential}
+
+Adiabatic gauge potentials, sometimes just \emph{adiabatic potentials}, are generators of unitary transformations, so we can define them analogically to the classical case
+\begin{equation}
+    i\hbar\partial_\lambda \ket{\tilde{\psi}(\llambda)} = i\hbar \partial_\lambda\left(\U^+(\llambda)\ket{\psi} \right)= \underbrace{i\hbar\left(\partial_\lambda \U^+(\llambda)\right)\U(\llambda)}_{-\tilde{\AA_\lambda}}\ket{\tilde{\psi}(\llambda)}.
+\end{equation}
+The adiabatic potential $\tilde{\AA_\lambda}$ can be transformed to non-tilde system as
+\begin{equation}
+    \begin{split}
+        \AA_\lambda&=\U(\llambda)\tilde{\AA_\lambda}\U^+(\llambda) = -i\hbar\U(\llambda)\big(\partial_\lambda \U^+(\llambda)\big) =\\
+        &= -i\hbar\partial_\lambda\big(\underbrace{U^+(\llambda)U(\llambda)}_{\mathds{1}}\big)-\big(\partial_\lambda U(\llambda)\big)U^+(\llambda) \big) =i\hbar \big(\partial_\lambda U(\llambda\big)U^+(\llambda).
+    \end{split}
+\end{equation}
+From this we get the equations for adiabatic potential in two systems
+\begin{align}
+    \AA_\lambda&=i\hbar \big(\partial_\lambda U(\llambda)\big)U^+(\llambda)
+    \label{eq:adiabaticPotential}\\
+    \tilde{\AA_\lambda} &= -i\hbar\left(\partial_\lambda \U^+(\llambda)\right)\U(\llambda)
+    \label{eq:adiabaticPotentialTilde}
+\end{align}
+which can be shown to be Hermitian
+\begin{equation}
+     \tilde{\AA_\lambda}^+=i\hbar U(\llambda)^+\big(\partial_\lambda\U(\llambda)\big)=-i\hbar\big(\partial_\lambda\U(\llambda)^+\big)\U(\llambda) = \tilde{\AA_\lambda},
+     \label{eq:counterdiabaticPotentialTwoSystems}
+\end{equation}
+analogically for non-tilde potential.
+Using the eigenbasis of $\HH$, the matrix elements are
+\begin{equation}
+    \bra{n}\tilde{\AA_\lambda}\ket{m}=i\hbar\bra{n}\U(\llambda)^+\partial_\lambda\U(\llambda)\ket{m} = i\hbar\bra{n(\llambda)}\partial_\lambda\ket{m(\llambda)}.
+\end{equation}
+and because
+\begin{equation}
+    \bra{n(\llambda)}\AA_\lambda\ket{ m(\llambda)}= \bra{n}\tilde{\AA_\lambda}\ket{m},
+\end{equation}
+we get
+\begin{equation}
+    \AA_\lambda = i\hbar\partial_\lambda.
+    \label{eq:adiabaticPotentialDefinition}
+\end{equation}
+% It's good to point out, that we were applying tilde operators to non-tilde states et vice versa. This can be justified only if we consider $\M$ big enough to contain all necessary states, which can be achieved during the transformation.
+
+
+
+Adiabatic gauge transformations are  class of gauge transformations with fidelity $f=1$. This means, that if the system is driven by Hamiltonian $\HH(\llambda)$ with fidelity $f<1$, there exists such adiabatic potential $\A_\lambda$, that driving of the same system using $\HH-\A_\lambda$ has fidelity $f=1$.
+
+The adiabatic gauge potentials can then be understood as affine connections defining the parallel transport on fiber bundle, if we define covariant derivative as
+\begin{equation}
+    D_\mu=\partial_\mu+i\AA_\mu,
+\end{equation}
+which yields $D_\mu\ket{\psi_n}=0$ for every eigenstate, which yields, that the transport of eigenvalues on $\M_0$ is parallel. $\AA_\mu$ is generally defined \ref{eq:adiabaticPotential}, which generally gives non-zero covariant derivative for states not belonging to $\M_0$. 
+
+Finding of those potentials has many practical applications, so let's introduce one analytical procedure of finding them.
+
+
+
+
+
+\section{Counter-diabatic driving}
+\label{chap:CounterDiabaticDriving}
+\citep{kolodrubez}[page 15--17] The main idea of a counter-diabatic driving is, that any excitation of the system can be countered by adding so called \emph{counter-diabatic potential} to the Hamiltonian. Consider again any eigenstate $\kpsit$ of the Hamiltonian $\HH=\HH(\lambda)$ driven along the curve $\gamma(\lambda(t))$ on $\M_0$ depending on time $t$, during which the fidelity $f\neq 0$. Because the system is not measured during the trip, it can't be stated if or if not it was excited, but the main goal here is to make fidelity zero, which is iff $\tilde\HH$ is diagonal. For diagonalizable Hamiltonian, there exist a transformation, see eq. \ref{eq:transformationU}, for which the fidelity will be zero. Such a transformation does not have to be unique, but we can choose any one of them. This can be seen more clearly from direct transformation of the Schrödinger equation. 
+
+The Schrödinger equation
 \begin{equation}
     i\hbar \der{}{t}\ket{\psi(\lambda)} = \HH(\lambda)\ket{\psi(\lambda)}
 \end{equation}
-to the transformed frame using unitary operator for time varying Hamiltonian
+can be transformed using 
+\begin{equation}
+    \U(\lambda)^+  \ket{\psi(\lambda)} = \ket{\tilde\psi(\tilde\llambda)},
+    \label{eq:transformationUtimeDependentH}
+\end{equation}
+for which $\tilde\HH\coloneqq\U^+\HH\U$ is diagonal, leading to
 \begin{align}
     i\hbar \der{}{t}(\U(\tilde\llambda)\ket{\tilde \psi(\tilde\llambda)}) &= \HH(\lambda)\U(\tilde\llambda)\ket{\tilde \psi(\tilde\llambda)} \\
     i\hbar \der{\lambda}{t}\partial_\lambda\U(\tilde\llambda)\ket{\tilde \psi(\tilde\llambda)} + i\hbar \U(\tilde\llambda)\der{}{t}\ket{\tilde \psi(\tilde\llambda)} &= \HH(\lambda)\U(\tilde\llambda)\ket{\tilde \psi(\tilde\llambda)}.
@@ -473,25 +470,81 @@ to the transformed frame using unitary operator for time varying Hamiltonian
 
 This can be rewritten using adiabatic potential from eq. \ref{eq:adiabaticPotentialDefinition}, using \emph{dot} notation for time derivatives and omitting the points in which the objects are evaluated, as
 \begin{equation}
-    i\hbar \der{}{t}\ket{\tilde\psi} = \left[\U^+\HH\U-\dot{\lambda}\tilde{\AA_\lambda}\right]\ket{\tilde\psi} = \left[\tilde \HH-\dot{\lambda}\tilde{\AA_\lambda}\right]\ket{\tilde{\psi}} = \tilde{\HH}_m \ket{\tilde{\psi}},
+    i\hbar \der{}{t}\ket{\tilde\psi} = \left[\U^+\HH\U-\dot{\lambda}\tilde{\AA_\lambda}\right]\ket{\tilde\psi} = \left[\tilde \HH-\dot{\lambda}\tilde{\AA_\lambda}\right]\ket{\tilde{\psi}} \eqqcolon \tilde{\HH}_m \ket{\tilde{\psi}},
 \end{equation}
-where the term $-\dot{\lambda}\tilde{\AA_\lambda}$ is called \emph{Galilean}.
+where the term $-\dot{\lambda}\tilde{\AA_\lambda}$ is called \emph{Galilean} and $ \tilde{\HH}_m$ is the Hamiltonian in transformed system. Because $\tilde{\HH}$ is diagonal, it drives $\ket{\tilde{\psi}}$ with fidelity $f=1$. This means that for any driving defined by $\HH(\lambda(t))$, which defines the unitary transformation $\U$, there exists such \emph{counter-diabatic potential} $\AA_\lambda$, that $\HH_m + \dot{\lambda}\AA_\lambda$ has $f=1$.
 
-From this can be seen, that the Hamiltonian can be transformed as $\tilde\HH(\llambda)=\U^+(\lambda)\HH(\lambda)\U(\lambda)$ and to the Hamiltonian in transformed frame $\HH_m = \HH-\dot{\lambda}\AA_\lambda$ we can add \emph{counter-diabatic element} $\dot{\lambda}\AA_\lambda$ and the only remaining element is $\HH$, which does not excite the system ($f=0$). Intuition for transformations using original Hamiltonian vs. transformed one can be seen on fig. \ref{fig:counterdiabaticPotential}. It is good to point out, that the eigenstates on this figure belong to the space $\P\M$, but the paths itself need to be considered in the whole $\M$, which can be seen as the phase change described by equation \ref{eq:evolutionUduringTransition}.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{../img/counterdiabaticPotential.png}
-    \caption{Comparison between transport by Hamiltonian $\HH$ (blue path $\gamma(\lambda)$ and the one with counter-diabatic potential added (pink path $\gamma(\tilde\lambda)$), which has zero fidelity. The nonzero fidelity area for path $\gamma(\lambda)$ is marked green and initial and final states $\ket{\psi(\lambda_i)}$, resp. $\ket{\psi(\lambda_f)}$ are marked purple.}
-    \label{fig:counterdiabaticPotential}
-\end{figure}
+% Intuition for transformations using original Hamiltonian vs. transformed one can be seen on fig. \ref{fig:counterdiabaticPotential}. It is good to point out, that the eigenstates on this figure belong to the space $\P\M$, but the paths itself need to be considered in the whole $\M$, which can be seen as the phase change described by equation \ref{eq:evolutionUduringTransition}.
+
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=\textwidth]{../img/counterdiabaticPotential.png}
+%     \caption{Comparison between transport by Hamiltonian $\HH$ (blue path $\gamma(\lambda)$ and the one with counter-diabatic potential added (pink path $\gamma(\tilde\lambda)$), which has zero fidelity. The nonzero fidelity area for path $\gamma(\lambda)$ is marked green and initial and final states $\ket{\psi(\lambda_i)}$, resp. $\ket{\psi(\lambda_f)}$ are marked purple.}
+%     \label{fig:counterdiabaticPotential}
+% \end{figure}
+This procedure does not directly tell us how to calculate the counter-diabatic potential, only states its existence. For many simple cases the calculation can be done analytically, but most often some approximation methods are needed.
+
+
+\subsection{Explicit form}
+If we now consider the parametrization with time $t\coloneqq t$, $\U$ can be explicitly expressed according to \textcolor{red}{ansatz} in eq. \ref{eq:phasesOnManifold} as
+\begin{equation}
+    \U(t)=\sum_n \exp\left(\frac{i}{\hbar}E_n(\tau)\d \tau - \int_0^t \braket{s(\tau)|\partial_\tau n(\tau)}\d\tau\right)\ket{s(t)}\bra{s(0)}.
+    \label{eq:evolutionUduringTransition}
+\end{equation}
+Inserting to eq. \ref{eq:schrodingerForU}, we get explicit form of the Hamiltonian, which can be decomposed into the diagonal form of the original Hamiltonian and a counter-diabatic potential
+\begin{equation}
+    \HH(t)=\sum_n \ket{n}E_n\bra{n}+ i\hbar \sum_n\ket{\partial_\lambda n}\bra{n}-\braket{n|\partial_\lambda n}\ket{n}\bra{n}\eqqcolon \HH_0(t)+\HH_1(t),
+\end{equation}
+for shortened notation $\ket{n}\equiv \ket{n(t)}$, analogically for bras. Using
+\begin{equation}
+    \HH_0(t)\ket{n}=E_n\ket{n}\quad \Rightarrow\quad \braket{m|\partial_\lambda n}=\frac{\braket{m|\partial_\lambda\HH_0| n}}{E_n-E_m}
+\end{equation}
+we have explicit formula
+\begin{equation}
+    \HH_1(t)= i\hbar \sum_{m\neq n}\frac{\ket{m}\braket{m|\partial_\lambda\HH_0| n}\bra{n}}{E_n-E_m}
+    \label{eq:explicitCounterDiabaticPotential}
+\end{equation}
+
+
+\section{Berry phase and curvature}
+Let's now consider only the ground state manifold, because it will be used later on. Thought every step can be easily generalized to any state manifold $\M_m$.
+
+On the ground state manifold $\M_0\equiv \cup_\llambda \{\ket{o(\llambda)}\}$, the \emph{Berry connection} is defined as
+\begin{equation}
+    A_\mu(\llambda)\equiv \braket{o(\llambda)|\AA_\mu|o(\llambda)}=-i\hbar \braket{o(\llambda)|\partial_\mu|o(\llambda)},
+    \label{eq:berryConnection}
+\end{equation}
+which uses the decomposition of $\llambda$ to some basis, thus it empowers us to take derivatives in any direction in the base manifold $\R^n$ and thus the geometric tensor can be written as
+\begin{equation}
+    \chi_{\mu\nu}(\llambda) = \partial_\mu A_\nu(\llambda)-\partial_\nu A_\mu(\llambda)
+\end{equation}
+and the \emph{Berry phase}\footnote{
+    The reasonability of this definition can be seen, if we assume the ground state of a free particle
+        $\braket{\bm{x}|i(\llambda)}=i(\bm{x},\llambda)= |i(\bm{x})|e^{i\phi(\llambda)}$,
+    then the Berry connection is
+    \begin{equation}
+        A_\mu=-\int \d \bm{x}|i(\bm{x},\llambda)|^2\partial_\mu \phi(\llambda) = -\partial_\mu \phi(\llambda)
+    \end{equation} 
+    and Berry phase
+    \begin{equation}
+        \phi_B=\oint_\mathcal{C} \partial_\mu \phi \d \lambda^\mu,
+    \end{equation}
+    which represents total phase accumulated by the wave function. It is really the analogy for Berry phase in classical mechanics, which for example in the case Foucault pendulum on one trip around the Sun makes $\phi_B=2\pi$
+}
+as the integral of a connection along some closed curve $\mathcal{C}$
+\begin{equation}
+    \phi_B\equiv-\oint_\mathcal{C} A_\mu(\llambda)\d \lambda^\mu=\int_\mathcal{S} \chi_{\mu\nu}(\llambda)\d \lambda^\mu \wedge \d\lambda^\nu,
+\end{equation}
+where we used the Stokes theorem for some area $\mathcal{S}$ with boundary $\partial\mathcal{S}=\mathcal{C}$.
+
 
 
 
 \section{\textcolor{blue}{Approximations of adiabatic potentials}}
 Adiabatic potentials can be calculated from the principal of minimal action, which leads to variational method.
 
-If the difference between eigenstates of $\HH$ is small, or generalized force between some states is zero, the computation of the adiabatic potential is numerically unstable. The knoledge of exact adiabatic potential would allow to maintain the system in the ground state thus not exciting it, as th Eigenstate thermalization hypotheses states.
+If the difference between eigenstates of $\HH$ is small, or generalized force between some states is zero, the computation of the adiabatic potential is numerically unstable. The knowledge of exact adiabatic potential would allow to maintain the system in the ground state thus not exciting it, as the Eigenstate thermalization hypotheses states.
 
 \begin{hypot}[Eigenstate thermalization hypotheses]
   For the difference between eigenstates of $\HH$ and extensive thermodynamic entropy $S$, it holds that
@@ -500,11 +553,11 @@ If the difference between eigenstates of $\HH$ is small, or generalized force be
   \end{equation}
   If the states are close, better approximation would be $E_n-E_m\propto \exp(S)$. For matrix elements it holds, that they vanish exponentially with the characteristic scale of the system $a$, i.e.
   \begin{equation}
-    \bra{m}\AA_\lambda\ket{n} = i\hbar\frac{\braket{m|\partial_t \HH|n}}{E_m-E_n} \propto \exp(-a).
+    \bra{m}\AA_\lambda\ket{n} = i\hbar\frac{\braket{m|\partial_\lambda \HH|n}}{E_m-E_n} \propto \exp(-a).
     \label{eq:thermalizationMatrixElements}
 \end{equation}
 \end{hypot}
-Fortunatelly in the limit "number of particles" $\rightarrow \infty$ the expression in eq. \ref{eq:thermalizationMatrixElements} converges.
+Fortunately in the limit "number of particles" $\rightarrow \infty$ the expression in eq. \ref{eq:thermalizationMatrixElements} converges.
 
 
 

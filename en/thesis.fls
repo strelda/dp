@@ -288,6 +288,8 @@ INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap01.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap01.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap02.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap02.aux
+INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap03.aux
+INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap03.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/epilog.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/epilog.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/bibliography.aux
@@ -433,9 +435,15 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
-INPUT /home/strelda/Documents/mff/diplomka/dp/en/../img/counterdiabaticPotential.png
-INPUT ../img/counterdiabaticPotential.png
-INPUT ../img/counterdiabaticPotential.png
+OUTPUT /home/strelda/Documents/mff/diplomka/dp/en/chap03.aux
+INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap03.tex
+INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap03.tex
+INPUT /home/strelda/Documents/mff/diplomka/dp/en/../img/blochArbitraryTransport.pdf
+INPUT ../img/blochArbitraryTransport.pdf
+INPUT ../img/blochArbitraryTransport.pdf
+INPUT /home/strelda/Documents/mff/diplomka/dp/en/../img/blochPiHalfTransport.pdf
+INPUT ../img/blochPiHalfTransport.pdf
+INPUT ../img/blochPiHalfTransport.pdf
 OUTPUT /home/strelda/Documents/mff/diplomka/dp/en/epilog.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/epilog.tex
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/epilog.tex
@@ -461,6 +469,8 @@ INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap01.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap01.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap02.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap02.aux
+INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap03.aux
+INPUT /home/strelda/Documents/mff/diplomka/dp/en/chap03.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/epilog.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/epilog.aux
 INPUT /home/strelda/Documents/mff/diplomka/dp/en/bibliography.aux
