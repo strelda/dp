@@ -1,0 +1,29 @@
+\chapter{First order transition Hamiltonian}
+First order transition Hamiltonian can be written in a form
+\begin{equation}
+    \HH=\J_3-\frac{\lambda(t)}{2j}\left(\J_1+\chi(\J_3+j\Id)\right)^2
+    \label{eq:firstOrderTransitionHamiltonian}
+\end{equation}
+for $\J=(\J_1,\J_2,\J_3)$ angular momentum operator, $\chi\in\R$ and $\lambda(t)$ some real time dependent parameter. The aim is to diagonalize this Hamiltonian to find the spectrum. Using the eigenbasis $\{\ket{j,m}\}$ for $m$ as a projection to the direction $\J_3$ and defining
+\begin{equation}
+    \J_\pm\coloneqq\frac{1}{2}(\J_1\pm i\J_2),
+\end{equation}
+we get matrix elements
+\begin{align}
+    \braket{j'm'|\J^2|jm} &= j(j+1)\delta_{j'j}\delta_{m'm}\\
+    \braket{j'm'|\J_3|jm} &= m \delta_{j'j}\delta_{m'm}\\
+    \braket{j'm'|\J_\pm|jm} &= \sqrt{(j\mp m)(j\pm m+1)}\delta_{j'j}\delta_{m'\pm 1},
+\end{align}
+for Kronecker delta $\delta_{a'b}$.
+
+Using
+\begin{align}
+        \left(\J_1+\chi(\J_3+j)\right)^2 &= \textcolor{purple}{\J_1^2} +\chi^2 (\J_3^2+j^2\Id+2j\J_3)+\chi(\textcolor{blue}{\J_1}\J_3+\J_3\textcolor{blue}{\J_1})+2\chi j\textcolor{blue}{\J_1}\\
+        \textcolor{purple}{\J_1^2}&= \frac{1}{4}(\J_++\J_-)^2= \frac{1}{4}(\J_+^2+\J_-^2+\textcolor{violet}{\J_+\J_-}+\textcolor{violet}{\J_-\J_+})\\ 
+        \textcolor{violet}{\J_\pm\J_\mp}&=\J^2-\J_3^2 \mp \J_3\\
+        \textcolor{blue}{\J_1}&=(\J_+ +\J_-),
+\end{align}
+we get matrix elements
+\begin{equation}
+    H
+\end{equation}

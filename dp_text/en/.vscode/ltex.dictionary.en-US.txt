@@ -16,3 +16,4 @@ submanifolds
 counter-diabatic
 adiabatically
 diagonalizing
+diagonalize
