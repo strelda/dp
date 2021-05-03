@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -31,6 +31,12 @@ Marián Fecko.
 \newblock Cambridge University Press, 2006.
 \newblock \doi{10.1017/CBO9780511755590}.
 
+\bibitem[Gorodski(2012)]{claudio}
+C.~Gorodski.
+\newblock \emph{An introduction to Riemannian geometry}.
+\newblock 2012.
+\newblock Preliminary version.
+
 \bibitem[Kolodrubetz et~al.(2017)Kolodrubetz, Sels, Mehta, and
   Polkovnikov]{kolodrubez}
 Michael Kolodrubetz, Dries Sels, Pankaj Mehta, and Anatoli Polkovnikov.
@@ -42,10 +48,16 @@ Michael Kolodrubetz, Dries Sels, Pankaj Mehta, and Anatoli Polkovnikov.
   \url{https://www.sciencedirect.com/science/article/pii/S0370157317301989}.
 \newblock Geometry and non-adiabatic response in quantum and classical systems.
 
-\bibitem[Loring(20017)]{lu}
+\bibitem[Loring(2017)]{lu}
 W.~Tu Loring.
 \newblock \emph{Differential Geometry}.
-\newblock Springer International Publishing, 20017.
+\newblock Springer International Publishing, 2017.
 \newblock \doi{10.1007/978-3-319-55084-8}.
+
+\bibitem[Petersen(1998)]{petersen}
+P.~Petersen.
+\newblock \emph{Riemannian Geometry}.
+\newblock Springer Verlag, 1998.
+\newblock ISBN 978-0-387-29403-2.
 
 \end{thebibliography}

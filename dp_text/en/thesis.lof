@@ -1,13 +1,19 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Mappings needed for the bundle definition.\relax }}{6}{figure.caption.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Fiber bundle over $\mathbb {R}^n$ with Hilbert spaces $\mathcal {H}({\bm {\lambda }})$ as individual fibers.\relax }}{9}{figure.caption.5}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Geometrical intuition to transport on fiber manifold sections $\mathcal {M}_i$.\relax }}{10}{figure.caption.6}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Space of bare states and its projection to space of rays $\mathcal {P}\mathcal {H}({\bm {\lambda }})\mathrel {\mathop :}\mathrel {\mkern -1.2mu}=\mathcal {H}({\bm {\lambda }}/U(1)$.\relax }}{10}{figure.caption.7}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Geometrical intuition to transport on fiber manifold sections $\mathcal {M}_s$.\relax }}{11}{figure.caption.8}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Parallel transporting around some closed curve $C$ with anholonomy drawn in yellow.\relax }}{12}{figure.caption.9}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Fiber bundle over $\mathbb {R}^n$ with Hilbert spaces $\mathcal {H}({\bm {\lambda }})$ as individual fibers.\relax }}{11}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Geometrical intuition to transport on fiber manifold sections $\mathcal {M}_i$.\relax }}{12}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Space of bare states and its projection to space of rays $\mathcal {P}\mathcal {H}({\bm {\lambda }})\mathrel {\mathop :}\mathrel {\mkern -1.2mu}=\mathcal {H}({\bm {\lambda }}/U(1)$.\relax }}{12}{figure.caption.7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Geometrical intuition to transport on fiber manifold sections $\mathcal {M}_s$.\relax }}{13}{figure.caption.8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Parallel transporting around some closed curve $C$ with anholonomy drawn in yellow.\relax }}{14}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Bloch sphere for the eigenstate $u_1$ with the initial direction of magnetic field $\mathbf B=(0,0,B_z)$ transported along $\gamma =\{(\phi ,\sqrt {\phi })|\phi \in [0,2\pi ]\}$ (blue). The final orientation of the magnetic field is marked red and the states on the Bloch sphere correspond to initial eigenstate.\relax }}{24}{figure.caption.10}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Bloch sphere for the eigenstate $u_1$ with the initial direction of magnetic field $\mathbf B=(0,0,B_z)$ transported along $\gamma =\{(0,\theta )|\theta \in [0,\pi /2]\}$ (blue). The final orientation of the magnetic field is marked red and the states on the Bloch sphere correspond to initial eigenstate.\relax }}{25}{figure.caption.11}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Bloch sphere for the eigenstate $u_1$ with the initial direction of magnetic field $\mathbf B=(0,0,B_z)$ transported along $\gamma =\{(\phi ,\sqrt {\phi })|\phi \in [0,2\pi ]\}$ (blue). The final orientation of the magnetic field is marked red and the states on the Bloch sphere correspond to initial eigenstate.\relax }}{27}{figure.caption.10}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Bloch sphere for the eigenstate $u_1$ with the initial direction of magnetic field $\mathbf B=(0,0,B_z)$ transported along $\gamma =\{(0,\theta )|\theta \in [0,\pi /2]\}$ (blue). The final orientation of the magnetic field is marked red and the states on the Bloch sphere correspond to initial eigenstate.\relax }}{28}{figure.caption.11}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Energy for the case $N=3$ Hamiltonian, section $\lambda =1$\relax }}{30}{figure.caption.12}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Energy for the case $N=3$ Hamiltonian, section $\chi =1$\relax }}{31}{figure.caption.13}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Arcustangens of the metric determinant in a parametric space for $N=3$.\relax }}{32}{figure.caption.14}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Arcustangens of Christoffel symbols for the case $N=3$\relax }}{33}{figure.caption.15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

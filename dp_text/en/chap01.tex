@@ -160,3 +160,54 @@ The \emph{wedge product} of $A\in \TT_p \M$ and $B\in \TT_q \M$ is antisymmetris
 \begin{equation}
     A\wedge B\equiv \frac{(p+q)!}{p!q!} A^{[i_1\dots i_p}\otimes B^{i_1\dots i_q]}
 \end{equation}
+
+\section{Useful definitions}
+\begin{definition}[Riemannian manifold]
+    Manifold is called Riemannian, iff its equipped with positive definite metric tensor.
+\end{definition}
+\begin{definition}[Connected manifold]
+    Manifold is connected, iff the distance between two points is infimum of the lengths of curves joining the two points.
+\end{definition}
+\begin{definition}[Compact manifold]
+    Manifold is said to be compact if its every open cover has a finite subcover .
+\end{definition}
+\begin{definition}[Geodesical completeness]
+    A manifold is said to be geodesically complete if its every geodesic can be extended to infinite values of their affine parameter. 
+\end{definition}
+This condition holds if the space does not contain any singularities and its coordinate-independent notion.
+\begin{definition}[Geodesic maximality]
+    A manifold is said to be geodesically maximal if its eighter geodesically complete, or every non-complete geodesic (such that cannot be extended to infinite values of their affine parameter) ends in a singularity.
+\end{definition}
+Geodesic maximality is coordinate dependent notion, if the manifold is geodesicaly complete.
+
+
+\section{Useful theorems}
+
+\begin{thm}[Von Neumann-Wigner]
+    \label{thm:n-2}
+(Von Neumann J, Wigner E. 1929.Physikalische Zeitschrift30:467-470)
+This sometimes called the Non-Crossing Theorem states, that the eigenvalues of Hermitean matrix driven by $N$ continuous real parameters forms at maximum $N-2$ dimensional submanifold.
+\end{thm}
+
+
+\begin{thm}[Hopf-Rinow Theorem]
+    \label{thm:hopf-Rinow}
+    For connected Riemannian manifold $\M$ with the metric $g$, following are equivalent:
+\begin{itemize}
+    \item $(\M,g)$ is geodesically complete, i.e. all geodesics are infinite
+    \item $(\M,g)$ is geodesically complete at some point $P$, i.e. geodesics going throw $P$ are infinite
+    \item $(\M,g)$ satisfies the Heine-Borel property, i.e. every closed bounded set is compact
+    \item $(\M,g)$ is complete as a metric space.
+\end{itemize}
+See \citet{petersen}[p.125].
+\end{thm}
+\begin{thm}[Modified Hopf-Rinow Theorem]
+    \label{thm:hopf-Rinow_modified}
+    For connected Riemannian manifold $\M$ with the metric $g$, any two points of $\M$ can be joined with a minimizing geodesic. See \citet{claudio}[Chapter 3].
+\end{thm}
+This generally means, that in a space with singularity exists such points, which cannot be connected with the rest of the manifold using geodesics. Term "event horizont" will be used for such segments of manifold, as is common in General relativity.
+
+\begin{thm}
+    \label{thm:compact}
+    A compact Riemannian manifold is geodesically complete. See \citet{claudio}[Chapter 3].
+\end{thm}

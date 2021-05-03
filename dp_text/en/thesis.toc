@@ -11,28 +11,34 @@
 \contentsline {section}{\numberline {1.6}Covariant derivative and parallel transport}{8}{section.1.6}
 \contentsline {section}{\numberline {1.7}Parallel transport on vector bundles}{8}{section.1.7}
 \contentsline {section}{\numberline {1.8}Antisymmetric tensors and wedge product}{8}{section.1.8}
-\contentsline {chapter}{\numberline {2}Physical introduction}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Transporting states}{11}{section.2.1}
-\contentsline {section}{\numberline {2.2}Metric and geometric tensor}{13}{section.2.2}
-\contentsline {section}{\numberline {2.3}Derivation of the geometric tensor}{15}{section.2.3}
-\contentsline {section}{\numberline {2.4}Hamiltonian induced flow on manifold}{15}{section.2.4}
-\contentsline {section}{\numberline {2.5}Adiabaticity}{16}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Slow transports}{16}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Geodetic driving}{17}{section.2.6}
-\contentsline {section}{\numberline {2.7}Gauge potentials}{17}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Classical gauge potential}{18}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Quantum gauge potential}{18}{subsection.2.7.2}
-\contentsline {subsection}{\numberline {2.7.3}Adiabatic gauge potential}{19}{subsection.2.7.3}
-\contentsline {section}{\numberline {2.8}Counter-diabatic driving}{20}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Explicit form}{21}{subsection.2.8.1}
-\contentsline {section}{\numberline {2.9}Berry phase and curvature}{21}{section.2.9}
-\contentsline {section}{\numberline {2.10}\leavevmode {\color {blue}Approximations of adiabatic potentials}}{22}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}Variational methods}{22}{subsection.2.10.1}
-\contentsline {chapter}{\numberline {3}Spin 1/2}{23}{chapter.3}
-\contentsline {section}{\numberline {3.1}Special case}{24}{section.3.1}
-\contentsline {chapter}{\numberline {4}First order transition Hamiltonian}{26}{chapter.4}
-\contentsline {chapter}{Conclusion}{27}{chapter*.12}
-\contentsline {chapter}{Bibliography}{28}{chapter*.13}
-\contentsline {chapter}{List of Figures}{29}{chapter*.14}
-\contentsline {chapter}{\numberline {A}Attachments}{30}{appendix.A}
-\contentsline {section}{\numberline {A.1}First Attachment}{30}{section.A.1}
+\contentsline {section}{\numberline {1.9}Useful definitions}{9}{section.1.9}
+\contentsline {section}{\numberline {1.10}Useful theorems}{9}{section.1.10}
+\contentsline {chapter}{\numberline {2}Physical introduction}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Transporting states}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}Metric and geometric tensor}{15}{section.2.2}
+\contentsline {section}{\numberline {2.3}Derivation of the geometric tensor}{17}{section.2.3}
+\contentsline {section}{\numberline {2.4}Hamiltonian induced flow on manifold}{17}{section.2.4}
+\contentsline {section}{\numberline {2.5}Adiabaticity}{18}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Slow transports}{18}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Geodetic driving}{19}{section.2.6}
+\contentsline {section}{\numberline {2.7}Gauge potentials}{19}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Classical gauge potential}{20}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Quantum gauge potential}{20}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Adiabatic gauge potential}{21}{subsection.2.7.3}
+\contentsline {section}{\numberline {2.8}Counter-diabatic driving}{22}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Explicit form}{23}{subsection.2.8.1}
+\contentsline {section}{\numberline {2.9}Berry phase and curvature}{23}{section.2.9}
+\contentsline {section}{\numberline {2.10}\leavevmode {\color {blue}Approximations of adiabatic potentials}}{24}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Variational methods}{24}{subsection.2.10.1}
+\contentsline {chapter}{\numberline {3}Geodesics}{25}{chapter.3}
+\contentsline {chapter}{\numberline {4}Spin 1/2}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Special case}{27}{section.4.1}
+\contentsline {chapter}{\numberline {5}First order transition Hamiltonian}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Hamiltonian analysis}{30}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Case N=3}{30}{subsection.5.1.1}
+\contentsline {chapter}{Conclusion}{34}{chapter*.16}
+\contentsline {chapter}{Bibliography}{35}{chapter*.17}
+\contentsline {chapter}{List of Figures}{36}{chapter*.18}
+\contentsline {chapter}{\numberline {A}Appendix 1}{37}{appendix.A}
+\contentsline {chapter}{\numberline {B}Attachments}{38}{appendix.B}
+\contentsline {section}{\numberline {B.1}First Attachment}{38}{section.B.1}
