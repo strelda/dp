@@ -12,8 +12,8 @@ for $\J=(\J_1,\J_2,\J_3)$ angular momentum operator, $\tilde\chi\in\R$ and $\til
 for
 \begin{align}
     \hat V_1 &=-\frac{1}{2j}\J_1^2\\
-    \hat V_2 &= -\frac{1}{2j}\left[\J_1(\J_3+j)+(\J_3+j)\J_1\right]\\
-    \hat V_3 &= -\frac{1}{2j}(\J_3+j)^2
+    \hat V_2 &= -\frac{1}{2j}\left[\J_1(\J_3+j\Id)+(\J_3+j\Id)\J_1\right]\\
+    \hat V_3 &= -\frac{1}{2j}(\J_3+j\Id)^2
 \end{align}
 
 
@@ -74,8 +74,7 @@ Spectrum of this Hamiltonian can be written in analytically using some substitut
         E_3 &= \frac{1}{12}  \left(G+F+\frac{\sqrt{D+E}}{2}\right).
         \label{eq:N=3_en3}
 \end{align}
-
-Sections $\lambda=1$ and $\chi=1$ are shown in figures \ref{fig:N=3_energiesl},\ref{fig:N=3_energiesc}
+Eigenvectors can also be written analytically, but due to their compexity its better to analize them only numerically. Sections $\lambda=1$ and $\chi=1$ are shown in figures \ref{fig:N=3_energiesl},\ref{fig:N=3_energiesc}
 \begin{figure}[h]
     \centering
     \includegraphics{../img/N=3_energiesl.pdf}
@@ -91,16 +90,29 @@ Sections $\lambda=1$ and $\chi=1$ are shown in figures \ref{fig:N=3_energiesl},\
 
 From equations \ref{eq:N=3_en0}, \ref{eq:N=3_en1} can be seen that $E_0=E_1$ for $D=E$, which for real values $\lambda,\;\chi$ has two solutions
 $$(\lambda_d,\pm \chi_d)=\left(-\frac{1}{2},\pm\sqrt{\frac{3}{5}}\right).$$
-The solution is point-like, because we only care about real solutions. Further on, this corresponds to Theorem \ref{thm:n-2}, which states that Hamiltonian driven by two real parameters can be degenerated only on 0-dimensional manifolds.
+Point-like characteristics corresponds to Theorem \ref{thm:n-2}, which states that Hamiltonian driven by two real parameters can be degenerated only on 0-dimensional manifolds. 
 
 
-Here the energy spectrum is degenerate and metric tensor diverges, see fig. \ref{fig:N=3_gDivenrgence}, along with Christoffel symbols elements, see fig. \ref{fig:N=3_G}. Note that metric tensor determinant is positive definite, thus the manifold is Riemannian.
+Here the energy spectrum is degenerate and metric tensor diverges, see individual elements on fig. \ref{fig:N=3_g} and its determinant fig. \ref{fig:N=3_gDivenrgence}, along with Christoffel symbols elements, see fig. \ref{fig:N=3_G}. Note that metric tensor determinant is positive definite, thus the manifold is Riemannian. Further on it reflects symmetry $\chi\leftrightarrow-\chi$, except for off-diagonal elements, i.e. $g_{12}$, $\Gamma_{121}$, $\Gamma_{211}$, $\Gamma_{222}$, which switches their sign.
+\begin{figure}
+    \centering
+    \begin{tabular}{cc}
+    \subcaptionbox{$\arctan(g_{11})$}{\includegraphics{../img/N=3_g11.pdf}} \\
+    \subcaptionbox{$\arctan(g_{12})$}{\includegraphics{../img/N=3_g12.pdf}}\\
+    \subcaptionbox{$\arctan(g_{22})$}{\includegraphics{../img/N=3_g22.pdf}}\\
+    \end{tabular}
+\includegraphics{../img/N=3_barA.pdf}
+    \caption{Arcustangens of metric tensor elements for the case $N=3$}
+    \label{fig:N=3_g}
+\end{figure}
+
 \begin{figure}[h]
     \centering
     \includegraphics{../img/N=3_gDivergence.pdf}
-    \caption{Arcustangens of the metric determinant in a parametric space for $N=3$.}
+    \caption{Metric determinant in a parameter space for $N=3$.}
     \label{fig:N=3_gDivenrgence}    
 \end{figure}
+
 
 \begin{figure}
     \centering

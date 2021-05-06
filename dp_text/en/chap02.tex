@@ -171,6 +171,7 @@ Let's first look at $\P\M_s$, which is needed to be \emph{gauge independent}. Ga
 For $\phi(\llambda)\in \mathcal C^2$ we see from eq. \ref{eq:vectorPotentialDef}, that gauge independent choice would be for infinitesimal change for example
 \begin{equation}
     f=\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)},
+    \label{eq:fidelityDefinition}
 \end{equation}
 sometimes referred to as the \emph{fidelity of a ground state}\footnote{Generalization for any mixed state is for two density matrices $\sigma$, $\rho$ as $$f\coloneqq \left(\Tr \sqrt{\sqrt{\rho}\sigma\sqrt{\rho}}\right)$$}. We can see it's physical meaning imagining \emph{quantum quench} (rapid change of some Hamiltonian parameters), in which case $f^2$ is the probability that system will remain in the new ground state. $1-f^2$ is therefore probability of exciting the system during this quench, which leads to the definition of \emph{distance on $\M_0$}\footnote{$\d$ notation is in differential geometry assumed to be an exterior differential. On functions, it acts as $\d: \F\M\rightarrow \mathcal{T}_1\M$ and intuitively corresponds to total differential from functional analysis.}
 \begin{equation}
@@ -186,6 +187,7 @@ We can easily check, that the axioms of metric defined using distance as bilinea
 Because $1-f^2>0$, the first term of Taylor expansion is zero, thus we have for a metric tensor
 \begin{equation}
     \d s^2 = g_{\mu\nu}\d \lambda^\mu \d\lambda^\nu+\O(\lambda^3).
+    \label{eq:metricTensorDef}
 \end{equation} 
 
 Let's define the metric on the space of states $\M_0$ and then see, how it corresponds to fidelity. This metric is called the \emph{Geometric tensor}, and can be expressed as 
@@ -193,12 +195,26 @@ Let's define the metric on the space of states $\M_0$ and then see, how it corre
     \chi_{\mu\nu}\coloneqq \braket{\partial_\mu o|\partial_\nu o}_c \equiv \braket{\partial_\mu o|\partial_\nu o} - \braket{\partial_\mu o|o}\braket{o|\partial_\nu o},
     \label{eq:geometricTensor}
 \end{equation}
-where shortened notation $\partial_\nu\coloneqq\pder{}{\lambda^\nu}$ was used.
-Because $\chi$ is Hermitian ($\chi_{\mu\nu}=\chi^*_{\nu\mu}$), only the symmetric part determines the distance between states
-\begin{equation}
-    \d s^2= g_{\mu\nu}\d \lambda^\mu \d\lambda^\nu= \chi_{\mu\nu}\d \lambda^\mu \d\lambda^\nu,
-\end{equation}
-therefore it is practical to decompose it as
+where shortened notation $\partial_\nu\coloneqq\pder{}{\lambda^\nu}$ was used. 
+
+\begin{proof}[Proof for Geometric tensor expression] In one-dimensional case we get from eq. \ref{eq:fidelityDefinition} using Taylor expansion and shortened notation $o\coloneqq o(\lambda)$
+    \begin{equation}
+        f=1+\braket{\partial_\lambda o|o}\delta\lambda-\frac{1}{2}\braket{\partial_\lambda^2 o|o}\delta\lambda^2+\mathcal{O}(\lambda^3),
+    \end{equation}
+    which plugged into eq. \ref{eq:distanceOnM0} gives
+    \begin{equation}
+        \begin{split}
+            \d s^2&=1-\bar{f}f=\left[-\braket{o|\partial_\lambda o}\braket{\partial_\lambda o|o}+\frac{1}{2}\braket{\partial_\lambda^2 o|o}+\frac{1}{2}\braket{o|\partial_\lambda^2 o}\right]\delta \lambda^2.
+        \end{split}
+    \end{equation}
+    Generalizing for $\lambda\in \R^n$, we get\footnote{assuming Hermiticity of the derivative operator everywhere on the ground state manifold}
+    \begin{equation}
+        \d s^2=\left[-\braket{o|\partial_\mu o}\braket{\partial_\nu o|o}+\underbrace{\frac{1}{2}\braket{o|\partial_\mu \partial_\nu|o}+\frac{1}{2}\braket{o|\partial_\nu \partial_\mu| o}}_{\Re\braket{\partial_mu o|\partial_\nu o}}\right]\delta \lambda^\mu\delta \lambda^\nu.
+    \end{equation}
+    Because only symmetric part contributes in the sum in eq. \ref{eq:metricTensorDef}, this proves symmetric part of equation \ref{eq:geometricTensor} and shows, that some more general tensor (\emph{geometric tensor}) exists.
+\end{proof}
+
+It is practical to decompose it the geometric tensor
 \begin{equation}
     \chi_{\mu\nu} \equiv g_{\mu\nu} - i\frac{1}{2} \nu_{\mu\nu},
 \end{equation}
