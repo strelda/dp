@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  6 MAY 2021 00:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  16 MAY 2021 14:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2270,7 +2270,7 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 6.
 
 
 pdfTeX warning: pdflatex (file ../img/logo-en.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/logo-en.pdf, id=185, 506.4591pt x 156.49065pt>
+<../img/logo-en.pdf, id=193, 506.4591pt x 156.49065pt>
 File: ../img/logo-en.pdf Graphic file (type pdf)
 <use ../img/logo-en.pdf>
 Package pdftex.def Info: ../img/logo-en.pdf  used on input line 9.
@@ -2351,7 +2351,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-<../img/bundle.png, id=308, 557.08125pt x 214.8025pt>
+<../img/bundle.png, id=318, 557.08125pt x 214.8025pt>
 File: ../img/bundle.png Graphic file (type png)
 <use ../img/bundle.png>
 Package pdftex.def Info: ../img/bundle.png  used on input line 54.
@@ -2364,28 +2364,28 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 69.
  [7] [8]
-Overfull \hbox (1.89963pt too wide) in paragraph at lines 181--182
+Overfull \hbox (1.89963pt too wide) in paragraph at lines 182--183
 []\OT1/lmr/m/n/12 Geodesic max-i-mal-ity is co-or-di-nate de-pen-dent no-tion, if the man-i-fold is geodesi-|
  []
 
 
-Overfull \hbox (14.5056pt too wide) in paragraph at lines 188--190
+Overfull \hbox (14.5056pt too wide) in paragraph at lines 189--191
 [][]\OT1/lmr/bx/n/12 Theorem 1 \OT1/lmr/m/n/12 (Von Neu-man-n-Wigner)\OT1/lmr/bx/n/12 . []\OT1/lmr/m/it/12 (Von Neu-mann J, Wigner E. 1929.Physikalis-|
  []
 
 
-Overfull \hbox (7.30667pt too wide) in paragraph at lines 188--190
+Overfull \hbox (7.30667pt too wide) in paragraph at lines 189--191
 \OT1/lmr/m/it/12 che Zeitschrift30:467-470) This some-times called the Non-Crossing The-o-rem states,|
  []
 
 LaTeX Font Info:    Font shape `OMS/lmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 197.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 198.
 [9]) [10]
 \openout2 = `chap02.aux'.
 
  (/home/strelda/Documents/mff/dp/dp_text/en/chap02.tex
 Chapter 2.
-<../img/manifold_basic.png, id=374, 1912.14375pt x 896.34875pt>
+<../img/manifold_basic.png, id=384, 1912.14375pt x 896.34875pt>
 File: ../img/manifold_basic.png Graphic file (type png)
 <use ../img/manifold_basic.png>
 Package pdftex.def Info: ../img/manifold_basic.png  used on input line 14.
@@ -2395,23 +2395,23 @@ Package pdftex.def Info: ../img/manifold_basic.png  used on input line 14.
 
 
  <../img/manifold_basic.png>]
-<../img/manifold_full.png, id=390, 2139.995pt x 903.375pt>
+<../img/manifold_full.png, id=400, 2139.995pt x 903.375pt>
 File: ../img/manifold_full.png Graphic file (type png)
 <use ../img/manifold_full.png>
 Package pdftex.def Info: ../img/manifold_full.png  used on input line 40.
 (pdftex.def)             Requested size: 412.56496pt x 174.15178pt.
-<../img/projectiveHilbertSpace.png, id=392, 1509.64pt x 763.85374pt>
+<../img/projectiveHilbertSpace.png, id=402, 1509.64pt x 763.85374pt>
 File: ../img/projectiveHilbertSpace.png Graphic file (type png)
 <use ../img/projectiveHilbertSpace.png>
 Package pdftex.def Info: ../img/projectiveHilbertSpace.png  used on input line 51.
 (pdftex.def)             Requested size: 330.05322pt x 166.99934pt.
  [12 <../img/manifold_full.png> <../img/projectiveHilbertSpace.png>]
-<../img/manifoldCutIntuition.png, id=400, 1676.2625pt x 994.71625pt>
+<../img/manifoldCutIntuition.png, id=410, 1676.2625pt x 994.71625pt>
 File: ../img/manifoldCutIntuition.png Graphic file (type png)
 <use ../img/manifoldCutIntuition.png>
 Package pdftex.def Info: ../img/manifoldCutIntuition.png  used on input line 66.
 (pdftex.def)             Requested size: 412.56496pt x 244.80803pt.
-<../img/parallelTransportClosedCurve.png, id=403, 1726.45pt x 772.8875pt>
+<../img/parallelTransportClosedCurve.png, id=413, 1726.45pt x 772.8875pt>
 File: ../img/parallelTransportClosedCurve.png Graphic file (type png)
 <use ../img/parallelTransportClosedCurve.png>
 Package pdftex.def Info: ../img/parallelTransportClosedCurve.png  used on input line 87.
@@ -2445,7 +2445,7 @@ Chapter 4.
 
 
 pdfTeX warning: pdflatex (file ../img/blochArbitraryTransport.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/blochArbitraryTransport.pdf, id=592, 260.975pt x 282.05376pt>
+<../img/blochArbitraryTransport.pdf, id=602, 260.975pt x 282.05376pt>
 File: ../img/blochArbitraryTransport.pdf Graphic file (type pdf)
 <use ../img/blochArbitraryTransport.pdf>
 Package pdftex.def Info: ../img/blochArbitraryTransport.pdf  used on input line 87.
@@ -2460,7 +2460,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ]
 
 pdfTeX warning: pdflatex (file ../img/blochPiHalfTransport.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/blochPiHalfTransport.pdf, id=609, 294.09875pt x 323.2075pt>
+<../img/blochPiHalfTransport.pdf, id=619, 294.09875pt x 323.2075pt>
 File: ../img/blochPiHalfTransport.pdf Graphic file (type pdf)
 <use ../img/blochPiHalfTransport.pdf>
 Package pdftex.def Info: ../img/blochPiHalfTransport.pdf  used on input line 107.
@@ -2483,18 +2483,18 @@ File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ]
 
 pdfTeX warning: pdflatex (file ../img/N=3_energiesl.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_energiesl.pdf, id=655, 403.5075pt x 239.89626pt>
+<../img/N=3_energiesl.pdf, id=665, 403.5075pt x 239.89626pt>
 File: ../img/N=3_energiesl.pdf Graphic file (type pdf)
 <use ../img/N=3_energiesl.pdf>
-Package pdftex.def Info: ../img/N=3_energiesl.pdf  used on input line 80.
+Package pdftex.def Info: ../img/N=3_energiesl.pdf  used on input line 82.
 (pdftex.def)             Requested size: 403.50652pt x 239.89566pt.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_energiesc.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_energiesc.pdf, id=656, 403.5075pt x 239.89626pt>
+<../img/N=3_energiesc.pdf, id=666, 403.5075pt x 239.89626pt>
 File: ../img/N=3_energiesc.pdf Graphic file (type pdf)
 <use ../img/N=3_energiesc.pdf>
-Package pdftex.def Info: ../img/N=3_energiesc.pdf  used on input line 86.
+Package pdftex.def Info: ../img/N=3_energiesc.pdf  used on input line 88.
 (pdftex.def)             Requested size: 403.50652pt x 239.89566pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2502,47 +2502,47 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [30 <../img/N=3_energiesl.pdf>]
 
 pdfTeX warning: pdflatex (file ../img/N=3_g11.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_g11.pdf, id=688, 190.7125pt x 191.71625pt>
+<../img/N=3_g11.pdf, id=698, 190.7125pt x 191.71625pt>
 File: ../img/N=3_g11.pdf Graphic file (type pdf)
 <use ../img/N=3_g11.pdf>
-Package pdftex.def Info: ../img/N=3_g11.pdf  used on input line 100.
+Package pdftex.def Info: ../img/N=3_g11.pdf  used on input line 101.
 (pdftex.def)             Requested size: 190.71202pt x 191.71577pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 100.
+(Font)              <10.95> on input line 101.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_g12.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_g12.pdf, id=689, 190.7125pt x 191.71625pt>
+<../img/N=3_g12.pdf, id=699, 190.7125pt x 191.71625pt>
 File: ../img/N=3_g12.pdf Graphic file (type pdf)
 <use ../img/N=3_g12.pdf>
-Package pdftex.def Info: ../img/N=3_g12.pdf  used on input line 101.
+Package pdftex.def Info: ../img/N=3_g12.pdf  used on input line 102.
 (pdftex.def)             Requested size: 190.71202pt x 191.71577pt.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_g22.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_g22.pdf, id=690, 190.7125pt x 191.71625pt>
+<../img/N=3_g22.pdf, id=700, 190.7125pt x 191.71625pt>
 File: ../img/N=3_g22.pdf Graphic file (type pdf)
 <use ../img/N=3_g22.pdf>
-Package pdftex.def Info: ../img/N=3_g22.pdf  used on input line 102.
+Package pdftex.def Info: ../img/N=3_g22.pdf  used on input line 103.
 (pdftex.def)             Requested size: 190.71202pt x 191.71577pt.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_barA.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_barA.pdf, id=691, 369.38pt x 45.16875pt>
+<../img/N=3_barA.pdf, id=701, 369.38pt x 45.16875pt>
 File: ../img/N=3_barA.pdf Graphic file (type pdf)
 <use ../img/N=3_barA.pdf>
-Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 104.
+Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 105.
 (pdftex.def)             Requested size: 369.37909pt x 45.16862pt.
 
-LaTeX Warning: Float too large for page by 1.83284pt on input line 107.
+LaTeX Warning: Float too large for page by 1.83284pt on input line 108.
 
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_gDivergence.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_gDivergence.pdf, id=692, 400.49625pt x 323.2075pt>
+<../img/N=3_gDivergence.pdf, id=702, 400.49625pt x 323.2075pt>
 File: ../img/N=3_gDivergence.pdf Graphic file (type pdf)
 <use ../img/N=3_gDivergence.pdf>
-Package pdftex.def Info: ../img/N=3_gDivergence.pdf  used on input line 111.
+Package pdftex.def Info: ../img/N=3_gDivergence.pdf  used on input line 112.
 (pdftex.def)             Requested size: 400.49527pt x 323.20671pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2550,59 +2550,70 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_G111.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_G111.pdf, id=693, 190.7125pt x 191.71625pt>
+<../img/N=3_G111.pdf, id=703, 190.7125pt x 191.71625pt>
 File: ../img/N=3_G111.pdf Graphic file (type pdf)
 <use ../img/N=3_G111.pdf>
-Package pdftex.def Info: ../img/N=3_G111.pdf  used on input line 120.
+Package pdftex.def Info: ../img/N=3_G111.pdf  used on input line 121.
 (pdftex.def)             Requested size: 190.71202pt x 191.71577pt.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_G211.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_G211.pdf, id=694, 190.7125pt x 191.71625pt>
+<../img/N=3_G211.pdf, id=704, 190.7125pt x 191.71625pt>
 File: ../img/N=3_G211.pdf Graphic file (type pdf)
 <use ../img/N=3_G211.pdf>
-Package pdftex.def Info: ../img/N=3_G211.pdf  used on input line 121.
+Package pdftex.def Info: ../img/N=3_G211.pdf  used on input line 122.
 (pdftex.def)             Requested size: 190.71202pt x 191.71577pt.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_G121.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_G121.pdf, id=695, 190.7125pt x 191.71625pt>
+<../img/N=3_G121.pdf, id=705, 190.7125pt x 191.71625pt>
 File: ../img/N=3_G121.pdf Graphic file (type pdf)
 <use ../img/N=3_G121.pdf>
-Package pdftex.def Info: ../img/N=3_G121.pdf  used on input line 122.
+Package pdftex.def Info: ../img/N=3_G121.pdf  used on input line 123.
 (pdftex.def)             Requested size: 190.71202pt x 191.71577pt.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_G221.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_G221.pdf, id=696, 190.7125pt x 191.71625pt>
+<../img/N=3_G221.pdf, id=706, 190.7125pt x 191.71625pt>
 File: ../img/N=3_G221.pdf Graphic file (type pdf)
 <use ../img/N=3_G221.pdf>
-Package pdftex.def Info: ../img/N=3_G221.pdf  used on input line 123.
+Package pdftex.def Info: ../img/N=3_G221.pdf  used on input line 124.
 (pdftex.def)             Requested size: 190.71202pt x 191.71577pt.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_G122.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_G122.pdf, id=697, 190.7125pt x 191.71625pt>
+<../img/N=3_G122.pdf, id=707, 190.7125pt x 191.71625pt>
 File: ../img/N=3_G122.pdf Graphic file (type pdf)
 <use ../img/N=3_G122.pdf>
-Package pdftex.def Info: ../img/N=3_G122.pdf  used on input line 124.
+Package pdftex.def Info: ../img/N=3_G122.pdf  used on input line 125.
 (pdftex.def)             Requested size: 190.71202pt x 191.71577pt.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_G222.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_G222.pdf, id=698, 190.7125pt x 191.71625pt>
+<../img/N=3_G222.pdf, id=708, 190.7125pt x 191.71625pt>
 File: ../img/N=3_G222.pdf Graphic file (type pdf)
 <use ../img/N=3_G222.pdf>
-Package pdftex.def Info: ../img/N=3_G222.pdf  used on input line 125.
+Package pdftex.def Info: ../img/N=3_G222.pdf  used on input line 126.
 (pdftex.def)             Requested size: 190.71202pt x 191.71577pt.
 File: ../img/N=3_barA.pdf Graphic file (type pdf)
 <use ../img/N=3_barA.pdf>
-Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 127.
+Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 128.
 (pdftex.def)             Requested size: 369.37909pt x 45.16862pt.
 
-LaTeX Warning: Float too large for page by 1.83284pt on input line 130.
+LaTeX Warning: Float too large for page by 1.83284pt on input line 131.
 
-) [31 <../img/N=3_energiesc.pdf>] [32 <../img/N=3_g11.pdf> <../img/N=3_g12.pdf
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+pdfTeX warning: pdflatex (file ../img/N=3_geodesics.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<../img/N=3_geodesics.pdf, id=712, 361.35pt x 366.36874pt>
+File: ../img/N=3_geodesics.pdf Graphic file (type pdf)
+<use ../img/N=3_geodesics.pdf>
+Package pdftex.def Info: ../img/N=3_geodesics.pdf  used on input line 141.
+(pdftex.def)             Requested size: 361.34912pt x 366.36784pt.
+[31 <../img/N=3_energiesc.pdf>] [32 <../img/N=3_g11.pdf> <../img/N=3_g12.pdf
 
 pdfTeX warning: pdflatex (file ../img/N=3_g12.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <../img/N=3_g22.pdf
@@ -2611,7 +2622,83 @@ pdfTeX warning: pdflatex (file ../img/N=3_g22.pdf): PDF inclusion: multiple pdfs
 > <../img/N=3_barA.pdf
 
 pdfTeX warning: pdflatex (file ../img/N=3_barA.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [33 <../img/N=3_gDivergence.pdf>] [34 <../img/N=3_G111.pdf> <../img/N=3_G211.pdf
+>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../img/geodesicsinGR.png, id=769, 903.375pt x 537.00626pt>
+File: ../img/geodesicsinGR.png Graphic file (type png)
+<use ../img/geodesicsinGR.png>
+Package pdftex.def Info: ../img/geodesicsinGR.png  used on input line 147.
+(pdftex.def)             Requested size: 247.54149pt x 147.14865pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[33 <../img/N=3_gDivergence.pdf>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 154.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 154.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 154.
+
+
+
+pdfTeX warning: pdflatex (file ../img/N=10_energiesl.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<../img/N=10_energiesl.pdf, id=790, 331.2375pt x 319.1925pt>
+File: ../img/N=10_energiesl.pdf Graphic file (type pdf)
+<use ../img/N=10_energiesl.pdf>
+Package pdftex.def Info: ../img/N=10_energiesl.pdf  used on input line 165.
+(pdftex.def)             Requested size: 331.23668pt x 319.19171pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+pdfTeX warning: pdflatex (file ../img/N=10_energies2.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<../img/N=10_energies2.pdf, id=791, 321.2pt x 315.1775pt>
+File: ../img/N=10_energies2.pdf Graphic file (type pdf)
+<use ../img/N=10_energies2.pdf>
+Package pdftex.def Info: ../img/N=10_energies2.pdf  used on input line 171.
+(pdftex.def)             Requested size: 321.19922pt x 315.17673pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+pdfTeX warning: pdflatex (file ../img/divPosition.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<../img/divPosition.pdf, id=792, 411.5375pt x 270.00874pt>
+File: ../img/divPosition.pdf Graphic file (type pdf)
+<use ../img/divPosition.pdf>
+Package pdftex.def Info: ../img/divPosition.pdf  used on input line 178.
+(pdftex.def)             Requested size: 411.5365pt x 270.00807pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 186.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 186.
+
+
+
+pdfTeX warning: pdflatex (file ../img/infiniteN_transitionCompare.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<../img/infiniteN_transitionCompare.pdf, id=796, 411.5375pt x 271.0125pt>
+File: ../img/infiniteN_transitionCompare.pdf Graphic file (type pdf)
+<use ../img/infiniteN_transitionCompare.pdf>
+Package pdftex.def Info: ../img/infiniteN_transitionCompare.pdf  used on input line 195.
+(pdftex.def)             Requested size: 411.5365pt x 271.01183pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [34] [35 <../img/N=3_G111.pdf> <../img/N=3_G211.pdf
 
 pdfTeX warning: pdflatex (file ../img/N=3_G211.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <../img/N=3_G121.pdf
@@ -2626,10 +2713,16 @@ pdfTeX warning: pdflatex (file ../img/N=3_G122.pdf): PDF inclusion: multiple pdf
 > <../img/N=3_G222.pdf
 
 pdfTeX warning: pdflatex (file ../img/N=3_G222.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [36 <../img/N=3_geodesics.pdf> <../img/geodesicsinGR.png>] [37 <../img/N=10_energiesl.pdf> <../img/N=10_energies2.pdf
+
+pdfTeX warning: pdflatex (file ../img/N=10_energies2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [38 <../img/divPosition.pdf> <../img/infiniteN_transitionCompare.pdf
+
+pdfTeX warning: pdflatex (file ../img/infiniteN_transitionCompare.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 \openout2 = `epilog.aux'.
 
- (/home/strelda/Documents/mff/dp/dp_text/en/epilog.tex) [35
+ (/home/strelda/Documents/mff/dp/dp_text/en/epilog.tex) [39
 
 
 
@@ -2650,15 +2743,20 @@ Underfull \hbox (badness 1178) in paragraph at lines 42--50
 \OT1/lmr/m/it/12 Physics Re-ports\OT1/lmr/m/n/12 , 697:1--87, 2017.  ISSN 0370-1573.  doi: $https : / / doi .
  []
 
-)) [36
+)) [40
 
 
 
-] (/home/strelda/Documents/mff/dp/dp_text/en/thesis.lof)
+] (/home/strelda/Documents/mff/dp/dp_text/en/thesis.lof
+Overfull \hbox (0.60533pt too wide) in paragraph at lines 19--19
+ [][] [][]\OT1/lmr/m/n/12 Geodesics start-ing from $(\OML/lmm/m/it/12 ^^U[]\OT1/lmr/m/n/12 ; \OML/lmm/m/it/12 ^^_[]\OT1/lmr/m/n/12 ) = (0; 0)$ with $(\OML/lmm/m/it/12 ^^U[]\OT1/lmr/m/n/12 ; \OML/lmm/m/it/12 ^^_[]\OT1/lmr/m/n/12 ) = ([] \OML/lmm/m/it/12 ^^R\OT1/lmr/m/n/12 ; [] \OML/lmm/m/it/12 ^^R\OT1/lmr/m/n/12 )$ |
+ []
+
+)
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [37
+ [41
 
 
 ]
@@ -2666,12 +2764,12 @@ Underfull \hbox (badness 1178) in paragraph at lines 42--50
 
  (/home/strelda/Documents/mff/dp/dp_text/en/appendix1.tex
 Appendix A.
-) [38
+) [42
 
 
 ]
 Appendix B.
-[39
+[43
 
 
 ]
@@ -2681,7 +2779,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 314B481201C4BAC46DEB234081DBB243;6978.
+(rerunfilecheck)             Checksum: A34EFEBBC6EC36D369236F0CE53D69FB;7200.
 
 
 LaTeX Warning: There were undefined references.
@@ -2689,17 +2787,17 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
  ) 
 Here is how much of TeX's memory you used:
- 26019 strings out of 492982
- 443739 string characters out of 6134896
- 478740 words of memory out of 5000000
- 28741 multiletter control sequences out of 15000+600000
- 95228 words of font info for 95 fonts, out of 8000000 for 9000
+ 26083 strings out of 492982
+ 445256 string characters out of 6134896
+ 480636 words of memory out of 5000000
+ 28784 multiletter control sequences out of 15000+600000
+ 97315 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,26n,54p,980b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,26n,54p,1110b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} </home/strelda/.texlive2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk>{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on /home/strelda/Documents/mff/dp/dp_text/en/thesis.pdf (43 pages, 6994195 bytes).
+Output written on /home/strelda/Documents/mff/dp/dp_text/en/thesis.pdf (47 pages, 7463433 bytes).
 PDF statistics:
- 1024 PDF objects out of 1200 (max. 8388607)
- 248 named destinations out of 1000 (max. 500000)
- 487 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1147 PDF objects out of 1200 (max. 8388607)
+ 262 named destinations out of 1000 (max. 500000)
+ 533 words of extra memory for PDF output out of 10000 (max. 10000000)
 

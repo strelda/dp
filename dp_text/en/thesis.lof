@@ -15,6 +15,12 @@
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Energy for the case $N=3$ Hamiltonian, section $\chi =1$\relax }}{31}{figure.caption.13}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Arcustangens of metric tensor elements for the case $N=3$\relax }}{32}{figure.caption.14}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Metric determinant in a parameter space for $N=3$.\relax }}{33}{figure.caption.15}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Arcustangens of Christoffel symbols for the case $N=3$\relax }}{34}{figure.caption.16}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Arcustangens of Christoffel symbols for the case $N=3$\relax }}{35}{figure.caption.16}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Geodesics starting from $(\lambda _i;\chi _i)=(0;0)$ with $(\lambda '_i;\chi '_i)=(\qopname \relax o{cos}\theta ;\qopname \relax o{sin}\theta )$ $N=3$.\relax }}{36}{figure.caption.17}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Comparing geodesics with repulsing (blue) and attracting (red) metric tensor divergence in the spherical symmetrical space. \relax }}{36}{figure.caption.18}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Energy spectrum as function of $\chi $, for $\lambda =1$ and $N=10$.\relax }}{37}{figure.caption.19}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Energy spectrum as function of $\lambda $, for $\chi =1$ and $N=10$.\relax }}{37}{figure.caption.20}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Singularities in the metric tensor for different values of $N$ with linear regression according to eq. \ref {eq:linearRegressionSingularities}. Green points mark minimums.\relax }}{38}{figure.caption.21}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces First order transition (red), second order transition (blue point), minimum between the ground state and first excited state in N=3 case (black, dashed).\relax }}{38}{figure.caption.22}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

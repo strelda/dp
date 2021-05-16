@@ -49,6 +49,8 @@ we get pentadiagonal matrix representation of $\HH$.
 
 
 \section{Hamiltonian analysis}
+The behavior of cases $N=1$ and $N=2$ is not characteristic for our Hamiltonian and has no physical meaning in this case, therefore the properties of $N=3$ case will be discussed at first and afterwards generalized to arbitrary $N$ along with the limit $N\rightarrow$. Due to complexity of chosen Hamiltonian, only some aspects are possible to calculate analytically, but mostly the numerical analysis is needed.
+
 
 
 \subsection{Case N=3}
@@ -92,8 +94,7 @@ From equations \ref{eq:N=3_en0}, \ref{eq:N=3_en1} can be seen that $E_0=E_1$ for
 $$(\lambda_d,\pm \chi_d)=\left(-\frac{1}{2},\pm\sqrt{\frac{3}{5}}\right).$$
 Point-like characteristics corresponds to Theorem \ref{thm:n-2}, which states that Hamiltonian driven by two real parameters can be degenerated only on 0-dimensional manifolds. 
 
-
-Here the energy spectrum is degenerate and metric tensor diverges, see individual elements on fig. \ref{fig:N=3_g} and its determinant fig. \ref{fig:N=3_gDivenrgence}, along with Christoffel symbols elements, see fig. \ref{fig:N=3_G}. Note that metric tensor determinant is positive definite, thus the manifold is Riemannian. Further on it reflects symmetry $\chi\leftrightarrow-\chi$, except for off-diagonal elements, i.e. $g_{12}$, $\Gamma_{121}$, $\Gamma_{211}$, $\Gamma_{222}$, which switches their sign.
+If the energy spectrum is degenerate and metric tensor diverges, see individual elements on fig. \ref{fig:N=3_g}, its determinant also diverges, as shown on fig. \ref{fig:N=3_gDivenrgence}, along with Christoffel symbols elements, see fig. \ref{fig:N=3_G}. Note that metric tensor determinant is positive definite, thus the manifold is Riemannian. Further on it reflects symmetry $\chi\leftrightarrow-\chi$, except for off-diagonal elements, i.e. $g_{12}$, $\Gamma_{121}$, $\Gamma_{211}$, $\Gamma_{222}$, which switches their sign.
 \begin{figure}
     \centering
     \begin{tabular}{cc}
@@ -114,7 +115,7 @@ Here the energy spectrum is degenerate and metric tensor diverges, see individua
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \begin{tabular}{cc}
     \subcaptionbox{$\arctan(\Gamma_{111})$}{\includegraphics{../img/N=3_G111.pdf}} &
@@ -130,5 +131,68 @@ Here the energy spectrum is degenerate and metric tensor diverges, see individua
 \end{figure}
 
 Due to metric tensor degeneracy, the space is not geodesically complete and according to \ref{thm:hopf-Rinow_modified} there exist some "event horizon" around singularities $(\lambda_d,\pm \chi_d)$. This can be seen more clearly from geodesics, i.e. by solving initial value problem with conditions
-$$(\lambda(t_i),\chi(t_i))=(\lambda_i,\chi_i)$$
-$$\left(\der{\lambda(t)}{t},\der{\chi(t)}{t}\right)\Bigg|_{t_i}=(\lambda'_i,\chi'_i).$$
+$$(\lambda(t_i);\chi(t_i))=(\lambda_i;\chi_i)$$
+$$\left(\der{\lambda(t)}{t};\der{\chi(t)}{t}\right)\Bigg|_{t_i}=(\lambda'_i;\chi'_i).$$
+
+Results for these geodesics starting at $(\lambda;\chi)=(0;0), (\lambda',\chi')=(\cos\theta;\sin\theta)$ for $\theta\in [-0.63;0.63]$ with step $0.01$. Above $\theta=0.63$ the geodesics get too close to singularity making calculations numerically unstable. The same holds for interval $\theta\in [2.43;2\pi-2.43]$, see fig. \ref{fig:N=3_geodesics}. We see, that geodesics tend to get closer to the singularity. This is well known fact from the General Relativity (GR) with one important difference, that our "test particle" is repulsed from the singularity, not attracted to it. Therefore our intuition about black holes in GR will be broken, as can be seen in fig. \ref{fig:geodesicsinGR}. Instead, we can think of it as two oppositely charged monopoles in the theory of electromagnetism. \textcolor{blue}{Because Hamiltonian consists of more elements, we can check, if they all contribute repulsively, or some of them are attractive and their relative strength to other elements just drops close to the singularity.}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{../img/N=3_geodesics.pdf}
+    \caption{Geodesics starting from $(\lambda_i;\chi_i)=(0;0)$ with $(\lambda'_i;\chi'_i)=(\cos\theta;\sin\theta)$ $N=3$.}
+    \label{fig:N=3_geodesics}    
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../img/geodesicsinGR.png}
+    \caption{Comparing geodesics with repulsing (blue) and attracting (red) metric tensor divergence in the spherical symmetrical space. }
+    \label{fig:geodesicsinGR}
+\end{figure}
+
+
+\newpage
+\section{Arbitrary $N$}
+Looking at the energy spectrum of $N=10$ case (see section for $\lambda=1$ on fig. \ref{fig:N=10_energiesl} and section $\chi=1$ in fig. \ref{fig:N=10_energies2}) we see the characteristic structure of the system. Between every two energy levels is at least one avoided crossing. Another interesting aspect are metric tensor singularities, which are moving along \textcolor{blue}{line}, which was using linear regression from datapoints in fig. \ref{fig:singularitiesRegr} approximated as 
+\begin{equation}
+    \chi=-0.14 \lambda + 0.71
+    \label{eq:linearRegressionSingularities}
+\end{equation}
+ 
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{../img/N=10_energiesl.pdf}
+    \caption{Energy spectrum as function of $\chi$, for $\lambda=1$ and $N=10$.}
+    \label{fig:N=10_energiesl}    
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics{../img/N=10_energies2.pdf}
+    \caption{Energy spectrum as function of $\lambda$, for $\chi=1$ and $N=10$.}
+    \label{fig:N=10_energies2}    
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{../img/divPosition.pdf}
+    \caption{Singularities in the metric tensor for different values of $N$ with linear regression according to eq. \ref{eq:linearRegressionSingularities}. Green points mark minimums.}
+    \label{fig:singularitiesRegr}    
+\end{figure}
+
+
+
+
+\section{Limit $N\rightarrow \infty$}
+In the limit $N\rightarrow \infty$, the first order transition lies in curve
+\begin{equation}
+    \chi^2=\frac{\lambda-1}{\lambda-2}
+\end{equation}
+and $\chi$-axis to the right from the point of second order transition, which lies in $(\lambda,\chi)=(1,0)$. On figure \ref{fig:transitionCompare} can be seen the transition curve with comparison to minimum between the ground state and first excited state for $N=3$ case. With increasing $N$, the line is slowly converging to the transition line.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{../img/infiniteN_transitionCompare.pdf}
+    \caption{First order transition (red), second order transition (blue point), minimum between the ground state and first excited state in N=3 case (black, dashed).}
+    \label{fig:transitionCompare}    
+\end{figure}
