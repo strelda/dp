@@ -134,7 +134,7 @@ Due to metric tensor degeneracy, the space is not geodesically complete and acco
 $$(\lambda(t_i);\chi(t_i))=(\lambda_i;\chi_i)$$
 $$\left(\der{\lambda(t)}{t};\der{\chi(t)}{t}\right)\Bigg|_{t_i}=(\lambda'_i;\chi'_i).$$
 
-Results for these geodesics starting at $(\lambda;\chi)=(0;0), (\lambda',\chi')=(\cos\theta;\sin\theta)$ for $\theta\in [-0.63;0.63]$ with step $0.01$. Above $\theta=0.63$ the geodesics get too close to singularity making calculations numerically unstable. The same holds for interval $\theta\in [2.43;2\pi-2.43]$, see fig. \ref{fig:N=3_geodesics}. We see, that geodesics tend to get closer to the singularity. This is well known fact from the General Relativity (GR) with one important difference, that our "test particle" is repulsed from the singularity, not attracted to it. Therefore our intuition about black holes in GR will be broken, as can be seen in fig. \ref{fig:geodesicsinGR}. Instead, we can think of it as two oppositely charged monopoles in the theory of electromagnetism. \textcolor{blue}{Because Hamiltonian consists of more elements, we can check, if they all contribute repulsively, or some of them are attractive and their relative strength to other elements just drops close to the singularity.}
+Results for these geodesics starting at $(\lambda;\chi)=(0;0), (\lambda',\chi')=(\cos\theta;\sin\theta)$ for $\theta\in [-0.63;0.63]$ and $\theta\in [\pi-0.225;\pi+0.225]$ with step $0.01$, see fig \ref{fig:N=3_geodesics}. Other values $\theta$ result in close approach of the geodesics to singularity making calculations numerically unstable. The fact that geodesics tend to lean towards singularities is well known from the theory of General Relativity (GR). The main difference here is, that our "test particle" seems to be partiallz repulsed from the singularity, see charge attraction vs. repulsion intuition in fig. \ref{fig:geodesicsinGR}. \textcolor{blue}{This is caused by the fact, that the Hamiltonian consists of more elements from which some are "repulsive" and some "attractive". }
 
 \begin{figure}[h]
     \centering
@@ -176,7 +176,7 @@ Looking at the energy spectrum of $N=10$ case (see section for $\lambda=1$ on fi
 \begin{figure}[h]
     \centering
     \includegraphics{../img/divPosition.pdf}
-    \caption{Singularities in the metric tensor for different values of $N$ with linear regression according to eq. \ref{eq:linearRegressionSingularities}. Green points mark minimums.}
+    \caption{Singularities in the metric tensor for different values of $N$ (see the numbers inside the plot) with linear regression according to eq. \ref{eq:linearRegressionSingularities}. Green points mark minimums.}
     \label{fig:singularitiesRegr}    
 \end{figure}
 
