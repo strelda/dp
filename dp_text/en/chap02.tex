@@ -259,34 +259,22 @@ which has meaning of matrix elements of the gauge potential. Probability of the 
 \end{equation}
 where last term defines the geometric tensor.
 
-\textcolor{red}{The gauge transformation means, that if the fidelity $f<1$, this potential can be subtracted from the Hamiltonian leading to $f=1$. This will be discussed later on in chapter \ref{chap:gauge}.}
-
-
-\section{Hamiltonian induced flow on manifold}
-Hamiltonian induces flow on manifold according to \Schrodinger equation....
-
-
-
-\newpage
-
-
-
 
 
 \section{Adiabaticity}
 Adiabatic transformation is such a transformation from $\M$ to $\M$, which does not excite the system, meaning the fidelity $f=1$. Generally it can be achieved by two ways -- infinitely slow transformation of states, or adding some \emph{counter-diabatic elements} to the Hamiltonian to counter the excitation.
 
 
-In this chapter, we will be dealing with the system described by the finite-dimensional Hamiltonian $\HH(\llambda)$ which drives the system according to \Schrodinger equation from some initial state $\ket{s(\llambda}$ to $\ket{s(\tilde\llambda)}$ along some path. Again we reduce the dimension from $\R^n$ to $1$ prescribing the curve $\gamma(\lambda)$ parametrized by time $t$, so we get $\HH=\HH(\lambda)$. Before going throw the details of adiabatic transformations, let's define its meaning properly.
+In this chapter, we will be dealing with the system described by the finite-dimensional Hamiltonian $\HH(\llambda)$ which drives the system according to \Schrodinger equation from some initial state $\ket{s(\llambda}$ to $\ket{s(\tilde\llambda)}$ along the path $\gamma(\lambda)$. Before going throw the details of adiabatic transformations, let's define its meaning properly.
 
 \begin{definition}[Adibaticity]
-    Slow change of parameters driving Hamiltonian in a sense, that it does not excite the system and allows the system to return to the same energetic state after circulation around any closed path on the manifold with fidelity $f=1$. For more see Theorem \ref{adiabaticTheorem}.
+    Slow change of parameters driving Hamiltonian in a sense, that it does not excite the system and allows the system to return to the same energetic state after circulation around any closed path on the manifold with fidelity $f=1$.
 \end{definition}
 
 
 \subsection{Slow transports}
 \citep{kolodrubez}[chap. 2.3]
-As was mentioned in the introduction to this chapter, one way to change the system parameters without exciting it is to change the driving parameter slowly enough. The meaning of the word "slow" clears up next theorem.
+As was mentioned in the introduction of this chapter, one way to change the system parameters without exciting it is to change the driving parameter slowly enough. The meaning of the word "slow" clears up next theorem.
 \begin{thm}[Adiabatic theorem]
     \label{adiabaticTheorem}
     For Hamiltonian $\HH$ varying in the time range $T$, the solution of the Schrödinger equation 
@@ -305,7 +293,7 @@ As was mentioned in the introduction to this chapter, one way to change the syst
         $$\gamma_n(\lambda)\equiv \int_0^t \underbrace{i\braket{\psi_n(\tau)|\partial_t\psi_n(\tau)}}_{\nu_n(\tau)} \d \tau .$$
 \end{thm}
 \begin{myproof}
-    TBD (na wiki je)
+    \textcolor{blue}{TBD (is on wikipedia :)} )
 \end{myproof}
 Assume differentiable and non-singular Hamiltonian $\HH(\llambda)$ with degenerate basis $\{\ket{m,\llambda}\}_m$ called the \emph{adiabatic basis}. This is generally the family of adiabatically connected eigenstates\footnote{In the case of energy level crossing, the eigenstates are not unified, because transition between them is not adiabatical.} The transition amplitude between states for adiabatic change is
 \begin{equation}
@@ -319,26 +307,21 @@ This can be driven along some curve $\gamma(\lambda)$, i.e. differentiated by $\
         &= (E_m(\lambda)-E_n(\lambda))\underbrace{\braket{m|\partial_t (\tilde \llambda)}}_{-\frac{i}{\hbar}\bra{m}\AA_t\ket{n(\tilde \llambda)}} + \braket{m|\partial_t\HH|n(\tilde \llambda)}.
     \end{split}
 \end{equation}
-\textcolor{red}{
-In matrix form, we can rewrite this equation as
+
+This can be rewritten in matrix form as
 \begin{equation}
     i\hbar\partial_t\HH=[\AA_t,\HH]-i\hbar \hat{M}_t\qquad \text{for } \hat{M}_t\equiv -\sum_n\pder{E_n(\lambda)}{t}\ket{n(\lambda)}\bra{n(\lambda)}.
 \end{equation}
-$\hat{M}$ is diagonal in energetic basis and it's elements has meaning of \emph{generalized force}, which correspond to corresponding energetic states. We can easily see that $[\HH,\hat{M}]=0$, implying
+$\hat{M}$ is diagonal in energetic basis and its elements has meaning of \emph{generalized force}. We can easily see that $[\HH,\hat{M}]=0$, implying
 \begin{equation}
     [\HH,i\hbar\partial_t\HH-[\AA_t,\HH]]=0.
     \label{eq:komutation}
 \end{equation}
-This can be used as the definition for \emph{counter-diabatic potential} $\AA_t$. The strength of this equation lies in the fact, that it finds counter-diabatic potential without the need of Hamiltonian diagonalization.}
-
-
-\section{Geodetic driving}
-\label{chap:gauge}
+This can be used as the definition for \emph{counter-diabatic potential} $\AA_t$, because it was obtained from only one assumption -- adiabaticity. The strength of this equation lies in the fact, that it finds counter-diabatic potential without the need of Hamiltonian diagonalization.
 
 \section{Gauge potentials}
 In section \ref{sec:derivationOfGeometricTensor} we introduced the gauge potential without proving its gauge meaning, but only stating its correspondence to transition probability, see eq. \ref{eq:probabilityOfTransitionIsGauge}.
-\textcolor{red}{
-\emph{Gauge transformations}, in classical mechanics called \emph{canonical}, can be defined such, that they preserve Lagrangian of the system under local transformations from some Lie group.} This implies, that gauge transformed Hamiltonian $\H(\llambda)$ and $\H(\llambda+\d \llambda)$ commutes with its canonically transformed version\footnote{This can be easily reformulated to the world of classical physics, where the commutator is replaced by Poisson bracket.} 
+\emph{Gauge transformations}, in classical mechanics called \emph{canonical}, can be defined such, that they \emph{preserve Lagrangian of the system under local transformations from some Lie group}. This implies, that gauge transformed Hamiltonian $\HH(\llambda)$ and $\HH(\llambda+\d \llambda)$ commutes with its canonically transformed version\footnote{This can be easily reformulated to the world of classical physics, where the commutator is replaced by Poisson bracket.} 
  \begin{equation}
      [\HH(\llambda),\HH(\llambda+\delta \llambda)]=0.
  \end{equation}
@@ -350,7 +333,7 @@ In section \ref{sec:derivationOfGeometricTensor} we introduced the gauge potenti
 
 
 
-In the Hamiltonian classical mechanics, we assume the manifold $\M$ part of the phase space defined using Hamiltonian $H=H(p_i,q_i)$, where momentum $p_i$ and position $q_i$ are assumed to form the orthogonal basis of the phase space
+In the Hamiltonian classical mechanics, we assume the manifold $\M$ as subset of the phase space defined by Hamiltonian $H=H(p_i,q_i)$, where momentum $p_i$ and position $q_i$ are assumed to form the orthogonal basis of the phase space
 \begin{equation}
     \{q^i,p_j\}=\delta^i_j,
     \label{eq:canonicalCommutationDelta}
@@ -398,12 +381,12 @@ Then there exist unitary transformation
     \U(\llambda): \tilde S\rightarrow S,\quad \U(\llambda)\ket{m(\llambda)}=\ket{n}.
     \label{eq:transformationU}
 \end{equation}
-% where scalar parameter $t$ is assumed to be changing along the path $\gamma(t)$, corresponding to situation on fig. \ref{fig:manifoldCutIntuition}. This satisfies
-% \begin{equation}
-%     i\hbar \partial_t \U(t)=\HH(t)\U(t)
-%     \label{eq:schrodingerForU}
-% \end{equation}
-% for any point on $\tilde\gamma(t)$ and $\HH$ the full Hamiltonian of the system, along which the partial derivative is taken.
+where scalar parameter $t$ is assumed to be changing along the path $\gamma(t)$, corresponding to situation on fig. \ref{fig:manifoldCutIntuition}. This satisfies
+\begin{equation}
+    i\hbar \partial_t \U(t)=\HH(t)\U(t)
+    \label{eq:schrodingerForU}
+\end{equation}
+for $\HH$ the full Hamiltonian of the system and any point on $\tilde\gamma(t)$, along which the partial derivative is taken.
 
 
 The wave function $\kpsi$ in $S$ can be decomposed using Schmidt decomposition\footnote{The Schmidt decomposition can be performed in finite dimension, or if the Hamiltonian is compact, which is not automatic in quantum mechanics. What's more, the Hamiltonian is usually not even bounded. Anyway, for simple systems with bounded energy we can assume so.}
@@ -558,6 +541,8 @@ as the integral of a connection along some closed curve $\mathcal{C}$
     \phi_B\equiv-\oint_\mathcal{C} A_\mu(\llambda)\d \lambda^\mu=\int_\mathcal{S} \chi_{\mu\nu}(\llambda)\d \lambda^\mu \wedge \d\lambda^\nu,
 \end{equation}
 where we used the Stokes theorem for some area $\mathcal{S}$ with boundary $\partial\mathcal{S}=\mathcal{C}$.
+
+Berry phase is usually zero, except for the cases, when the curve goes around some geometric tensor singularity, meaning $Ind_a \gamma(\lambda)>0$. Those singularities appear in the system due to energy spectrum degeneracies, in the case of ground state manifold when $E_1-E_0=0$. Those points are called \emph{diabolic}, because of their shape in the $(\lambda,\chi)$ parameter space.\footnote{https://en.wikipedia.org/wiki/Diabolo}
 
 
 

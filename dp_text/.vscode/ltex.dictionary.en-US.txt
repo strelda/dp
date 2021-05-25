@@ -1,0 +1,2 @@
+geodesically
+Ricci

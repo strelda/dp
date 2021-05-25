@@ -130,16 +130,37 @@ If the energy spectrum is degenerate and metric tensor diverges, see individual 
     \label{fig:N=3_G}
 \end{figure}
 
-Due to metric tensor degeneracy, the space is not geodesically complete and according to \ref{thm:hopf-Rinow_modified} there exist some "event horizon" around singularities $(\lambda_d,\pm \chi_d)$. This can be seen more clearly from geodesics, i.e. by solving initial value problem with conditions
+Due to metric tensor degeneracy, the space is not geodesically maximal. To see that singularity is not only coordinate one, by calculating the Ricci curvature we see (fig. \ref{fig:N=3_Ricci}), that it diverges in points $(\lambda_d;\pm\chi_d)$ (singularities of the metric tensor), see sections in $\chi$-direction on fig. \ref{fig:N=3_Ricci_section}, proving the singularity is not only coordinate, but \emph{physical}.
+
+This means our ground state manifold is geodesically incomplete and according to \ref{thm:hopf-Rinow_modified} there exist some "event horizon" around singularities $(\lambda_d,\pm \chi_d)$. 
+\begin{figure}[h]
+    \centering
+    \includegraphics{../img/N=3_Ricci.pdf}
+    \caption{Arcustanges of Ricci curvature for the case $N=3$.}
+    \label{fig:N=3_Ricci}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics{../img/N=3_Ricci_section.pdf}
+    \caption{Ricci curvature, section in $\lambda\in\{0.5;1;1.5\}$.}
+    \label{fig:N=3_Ricci_section}
+\end{figure}
+
+
+This can be seen more clearly from geodesics, i.e. by solving initial value problem with conditions
 $$(\lambda(t_i);\chi(t_i))=(\lambda_i;\chi_i)$$
 $$\left(\der{\lambda(t)}{t};\der{\chi(t)}{t}\right)\Bigg|_{t_i}=(\lambda'_i;\chi'_i).$$
 
-Results for these geodesics starting at $(\lambda;\chi)=(0;0), (\lambda',\chi')=(\cos\theta;\sin\theta)$ for $\theta\in [-0.63;0.63]$ and $\theta\in [\pi-0.225;\pi+0.225]$ with step $0.01$, see fig \ref{fig:N=3_geodesics}. Other values $\theta$ result in close approach of the geodesics to singularity making calculations numerically unstable. The fact that geodesics tend to lean towards singularities is well known from the theory of General Relativity (GR). The main difference here is, that our "test particle" seems to be partiallz repulsed from the singularity, see charge attraction vs. repulsion intuition in fig. \ref{fig:geodesicsinGR}. \textcolor{blue}{This is caused by the fact, that the Hamiltonian consists of more elements from which some are "repulsive" and some "attractive". }
+Results for these geodesics starting at $(\lambda;\chi)=(0;0)$, $(\lambda',\chi')=(\cos\theta;\sin\theta)$ for $\theta\in [-0.63;0.63]$ and $\theta\in [\pi-0.225;\pi+0.225]$ with step $0.01$, see fig \ref{fig:N=3_geodesics}. Other values $\theta$ result in close approach of the geodesics to singularity making calculations numerically unstable. The fact that geodesics lean towards singularities is well known from the theory of General Relativity (GR). The main difference here is, that our "test particle" seems to be partially repulsed from the singularity, see charge attraction vs. repulsion intuition in fig. \ref{fig:geodesicsinGR}. \textcolor{blue}{This is caused by the fact, that the Hamiltonian consists of more elements from which some are "repulsive" and some "attractive". } Also from the singularity to the right, there is an area with huge negative Ricci curvature, which the geodesics try to avoid resulting in them going around the singularity, which is shorter than crossing it. 
+
+
+
+Another interesting initial value problem is $(\lambda_i;\chi_i)=(-1;\chi_i)$, $(\lambda',\chi')=(1;0)$, which is for $\chi_i\in(0;1)$ with step $0.05$ shown in fig. \ref{fig:N=3_geodesics_lambdaIn=-1}, where numerically unstable geodesics were skipped.
 
 \begin{figure}[h]
     \centering
     \includegraphics{../img/N=3_geodesics.pdf}
-    \caption{Geodesics starting from $(\lambda_i;\chi_i)=(0;0)$ with $(\lambda'_i;\chi'_i)=(\cos\theta;\sin\theta)$ $N=3$.}
+    \caption{Geodesics starting from $(\lambda_i;\chi_i)=(0;0)$ with $(\lambda'_i;\chi'_i)=(\cos\theta;\sin\theta)$. Case $N=3$.}
     \label{fig:N=3_geodesics}    
 \end{figure}
 \begin{figure}[h]
@@ -149,14 +170,48 @@ Results for these geodesics starting at $(\lambda;\chi)=(0;0), (\lambda',\chi')=
     \label{fig:geodesicsinGR}
 \end{figure}
 
+\begin{figure}[h]
+    \centering
+    \includegraphics{../img/N=3_geodesics_lambdaIn=-1.pdf}
+    \caption{Geodesics starting from $(\lambda_i;\chi_i)=(-1;\chi_i)$, $(\lambda',\chi')=(1;0)$, for $\chi_i\in(0;1)$ with step $0.05$. Numerically unstable geodesics were skipped. Case $N=3$.}
+    \label{fig:N=3_geodesics_lambdaIn=-1}    
+\end{figure}
+
 
 \newpage
-\section{Arbitrary $N$}
-Looking at the energy spectrum of $N=10$ case (see section for $\lambda=1$ on fig. \ref{fig:N=10_energiesl} and section $\chi=1$ in fig. \ref{fig:N=10_energies2}) we see the characteristic structure of the system. Between every two energy levels is at least one avoided crossing. Another interesting aspect are metric tensor singularities, which are moving along \textcolor{blue}{line}, which was using linear regression from datapoints in fig. \ref{fig:singularitiesRegr} approximated as 
+\section{Limit $N\rightarrow \infty$}
+The limit $N\rightarrow \infty$ can be applied on the Hamiltonian in eq. \ref{eq:firstOrderTransitionHamiltonian} after Holstein-Primakoff mapping for bosonic operators
 \begin{equation}
-    \chi=-0.14 \lambda + 0.71
-    \label{eq:linearRegressionSingularities}
+    \mathcal{H}\coloneqq\lim_{j\rightarrow\infty}\frac{\HH}{2j},
 \end{equation}
+resulting in classical Hamiltonian
+\begin{equation}
+    \begin{split}
+        \mathcal{H}(x,p)=&-\frac{1}{2}+\frac{1-\lambda}{2}x^2+\frac{\lambda-\chi^2}{4}x^4-\frac{\chi x^3}{2}\sqrt{2-x^2-p^2}-\frac{\chi^2}{4}p^4\\
+        &+\frac{p^2}{4}\left[2+(\lambda-2\chi^2)x^2-2\chi x\sqrt{2-x^2-p^2}\right].
+    \end{split}
+    \label{eq:HamiltonianClassicalLimit}
+\end{equation}
+
+
+
+
+Finding minimas in its derivatives, see \textcolor{blue}{reference to Felipe publication, it will be there hopefully and it has no point to solve it here} we get \emph{separatrix}
+\begin{equation}
+    \chi^2=\frac{\lambda-1}{\lambda-2},
+    \label{eq:separatrix}
+\end{equation}
+which represents phase transition in the limit $N\rightarrow \infty$. In our case, the transition is of first order everywhere, except in $(\lambda;\chi)=(1;0)$, where it has order two. The separatrix is shown on fig. \ref{fig:transitionCompare} compared to minimum between the ground state and first excited state $E_1-E_0$ for $N=3$ case. With increasing $N$, it slowly converges to the separatrix line.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{../img/infiniteN_transitionCompare.pdf}
+    \caption{First order transition -- Separatrix (red), second order transition (blue point) compared to minimum between the ground state and first excited state in N=3 case (black, dashed).}
+    \label{fig:transitionCompare}    
+\end{figure}
+
+\section{Arbitrary $N$}
+The case $N=3$ was deliberately chosen to show the lowest dimension with characteristics, which generalize to higher dimensions, see energy spectrum sections on fig. \ref{fig:N=10_energiesl}, \ref{fig:N=10_energies2} for the $N=10$ case. \textcolor{red}{Between every two energy levels is at least one avoided crossing.} It was shown analytically, that for the case $N=3$ there is a Metric tensor singularity. In fact, this singularity is present for every $N$ and for the first 14 cases was shown numerically, that it moves along separatrix, see fig. \ref{fig:singularitiesRegr}. Positions of those points are not exact due to complicated numerics around singularity.
  
 
 
@@ -176,23 +231,8 @@ Looking at the energy spectrum of $N=10$ case (see section for $\lambda=1$ on fi
 \begin{figure}[h]
     \centering
     \includegraphics{../img/divPosition.pdf}
-    \caption{Singularities in the metric tensor for different values of $N$ (see the numbers inside the plot) with linear regression according to eq. \ref{eq:linearRegressionSingularities}. Green points mark minimums.}
+    \caption{Singularities in the metric tensor for of $N\in\{3,4,\dots ,14\}$ and separatrix according to eq. \ref{eq:separatrix}.}
     \label{fig:singularitiesRegr}    
 \end{figure}
 
 
-
-
-\section{Limit $N\rightarrow \infty$}
-In the limit $N\rightarrow \infty$, the first order transition lies in curve
-\begin{equation}
-    \chi^2=\frac{\lambda-1}{\lambda-2}
-\end{equation}
-and $\chi$-axis to the right from the point of second order transition, which lies in $(\lambda,\chi)=(1,0)$. On figure \ref{fig:transitionCompare} can be seen the transition curve with comparison to minimum between the ground state and first excited state for $N=3$ case. With increasing $N$, the line is slowly converging to the transition line.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics{../img/infiniteN_transitionCompare.pdf}
-    \caption{First order transition (red), second order transition (blue point), minimum between the ground state and first excited state in N=3 case (black, dashed).}
-    \label{fig:transitionCompare}    
-\end{figure}
