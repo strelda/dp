@@ -16,19 +16,19 @@
 \contentsline {chapter}{\numberline {2}Physical introduction}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Transporting states}{13}{section.2.1}
 \contentsline {section}{\numberline {2.2}Metric and geometric tensor}{15}{section.2.2}
-\contentsline {section}{\numberline {2.3}Derivation of the geometric tensor}{17}{section.2.3}
-\contentsline {section}{\numberline {2.4}Adiabaticity}{18}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Slow transports}{18}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Gauge potentials}{19}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Classical gauge potential}{20}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Quantum gauge potential}{20}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Adiabatic gauge potential}{21}{subsection.2.5.3}
-\contentsline {section}{\numberline {2.6}Counter-diabatic driving}{22}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Explicit form}{23}{subsection.2.6.1}
-\contentsline {section}{\numberline {2.7}Berry phase and curvature}{23}{section.2.7}
-\contentsline {section}{\numberline {2.8}\leavevmode {\color {blue}Approximations of adiabatic potentials}}{24}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Variational methods}{25}{subsection.2.8.1}
-\contentsline {chapter}{\numberline {3}\leavevmode {\color {blue}Geodesics}}{26}{chapter.3}
+\contentsline {subsection}{\numberline {2.2.1}Derivation of the geometric tensor}{17}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Adiabaticity}{17}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Slow transports}{17}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Gauge potentials}{19}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Classical gauge potential}{19}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Quantum gauge potential}{20}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Adiabatic gauge potential}{20}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Counter-diabatic driving}{21}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Explicit form}{22}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Berry phase and curvature}{23}{section.2.6}
+\contentsline {section}{\numberline {2.7}\leavevmode {\color {blue}Approximations of adiabatic potentials}}{23}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Variational methods}{24}{subsection.2.7.1}
+\contentsline {chapter}{\numberline {3}\leavevmode {\color {blue}Geodesics}}{25}{chapter.3}
 \contentsline {chapter}{\numberline {4}Spin 1/2}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Special case}{28}{section.4.1}
 \contentsline {chapter}{\numberline {5}First order transition Hamiltonian}{30}{chapter.5}

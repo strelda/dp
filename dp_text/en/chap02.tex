@@ -197,22 +197,23 @@ Let's define the metric on the space of states $\M_0$ and then see, how it corre
 \end{equation}
 where shortened notation $\partial_\nu\coloneqq\pder{}{\lambda^\nu}$ was used. 
 
-\begin{proof}[Proof for Geometric tensor expression] In one-dimensional case we get from eq. \ref{eq:fidelityDefinition} using Taylor expansion and shortened notation $o\coloneqq o(\lambda)$
-    \begin{equation}
-        f=1+\braket{\partial_\lambda o|o}\delta\lambda-\frac{1}{2}\braket{\partial_\lambda^2 o|o}\delta\lambda^2+\mathcal{O}(\lambda^3),
-    \end{equation}
-    which plugged into eq. \ref{eq:distanceOnM0} gives
-    \begin{equation}
-        \begin{split}
-            \d s^2&=1-\bar{f}f=\left[-\braket{o|\partial_\lambda o}\braket{\partial_\lambda o|o}+\frac{1}{2}\braket{\partial_\lambda^2 o|o}+\frac{1}{2}\braket{o|\partial_\lambda^2 o}\right]\delta \lambda^2.
-        \end{split}
-    \end{equation}
-    Generalizing for $\lambda\in \R^n$, we get\footnote{assuming Hermiticity of the derivative operator everywhere on the ground state manifold}
-    \begin{equation}
-        \d s^2=\left[-\braket{o|\partial_\mu o}\braket{\partial_\nu o|o}+\underbrace{\frac{1}{2}\braket{o|\partial_\mu \partial_\nu|o}+\frac{1}{2}\braket{o|\partial_\nu \partial_\mu| o}}_{\Re\braket{\partial_mu o|\partial_\nu o}}\right]\delta \lambda^\mu\delta \lambda^\nu.
-    \end{equation}
-    Because only symmetric part contributes in the sum in eq. \ref{eq:metricTensorDef}, this proves symmetric part of equation \ref{eq:geometricTensor} and shows, that some more general tensor (\emph{geometric tensor}) exists.
-\end{proof}
+%taylor is wrong
+% \begin{proof}[Proof for Geometric tensor expression] In one-dimensional case we get from eq. \ref{eq:fidelityDefinition} using Taylor expansion and shortened notation $o\coloneqq o(\lambda)$
+%     \begin{equation}
+%         f=1+\braket{\partial_\lambda o|o}\delta\lambda-\frac{1}{2}\braket{\partial_\lambda^2 o|o}\delta\lambda^2+\mathcal{O}(\lambda^3),
+%     \end{equation}
+%     which plugged into eq. \ref{eq:distanceOnM0} gives
+%     \begin{equation}
+%         \begin{split}
+%             \d s^2&=1-\bar{f}f=\left[-\braket{o|\partial_\lambda o}\braket{\partial_\lambda o|o}+\frac{1}{2}\braket{\partial_\lambda^2 o|o}+\frac{1}{2}\braket{o|\partial_\lambda^2 o}\right]\delta \lambda^2.
+%         \end{split}
+%     \end{equation}
+%     Generalizing for $\lambda\in \R^n$, we get\footnote{assuming Hermiticity of the derivative operator everywhere on the ground state manifold}
+%     \begin{equation}
+%         \d s^2=\left[-\braket{o|\partial_\mu o}\braket{\partial_\nu o|o}+\underbrace{\frac{1}{2}\braket{o|\partial_\mu \partial_\nu|o}+\frac{1}{2}\braket{o|\partial_\nu \partial_\mu| o}}_{\Re\braket{\partial_mu o|\partial_\nu o}}\right]\delta \lambda^\mu\delta \lambda^\nu.
+%     \end{equation}
+%     Because only symmetric part contributes in the sum in eq. \ref{eq:metricTensorDef}, this proves symmetric part of equation \ref{eq:geometricTensor} and shows, that some more general tensor (\emph{geometric tensor}) exists.
+% \end{proof}
 
 It is practical to decompose it the geometric tensor
 \begin{equation}
@@ -231,7 +232,7 @@ and the \emph{curvature tensor} a.k.a. \emph{Berry curvature} is
 where $\overleftarrow{\partial}_\nu$ affects the covector on the left.
 
 
-\section{Derivation of the geometric tensor}
+\subsection{Derivation of the geometric tensor}
 \label{sec:derivationOfGeometricTensor}
 To prove the correspondence of geometric tensor, described by eq. \ref{eq:geometricTensor}, to distance on $\M_0$, see eq. \ref{eq:distanceOnM0}, we start with eigenstate $\ket{o(\llambda)}\in \M_0\cap \H(\llambda)$. Changing parameters $\llambda$ to $\llambda+\delta \llambda$ results in Hamiltonian $\HH_f$ with eigenstates $\ket{s(\llambda+\delta \llambda)}\in \M_s\cap\H(\llambda+\delta \llambda)$, meaning it can be excited. Probability amplitude of going to such state is
 \begin{equation}

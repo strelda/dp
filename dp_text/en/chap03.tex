@@ -1,2 +1,62 @@
 \chapter{\textcolor{blue}{Geodesics}}
-Of special importance in theory of the ground state manifold are geodesics. Its not yet clear what role they have in general, but there are known cases where they play a role of "maximum fidelity at any time" transport. This means, that if we compare geodesic $\mathcal{G}(t)$ with some curve $\gamma(t)$ spanning between points $P_i$ and $P_f$ during some time $t_f$, i.e. $\mathcal{G}(0)=\gamma(0)=P_i$, $\mathcal{G}(t_f)=\gamma(t_f)=P_f$, at any given time $t$ the fidelity on corresponding point of $\mathcal{G}$ will be less than of $\gamma$. This does not necesarilly mean, that the overall fidelity will be smaller for geodesics. WHYYYYY?????
+Of special importance in theory of the ground state manifold are geodesics. It is not yet clear what role they have in general, but in some special cases its well known, see \cite{polkovnikov}. The holy grail of this theory would be to find path with the lowest excitation amplitude, which is not an easy task.
+
+Let's have a geodesic $\mathcal{G}(t)$ and some curve $\gamma(t)$ on the ground stat manifold, spanning between points $P_i$ and $P_f$ during some time $t_f$, meaning
+ $$\mathcal{G}(0)=\gamma(0)=P_i\in\mathcal{M}_0,\qquad \mathcal{G}(t_f)=\gamma(t_f)=P_f\in\mathcal{M}_0.$$
+
+Excitation amplitude during infinitesimal quench is $\d s$, therefore $\sum_i \Delta s_i$ summed along path $\gamma(t)$ is the amplitude of transport along that path. This can be more rigorously expressed by functional
+\begin{equation}
+    s_\gamma=\int_{\gamma(t)}\d s=\int_{0}^{t_f}\sqrt{g_{\mu\nu}\dot\lambda^\mu\dot\lambda^\nu}\d t
+\end{equation}
+This is the entity, which is minimal if $\gamma$ is a geodesic. Before moving on, lets quickly review the proof of this statement.
+
+\begin{proof}[Geodesics minimize the distance on manifold]
+    Functional of distance is
+    \begin{equation}
+        s=\int\mathcal{L}(t,\lambda^\mu,\dot\lambda^\mu)\d t
+    \end{equation}
+    for 
+    \begin{equation}
+        \mathcal{L}=\sqrt{g_{\mu\nu}\dot\lambda^\mu\dot\lambda^\nu}.
+    \end{equation}
+    Using Euler-Lagrange equations 
+    \begin{equation}
+        \der{\mathcal{L}}{\lambda^\mu}-\der{}{t}\der{\mathcal{L}}{\dot\lambda^\mu}=0,
+    \end{equation}
+    we get for $g_{\mu\nu}=g_{\mu\nu}(\lambda^\mu)$ second order differential equation
+    \begin{equation}
+        \ddot\lambda^\mu+\Gamma^\mu_{\;\;\alpha\beta}\dot\lambda^\alpha\dot\lambda^\beta=0\qquad \Gamma^\mu_{\;\;\alpha\beta}=\frac{1}{2}g^{\mu\kappa}\left(g_{\kappa\alpha,\beta}+g_{\kappa\beta,\alpha}-g_{\beta\alpha,\kappa}\right),
+    \end{equation}
+    which is the Geodesic equation.
+\end{proof}
+
+Excitation probability along the path $\gamma$ can be formally written as $F=\sum_i\Delta s_i^2$, which cannot be simply calculated as $s^2$. Because $\Delta s_i>0$, we have
+\begin{equation}
+    \begin{split}
+        \sum_i \Delta s_i^2& <(\sum_i\Delta s_i)^2\\
+        F&<s^2.
+    \end{split}
+\end{equation}
+
+This doesn't necessarily mean, that fidelity along geodesic will be minimal ($F(\mathcal{G})<F(\gamma)$), because we didn't rule out the scenario 
+$$F(\gamma)<F(\mathcal{G})<s_\mathcal{G}^2<s_\gamma^2.$$
+
+This means, that the geodesic equation cannot be used for fidelity minimization and some new insight is needed. The functional, which needs to be minimized is
+\begin{equation}
+    F=\int\int g_{\mu\nu}\d\lambda^\mu\d\lambda^\nu = \int_{t_i}^{t_f}\underbrace{\int_{t_i}^\tau g_{\mu\nu}\der{\lambda^\mu}{t}\der{\lambda^\nu}{t} \d t}_{\mathcal{L}(\lambda^\mu,\dot\lambda^\mu,\tau)}\d \tau .
+\end{equation}
+Using Euler-Lagrange equations, again for time independent $g_{\mu\nu}=g_{\mu\nu}(\lambda^\mu)$, leads to
+\begin{equation}
+    \int_{t_i}^{t_f}\left[g_{\mu\nu,\kappa}\dot\lambda^\mu\dot\lambda^\nu - \der{}{t}\left[g_{\mu\nu}\left(\delta^\mu_\kappa\dot\lambda^\mu+\dot\lambda^\mu\delta^\nu_\kappa\right)\right]\right]\d t=0
+\end{equation}
+which needs to be zero for integration over any subset $(t_i,t_f)$ leading to zero condition for the integrand itself
+\begin{equation}
+    g_{\mu\nu,\kappa}\dot\lambda^\mu\dot\lambda^\nu-g_{\kappa\nu}\ddot\lambda^\nu-g_{\mu\kappa}\ddot\lambda^\mu=0
+\end{equation} 
+
+
+
+
+\textcolor{blue}{Polkovnikov for some special case: They play a role of "maximum fidelity at any time" transport, meaning at any given time $t$ the fidelity on corresponding point on geodesics will be less than of $\gamma$
+$$F(\mathcal{G}(t))<F(\gamma(t)).$$ }
+
