@@ -26,6 +26,7 @@ This is the entity, which is minimal if $\gamma$ is a geodesic. Before moving on
     we get for $g_{\mu\nu}=g_{\mu\nu}(\lambda^\mu)$ second order differential equation
     \begin{equation}
         \ddot\lambda^\mu+\Gamma^\mu_{\;\;\alpha\beta}\dot\lambda^\alpha\dot\lambda^\beta=0\qquad \Gamma^\mu_{\;\;\alpha\beta}=\frac{1}{2}g^{\mu\kappa}\left(g_{\kappa\alpha,\beta}+g_{\kappa\beta,\alpha}-g_{\beta\alpha,\kappa}\right),
+        \label{eq:geodesicEquaiton}
     \end{equation}
     which is the Geodesic equation.
 \end{proof}
@@ -49,11 +50,7 @@ Using Euler-Lagrange equations, again for time independent $g_{\mu\nu}=g_{\mu\nu
 \begin{equation}
     \int_{t_i}^{t_f}\left[g_{\mu\nu,\kappa}\dot\lambda^\mu\dot\lambda^\nu - \der{}{t}\left[g_{\mu\nu}\left(\delta^\mu_\kappa\dot\lambda^\mu+\dot\lambda^\mu\delta^\nu_\kappa\right)\right]\right]\d t=0
 \end{equation}
-which needs to be zero for integration over any subset $(t_i,t_f)$ leading to zero condition for the integrand itself
-\begin{equation}
-    g_{\mu\nu,\kappa}\dot\lambda^\mu\dot\lambda^\nu-g_{\kappa\nu}\ddot\lambda^\nu-g_{\mu\kappa}\ddot\lambda^\mu=0
-\end{equation} 
-
+which needs to be zero for integration over any subset $(t_i,t_f)$ leading to zero condition for the integrand itself, which leads to geodesic equation \ref{eq:geodesicEquaiton}, as in the case of distance on manifold.
 
 
 

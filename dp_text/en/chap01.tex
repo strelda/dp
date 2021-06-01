@@ -158,11 +158,37 @@ The \emph{wedge product} of $A\in \TT_p \M$ and $B\in \TT_q \M$ is antisymmetris
 \end{equation}
 
 \section{Geometry in 2 dimensions}
-Ricci, Riemann
+Most general object to start with is the \emph{Riemann tensor}
+\begin{equation}
+    R^\alpha_{\;\;\beta\gamma\delta}\coloneqq \Gamma^\alpha_{\;\;\beta\delta,\gamma}-\Gamma^\alpha_{\;\;\beta\gamma,\delta}+\Gamma^\mu_{\;\;\beta\delta}\Gamma^\alpha_{\;\;\mu\gamma}-\Gamma^\mu_{\;\;\beta\gamma}\Gamma^\alpha_{\;\;\mu\delta}.
+\end{equation}
+\emph{Ricci tensor} can be defined as its contraction 
+\begin{equation}
+    R_{\alpha\gamma}\coloneqq R^\mu_{\;\;\alpha\mu\gamma},
+\end{equation}
+which is second order symmetric tensor.
+\emph{Ricci scalar} is defined as contraction of Ricci tensor
+\begin{equation}
+    R\coloneqq R^\mu_{\;\;\mu}.
+\end{equation}
+This can be simplified for 2 dimensional manifold as
+\begin{equation}
+    R=\frac{2}{g_{22}}\left(\Gamma^1_{\;22,1}-\Gamma^1_{\;12,2}+\Gamma^1_{\;11}\Gamma^1_{\;22}+\Gamma^1_{\;12}\Gamma^2_{\;22}-\Gamma^1_{\;21}\Gamma^1_{\;12}-\Gamma^1_{\;22}\Gamma^2_{\;12}\right).
+    \label{eq:Ricci2D}
+\end{equation}
+Another possibility to express Ricci tensor, see \citet[eq. 6,7]{geometricTensorLipkin}
+\begin{equation}
+    R=\frac{1}{\sqrt{\abs{g}}}(\mathcal{A}+\mathcal{B})
+\end{equation}
+for
+\begin{align}
+    \mathcal{A}&\coloneqq \left(\frac{g_{12}}{g_{11}\sqrt{\abs{g}}}g_{11,2}-\frac{1}{\sqrt{\abs{g}}}g_{22,1}\right)_{,1}\\
+    \mathcal{B}&\coloneqq \left(\frac{2}{\sqrt{\abs{g}}}g_{12,1}-\frac{1}{\sqrt{\abs{g}}}g_{11,2}-\frac{g_{12}}{g_{11}\sqrt{\abs{g}}}g_{11,1}\right)_{,2}.
+\end{align}
+This equation turned out to be more numerically unstable, therefore eq. \ref{eq:Ricci2D} will be user later on.
 
 
-
-\section{Useful definitions}
+\section{Riemannian geometry definitions}
 \begin{definition}[Riemannian manifold]
     Manifold is called Riemannian, iff its equipped with positive definite metric tensor.
 \end{definition}
@@ -182,7 +208,7 @@ This condition holds if the space does not contain any singularities and its coo
 Geodesic maximality is coordinate dependent notion, if the manifold is geodesicaly complete.
 
 
-\section{Useful theorems}
+\section{Riemannian geometry theorems}
 
 \begin{thm}[Von Neumann-Wigner]
     \label{thm:n-2}

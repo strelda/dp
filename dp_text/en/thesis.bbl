@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -36,6 +36,16 @@ C.~Gorodski.
 \newblock \emph{An introduction to Riemannian geometry}.
 \newblock 2012.
 \newblock Preliminary version.
+
+\bibitem[Guti\'errez-Ruiz et~al.(2021)Guti\'errez-Ruiz, Gonzalez,
+  Ch\'avez-Carlos, Hirsch, and Vergara]{geometricTensorLipkin}
+Daniel Guti\'errez-Ruiz, Diego Gonzalez, Jorge Ch\'avez-Carlos, Jorge~G.
+  Hirsch, and J.~David Vergara.
+\newblock Quantum geometric tensor and quantum phase transitions in the
+  lipkin-meshkov-glick model.
+\newblock \emph{Phys. Rev. B}, 103:\penalty0 174104, May 2021.
+\newblock \doi{10.1103/PhysRevB.103.174104}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.103.174104}.
 
 \bibitem[Kolodrubetz et~al.(2017)Kolodrubetz, Sels, Mehta, and
   Polkovnikov]{kolodrubez}

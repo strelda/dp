@@ -1,5 +1,5 @@
-\chapter{First order transition Hamiltonian}
-First order transition Hamiltonian can be written in a form
+\chapter{Lipkin-Meshkov Glick model}
+The Lipkin-Meshkov Glick model is a simple first order transition Hamiltonian and can be written in a form
 \begin{equation}
     \HH=\J_3-\frac{\tilde\lambda(t)}{2j}\left(\J_1+\tilde\chi(\J_3+j\Id)\right)^2
     \label{eq:firstOrderTransitionHamiltonianOriginal}
@@ -35,7 +35,9 @@ where $\delta_{a'b}$ is Kronecker delta. Using
         \textcolor{violet}{\J_\pm\J_\mp}&=\J^2-\J_3^2 \mp \J_3\\
         \textcolor{blue}{\J_1}&=(\J_+ +\J_-),
 \end{align}
-we get pentadiagonal matrix representation of $\HH$.
+we get pentadiagonal matrix representation of $\HH$. 
+
+From now on, $j=N/2$ will be used, where $N$ is number of particles in the system. Because every particle has only two eigenstates -- spin up/down (we will call them \emph{qubits}), all of them are therefore aligned in one direction.
 % \begin{equation}
 %     \HH=\begin{pmatrix}
 %         h_a   &h_b   &h_c   &0     &\dots &0\\
@@ -49,7 +51,7 @@ we get pentadiagonal matrix representation of $\HH$.
 
 
 \section{Hamiltonian analysis}
-The behavior of cases $N=1$ and $N=2$ is not characteristic for our Hamiltonian and has no physical meaning in this case, therefore the properties of $N=3$ case will be discussed at first and afterwards generalized to arbitrary $N$ along with the limit $N\rightarrow$. Due to complexity of chosen Hamiltonian, only some aspects are possible to calculate analytically, but mostly the numerical analysis is needed.
+The behavior of cases $N=1$ and $N=2$ is not characteristic for our Hamiltonian and has no physical meaning in this case, therefore the properties of $N=3$ case will be discussed at first and afterwards generalized to arbitrary $N$ along with the limit $N\rightarrow\infty$. Due to complexity of chosen Hamiltonian, only some aspects are possible to calculate analytically, but mostly the numerical analysis is needed.
 
 
 
@@ -130,7 +132,7 @@ If the energy spectrum is degenerate and metric tensor diverges, see individual 
     \label{fig:N=3_G}
 \end{figure}
 
-Due to metric tensor degeneracy, the space is not geodesically maximal. To see that singularity is not only coordinate one, by calculating the Ricci curvature we see (fig. \ref{fig:N=3_Ricci}), that it diverges in points $(\lambda_d;\pm\chi_d)$ (singularities of the metric tensor), see sections in $\chi$-direction on fig. \ref{fig:N=3_Ricci_section}, proving the singularity is not only coordinate, but \emph{physical}.
+Due to metric tensor degeneracy, the space is not geodesically maximal. To see that singularity is not only coordinate one, by calculating the Ricci curvature we see (fig. \ref{fig:N=3_Ricci}), that it diverges in points $(\lambda_d;\pm\chi_d)$ (singularities of the metric tensor), see sections in $\chi$-direction on fig. \ref{fig:N=3_Ricci_section}, proving the singularity is not only coordinate, but \emph{physical}. Coordinates of those minimas can be seen on fig. \ref{fig:N=3_RicMinimas}.
 
 This means our ground state manifold is geodesically incomplete and according to \ref{thm:hopf-Rinow_modified} there exist some "event horizon" around singularities $(\lambda_d,\pm \chi_d)$. 
 \begin{figure}[h]
@@ -145,13 +147,18 @@ This means our ground state manifold is geodesically incomplete and according to
     \caption{Ricci curvature, section in $\lambda\in\{0.5;1;1.5\}$.}
     \label{fig:N=3_Ricci_section}
 \end{figure}
-
+\begin{figure}[h]
+    \centering
+    \includegraphics{../img/N=3_RicMinimas.pdf}
+    \caption{Minimas in Ricci curvature. Case $N=3$.}
+    \label{fig:N=3_RicMinimas}    
+\end{figure}
 
 This can be seen more clearly from geodesics, i.e. by solving initial value problem with conditions
 $$(\lambda(t_i);\chi(t_i))=(\lambda_i;\chi_i)$$
 $$\left(\der{\lambda(t)}{t};\der{\chi(t)}{t}\right)\Bigg|_{t_i}=(\lambda'_i;\chi'_i).$$
 
-Results for these geodesics starting at $(\lambda;\chi)=(0;0)$, $(\lambda',\chi')=(\cos\theta;\sin\theta)$ for $\theta\in [-0.63;0.63]$ and $\theta\in [\pi-0.225;\pi+0.225]$ with step $0.01$, see fig \ref{fig:N=3_geodesics}. Other values $\theta$ result in close approach of the geodesics to singularity making calculations numerically unstable. The fact that geodesics lean towards singularities is well known from the theory of General Relativity (GR). The main difference here is, that our "test particle" seems to be partially repulsed from the singularity, see charge attraction vs. repulsion intuition in fig. \ref{fig:geodesicsinGR}. \textcolor{blue}{This is caused by the fact, that the Hamiltonian consists of more elements from which some are "repulsive" and some "attractive". } Also from the singularity to the right, there is an area with huge negative Ricci curvature, which the geodesics try to avoid resulting in them going around the singularity, which is shorter than crossing it. 
+Results for these geodesics starting at $(\lambda;\chi)=(0;0)$, $(\lambda',\chi')=(\cos\theta;\sin\theta)$ for $\theta\in [-0.63;0.63]$ and $\theta\in [\pi-0.225;\pi+0.225]$ with step $0.01$, see fig \ref{fig:N=3_geodesics}. Other values $\theta$ result in close approach of the geodesics to singularity making calculations numerically unstable. The fact that geodesics lean towards singularities is well known from the theory of General Relativity (GR). The main difference here is, that our "test particle" seems to be partially repulsed from the singularity, see charge attraction vs. repulsion intuition in fig. \ref{fig:geodesicsinGR}. \textcolor{blue}{This is caused by the fact, that the Hamiltonian consists of more elements from which some are "repulsive" and some "attractive". } Also from the singularity to the right, there is an area with huge negative Ricci curvature, which the geodesics try to avoid resulting in them going around the singularity, which is shorter than crossing it.
 
 
 
@@ -176,6 +183,7 @@ Another interesting initial value problem is $(\lambda_i;\chi_i)=(-1;\chi_i)$, $
     \caption{Geodesics starting from $(\lambda_i;\chi_i)=(-1;\chi_i)$, $(\lambda',\chi')=(1;0)$, for $\chi_i\in(0;1)$ with step $0.05$. Numerically unstable geodesics were skipped. Case $N=3$.}
     \label{fig:N=3_geodesics_lambdaIn=-1}    
 \end{figure}
+
 
 
 \newpage
