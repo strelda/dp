@@ -45,7 +45,7 @@ We already know tangent and cotangent spaces. Thinking of manifold $\M$ as a fib
 \begin{definition}
     Structure $(\mathcal{E},\mathcal{B},\pi,\mathcal{F})$, for topological spaces $\mathcal{E}$ (\emph{total space}), $\mathcal{B}$ (\emph{base space}), $\emph{F}$ (\emph{fibre}) and a continuous surjection $\pi: \mathcal{E}\rightarrow \mathcal{B}$ satisfying a local triviality\footnote{local triviality} is called a \emph{Fiber bundle} (\emph{projection map}). In addition, the $\mathcal{B}$ is assumed to be connected\footnote{can't be represented as a union of two disjoint sets} and for every $x\in \mathcal{B}$, there is an open neighborhood $\mathcal{U}\subset \mathcal{B}$ (\emph{trivializing neighborhood}) such that there exists a homeomorphism from $\mathcal{U}$ to so-called \emph{product space}
     $$\phi: \pi^{-1}(\mathcal{U})\rightarrow \mathcal{U}\times \mathcal{F},$$
-    such that $\pi^{-1}\pi(\mathcal{U})=\mathcal{U}$.
+    such that $\pi^{-1}\circ \pi(\mathcal{U})=\mathcal{U}$.
 \end{definition}
 
 The above mappings can be more clear from figure \ref{fig:bundle}. Because projections of products are open maps, $\pi: \mathcal{E}\rightarrow \mathcal{B}$ must be open map.
