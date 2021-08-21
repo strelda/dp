@@ -29,14 +29,17 @@ we get matrix elements
     \braket{j'm'|\J_\pm|jm} &= \sqrt{(j\mp m)(j\pm m+1)}\delta_{j'j}\delta_{m'm\pm 1},
 \end{align}
 where $\delta_{a'b}$ is Kronecker delta. Using
-\begin{align}
-        \left(\J_1+\chi(\J_3+j)\right)^2 &= \textcolor{purple}{\J_1^2} +\chi^2 (\J_3^2+j^2\Id+2j\J_3)+\chi(\textcolor{blue}{\J_1}\J_3+\J_3\textcolor{blue}{\J_1})+2\chi j\textcolor{blue}{\J_1}\\
-        \textcolor{purple}{\J_1^2}&= \frac{1}{4}(\J_++\J_-)^2= \frac{1}{4}(\J_+^2+\J_-^2+\textcolor{violet}{\J_+\J_-}+\textcolor{violet}{\J_-\J_+})\\ 
-        \textcolor{violet}{\J_\pm\J_\mp}&=\J^2-\J_3^2 \mp \J_3\\
-        \textcolor{blue}{\J_1}&=(\J_+ +\J_-),
-\end{align}
+\begin{equation}
+\begin{split}
+        % \left(\J_1+\chi(\J_3+j)\right)^2 &= \textcolor{purple}{\J_1^2} +\chi^2 (\J_3^2+j^2\Id+2j\J_3)+\chi(\textcolor{blue}{\J_1}\J_3+\J_3\textcolor{blue}{\J_1})+2\chi j\textcolor{blue}{\J_1}\\
+        % \textcolor{purple}{\J_1^2}&= \frac{1}{4}(\J_++\J_-)^2= \frac{1}{4}(\J_+^2+\J_-^2+\textcolor{violet}{\J_+\J_-}+\textcolor{violet}{\J_-\J_+})\\ 
+        % \textcolor{violet}{\J_\pm\J_\mp}&=\J^2-\J_3^2 \mp \J_3\\
+        % \textcolor{blue}{\J_1}&=(\J_+ +\J_-),\\
+        \HH &= J_3-\frac{\lambda}{8j}(J_++J_-)^2-\frac{\chi}{4j}\left[(J_++J_-)(J_3+j\Id)+(J_3+j\Id)(J_++J_-)\right]\\
+        &-\frac{\chi^2}{2j}(J_3+j\Id)^2
+\end{split}
+\end{equation}
 we get pentadiagonal matrix representation of $\HH$. 
-
 From now on, $j=N/2$ will be used, where $N$ is number of particles in the system. Because every particle has only two eigenstates -- spin up/down (we will call them \emph{qubits}), all of them are therefore aligned in one direction.
 % \begin{equation}
 %     \HH=\begin{pmatrix}

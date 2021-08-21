@@ -11,10 +11,10 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Bloch sphere for the eigenstate $u_1$ with the initial direction of magnetic field $\mathbf B=(0,0,B_z)$ transported along $\gamma =\{(\phi ,\sqrt {\phi })|\phi \in [0,2\pi ]\}$ (blue). The final orientation of the magnetic field is marked red and the states on the Bloch sphere correspond to initial eigenstate.\relax }}{27}{figure.caption.10}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Bloch sphere for the eigenstate $u_1$ with the initial direction of magnetic field $\mathbf B=(0,0,B_z)$ transported along $\gamma =\{(0,\theta )|\theta \in [0,\pi /2]\}$ (blue). The final orientation of the magnetic field is marked red and the states on the Bloch sphere correspond to initial eigenstate.\relax }}{28}{figure.caption.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Energy for the case $N=3$ Hamiltonian, section $\lambda =1$\relax }}{31}{figure.caption.12}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Energy for the case $N=3$ Hamiltonian, section $\chi =1$\relax }}{32}{figure.caption.13}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Arcustangens of metric tensor elements for the case $N=3$\relax }}{33}{figure.caption.14}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Metric tensor determinant in a parameter space for $N=3$.\relax }}{34}{figure.caption.15}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Energy for the case $N=3$ Hamiltonian, section $\lambda =1$\relax }}{30}{figure.caption.12}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Energy for the case $N=3$ Hamiltonian, section $\chi =1$\relax }}{31}{figure.caption.13}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Arcustangens of metric tensor elements for the case $N=3$\relax }}{32}{figure.caption.14}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Metric tensor determinant in a parameter space for $N=3$.\relax }}{33}{figure.caption.15}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Arcustangens of Christoffel symbols for the case $N=3$\relax }}{35}{figure.caption.16}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Arcustanges of Ricci curvature for the case $N=3$.\relax }}{36}{figure.caption.17}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Ricci curvature, section in $\lambda \in \{0.5;1;1.5\}$.\relax }}{36}{figure.caption.18}
