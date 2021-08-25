@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/strelda/Documents/mff/dp/code/spectrum_degeneracy/target/rls/debug/build/typenum-a845ac8e04079320/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/strelda/Documents/mff/dp/code/spectrum_degeneracy/target/rls/debug/build/typenum-a845ac8e04079320/out/op.rs

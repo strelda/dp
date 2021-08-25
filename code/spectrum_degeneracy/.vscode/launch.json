@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'spectrum_degeneracy'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=spectrum_degeneracy",
+                    "--package=spectrum_degeneracy"
+                ],
+                "filter": {
+                    "name": "spectrum_degeneracy",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'spectrum_degeneracy'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=spectrum_degeneracy",
+                    "--package=spectrum_degeneracy"
+                ],
+                "filter": {
+                    "name": "spectrum_degeneracy",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
