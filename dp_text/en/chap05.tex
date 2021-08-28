@@ -222,9 +222,45 @@ which represents phase transition in the limit $N\rightarrow \infty$. In our cas
 \end{figure}
 
 \section{Arbitrary $N$}
-The case $N=3$ was deliberately chosen to show the lowest dimension with characteristics, which generalize to higher dimensions, see energy spectrum sections on fig. \ref{fig:N=10_energiesl}, \ref{fig:N=10_energies2} for the $N=10$ case. \textcolor{red}{Between every two energy levels is at least one avoided crossing.} It was shown analytically, that for the case $N=3$ there is a Metric tensor singularity. In fact, this singularity is present for every $N$ and for the first 14 cases was shown numerically, that it moves along separatrix, see fig. \ref{fig:singularitiesRegr}. Positions of those points are not exact due to complicated numerics around singularity.
- 
+The case $N=3$ was deliberately chosen to show the lowest dimension with characteristics, which generalize to higher dimensions, see energy spectrum sections on fig. \ref{fig:N=10_energiesl}, \ref{fig:N=10_energies2} for the $N=10$ case. \textcolor{red}{Between every two energy levels is at least one avoided crossing and between zeroth and first there are $n-2$ crossings for $n$ odd and $n-3$ for n even, which I have no idea how to prove.} 
 
+Special attention was given to spectrum degeneracies between first and zeroth energy level. Those degeneracies can be numerically shown to lie in the coordinates wrote in Tab.\ref{tab:singularities}. Exact search for the spectrum degeneracies is numerically very expensive, thus it was calculated only for the cases $n=3$ to $n=7$.
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c||c|c|c}
+     n&$(\lambda_l;\pm\chi_l)$&$(\lambda_r;\pm\chi_r)$&$(\lambda_r;\pm\chi_r)$        \\ \hline\hline
+     3&$(-\frac{1}{2};\sqrt{\frac{3}{5}}) $&                                    &        \\
+     4&$(-3          ;\sqrt{\frac{4}{5}}) $& $(-\frac{1}{3};\sqrt{\frac{4}{5}})$&        \\
+     5&$(-\frac{3}{2};\sqrt{\frac{5}{7}}) $& $(-\frac{1}{4};\sqrt{\frac{5}{7}})$&        \\
+     6&$(-5          ;\sqrt{\frac{6}{7}}) $& $(-\frac{1}{5};\sqrt{\frac{6}{7}})$&$(-1          ;\sqrt{\frac{2}{3}}) $        \\
+     7&$(-\frac{5}{2};\sqrt{\frac{7}{9}}) $& $(-\frac{1}{6};\sqrt{\frac{7}{9}})$&$(-\frac{3}{4};\sqrt{\frac{7}{11}}) $   
+    \end{tabular}
+    \caption{Singularities between zeroth and first energy levels for dimensions 3--7. Subsript $l(r)$ means is for most \emph{left(right)-wise} positioned coordinates in the $(\lambda,\chi)$-plot.}
+    \label{tab:singularities}
+    \end{table}
+The singularities $(\lambda_l,\chi_l)$ and $(\lambda_r,\chi_r)$, i.e. those with minimal, resp. maximal $\lambda$ coordinate from all singularities, can be shown to lie in the points
+\begin{equation}
+    (\lambda_l ;\pm\chi_l)= \begin{cases}
+        \left(1-\frac{n}{2};\sqrt{\frac{n}{n+2}}\right) & ,n\text{ is odd}, n\geq 3\\
+        \left(1-n;\sqrt{\frac{n}{n+1}}\right) & ,n\text{ is even}, n\geq 3
+    \end{cases}
+    \label{eq:singularityCoordinateFormulaLeft}
+\end{equation}
+\begin{equation}
+    (\lambda_r ;\pm\chi_r)= 
+        \left(\frac{1}{1-n};\sqrt{\frac{n}{2n-1}}\right)\quad , n\geq 3.
+        \label{eq:singularityCoordinateFormulaRight}
+\end{equation}
+This was proven with numerical precision to dimension $n=1000$. Dimensions 3 to 10 are shown in fig. \ref{fig:singularities3to10}.
+In addition, it can be seen, that the singularities belong to the separatrix described eq. \ref{eq:separatrix}. Due to this, the position of singularities is constrained on separatrix between points $(\lambda_l,\pm\chi_l)$ and $(\lambda_r,\pm\chi_r)$.
+
+
+
+In the limit $N\rightarrow\infty$ they converge to
+\begin{align*}
+    \lim_{N\rightarrow \infty}(\lambda_l ;\pm\chi_l)&= \left(-\infty,\frac{1}{\sqrt{2}}\right)\\
+    \lim_{N\rightarrow \infty}(\lambda_r ;\pm\chi_r)&= \left(0,\frac{1}{\sqrt{2}}\right)
+\end{align*}
 
 \begin{figure}[h]
     \centering
@@ -239,11 +275,19 @@ The case $N=3$ was deliberately chosen to show the lowest dimension with charact
     \label{fig:N=10_energies2}    
 \end{figure}
 
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics{../img/divPosition.pdf}
+%     \caption{Singularities in the metric tensor for of $N\in\{3,4,\dots ,14\}$ and separatrix according to eq. \ref{eq:separatrix}.}
+%     \label{fig:singularitiesRegr}    
+% \end{figure}
+
 \begin{figure}[h]
     \centering
-    \includegraphics{../img/divPosition.pdf}
-    \caption{Singularities in the metric tensor for of $N\in\{3,4,\dots ,14\}$ and separatrix according to eq. \ref{eq:separatrix}.}
-    \label{fig:singularitiesRegr}    
+    \includegraphics{../img/singularitiesPlots.pdf}
+    \caption{Spectrum degeneracy between $E_0$ and $E_1$. Hamiltonian dimensions are 1,3,5,7 in the first column and 2,4,6,8 in the second column. Black crosses mark most left-wise and right-wise singularity and the background corresponds to the metric tensor determinant.}
+    \label{fig:singularities3to10}    
 \end{figure}
+
 
 

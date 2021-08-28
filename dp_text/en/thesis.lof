@@ -15,16 +15,16 @@
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Energy for the case $N=3$ Hamiltonian, section $\chi =1$\relax }}{31}{figure.caption.13}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Arcustangens of metric tensor elements for the case $N=3$\relax }}{32}{figure.caption.14}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Metric tensor determinant in a parameter space for $N=3$.\relax }}{33}{figure.caption.15}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Arcustangens of Christoffel symbols for the case $N=3$\relax }}{35}{figure.caption.16}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Arcustanges of Ricci curvature for the case $N=3$.\relax }}{36}{figure.caption.17}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Ricci curvature, section in $\lambda \in \{0.5;1;1.5\}$.\relax }}{36}{figure.caption.18}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Minimas in Ricci curvature. Case $N=3$.\relax }}{37}{figure.caption.19}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Geodesics starting from $(\lambda _i;\chi _i)=(0;0)$ with $(\lambda '_i;\chi '_i)=(\qopname \relax o{cos}\theta ;\qopname \relax o{sin}\theta )$. Case $N=3$.\relax }}{37}{figure.caption.20}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparing geodesics with repulsing (blue) and attracting (red) metric tensor divergence in the spherical symmetrical space. \relax }}{38}{figure.caption.21}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Geodesics starting from $(\lambda _i;\chi _i)=(-1;\chi _i)$, $(\lambda ',\chi ')=(1;0)$, for $\chi _i\in (0;1)$ with step $0.05$. Numerically unstable geodesics were skipped. Case $N=3$.\relax }}{38}{figure.caption.22}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces First order transition -- Separatrix (red), second order transition (blue point) compared to minimum between the ground state and first excited state in N=3 case (black, dashed).\relax }}{39}{figure.caption.23}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Energy spectrum as function of $\chi $, for $\lambda =1$ and $N=10$.\relax }}{39}{figure.caption.24}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Energy spectrum as function of $\lambda $, for $\chi =1$ and $N=10$.\relax }}{40}{figure.caption.25}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Singularities in the metric tensor for of $N\in \{3,4,\dots ,14\}$ and separatrix according to eq. \ref {eq:separatrix}.\relax }}{40}{figure.caption.26}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Arcustangens of Christoffel symbols for the case $N=3$\relax }}{36}{figure.caption.16}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Arcustanges of Ricci curvature for the case $N=3$.\relax }}{37}{figure.caption.17}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Ricci curvature, section in $\lambda \in \{0.5;1;1.5\}$.\relax }}{37}{figure.caption.18}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Minimas in Ricci curvature. Case $N=3$.\relax }}{38}{figure.caption.19}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Geodesics starting from $(\lambda _i;\chi _i)=(0;0)$ with $(\lambda '_i;\chi '_i)=(\qopname \relax o{cos}\theta ;\qopname \relax o{sin}\theta )$. Case $N=3$.\relax }}{38}{figure.caption.20}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparing geodesics with repulsing (blue) and attracting (red) metric tensor divergence in the spherical symmetrical space. \relax }}{39}{figure.caption.21}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Geodesics starting from $(\lambda _i;\chi _i)=(-1;\chi _i)$, $(\lambda ',\chi ')=(1;0)$, for $\chi _i\in (0;1)$ with step $0.05$. Numerically unstable geodesics were skipped. Case $N=3$.\relax }}{39}{figure.caption.22}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces First order transition -- Separatrix (red), second order transition (blue point) compared to minimum between the ground state and first excited state in N=3 case (black, dashed).\relax }}{40}{figure.caption.23}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Energy spectrum as function of $\chi $, for $\lambda =1$ and $N=10$.\relax }}{40}{figure.caption.25}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Energy spectrum as function of $\lambda $, for $\chi =1$ and $N=10$.\relax }}{41}{figure.caption.26}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Spectrum degeneracy between $E_0$ and $E_1$. Hamiltonian dimensions are 1,3,5,7 in the first column and 2,4,6,8 in the second column. Black crosses mark most left-wise and right-wise singularity and the background corresponds to the metric tensor determinant.\relax }}{42}{figure.caption.27}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

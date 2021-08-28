@@ -550,9 +550,9 @@ INPUT ../img/N=10_energiesl.pdf
 INPUT /home/strelda/Documents/mff/dp/dp_text/en/../img/N=10_energies2.pdf
 INPUT ../img/N=10_energies2.pdf
 INPUT ../img/N=10_energies2.pdf
-INPUT /home/strelda/Documents/mff/dp/dp_text/en/../img/divPosition.pdf
-INPUT ../img/divPosition.pdf
-INPUT ../img/divPosition.pdf
+INPUT /home/strelda/Documents/mff/dp/dp_text/en/../img/singularitiesPlots.pdf
+INPUT ../img/singularitiesPlots.pdf
+INPUT ../img/singularitiesPlots.pdf
 OUTPUT /home/strelda/Documents/mff/dp/dp_text/en/epilog.aux
 INPUT /home/strelda/Documents/mff/dp/dp_text/en/epilog.tex
 INPUT /home/strelda/Documents/mff/dp/dp_text/en/epilog.tex

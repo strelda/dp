@@ -1,2 +1,4 @@
 geodesically
 Ricci
+degeneracies
+separatrix
