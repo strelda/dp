@@ -2,3 +2,6 @@ geodesically
 Ricci
 degeneracies
 separatrix
+pentadiagonal
+Mathematica
+Christoffel
