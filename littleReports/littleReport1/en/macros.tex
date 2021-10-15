@@ -1,0 +1,123 @@
+%%% This file contains definitions of various useful macros and environments %%%
+%%% Please add more macros here instead of cluttering other files with them. %%%
+
+%%% Minor tweaks of style
+
+% These macros employ a little dirty trick to convince LaTeX to typeset
+% chapter headings sanely, without lots of empty space above them.
+% Feel free to ignore.
+\makeatletter
+\def\@makechapterhead#1{
+  {\parindent \z@ \raggedright \normalfont
+   \Huge\bfseries \thechapter. #1
+   \par\nobreak
+   \vskip 20\p@
+}}
+\def\@makeschapterhead#1{
+  {\parindent \z@ \raggedright \normalfont
+   \Huge\bfseries #1
+   \par\nobreak
+   \vskip 20\p@
+}}
+\makeatother
+
+% This macro defines a chapter, which is not numbered, but is included
+% in the table of contents.
+\def\chapwithtoc#1{
+\chapter*{#1}
+\addcontentsline{toc}{chapter}{#1}
+}
+
+% Draw black "slugs" whenever a line overflows, so that we can spot it easily.
+% \overfullrule=1mm
+
+%%% Macros for definitions, theorems, claims, examples, ... (requires amsthm package)
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+\newtheorem{hypot}{Hypotheses}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{plain}
+\newtheorem{defn}{Definition}
+
+\theoremstyle{remark}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{rem}{Remark}
+\newtheorem*{example}{Example}
+
+%%% An environment for proofs
+
+\newenvironment{myproof}{
+  \par\medskip\noindent
+  \textit{Proof}.
+}{
+\newline
+\rightline{$\qedsymbol$}
+}
+
+%%% An environment for typesetting of program code and input/output
+%%% of programs. (Requires the fancyvrb package -- fancy verbatim.)
+
+\DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\small, frame=single}
+
+
+%%% Useful operators for statistics and probability
+\DeclareMathOperator{\sign}{\textrm{sign}}
+\renewcommand{\Im}{\textrm{Im}}
+\newcommand{\Par}{\textrm{par}}
+
+%%% Transposition of a vector/matrix
+\newcommand{\T}[1]{#1^\top}
+
+%%% Various math goodies
+\newcommand{\maon}[1]{o(n^{#1})}
+\newcommand{\abs}[1]{\left|{#1}\right|}
+\newcommand{\isqr}[1]{\frac{1}{\sqrt{#1}}}
+
+%%% Various table goodies
+\newcommand{\pulrad}[1]{\raisebox{1.5ex}[0pt]{#1}}
+\newcommand{\mc}[1]{\multicolumn{1}{c}{#1}}
+
+\DeclareMathOperator{\Tr}{\textrm{Tr}}
+\DeclareMathOperator\arctanh{arctanh}
+\renewcommand{\d}{\ensuremath{\mathrm{d}}}
+\newcommand{\D}{\ensuremath{\mathrm{D}}}
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\der}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+\newcommand{\Der}[2]{\frac{\mathrm{D} #1}{\mathrm{d} #2}}
+
+\renewcommand{\M}{\mathcal{M}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\F}{\mathcal{F}}
+\renewcommand{\T}{\mathbb{T}}
+\newcommand{\TT}{\mathcal{T}}
+\renewcommand{\O}{\mathcal{O}}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\Id}{\mathbbm{1}}
+\newcommand{\llambda}{{\bm\lambda}}
+\renewcommand{\AA}{\mathcal{\widehat{A}}}
+\renewcommand{\U}{\hat{U}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\HH}{\hat{H}}
+\newcommand{\J}{\hat{J}}
+\newcommand{\kpsi}{\ket{\psi}}
+\newcommand{\kphi}{\ket{\phi}}
+\newcommand{\kpsit}{\ket{\psi(t)}}
+\newcommand{\kpsilt}{\ket{\psi(\llambda(t))}}
+\newcommand{\up}{\ket{\uparrow}}
+\newcommand{\dn}{\ket{\downarrow}}
+\newcommand{\ch}{\hat{\chi}}
+\newcommand{\Schrodinger}{Schrödinger }
+
+\DeclareMathOperator{\spec}{\sigma}
