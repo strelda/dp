@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: chap05.aux
+A level-1 auxiliary file: appendix1.aux
+A level-1 auxiliary file: appendix2.aux
+A level-1 auxiliary file: bibliography.aux
+The style file: plainnat.bst
+Database file #1: bibliography.bib
+Warning--empty publisher in claudio
+You've used 2 entries,
+            2773 wiz_defined-function locations,
+            607 strings with 5043 characters,
+and the built_in function-call counts, 640 in all, are:
+= -- 48
+> -- 20
+< -- 2
++ -- 8
+- -- 6
+* -- 35
+:= -- 110
+add.period$ -- 8
+call.type$ -- 2
+change.case$ -- 6
+chr.to.int$ -- 2
+cite$ -- 5
+duplicate$ -- 40
+empty$ -- 65
+format.name$ -- 8
+if$ -- 127
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 4
+newline$ -- 20
+num.names$ -- 8
+pop$ -- 23
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 25
+stack$ -- 0
+substring$ -- 4
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 1
+while$ -- 6
+width$ -- 0
+write$ -- 34
+(There was 1 warning)

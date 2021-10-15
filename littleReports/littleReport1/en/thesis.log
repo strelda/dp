@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  15 OCT 2021 10:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  15 OCT 2021 12:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/strelda/Documents/mff/dp/littleReports/littleReport/en/thesis.tex
-(/home/strelda/Documents/mff/dp/littleReports/littleReport/en/thesis.tex
+**/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/thesis.tex
+(/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/thesis.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -155,7 +155,7 @@ File: se-pdfdoc.def 2016/05/16 v1.11 stringenc: PDFDocEncoding
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 )
 ** pdfx: Metadata file thesis.xmpdata read successfully.
-(/home/strelda/Documents/mff/dp/littleReports/littleReport/en/thesis.xmpdata)<<sRGB_IEC61966-2-1_black_scaled.icc>> (/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
+(/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/thesis.xmpdata)<<sRGB_IEC61966-2-1_black_scaled.icc>> (/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -2192,13 +2192,13 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 89.
 \@input{macros.aux}
 \openout2 = `macros.aux'.
 
-(/home/strelda/Documents/mff/dp/littleReports/littleReport/en/macros.tex
+(/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/macros.tex
 \c@thm=\count145
 \c@hypot=\count146
 \c@definition=\count147
 \c@defn=\count148
 \c@conjecture=\count149
-) (/home/strelda/Documents/mff/dp/littleReports/littleReport/en/thesis.aux (/home/strelda/Documents/mff/dp/littleReports/littleReport/en/chap05.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport/en/bibliography.aux))
+) (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/thesis.aux (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/chap05.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/appendix1.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/appendix2.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/bibliography.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
@@ -2233,7 +2233,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 95.
 LaTeX Info: Redefining \pageref on input line 95.
 LaTeX Info: Redefining \nameref on input line 95.
- (/home/strelda/Documents/mff/dp/littleReports/littleReport/en/thesis.out) (/home/strelda/Documents/mff/dp/littleReports/littleReport/en/thesis.out)
+ (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/thesis.out) (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
 
@@ -2266,7 +2266,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \openout2 = `chap05.aux'.
 
- (/home/strelda/Documents/mff/dp/littleReports/littleReport/en/chap05.tex
+ (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/chap05.tex
 Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -2324,12 +2324,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ]
 
-LaTeX Warning: Reference `appendix1' on page 2 undefined on input line 58.
-
-
-
 pdfTeX warning: pdflatex (file ../img/N=3_energiesl.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_energiesl.pdf, id=57, 361.35pt x 249.93375pt>
+<../img/N=3_energiesl.pdf, id=78, 361.35pt x 249.93375pt>
 File: ../img/N=3_energiesl.pdf Graphic file (type pdf)
 <use ../img/N=3_energiesl.pdf>
 Package pdftex.def Info: ../img/N=3_energiesl.pdf  used on input line 72.
@@ -2337,7 +2333,7 @@ Package pdftex.def Info: ../img/N=3_energiesl.pdf  used on input line 72.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_energiesc.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_energiesc.pdf, id=58, 361.35pt x 249.93375pt>
+<../img/N=3_energiesc.pdf, id=79, 361.35pt x 249.93375pt>
 File: ../img/N=3_energiesc.pdf Graphic file (type pdf)
 <use ../img/N=3_energiesc.pdf>
 Package pdftex.def Info: ../img/N=3_energiesc.pdf  used on input line 78.
@@ -2349,12 +2345,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 83.
 
 
-LaTeX Warning: Reference `thm:n-2' on page 3 undefined on input line 85.
-
-
-
 pdfTeX warning: pdflatex (file ../img/N=3_gComponents.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_gComponents.pdf, id=92, 289.08pt x 433.62pt>
+<../img/N=3_gComponents.pdf, id=114, 289.08pt x 433.62pt>
 File: ../img/N=3_gComponents.pdf Graphic file (type pdf)
 <use ../img/N=3_gComponents.pdf>
 Package pdftex.def Info: ../img/N=3_gComponents.pdf  used on input line 90.
@@ -2362,7 +2354,7 @@ Package pdftex.def Info: ../img/N=3_gComponents.pdf  used on input line 90.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_barA.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_barA.pdf, id=93, 312.16624pt x 42.1575pt>
+<../img/N=3_barA.pdf, id=115, 312.16624pt x 42.1575pt>
 File: ../img/N=3_barA.pdf Graphic file (type pdf)
 <use ../img/N=3_barA.pdf>
 Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 91.
@@ -2370,7 +2362,7 @@ Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 91.
 [3 <../img/N=3_energiesc.pdf>]
 
 pdfTeX warning: pdflatex (file ../img/N=3_gDivergence.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_gDivergence.pdf, id=119, 245.91875pt x 190.7125pt>
+<../img/N=3_gDivergence.pdf, id=142, 245.91875pt x 190.7125pt>
 File: ../img/N=3_gDivergence.pdf Graphic file (type pdf)
 <use ../img/N=3_gDivergence.pdf>
 Package pdftex.def Info: ../img/N=3_gDivergence.pdf  used on input line 99.
@@ -2381,7 +2373,7 @@ pdfTeX warning: pdflatex (file ../img/N=3_barA.pdf): PDF inclusion: multiple pdf
 >]
 
 pdfTeX warning: pdflatex (file ../img/N=3_gammas.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_gammas.pdf, id=143, 333.245pt x 249.93375pt>
+<../img/N=3_gammas.pdf, id=166, 333.245pt x 249.93375pt>
 File: ../img/N=3_gammas.pdf Graphic file (type pdf)
 <use ../img/N=3_gammas.pdf>
 Package pdftex.def Info: ../img/N=3_gammas.pdf  used on input line 107.
@@ -2400,12 +2392,8 @@ Overfull \hbox (20.65347pt too wide) in paragraph at lines 107--109
 pdfTeX warning: pdflatex (file ../img/N=3_gammas.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 
-LaTeX Warning: Reference `thm:hopf-Rinow_modified' on page 6 undefined on input line 116.
-
-
-
 pdfTeX warning: pdflatex (file ../img/N=3_Ricci.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_Ricci.pdf, id=168, 378.41376pt x 323.2075pt>
+<../img/N=3_Ricci.pdf, id=192, 378.41376pt x 323.2075pt>
 File: ../img/N=3_Ricci.pdf Graphic file (type pdf)
 <use ../img/N=3_Ricci.pdf>
 Package pdftex.def Info: ../img/N=3_Ricci.pdf  used on input line 119.
@@ -2413,7 +2401,7 @@ Package pdftex.def Info: ../img/N=3_Ricci.pdf  used on input line 119.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_Ricci_section.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_Ricci_section.pdf, id=169, 311.1625pt x 200.75pt>
+<../img/N=3_Ricci_section.pdf, id=193, 311.1625pt x 200.75pt>
 File: ../img/N=3_Ricci_section.pdf Graphic file (type pdf)
 <use ../img/N=3_Ricci_section.pdf>
 Package pdftex.def Info: ../img/N=3_Ricci_section.pdf  used on input line 127.
@@ -2421,12 +2409,12 @@ Package pdftex.def Info: ../img/N=3_Ricci_section.pdf  used on input line 127.
 [6 <../img/N=3_Ricci.pdf>]
 
 pdfTeX warning: pdflatex (file ../img/N=3_geodesics.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_geodesics.pdf, id=199, 311.1625pt x 308.15125pt>
+<../img/N=3_geodesics.pdf, id=224, 311.1625pt x 308.15125pt>
 File: ../img/N=3_geodesics.pdf Graphic file (type pdf)
 <use ../img/N=3_geodesics.pdf>
 Package pdftex.def Info: ../img/N=3_geodesics.pdf  used on input line 148.
 (pdftex.def)             Requested size: 311.16174pt x 308.15048pt.
-<../img/geodesicsinGR.png, id=200, 903.375pt x 537.00626pt>
+<../img/geodesicsinGR.png, id=225, 903.375pt x 537.00626pt>
 File: ../img/geodesicsinGR.png Graphic file (type png)
 <use ../img/geodesicsinGR.png>
 Package pdftex.def Info: ../img/geodesicsinGR.png  used on input line 154.
@@ -2443,7 +2431,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 pdfTeX warning: pdflatex (file ../img/singularitiesBetweenEnergiesN=6.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/singularitiesBetweenEnergiesN=6.pdf, id=225, 325.215pt x 439.6425pt>
+<../img/singularitiesBetweenEnergiesN=6.pdf, id=250, 325.215pt x 439.6425pt>
 File: ../img/singularitiesBetweenEnergiesN=6.pdf Graphic file (type pdf)
 <use ../img/singularitiesBetweenEnergiesN=6.pdf>
 Package pdftex.def Info: ../img/singularitiesBetweenEnergiesN=6.pdf  used on input line 177.
@@ -2451,7 +2439,7 @@ Package pdftex.def Info: ../img/singularitiesBetweenEnergiesN=6.pdf  used on inp
 
 
 pdfTeX warning: pdflatex (file ../img/N=5_bar6.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=5_bar6.pdf, id=226, 312.16624pt x 45.16875pt>
+<../img/N=5_bar6.pdf, id=251, 312.16624pt x 45.16875pt>
 File: ../img/N=5_bar6.pdf Graphic file (type pdf)
 <use ../img/N=5_bar6.pdf>
 Package pdftex.def Info: ../img/N=5_bar6.pdf  used on input line 178.
@@ -2464,7 +2452,7 @@ Overfull \hbox (10.2145pt too wide) in paragraph at lines 177--179
 [8 <../img/N=3_geodesics.pdf> <../img/geodesicsinGR.png>]
 
 pdfTeX warning: pdflatex (file ../img/N=5_det3D.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=5_det3D.pdf, id=239, 305.14pt x 275.0275pt>
+<../img/N=5_det3D.pdf, id=264, 305.14pt x 275.0275pt>
 File: ../img/N=5_det3D.pdf Graphic file (type pdf)
 <use ../img/N=5_det3D.pdf>
 Package pdftex.def Info: ../img/N=5_det3D.pdf  used on input line 185.
@@ -2475,13 +2463,13 @@ pdfTeX warning: pdflatex (file ../img/N=5_bar6.pdf): PDF inclusion: multiple pdf
 >]
 
 pdfTeX warning: pdflatex (file ../img/N=5_geods00.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=5_geods00.pdf, id=261, 271.0125pt x 274.02374pt>
+<../img/N=5_geods00.pdf, id=286, 271.0125pt x 274.02374pt>
 File: ../img/N=5_geods00.pdf Graphic file (type pdf)
 <use ../img/N=5_geods00.pdf>
 Package pdftex.def Info: ../img/N=5_geods00.pdf  used on input line 199.
 (pdftex.def)             Requested size: 352.3162pt x 356.23082pt.
 [10 <../img/N=5_det3D.pdf>]
-<../img/geodesicSolutionsDrawing.png, id=275, 578.16pt x 580.1675pt>
+<../img/geodesicSolutionsDrawing.png, id=300, 578.16pt x 580.1675pt>
 File: ../img/geodesicSolutionsDrawing.png Graphic file (type png)
 <use ../img/geodesicSolutionsDrawing.png>
 Package pdftex.def Info: ../img/geodesicSolutionsDrawing.png  used on input line 206.
@@ -2489,7 +2477,7 @@ Package pdftex.def Info: ../img/geodesicSolutionsDrawing.png  used on input line
  [11 <../img/N=5_geods00.pdf> <../img/geodesicSolutionsDrawing.png>]
 
 pdfTeX warning: pdflatex (file ../img/infiniteN_transitionCompare.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/infiniteN_transitionCompare.pdf, id=289, 361.35pt x 241.90375pt>
+<../img/infiniteN_transitionCompare.pdf, id=314, 361.35pt x 241.90375pt>
 File: ../img/infiniteN_transitionCompare.pdf Graphic file (type pdf)
 <use ../img/infiniteN_transitionCompare.pdf>
 Package pdftex.def Info: ../img/infiniteN_transitionCompare.pdf  used on input line 237.
@@ -2505,7 +2493,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [12 <../img/infiniteN_transitionCompare.pdf>]
 
 pdfTeX warning: pdflatex (file ../img/N=10_energiesl.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=10_energiesl.pdf, id=315, 331.2375pt x 225.84375pt>
+<../img/N=10_energiesl.pdf, id=340, 331.2375pt x 225.84375pt>
 File: ../img/N=10_energiesl.pdf Graphic file (type pdf)
 <use ../img/N=10_energiesl.pdf>
 Package pdftex.def Info: ../img/N=10_energiesl.pdf  used on input line 251.
@@ -2513,7 +2501,7 @@ Package pdftex.def Info: ../img/N=10_energiesl.pdf  used on input line 251.
 
 
 pdfTeX warning: pdflatex (file ../img/N=10_energies2.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=10_energies2.pdf, id=316, 321.2pt x 221.82875pt>
+<../img/N=10_energies2.pdf, id=341, 321.2pt x 221.82875pt>
 File: ../img/N=10_energies2.pdf Graphic file (type pdf)
 <use ../img/N=10_energies2.pdf>
 Package pdftex.def Info: ../img/N=10_energies2.pdf  used on input line 257.
@@ -2524,46 +2512,78 @@ pdfTeX warning: pdflatex (file ../img/N=10_energies2.pdf): PDF inclusion: multip
 >]
 
 pdfTeX warning: pdflatex (file ../img/singularitiesPlots.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/singularitiesPlots.pdf, id=354, 289.08pt x 464.73625pt>
+<../img/singularitiesPlots.pdf, id=379, 289.08pt x 464.73625pt>
 File: ../img/singularitiesPlots.pdf Graphic file (type pdf)
 <use ../img/singularitiesPlots.pdf>
 Package pdftex.def Info: ../img/singularitiesPlots.pdf  used on input line 305.
 (pdftex.def)             Requested size: 375.80394pt x 604.15704pt.
 [14]) [15 <../img/singularitiesPlots.pdf>]
+\openout2 = `appendix1.aux'.
+
+ (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/appendix1.tex
+Appendix A.
+) [16
+
+
+
+]
+\openout2 = `appendix2.aux'.
+
+ (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/appendix2.tex
+Appendix B.
+
+Overfull \hbox (1.89963pt too wide) in paragraph at lines 21--22
+[]\OT1/lmr/m/n/12 Geodesic max-i-mal-ity is co-or-di-nate de-pen-dent no-tion, if the man-i-fold is geodesi-
+ []
+
+
+Overfull \hbox (19.50557pt too wide) in paragraph at lines 28--30
+[][]\OT1/lmr/bx/n/12 Theorem 1 \OT1/lmr/m/n/12 (Von Neu-man-n-Wigner)\OT1/lmr/bx/n/12 . []\OT1/lmr/m/it/12 (Von Neu-mann J, Wigner E. 1929. Physikalis-
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 37.
+(/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/it' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 37.
+ [17
+
+
+
+]) [18]
 \openout2 = `bibliography.aux'.
 
- (/home/strelda/Documents/mff/dp/littleReports/littleReport/en/bibliography.tex
-No file thesis.bbl.
-)
+ (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/bibliography.tex (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/thesis.bbl)) [19
+
+
+
+]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 63.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
-(/home/strelda/Documents/mff/dp/littleReports/littleReport/en/thesis.aux (/home/strelda/Documents/mff/dp/littleReports/littleReport/en/chap05.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport/en/bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
+(/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/thesis.aux (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/chap05.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/appendix1.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/appendix2.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport1/en/bibliography.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 55E3BB3E0B841D052985BD4A0423F827;660.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
+(rerunfilecheck)             Checksum: 959BB9537AB8AD7DD061D390C11E7988;1378.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 25561 strings out of 492982
- 435550 string characters out of 6134896
- 470221 words of memory out of 5000000
- 28554 multiletter control sequences out of 15000+600000
+ 25636 strings out of 492982
+ 437385 string characters out of 6134896
+ 471519 words of memory out of 5000000
+ 28585 multiletter control sequences out of 15000+600000
  72723 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,16n,54p,1394b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,21n,54p,1395b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} </home/strelda/.texlive2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk>{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on /home/strelda/Documents/mff/dp/littleReports/littleReport/en/thesis.pdf (15 pages, 12332226 bytes).
+Output written on /home/strelda/Documents/mff/dp/littleReports/littleReport1/en/thesis.pdf (19 pages, 12358278 bytes).
 PDF statistics:
- 467 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
- 160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 534 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 
