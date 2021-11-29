@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  15 OCT 2021 10:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  26 NOV 2021 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2277,40 +2277,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 6.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 8.
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 6.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 8.
  (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 6.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 8.
  (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 6.
+(Font)              <12> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 6.
+(Font)              <8> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 6.
-LaTeX Font Info:    Try loading font information for U+msa on input line 6.
+(Font)              <6> on input line 8.
+LaTeX Font Info:    Try loading font information for U+msa on input line 8.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 6.
+LaTeX Font Info:    Try loading font information for U+msb on input line 8.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-pdfTeX warning: pdflatex (file ../img/quenchFidelityFrom00.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/quenchFidelityFrom00.pdf, id=24, 305.14pt x 259.97125pt>
-File: ../img/quenchFidelityFrom00.pdf Graphic file (type pdf)
-<use ../img/quenchFidelityFrom00.pdf>
-Package pdftex.def Info: ../img/quenchFidelityFrom00.pdf  used on input line 37.
-(pdftex.def)             Requested size: 366.16614pt x 311.96393pt.
-[1
+) [1
 
 
 
@@ -2318,27 +2310,35 @@ Package pdftex.def Info: ../img/quenchFidelityFrom00.pdf  used on input line 37.
 
 ]
 
+pdfTeX warning: pdflatex (file ../img/quenchFidelityFrom00.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<../img/quenchFidelityFrom00.pdf, id=50, 305.14pt x 259.97125pt>
+File: ../img/quenchFidelityFrom00.pdf Graphic file (type pdf)
+<use ../img/quenchFidelityFrom00.pdf>
+Package pdftex.def Info: ../img/quenchFidelityFrom00.pdf  used on input line 39.
+(pdftex.def)             Requested size: 366.16614pt x 311.96393pt.
+
+
 pdfTeX warning: pdflatex (file ../img/equidistantPointsOnPath.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/equidistantPointsOnPath.pdf, id=47, 326.21875pt x 264.99pt>
+<../img/equidistantPointsOnPath.pdf, id=51, 326.21875pt x 264.99pt>
 File: ../img/equidistantPointsOnPath.pdf Graphic file (type pdf)
 <use ../img/equidistantPointsOnPath.pdf>
-Package pdftex.def Info: ../img/equidistantPointsOnPath.pdf  used on input line 44.
+Package pdftex.def Info: ../img/equidistantPointsOnPath.pdf  used on input line 46.
 (pdftex.def)             Requested size: 391.46053pt x 317.9864pt.
 [2 <../img/quenchFidelityFrom00.pdf>]
 
 pdfTeX warning: pdflatex (file ../img/bg123.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/bg123.pdf, id=65, 275.0275pt x 157.58875pt>
+<../img/bg123.pdf, id=69, 275.0275pt x 157.58875pt>
 File: ../img/bg123.pdf Graphic file (type pdf)
 <use ../img/bg123.pdf>
-Package pdftex.def Info: ../img/bg123.pdf  used on input line 51.
+Package pdftex.def Info: ../img/bg123.pdf  used on input line 53.
 (pdftex.def)             Requested size: 330.03134pt x 189.10553pt.
 
 
 pdfTeX warning: pdflatex (file ../img/plotsFidelityQuenches.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/plotsFidelityQuenches.pdf, id=66, 268.00125pt x 275.0275pt>
+<../img/plotsFidelityQuenches.pdf, id=70, 268.00125pt x 275.0275pt>
 File: ../img/plotsFidelityQuenches.pdf Graphic file (type pdf)
 <use ../img/plotsFidelityQuenches.pdf>
-Package pdftex.def Info: ../img/plotsFidelityQuenches.pdf  used on input line 52.
+Package pdftex.def Info: ../img/plotsFidelityQuenches.pdf  used on input line 54.
 (pdftex.def)             Requested size: 348.40157pt x 357.5357pt.
 [3 <../img/equidistantPointsOnPath.pdf>] [4 <../img/bg123.pdf> <../img/plotsFidelityQuenches.pdf
 
@@ -2346,54 +2346,54 @@ pdfTeX warning: pdflatex (file ../img/plotsFidelityQuenches.pdf): PDF inclusion:
 >]
 Chapter 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 77.
+(Font)              <10> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 77.
+(Font)              <7> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 77.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 91.
+(Font)              <5> on input line 79.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 93.
 (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 91.
+(Font)              <17.28> on input line 93.
  [5
 
 ]
 
 pdfTeX warning: pdflatex (file ../img/N=5_metricDeterminantElements.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=5_metricDeterminantElements.pdf, id=128, 376.40625pt x 498.86375pt>
+<../img/N=5_metricDeterminantElements.pdf, id=132, 376.40625pt x 498.86375pt>
 File: ../img/N=5_metricDeterminantElements.pdf Graphic file (type pdf)
 <use ../img/N=5_metricDeterminantElements.pdf>
-Package pdftex.def Info: ../img/N=5_metricDeterminantElements.pdf  used on input line 106.
+Package pdftex.def Info: ../img/N=5_metricDeterminantElements.pdf  used on input line 108.
 (pdftex.def)             Requested size: 451.68523pt x 598.63351pt.
 
 
 pdfTeX warning: pdflatex (file ../img/N=3_barA.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=3_barA.pdf, id=129, 312.16624pt x 42.1575pt>
+<../img/N=3_barA.pdf, id=133, 312.16624pt x 42.1575pt>
 File: ../img/N=3_barA.pdf Graphic file (type pdf)
 <use ../img/N=3_barA.pdf>
-Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 107.
+Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 109.
 (pdftex.def)             Requested size: 374.59761pt x 50.58871pt.
 
-Overfull \hbox (39.12027pt too wide) in paragraph at lines 106--108
+Overfull \hbox (39.12027pt too wide) in paragraph at lines 108--110
  [][] 
  []
 
 [6]
 
 pdfTeX warning: pdflatex (file ../img/N=5_metricDeterminants.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/N=5_metricDeterminants.pdf, id=139, 376.40625pt x 498.86375pt>
+<../img/N=5_metricDeterminants.pdf, id=143, 376.40625pt x 498.86375pt>
 File: ../img/N=5_metricDeterminants.pdf Graphic file (type pdf)
 <use ../img/N=5_metricDeterminants.pdf>
-Package pdftex.def Info: ../img/N=5_metricDeterminants.pdf  used on input line 114.
+Package pdftex.def Info: ../img/N=5_metricDeterminants.pdf  used on input line 116.
 (pdftex.def)             Requested size: 451.68523pt x 598.63351pt.
 File: ../img/N=3_barA.pdf Graphic file (type pdf)
 <use ../img/N=3_barA.pdf>
-Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 115.
+Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 117.
 (pdftex.def)             Requested size: 374.59761pt x 50.58871pt.
 
-Overfull \hbox (39.12027pt too wide) in paragraph at lines 114--116
+Overfull \hbox (39.12027pt too wide) in paragraph at lines 116--118
  [][] 
  []
 
@@ -2411,21 +2411,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 04E73D94FA2FE3D2496F12B18BF83EC4;701.
+(rerunfilecheck)             Checksum: 7C4EB67D510FF718755D521BA581BF9C;902.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 26016 strings out of 492982
- 448145 string characters out of 6134896
- 474616 words of memory out of 5000000
- 29064 multiletter control sequences out of 15000+600000
+ 26018 strings out of 492982
+ 448169 string characters out of 6134896
+ 473623 words of memory out of 5000000
+ 29065 multiletter control sequences out of 15000+600000
  78487 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,54p,832b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.pdf (8 pages, 14285874 bytes).
+Output written on /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.pdf (8 pages, 14286810 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 84 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
 

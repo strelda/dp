@@ -315,6 +315,8 @@ INPUT /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/chap05.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr17.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmri12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr17.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr8.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr6.tfm
 INPUT /usr/share/texmf/tex/latex/lm/omllmm.fd
@@ -361,8 +363,6 @@ INPUT ../img/bg123.pdf
 INPUT /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/../img/plotsFidelityQuenches.pdf
 INPUT ../img/plotsFidelityQuenches.pdf
 INPUT ../img/plotsFidelityQuenches.pdf
-INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr17.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr7.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr5.tfm
