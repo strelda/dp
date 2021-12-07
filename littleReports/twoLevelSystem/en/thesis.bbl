@@ -1,0 +1,19 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ashtekar and Schilling()]{ashtekar_geometrical_1997}
+Abhay Ashtekar and Troy~A. Schilling.
+\newblock Geometrical formulation of quantum mechanics.
+\newblock URL \url{http://arxiv.org/abs/gr-qc/9706069}.
+
+\bibitem[Cheng()]{cheng_quantum_2013}
+Ran Cheng.
+\newblock Quantum geometric tensor (fubini-study metric) in simple quantum
+  system: A pedagogical introduction.
+\newblock URL \url{http://arxiv.org/abs/1012.1337}.
+
+\end{thebibliography}

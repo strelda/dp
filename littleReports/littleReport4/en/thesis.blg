@@ -8,45 +8,48 @@ Database file #1: bibliography.bib
 Warning--empty journal in ashtekar_geometrical_1997
 Warning--empty year in ashtekar_geometrical_1997
 Warning--empty year in ashtekar_geometrical_1997
-You've used 1 entry,
+Warning--empty journal in cheng_quantum_2013
+Warning--empty year in cheng_quantum_2013
+Warning--empty year in cheng_quantum_2013
+You've used 2 entries,
             2773 wiz_defined-function locations,
-            598 strings with 5003 characters,
-and the built_in function-call counts, 408 in all, are:
-= -- 32
-> -- 21
-< -- 1
-+ -- 7
-- -- 6
-* -- 31
-:= -- 68
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 5
-chr.to.int$ -- 1
-cite$ -- 5
-duplicate$ -- 19
-empty$ -- 31
-format.name$ -- 9
-if$ -- 77
+            602 strings with 5160 characters,
+and the built_in function-call counts, 718 in all, are:
+= -- 58
+> -- 31
+< -- 2
++ -- 11
+- -- 9
+* -- 52
+:= -- 117
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 9
+chr.to.int$ -- 2
+cite$ -- 10
+duplicate$ -- 38
+empty$ -- 61
+format.name$ -- 13
+if$ -- 139
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 15
+missing$ -- 2
+newline$ -- 18
+num.names$ -- 8
+pop$ -- 29
 preamble$ -- 1
-purify$ -- 4
+purify$ -- 7
 quote$ -- 0
-skip$ -- 14
+skip$ -- 24
 stack$ -- 0
-substring$ -- 2
+substring$ -- 4
 swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 11
-warning$ -- 3
-while$ -- 3
+type$ -- 22
+warning$ -- 6
+while$ -- 6
 width$ -- 0
-write$ -- 18
-(There were 3 warnings)
+write$ -- 29
+(There were 6 warnings)
