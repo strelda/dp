@@ -286,8 +286,6 @@ INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/thesis.aux
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/thesis.aux
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/chap05.aux
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/chap05.aux
-INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/bibliography.aux
-INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/bibliography.aux
 OUTPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/thesis.aux
 INPUT /usr/share/texmf/tex/latex/lm/ot1lmr.fd
 INPUT /usr/share/texmf/tex/latex/lm/ot1lmr.fd
@@ -359,16 +357,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/bbm/bbm12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/bbm/bbm8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/bbm/bbm6.tfm
-OUTPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/bibliography.aux
-INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/bibliography.tex
-INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/bibliography.tex
-INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/thesis.bbl
-INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/thesis.bbl
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/thesis.aux
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/chap05.aux
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/chap05.aux
-INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/bibliography.aux
-INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/bibliography.aux
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/thesis.out
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/thesis.out
 INPUT /home/strelda/.texlive2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk

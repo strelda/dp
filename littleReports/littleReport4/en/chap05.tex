@@ -41,46 +41,34 @@ Distance on $\mathbb{C}^{n+1}$ is standardly defined using Hermitean metric\foot
 \label{eq:metricdistancePH}
 \end{equation}
 
-\textcolor{red}{
-For \emph{normalized states} in quantum mechanics is $\d Z=\ket{\psi+\delta \psi}-\ket{\psi}$, which plugged into Eq. \ref{eq:metricdistancePH} yields (remember that complex conjugation changes the sign of variation)
+
+For \emph{normalized states} in quantum mechanics is $\d Z=??????$, which plugged into Eq. \ref{eq:metricdistancePH} yields
 \begin{equation}
-    \d s^2 = (\bra{\psi-\delta \psi}-\bra{\psi})(\ket{\psi+\delta \psi}-\ket{\psi})=1-\braket{\delta \psi|\psi}\braket{\psi|\delta \psi}+o(ket{\delta \psi}^2)
-\end{equation}
-This can also be achieved by defining the distance between two infinitezimally separated states is $\d s=\braket{\psi|\psi+\delta \psi}$. The distance can also be rewritten as
-\begin{equation}
-    \d s^2 = 1-\left|\braket{\delta \psi|\psi}\right|^2.
+    \d s^2 = 1-\left|\braket{\psi+\delta \psi|\psi}\right|^2.
     \label{eq:distanceInPH}
 \end{equation}
-}
+
 
 \section{Restriction to eigenstate manifolds}
-In quantum mechanics, one usually examine some system defined with Hamiltonian $\HH(\llambda)$, for some parameter $\llambda\in \R^n$. This gives us the eigenbasis of $\HH$. Metric tensor of $\PH$ will not depend on this choise, but the Hamiltonian itself creates some natural sections on this manifold. 
-
-\textcolor{gray}{
-One of them might be the section along \Schrodinger evolution of some state $\ket{\psi_i}$, meaning
-$$
-    S_{\ket{\psi_i}}\coloneqq \left\{ \ket{\psi(t)} \text{ following } i\hbar \frac{\d}{\d t}\kpsi=\HH\ket{k}  \text{ on time interval }[t_i, t_f]\right\}.
-$$
-}
-
-Another more interesting sections are \emph{eigenstate manifolds}, defined by setting only one non-zero coefficient $Z_k$ in eigenbasis $\ket{\psi}=\sum_{k=0}^n Z_k \ket{k}$
-. From normalization goes automatically $Z_k=1$. 
-The distance is then
+In quantum mechanics, one can examine a Hamiltonian $\HH(\llambda)$, for some parameter $\llambda\in \R^n$. At every point $\llambda$ we get projective Hilbert space $\PH(\llambda)$. This creates a fibre structure space, in which there are some section with interesting physical applications. Some of those sections are \emph{eigenstate manifolds}, defined by setting only one non-zero coefficient $Z_k$ in eigenbasis $\ket{\psi}=\sum_{k=0}^n Z_k \ket{k}$. From normalization goes automatically $Z_k=1$. The distance is then
 \begin{equation}
-    \d s^2 = \textcolor{gray}{1}-\bra{\delta k}\textcolor{gray}{k\rangle \langle k}\ket{\delta k}=\textcolor{gray}{1}-\bra{\delta k}\textcolor{gray}{\big(\Id-\sum_{j\neq k} \ket{j}\bra{j}\big)}\ket{\delta k} = \textcolor{gray}{\sum_{j\neq k}}\bra{\delta k}\textcolor{gray}{j\rangle \langle j}\ket{\delta k}.
-    \label{eq:dsDerivation}
+    \begin{split}
+        \d s^2 &= \textcolor{gray}{1}-\bra{k+\delta k}\textcolor{gray}{k\rangle \langle k}\ket{k+\delta k}=\textcolor{gray}{1}-\bra{k+\delta k}\textcolor{gray}{\big(\Id-\sum_{j\neq k} \ket{j}\bra{j}\big)}\ket{k+\delta k} \\
+        &= \textcolor{gray}{\sum_{j\neq k}}\bra{k+\delta k}\textcolor{gray}{j\rangle \langle j}\ket{k+\delta k}.
+        \label{eq:dsDerivation}
+    \end{split}
 \end{equation}
 Using the \Schrodinger equation $\textcolor{blue}{\HH}\ket{k}=\textcolor{teal}{E_k} \ket{k}$, distributivity of derivative and projection to some state $\textcolor{gray}{\bra{j}}$, we get
 \begin{equation}
     \begin{split}
         \textcolor{blue}{\HH}\ket{k} &= \textcolor{teal}{E_k}\ket{k}\\
-        \textcolor{blue}{(\delta \HH)}\ket{k} +\textcolor{blue}{\HH}\ket{\delta k} &=\textcolor{teal}{(\delta E_k)}\ket{k} +\textcolor{teal}{E_k}\ket{\delta k}\\
-         \textcolor{gray}{\bra{j}}\big(\textcolor{blue}{\delta \HH}-\textcolor{teal}{\delta E_k}\big)\ket{k}&=\textcolor{gray}{\bra{j}}\big(\textcolor{teal}{E_k}-\textcolor{blue}{\HH}\big)\ket{\delta k}=\textcolor{gray}{\bra{j}}\big(\textcolor{teal}{E_k}-\textcolor{blue}{E_j}\big)\ket{\delta k}.
+        \textcolor{blue}{(\delta \HH)}\ket{k} +\textcolor{blue}{\HH}\ket{k+\delta k} &=\textcolor{teal}{(\delta E_k)}\ket{k} +\textcolor{teal}{E_k}\ket{k+\delta k}\\
+         \textcolor{gray}{\bra{j}}\big(\textcolor{blue}{\delta \HH}-\textcolor{teal}{\delta E_k}\big)\ket{k}&=\textcolor{gray}{\bra{j}}\big(\textcolor{teal}{E_k}-\textcolor{blue}{\HH}\big)\ket{k+\delta k}=\textcolor{gray}{\bra{j}}\big(\textcolor{teal}{E_k}-\textcolor{blue}{E_j}\big)\ket{k+\delta k}.
     \end{split}
 \end{equation}
 We can set\footnote{\textcolor{red}{Can it be done only for $E_0$? It does not make sence generally, because $E=E(\llambda)$, even $E_0=E_0(\llambda)$}} $\textcolor{blue}{\delta E_k}=0$, leading for $j\neq k$ to
 \begin{equation}
-    \frac{\textcolor{gray}{\bra{j}}\textcolor{blue}{\delta \HH}\ket{k}}{(\textcolor{teal}{E_k}-\textcolor{blue}{E_j})^2}=\textcolor{gray}{\langle j}\ket{\delta k}.
+    \frac{\textcolor{gray}{\bra{j}}\textcolor{blue}{\delta \HH}\ket{k}}{(\textcolor{teal}{E_k}-\textcolor{blue}{E_j})^2}=\textcolor{gray}{\langle j}\ket{k+\delta k}.
     \label{eq:braket_k,deltaj}
 \end{equation}
 Plugging to Equation \ref{eq:dsDerivation} and considering $\HH=\HH(\llambda)$, we get metric on a ground state manifold
@@ -124,32 +112,32 @@ The Fubini-Study metric on the eigenstate manifold is sometimes called \emph{Geo
 
 
 
-\chapter{Two level system}
-Having a vector $\kpsi=(Z_0,Z_1)$, we can search for a geodesic on ground state manifold $\M_0$ by plugging metric tensor $g^{(0)}_{\mu\nu}$ from Eq. \ref{eq:metrictensork} into geodesic equation. This surely minimizes the distance on $\M_0$, but what meaning does it have on protocols inside the whole projective space $\PH$? 
+% \chapter{Two level system}
+% Having a vector $\kpsi=(Z_0,Z_1)$, we can search for a geodesic on ground state manifold $\M_0$ by plugging metric tensor $g^{(0)}_{\mu\nu}$ from Eq. \ref{eq:metrictensork} into geodesic equation. This surely minimizes the distance on $\M_0$, but what meaning does it have on protocols inside the whole projective space $\PH$? 
 
-Let's once again consider Hamiltonian eigenbasis $\kpsi=Z_0\ket{0}+Z_1\ket{1}$, only here it depends on parameter $\llambda$. Using normalization we get
-\begin{equation}
-    \ket{\psi(\llambda)}=\cos \theta(\llambda) \ket{0(\llambda)}+e^{i\phi}\sin\theta \ket{1(\llambda)}
-\end{equation}
-and it's variation (omitting the dependence on $\llambda$ in every element)
-\begin{equation}
-    \delta\ket{\psi}=\delta Z_0 \ket{0}+ Z_0 \ket{\delta 0}-\delta Z_0 \ket{1}+ (1-Z_0) \ket{\delta 1}.
-    \label{eq:psiVariation}
-\end{equation}
-The projections $\braket{j|\delta k}$ are known from Eq. \ref{eq:braket_k,deltaj} and 
-\begin{equation}
-    \delta Z_0(\llambda)=Z_0(\llambda+\delta \llambda)-Z_0(\llambda)=\frac{\d Z_0}{\d \llambda^\mu}\d\llambda^\mu,
-\end{equation}
-where the last fraction is close to zero for drivings with low excitation rates. Distance of some transport in $\PH$ with free parameters $\llambda,Z_0$ is then according to Eq. \ref{eq:distanceInPH} (again imagine the $\llambda$ dependence in every element)
-\begin{equation}
-    \begin{split}
-        \d s^2\textcolor{gray}{(\llambda)} =& 1-|\braket{\delta \psi|\psi}|^2=1-\big|\underbrace{\braket{\delta 0|\overline{Z}_0 Z_0|0}}_{\propto \braket{\delta 0|0}=0}+\braket{\delta 0|\overline{Z}_0(1-Z_0)|1}\\
-        &+\braket{\delta 1| (1-\overline{Z}_0)Z_0|0}+\underbrace{\braket{\delta 1|(1-\overline{Z}_0)(1-Z_0)|1}}_{\propto \braket{\delta 1|1}=0}\big|^2\\
-        =&1-\Big| \overline{Z}_0(1-Z_0)\frac{\braket{0|\delta H|1}}{(E_1-E_0)^2} +\underbrace{(1-\overline{Z}_0)Z_0\frac{\braket{1|\delta H|0}}{(E_1-E_0)^2}}_{\text{c.c. of the first part}}\Big|^2\\
-        =&1-2\underbrace{\big|\overline{Z_0\textcolor{gray}{(\llambda)}}(1-Z_0\textcolor{gray}{(\llambda)})\big|^2}_{Z_0\text{-term}}\underbrace{\frac{\big|\braket{1\textcolor{gray}{(\llambda)}|\delta H\textcolor{gray}{(\llambda)}|0}\big|^2}{(E_1\textcolor{gray}{(\llambda)}-E_0\textcolor{gray}{(\llambda)})^2}}_{\llambda\text{-term}}.
-    \end{split}
-\end{equation}
-The $Z_0$-term can be minimized by setting $Z_0=0.5$ and the $\llambda$-term is smallest for a ground state manifold geodesic. This does not mean, that some combination of them is not better, than fulfilling those two conditions simultaneously. Plus the initial and final conditions need to have $Z_0=0.5$.
+% Let's once again consider Hamiltonian eigenbasis $\kpsi=Z_0\ket{0}+Z_1\ket{1}$, only here it depends on parameter $\llambda$. Using normalization we get
+% \begin{equation}
+%     \ket{\psi(\llambda)}=\cos \theta(\llambda) \ket{0(\llambda)}+e^{i\phi}\sin\theta \ket{1(\llambda)}
+% \end{equation}
+% and it's variation (omitting the dependence on $\llambda$ in every element)
+% \begin{equation}
+%     \delta\ket{\psi}=\delta Z_0 \ket{0}+ Z_0 \ket{\delta 0}-\delta Z_0 \ket{1}+ (1-Z_0) \ket{\delta 1}.
+%     \label{eq:psiVariation}
+% \end{equation}
+% The projections $\braket{j|k+\delta k}$ are known from Eq. \ref{eq:braket_k,deltaj} and 
+% \begin{equation}
+%     \delta Z_0(\llambda)=Z_0(\llambda+\delta \llambda)-Z_0(\llambda)=\frac{\d Z_0}{\d \llambda^\mu}\d\llambda^\mu,
+% \end{equation}
+% where the last fraction is close to zero for drivings with low excitation rates. Distance of some transport in $\PH$ with free parameters $\llambda,Z_0$ is then according to Eq. \ref{eq:distanceInPH} (again imagine the $\llambda$ dependence in every element)
+% \begin{equation}
+%     \begin{split}
+%         \d s^2\textcolor{gray}{(\llambda)} =& 1-|\braket{\delta \psi|\psi}|^2=1-\big|\underbrace{\braket{\delta 0|\overline{Z}_0 Z_0|0}}_{\propto \braket{\delta 0|0}=0}+\braket{\delta 0|\overline{Z}_0(1-Z_0)|1}\\
+%         &+\braket{\delta 1| (1-\overline{Z}_0)Z_0|0}+\underbrace{\braket{\delta 1|(1-\overline{Z}_0)(1-Z_0)|1}}_{\propto \braket{\delta 1|1}=0}\big|^2\\
+%         =&1-\Big| \overline{Z}_0(1-Z_0)\frac{\braket{0|\delta H|1}}{(E_1-E_0)^2} +\underbrace{(1-\overline{Z}_0)Z_0\frac{\braket{1|\delta H|0}}{(E_1-E_0)^2}}_{\text{c.c. of the first part}}\Big|^2\\
+%         =&1-2\underbrace{\big|\overline{Z_0\textcolor{gray}{(\llambda)}}(1-Z_0\textcolor{gray}{(\llambda)})\big|^2}_{Z_0\text{-term}}\underbrace{\frac{\big|\braket{1\textcolor{gray}{(\llambda)}|\delta H\textcolor{gray}{(\llambda)}|0}\big|^2}{(E_1\textcolor{gray}{(\llambda)}-E_0\textcolor{gray}{(\llambda)})^2}}_{\llambda\text{-term}}.
+%     \end{split}
+% \end{equation}
+% The $Z_0$-term can be minimized by setting $Z_0=0.5$ and the $\llambda$-term is smallest for a ground state manifold geodesic. This does not mean, that some combination of them is not better, than fulfilling those two conditions simultaneously. Plus the initial and final conditions need to have $Z_0=0.5$.
 
 
 

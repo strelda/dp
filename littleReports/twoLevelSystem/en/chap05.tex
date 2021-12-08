@@ -9,7 +9,7 @@ Let's have Hamiltonian
         \Delta(t)&-\Omega(t)
     \end{pmatrix}
 \end{equation}
-and driving along the path parametrized by time $t\in[0,1]$
+and a driving along the path parametrized by time $t\in[0,1]$
 \begin{equation}
     d(t)\coloneqq \begin{pmatrix}
         -s \cos(\omega(T_f)t)\\
@@ -22,7 +22,7 @@ for speed regulating function $\omega(T_f)\coloneqq \pi/T_f$. This means, the dr
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/driving.pdf}
-    \caption{Driving along the geodesic. DensityPlot shows the difference between Hamiltonian eigenvalues.}
+    \caption{Driving along the geodesic. $\lambda_i$ and $\lambda_f$ are initial resp. final parameters. DensityPlot shows the difference between Hamiltonian eigenvalues.}
     \label{fig:driving}
 \end{figure}
 
@@ -30,11 +30,11 @@ Because the Hamiltonian can be rewritten using Pauli matrices
 \begin{equation}
     \H(t) = \Delta(t)\sigma_x+ \Omega(t)\sigma_z
 \end{equation}
-one can see that changing to moving frame of reference (let's omit the final time dependence $\omega=\omega(T_f)$ for a while and use different colors for different frames) 
+one can see that changing from the \textcolor{purple}{original frame} to \textcolor{blue}{moving frame of reference} (let's omit the final time dependence $\omega=\omega(T_f)$ for a while) 
 \begin{equation}
     \textcolor{purple}{\psi(t)} \eqqcolon \expsm \textcolor{blue}{\tilde\psi(t)}
 \end{equation}
-reflects rotational symmetry of the problem. This change of reference frame in Schr\"odinger equation is in fact
+reflects rotational symmetry of the problem. This change of reference frame transforms Schr\"odinger equation
 \begin{equation}
     \begin{split}
         \textcolor{purple}{\H(t)\psi(t)} &= i\textcolor{purple}{\psi'(t)}\\
@@ -83,11 +83,11 @@ Fidelity during the transport is then
 \begin{equation}
     F=\left|\textcolor{purple}{\braket{0(t)|\psi(t)}}\right|^2,
 \end{equation}
-where ground state is
+where the ground state is
 \begin{equation}
-    \ket{0(t)}=\mathcal{N}\begin{pmatrix}
+    \textcolor{purple}{\ket{0(t)}}=\textcolor{purple}{\mathcal{N}\begin{pmatrix}
         \sec (t \omega (T_f))-\tan (t \omega (T_f))\\
         1
-    \end{pmatrix},
+    \end{pmatrix}},
 \end{equation}
-for normalization constant $\mathcal{N}$.
+for a normalization constant $\textcolor{purple}{\mathcal{N}}\coloneqq |\textcolor{purple}{\braket{0(t)|0(t)}}|^{-1}$.
