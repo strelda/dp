@@ -5,22 +5,15 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Bukov et~al.(2019)Bukov, Sels, and Polkovnikov]{Bukov2019}
-Marin Bukov, Dries Sels, and Anatoli Polkovnikov.
-\newblock {Geometric Speed Limit of Accessible Many-Body State Preparation}.
-\newblock \emph{Physical Review X}, 9\penalty0 (1):\penalty0 011034, feb 2019.
-\newblock ISSN 2160-3308.
-\newblock \doi{10.1103/PhysRevX.9.011034}.
-\newblock URL \url{https://doi.org/10.1103/PhysRevX.9.011034
-  https://link.aps.org/doi/10.1103/PhysRevX.9.011034}.
+\bibitem[Ashtekar and Schilling()]{ashtekar_geometrical_1997}
+Abhay Ashtekar and Troy~A. Schilling.
+\newblock Geometrical formulation of quantum mechanics.
+\newblock URL \url{http://arxiv.org/abs/gr-qc/9706069}.
 
-\bibitem[Rigolin et~al.(2008)Rigolin, Ortiz, and Ponce]{Rigolin2008}
-Gustavo Rigolin, Gerardo Ortiz, and Victor~Hugo Ponce.
-\newblock {Beyond the quantum adiabatic approximation: Adiabatic perturbation
-  theory}.
-\newblock \emph{Physical Review A - Atomic, Molecular, and Optical Physics},
-  78\penalty0 (5):\penalty0 1--26, 2008.
-\newblock ISSN 10502947.
-\newblock \doi{10.1103/PhysRevA.78.052508}.
+\bibitem[Cheng()]{cheng_quantum_2013}
+Ran Cheng.
+\newblock Quantum geometric tensor (fubini-study metric) in simple quantum
+  system: A pedagogical introduction.
+\newblock URL \url{http://arxiv.org/abs/1012.1337}.
 
 \end{thebibliography}

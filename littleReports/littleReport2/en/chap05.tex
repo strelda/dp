@@ -1,0 +1,91 @@
+\chapter{The role of geodesics}
+\textit{\today\newline
+Jan Střeleček\newline}
+
+
+
+\section{Minimizing the energy variance}
+From \cite{Bukov2019}.
+About transports using \emph{fast forward} Hamiltonian means the system is driven to the target state in some fixed amount of time. The transport is done on the ground state manifold $\M$.
+
+\conjecture{
+    For any fast forward Hamiltonian $\HH(\lambda(t))$ driven along one dimentional path $\lambda(t): \R\mapsto \R$ using time $t$ as parametrization, the energy fluctuations $\delta E^2$, averaged along the path, are larger than the geodesic length $l_\lambda$
+    \begin{equation}
+        \int\limits_0^T\sqrt{\delta E^2(t)}\d t \eqqcolon l_t\geq l_\lambda \int\limits_{\lambda_i}^{\lambda_f} \sqrt{g_{\lambda\lambda}} \d \lambda=\int_0^T \sqrt{g_{\lambda\lambda}}\frac{\d \lambda}{\d t}\d t.
+    \end{equation}
+    The length $l_\llambda$ is defined in control space (with metric tensor $g_{\lambda\lambda}$) and is generally larger than the distance between wave functions, i.e. the absolute geodesic (defined with $G_{\mu\nu}$). From its definition, we can see that it corresponds to the metric tensor as we use it.
+    
+    
+    
+    The energy variance is 
+    \begin{equation}
+        \delta E^2= \braket{o(t)|\HH(t)^2|o(t)}-\braket{o(t)|\HH(t)|o(t)}^2=\braket{\partial_t (t)|\partial_t o(t)})_c=G_{tt}
+    \end{equation}    
+    and the Metric tensor in control space is defined as
+    \begin{equation}
+        g_{\lambda\lambda}\coloneqq \braket{\partial_\lambda o(t)|\partial_\lambda o(t)})_c
+    \end{equation}
+}
+
+
+\begin{proof}
+    \begin{equation}
+        \delta E^2\equiv \braket{o(t)|\HH(t)^2|o(t)}_c=\dot\lambda^2 G_{\lambda\lambda}+\O(\dot\lambda^4),
+    \end{equation}
+    where $\O(\dot\lambda^4)$ needs to be positive for any real-valued Hamiltonian. This comes from the fact, that it has instantaneous time-reversal symmetry.
+\end{proof}
+
+The conjecture only applies to unit fidelity protocols and can be extended to an arbitrary dimensional path.
+
+
+
+% \section{Solving the \Schrodinger equation}
+% \cite{DeGrandi2010}
+
+
+
+\section{APT}
+From \cite{Rigolin2008}.
+
+The power series will be derived using a small parameter $v=1/T$.
+
+Starting again with
+\begin{equation}
+    \ket{\Psi(s)}=\sum_{p=0}^\infty v^p \ket{\Psi^{(p)}(s)},
+    \label{eq:mainSeries}
+\end{equation}
+
+for 
+\begin{equation}
+    \ket{\Psi(s)}=\sum_{n=0} e^{-\frac{i}{v} \textcolor{purple}{\omega_n(s)}}e^{i\textcolor{violet}{\gamma_n(s)}}\textcolor{blue}{b_n^{(p)}(s)}\ket{n(s)}.
+\end{equation}
+Here the
+\begin{align}
+    \textcolor{purple}{\omega_n(s)} &\coloneqq \frac{1}{\hbar}\int_0^s E_n(s')\d s'\\
+    \textcolor{violet}{\gamma_n(s)} &\coloneqq i\int_0^s \braket{n(s')|\frac{\d}{\d s'}n(s')}\d s' \equiv i\int_0^s M_{nn}(s')\d s'
+    \label{eq:gammadef}
+\end{align}
+are so-called dynamical resp. Berry (geometric) phase and $\ket{n(s)}$ are solution to
+\begin{equation}
+    \HH(s)\ket{n(s)}=E_n(s) \ket{n(s)}.
+\end{equation}
+The problem again lies in determining $\textcolor{blue}{b_n^{(p)}(s)}$, which will be done iteratively. Because it is dependent on its relative geometric and dynamical phases to other energy levels, lets write it as a series
+\begin{equation}
+    \textcolor{blue}{b_n^{(p)}(s)}=\sum_{m=0} e^{\frac{i}{v}\textcolor{purple}{\omega_{nm}(s)}}e^{-i\gamma_{nm}(s)}\textcolor{blue}{b_{nm}^{(p)}(s)},
+\end{equation}
+where $\textcolor{purple}{\omega_{nm}} \coloneqq \textcolor{purple}{\omega_m}-\textcolor{purple}{\omega_n}$, $\textcolor{violet}{\gamma_{nm}} \coloneqq \textcolor{violet}{\gamma_m}-\textcolor{violet}{\gamma_n}$. The new coefficients $\textcolor{blue}{b_{mn}^{(p)}(s)}$ now \textbf{depend only on the metric structure around the path} and therefore one may perform adiabatic expansion from any point on manifold.
+
+Inserting all to original series \ref{eq:mainSeries}, we get
+\begin{equation}
+    \ket{\Psi(s)}=\sum_{n,m=0}\sum_{p=0}^\infty v^p e^{-\frac{i}{v}\textcolor{purple}{\omega_m(s)}}e^{i\textcolor{violet}{\gamma_m(s)}}\textcolor{blue}{b_{nm}^{(p)}(s)}\ket{n(s)}.
+    \label{eq:solve0}
+\end{equation}
+
+Because the initial state is eigenstate, we get initial conditions $b_{nm}^{(0)}(s)=0$. In addition, one can rewrite equation \ref{eq:solve0} to the iteratively solvable form
+\begin{equation}
+    \frac{i}{\hbar}\Delta_{nm}(s)\textcolor{blue}{b_{nm}^{(p+1)}(s)}+\textcolor{blue}{\dot b_{nm}^{(p)}(s)}+W_{nm}(s) \textcolor{blue}{b_{nm}^{(p)}(s)}+\sum_{k=0,k\neq n}M_{nk}(s)\textcolor{blue}{b_{km}^{(p)}(s)}=0,
+    \label{eq:bSolution}
+\end{equation}
+for $W_{nm}(s)\coloneqq M_{nn}(s)-M_{mm}(s)$, where $M_{mn}$ is defined in Eq. \ref{eq:gammadef}. We can see that $b_{mn}^{(p)}$, as a solution to Eq. \ref{eq:bSolution}, only depends on difference between energy levels, eigenstates during the path and their directional derivatives. All of those are easily obtained, once the driving path is prescribed.
+
+    
