@@ -66,6 +66,7 @@ which is time independent. The Schr\"odinger equation can now be easily solved u
             \frac{\omega(T_f)  \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} & \cos \left(\frac{t}{2} q(T_f)\right)-\frac{2 i s \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} \\
         \end{pmatrix}},
     \end{split}
+    \label{eq:evolutionBlue}
 \end{equation}
 for $q(T_f)=\sqrt{4 s^2+\omega(T_f) ^2}$.
 
@@ -98,18 +99,21 @@ Fidelity during the transport is then\footnote{If we would calculate the Fidelit
     F(t,T_f)=\frac{\pi ^2 \left(\cos \left(t \sqrt{\frac{\pi ^2}{T_f^2}+4 s^2}\right)+1\right)+8 s^2 T_f^2}{2 \sin ^4\left(\frac{\pi  t}{2 T_f}\right) \left(4 s^2 T_f^2+\pi ^2\right) \left(\left| \cot \left(\frac{\pi  t}{2 T_f}\right)\right|^2+1\right)^2}.
     \label{eq:fidelitySimplified}
 \end{equation}
-
+The domain can be extended to $t\in[0,T_f]$, $T_f\in[0,\infty]$ because 
+$$
+    \lim_{t\rightarrow 0}F=1\; ,\;\; \lim_{T_f\rightarrow 0}F=0.
+$$
 
 \section{Analysis of the fidelity formula}
 Fidelity for some fixed final time is just oscilating curve close to $1$. For $T_f=10$ it can be seen on Fig. \ref{fig:infidelityTimePlot}
-\begin{figure}[H]
+\vspace{-2pt}\begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTimePlot.pdf}
     \caption{Fidelity in time for $T_f=10$}
-    \label{fig:infidelityTimePlot}
+    \vspace{-5pt}    \label{fig:infidelityTimePlot}
 \end{figure}
 The \emph{final fidelity} (at $t=T_f$) dependence on final time $T_f$ can be seen on Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
-\begin{figure}[H]
+\vspace{-5pt}\begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlot.pdf}
     \caption{Final fidelity dependence on final time $T_f$.}
@@ -119,18 +123,23 @@ The \emph{final fidelity} (at $t=T_f$) dependence on final time $T_f$ can be see
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlotLog.pdf}
-    \caption{Fidelity dependence on final time in log-log scale. Spikes should go to zero, which does not hold due to numerical precision of the plotting algorithm.}
+    \caption{Fidelity dependence on final time in log-log scale. We can observe difference in numerical evaluation of different firmulas in the height of spikes.}
     \label{fig:infidelityTfPlotLog}
 \end{figure}
 
 
 
-From formula for fidelity \ref{eq:fidelitySimplified} goes $F=0$ is equivalent to
+From the fidelity Eq. \ref{eq:fidelitySimplified} goes that $F=1$ is equivalent to
 \begin{equation}
-    a
+    \cos \left(t \sqrt{\frac{\pi ^2}{T_f^2}+4 s^2}\right)=-\frac{8 s^2 T_f^2}{\pi ^2}.
 \end{equation}
+For $t=T_f$ and substitution $T_s\coloneqq 2s T_f$, we get
+\begin{equation}
+    \cos \left(\sqrt{T_s^2+\pi^2}\right)=-\frac{2 T_s^2}{\pi ^2},
+\end{equation}
+which has only one positive solution $T_s\approx 2.022$.
 
-This proves that showing infidelity dependence on final time in log-log scale has spikes going to $0$, see Fig. \ref{fig:infidelityTfPlotLog}.
+This proves that the fidelity dependence on final time in logarithmic scale has only one spike going to $0$, see Fig. \ref{fig:infidelityTfPlotLog}.
 
 
 
@@ -141,6 +150,7 @@ Fidelity as a function of time and final time can be seen on Figures \ref{fig:de
     \caption{Fidelity dependence on time and final time.}
     \label{fig:dens1}
 \end{figure}
+
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/dens3.pdf}
@@ -150,13 +160,17 @@ Fidelity as a function of time and final time can be seen on Figures \ref{fig:de
 
 \subsection{Energy variance}
 \begin{equation}
+    \delta E^2(t)\coloneqq \braket{\psi(t)|\HH^2|\psi(t)}-\braket{\psi(t)|\HH|\psi(t)}^2
+\end{equation}
+as a function of time $t$ and final time $T_f$ is for geodesical driving
+\begin{equation}
     \begin{split}        
         \delta E^2 =& \frac{s^2}{2 q^2}\Bigg[\Big[16 s^4+2 s^2 \left(\left(\omega ^2-8 s^2\right) \cos (2 t \omega )-8 \omega ^2 \cos ^2(t \omega ) \cos \left(t \sqrt{q}\right)\right)\\
         &+14 s^2 \omega ^2+\omega ^4\Big] -\omega ^2 \left(\left(2 s^2+\omega ^2\right) \cos (2 t \omega )-2 s^2\right) \cos \left(2 t q\right)\\
-        & +8 s^2 \omega  q \sin (2 t \omega ) \sin \left(t q\right) + \omega ^3 q \sin (2 t \omega ) \sin \left(2 t q\right) \Bigg].
+        & +8 s^2 \omega  q \sin (2 t \omega ) \sin \left(t q\right) + \omega ^3 q \sin (2 t \omega ) \sin \left(2 t q\right) \Bigg],
 \end{split}
 \end{equation}
-It's valie as a function $\delta E^2(t,T_f)$ can be seen on Fig. \ref{fig:densVar}.
+see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. It's value as can be seen on Fig. \ref{fig:densVar}.
 
 \begin{figure}[H]
     \centering

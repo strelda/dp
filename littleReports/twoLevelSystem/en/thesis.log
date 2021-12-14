@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  14 DEC 2021 09:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  14 DEC 2021 15:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2323,18 +2323,18 @@ Package pdftex.def Info: ../img/driving.pdf  used on input line 24.
 
  <../img/driving.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 91.
+(Font)              <10> on input line 92.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 91.
+(Font)              <7> on input line 92.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 91.
+(Font)              <5> on input line 92.
  [2]
 
 pdfTeX warning: pdflatex (file ../img/infidelityTimePlot.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
 <../img/infidelityTimePlot.pdf, id=80, 260.975pt x 163.61125pt>
 File: ../img/infidelityTimePlot.pdf Graphic file (type pdf)
 <use ../img/infidelityTimePlot.pdf>
-Package pdftex.def Info: ../img/infidelityTimePlot.pdf  used on input line 107.
+Package pdftex.def Info: ../img/infidelityTimePlot.pdf  used on input line 111.
 (pdftex.def)             Requested size: 313.16844pt x 196.3325pt.
 
 
@@ -2342,7 +2342,7 @@ pdfTeX warning: pdflatex (file ../img/infidelityTfPlot.pdf): PDF inclusion: foun
 <../img/infidelityTfPlot.pdf, id=83, 260.975pt x 174.6525pt>
 File: ../img/infidelityTfPlot.pdf Graphic file (type pdf)
 <use ../img/infidelityTfPlot.pdf>
-Package pdftex.def Info: ../img/infidelityTfPlot.pdf  used on input line 114.
+Package pdftex.def Info: ../img/infidelityTfPlot.pdf  used on input line 118.
 (pdftex.def)             Requested size: 313.16844pt x 209.58194pt.
 
 
@@ -2350,7 +2350,7 @@ pdfTeX warning: pdflatex (file ../img/infidelityTfPlotLog.pdf): PDF inclusion: f
 <../img/infidelityTfPlotLog.pdf, id=84, 260.975pt x 170.6375pt>
 File: ../img/infidelityTfPlotLog.pdf Graphic file (type pdf)
 <use ../img/infidelityTfPlotLog.pdf>
-Package pdftex.def Info: ../img/infidelityTfPlotLog.pdf  used on input line 121.
+Package pdftex.def Info: ../img/infidelityTfPlotLog.pdf  used on input line 125.
 (pdftex.def)             Requested size: 313.16844pt x 204.76396pt.
 [3 <../img/infidelityTimePlot.pdf> <../img/infidelityTfPlot.pdf
 
@@ -2361,34 +2361,34 @@ pdfTeX warning: pdflatex (file ../img/dens1.pdf): PDF inclusion: found PDF versi
 <../img/dens1.pdf, id=125, 326.21875pt x 264.99pt>
 File: ../img/dens1.pdf Graphic file (type pdf)
 <use ../img/dens1.pdf>
-Package pdftex.def Info: ../img/dens1.pdf  used on input line 140.
+Package pdftex.def Info: ../img/dens1.pdf  used on input line 149.
 (pdftex.def)             Requested size: 391.46053pt x 317.9864pt.
-
+[4 <../img/infidelityTfPlotLog.pdf>]
 
 pdfTeX warning: pdflatex (file ../img/dens3.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/dens3.pdf, id=126, 322.20375pt x 255.95625pt>
+<../img/dens3.pdf, id=161, 322.20375pt x 255.95625pt>
 File: ../img/dens3.pdf Graphic file (type pdf)
 <use ../img/dens3.pdf>
-Package pdftex.def Info: ../img/dens3.pdf  used on input line 146.
+Package pdftex.def Info: ../img/dens3.pdf  used on input line 156.
 (pdftex.def)             Requested size: 386.64256pt x 307.14595pt.
-[4 <../img/infidelityTfPlotLog.pdf> <../img/dens1.pdf
+[5 <../img/dens1.pdf> <../img/dens3.pdf
 
-pdfTeX warning: pdflatex (file ../img/dens1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../img/dens3.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 
 pdfTeX warning: pdflatex (file ../img/densVar.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/densVar.pdf, id=179, 322.20375pt x 261.97874pt>
+<../img/densVar.pdf, id=204, 322.20375pt x 261.97874pt>
 File: ../img/densVar.pdf Graphic file (type pdf)
 <use ../img/densVar.pdf>
-Package pdftex.def Info: ../img/densVar.pdf  used on input line 163.
+Package pdftex.def Info: ../img/densVar.pdf  used on input line 177.
 (pdftex.def)             Requested size: 386.64256pt x 314.37292pt.
-[5 <../img/dens3.pdf>]
+
 
 pdfTeX warning: pdflatex (file ../img/densVariance.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
 <../img/densVariance.pdf, id=205, 338.26375pt x 261.97874pt>
 File: ../img/densVariance.pdf Graphic file (type pdf)
 <use ../img/densVariance.pdf>
-Package pdftex.def Info: ../img/densVariance.pdf  used on input line 173.
+Package pdftex.def Info: ../img/densVariance.pdf  used on input line 187.
 (pdftex.def)             Requested size: 405.91444pt x 314.37292pt.
 ) [6 <../img/densVar.pdf>] [7 <../img/densVariance.pdf>]
 
@@ -2409,17 +2409,17 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 25925 strings out of 492982
- 445762 string characters out of 6134896
- 478573 words of memory out of 5000000
- 28968 multiletter control sequences out of 15000+600000
+ 25928 strings out of 492982
+ 445810 string characters out of 6134896
+ 478626 words of memory out of 5000000
+ 28969 multiletter control sequences out of 15000+600000
  71750 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,25n,54p,554b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/thesis.pdf (7 pages, 12639548 bytes).
+Output written on /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/thesis.pdf (7 pages, 12643032 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
+ 324 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
  105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
