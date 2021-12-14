@@ -393,6 +393,11 @@ INPUT ../img/dens1.pdf
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/dens3.pdf
 INPUT ../img/dens3.pdf
 INPUT ../img/dens3.pdf
+INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmr12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmbx12.tfm
+INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/densVar.pdf
+INPUT ../img/densVar.pdf
+INPUT ../img/densVar.pdf
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/densVariance.pdf
 INPUT ../img/densVariance.pdf
 INPUT ../img/densVariance.pdf
