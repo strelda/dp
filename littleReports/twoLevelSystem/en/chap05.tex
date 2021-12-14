@@ -113,7 +113,7 @@ Fidelity for some fixed final time is just oscilating curve close to $1$. For $T
   \label{fig:infidelityTimePlot}
 \end{figure}
 
-\begin{figure}[H]
+\vspace{-10pt}\begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlot.pdf}
     \caption{Final fidelity dependence on final time $T_f$.}
@@ -135,10 +135,10 @@ From the fidelity Eq. \ref{eq:fidelitySimplified} goes that $F=1$ is equivalent 
 \end{equation}
 for $T_s\coloneqq 2sT_f$. The solution to this equation is
 \begin{equation}
-    T=\sqrt{(2 \pi  k)^2-\pi ^2} \text{  for }k\in \mathbb{N}.
+    T_s=\sqrt{(2 \pi  k)^2-\pi ^2} \text{  for }k\in \mathbb{N}.
     \label{eq:solutionT}
 \end{equation}
-The numerical check can be seen on Fig. \ref{fig:fidelityZeros}. Because $F=1$ has solutions \ref{eq:solutionT}, the its dependence on final time in logarithmic scale has spikes going to $0$, see Fig. \ref{fig:infidelityTfPlotLog}, and their density is proportional to $T_f^2$.
+This can be checked numerically, see Fig. \ref{fig:fidelityZeros}. Because $F=1$ has solutions \ref{eq:solutionT}, its dependence on final time in logarithmic scale has spikes going to $0$, see Fig. \ref{fig:infidelityTfPlotLog}, and their density is linear in $T_f$.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/fidelityZeros.pdf}
