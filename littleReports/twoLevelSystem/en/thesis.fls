@@ -387,6 +387,9 @@ INPUT ../img/infidelityTfPlot.pdf
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/infidelityTfPlotLog.pdf
 INPUT ../img/infidelityTfPlotLog.pdf
 INPUT ../img/infidelityTfPlotLog.pdf
+INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/fidelityZeros.pdf
+INPUT ../img/fidelityZeros.pdf
+INPUT ../img/fidelityZeros.pdf
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/dens1.pdf
 INPUT ../img/dens1.pdf
 INPUT ../img/dens1.pdf
@@ -423,3 +426,4 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

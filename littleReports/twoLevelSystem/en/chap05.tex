@@ -105,15 +105,15 @@ $$
 $$
 
 \section{Analysis of the fidelity formula}
-Fidelity for some fixed final time is just oscilating curve close to $1$. For $T_f=10$ it can be seen on Fig. \ref{fig:infidelityTimePlot}
-\vspace{-2pt}\begin{figure}[H]
+Fidelity for some fixed final time is just oscilating curve close to $1$. For $T_f=10$ it can be seen on Fig. \ref{fig:infidelityTimePlot}. The \emph{final fidelity} (at $t=T_f$) dependence on final time $T_f$ can be seen on Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
+\begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTimePlot.pdf}
     \caption{Fidelity in time for $T_f=10$}
-    \vspace{-5pt}    \label{fig:infidelityTimePlot}
+  \label{fig:infidelityTimePlot}
 \end{figure}
-The \emph{final fidelity} (at $t=T_f$) dependence on final time $T_f$ can be seen on Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
-\vspace{-5pt}\begin{figure}[H]
+
+\begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlot.pdf}
     \caption{Final fidelity dependence on final time $T_f$.}
@@ -131,16 +131,20 @@ The \emph{final fidelity} (at $t=T_f$) dependence on final time $T_f$ can be see
 
 From the fidelity Eq. \ref{eq:fidelitySimplified} goes that $F=1$ is equivalent to
 \begin{equation}
-    \cos \left(t \sqrt{\frac{\pi ^2}{T_f^2}+4 s^2}\right)=-\frac{8 s^2 T_f^2}{\pi ^2}.
+    \cos \left(\sqrt{T_s^2+\pi ^2}\right)=1,
 \end{equation}
-For $t=T_f$ and substitution $T_s\coloneqq 2s T_f$, we get
+for $T_s\coloneqq 2sT_f$. The solution to this equation is
 \begin{equation}
-    \cos \left(\sqrt{T_s^2+\pi^2}\right)=-\frac{2 T_s^2}{\pi ^2},
+    T=\sqrt{(2 \pi  k)^2-\pi ^2} \text{  for }k\in \mathbb{N}.
+    \label{eq:solutionT}
 \end{equation}
-which has only one positive solution $T_s\approx 2.022$.
-
-This proves that the fidelity dependence on final time in logarithmic scale has only one spike going to $0$, see Fig. \ref{fig:infidelityTfPlotLog}.
-
+The numerical check can be seen on Fig. \ref{fig:fidelityZeros}. Because $F=1$ has solutions \ref{eq:solutionT}, the its dependence on final time in logarithmic scale has spikes going to $0$, see Fig. \ref{fig:infidelityTfPlotLog}, and their density is proportional to $T_f^2$.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.2]{../img/fidelityZeros.pdf}
+    \caption{Rescaled final fidelity $T_s\coloneqq 2s T_f$ dependence on final time. Red points are for $F=1$.}
+    \label{fig:fidelityZeros}
+\end{figure}
 
 
 Fidelity as a function of time and final time can be seen on Figures \ref{fig:dens1}, \ref{fig:dens3}.
