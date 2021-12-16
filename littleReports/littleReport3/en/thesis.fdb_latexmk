@@ -1,5 +1,5 @@
 # Fdb version 3
-["bibtex thesis"] 1638993346 "thesis.aux" "thesis.bbl" "thesis" 1638993347
+["bibtex thesis"] 1638993346 "thesis.aux" "thesis.bbl" "thesis" 1639573940
   "/home/strelda/Documents/mff/dp/littleReports/littleReport4/en/bibliography.aux" 1638993346 1154 b8a3d4dadff8d7967f9d421436a07841 ""
   "/home/strelda/Documents/mff/dp/littleReports/littleReport4/en/chap05.aux" 1638993346 4985 365b536799213cbc2838a48fb75d29b5 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1480098435 26816 ffe5423d2019860bad9f54bc402fac15 ""
@@ -7,9 +7,9 @@
   "thesis.aux" 1638993346 708 bfaa921cca3c41666ace32d68dc1db6b ""
   "thesis.bcf" 0 -1 0 ""
   (generated)
-  "thesis.blg"
   "thesis.bbl"
-["pdflatex"] 1638993346 "/home/strelda/Documents/mff/dp/littleReports/littleReport4/en/thesis.tex" "/home/strelda/Documents/mff/dp/littleReports/littleReport4/en/thesis.pdf" "thesis" 1638993347
+  "thesis.blg"
+["pdflatex"] 1638993346 "/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.tex" "/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.pdf" "thesis" 1639573940
   "../img/N=3_barA.pdf" 1638033364 8285 72a78274c4a67de2a0c7db509debc11e ""
   "../img/N=5_metricDeterminants.pdf" 1638033364 7399839 d84d71754bd086f545a63574953300fb ""
   "../img/bg123.pdf" 1638033364 497157 b651b2354eab51d659eef2422b3b1d5f ""
@@ -20,6 +20,7 @@
   "../img/quenchFidelityFrom00.pdf" 1638033364 1122846 a512f5bb8df008d6f03d144eabf62990 ""
   "/etc/texmf/web2c/texmf.cnf" 1613600350 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/strelda/.texlive2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk" 1609422540 8424 832fbd7f2fefa3c1ba04b7038c2ffb11 ""
+  "/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.tex" 1637939694 3951 cea51a515ed2319c8187410578e39542 ""
   "/home/strelda/Documents/mff/dp/littleReports/littleReport4/en/thesis.aux" 1638993346 708 bfaa921cca3c41666ace32d68dc1db6b ""
   "/home/strelda/Documents/mff/dp/littleReports/littleReport4/en/thesis.tex" 1637939694 3951 cea51a515ed2319c8187410578e39542 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
@@ -244,7 +245,7 @@
   "bibliography.aux" 1638993346 1154 b8a3d4dadff8d7967f9d421436a07841 ""
   "bibliography.tex" 1637939096 1225 f6fdb7f4d6bf83cc512991f3fb463120 ""
   "chap05.aux" 1638993346 4985 365b536799213cbc2838a48fb75d29b5 ""
-  "chap05.tex" 1638993344 26164 0060af16f2858000506e2e823dd95525 ""
+  "chap05.tex" 1639573939 26164 0060af16f2858000506e2e823dd95525 ""
   "macros.tex" 1637948366 3692 003ad79efd50db8b5c7cfbfff5f104f3 ""
   "thesis.aux" 1638993346 708 bfaa921cca3c41666ace32d68dc1db6b ""
   "thesis.bbl" 1638993346 703 78484375d65882ab20a3141c80b7160e "bibtex thesis"
@@ -252,13 +253,15 @@
   "thesis.tex" 1637939694 3951 cea51a515ed2319c8187410578e39542 ""
   "thesis.xmpdata" 1637939096 242 83ef7728db7a250e35c95a3f8394f3aa ""
   (generated)
-  "thesis.out"
   "thesis.log"
-  "/home/strelda/Documents/mff/dp/littleReports/littleReport4/en/thesis.log"
-  "macros.aux"
-  "thesis.pdf"
-  "chap05.aux"
   "bibliography.aux"
-  "thesis.aux"
-  "pdfa.xmpi"
+  "thesis.out"
+  "/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.pdf"
+  "thesis.pdf"
   "/home/strelda/Documents/mff/dp/littleReports/littleReport4/en/thesis.pdf"
+  "chap05.aux"
+  "thesis.aux"
+  "/home/strelda/Documents/mff/dp/littleReports/littleReport4/en/thesis.log"
+  "/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.log"
+  "macros.aux"
+  "pdfa.xmpi"

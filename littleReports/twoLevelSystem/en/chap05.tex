@@ -2,6 +2,34 @@
 \textit{\today\newline
 Jan Střeleček\newline}
 
+
+
+\section{Energy variance for two level system}
+For two level system, the variance
+\begin{equation}
+    \delta E^2(t)\coloneqq \braket{\psi(t)|\HH^2|\psi(t)}-\braket{\psi(t)|\HH|\psi(t)}^2
+\end{equation}
+can be rewritten inserting identity $\textcolor{purple}{\Id=\ket{0}\bra{0}+\ket{1}\bra{1}}$ around Hamiltonian. Omitting the time dependence of every element we get
+\begin{equation}
+    \begin{split}
+        \delta E^2 =& \braket{\psi|\textcolor{purple}{\Id}\HH^2\textcolor{purple}{\Id}|\psi}-\braket{\psi|\textcolor{purple}{\Id}\HH\textcolor{purple}{\Id}|\psi}^2\\
+        =&\braket{\psi|0}\braket{0|\HH^2|0}\braket{0|\psi}+\braket{\psi|1}\braket{1|\HH^2|1}\braket{1|\psi}\\
+        +&\textcolor{gray}{\braket{\psi|0}\braket{0|\HH^2|1}\braket{1|\psi}+\braket{\psi|1}\braket{1|\HH^2|0}\braket{0|\psi}}\\
+        -&\Big(\braket{\psi|0}\braket{0|\HH|0}\braket{0|\psi}+\braket{\psi|1}\braket{1|\HH|1}\braket{1|\psi}\\
+        +&\textcolor{gray}{\braket{\psi|0}\underbrace{\braket{0|\HH|1}}_{\propto \braket{0|1}=0}\braket{1|\psi}+\braket{\psi|1}\underbrace{\braket{1|\HH|0}}_{\propto \braket{0|1}=0}\braket{0|\psi}}\Big)^2.
+    \end{split}
+\end{equation}
+Using Fidelity definition $F(t)=\left|\braket{0(t)|\psi(t)}\right|^2$ and Schr\"odinger equation $\HH\ket{k}=E_k\ket{k}$ we have
+\begin{equation}
+    \delta E^2 = FE_0^2+(1-F)E_1^2 - (FE_0+(1-F)E_1)^2 = F(1-F)(E_0-E_1)^2.
+\end{equation}
+For three level system we have $\textcolor{purple}{\Id=\ket{0}\bra{0}+\ket{1}\bra{1}+\ket{2}\bra{2}}$ and
+\begin{equation}
+    \delta E^2=\sum_{k=1}^3 E_k^2 F_k(1-F_k)-4\prod_{k=1}^3 E_kF_k-2F_0F_1E_0E_1-2F_0F_2E_0E_2-2F_1F_2E_1E_2,
+\end{equation}
+for $F_k\coloneqq \braket{k|\psi}$, which has no practical simplification.
+
+\section{Geodesical driving}
 Let's have Hamiltonian
 \begin{equation}
     \H(t)=\begin{pmatrix}
@@ -26,7 +54,7 @@ for speed regulating function $\omega(T_f)\coloneqq \pi/T_f$. This means, the dr
     \label{fig:driving}
 \end{figure}
 
-\section{Derivation of the fidelity}
+\subsection{Derivation of the fidelity}
 Because the Hamiltonian can be rewritten using Pauli matrices
 \begin{equation}
     \H(t) = 
@@ -92,6 +120,7 @@ for a normalization constant $\textcolor{purple}{\mathcal{N}}\coloneqq |\textcol
 Fidelity during the transport is then\footnote{If we would calculate the Fidelity in \textcolor{blue}{comoving frame}, we would get exactly one. This is the essence of counterdiabatic driving.}
 \begin{equation}
     F=\left|\textcolor{purple}{\braket{0(t)|\psi(t)}}\right|^2,
+    \label{fid:definition}
 \end{equation}
 
  Explicit formula for fidelity in time $t$ and geodesic driving with final time $T_f$ is then
@@ -104,7 +133,7 @@ $$
     \lim_{t\rightarrow 0}F=1\; ,\;\; \lim_{T_f\rightarrow 0}F=0.
 $$
 
-\section{Analysis of the fidelity formula}
+\subsection{Analysis of the fidelity formula}
 Fidelity for some fixed final time is just oscilating curve close to $1$. For $T_f=10$ it can be seen on Fig. \ref{fig:infidelityTimePlot}. The \emph{final fidelity} (at $t=T_f$) dependence on final time $T_f$ can be seen on Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
 \begin{figure}[H]
     \centering
@@ -163,10 +192,7 @@ Fidelity as a function of time and final time can be seen on Figures \ref{fig:de
 \end{figure}
 
 \subsection{Energy variance}
-\begin{equation}
-    \delta E^2(t)\coloneqq \braket{\psi(t)|\HH^2|\psi(t)}-\braket{\psi(t)|\HH|\psi(t)}^2
-\end{equation}
-as a function of time $t$ and final time $T_f$ is for geodesical driving
+Evaluating the fidelity for geodesical driving gives a function of time $t$ and final time $T_f$
 \begin{equation}
     \begin{split}        
         \delta E^2 =& \frac{s^2}{2 q^2}\Bigg[\Big[16 s^4+2 s^2 \left(\left(\omega ^2-8 s^2\right) \cos (2 t \omega )-8 \omega ^2 \cos ^2(t \omega ) \cos \left(t \sqrt{q}\right)\right)\\
@@ -185,10 +211,35 @@ see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. It's value as can be
 
 
 \section{Linear driving}
+Singularities are still present, at least according to function Root in Mathematica :). Their density might be $\propto \Omega^{-2}$ and is some funnction function of $T_f$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.2]{../img/infidelityTfPlotLogLin.pdf}
+    \caption{Final fidelity as a function of $T_f$.}
+    \label{fig:dens3}
+\end{figure}
+
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/densVariance.pdf}
-    \caption{Energy variance for $(\Lambda;\Omega)=(0;0.2)$ during the linear driving.}
+    \caption{Energy variance for $\Omega=0.2$ for linear driving.}
     \label{fig:dens3}
 \end{figure}
+
+\begin{figure}[H]
+    \centering 
+    \includegraphics[scale=1.2]{../img/dens2.pdf}
+    \caption{$-\log F$ has two regimes. Smooth and chaotic.}
+    \label{fig:dens2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.2]{../img/contVariance.pdf}
+    \caption{Energy variance for $t=T_f/2$ for linear driving.}
+    \label{fig:densVar}
+\end{figure}
+
+
