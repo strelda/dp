@@ -388,9 +388,9 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/lmbsy5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/bbm/bbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/bbm/bbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/bbm/bbm5.tfm
-INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/infidelityTimePlot.pdf
-INPUT ../img/infidelityTimePlot.pdf
-INPUT ../img/infidelityTimePlot.pdf
+INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/infidelityTimePlotGeod.pdf
+INPUT ../img/infidelityTimePlotGeod.pdf
+INPUT ../img/infidelityTimePlotGeod.pdf
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/infidelityTfPlot.pdf
 INPUT ../img/infidelityTfPlot.pdf
 INPUT ../img/infidelityTfPlot.pdf
@@ -409,6 +409,11 @@ INPUT ../img/dens3.pdf
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/densVar.pdf
 INPUT ../img/densVar.pdf
 INPUT ../img/densVar.pdf
+INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/infidelityInTimePlot.pdf
+INPUT ../img/infidelityInTimePlot.pdf
+INPUT ../img/infidelityInTimePlot.pdf
+INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/infidelityTfPlot.pdf
+INPUT ../img/infidelityTfPlot.pdf
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/infidelityTfPlotLogLin.pdf
 INPUT ../img/infidelityTfPlotLogLin.pdf
 INPUT ../img/infidelityTfPlotLogLin.pdf

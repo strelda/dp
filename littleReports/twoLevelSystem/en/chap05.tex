@@ -133,26 +133,29 @@ $$
     \lim_{t\rightarrow 0}F=1\; ,\;\; \lim_{T_f\rightarrow 0}F=0.
 $$
 
-\subsection{Analysis of the fidelity formula}
+Sometimes the \emph{Infidelity}, defined as $I\coloneqq 1-F$, will be used. Its meaning is \emph{the probability of excitation of the state}.
+
+
+\subsection{Analysis of the infidelity formula}
 Fidelity for some fixed final time is just oscilating curve close to $1$. For $T_f=10$ it can be seen on Fig. \ref{fig:infidelityTimePlot}. The \emph{final fidelity} (at $t=T_f$) dependence on final time $T_f$ can be seen on Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=1.2]{../img/infidelityTimePlot.pdf}
-    \caption{Fidelity in time for $T_f=10$}
+    \includegraphics[scale=1.2]{../img/infidelityTimePlotGeod.pdf}
+    \caption{Infidelity in time for final time $T_f=1$ for geodesical driving.}
   \label{fig:infidelityTimePlot}
 \end{figure}
 
 \vspace{-10pt}\begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlot.pdf}
-    \caption{Final fidelity dependence on final time $T_f$.}
+    \caption{Final infidelity dependence on final time $T_f$ for geodesical driving.}
     \label{fig:infidelityTfPlot}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlotLog.pdf}
-    \caption{Fidelity dependence on final time in log-log scale. We can observe difference in numerical evaluation of different firmulas in the height of spikes.}
+    \caption{Infidelity dependence on final time in log-log scale. We can observe difference in numerical evaluation of different firmulas in the height of spikes.}
     \label{fig:infidelityTfPlotLog}
 \end{figure}
 
@@ -171,7 +174,7 @@ This can be checked numerically, see Fig. \ref{fig:fidelityZeros}. Because $F=1$
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/fidelityZeros.pdf}
-    \caption{Rescaled final fidelity $T_s\coloneqq 2s T_f$ dependence on final time. Red points are for $F=1$.}
+    \caption{Rescaled final infidelity $T_s\coloneqq 2s T_f$ dependence on final time. Red points are for $F=1$.}
     \label{fig:fidelityZeros}
 \end{figure}
 
@@ -215,9 +218,23 @@ Singularities are still present, at least according to function Root in Mathemat
 
 \begin{figure}[H]
     \centering
+    \includegraphics[scale=1.2]{../img/infidelityInTimePlot.pdf}
+    \caption{Infidelity in time for three final times $T_f\in\{1,10,100\}$ for linear driving.}
+  \label{fig:infidelityTimePlot}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.2]{../img/infidelityTfPlot.pdf}
+    \caption{Final infidelity as a function of $T_f$.}
+    \label{fig:linear_finalInfidelity}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlotLogLin.pdf}
-    \caption{Final fidelity as a function of $T_f$.}
-    \label{fig:dens3}
+    \caption{Final infidelity as a function of $T_f$.}
+    \label{fig:linear_finalInfidelity_log}
 \end{figure}
 
 
@@ -231,7 +248,7 @@ Singularities are still present, at least according to function Root in Mathemat
 \begin{figure}[H]
     \centering 
     \includegraphics[scale=1.2]{../img/dens2.pdf}
-    \caption{$-\log F$ has two regimes. Smooth and chaotic.}
+    \caption{Logarithm of final fidelity $-\log(F_f)$ has two regimes. Visualization of smooth and chaotic regimes.}
     \label{fig:dens2}
 \end{figure}
 
