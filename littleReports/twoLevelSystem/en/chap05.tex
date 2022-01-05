@@ -4,48 +4,94 @@ Jan Střeleček\newline}
 
 
 
-\section{Energy variance for two level system}
-For two level system, the variance
-\begin{equation}
-    \delta E^2(t)\coloneqq \braket{\psi(t)|\HH^2|\psi(t)}-\braket{\psi(t)|\HH|\psi(t)}^2
-\end{equation}
-can be rewritten inserting identity $\textcolor{purple}{\Id=\ket{0}\bra{0}+\ket{1}\bra{1}}$ around Hamiltonian. Omitting the time dependence of every element we get
-\begin{equation}
-    \begin{split}
-        \delta E^2 =& \braket{\psi|\textcolor{purple}{\Id}\HH^2\textcolor{purple}{\Id}|\psi}-\braket{\psi|\textcolor{purple}{\Id}\HH\textcolor{purple}{\Id}|\psi}^2\\
-        =&\braket{\psi|0}\braket{0|\HH^2|0}\braket{0|\psi}+\braket{\psi|1}\braket{1|\HH^2|1}\braket{1|\psi}\\
-        +&\textcolor{gray}{\braket{\psi|0}\braket{0|\HH^2|1}\braket{1|\psi}+\braket{\psi|1}\braket{1|\HH^2|0}\braket{0|\psi}}\\
-        -&\Big(\braket{\psi|0}\braket{0|\HH|0}\braket{0|\psi}+\braket{\psi|1}\braket{1|\HH|1}\braket{1|\psi}\\
-        +&\textcolor{gray}{\braket{\psi|0}\underbrace{\braket{0|\HH|1}}_{\propto \braket{0|1}=0}\braket{1|\psi}+\braket{\psi|1}\underbrace{\braket{1|\HH|0}}_{\propto \braket{0|1}=0}\braket{0|\psi}}\Big)^2.
-    \end{split}
-\end{equation}
-Using Fidelity definition $F(t)=\left|\braket{0(t)|\psi(t)}\right|^2$ and Schr\"odinger equation $\HH\ket{k}=E_k\ket{k}$ we have
-\begin{equation}
-    \delta E^2 = FE_0^2+(1-F)E_1^2 - (FE_0+(1-F)E_1)^2 = F(1-F)(E_0-E_1)^2.
-\end{equation}
-For three level system we have $\textcolor{purple}{\Id=\ket{0}\bra{0}+\ket{1}\bra{1}+\ket{2}\bra{2}}$ and
-\begin{equation}
-    \delta E^2=\sum_{k=1}^3 E_k^2 F_k(1-F_k)-4\prod_{k=1}^3 E_kF_k-2F_0F_1E_0E_1-2F_0F_2E_0E_2-2F_1F_2E_1E_2,
-\end{equation}
-for $F_k\coloneqq \braket{k|\psi}$, which has no practical simplification.
 
-\section{Geodesical driving}
-Let's have Hamiltonian
+Let's have a Hamiltonian
 \begin{equation}
-    \H(t)=\begin{pmatrix}
+    \HH(t)=\begin{pmatrix}
         \Omega(t)&\Delta(t)\\
         \Delta(t)&-\Omega(t)
     \end{pmatrix}
 \end{equation}
-and a driving along the path parametrized by time $t\in[0,1]$
+for $\Omega: \R^+\rightarrow \R$, $\Delta: \R^+\rightarrow \R$. Its spectrum is
 \begin{equation}
-    d(t)\coloneqq \begin{pmatrix}
+    E_1(t)=-E_0(t)= \sqrt{\Omega^2(t)+\Delta^2(t)}
+\end{equation}
+and eigenvectors
+\begin{equation}
+\ket{0(t)}=\mathcal N_+ \begin{pmatrix}
+ \frac{E_0(t)+\Omega(t)}{\Delta(t)} \\ 1
+\end{pmatrix};\quad \ket{1(t)}=\mathcal N_-\begin{pmatrix}
+    \frac{E_1(t)+\Omega(t)}{\Delta(t)} \\ 1
+   \end{pmatrix}
+\end{equation}
+for normalization constants $N_\pm=\left(\frac{\pm E_0(t)+\Omega(t)}{\Delta(t)}+1\right)^{-1/2}$.
+
+The goal will be to find \emph{fidelity} $F\coloneqq |\braket{0(t)|\psi(t)}|^2$ of different driving protocols. For this we need to solve time Schr\"odinger equation
+\begin{equation}
+    \HH(t)\ket{\psi(t)}=i\frac{\d}{\d t}\ket{\psi(t)}
+\end{equation}
+with time varying Hamiltonian. For 2-dimentional system with $\ket{\psi(t)}\eqqcolon (a(t),b(t))$ we get system of \emph{two coupled differentials equations of the 1. order with non-constant coefficients}
+\begin{align}
+    \Omega(t)a(t)+\Delta(t)b(t)&=i\dot a(t)\label{eq:a1}\\
+    \Delta(t)a(t)-\Omega(t)b(t)&=i\dot b(t)
+    \label{eq:a2}
+\end{align}
+with normalization
+\begin{equation}
+    a^2(t)+b^2(t)=1, \quad \forall t\in [0,T_f].
+    \label{eq:normalizationCondition}
+\end{equation}
+
+\subsection{Harmonic oscillator correspondence}
+The Equations \ref{eq:a1}, \ref{eq:a2} have no general analytical solution, with the exceptions of a few easy protocols $\HH(t)$. Those equations can be rewritten to \emph{one differential equation of 2. order with non-constant coefficients}, which can be rewritten in a form of  a \emph{damped harmonic oscillator without external force}
+\begin{align}
+    0&= \ddot a(t)+ \gamma(t) \dot a(t)+\omega^2(t)a(t) \label{eq:harmonicOscillator}\\
+    \gamma(t)&\coloneqq i\Omega(t)(1-\Delta(t))-\frac{\dot \Delta(t)}{\Delta(t)}\\
+    \omega^2(t) &\coloneqq i\dot\Omega(t)-i\Omega(t)\frac{\dot\Delta(t)}{\Delta(t)}-\Delta(t)\Omega^2(t).
+    \label{eq:frequency}
+\end{align}
+Along with the normalization condition \ref{eq:normalizationCondition}, this solves the Schr\"odinger equation. Note that in this form $\Delta\neq 0$, but we can switch role of $\Delta$ and $\Omega$ driving due to system symmetry and the fidelity will be unchanged. 
+
+The solution of Eq. \ref{eq:harmonicOscillator} leads to damped oscillations. This characteristic will propagate to the solution for fidelity.
+
+
+
+
+\subsubsection{Classical mechanics correspondence}
+From the perspective of classical mechanics, meaning $x(t)oloneqq a(t)$ is a position in a phase space $(\bm x,\bm p)$, we can write classical Lagrangian from Eq. \ref{eq:harmonicOscillator} as
+\begin{equation}
+    \mathcal L=\frac{1}{2}\exp{\left(\int_0^t\gamma(s)\d s\right)}\left(\dot x^2-\omega^2(t)x^2\right)
+    \label{eq:lagrangian}
+\end{equation}
+\begin{proof}
+    The correspondence of Lagrangian \ref{eq:lagrangian} with Eq. \ref{eq:harmonicOscillator} can be shown by direct evaluation of Euler-Lagrange equations
+    \begin{equation}
+        \begin{split}
+            \pder{\mathcal L}{x}-\der{}{t}\pder{\mathcal L}{\dot x}&=0\\
+            \frac{1}{2}\exp{\left(\int_0^t\gamma(s)\d s\right)}(-2 \omega^2(t)x)-\der{}{t}\left(\exp{\left(\int_0^t\gamma(s)\d s\right)}\dot x\right) &=0\\
+            -\omega^2(t)x-\gamma(t)\dot x-\ddot x&=0,
+        \end{split}
+    \end{equation}
+    where derivation along upper bound $F(x)\coloneqq\int_0^{g(x)}f(t)\d t \Rightarrow F'(x)=f(g(x))g'(x)$ for $f(x)\in L^1(0,g(x))$ and differentiable function $g$, was used.
+\end{proof}
+
+
+\section{Geodesical driving}
+As was mentioned, the \Schrodinger equation has no general analytical solution, except a few easy protocols $\HH(t)$. One of them is \emph{Geodesical protocol}. 
+
+Define driving in 3-dimensional space (the reason will be the urge to rewrite it using $\hat\sigma$ matrices)
+\begin{equation}
+    d(t)\equiv \begin{pmatrix}
+        \Omega(t)\\
+        \Xi(t)\\
+        \Delta(t)
+    \end{pmatrix}\coloneqq \begin{pmatrix}
         -s \cos(\omega(T_f)t)\\
         0\\
         s \sin(\omega(T_f)t)
     \end{pmatrix}
 \end{equation}
-for speed regulating function $\omega(T_f)\coloneqq \pi/T_f$. This means, the driving will always be along half-sphere, as in Fig. \ref{fig:driving}.
+parametrized by time $t\in[0,1]$ and with use of \emph{speed regulating function} $\omega(T_f)\coloneqq \pi/T_f$. This means, the driving will always be along half-sphere, as in Fig. \ref{fig:driving}.
 
 \begin{figure}[H]
     \centering
@@ -57,7 +103,7 @@ for speed regulating function $\omega(T_f)\coloneqq \pi/T_f$. This means, the dr
 \subsection{Derivation of the fidelity}
 Because the Hamiltonian can be rewritten using Pauli matrices
 \begin{equation}
-    \H(t) = 
+    \HH(t) = 
         \begin{pmatrix}
          -s \cos (t \omega ) & s \sin (t \omega ) \\
          s \sin (t \omega ) & s \cos (t \omega ) \\
@@ -71,16 +117,16 @@ one can see that changing from the \textcolor{purple}{original frame} to \textco
 reflects rotational symmetry of the problem. This change of reference frame transforms Schr\"odinger equation
 \begin{equation}
     \begin{split}
-        \textcolor{purple}{\H(t)\psi(t)} &= i\textcolor{purple}{\psi'(t)}\\
-        \textcolor{purple}{\H(t)} \expsp\textcolor{blue}{\tilde\psi(t)} &= i \expsp \left(\frac{i\omega\hat\sigma_y}{2}\right)\textcolor{blue}{\tilde\psi(t)}+i\expsp\textcolor{blue}{\tilde\psi'(t)}\\
-        \underbrace{\left(\expsm \textcolor{purple}{\H(t)}\expsp+ \frac{\omega}{2}\hat\sigma_y\right)}_{\textcolor{blue}{\tilde\H(t)}}\textcolor{blue}{\tilde\psi(t)}&=i\textcolor{blue}{\tilde\psi'(t)}.
+        \textcolor{purple}{\HH(t)\psi(t)} &= i\textcolor{purple}{\psi'(t)}\\
+        \textcolor{purple}{\HH(t)} \expsp\textcolor{blue}{\tilde\psi(t)} &= i \expsp \left(\frac{i\omega\hat\sigma_y}{2}\right)\textcolor{blue}{\tilde\psi(t)}+i\expsp\textcolor{blue}{\tilde\psi'(t)}\\
+        \underbrace{\left(\expsm \textcolor{purple}{\HH(t)}\expsp+ \frac{\omega}{2}\hat\sigma_y\right)}_{\textcolor{blue}{\tilde\HH(t)}}\textcolor{blue}{\tilde\psi(t)}&=i\textcolor{blue}{\tilde\psi'(t)}.
     \end{split}
 \end{equation}
 Therefore we can equivalently solve the Fidelity problem in this new coordinate system.
 
 Hamiltonian in the moving frame is
 \begin{equation}
-    \textcolor{blue}{\tilde\H}=\textcolor{blue}{\begin{pmatrix}
+    \textcolor{blue}{\tilde\HH}=\textcolor{blue}{\begin{pmatrix}
         -s&-i\omega(T_f)/2\\
         i\omega(T_f)/2&s
     \end{pmatrix}},
@@ -88,7 +134,7 @@ Hamiltonian in the moving frame is
 which is time independent. The Schr\"odinger equation can now be easily solved using evolution operator
 \begin{equation}
     \begin{split}
-        \textcolor{blue}{\UU(t)}=&e^{-i\textcolor{blue}{\tilde\H}t}\\
+        \textcolor{blue}{\UU(t)}=&e^{-i\textcolor{blue}{\tilde\HH}t}\\
         =&\textcolor{blue}{\begin{pmatrix}
             \cos \left(\frac{t}{2} q(T_f)\right)+\frac{2 i s \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} & -\frac{\omega(T_f)  \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} \\
             \frac{\omega(T_f)  \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} & \cos \left(\frac{t}{2} q(T_f)\right)-\frac{2 i s \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} \\
@@ -117,13 +163,13 @@ and the ground state
     \end{pmatrix}},
 \end{equation}
 for a normalization constant $\textcolor{purple}{\mathcal{N}}\coloneqq |\textcolor{purple}{\braket{0(t)|0(t)}}|^{-1}$.
-Fidelity during the transport is then\footnote{If we would calculate the Fidelity in \textcolor{blue}{comoving frame}, we would get exactly one. This is the essence of counterdiabatic driving.}
+Fidelity during the transport is then\footnote{If we would calculate the fidelity in the \textcolor{blue}{comoving frame}, we would get exactly one. This is the essence of counterdiabatic driving.}
 \begin{equation}
     F=\left|\textcolor{purple}{\braket{0(t)|\psi(t)}}\right|^2,
     \label{fid:definition}
 \end{equation}
 
- Explicit formula for fidelity in time $t$ and geodesic driving with final time $T_f$ is then
+ An explicit formula for fidelity in time $t$ and geodesic driving with final time $T_f$ is then
 \begin{equation}
     F(t,T_f)=\frac{\pi ^2 \left(\cos \left(t \sqrt{\frac{\pi ^2}{T_f^2}+4 s^2}\right)+1\right)+8 s^2 T_f^2}{2 \sin ^4\left(\frac{\pi  t}{2 T_f}\right) \left(4 s^2 T_f^2+\pi ^2\right) \left(\left| \cot \left(\frac{\pi  t}{2 T_f}\right)\right|^2+1\right)^2}.
     \label{eq:fidelitySimplified}
@@ -179,18 +225,12 @@ This can be checked numerically, see Fig. \ref{fig:fidelityZeros}. Because $F=1$
 \end{figure}
 
 
-Fidelity as a function of time and final time can be seen on Figures \ref{fig:dens1}, \ref{fig:dens3}.
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=1.2]{../img/dens1.pdf}
-    \caption{Fidelity dependence on time and final time.}
-    \label{fig:dens1}
-\end{figure}
+Fidelity as a function of time and final time can be seen in Figures \ref{fig:dens3}. Note that only $t<T_f$ has physical meaning.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/dens3.pdf}
-    \caption{Fidelity dependence on time and final time in log log scale.}
+    \caption{Fidelity dependence on time and final time in log log scale. Note that only $t<T_f$ has physical meaning.}
     \label{fig:dens3}
 \end{figure}
 
@@ -203,7 +243,7 @@ Evaluating the fidelity for geodesical driving gives a function of time $t$ and 
         & +8 s^2 \omega  q \sin (2 t \omega ) \sin \left(t q\right) + \omega ^3 q \sin (2 t \omega ) \sin \left(2 t q\right) \Bigg],
 \end{split}
 \end{equation}
-see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. It's value as can be seen on Fig. \ref{fig:densVar}.
+see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. It's value as can be seen on Fig. \ref{fig:densVar}. Note that only $t<T_f$ has a physical meaning, therefore the dependence is smooth along the whole geodesical driving protocols.
 
 \begin{figure}[H]
     \centering
@@ -212,51 +252,165 @@ see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. It's value as can be
     \label{fig:densVar}
 \end{figure}
 
-
+\newpage 
 \section{Linear driving}
-Singularities are still present, at least according to function Root in Mathematica :). Their density might be $\propto \Omega^{-2}$ and is some funnction function of $T_f$.
-
+In this case we define the driving as
+\begin{equation}
+    \Omega(t)=\Omega_{sc}\left(\frac{2t}{T_f}-1\right),\quad \Delta(t)=\Delta_{sc}, \;\;\text{ for } \Omega_{sc}=10, \Delta_{sc}=0.3
+\end{equation}
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=1.2]{../img/infidelityInTimePlot.pdf}
+    \includegraphics[scale=1.2]{../img/drivingLin.pdf}
+    \caption{Driving along the linear path. $\lambda_i=(-10;0.3)$ and $\lambda_f=(10;0.3)$ are initial resp. final parameters. DensityPlot shows the difference between Hamiltonian eigenvalues.}
+    \label{fig:driving}
+\end{figure}
+
+
+
+\subsection{Dependence on time}
+The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. We can see that for $t\approx T_f/2$ Hamiltonian parameters change quickly leading to the fast state excitation. Then the Harmonic oscillator damping of Schr
+\"odinger equation gets involved, and oscillations are quickly going to zero, never disappearing entirely.
+
+We can see that the final fidelity decreases with longer final time, which correctly leads to adiabatic driving $\lim_{T_f\rightarrow \infty} F=0$. For short final times we can observe so called quench, $\lim_{T_f\rightarrow 0} F=1$. The important phenomenon on this image are the oscilations around $t=T_f/2$, which are increasing with $T_f$.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.185]{../img/infidelityInTimePlot.pdf}
     \caption{Infidelity in time for three final times $T_f\in\{1,10,100\}$ for linear driving.}
-  \label{fig:infidelityTimePlot}
+  \label{fig:infidelityTimePlotLin}
 \end{figure}
+
+If the driving is slow enough (meaning of this will be clear later on), the final fidelity will oscilating between $0$ and some small value, see Fig. \ref{fig:slowinfidCombined}. Because the eigenstate $\ket{0(t)}=\begin{pmatrix}
+    1&0
+\end{pmatrix}$, the frequency of oscillations in fidelity is the same as oscillations in $a(t)$ in Eq. \ref{eq:frequency}. For the linear driving this is
+\begin{equation}
+    \omega^2(t) = \frac{2i}{T_f}\Omega_{sc}-\Delta_{sc}\Omega_{sc}^2\left(\frac{2t}{T_f}-1\right)^2.
+\end{equation}
+This means the frequency is linear in time and has a square root dependence on $\Delta$.
+
+
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=1.2]{../img/infidelityTfPlot.pdf}
-    \caption{Final infidelity as a function of $T_f$.}
-    \label{fig:linear_finalInfidelity}
+    \hspace{40pt}\includegraphics[scale=1.185]{../img/slowinfidCombined.pdf}
+    \vspace{-40pt}
+    \caption{Infidelity in time for close adiabatic driving.}
+  \label{fig:slowinfidCombined}
 \end{figure}
 
+
+\subsection{Dependence on final time}
+Because the oscillations after fast parameter change in the Hamiltonian never disappear entirely, we must observe those oscillations even at the final time. Final fidelity (meaning the fidelity at final time $F(T_f)$) has dependence on $T_f$ as can be seen in Fig. \ref{fig:linear_finalInfidelity_log}. Because after the final time $T_f\approx 2000$ the values are so small, we can observe some fine structure of the fidelity, along with numerical error artifacts.
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=1.2]{../img/infidelityTfPlotLogLin.pdf}
+    \hspace{40pt}\includegraphics[scale=1.2]{../img/infidelityTfPlotLogLin.pdf}
+    \vspace{-40pt}
     \caption{Final infidelity as a function of $T_f$.}
     \label{fig:linear_finalInfidelity_log}
 \end{figure}
 
+The important question is now: "what is numerical error and what is remnant of oscillations?" The answer is not so simple, but we can make few statements. First of all, the numerical precision of this calculation was foud to be around $10^{-14}$. This can be seen when we zoom at the edge of \emph{smooth} and \emph{chaotic} part of the plot, see Fig \ref{fig:infidelityZoom} \footnote{First zero probably appears at 1889, which is the same year when the Eiffel tower was oficially opened, or the year when the first Juke box goes into operation in San Francisco.}. This means that there are oscillations are of physical origin. Those small oscillations are the remnants of the big oscillations after fast fidelity change, see Fig. \ref{fig:infidelityTimePlotLin}. We can eliminate the effect of these oscillations and see the \emph{average final infidelity}, defined as
+\begin{equation}
+    \langle 1-F\rangle_a(T_f) \coloneqq \frac{1}{(1-a) T_f}\int_{a T_f}^{T_f} F(t)\d t.
+\end{equation}
+If we average the fidelity on interval $(0.9 T_f,T_f)$ (getting $\langle 1-F\rangle_{0.9}$), we get the same result as for $\langle 1-F\rangle_{0.99}$. See Fig. \ref{fig:infidAverageCombined}.
+
+
+Then we can split the driving to three regimes:
+\begin{itemize}
+    \item \emph{exponential/fast-driving regime} -- $(1-F)=\langle 1-F\rangle_a= \exp(-\xi T_f)$, $\xi\in\R^+$
+    \item \emph{transitional regime} -- the infidelity dependence is oscilatory and has no simple prescription
+    \item \emph{polynomial/adiabatic regime} -- $\langle 1-F\rangle_a\propto T_f^{-\kappa}$ for $\kappa\in \R^+$, $a\tilde\in[0.6T_f,0.999T_f]$.
+\end{itemize}
+
+Two question now arise. What are the coefficients $\xi$ and $\kappa$ and on which intervals in $T_f$ they hold? Let's answer them one by one.
+
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=1.2]{../img/densVariance.pdf}
-    \caption{Energy variance for $\Omega=0.2$ for linear driving.}
-    \label{fig:dens3}
+    \includegraphics[scale=1.2]{../img/infidAverageCombined.pdf}
+    \caption{Final infidelity as a function of $T_f$. Detail on the edge between \emph{smooth} and \emph{chaotic} regimes.}
+    \label{fig:infidAverageCombined}
 \end{figure}
+
+
+
+
+\subsection{Transition between the fast-driving and adiabatic regime}
+
 
 \begin{figure}[H]
     \centering 
     \includegraphics[scale=1.2]{../img/dens2.pdf}
-    \caption{Logarithm of final fidelity $-\log(F_f)$ has two regimes. Visualization of smooth and chaotic regimes.}
+    \caption{Final infidelity as a function of $\Delta$ and $T_f$ and its three regimes. Zoomed boundary between them can be seen on \ref{fig:dens2Zoom}.}
     \label{fig:dens2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering 
+    \includegraphics[scale=1.2]{../img/dens2Zoom.pdf}
+    \caption{Fine structure of the boundary between fast-driving and adiabatic regimes of final infidelity.}
+    \label{fig:dens2Zoom}
+\end{figure}
+
+
+\subsection{Coefficients $\xi$ and $\kappa$}
+
+
+
+\newpage
+\subsection{Energy variance}
+Energy variance resembles structure similar to fidelity. Compare Fig. \ref{fig:densVariance} with \ref{fig:dens3}. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.2]{../img/densVariance.pdf}
+    \caption{Energy variance for $\Omega=0.2$ for linear driving. Note that only $t<T_f$ has physical meaning.}
+    \label{fig:densVariance}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/contVariance.pdf}
     \caption{Energy variance for $t=T_f/2$ for linear driving.}
-    \label{fig:densVar}
+    \label{fig:densVarLin}
 \end{figure}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Energy variance for two level system}
+For two level system, the variance
+\begin{equation}
+    \delta E^2(t)\coloneqq \braket{\psi(t)|\HH^2|\psi(t)}-\braket{\psi(t)|\HH|\psi(t)}^2
+\end{equation}
+can be rewritten inserting identity $\textcolor{purple}{\Id=\ket{0}\bra{0}+\ket{1}\bra{1}}$ around Hamiltonian. Omitting the time dependence of every element we get
+\begin{equation}
+    \begin{split}
+        \delta E^2 =& \braket{\psi|\textcolor{purple}{\Id}\HH^2\textcolor{purple}{\Id}|\psi}-\braket{\psi|\textcolor{purple}{\Id}\HH\textcolor{purple}{\Id}|\psi}^2\\
+        =&\braket{\psi|0}\braket{0|\HH^2|0}\braket{0|\psi}+\braket{\psi|1}\braket{1|\HH^2|1}\braket{1|\psi}\\
+        +&\textcolor{gray}{\braket{\psi|0}\braket{0|\HH^2|1}\braket{1|\psi}+\braket{\psi|1}\braket{1|\HH^2|0}\braket{0|\psi}}\\
+        -&\Big(\braket{\psi|0}\braket{0|\HH|0}\braket{0|\psi}+\braket{\psi|1}\braket{1|\HH|1}\braket{1|\psi}\\
+        +&\textcolor{gray}{\braket{\psi|0}\underbrace{\braket{0|\HH|1}}_{\propto \braket{0|1}=0}\braket{1|\psi}+\braket{\psi|1}\underbrace{\braket{1|\HH|0}}_{\propto \braket{0|1}=0}\braket{0|\psi}}\Big)^2.
+    \end{split}
+\end{equation}
+Using Fidelity definition $F(t)=\left|\braket{0(t)|\psi(t)}\right|^2$ and Schr\"odinger equation $\HH\ket{k}=E_k\ket{k}$ we have
+\begin{equation}
+    \delta E^2 = FE_0^2+(1-F)E_1^2 - (FE_0+(1-F)E_1)^2 = F(1-F)(E_0-E_1)^2.
+\end{equation}
+For three level system we have $\textcolor{purple}{\Id=\ket{0}\bra{0}+\ket{1}\bra{1}+\ket{2}\bra{2}}$ and
+\begin{equation}
+    \delta E^2=\sum_{k=1}^3 E_k^2 F_k(1-F_k)-4\prod_{k=1}^3 E_kF_k-2F_0F_1E_0E_1-2F_0F_2E_0E_2-2F_1F_2E_1E_2,
+\end{equation}
+for $F_k\coloneqq \braket{k|\psi}$, which has no practical simplification.

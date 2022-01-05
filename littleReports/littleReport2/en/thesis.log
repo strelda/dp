@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  15 OCT 2021 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  25 DEC 2021 19:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.tex
-(/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.tex
+**/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.tex
+(/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -155,7 +155,7 @@ File: se-pdfdoc.def 2016/05/16 v1.11 stringenc: PDFDocEncoding
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 )
 ** pdfx: Metadata file thesis.xmpdata read successfully.
-(/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.xmpdata)<<sRGB_IEC61966-2-1_black_scaled.icc>> (/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
+(/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.xmpdata)<<sRGB_IEC61966-2-1_black_scaled.icc>> (/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -2192,13 +2192,13 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 89.
 \@input{macros.aux}
 \openout2 = `macros.aux'.
 
-(/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/macros.tex
+(/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/macros.tex
 \c@thm=\count145
 \c@hypot=\count146
 \c@definition=\count147
 \c@defn=\count148
 \c@conjecture=\count149
-) (/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.aux (/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/chap05.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/bibliography.aux))
+) (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.aux (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/chap05.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/bibliography.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
@@ -2233,7 +2233,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 95.
 LaTeX Info: Redefining \pageref on input line 95.
 LaTeX Info: Redefining \nameref on input line 95.
- (/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.out) (/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.out)
+ (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.out) (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
 
@@ -2266,7 +2266,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \openout2 = `chap05.aux'.
 
- (/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/chap05.tex
+ (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/chap05.tex
 Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -2307,7 +2307,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]) [2]
 \openout2 = `bibliography.aux'.
 
- (/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/bibliography.tex (/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.bbl
+ (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/bibliography.tex (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.bbl
 LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 15.
  (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2332,7 +2332,7 @@ See the caption package documentation for explanation.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
-(/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.aux (/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/chap05.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport3/en/bibliography.aux))
+(/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.aux (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/chap05.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -2348,7 +2348,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  55i,11n,54p,553b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/strelda/Documents/mff/dp/littleReports/littleReport3/en/thesis.pdf (3 pages, 202589 bytes).
+Output written on /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.pdf (3 pages, 202750 bytes).
 PDF statistics:
  141 PDF objects out of 1000 (max. 8388607)
  23 named destinations out of 1000 (max. 500000)

@@ -80,7 +80,9 @@
 %%% Various table goodies
 \newcommand{\pulrad}[1]{\raisebox{1.5ex}[0pt]{#1}}
 \newcommand{\mc}[1]{\multicolumn{1}{c}{#1}}
-
+\DeclareRobustCommand{\lesssim}{%
+  \mathrel{\mathpalette\lowersim\originallesssim}%
+}
 \DeclareMathOperator{\Tr}{\textrm{Tr}}
 \DeclareMathOperator\arctanh{arctanh}
 \renewcommand{\d}{\ensuremath{\mathrm{d}}}
