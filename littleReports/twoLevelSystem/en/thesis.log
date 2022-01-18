@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  5 JAN 2022 15:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  17 JAN 2022 13:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2308,13 +2308,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 9.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (6.22119pt too wide) in paragraph at lines 32--34
+Overfull \hbox (6.22119pt too wide) in paragraph at lines 33--35
 \OT1/lmr/m/n/12 with time vary-ing Hamil-to-nian. For 2-dimentional sys-tem with $[] =[][] (\OML/lmm/m/it/12 a\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 t\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 ; b\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 t\OT1/lmr/m/n/12 ))$
  []
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 45.
+(hyperref)                than one, level fixed on input line 46.
 
 [1
 
@@ -2328,22 +2328,22 @@ pdfTeX warning: pdflatex (file ../img/driving.pdf): PDF inclusion: found PDF ver
 <../img/driving.pdf, id=95, 221.82875pt x 190.7125pt>
 File: ../img/driving.pdf Graphic file (type pdf)
 <use ../img/driving.pdf>
-Package pdftex.def Info: ../img/driving.pdf  used on input line 98.
+Package pdftex.def Info: ../img/driving.pdf  used on input line 99.
 (pdftex.def)             Requested size: 266.19315pt x 228.85384pt.
 [2] [3 <../img/driving.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 166.
+(Font)              <10> on input line 167.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 166.
+(Font)              <7> on input line 167.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 166.
+(Font)              <5> on input line 167.
 
 
 pdfTeX warning: pdflatex (file ../img/infidelityTimePlotGeod.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
 <../img/infidelityTimePlotGeod.pdf, id=132, 325.215pt x 132.495pt>
 File: ../img/infidelityTimePlotGeod.pdf Graphic file (type pdf)
 <use ../img/infidelityTimePlotGeod.pdf>
-Package pdftex.def Info: ../img/infidelityTimePlotGeod.pdf  used on input line 189.
+Package pdftex.def Info: ../img/infidelityTimePlotGeod.pdf  used on input line 190.
 (pdftex.def)             Requested size: 390.25604pt x 158.99318pt.
 [4]
 
@@ -2351,7 +2351,7 @@ pdfTeX warning: pdflatex (file ../img/infidelityTfPlot.pdf): PDF inclusion: foun
 <../img/infidelityTfPlot.pdf, id=146, 325.215pt x 131.49126pt>
 File: ../img/infidelityTfPlot.pdf Graphic file (type pdf)
 <use ../img/infidelityTfPlot.pdf>
-Package pdftex.def Info: ../img/infidelityTfPlot.pdf  used on input line 196.
+Package pdftex.def Info: ../img/infidelityTfPlot.pdf  used on input line 197.
 (pdftex.def)             Requested size: 390.25604pt x 157.7887pt.
 
 
@@ -2359,7 +2359,7 @@ pdfTeX warning: pdflatex (file ../img/infidelityTfPlotLog.pdf): PDF inclusion: f
 <../img/infidelityTfPlotLog.pdf, id=147, 325.215pt x 128.48pt>
 File: ../img/infidelityTfPlotLog.pdf Graphic file (type pdf)
 <use ../img/infidelityTfPlotLog.pdf>
-Package pdftex.def Info: ../img/infidelityTfPlotLog.pdf  used on input line 203.
+Package pdftex.def Info: ../img/infidelityTfPlotLog.pdf  used on input line 204.
 (pdftex.def)             Requested size: 390.25604pt x 154.17522pt.
 [5 <../img/infidelityTimePlotGeod.pdf> <../img/infidelityTfPlot.pdf
 
@@ -2373,7 +2373,7 @@ pdfTeX warning: pdflatex (file ../img/fidelityZeros.pdf): PDF inclusion: found P
 <../img/fidelityZeros.pdf, id=193, 325.215pt x 131.49126pt>
 File: ../img/fidelityZeros.pdf Graphic file (type pdf)
 <use ../img/fidelityZeros.pdf>
-Package pdftex.def Info: ../img/fidelityZeros.pdf  used on input line 222.
+Package pdftex.def Info: ../img/fidelityZeros.pdf  used on input line 223.
 (pdftex.def)             Requested size: 390.25604pt x 157.7887pt.
 
 
@@ -2381,7 +2381,7 @@ pdfTeX warning: pdflatex (file ../img/dens3.pdf): PDF inclusion: found PDF versi
 <../img/dens3.pdf, id=195, 256.96pt x 205.76875pt>
 File: ../img/dens3.pdf Graphic file (type pdf)
 <use ../img/dens3.pdf>
-Package pdftex.def Info: ../img/dens3.pdf  used on input line 232.
+Package pdftex.def Info: ../img/dens3.pdf  used on input line 233.
 (pdftex.def)             Requested size: 308.35045pt x 246.92125pt.
 [6 <../img/fidelityZeros.pdf> <../img/dens3.pdf
 
@@ -2392,7 +2392,7 @@ pdfTeX warning: pdflatex (file ../img/densVar.pdf): PDF inclusion: found PDF ver
 <../img/densVar.pdf, id=231, 256.96pt x 205.76875pt>
 File: ../img/densVar.pdf Graphic file (type pdf)
 <use ../img/densVar.pdf>
-Package pdftex.def Info: ../img/densVar.pdf  used on input line 250.
+Package pdftex.def Info: ../img/densVar.pdf  used on input line 251.
 (pdftex.def)             Requested size: 308.35045pt x 246.92125pt.
 [7 <../img/densVar.pdf>]
 
@@ -2400,25 +2400,25 @@ pdfTeX warning: pdflatex (file ../img/drivingLin.pdf): PDF inclusion: found PDF 
 <../img/drivingLin.pdf, id=257, 217.81375pt x 190.7125pt>
 File: ../img/drivingLin.pdf Graphic file (type pdf)
 <use ../img/drivingLin.pdf>
-Package pdftex.def Info: ../img/drivingLin.pdf  used on input line 263.
+Package pdftex.def Info: ../img/drivingLin.pdf  used on input line 264.
 (pdftex.def)             Requested size: 261.37517pt x 228.85384pt.
 
 
 pdfTeX warning: pdflatex (file ../img/infidelityInTimePlot.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/infidelityInTimePlot.pdf, id=259, 376.40625pt x 130.4875pt>
+<../img/infidelityInTimePlot.pdf, id=262, 376.40625pt x 130.4875pt>
 File: ../img/infidelityInTimePlot.pdf Graphic file (type pdf)
 <use ../img/infidelityInTimePlot.pdf>
-Package pdftex.def Info: ../img/infidelityInTimePlot.pdf  used on input line 277.
+Package pdftex.def Info: ../img/infidelityInTimePlot.pdf  used on input line 286.
 (pdftex.def)             Requested size: 446.03938pt x 154.62697pt.
 
-Overfull \hbox (33.47443pt too wide) in paragraph at lines 277--278
+Overfull \hbox (33.47443pt too wide) in paragraph at lines 286--287
  [][] 
  []
 
 [8 <../img/drivingLin.pdf>]
 
 pdfTeX warning: pdflatex (file ../img/slowinfidCombined.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/slowinfidCombined.pdf, id=282, 424.58624pt x 144.54pt>
+<../img/slowinfidCombined.pdf, id=287, 424.58624pt x 144.54pt>
 File: ../img/slowinfidCombined.pdf Graphic file (type pdf)
 <use ../img/slowinfidCombined.pdf>
 Package pdftex.def Info: ../img/slowinfidCombined.pdf  used on input line 294.
@@ -2431,111 +2431,111 @@ Overfull \hbox (90.56747pt too wide) in paragraph at lines 294--296
 
 
 pdfTeX warning: pdflatex (file ../img/infidelityTfPlotLogLin.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/infidelityTfPlotLogLin.pdf, id=284, 364.36125pt x 154.5775pt>
+<../img/infidelityTfPlotLogLin.pdf, id=290, 333.245pt x 131.49126pt>
 File: ../img/infidelityTfPlotLogLin.pdf Graphic file (type pdf)
 <use ../img/infidelityTfPlotLogLin.pdf>
-Package pdftex.def Info: ../img/infidelityTfPlotLogLin.pdf  used on input line 305.
-(pdftex.def)             Requested size: 437.23131pt x 185.49205pt.
-
-Overfull \hbox (24.66635pt too wide) in paragraph at lines 305--307
- [] 
- []
-
+Package pdftex.def Info: ../img/infidelityTfPlotLogLin.pdf  used on input line 310.
+(pdftex.def)             Requested size: 399.89198pt x 157.7887pt.
 [9 <../img/infidelityInTimePlot.pdf> <../img/slowinfidCombined.pdf
 
 pdfTeX warning: pdflatex (file ../img/slowinfidCombined.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-
-LaTeX Warning: Reference `fig:infidelityZoom' on page 10 undefined on input line 311.
-
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 320.
-(/usr/share/texmf/tex/latex/lm/omslmr.fd
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 323.
+ (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 320.
-
-Overfull \hbox (4.37253pt too wide) in paragraph at lines 322--323
-[]\OT1/lmr/m/it/12 polynomial/adiabatic regime \OT1/lmr/m/n/12 -- $\OMS/lmsy/m/n/12 h\OT1/lmr/m/n/12 1 \OMS/lmsy/m/n/12 ^^@ \OML/lmm/m/it/12 F\OMS/lmsy/m/n/12 i[] / \OML/lmm/m/it/12 T[]$ \OT1/lmr/m/n/12 for $\OML/lmm/m/it/12 ^^T \OMS/lmsy/m/n/12 2 \U/msb/m/n/12 R[]$\OT1/lmr/m/n/12 , $\OML/lmm/m/it/12 a[]\OT1/lmr/m/n/12 [0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 6\OML/lmm/m/it/12 T[]; \OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 999\OML/lmm/m/it/12 T[]\OT1/lmr/m/n/12 ]$. 
- []
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 323.
 
 
+pdfTeX warning: pdflatex (file ../img/infidCombined.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<../img/infidCombined.pdf, id=317, 364.36125pt x 154.5775pt>
+File: ../img/infidCombined.pdf Graphic file (type pdf)
+<use ../img/infidCombined.pdf>
+Package pdftex.def Info: ../img/infidCombined.pdf  used on input line 333.
+(pdftex.def)             Requested size: 437.23131pt x 185.49205pt.
 
-pdfTeX warning: pdflatex (file ../img/infidAverageCombined.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/infidAverageCombined.pdf, id=310, 437.635pt x 130.4875pt>
-File: ../img/infidAverageCombined.pdf Graphic file (type pdf)
-<use ../img/infidAverageCombined.pdf>
-Package pdftex.def Info: ../img/infidAverageCombined.pdf  used on input line 330.
-(pdftex.def)             Requested size: 525.15936pt x 156.5842pt.
-
-Overfull \hbox (112.5944pt too wide) in paragraph at lines 330--331
+Overfull \hbox (24.66635pt too wide) in paragraph at lines 333--334
  [][] 
  []
 
 [10 <../img/infidelityTfPlotLogLin.pdf>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 341.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 341.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 341.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 341.
+
+
 
 pdfTeX warning: pdflatex (file ../img/dens2.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/dens2.pdf, id=332, 248.93pt x 205.76875pt>
+<../img/dens2.pdf, id=341, 248.93pt x 205.76875pt>
 File: ../img/dens2.pdf Graphic file (type pdf)
 <use ../img/dens2.pdf>
-Package pdftex.def Info: ../img/dens2.pdf  used on input line 343.
+Package pdftex.def Info: ../img/dens2.pdf  used on input line 346.
 (pdftex.def)             Requested size: 298.7145pt x 246.92125pt.
 
 
 pdfTeX warning: pdflatex (file ../img/dens2Zoom.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/dens2Zoom.pdf, id=335, 248.93pt x 205.76875pt>
+<../img/dens2Zoom.pdf, id=344, 248.93pt x 205.76875pt>
 File: ../img/dens2Zoom.pdf Graphic file (type pdf)
 <use ../img/dens2Zoom.pdf>
-Package pdftex.def Info: ../img/dens2Zoom.pdf  used on input line 350.
+Package pdftex.def Info: ../img/dens2Zoom.pdf  used on input line 353.
 (pdftex.def)             Requested size: 298.7145pt x 246.92125pt.
-[11 <../img/infidAverageCombined.pdf> <../img/dens2.pdf
+[11 <../img/infidCombined.pdf> <../img/dens2.pdf
 
 pdfTeX warning: pdflatex (file ../img/dens2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 356.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 359.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 356.
+(hyperref)                removing `math shift' on input line 359.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 356.
+(hyperref)                removing `math shift' on input line 359.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 356.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 356.
+(hyperref)                removing `math shift' on input line 359.
 
 [12 <../img/dens2Zoom.pdf>]
 
 pdfTeX warning: pdflatex (file ../img/densVariance.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/densVariance.pdf, id=401, 274.02374pt x 205.76875pt>
+<../img/densVariance.pdf, id=410, 274.02374pt x 205.76875pt>
 File: ../img/densVariance.pdf Graphic file (type pdf)
 <use ../img/densVariance.pdf>
-Package pdftex.def Info: ../img/densVariance.pdf  used on input line 365.
+Package pdftex.def Info: ../img/densVariance.pdf  used on input line 367.
 (pdftex.def)             Requested size: 328.82684pt x 246.92125pt.
 
 
 pdfTeX warning: pdflatex (file ../img/contVariance.pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<../img/contVariance.pdf, id=402, 243.91125pt x 205.76875pt>
+<../img/contVariance.pdf, id=411, 243.91125pt x 205.76875pt>
 File: ../img/contVariance.pdf Graphic file (type pdf)
 <use ../img/contVariance.pdf>
-Package pdftex.def Info: ../img/contVariance.pdf  used on input line 372.
+Package pdftex.def Info: ../img/contVariance.pdf  used on input line 374.
 (pdftex.def)             Requested size: 292.69202pt x 246.92125pt.
 [13 <../img/densVariance.pdf> <../img/contVariance.pdf
 
 pdfTeX warning: pdflatex (file ../img/contVariance.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 398.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 400.
  (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-Overfull \hbox (1.42975pt too wide) in paragraph at lines 397--399
+Overfull \hbox (1.42975pt too wide) in paragraph at lines 399--401
 \OT1/lmr/m/n/12 can be rewrit-ten in-sert-ing iden-tity $[][]$ around Hamil-to-nian. Omit-
  []
 
@@ -2550,10 +2550,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D468AA4CB427DA3CC27AA4104DB0382E;2578.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: 9E8C146941375DFBBC6A0A84C8929253;2366.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2561,17 +2558,17 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 26081 strings out of 492982
- 449216 string characters out of 6134896
- 477242 words of memory out of 5000000
- 29063 multiletter control sequences out of 15000+600000
+ 26086 strings out of 492982
+ 449242 string characters out of 6134896
+ 477405 words of memory out of 5000000
+ 29065 multiletter control sequences out of 15000+600000
  73873 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,26n,54p,991b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/strelda/.texlive2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk>{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/thesis.pdf (14 pages, 13022783 bytes).
+ 55i,26n,54p,645b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/strelda/.texlive2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk>{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/thesis.pdf (14 pages, 13151217 bytes).
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
+ 551 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
