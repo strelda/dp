@@ -1,4 +1,4 @@
-[**little report 1**]([https://github.com/strelda/dp/blob/main/littleReports/littleReport1/en/thesis.pdf)
+[**little report 1**](https://github.com/strelda/dp/blob/main/littleReports/littleReport1/en/thesis.pdf)
 Contains analysis of Lipkin-Meshkov Glick model, mainly the ground state manifold.
 
 [**little report 2**](https://github.com/strelda/dp/blob/main/littleReports/littleReport2/en/thesis.pdf)
