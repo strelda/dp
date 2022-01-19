@@ -24,6 +24,7 @@ and eigenvectors
 \end{pmatrix};\quad \ket{1(t)}=\mathcal N_-\begin{pmatrix}
     \frac{E_1(t)+\Omega(t)}{\Delta(t)} \\ 1
    \end{pmatrix}
+   \label{eq:eigenvectors}
 \end{equation}
 for normalization constants $N_\pm=\left(\frac{\pm E_0(t)+\Omega(t)}{\Delta(t)}+1\right)^{-1/2}$.
 
@@ -42,24 +43,34 @@ with normalization
     a^2(t)+b^2(t)=1, \quad \forall t\in [0,T_f].
     \label{eq:normalizationCondition}
 \end{equation}
+and initial value 
+\begin{equation}
+    \begin{pmatrix}
+        a(0)\\b(0)
+    \end{pmatrix} = \ket{0(0)}.
+\end{equation}
 
 \subsection{Harmonic oscillator correspondence}
-The Equations \ref{eq:a1}, \ref{eq:a2} have no general analytical solution, with the exceptions of a few easy protocols $\HH(t)$. Those equations can be rewritten to \emph{one differential equation of 2. order with non-constant coefficients}, which can be rewritten in a form of  a \emph{damped harmonic oscillator without external force}
+The Equations \ref{eq:a1}, \ref{eq:a2} have no general analytical solution, with exceptions of a few easy protocols $\HH(t)$. Still we can find some general behavior. 
+
+N-dimensional Schr\"odinger equation can be rewritten to \emph{one differential equation of N$^{th}$ order with non-constant coefficients}. In our two dimensional case, this equation corresponds to \emph{damped harmonic oscillator without external force}
 \begin{align}
     0&= \ddot a(t)+ \gamma(t) \dot a(t)+\omega^2(t)a(t) \label{eq:harmonicOscillator}\\
     \gamma(t)&\coloneqq -\frac{\dot \Delta(t)}{\Delta(t)} \label{eq:gammaDef}\\
     \omega^2(t) &\coloneqq i\left(\dot \Omega(t)-\frac{\dot\Delta(t)}{\Delta(t)}\Omega(t)\right)+\Delta^2(t)+\Omega^2(t).
     \label{eq:frequency}
 \end{align}
-Along with normalization condition \ref{eq:normalizationCondition}, this solves the Schr\"odinger equation. Note that in this form $\Delta\neq 0$. This is not problem due to system symmetry $\Delta\leftrightarrow \Omega$, which means we can change the driving by interchanging $\Delta$ and $\Omega$.
-
-The solution of Eq. \ref{eq:harmonicOscillator} leads to damped oscillations. This characteristic will propagate to the solution for fidelity.
-
-
+Along with normalization condition \ref{eq:normalizationCondition} and initial conditions
+\begin{equation}
+    \begin{pmatrix}
+        a(0)\\b(0)
+    \end{pmatrix}=\ket{0(t)}; \quad \dot a(0)=-i\left(\Omega(0) a(0)+\Delta(0)b(0)\right).
+\end{equation}
+Note that in this form $\Delta\neq 0$. This is not problem due to system symmetry $\Delta\leftrightarrow \Omega$, which means we can change the driving by interchanging $\Delta$ and $\Omega$ on any problematic intervals.
 
 
 \subsubsection{Classical mechanics correspondence}
-From the perspective of classical mechanics, meaning $x(t)oloneqq a(t)$ is a position in a phase space $(\bm x,\bm p)$, we can write classical Lagrangian from Eq. \ref{eq:harmonicOscillator} as
+From the perspective of classical mechanics, meaning $x(t)\coloneqq a(t)$ is a position in a phase space $(\bm x,\bm p)$, we can write classical Lagrangian from Eq. \ref{eq:harmonicOscillator} as
 \begin{equation}
     \mathcal L=\frac{1}{2}\exp{\left(\int_0^t\gamma(s)\d s\right)}\left(\dot x^2-\omega^2(t)x^2\right)
     \label{eq:lagrangian}
@@ -73,7 +84,7 @@ From the perspective of classical mechanics, meaning $x(t)oloneqq a(t)$ is a pos
             -\omega^2(t)x-\gamma(t)\dot x-\ddot x&=0,
         \end{split}
     \end{equation}
-    where derivation along upper bound $F(x)\coloneqq\int_0^{g(x)}f(t)\d t \Rightarrow F'(x)=f(g(x))g'(x)$ for $f(x)\in L^1(0,g(x))$ and differentiable function $g$, was used.
+    where derivation along upper bound $F(x)\coloneqq\int_0^{g(x)}f(t)\d t \Rightarrow F'(x)=f(g(x))g'(x)$ for $f(t)\in L^1(0,g(x))$ and differentiable function $g$, was used.
 \end{proof}
 
 
@@ -255,64 +266,58 @@ see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. It's value as can be
 
 \newpage 
 \section{Linear driving}
-In this case we define the driving as
+Another driving (see report from Felipe) with analytical solution can be defined as
 \begin{equation}
-    \Omega(t)=\Omega_{sc}\left(\frac{2t}{T_f}-1\right),\quad \Delta(t)=\Delta_{sc}, \;\;\text{ for } \Omega_{sc}=10, \Delta_{sc}=0.3
+    \Omega(t)=\Omega_{sc}\left(\frac{2t}{T_f}-1\right),\quad \Delta(t)=\Delta_{sc}, \;\;\text{ for } \Omega_{sc}=10, \Delta_{sc}=1
+    \label{eq:linearDrivingdef}
 \end{equation}
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/drivingLin.pdf}
-    \caption{Driving along the linear path. $\lambda_i=(-10;0.3)$ and $\lambda_f=(10;0.3)$ are initial resp. final parameters. DensityPlot shows the difference between Hamiltonian eigenvalues.}
+    \caption{Driving along the linear path. $\lambda_i=(-10;1)$ and $\lambda_f=(10;1)$ are initial resp. final parameters. DensityPlot shows the difference between Hamiltonian eigenvalues.}
     \label{fig:driving}
 \end{figure}
 
-From linear driving definition and Eq. \ref{eq:energy} we have
+From linear driving definition \ref{eq:linearDrivingdef} and energy dependence \ref{eq:energy} we have
 \begin{equation}
     \dot \Delta(t)=0;\quad \Delta(t) \overset{\textcolor{gray}{\Delta(t)>0}}{=} \sqrt{\frac{E^2_{dif}(t)}{4}-\Omega^2(t)};\quad E^2_{dif}\coloneqq E_1-E_0.
 \end{equation}
 Substituting to functions from the Harmonic oscillator (Eq. \ref{eq:gammaDef}, \ref{eq:frequency}) we get 
 \begin{align}
     \gamma(t) &= 0\\
-    \omega^2(t)&=i\frac{\Omega(t)}{t}+\frac{E^2_{dif}}{4}\label{eq:oscillationsLinear}
+    \omega^2(t)&=i\frac{2\Omega_{sc}}{T_f}+\frac{\Omega_{sc}}{4}\left(\frac{2t}{T_f}-1\right)^2+\frac{\Delta_{sc}^2}{4}=i\frac{2\Omega_{sc}}{T_f}+\frac{E^2_{dif}(t)}{4}\label{eq:oscillationsLinear}
 \end{align}
 
 
 \subsection{Dependence on time}
-The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. We can see that for $t\approx T_f/2$ Hamiltonian parameters change quickly which leads to the state excitation. Then the Harmonic oscillator damping of Schr\"odinger equation gets involved, and oscillations are quickly going to zero, never disappearing entirely.
+The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. For $t\approx T_f/2$ Hamiltonian parameters change quickly which leads to fast state excitation. Then the Harmonic oscillator damping gets involved and oscillations are quickly going to zero, never disappearing entirely.
 
-We can see that the final fidelity decreases with longer final time, which correctly leads to adiabatic driving $\lim_{T_f\rightarrow \infty} F=0$. For short final times we can observe so called quench, $\lim_{T_f\rightarrow 0} F=1$. The important phenomenon on this image are the oscilations around $t=T_f/2$, which are more intense with longer final time.
+We can see that the final fidelity decreases with longer final time, which correctly leads to adiabatic driving $\lim_{T_f\rightarrow \infty} F=0$. For short final times we can observe so called quench, $\lim_{T_f\rightarrow 0} F=1$. The interesting phenomenon on this image are the oscilations around $t=T_f/2$, which have gigher relative amplitude to the final infidelity and bigger frequency with longer final time. 
+
 \begin{figure}[H]
-    \centering
-    \includegraphics[scale=1.185]{../img/infidelityInTimePlot.pdf}
-    \caption{Infidelity in time for three final times $T_f\in\{1,10,100\}$ for the linear driving.}
+    \centering 
+    \includegraphics[scale=1.185]{../img/infidelityInTimePlot1.pdf}
+    \caption{Infidelity in time for three final times $T_f\in\{1,5,20\}$ for the linear driving.}
   \label{fig:infidelityTimePlotLin}
 \end{figure}
 
-If the driving is slow enough (meaning of this will be clear later on), the final fidelity will be oscilating between $0$ and some small value, see Fig. \ref{fig:slowinfidCombined}.
+
+\subsection{Final fidelity}
+Because the oscillations after fast parameter change in the Hamiltonian never disappear entirely, we must observe those oscillations even at the final time. \emph{Final fidelity} (meaning the fidelity at final time $T_f$) has dependence on $T_f$ as can be seen in Fig. \ref{fig:infidelityTfPlotLogLinCombined}. Because after the final time $T_f^{\Delta_{sc}=1}\approx 120$ the values are so small, we can observe some fine structure of the fidelity, along with numerical error artifacts.
 \begin{figure}[H]
     \centering
-    \hspace{40pt}\includegraphics[scale=1.185]{../img/slowinfidCombined.pdf}
-    \vspace{-40pt}
-    \caption{Infidelity in time for close adiabatic driving.}
-  \label{fig:slowinfidCombined}
+    \includegraphics[scale=1.2]{../img/infidelityTfPlotLogLinCombined1.pdf}
+    \caption{Final infidelity as a function of $T_f$ with zoom on transitional part.}
+    \label{fig:infidelityTfPlotLogLinCombined}
 \end{figure}
 
-One would like to analyze these oscillations from $\omega^2(t)$ described by Eq. \ref{eq:oscillationsLinear}. The problem is that we are observing the fidelity$=\braket{0(t)|\psi(t)}$ where $\bra{0(t)}\neq const.$ and might be oscillating as well.
+First of all, the numerical precision of this calculation was found to be around $10^{-14}$. This means that the oscillations we see on Fig. \ref{fig:infidelityTfPlotLogLinCombined} are of physical origin with some additional numerical error. In fact these small oscillations are the remnants of the fast excitation during close approach of energy levels, see Fig. \ref{fig:infidelityTimePlotLin}. One would like to analyze these oscillations from $\omega^2(t)$ described by Eq. \ref{eq:oscillationsLinear}. The problem is that we are observing the fidelity $F=\braket{0(t)|\psi(t)}$ where $\bra{0(t)}\neq const.$ and is described by Eq. \ref{eq:eigenvectors}. The frequency from this is
 \begin{equation}
-    \textcolor{red}{?calculation\; of\; \ket{0(t)}\; oscillation?}
+    \textcolor{red}{freq}
 \end{equation}
 
 
-\subsection{Dependence on final time}
-Because the oscillations after fast parameter change in the Hamiltonian never disappear entirely, we must observe those oscillations even at the final time.\emph{Final fidelity} (meaning the fidelity at final time $F(T_f)$) has dependence on $T_f$ as can be seen in Fig. \ref{fig:infidelityTfPlotLogLin}. Because after the final time $T_f\approx 2000$ the values are so small, we can observe some fine structure of the fidelity, along with numerical error artifacts.
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=1.2]{../img/infidelityTfPlotLogLin.pdf}
-    \caption{Final infidelity as a function of $T_f$.}
-    \label{fig:infidelityTfPlotLogLin}
-\end{figure}
-
-First of all, the numerical precision of this calculation was found to be around $10^{-15}$. This means that the oscillations we see on Fig. \ref{fig:infidelityTfPlotLogLin} are of physical origin with some additional numerical error. In fact these small oscillations are the remnants of the fast excitation during close approach of energy levels, see Fig. \ref{fig:infidelityTimePlotLin}. We can eliminate the effect of these oscillations by averaging over some time. For that we define the \emph{average final infidelity}
+We can eliminate the effect of oscillations by averaging over time. For that we define the \emph{average final infidelity}
 \begin{equation}
     \langle 1-F\rangle_p(T_f) \coloneqq \frac{1}{(1-p) T_f}\int_{p T_f}^{T_f} F(t)\d t.
 \end{equation}
@@ -321,22 +326,35 @@ It turned out that averaging over 1 \% or 10 \% of the drivine (i.e. taking $\la
 Using this we can describe the driving using three regimes\footnote{The coefficient $p$ is assumed to be small enough not to cover the biggest oscillations after $t=T_f/2$ and big enough to average over suffitient number of oscillations. $p\tilde\in[0.6T_f,0.999T_f]$}:
 \begin{itemize}
     \item \emph{exponential/fast-driving regime} -- $\langle 1-F\rangle_p= \exp(-\xi T_f)$, $\xi\in\R^+$
-    \item \emph{transitional regime} -- \textcolor{red}{smooth? or sharp?}
-    \item \emph{polynomial/adiabatic regime} -- $\langle 1-F\rangle_p\propto T_f^{-\kappa}$ for $\kappa\in \R^+$.
+    \item \emph{transitional regime} -- happens around \emph{critical time} $T_c$. \textcolor{red}{smoothening is not enough to remove the oscillations}
+    \item \emph{polynomial/close-adiabatic regime} -- $\langle 1-F\rangle_p\propto T_f^{-\kappa}$ for $\kappa\in \R^+$.
 \end{itemize}
-
-Two questions now arise. What are the coefficients $\xi$ and $\kappa$ and on which intervals in $T_f$ these transitions hold? Let's answer them one by one.
-
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=1.2]{../img/infidCombined.pdf}
+    \includegraphics[scale=1.2]{../img/infidCombined1.pdf}
     \caption{Final infidelity as a function of $T_f$ in log log scale wit linear scaled plot inserted.}
     \label{fig:infidCombined}
 \end{figure}
 
 
+The reason for different behavior in slow and fast driving protocols comes from the fact that oscillations do not dissapear entirely for $t=T_f$. By comparing the infidelity for $t$ close to $T_f$, Fig. \ref{fig:undercritical}, \ref{fig:overcritical}, we see that for $T_f<T_c$ the oscillations are smaller than the final infidelity and $1-F\neq 0$. For $T_f>T_c$ the oscillations amplitude is bigger than final infidelity.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.2]{../img/undercritical.pdf}
+    \caption{Final infidelity as a function of $T_f$ for fast-driving regime.}
+    \label{fig:undercritical}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.2]{../img/abovecritical.pdf}
+    \caption{Final infidelity as a function of $T_f$ for close-adiabatic regime.}
+    \label{fig:overcritical}
+\end{figure}
+
+Two questions now arise. What are the coefficients $\xi$ and $\kappa$ and on which intervals in $T_f$ these transitions hold? 
 
 \subsection{Critical time $T_c$}
 TODO
@@ -365,7 +383,7 @@ Energy variance resembles structure similar to fidelity. Compare Fig. \ref{fig:d
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/densVariance.pdf}
-    \caption{Energy variance for $\Omega=0.2$ for linear driving. Note that only $t<T_f$ has physical meaning.}
+    \caption{Energy variance for $\Delta_{sc}=0.2$ for linear driving. Note that only $t<T_f$ has physical meaning.}
     \label{fig:densVariance}
 \end{figure}
 
