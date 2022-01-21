@@ -26,7 +26,7 @@ and eigenvectors
    \end{pmatrix}
    \label{eq:eigenvectors}
 \end{equation}
-for normalization constants $N_\pm=\left(\frac{\pm E_0(t)+\Omega(t)}{\Delta(t)}+1\right)^{-1/2}$.
+for normalization constants $N_\pm=\left(\left(\frac{\pm E_0(t)+\Omega(t)}{\Delta(t)}\right)^2+1\right)^{-1/2}$.
 
 The goal will be to find \emph{fidelity} $F\coloneqq |\braket{0(t)|\psi(t)}|^2$ of different driving protocols. For this we need to solve time Schr\"odinger equation
 \begin{equation}
@@ -349,7 +349,7 @@ The reason for different behavior in slow and fast driving protocols comes from 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=1.2]{../img/abovecritical.pdf}
+    \includegraphics[scale=1.2]{../img/overcritical.pdf}
     \caption{Final infidelity as a function of $T_f$ for close-adiabatic regime.}
     \label{fig:overcritical}
 \end{figure}

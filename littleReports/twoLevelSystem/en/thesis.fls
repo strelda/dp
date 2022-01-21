@@ -415,9 +415,9 @@ INPUT ../img/infidCombined1.pdf
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/undercritical.pdf
 INPUT ../img/undercritical.pdf
 INPUT ../img/undercritical.pdf
-INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/abovecritical.pdf
-INPUT ../img/abovecritical.pdf
-INPUT ../img/abovecritical.pdf
+INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/overcritical.pdf
+INPUT ../img/overcritical.pdf
+INPUT ../img/overcritical.pdf
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmmi12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/lmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
