@@ -271,11 +271,7 @@ Another analytically solvable driving is of type
     \Omega(t)=\Omega_{sc}\left(\frac{2t}{T_f}-1\right),\quad \Delta(t)=\Delta_{sc}, \;\;\text{ for } \Omega_{sc}=10, \Delta_{sc}=1,
     \label{eq:linearDrivingdef}
 \end{equation}
-see Fig. \ref{fig:driving}. Corresponding differential equation of second order is
-\begin{equation}
-    a''(t)+\left[\frac{2\Omega_{sc}}{T_f}t+ i\frac{2\Omega_{sc}}{T_f}+\Delta_{sc}-\Omega_{sc}\right] a(t)=0,
-\end{equation}
-with Parabolic Cylinder solution\footnote{https://mathworld.wolfram.com/ParabolicCylinderFunction.html}, see report from Felipe. 
+see Fig. \ref{fig:driving}. 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/drivingLin.pdf}
@@ -290,9 +286,14 @@ From linear driving definition \ref{eq:linearDrivingdef} and energy dependence \
 Substituting to functions from the Harmonic oscillator (Eq. \ref{eq:gammaDef}, \ref{eq:frequency}) we get 
 \begin{align}
     \gamma(t) &= 0\\
-    \omega^2(t)&=i\frac{2\Omega_{sc}}{T_f}+\frac{\Omega_{sc}}{4}\left(\frac{2t}{T_f}-1\right)^2+\frac{\Delta_{sc}^2}{4}=i\frac{2\Omega_{sc}}{T_f}+\frac{E^2_{dif}(t)}{4}\label{eq:oscillationsLinear}
+    \omega^2(t)&=i\frac{2\Omega_{sc}}{T_f}+\frac{\Omega_{sc}}{4}\left(\frac{2t}{T_f}-1\right)^2+\frac{\Delta_{sc}^2}{4}=i\frac{2\Omega_{sc}}{T_f}+\frac{E^2_{dif}(t)}{4}.
+    \label{eq:oscillationsLinear}
 \end{align}
-
+Corresponding differential equation of second order is
+\begin{equation}
+    a''(t)+\omega^2(t) a(t)=0,
+\end{equation}
+which is of Weber differential equation type\footnote{https://mathworld.wolfram.com/WeberDifferentialEquations.html} with Parabolic Cylinder functions\footnote{https://mathworld.wolfram.com/ParabolicCylinderFunction.html} as solution, see report from Felipe. 
 
 \subsection{Dependence on time}
 The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. For $t\approx T_f/2$ Hamiltonian parameters change quickly which leads to fast state excitation. Then the Harmonic oscillator damping gets involved and oscillations are quickly going to zero, never disappearing entirely.
