@@ -19,9 +19,9 @@ for $\Omega: \R^+\rightarrow \R$, $\Delta: \R^+\rightarrow \R$. Its spectrum is
 \end{equation}
 and eigenvectors
 \begin{equation}
-\ket{0(t)}=\mathcal N_+ \begin{pmatrix}
+\ket{0(t)}=N_+ \begin{pmatrix}
  \frac{E_0(t)+\Omega(t)}{\Delta(t)} \\ 1
-\end{pmatrix};\quad \ket{1(t)}=\mathcal N_-\begin{pmatrix}
+\end{pmatrix};\quad \ket{1(t)}=N_-\begin{pmatrix}
     \frac{E_1(t)+\Omega(t)}{\Delta(t)} \\ 1
    \end{pmatrix}
    \label{eq:eigenvectors}
@@ -266,11 +266,16 @@ see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. It's value as can be
 
 \newpage 
 \section{Linear driving}
-Another driving (see report from Felipe) with analytical solution can be defined as
+Another analytically solvable driving is of type 
 \begin{equation}
-    \Omega(t)=\Omega_{sc}\left(\frac{2t}{T_f}-1\right),\quad \Delta(t)=\Delta_{sc}, \;\;\text{ for } \Omega_{sc}=10, \Delta_{sc}=1
+    \Omega(t)=\Omega_{sc}\left(\frac{2t}{T_f}-1\right),\quad \Delta(t)=\Delta_{sc}, \;\;\text{ for } \Omega_{sc}=10, \Delta_{sc}=1,
     \label{eq:linearDrivingdef}
 \end{equation}
+see Fig. \ref{fig:driving}. Corresponding differential equation of second order is
+\begin{equation}
+    a''(t)+\left[\frac{2\Omega_{sc}}{T_f}t+ i\frac{2\Omega_{sc}}{T_f}+\Delta_{sc}-\Omega_{sc}\right] a(t)=0,
+\end{equation}
+with Parabolic Cylinder solution\footnote{https://mathworld.wolfram.com/ParabolicCylinderFunction.html}, see report from Felipe. 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/drivingLin.pdf}
@@ -280,7 +285,7 @@ Another driving (see report from Felipe) with analytical solution can be defined
 
 From linear driving definition \ref{eq:linearDrivingdef} and energy dependence \ref{eq:energy} we have
 \begin{equation}
-    \dot \Delta(t)=0;\quad \Delta(t) \overset{\textcolor{gray}{\Delta(t)>0}}{=} \sqrt{\frac{E^2_{dif}(t)}{4}-\Omega^2(t)};\quad E^2_{dif}\coloneqq E_1-E_0.
+    \dot \Delta(t)=0;\quad \Delta(t) \overset{\textcolor{gray}{\Delta(t)>0}}{=} \sqrt{\frac{E^2_{dif}(t)}{4}-\Omega^2(t)};\quad E_{dif}\coloneqq E_1-E_0.
 \end{equation}
 Substituting to functions from the Harmonic oscillator (Eq. \ref{eq:gammaDef}, \ref{eq:frequency}) we get 
 \begin{align}
@@ -311,10 +316,26 @@ Because the oscillations after fast parameter change in the Hamiltonian never di
     \label{fig:infidelityTfPlotLogLinCombined}
 \end{figure}
 
-First of all, the numerical precision of this calculation was found to be around $10^{-14}$. This means that the oscillations we see on Fig. \ref{fig:infidelityTfPlotLogLinCombined} are of physical origin with some additional numerical error. In fact these small oscillations are the remnants of the fast excitation during close approach of energy levels, see Fig. \ref{fig:infidelityTimePlotLin}. One would like to analyze these oscillations from $\omega^2(t)$ described by Eq. \ref{eq:oscillationsLinear}. The problem is that we are observing the fidelity $F=\braket{0(t)|\psi(t)}$ where $\bra{0(t)}\neq const.$ and is described by Eq. \ref{eq:eigenvectors}. The frequency from this is
+First of all, the numerical precision of this calculation was found to be around $10^{-14}$. This means that the oscillations we see on Fig. \ref{fig:infidelityTfPlotLogLinCombined} are of physical origin with some additional numerical error. In fact these small oscillations are the remnants of the fast excitation during close approach of energy levels, see Fig. \ref{fig:infidelityTimePlotLin}. One would like to analyze these oscillations from $\omega^2(t)$ described by Eq. \ref{eq:oscillationsLinear}. The problem is that we are observing the fidelity $F=\braket{0(t)|\psi(t)}$ where $\bra{0(t)}\neq const.$ and is described by Eq. \ref{eq:eigenvectors}. This value of first element of ground state vector $\ket{0(t)}^1$ starts at value close to $0$ and around $t=T_f/2$ slowly changes and becomes almost $1$, see Fig. \ref{fig:zeroState}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.2]{../img/zeroState.pdf}
+    \caption{Value of first element of the ground state vector $\ket{0(t)}^1$ during linear driving.}
+    \label{fig:zeroState}
+\end{figure}
+
+
+This means that at the end of the driving (for definitions see Eq. \ref{eq:eigenvectors})\footnote{Even thought kets are vectors, we are forced to write indices down to avoid confusion with powers.}
 \begin{equation}
-    \textcolor{red}{freq}
+   \frac{1}{N_+} \ket{0(t)}_1=\frac{E_0(t)+\Omega(t)}{\Delta(t)}\gg 1 =\frac{1}{N_+} \ket{0(t)}_2.
 \end{equation}
+Writing $\ket{\psi(t)}\eqqcolon (a(t),b(t))$, we get the fidelity approximation at the end of driving
+\begin{equation}
+    F_{end}= \left|N_+ \left(
+        \frac{E_0(t)+\Omega(t)}{\Delta(t)} a(t)+b(t)
+        \right)\right|^2 \approx a^2(t).
+\end{equation}
+Therefore when $t$ is getting close to $T_f$ the fidelity is oscilating with frequency \ref{eq:frequency}.
 
 
 We can eliminate the effect of oscillations by averaging over time. For that we define the \emph{average final infidelity}
@@ -357,7 +378,22 @@ The reason for different behavior in slow and fast driving protocols comes from 
 Two questions now arise. What are the coefficients $\xi$ and $\kappa$ and on which intervals in $T_f$ these transitions hold? 
 
 \subsection{Critical time $T_c$}
-TODO
+The critical time $T_c$ is the point where the fidelity dependence on final time becomes polynomial. We have showed that for 
+\begin{equation}
+    \text{for}\begin{cases}
+        T_f<T_c \\
+        T_f>T_c 
+    \end{cases}\text{the oscillations amplitude } A \text{ is }
+    \begin{cases}
+        A<1-F_{final}\\
+        A>1-F_{final}
+    \end{cases}.
+\end{equation}
+On Fig. \ref{fig:dens2} we can see the dependence of critical time as the point of transition between \emph{smooth} and \emph{chaotic} regimes, on $\Delta=\Delta_sc$ for the linear driving. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. The approximated dependence is
+\begin{equation}
+    T_c\tilde\propto \Delta_{sc}^{-2}
+\end{equation}
+
 
 \begin{figure}[H]
     \centering 
