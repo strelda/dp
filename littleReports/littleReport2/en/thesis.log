@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  25 DEC 2021 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.17)  25 JAN 2022 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2198,31 +2198,35 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 89.
 \c@definition=\count147
 \c@defn=\count148
 \c@conjecture=\count149
-) (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.aux (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/chap05.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/bibliography.aux))
+)
+\@input{colors.aux}
+\openout2 = `colors.aux'.
+
+(/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/colors.tex) (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.aux (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/chap05.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/bibliography.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 95.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 96.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 95.
+Package hyperref Info: Link coloring OFF on input line 96.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -2230,9 +2234,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count150
 )
-LaTeX Info: Redefining \ref on input line 95.
-LaTeX Info: Redefining \pageref on input line 95.
-LaTeX Info: Redefining \nameref on input line 95.
+LaTeX Info: Redefining \ref on input line 96.
+LaTeX Info: Redefining \pageref on input line 96.
+LaTeX Info: Redefining \nameref on input line 96.
  (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.out) (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
@@ -2304,6 +2308,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
+
+
 ]) [2]
 \openout2 = `bibliography.aux'.
 
@@ -2330,25 +2336,25 @@ Underfull \hbox (badness 2951) in paragraph at lines 9--16
 Package caption Warning: Unused \captionsetup[sub] on input line 63.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
 (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.aux (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/chap05.aux) (/home/strelda/Documents/mff/dp/littleReports/littleReport2/en/bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 6BE4DE3F52690F4445771F6603C28740;544.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 25360 strings out of 492982
- 430930 string characters out of 6134896
- 464058 words of memory out of 5000000
- 28433 multiletter control sequences out of 15000+600000
+ 25378 strings out of 492982
+ 431200 string characters out of 6134896
+ 464637 words of memory out of 5000000
+ 28448 multiletter control sequences out of 15000+600000
  43346 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,54p,553b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,54p,586b,2256s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.pdf (3 pages, 202750 bytes).
+Output written on /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.pdf (3 pages, 204946 bytes).
 PDF statistics:
  141 PDF objects out of 1000 (max. 8388607)
  23 named destinations out of 1000 (max. 500000)

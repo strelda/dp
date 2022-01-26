@@ -404,12 +404,12 @@ INPUT ../img/drivingLin.pdf
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/infidelityInTimePlot1.pdf
 INPUT ../img/infidelityInTimePlot1.pdf
 INPUT ../img/infidelityInTimePlot1.pdf
-INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/infidelityTfPlotLogLinCombined1.pdf
-INPUT ../img/infidelityTfPlotLogLinCombined1.pdf
-INPUT ../img/infidelityTfPlotLogLinCombined1.pdf
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/zeroState.pdf
 INPUT ../img/zeroState.pdf
 INPUT ../img/zeroState.pdf
+INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/infidelityTfPlotLogLinCombined1.pdf
+INPUT ../img/infidelityTfPlotLogLinCombined1.pdf
+INPUT ../img/infidelityTfPlotLogLinCombined1.pdf
 INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
 INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
 INPUT /home/strelda/Documents/mff/dp/littleReports/twoLevelSystem/en/../img/infidCombined1.pdf

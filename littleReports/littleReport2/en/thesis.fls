@@ -278,6 +278,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/bbm-macros/bbm.sty
 OUTPUT /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/macros.aux
 INPUT /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/macros.tex
 INPUT /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/macros.tex
+OUTPUT /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/colors.aux
+INPUT /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/colors.tex
+INPUT /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/colors.tex
 INPUT /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.aux
 INPUT /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/thesis.aux
 INPUT /home/strelda/Documents/mff/dp/littleReports/littleReport2/en/chap05.aux

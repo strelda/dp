@@ -35,7 +35,7 @@ About transports using \emph{fast forward} Hamiltonian means the system is drive
     where $\O(\dot\lambda^4)$ needs to be positive for any real-valued Hamiltonian. This comes from the fact, that it has instantaneous time-reversal symmetry.
 \end{proof}
 
-The conjecture only applies to unit fidelity protocols and can be extended to an arbitrary dimensional path.
+The conjecture only applies to unit fidelity protocols ($F(t)=1 \;\forall t\in[0,T_f]$) and can be extended to an arbitrary dimensional path.
 
 
 
@@ -46,46 +46,46 @@ The conjecture only applies to unit fidelity protocols and can be extended to an
 
 \section{APT}
 From \cite{Rigolin2008}.
+One important thing to bare in mind is \emph{locality of variables}. Let's call variable $V(s)$ \emph{\bluee{local}} if it depends only on infinitesimal sirrounding of $s$. These variables will be in shades of blue and non-local variables in shades of red.
 
-The power series will be derived using a small parameter $v=1/T$.
-
-Starting again with
+The power series will be derived using a small parameter $v=1/T$. Starting again with
 \begin{equation}
-    \ket{\Psi(s)}=\sum_{p=0}^\infty v^p \ket{\Psi^{(p)}(s)},
+    \red{\ket{\Psi(s)}}=\sum_{p=0}^\infty v^p \red{\ket{\Psi^{(p)}(s)}},
     \label{eq:mainSeries}
 \end{equation}
 
 for 
 \begin{equation}
-    \ket{\Psi^{(p)}(s)}=\sum_{n=0} e^{-\frac{i}{v} \textcolor{purple}{\omega_n(s)}}e^{i\textcolor{violet}{\gamma_n(s)}}\textcolor{blue}{b_n^{(p)}(s)}\ket{n(s)}.
+    \red{\ket{\Psi^{(p)}(s)}}=\sum_{n=0} e^{-\frac{i}{v} \reddd{\omega_n(s)}}e^{i\reddd{\gamma_n(s)}}\redd{b_n^{(p)}(s)}\bluee{\ket{n(s)}}.
 \end{equation}
 Here the
 \begin{align}
-    \textcolor{purple}{\omega_n(s)} &\coloneqq \frac{1}{\hbar}\int_0^s E_n(s')\d s'\\
-    \textcolor{violet}{\gamma_n(s)} &\coloneqq i\int_0^s \braket{n(s')|\frac{\d}{\d s'}n(s')}\d s' \equiv i\int_0^s M_{nn}(s')\d s'
+    \reddd{\omega_n(s)} &\coloneqq \frac{1}{\hbar}\int_0^s \bluee{E_n(s')}\d s'\\
+    \reddd{\gamma_n(s)} &\coloneqq i\int_0^s \bluee{\braket{n(s')|\frac{\d}{\d s'}n(s')}}\d s' \equiv i\int_0^s \bluee{M_{nn}(s')}\d s'
     \label{eq:gammadef}
 \end{align}
-are so-called dynamical resp. Berry (geometric) phase and $\ket{n(s)}$ are solution to
+are so-called \redd{dynamical} resp. \redd{Berry (geometric) phase} and $\bluee{\ket{n(s)}}$ are solution to
 \begin{equation}
-    \HH(s)\ket{n(s)}=E_n(s) \ket{n(s)}.
+    \bluee{\HH(s)\ket{n(s)}}=\bluee{E_n(s) \ket{n(s)}}.
 \end{equation}
-The problem again lies in determining $\textcolor{blue}{b_n^{(p)}(s)}$, which will be done iteratively. Because it is dependent on its relative geometric and dynamical phases to other energy levels, lets write it as a series
+Variables $\reddd{\omega_n(s)}$ and $\reddd{\gamma_n(s)}$ are defined using integration over the whole protocol, therefore there are \emph{\red{non/local variables}}.
+The problem now lies in determining $\redd{b_n^{(p)}(s)}$, which is also \red{nonlocal}. Because it depends on its relative \reddd{geometric} and \reddd{dynamical phase} to other \bluee{energy levels}, lets write it as a series
 \begin{equation}
-    \textcolor{blue}{b_n^{(p)}(s)}=\sum_{m=0} e^{\frac{i}{v}\textcolor{purple}{\omega_{nm}(s)}}e^{-i\gamma_{nm}(s)}\textcolor{blue}{b_{nm}^{(p)}(s)},
+    \redd{b_n^{(p)}(s)}=\sum_{m=0} e^{\frac{i}{v}\reddd{\omega_{nm}(s)}}e^{-i\reddd{\gamma_{nm}(s)}}\blue{b_{nm}^{(p)}(s)},
 \end{equation}
-where $\textcolor{purple}{\omega_{nm}} \coloneqq \textcolor{purple}{\omega_m}-\textcolor{purple}{\omega_n}$, $\textcolor{violet}{\gamma_{nm}} \coloneqq \textcolor{violet}{\gamma_m}-\textcolor{violet}{\gamma_n}$. The new coefficients $\textcolor{blue}{b_{mn}^{(p)}(s)}$ now \textbf{depend only on the metric structure around point $s$} and therefore one may perform adiabatic expansion from any point on manifold.
+where $\reddd{\omega_{nm}} \coloneqq \reddd{\omega_m}-\reddd{\omega_n}$, $\reddd{\gamma_{nm}} \coloneqq \reddd{\gamma_m}-\reddd{\gamma_n}$.  The reason for \blue{locality} of $\blue{b_{nm}^{(p)}(s)}$ will be clear soon.
 
 Inserting all to original series \ref{eq:mainSeries}, we get
 \begin{equation}
-    \ket{\Psi(s)}=\sum_{n,m=0}\sum_{p=0}^\infty v^p e^{-\frac{i}{v}\textcolor{purple}{\omega_m(s)}}e^{i\textcolor{violet}{\gamma_m(s)}}\textcolor{blue}{b_{nm}^{(p)}(s)}\ket{n(s)}.
+    \red{\ket{\Psi(s)}}=\sum_{n,m=0}\sum_{p=0}^\infty v^p e^{-\frac{i}{v}\reddd{\omega_m(s)}}e^{i\reddd{\gamma_m(s)}}\redd{b_{nm}^{(p)}(s)}\bluee{\ket{n(s)}}.
     \label{eq:solve0}
 \end{equation}
 
-Because the initial state is eigenstate, we get initial conditions $b_{nm}^{(0)}(s)=0$. In addition, one can rewrite equation \ref{eq:solve0} to the iteratively solvable form
+Because the initial state is eigenstate, we get initial conditions $\blue{b_{nm}^{(0)}(s)=0}$. In addition, one can rewrite equation \ref{eq:solve0} to the iteratively solvable form
 \begin{equation}
-    \frac{i}{\hbar}\Delta_{nm}(s)\textcolor{blue}{b_{nm}^{(p+1)}(s)}+\textcolor{blue}{\dot b_{nm}^{(p)}(s)}+W_{nm}(s) \textcolor{blue}{b_{nm}^{(p)}(s)}+\sum_{k=0,k\neq n}M_{nk}(s)\textcolor{blue}{b_{km}^{(p)}(s)}=0,
+    \frac{i}{\hbar}\bluee{\Delta_{nm}(s)}\blue{b_{nm}^{(p+1)}(s)}+\blue{\dot b_{nm}^{(p)}(s)}+\bluee{W_{nm}(s)} \blue{b_{nm}^{(p)}(s)}+\sum_{k=0,k\neq n}\bluee{M_{nk}(s)}\bluee{b_{km}^{(p)}(s)}=0,
     \label{eq:bSolution}
 \end{equation}
-for $W_{nm}(s)\coloneqq M_{nn}(s)-M_{mm}(s)$, where $M_{mn}$ is defined in Eq. \ref{eq:gammadef}. We can see that $b_{mn}^{(p)}$, as a solution to Eq. \ref{eq:bSolution}, only depends on difference between energy levels, eigenstates during the path and their directional derivatives. All of those are easily obtained, once the driving path is prescribed.
+for $\bluee{\Delta_nm(s)}\coloneqq \bluee{E_m-E_n}$, $\bluee{W_{nm}(s)}\coloneqq \bluee{M_{nn}(s)}-\bluee{M_{mm}(s)}$, where $\bluee{M_{mn}}$ is defined in Eq. \ref{eq:gammadef}. We can see that $\blue{b_{mn}^{(p)}}$, as a solution to Eq. \ref{eq:bSolution},\textbf{ only depends on difference between energy levels, eigenstates during the path and their directional derivatives. Not on the path itself}. All of those are easily obtained, once the driving path is prescribed.
 
     
