@@ -17,7 +17,17 @@ for $\Omega: \R^+\rightarrow \R$, $\Delta: \R^+\rightarrow \R$. Its spectrum is
     E_1(t)=-E_0(t)= \sqrt{\Omega^2(t)+\Delta^2(t)}
     \label{eq:energy}
 \end{equation}
-and eigenvectors
+and using the basis
+\begin{equation}
+    \mathcal{B}\coloneqq \left\{
+        \ket{0}\equiv\begin{pmatrix}
+            0\\1
+        \end{pmatrix},
+        \ket{1}\equiv\begin{pmatrix}
+                1\\0
+            \end{pmatrix} \right\},
+\end{equation}
+we get the eigenvectors 
 \begin{equation}
 \ket{0(t)}=N_+ \begin{pmatrix}
  \frac{E_0(t)+\Omega(t)}{\Delta(t)} \\ 1
@@ -32,7 +42,7 @@ The goal will be to find \emph{fidelity} $F\coloneqq |\braket{0(t)|\psi(t)}|^2$ 
 \begin{equation}
     \HH(t)\ket{\psi(t)}=i\frac{\d}{\d t}\ket{\psi(t)}
 \end{equation}
-with time varying Hamiltonian. For 2-dimentional system with $\ket{\psi(t)}\eqqcolon (a(t),b(t))$ we get the system of \emph{two coupled differentials equations of the 1. order with non-constant coefficients}
+with time varying Hamiltonian. For 2-dimentional system with $\ket{\psi(t)}\eqqcolon (a(t),b(t))^T$ we get the system of \emph{two coupled differentials equations of the 1. order with non-constant coefficients}
 \begin{align}
     \Omega(t)a(t)+\Delta(t)b(t)&=i\dot a(t)\label{eq:a1}\\
     \Delta(t)a(t)-\Omega(t)b(t)&=i\dot b(t)
@@ -131,14 +141,14 @@ reflects rotational symmetry of the problem. This change of reference frame tran
     \begin{split}
         \textcolor{purple}{\HH(t)\psi(t)} &= i\textcolor{purple}{\psi'(t)}\\
         \textcolor{purple}{\HH(t)} \expsp\textcolor{blue}{\tilde\psi(t)} &= i \expsp \left(\frac{i\omega\hat\sigma_y}{2}\right)\textcolor{blue}{\tilde\psi(t)}+i\expsp\textcolor{blue}{\tilde\psi'(t)}\\
-        \underbrace{\left(\expsm \textcolor{purple}{\HH(t)}\expsp+ \frac{\omega}{2}\hat\sigma_y\right)}_{\textcolor{blue}{\tilde\HH(t)}}\textcolor{blue}{\tilde\psi(t)}&=i\textcolor{blue}{\tilde\psi'(t)}.
+        \underbrace{\left(\expsm \textcolor{purple}{\HH(t)}\expsp+ \frac{\omega}{2}\hat\sigma_y\right)}_{\textcolor{blue}{\tilde H(t)}}\textcolor{blue}{\tilde\psi(t)}&=i\textcolor{blue}{\tilde\psi'(t)}.
     \end{split}
 \end{equation}
 Therefore we can equivalently solve the Fidelity problem in this new coordinate system.
 
 Hamiltonian in the moving frame is
 \begin{equation}
-    \textcolor{blue}{\tilde\HH}=\textcolor{blue}{\begin{pmatrix}
+    \textcolor{blue}{\tilde H}=\textcolor{blue}{\begin{pmatrix}
         -s&-i\omega(T_f)/2\\
         i\omega(T_f)/2&s
     \end{pmatrix}},
@@ -146,7 +156,7 @@ Hamiltonian in the moving frame is
 which is time independent. The Schr\"odinger equation can now be easily solved using evolution operator
 \begin{equation}
     \begin{split}
-        \textcolor{blue}{\UU(t)}=&e^{-i\textcolor{blue}{\tilde\HH}t}\\
+        \textcolor{blue}{\UU(t)}=&e^{-i\textcolor{blue}{\tilde H}t}\\
         =&\textcolor{blue}{\begin{pmatrix}
             \cos \left(\frac{t}{2} q(T_f)\right)+\frac{2 i s \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} & -\frac{\omega(T_f)  \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} \\
             \frac{\omega(T_f)  \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} & \cos \left(\frac{t}{2} q(T_f)\right)-\frac{2 i s \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} \\
@@ -307,11 +317,13 @@ We can see that the final fidelity decreases with longer final time, which corre
   \label{fig:infidelityTimePlotLin}
 \end{figure}
 
-Because in the Harmonic oscillator $\gamma(t)=0$, the oscillations of $a(t)$ are not damped. What we are observing is fidelity $F(t)\coloneqq \braket{0(t)|\psi(t)}$, where the ground state is not generally constant. In our case is the ground state described by Eq. \ref{eq:eigenvectors} and is slowly interchanging its value from the first to the second element of the vector $\ket{0(t)}$, see Fig. \ref{fig:zeroState}. This means that at the beginning of driving, the projection to the ground state selects $b(t)$. Then it's getting more influenced by $a(t)$ until almost only $a(t)$ influences the fidelity. \textcolor{red}{still dont see the damping here xd}
+Because in the Harmonic oscillator $\gamma(t)=0$, the oscillations of $a(t)$ are not damped. What we are observing is fidelity 
+$$F(t)\coloneqq |\braket{0(t)|\psi(t)}|^2\eqqcolon |\alpha(t)a(t)+\beta(t)b(t)|^2, $$
+where the $a,b$ represents the evolved state and $\alpha,\beta$ evolved ground state in the initial eigenbasis $\mathcal{B}$, see Eq. \ref{eq:eigenbasisDef}. The important notice is that the ground state is not generally constant. In our case is the ground state described by Eq. \ref{eq:eigenvectors} and is slowly interchanging its value from the first to the second element of the vector $\ket{0(t)}$, see Fig. \ref{fig:zeroState}. This means that at the beginning of driving, the projection to the ground state selects $b(t)$. Then it's getting more influenced by $a(t)$ until almost only $a(t)$ influences the fidelity. \textcolor{red}{still dont see the damping here xd}
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/zeroState.pdf}
-    \caption{Value of first element of the ground state vector $\ket{0(t)}^1$ during linear driving.}
+    \caption{Value of first element of the ground state vector $\alpha\equiv \ket{0(t)}_1$ during linear driving.}
     \label{fig:zeroState}
 \end{figure}
 
@@ -350,11 +362,11 @@ We can eliminate the effect of oscillations by averaging over time. For that we 
 \begin{equation}
     \langle 1-F\rangle_p(T_f) \coloneqq \frac{1}{(1-p) T_f}\int_{p T_f}^{T_f} F(t)\d t.
 \end{equation}
-It turned out that averaging over 1 \% or 10 \% of the drivine (i.e. taking $\langle 1-F\rangle_{0.9}$, resp $\langle 1-F\rangle_{0.99}$) gave approximately the same results for long enough drivings. The result can be seen on Fig. \ref{fig:infidCombined}.
+It turned out that averaging over 1 \% or 10 \% of the drivine (i.e. taking $\langle 1-F\rangle_{0.9}$, resp $\langle 1-F\rangle_{0.99}$) gave approximately the same results for long enough drivings. The same result can be obtained from calculating the fidelity for $T_f=konst<\infty$ at time $t\rightarrow  \infty$. Even though this has no physical meaning, the analytical continuation of the harmonic oscillator solution leads to the Fidelity value around which the oscillations occur \textcolor{red}{here I have some numerical problems in mathematica, $t=10T_f$ calculates OK, but going higher leads to error}. The result can be seen on Fig. \ref{fig:infidCombined}.
 
 Using this we can describe the driving using three regimes\footnote{The coefficient $p$ is assumed to be small enough not to cover the biggest oscillations after $t=T_f/2$ and big enough to average over suffitient number of oscillations. $p\tilde\in[0.6T_f,0.999T_f]$}:
 \begin{itemize}
-    \item \emph{exponential/fast-driving regime} -- $\langle 1-F\rangle_p= \exp(-\xi T_f)$, $\xi\in\R^+$
+    \item \emph{\textcolor{red}{exponential}/fast-driving regime} -- $\langle 1-F\rangle_p= \exp(-\xi T_f)$, $\xi\in\R^+$
     \item \emph{transitional regime} -- happens around \emph{critical time} $T_c$. \textcolor{red}{smoothening is not enough to remove the oscillations}
     \item \emph{polynomial/close-adiabatic regime} -- $\langle 1-F\rangle_p\propto T_f^{-\kappa}$ for $\kappa\in \R^+$.
 \end{itemize}
@@ -367,19 +379,19 @@ Using this we can describe the driving using three regimes\footnote{The coeffici
 \end{figure}
 
 
-The reason for different behavior in slow and fast driving protocols comes from the fact that oscillations do not dissapear entirely for $t=T_f$. By comparing the infidelity for $t$ close to $T_f$, Fig. \ref{fig:undercritical}, \ref{fig:overcritical}, we see that for $T_f<T_c$ the oscillations are smaller than the final infidelity and $1-F\neq 0$. For $T_f>T_c$ the oscillations amplitude is bigger than final infidelity.
+The reason for different behavior in slow and fast driving protocols comes from the fact that oscillations do not dissapear entirely for $t=T_f$. By comparing the infidelity for $t$ close to $T_f$, Fig. \ref{fig:undercritical}, \ref{fig:overcritical}, we see that for $T_f<T_c$ the oscillations are smaller than the final infidelity and $1-F\neq 0$. For $T_f>T_c$ the oscillations amplitude is bigger than final infidelity. \textcolor{red}{at least numerical proof would be nice here}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/undercritical.pdf}
-    \caption{Final infidelity as a function of $T_f$ for fast-driving regime.}
+    \caption{Final infidelity as a function of $t$ for fast-driving regime, $T_f=80<T_c$.}
     \label{fig:undercritical}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/overcritical.pdf}
-    \caption{Final infidelity as a function of $T_f$ for close-adiabatic regime.}
+    \caption{Final infidelity as a function of $t$ for close-adiabatic regime. $T_f=170>T_c$}
     \label{fig:overcritical}
 \end{figure}
 
@@ -420,6 +432,17 @@ On Fig. \ref{fig:dens2} we can see the dependence of critical time as the point 
 
 \subsection{Coefficients $\xi$ and $\kappa$}
 TODO
+
+\subsection{Summary}
+Now we should understand all results separately, lets put it all together.
+
+\begin{figure}[H]
+    \centering 
+    \includegraphics[scale=1.2]{../img/allInOne.pdf}
+    \caption{Fidelity dependence for linear driving with $\Delta=1$. Black line marks $t=T_f$, dashed black line $t=T_f/2$ and \textcolor{purple}{purple} dashed line is the approximate value of $T_c$. \textcolor{blue}{Blue} lines marks driving from Fig. \ref{fig:undercritical}, \ref{fig:overcritical}, visualizing the final times of the driving.}
+    \label{fig:AllInOne}
+\end{figure}
+
 
 \newpage
 \subsection{Energy variance}

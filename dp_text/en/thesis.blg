@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2021/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: title.aux
 A level-1 auxiliary file: notation.aux
@@ -9,17 +9,24 @@ A level-1 auxiliary file: chap02.aux
 A level-1 auxiliary file: chap03.aux
 A level-1 auxiliary file: chap04.aux
 A level-1 auxiliary file: chap05.aux
+A level-1 auxiliary file: chap06.aux
+A level-1 auxiliary file: chap07.aux
+A level-1 auxiliary file: chap08.aux
+A level-1 auxiliary file: chap09.aux
 A level-1 auxiliary file: epilog.aux
 A level-1 auxiliary file: bibliography.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: appendix1.aux
 Database file #1: bibliography.bib
 Warning--I didn't find a database entry for "polkovnikov"
+Warning--I didn't find a database entry for "ashtekar_geometrical_1997"
+Warning--I didn't find a database entry for "cheng_quantum_2013"
+Warning--I didn't find a database entry for "Bukov2019"
 Warning--empty journal in berry1989
 Warning--empty publisher in claudio
 You've used 9 entries,
             2773 wiz_defined-function locations,
-            671 strings with 6454 characters,
+            679 strings with 6555 characters,
 and the built_in function-call counts, 3510 in all, are:
 = -- 308
 > -- 157
@@ -58,4 +65,4 @@ warning$ -- 2
 while$ -- 32
 width$ -- 0
 write$ -- 143
-(There were 3 warnings)
+(There were 6 warnings)

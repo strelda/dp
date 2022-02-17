@@ -456,7 +456,7 @@ Finding of those potentials has many practical applications, so let's introduce 
 
 \section{Counter-diabatic driving}
 \label{chap:CounterDiabaticDriving}
-\citep{kolodrubez}[page 15--17] The main idea of a counter-diabatic driving is, that any excitation of the system can be countered by adding so called \emph{counter-diabatic potential} to the Hamiltonian. Consider again any eigenstate $\kpsit$ of the Hamiltonian $\HH=\HH(\lambda)$ driven along the curve $\gamma(\lambda(t))$ on $\M_0$ depending on time $t$, during which the fidelity $f\neq 0$. Because the system is not measured during the trip, it can't be stated if or if not it was excited, but the main goal here is to make fidelity zero, which is iff $\tilde\HH$ is diagonal. For diagonalizable Hamiltonian, there exist a transformation, see eq. \ref{eq:transformationU}, for which the fidelity will be zero. Such a transformation does not have to be unique, but we can choose any one of them. This can be seen more clearly from direct transformation of the Schrödinger equation. 
+\citep{kolodrubez}[page 15--17] The main idea of a counter-diabatic driving is, that any excitation of the system can be countered by adding so called \emph{counter-diabatic potential} to the Hamiltonian. Consider again any eigenstate $\kpsit$ of the Hamiltonian $\HH=\HH(\lambda)$ driven along the curve $\gamma(\lambda(t))$ on $\M_0$ depending on time $t$, during which the fidelity $f\neq 0$. Because the system is not measured during the trip, it can't be stated if or if not it was excited, but the main goal here is to make fidelity zero, which is iff $\tilde H$ is diagonal. For diagonalizable Hamiltonian, there exist a transformation, see eq. \ref{eq:transformationU}, for which the fidelity will be zero. Such a transformation does not have to be unique, but we can choose any one of them. This can be seen more clearly from direct transformation of the Schrödinger equation. 
 
 The Schrödinger equation
 \begin{equation}
@@ -467,7 +467,7 @@ can be transformed using
     \U(\lambda)^+  \ket{\psi(\lambda)} = \ket{\tilde\psi(\tilde\llambda)},
     \label{eq:transformationUtimeDependentH}
 \end{equation}
-for which $\tilde\HH\coloneqq\U^+\HH\U$ is diagonal, leading to
+for which $\tilde H \coloneqq\U^+\HH\U$ is diagonal, leading to
 \begin{align}
     i\hbar \der{}{t}(\U(\tilde\llambda)\ket{\tilde \psi(\tilde\llambda)}) &= \HH(\lambda)\U(\tilde\llambda)\ket{\tilde \psi(\tilde\llambda)} \\
     i\hbar \der{\lambda}{t}\partial_\lambda\U(\tilde\llambda)\ket{\tilde \psi(\tilde\llambda)} + i\hbar \U(\tilde\llambda)\der{}{t}\ket{\tilde \psi(\tilde\llambda)} &= \HH(\lambda)\U(\tilde\llambda)\ket{\tilde \psi(\tilde\llambda)}.
@@ -475,9 +475,9 @@ for which $\tilde\HH\coloneqq\U^+\HH\U$ is diagonal, leading to
 
 This can be rewritten using adiabatic potential from eq. \ref{eq:adiabaticPotentialDefinition}, using \emph{dot} notation for time derivatives and omitting the points in which the objects are evaluated, as
 \begin{equation}
-    i\hbar \der{}{t}\ket{\tilde\psi} = \left[\U^+\HH\U-\dot{\lambda}\tilde{\AA_\lambda}\right]\ket{\tilde\psi} = \left[\tilde \HH-\dot{\lambda}\tilde{\AA_\lambda}\right]\ket{\tilde{\psi}} \eqqcolon \tilde{\HH}_m \ket{\tilde{\psi}},
+    i\hbar \der{}{t}\ket{\tilde\psi} = \left[\U^+\HH\U-\dot{\lambda}\tilde{\AA_\lambda}\right]\ket{\tilde\psi} = \left[\tilde H-\dot{\lambda}\tilde{\AA_\lambda}\right]\ket{\tilde{\psi}} \eqqcolon \tilde{H}_m \ket{\tilde{\psi}},
 \end{equation}
-where the term $-\dot{\lambda}\tilde{\AA_\lambda}$ is called \emph{Galilean} and $ \tilde{\HH}_m$ is the Hamiltonian in transformed system. Because $\tilde{\HH}$ is diagonal, it drives $\ket{\tilde{\psi}}$ with fidelity $f=1$. This means that for any driving defined by $\HH(\lambda(t))$, which defines the unitary transformation $\U$, there exists such \emph{counter-diabatic potential} $\AA_\lambda$, that $\HH_m + \dot{\lambda}\AA_\lambda$ has $f=1$.
+where the term $-\dot{\lambda}\tilde{\AA_\lambda}$ is called \emph{Galilean} and $ \tilde{H}_m$ is the Hamiltonian in transformed system. Because $\tilde{H}$ is diagonal, it drives $\ket{\tilde{\psi}}$ with fidelity $f=1$. This means that for any driving defined by $\HH(\lambda(t))$, which defines the unitary transformation $\U$, there exists such \emph{counter-diabatic potential} $\AA_\lambda$, that $\HH_m + \dot{\lambda}\AA_\lambda$ has $f=1$.
 
 
 % Intuition for transformations using original Hamiltonian vs. transformed one can be seen on fig. \ref{fig:counterdiabaticPotential}. It is good to point out, that the eigenstates on this figure belong to the space $\P\M$, but the paths itself need to be considered in the whole $\M$, which can be seen as the phase change described by equation \ref{eq:evolutionUduringTransition}.
