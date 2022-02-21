@@ -1359,9 +1359,14 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmmib5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmbsy7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmbsy5.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm
+INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ts1-lmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmri8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmri7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr17.tfm
 INPUT ../img/bundle.png
 INPUT ../img/bundle.png
 INPUT ../img/bundle.png
@@ -1369,11 +1374,6 @@ INPUT ../img/bundle.png
 INPUT ../img/bundle.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm
-INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
-INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
-INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
-INPUT /usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ts1-lmr12.tfm
 INPUT ./chap02_geomQM.tex
 INPUT ./chap02_geomQM.tex
 INPUT ./chap02_geomQM.tex
@@ -1824,6 +1824,7 @@ INPUT /home/strelda/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbx8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb
