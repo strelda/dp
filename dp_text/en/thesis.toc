@@ -15,57 +15,59 @@
 \contentsline {section}{\numberline {2.2}From the projective Hilbert space to state manifolds}{12}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Projective Hilbert space}{12}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Restriction to eigenstate manifolds}{13}{subsection.2.2.2}%
-\contentsline {chapter}{\numberline {3}Introduction to quantum driving}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Transporting states}{18}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Metric and geometric tensor}{21}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Derivation of the geometric tensor}{23}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Berry phase and curvature}{23}{section.3.3}%
-\contentsline {section}{\numberline {3.4}General fidelity driving}{24}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}APT}{24}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}How to advantageously drive the system}{25}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Adiabatic driving}{25}{subsection.3.5.1}%
-\contentsline {subsubsection}{Slow transports}{25}{section*.12}%
-\contentsline {subsection}{\numberline {3.5.2}Counterdiabatic driving}{27}{subsection.3.5.2}%
-\contentsline {subsubsection}{Gauge potentials}{27}{section*.13}%
-\contentsline {subsubsection}{Classical gauge potential}{27}{section*.14}%
-\contentsline {subsubsection}{Quantum gauge potential}{28}{section*.15}%
-\contentsline {subsubsection}{Adiabatic gauge potential}{28}{section*.16}%
-\contentsline {subsubsection}{Performing counter-diabatic driving}{29}{section*.17}%
-\contentsline {subsubsection}{Explicit form}{30}{section*.18}%
-\contentsline {chapter}{\numberline {4}Driving on the ground state manifold}{31}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The role of geodesics}{32}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Minimizing the energy variance}{32}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}The meaning of geodesics}{33}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Transport using quenches}{33}{subsection.4.2.1}%
-\contentsline {subsubsection}{Perturbed adiabatic driving}{34}{section*.19}%
-\contentsline {section}{\numberline {4.3}Transport using quenches}{34}{section.4.3}%
-\contentsline {chapter}{\numberline {5}\leavevmode {\color {blue}Spin 1/2}}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Special case}{38}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Two leve system}{40}{chapter.6}%
-\contentsline {subsection}{\numberline {6.0.1}Harmonic oscillator correspondence}{40}{subsection.6.0.1}%
-\contentsline {subsubsection}{Classical mechanics correspondence}{41}{section*.25}%
-\contentsline {section}{\numberline {6.1}Geodesical driving}{41}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Derivation of the fidelity}{42}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Analysis of the infidelity formula}{43}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Energy variance}{46}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Linear driving}{47}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Dependence on time}{48}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Final fidelity}{49}{subsection.6.2.2}%
-\contentsline {subsubsection}{Average final fidelity}{50}{section*.37}%
-\contentsline {subsection}{\numberline {6.2.3}Critical time $T_c$}{52}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Coefficients $\xi $ and $\kappa $}{53}{subsection.6.2.4}%
-\contentsline {subsection}{\numberline {6.2.5}Summary}{54}{subsection.6.2.5}%
-\contentsline {subsection}{\numberline {6.2.6}Energy variance}{55}{subsection.6.2.6}%
-\contentsline {section}{\numberline {6.3}Energy variance for two level system}{56}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Lipkin-Meshkov Glick model}{57}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Special cases}{58}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Case $N=3$}{58}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Case $N=5$}{65}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Limit $N\rightarrow \infty $}{69}{subsection.7.1.3}%
-\contentsline {section}{\numberline {7.2}General behavior}{70}{section.7.2}%
-\contentsline {chapter}{Conclusion}{73}{chapter*.64}%
-\contentsline {chapter}{Bibliography}{74}{chapter*.65}%
-\contentsline {chapter}{List of Figures}{75}{chapter*.66}%
-\contentsline {chapter}{\numberline {A}Appendix 1}{78}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Attachments}{79}{appendix.B}%
-\contentsline {section}{\numberline {B.1}First Attachment}{79}{section.B.1}%
+\contentsline {chapter}{\numberline {3}Theory behind quantum driving}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Transporting states}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Fidelity}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Metric and geometric tensor}{19}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Derivation of the geometric tensor}{21}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Berry phase and curvature}{21}{section.3.4}%
+\contentsline {section}{\numberline {3.5}General fidelity driving}{22}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}APT}{22}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}How to advantageously drive the system}{23}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Adiabatic driving}{23}{subsection.3.6.1}%
+\contentsline {subsubsection}{Slow transports}{23}{section*.10}%
+\contentsline {subsection}{\numberline {3.6.2}Counterdiabatic driving}{24}{subsection.3.6.2}%
+\contentsline {subsubsection}{Gauge potentials}{24}{section*.11}%
+\contentsline {subsubsection}{Classical gauge potential}{25}{section*.12}%
+\contentsline {subsubsection}{Quantum gauge potential}{26}{section*.13}%
+\contentsline {subsubsection}{Adiabatic gauge potential}{26}{section*.14}%
+\contentsline {subsubsection}{Performing counter-diabatic driving}{27}{section*.15}%
+\contentsline {subsubsection}{Explicit form}{28}{section*.16}%
+\contentsline {chapter}{\numberline {4}Driving on the ground state manifold}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The role of geodesics}{30}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Minimizing the energy variance}{30}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}The meaning of geodesics}{31}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Transport using quenches}{31}{subsection.4.2.1}%
+\contentsline {subsubsection}{Perturbed adiabatic driving}{32}{section*.17}%
+\contentsline {section}{\numberline {4.3}Transport using quenches}{32}{section.4.3}%
+\contentsline {chapter}{\numberline {5}\leavevmode {\color {blue}Spin 1/2}}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Special case}{36}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Two leve system}{38}{chapter.6}%
+\contentsline {subsection}{\numberline {6.0.1}Harmonic oscillator correspondence}{38}{subsection.6.0.1}%
+\contentsline {subsubsection}{Classical mechanics correspondence}{39}{section*.23}%
+\contentsline {section}{\numberline {6.1}Geodesical driving}{39}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Derivation of the fidelity}{40}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Analysis of the infidelity formula}{41}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Energy variance}{44}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Linear driving}{45}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Dependence on time}{46}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Final fidelity}{47}{subsection.6.2.2}%
+\contentsline {subsubsection}{Average final fidelity}{48}{section*.35}%
+\contentsline {subsection}{\numberline {6.2.3}Critical time $T_c$}{50}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Coefficients $\xi $ and $\kappa $}{51}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Summary}{52}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.6}Energy variance}{53}{subsection.6.2.6}%
+\contentsline {section}{\numberline {6.3}Energy variance for two level system}{54}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Lipkin-Meshkov Glick model}{55}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Special cases}{56}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Case $N=3$}{56}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Case $N=5$}{63}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Limit $N\rightarrow \infty $}{67}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}General behavior}{68}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Higher state manifolds}{72}{section.7.3}%
+\contentsline {chapter}{Conclusion}{74}{chapter*.64}%
+\contentsline {chapter}{Bibliography}{75}{chapter*.65}%
+\contentsline {chapter}{List of Figures}{76}{chapter*.66}%
+\contentsline {chapter}{\numberline {A}Appendix 1}{79}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Attachments}{80}{appendix.B}%
+\contentsline {section}{\numberline {B.1}First Attachment}{80}{section.B.1}%
