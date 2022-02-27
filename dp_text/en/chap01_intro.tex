@@ -1,8 +1,9 @@
 \chapter{Mathematical introduction}
+\label{chap:mathIntro}
 The modern approach to the closed system dynamics is using \emph{differential geometry} formalism. Before we get to the quantum mechanics itself, lets introduce this formalism and recapitulate some definitions of this branch of mathematics. More detailed notes can be found for example in \citep{fecko}, or \red{Krtouusovy skripta na dif geom}.
 
 Let's have a manifold $\M$ and curves on it, parametrized by some real interval:
-$$\gamma:\R \supset \langle P_i,P_o\rangle \rightarrow \M\; \qquad \xi\mapsto \gamma(\xi) \text{  for } \xi \in \langle P_i,P_o\rangle .$$ 
+$$\gamma:\R \supset (P_i,P_o) \rightarrow \M\; \qquad \xi\mapsto \gamma(\xi) \text{  for } \xi \in (P_i,P_o) .$$ 
 The space of functions is $\FM\equiv\{f:\M\rightarrow \R\}$.
 
 
@@ -92,7 +93,7 @@ Vectors of tangent space to some manifold can be compared only within one such s
 \end{definition}
 
 \begin{definition}[Parallel transport]
-    Parallel transport of tensors in tensor field $A\in \TT^{\bluee p}_{\blueee q} \M$ along some path $\gamma\equiv \langle P_i,P_e\rangle\subset \M$ 
+    Parallel transport of tensors in tensor field $A\in \TT^{\bluee p}_{\blueee q} \M$ along some path $\gamma\equiv  (P_i,P_e)\subset \M$ 
     \begin{align*}
         \Par_\gamma:\; {\TT _{P_i}}^{\bluee p}_{\blueee q}\M&\rightarrow {\TT_{P_e}}^{\bluee p}_{\blueee q}\M\\
         A|_{P_i} &\mapsto \Par_\gamma \bm A|_{P_e}.
@@ -141,8 +142,9 @@ The vector $v\in \T_P\M$ is said to be parallel transported along curve $\gamma(
 
 \section{Fiber bundle}
 \label{sec:bundleDef}
-At every point of manifold we introduced a tensor space. This creates rather complicated structure, which can be simplified using so called \emph{fibre bundles}. From classical mechanics one might recognize the space of all vectors, \emph{vector bundle}, as a union of all vectors from the phase space $\cup_x\T_x\M$.
-\begin{definition}[Fibre bundle]
+At every point of manifold we introduced a tensor space. This creates rather complicated structure, which can be simplified using so called \emph{fiber bundles}. From classical mechanics one might recognize the space of all vectors, \emph{vector bundle}, as a union of all vectors from the phase space $\cup_x\T_x\M$.
+\begin{definition}[Fiber bundle]
+    \label{def:fiberBundle}
     Structure 
 \begin{center}
     \begin{tikzpicture}[remember picture]
@@ -152,14 +154,14 @@ At every point of manifold we introduced a tensor space. This creates rather com
             \node[text width=3cm] at (-1,-0.7) {total space};
             \node[text width=3cm] at (1.3,-0.7) {surjection};
             \node[text width=3cm] at (-0.3,0.7) {base space};
-            \node[text width=3cm] at (2.5,0.7) {fibre};
+            \node[text width=3cm] at (2.5,0.7) {fiber};
             \draw[->] (-1,-0.5)--(-0.8,-0.23);
             \draw[->] (-0.5,0.5)--(-0.3,0.23);
             \draw[->] (0.6,-0.5)--(0.15,-0.23);
             \draw[->] (1.3,0.5)--(0.7,0.23);
         \end{tikzpicture}
 \end{center}
-    for topological spaces $\mathcal{E}$, $\mathcal{B}$, $\mathcal F$ and continuous surjection $\pi: \mathcal{E}\rightarrow \mathcal{B}$ satisfying a local triviality is called a \emph{Fibre bundle}. The local triviality means that $\mathcal{B}$ is connected\footnote{can't be represented as a union of two and more disjoint sets} and for every $x\in \mathcal{B}$, there is an open neighborhood $\mathcal{U}\subset \mathcal{B}$ \emph{(trivializing neighborhood)} such that there exists a homeomorphism from $\mathcal{U}$ to so-called \emph{product space}
+    for topological spaces $\mathcal{E}$, $\mathcal{B}$, $\mathcal F$ and continuous surjection $\pi: \mathcal{E}\rightarrow \mathcal{B}$ satisfying a local triviality is called a \emph{Fiber bundle}. The local triviality means that $\mathcal{B}$ is connected\footnote{can't be represented as a union of two and more disjoint sets} and for every $x\in \mathcal{B}$, there is an open neighborhood $\mathcal{U}\subset \mathcal{B}$ \emph{(trivializing neighborhood)} such that there exists a homeomorphism from $\mathcal{U}$ to so-called \emph{product space}
     $$\phi: \pi^{-1}(\mathcal{U})\rightarrow \mathcal{U}\times \mathcal{F},$$
     such that $\pi^{-1}\circ \pi(\mathcal{U})=\mathcal{U}$.
     The structure is as follows: 
@@ -167,13 +169,13 @@ At every point of manifold we introduced a tensor space. This creates rather com
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\textwidth]{../img/bundle.png}
-        % \caption{Mappings needed for the bundle definition.}
+        \caption{\red{stolen from wiki, redraw in tikz}}
         % \label{fig:bundle}    
     \end{figure}
 \end{definition}
 Because projections of products are open maps, $\pi: \mathcal{E}\rightarrow \mathcal{B}$ must be open map. The manifolds at every point $x\in \mathcal{F}$ are all locally diffeomorphic to each other.
 \section{\red{Vector Bundle}}
-Conversely, given a fibre bundle (E, X, $\pi$, Rk) with a GL(k) cocycle acting in the standard way on the fibre Rk, there is associated a vector bundle. This is sometimes taken as the definition of a vector bundle
+Conversely, given a fiber bundle (E, X, $\pi$, Rk) with a GL(k) cocycle acting in the standard way on the fiber Rk, there is associated a vector bundle. This is sometimes taken as the definition of a vector bundle
 
 
 \subsection{Connection on vector bundles}
@@ -197,7 +199,7 @@ $$g_{\mu\nu}: \mathcal{B}\times \mathcal{B} \rightarrow \R$$
 $$f:\mathcal{B}\rightarrow \mathcal{F},$$
 such that $\pi(f(x))=x$ for $\forall x\in \mathcal{B}$. This defines new manifold cutting throw $\mathcal{E}$.
 
-\textcolor{red}{Sectioning of fibre bundles creates vector spaces}
+\textcolor{red}{Sectioning of fiber bundles creates vector spaces}
 
 
 % \section{Pull-back and push forward}

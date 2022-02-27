@@ -5,3 +5,9 @@ separatrix
 pentadiagonal
 Mathematica
 Christoffel
+eigenstates
+eigenstate
+observables
+Hamiltonians
+exponentials
+Eq

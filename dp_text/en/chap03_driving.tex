@@ -1,70 +1,92 @@
 \chapter{Theory behind quantum driving}
 \label{chap:physicalIntro}
+This chapter heavily depends on the mathematical formalism developed in Chapter \ref{chap:mathIntro} and basic knowledge of quantum mechanics is required.
 
-Most parts of this chapter are inspired by \citep{kolodrubez} and original notes \citep{berry1984}, \citep{berry1989}, \citep{berry2009}
-Now we will assign some physical background to the structure defined in the first chapter. We will see, that the whole space structure is quite complicated, because it's of fiber structure, where every fiber is another fiber bundle. Luckily what we will be using later on are only some much easier Riemannian submanifolds. 
+Most parts of this chapter are inspired by \citet{kolodrubez} and original notes by \citet{berry1984}, \citet{berry1989}, \citet{berry2009} with attempt to give them more rigorous meaning in the language of differential geometry. We will see, that the structure of the space of states on which the driving will occur is quite complicated. The reason is its fiber structure, where every fiber is another fiber bundle. Luckily what we will be using later on are sections of this space, which will be much easier Riemannian manifolds. 
 
 
-Assume parameter $\llambda\in\mathcal{U}\subset\R^n$ controlling some Hamiltonian $\HH(\llambda)$, which is bounded from below and the spectrum is discrete for the first $k>1$ energies, will be clear later on. From this we can construct fiber bundle, such that at every point of base manifold $\llambda\in \mathcal{U}$, we construct fiber spanning all possible states of $\HH(\llambda)$, thus the fiber structure can be according to section \ref{sec:bundleDef} written as
-$$\left(\H_{full}\coloneqq \bigcup_\llambda \H(\llambda),\mathcal{U}\subset \R^n,\pi, \H(\llambda) \coloneqq \bigcup_{states}\ket{\psi(\llambda)}  \right).$$
-The projection is defined as $\pi(\llambda): \ket{\psi(\llambda)}\mapsto \llambda$ and $\H(\llambda)$ is Hilbert space for all pure states of $\HH(\llambda)$. 
-Geometric intuition is displayed in fig. \ref{fig:wholeBundle}
+
+
+
+
+\section{Space of all states}
+Assume parameter $\llambda\in\mathcal{U}\subset\R^d$ for $\mathcal U$ open set. This parameter controls some finite-dimensional Hamiltonian $\HH(\llambda)$, which is bounded from below and has discrete spectrum. From this we can construct the fiber bundle, such that at every point of the base manifold $\llambda\in \mathcal{U}$, we construct fiber spanning all possible states of $\H(\llambda)$, thus the fiber structure can be according to Def. \ref{def:fiberBundle} written as
+$$\left(\H_{full}\coloneqq \bigcup_{\llambda\in\mathcal U} \H(\llambda),\;\;\mathcal{U}\subset \R^d,\;\;\pi,\;\; \H(\llambda) \coloneqq \bigcup_{states}\ket{\psi(\llambda)}  \right).$$
+The projection is defined as $\pi(\llambda): \ket{\psi(\llambda)}\mapsto \llambda$ and $\H(\llambda)$ is Hilbert space for all pure states of $\H(\llambda)$. 
+Note that some states in the $\H_{full}$ space are physically identical. Geometric intuition is displayed in fig. \ref{fig:wholeBundle}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{../img/manifold_basic.png}
-\caption{Fiber bundle over $\R^n$ with Hilbert spaces $\H(\llambda)$ as individual fibers.}
+\caption{Base manifold $\mathcal U\subset \R^d$ is visualized as a line. From every point $\llambda$ there is constructed one Hilbert space $\H(\llambda)$ as a fiber. The union of all these fibers is full Hilbert space $\H_{full}$.\red{add to the picture: subset $\mathcal U\subset \R^d$}}
     \label{fig:wholeBundle}
 \end{figure}
 
 
-Because we are interested only in discrete part of spectrum\footnote{Spectrum of the operator consists of discrete spectrum, calculable as eigenvalue problem, continuous and residual spectrum.}, it will further on be referred to only as \emph{spectrum}. 
 
-The states of the system evolve according to the \Schrodinger equation
+
+
+
+\section{Space of rays vs. bare states}
+In quantum mechanics, physical observables are related to the \emph{space of rays}, defined as $\P\H\coloneqq \H/U(1)$, where elements of $U(1)$ are unitary transformations $e^{i\varphi}$ for $\varphi\in\R$. This defines the gauge symmetry between quantum states. The phase $\varphi$ is chosen the same for every vector and can be chosen arbitrarily. We cannot alter the phase of individual vectors. The geometrical intuition is drawn for any $\llambda$ on fig. \ref{fig:projectiveHilbertSpace}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../img/projectiveHilbertSpace.png}
+\caption{For every $\llambda$ we have the Hilbert space $\H(\llambda)$ containing all states $e^{i\varphi}\ket{\psi(\llambda)}$. Choosing the phase $\varphi$ fixes some projective Hilbert space $\P\H$.}
+    \label{fig:projectiveHilbertSpace}
+\end{figure}
+
+This resembles the fiber structure
+$$\left(\H,\;\P\H,\;\pi_{rays},\;\{e^{i\varphi}| \varphi\in\R\}\right),$$
+where $\pi_{rays}$ is just rule setting phase $\varphi$ to arbitrary value, which we will fix to $\varphi=0$.
+
+
+
+
+
+
+
+\section{Sectioning the space}
+Assume one begins with the state $\ket{\psi_0}$. The state then evolves along some path $\gamma\coloneqq\{\llambda(t)|t\in(0,T)\}\subset \mathcal U$ parametrized by time, for which the \Schrodinger equation
 \begin{equation}
-    i\hbar \d_t\kpsilt = \HH(\lambda)\kpsilt,
+    i\hbar \der{}{t}\kpsilt = \HH(\llambda)\kpsilt
     \label{eq:schrodinger}
 \end{equation}
-which for eigenstates of instantaneous Hamiltonian reads as energy \Schrodinger equation
+holds. For eigenstates of instantaneous Hamiltonian it reads as energy \Schrodinger equation
 \begin{equation}
-    \HH(\lambda)\ket{s(\lambda)}=E_s(\lambda)\ket{s(\lambda)}.
+    \HH(\llambda)\ket{s(\llambda)}=E_s(\llambda)\ket{s(\llambda)}.
     \label{eq:energySchrodinger}
 \end{equation}
-For every $\H(\llambda)$ the first $k$ energies can be sorted from the lowest to create discrete set $\sigma(\HH(\llambda))\equiv\{E_0,\dots,E_k\}$. Clearly, there exists a bijection between all fibers $\H(\llambda)$, thus we can define \emph{section} $\mathrm{sec}_s$, mapping eigenstate corresponding to energy $E_s$ to base manifold 
-$$\mathrm{sec}_s: \ket{o(\llambda)}\mapsto \mathcal{U}\subset \R^n,$$
-which is also bijection\red{with an exception of singularities on ground state manifold?}. For $\forall s\in\{0,k\}$ we can create according to sec. \ref{sec:section} new \emph{energy manifolds}
-$$\M_s\subset \M,$$
-with special importance of the \emph{ground state manifold} $\M_0$, which will be used later on for adiabatic transports of ground states. Geometrical intuition is drawn on fig. \ref{fig:fullStructure}. Because those manifolds were created by sectioning, they are considered to be vector spaces in a geometrical sense. This was expected, because they contain quantum states, which themself are vectors.
+Notice that these states are independent on the trajectory $\gamma_t$.
+For every $\HH(\llambda)$ its energies can be sorted from the lowest, defining the set $\sigma(\HH(\llambda))\coloneqq\{E_0,\dots,E_n\}$, which will be called \emph{spectrum of the Hamiltonian}. In this set, degeneracies are not unified into one element, therefore every $\sigma(\llambda)$ has $n$ elements. From this there exists a bijection between all $\sigma$-sets, and we can define \emph{section} 
+$$\mathrm{sec}_s: \ket{s(\llambda)}\mapsto \mathcal{U}\subset \R^d, \quad \text{for } s\in\{0,\dots, n-1\}.$$
+This maps eigenstates corresponding to energy $E_s$ to the base manifold. This mapping is similar to previously introduced $\pi$, except it chooses one point from the infinite dimensional Hilbert space and maps it to the base manifold. From this the $\sec_s$ is a bijection. 
 
-\begin{figure}[h]
+Now we have constructed $n$ sections of the full Hilbert space, which are bijective to the base manifold. Because $\mathcal U$ is a Riemannian manifold, these so-called \emph{projective energy manifolds} $\P\M_s$, must be also Riemannian.
+Special importance of the \emph{projective ground state manifold} $\P\M_0$, which will be used later on for adiabatic transports of ground states. Geometrical intuition is drawn on fig. \ref{fig:fullStructure}. 
+
+The reason for calling these manifolds \emph{projective} is the gauge symmetry of the Schr\"odinger equation. We can change the phase of vector $\kpsi\mapsto e^{i\varphi}\kpsi$ by any $\varphi$. Unifying over all phases, we get \emph{energy manifolds}
+\begin{equation}
+    \M_s\coloneqq \left\{\bigcup_{\varphi\in\R} \bigcup_{\llambda\in\mathcal U} e^{i\varphi}\ket{\psi(\llambda)}\right\}
+\end{equation}
+\red{from now on, when there is no geometrical phase, rename M to PM}
+
+Because these manifolds were created by sectioning, they are considered to be vector spaces in a geometrical sense. This was expected, because they contain quantum states, which themselves are vectors.\red{ Elaborate here, construction of basis should be enough?}
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{../img/manifold_full.png}
-\caption{Geometrical intuition to transport on fiber manifold sections $\M_i$.}
+\caption{From the full Hilbert space we identified eigenstates. First was caused by the fiber structure and separates different Hilbert spaces $\HH(\llambda)$. Newly introduced sectioning correspond to eigenstates of individual Hamiltonians and creates Riemannian manifolds $\M_s$.
+\red{add to the picture: subset $\mathcal U\subset \R^d$. Manifolds $\P\M_s$ should be more like a lines in this space, because from every $\H$ it selects only one point for every energy level. $\M$ are drawn ok like this, add $e^{i\varphi}$ dimension to the back}
+}
     \label{fig:fullStructure}
 \end{figure}
 
 
 
 
-All Hilbert spaces above are considered to be spaces of \emph{bare states} $\H$. In quantum mechanics, physical observables are related to the \emph{space of rays}, defined as $\P\H\coloneqq \H/U(1)$, where elements of $U(1)$ are unitary transformations $e^{i\phi}$ for $\phi\in\R$ defining gauge symmetry between quantum states. This means that it is chosen the same for every vector. We cannot alter the phase of individual vectors. The geometrical intuition is drawn for any $\llambda$ on fig. \ref{fig:projectiveHilbertSpace}.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{../img/projectiveHilbertSpace.png}
-\caption{Space of bare states and its projection to space of rays $\P\H(\llambda)\coloneqq \H(\llambda)/U(1)$.}
-    \label{fig:projectiveHilbertSpace}
-\end{figure}
-
-This means, that energy manifolds $\M_s$, generated by bare states, are again of fiber structure, defined as
-$$\left(\H,\P\H,\pi_{rays},\{e^{i\phi}\ket{\psi} \text{ for }\phi\in\R\}\right),$$
-where $\pi_{rays}$ is just rule setting phase $\phi$ to zero. Because $\M_s$ are compact and connected, they are diffeomorphic to each other.
 
 
-
-
-
-
-
-
-\section{Transporting states}
+\section{Transporting states on state manifolds}
 Let's now focus on decomposition of $\H_{full}$ to different state manifolds $\M_s$, as displayed on figure \ref{fig:manifoldCutIntuition}.
 
 \begin{figure}[h]
@@ -74,84 +96,98 @@ Let's now focus on decomposition of $\H_{full}$ to different state manifolds $\M
     \label{fig:manifoldCutIntuition}
 \end{figure}
 
-Changing state from eigenstate $\ket{s(\llambda)}$ to any pure state $\ket{\psi(\tilde\llambda)}$, during some time period, is unitary transformation and can be thought of as \emph{parallel transport on fiber bundle} between two vectors. Assuming the transport goes along curve $\{\gamma_s(\xi)|\xi\in[\xi_1,\xi_2]\subset \R\}\subset \M_s$ This can be written as
+Changing the state from eigenstate $\ket{s(\llambda)}\in\M_s$ to $\ket{\psi(\tilde\llambda)}\in\M_s$ during some time period is unitary transformation and can be thought of as \emph{parallel transport on fiber bundle} between two states. Assuming the transport goes along curve parametrized by time $\gamma\coloneqq\{\llambda(t)|t\in(0,T)\}\subset \mathcal U$. The transported state can be written at any time as
 \begin{equation}
-    \kpsit \equiv \Par_{\gamma_s}\ket{s(\lambda)} = \exp\left(-\frac{i}{\hbar}\int_0^tE_s(\tau)\d\tau)\right)\exp(i\gamma_s(\xi))\ket{s(\lambda)}.
+    \kpsit = \Par_{\gamma_s(t)}\ket{s(\llambda(t))} = \exp\left(-i\int_0^tE_s(\tau)\d\tau)\right)\exp(i\gamma_s(t))\ket{s(\llambda(t))}.
     \label{eq:phasesOnManifold}
 \end{equation}
-The first exponential, the \emph{dynamical phase}, is well known solution to energy \Schrodinger equation \ref{eq:energySchrodinger} with $\llambda=const$ and depends only on time and energy of states during the transport. This dynamical phase changes the states only within the projective Hilbert space. The second exponential is called \emph{geometrical phase} and transports states within the full Hilbert space (changes their relative phase). This phase is generally non-integrable, meaning it cannot be written simply as $\gamma_s(\lambda)$ and for some closed curve on $\M$
+Let's describe the meaning of two exponentials in this transport.
+\subsubsection{Dynamical phase}
+The first exponential in Eq. \ref{eq:phasesOnManifold}, the \emph{dynamical phase}, is well known solution to energy \Schrodinger equation \ref{eq:energySchrodinger} and depends only on time and energy spectrum during the transport. This dynamical phase changes the states only within the projective state manifold $\P\M_s$. 
+
+\subsubsection{Geometrical phase}
+The complication arises with the fact that our playground is a state manifold $\M_s$ and some element $e^{i\varphi}=e^{i\gamma_s(t)}$, called \emph{geometrical phase} needs to be included.\footnote{The usage of $\varphi$ as a geometrical phase is no coincidence, because it corresponds its to previous usage in gauge symmetry of quantum states.} This phase is generally non-integrable, meaning it depends on the whole path and cannot be written simply as $\gamma_s(\llambda)$. For some closed curve on
 \begin{equation}
-    C=\{\llambda(\xi)|\xi\in[0,\Xi] \text{, such that }\llambda(0)=\llambda(\Xi)\}
+    C=\{\llambda(t)|t\in[0,T] \text{, such that }\llambda(0)=\llambda(T)\}\subset \mathcal U
 \end{equation} 
 we generally get $\Par_C \ket{\psi(\llambda)}\neq \ket{\psi(\llambda)}$. This property is sometimes more generally called an \emph{anholonomy} % and should be defined properly.
 % \begin{definition}[Anholonomy]
 %     Geometrical phenomenon, which causes some variable $V(\gamma(p))$ not to return to it's original value while varying it's parameter $p$ around some closed curve $\gamma(p)$. 
 % \end{definition}
-and geometric intuition can be seen on fig. \ref{fig:parallelTransportClosed}. This is where we are using the full Hilbert space, not only the projective Hilbert space.
+and geometric intuition can be seen on fig. \ref{fig:parallelTransportClosed}. 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{../img/parallelTransportClosedCurve.png}
-\caption{Parallel transporting around some closed curve $C$ with anholonomy drawn in yellow.}
+\caption{Parallel transport around some \greenn{closed curve $C$}. The \red{eigenstate} from $\P\M_s$ can be transported to another eigenstate in $\M_s$. The \reddd{anholonomy} represents their difference. \red{rename M to PM, make the green line go up in the M space, remove PH stuff}}
     \label{fig:parallelTransportClosed}
 \end{figure}
 
-For quantum states, the anholonomy can be measured as a non-zero angle between $\ket{V}$ and $\Par_C\ket{V}$, meaning
-\begin{equation}
-    \braket{V|\Par_C|V}\neq 0.
-\end{equation} 
+% For quantum states, the anholonomy can be measured as a non-zero angle between $\ket{V}$ and $\Par_C\ket{V}$, meaning
+% \begin{equation}
+%     \braket{V|\Par_C|V}\neq 0.
+% \end{equation} 
 
 
-Substituting general solution \ref{eq:phasesOnManifold} to eq. \ref{eq:schrodinger} yields (see \citep{berry1984}, \red{proof here})
+Substituting general solution \ref{eq:phasesOnManifold} to Eq. \ref{eq:schrodinger} yields\footnote{Here the derivation along upper bound $F(x)\coloneqq\int_0^{g(x)}f(t)\d t \Rightarrow F'(x)=f(g(x))g'(x)$ for $f(t)\in L^1(0,g(x))$ and differentiable function $g$, is used.} 
+\begin{align}
+    \HH(\llambda(t))\kpsit &= i\der{}{t}\kpsit\\
+    E_s(\llambda(t)) \ket{s(\llambda(t))} &= E_s(\llambda(t))\ket{s(\llambda(t))} -\der{\gamma(t)}{t}\ket{s(\llambda(t))}+ \der{}{t}\ket{s(\llambda(t))}\\
+    \der{\gamma(t)}{t}&=i\braket{s(\llambda(t))|
+    \der{}{t}|s(\llambda(t))}.
+\end{align}
+ Separating the dependence of vectors on driving parameter and time, we get
 \begin{equation}
-    \d_t \gamma(\lambda)=i\braket{s(\lambda)|\partial_\mu s(\lambda)} \d_t \lambda^\mu(\lambda).
+    \der{\gamma(\llambda(t))}{t} =i\braket{s(\llambda(t))|\partial_j s(\llambda)} \der{\llambda^j(\lambda)}{t} .
 \end{equation}
-Integrating this equation around some closed curve $C$ and assuming the dynamical phase to be zero, thus not exciting the system, we get
+Integrating this equation around some closed curve $C$ and assuming the dynamical phase to be zero, we get
 \begin{equation}
-    \gamma_n(C)=i\oint_C\braket{s(\llambda)|\partial_\mu s(\llambda)}\d \lambda^\mu.
+    \gamma_s(C)=i\oint_C\braket{s(\llambda)|\partial_j s(\llambda)}\d \llambda^j.
     \label{eq:gammaCoint}
 \end{equation}
 We see, that the geometric phase does not depend on energy or time, only on the sequence of Hamiltonians, which means it depends only on the path itself.
 
 
 
-
-The problem of expressions above lies in $\partial_\llambda s(\llambda)$, which locally requires knowledge of single-valued basis $\{\ket{0},\dots, \ket{k}\}$. This can be avoided in 3-dimensions using Stokes's theorem for $S$ as the surface with boundary $\partial S=C$, for coordinate gradient $\nabla$
+\subsection{3-dimensional parametric space $\mathcal{U}$}
+The problem of calculating Eq. \ref{eq:gammaCoint} lies in the element $\partial_\llambda s(\llambda)$, which locally requires knowledge of single-valued basis $\{\ket{0},\dots, \ket{n}\}$. This can be avoided in 3-dimensions using Stokes's theorem for $S$ as the surface with boundary $\partial S=C$, for coordinate gradient $\bm \nabla$
 \begin{equation}
     \begin{split}
-        \gamma_s(C) &= -\Im \iint_C \d S \cdot \nabla \times \braket{s(\llambda)|\nabla n(\llambda)}\\
-         &= -\Im \iint_C \d S \cdot \braket{\nabla s(\llambda)|\times|\nabla s(\llambda)}\\
-        &= -\Im \iint_C \d S \cdot \sum_{m\neq s} \braket{\nabla s(\llambda)|m(\llambda)}\times \braket{m(\llambda)|\nabla s(\llambda)}\\
-        &= -\iint_C \d S \cdot V_s(\llambda)
-            \label{eq:stokes}
+        \gamma_s(C) &= -\Im \iint_C \bm\d S \cdot \bm \nabla \times \braket{s(\llambda)|\bm \nabla n(\llambda)}\\
+         &= -\Im \iint_C \bm\d S \cdot \braket{\bm \nabla s(\llambda)|\times|\bm \nabla s(\llambda)}\\
+        &= -\Im \iint_C \bm\d S \cdot \sum_{m\neq s} \braket{\bm \nabla s(\llambda)|m(\llambda)}\times \braket{m(\llambda)|\bm \nabla s(\llambda)}\\
+        &= -\iint_C \bm\d S \cdot \bm V_s(\llambda)
     \end{split}
+    \label{eq:stokes}
 \end{equation}
 for 
 \begin{equation}
-    V_s(\llambda) = \Im \frac{
-            \braket{s(\llambda)\nabla_\llambda \HH(\llambda) |m(\llambda)}\times \braket{m(\llambda)|\nabla_\llambda \HH(\llambda)|s(\llambda)}    
+    \bm V_s(\llambda) = \sum_{m\neq s} \Im \frac{
+            \braket{s(\llambda)\bm \nabla_\llambda \HH(\llambda) |m(\llambda)}\times \braket{m(\llambda)|\bm \nabla_\llambda \HH(\llambda)|s(\llambda)}    
              }{
 (E_m(\llambda)-E_s(\llambda))^2
-            }
+             }.
 \end{equation}
-where the element of summation $m=s$ in third step of derivation is real, therefore has no influence on $\gamma_s$ and can be omitted. The last equivalence holds, because if we differentiate the \Schrodinger equation \ref{eq:energySchrodinger}, we get for any $\ket{s},\ket{m}\in \M$
+The element of summation $m=s$ in third step of derivation \ref{eq:stokes} is real, therefore has no influence on $\gamma_s$ and can be omitted. The last equivalence holds, because if we differentiate the \Schrodinger equation \ref{eq:energySchrodinger}, we get for any $\ket{s}\coloneqq \ket{s(\llambda)},\ket{m}\coloneqq \ket{m(\llambda)}\in \M$
 \begin{equation}
     \begin{split}
-        \nabla \HH\ket{s(\llambda)}+\HH \ket{\nabla s(\llambda)} &= E_s\ket{\nabla s(\llambda)}\\
-        \braket{m(\llambda)|\nabla \HH|s(\llambda)}+\braket{m(\llambda)|E_m|\nabla s(\llambda)} &= \braket{m(\llambda)|\nabla \HH|s(\llambda)}\\
-        \braket{m(\llambda)|\nabla s(\llambda)}&=
-        \frac{\braket{m(\llambda)|\nabla \HH |s(\llambda)}}
-        { E_m(\llambda)-E_s(\llambda)}, \qquad s\neq m,
+        \bm \nabla (\overbrace{\HH\ket{s}}^{E_s(\llambda)\ket{s}})&= (\bm\nabla \HH)\ket{\bm \nabla s} +\HH \ket{\bm \nabla s}\\
+        \braket{m|E_s(\llambda)|s}&= \braket{m|\bm \nabla \HH| s}+ \underbrace{\bra{m} \HH}_{\bra{m} E_m(\llambda)} |\bm\nabla s\rangle \\
+        \braket{m|\bm \nabla s}&=
+        \frac{\braket{m|\bm \nabla \HH |s}}
+        { E_s(\llambda)-E_m(\llambda)}, \qquad s\neq m,
     \end{split}
 \end{equation}
-where we used $\ket{\nabla s}\equiv\nabla \ket{ s}$. \textcolor{red}{or just use Feynman-Hellman equations, quantum geometric tensor pedagogical, page 5}
-Comparing the first expression in eq. \ref{eq:stokes} with its last one and extending it to real numbers, we get
+
+where we used $\ket{\bm \nabla s}\equiv\bm \nabla \ket{ s}$. 
+
+Comparing the first expression in Eq. \ref{eq:stokes} with its last one and extending it to real numbers, we get
 \begin{equation}
-    V_s(\llambda)=\nabla\times\braket{s(\llambda)|\nabla m(\llambda)}, 
+    \bm V_s(\llambda)=\bm \nabla\times\braket{s(\llambda)|\bm \nabla m(\llambda)}, 
     \label{eq:vectorPotentialDef}  
 \end{equation}
-defining vector potential of $V_s(\llambda)$. In addition, it extends our definition from single valued basis to any solution of \ref{eq:energySchrodinger}, thus instead of ground state manifold, we can use any $\M_s$.
+defining \emph{vector potential} of $\bm V_s(\llambda)$. In addition, it extends our definition from single valued basis to any solution of \ref{eq:energySchrodinger}, thus instead of ground state manifold, we can use any $\M_s$.
 
-As was mentioned, the above procedure from eq. \ref{eq:gammaCoint} was performed only for three-dimensional space. Proper generalization to n-dimensional space would yield, see \citep{berry1984},
+As was mentioned, the above procedure from Eq. \ref{eq:gammaCoint} was performed only for three-dimensional space. Proper generalization to k-dimensional space would yield, see \citet{berry1984},
 \begin{equation}
     \gamma_s(C) = -\iint_C (\bm\d S)^{\alpha\beta} \cdot\Im \frac{
             \overbrace{\braket{s(\llambda)\bm\d_\alpha \HH(\llambda) |m(\llambda)}}^{\in\TT_1\M}\wedge \overbrace{\braket{m(\llambda)|\bm\d_\beta\HH(\llambda)|s(\llambda)}}^{\in\TT_1\M}    
@@ -182,18 +218,18 @@ We can see it's physical meaning imagining \emph{quantum quench} (rapid change o
 
 
 \section{Metric and geometric tensor}
-As a playground for this chapter, we will choose the projective ground state manifold $\P\M_0\equiv \cup_{\llambda\in\R^n} \{\ket{o(\llambda)}\}$, but it can be easily generalized to any energy state manifold $\P\M_s$. This means the geometrical phase will be neglected, because the states are the physical states from hte projective Hilbert space. From now on we will use natural units, so $\hbar=1$.
+As a playground for this chapter, we will choose the projective ground state manifold $\P\M_0\equiv \cup_{\llambda\in\R^d} \{\ket{o(\llambda)}\}$, but it can be easily generalized to any energy state manifold $\P\M_s$. This means the geometrical phase will be neglected, because the states are the physical states from hte projective Hilbert space. From now on we will use natural units, so $\hbar=1$.
 % Our first guess might be
 % \begin{equation}
 %     \d \tilde{s}^2 = \braket{i(\bm\llambda+\d\bm\llambda)|i(\bm\llambda+\d\bm\llambda)} = 1-2\Re{\braket{i(\bm\llambda+\bm\d\llambda)|i(\bm\llambda)}}.
 % \end{equation}
 % This is \emph{gauge dependent}, meaning that it depends on our choice of the wave phase, i.e. on observer. 
 
-Let's first look at $\P\M_0$, which is needed to be \emph{gauge independent}. Gauge dependence in quantum mechanics means, that the change in phase factor $\phi$ of some state $\ket{o(\llambda)}\in \T_\llambda\M$ induces the change 
+Let's first look at $\P\M_0$, which is needed to be \emph{gauge independent}. Gauge dependence in quantum mechanics means, that the change in phase factor $\varphi$ of some state $\ket{o(\llambda)}\in \T_\llambda\M$ induces the change 
 \begin{equation}
-    \ket{o(\llambda)}\mapsto e^{i\phi(\llambda)} \ket{o(\llambda)} \implies \braket{o(\llambda)|\nabla o(\llambda)}\mapsto \braket{o(\llambda)|\nabla o(\llambda)} + i\nabla \phi(\llambda) 
+    \ket{o(\llambda)}\mapsto e^{i\varphi(\llambda)} \ket{o(\llambda)} \implies \braket{o(\llambda)|\bm \nabla o(\llambda)}\mapsto \braket{o(\llambda)|\bm \nabla o(\llambda)} + i\bm \nabla \varphi(\llambda) 
 \end{equation} 
-For $\phi(\llambda)\in \mathcal C^2$ we see from eq. \ref{eq:vectorPotentialDef}, that gauge independent choice would be for infinitesimal change for example
+For $\varphi(\llambda)\in \mathcal C^2$ we see from eq. \ref{eq:vectorPotentialDef}, that gauge independent choice would be for infinitesimal change for example
 \begin{equation}
     f=\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)},
     \label{eq:fidelityDefinition}
@@ -206,7 +242,7 @@ sometimes referred to as the \emph{fidelity of a ground state}. The meaning of f
 We can easily check, that the axioms of metric defined using distance (\red{this is why we dont use definition of metric from math intro}) as bilinear form $s$ between elements $\kpsi,\; \kphi\in \M_0$ are for \textcolor{red}{closed systems} satisfied:
 \begin{itemize}
     \item identity of indiscernibles $s(\kpsi,e^{i\alpha}\kpsi) = 0 \Leftrightarrow \kpsi=\kphi$, $\alpha\in\R$,
-    \item symmetry for any two states $\kpsi$, $\kphi$ is implied by $|\braket{\psi|\phi}|=|\braket{\phi|\psi}|$
+    \item symmetry for any two states $\kpsi$, $\kphi$ is implied by $|\braket{\psi|\varphi}|=|\braket{\varphi|\psi}|$
     \item triangle inequality: $s(\kpsi,\ket{\psi_2}) <s(\kpsi,\kpsi_1) + s(\ket{\psi_1},\ket{\psi_2})$ for any $\ket{\psi_1}$.
 \end{itemize}
 Because $1-f^2>0$, the first term of Taylor expansion is zero, thus we have for a metric tensor
@@ -233,7 +269,7 @@ where shortened notation $\partial_\nu\coloneqq\pder{}{\lambda^\nu}$ was used.
 %             \d s^2&=1-\bar{f}f=\left[-\braket{o|\partial_\lambda o}\braket{\partial_\lambda o|o}+\frac{1}{2}\braket{\partial_\lambda^2 o|o}+\frac{1}{2}\braket{o|\partial_\lambda^2 o}\right]\delta \lambda^2.
 %         \end{split}
 %     \end{equation}
-%     Generalizing for $\lambda\in \R^n$, we get\footnote{assuming Hermiticity of the derivative operator everywhere on the ground state manifold}
+%     Generalizing for $\lambda\in \R^d$, we get\footnote{assuming Hermiticity of the derivative operator everywhere on the ground state manifold}
 %     \begin{equation}
 %         \d s^2=\left[-\braket{o|\partial_\mu o}\braket{\partial_\nu o|o}+\underbrace{\frac{1}{2}\braket{o|\partial_\mu \partial_\nu|o}+\frac{1}{2}\braket{o|\partial_\nu \partial_\mu| o}}_{\Re\braket{\partial_mu o|\partial_\nu o}}\right]\delta \lambda^\mu\delta \lambda^\nu.
 %     \end{equation}
@@ -298,31 +334,31 @@ where last term defines the geometric tensor.
 \section{Berry phase and curvature}
 Let's consider only the ground state manifold, because it will be used later on. Thought every step can be easily generalized to any state manifold $\M_s$.
 
-On the ground state manifold $\M_0\equiv \cup_{\phi\in\R}\cup_{\llambda\in\R^n} e^{i\phi}\{\ket{o(\llambda)}\}$, the \emph{Berry connection} is defined as
+On the ground state manifold $\M_0\equiv \cup_{\varphi\in\R}\cup_{\llambda\in\R^d} e^{i\varphi}\{\ket{o(\llambda)}\}$, the \emph{Berry connection} is defined as
 \begin{equation}
     A_\mu(\llambda)\equiv \braket{o(\llambda)|\AA_\mu|o(\llambda)}\coloneqq -i\hbar \braket{o(\llambda)|\partial_\mu|o(\llambda)},
     \label{eq:berryConnection}
 \end{equation}
-which uses the decomposition of $\llambda$ to some basis, thus it empowers us to take derivatives in any direction in the base manifold $\R^n$ and thus the geometric tensor can be written as
+which uses the decomposition of $\llambda$ to some basis, thus it empowers us to take derivatives in any direction in the base manifold $\R^d$ and thus the geometric tensor can be written as
 \begin{equation}
     \chi_{\mu\nu}(\llambda) = \partial_\mu A_\nu(\llambda)-\partial_\nu A_\mu(\llambda)
 \end{equation}
 and the \emph{Berry phase}\footnote{
     The reasonability of this definition can be seen, if we assume the ground state of a free particle
-        $\braket{\bm{x}|i(\llambda)}=i(\bm{x},\llambda)= |i(\bm{x})|e^{i\phi(\llambda)}$,
+        $\braket{\bm{x}|i(\llambda)}=i(\bm{x},\llambda)= |i(\bm{x})|e^{i\varphi(\llambda)}$,
     then the Berry connection is
     \begin{equation}
-        A_\mu=-\int \d \bm{x}|i(\bm{x},\llambda)|^2\partial_\mu \phi(\llambda) = -\partial_\mu \phi(\llambda)
+        A_\mu=-\int \d \bm{x}|i(\bm{x},\llambda)|^2\partial_\mu \varphi(\llambda) = -\partial_\mu \varphi(\llambda)
     \end{equation} 
     and Berry phase
     \begin{equation}
-        \phi_B=\oint_\mathcal{C} \partial_\mu \phi \d \lambda^\mu,
+        \varphi_B=\oint_\mathcal{C} \partial_\mu \varphi \d \lambda^\mu,
     \end{equation}
-    which represents total phase accumulated by the wave function. It is really the analogy for Berry phase in classical mechanics, which for example in the case Foucault pendulum on one trip around the Sun makes $\phi_B=2\pi$
+    which represents total phase accumulated by the wave function. It is really the analogy for Berry phase in classical mechanics, which for example in the case Foucault pendulum on one trip around the Sun makes $\varphi_B=2\pi$
 }
 as the integral of the Berry connection along some closed curve $\mathcal{C}$
 \begin{equation}
-    \phi_B\equiv-\oint_\mathcal{C} A_\mu(\llambda)\d \lambda^\mu=\int_\mathcal{S} \chi_{\mu\nu}(\llambda)\d \lambda^\mu \wedge \d\lambda^\nu,
+    \varphi_B\equiv-\oint_\mathcal{C} A_\mu(\llambda)\d \lambda^\mu=\int_\mathcal{S} \chi_{\mu\nu}(\llambda)\d \lambda^\mu \wedge \d\lambda^\nu,
 \end{equation}
 where we used the Stokes theorem for some area $\mathcal{S}$ with boundary $\partial\mathcal{S}=\mathcal{C}$.
 
@@ -513,7 +549,7 @@ Generally every gauge symmetry is generated by its gauge potential and correspon
 \citep{kolodrubez}[chap. 2.2]
 The role of Poison brackets in quantum mechanics is taken by commutators, canonical transformations are called \emph{unitary transformations} and calibration freedom is hidden in the choice of basis. Now let's find some special basis transformations $\U$ between initial system $S$ and the transformed $\tilde{S}$. Both of them describe the system with Hamiltonian $\HH(\llambda)$ with eigenstates $\ket{n(\llambda)}$ and eigenstate manifolds $\M_n\equiv \cup_\llambda \{\ket{n(\llambda)}\}$. 
 
-From fiber structure goes\footnote{especially from the fact, that all spaces $\HH(\llambda)$ are isomorphic to each other}, that any state of $\HH(\llambda)$ for $\forall \llambda\in U\subset \R^n$ can be decomposed as
+From fiber structure goes\footnote{especially from the fact, that all spaces $\HH(\llambda)$ are isomorphic to each other}, that any state of $\HH(\llambda)$ for $\forall \llambda\in U\subset \R^d$ can be decomposed as
     \begin{equation}
     \ket{\psi(\llambda)}\equiv \sum_n \psi_n(\llambda)\ket{n}
 \end{equation}    
