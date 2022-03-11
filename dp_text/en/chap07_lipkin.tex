@@ -1,8 +1,8 @@
 \chapter{Lipkin-Meshkov Glick model}
+The Lipkin-Meshkov Glick model is a simple model manifesting the quantum phase transitions. The aim of this chapter is to understand the properties of the ground state and see its influence on different driving protocols.
 
 
-
-The aim of this text is to analyze Hamiltonian
+The model is defined by Hamiltonian
 \begin{equation}
     \HH=\J_3+\lambda\hat V_1 +\chi \hat V_2+\chi^2 \hat V_3,
     \label{eq:firstOrderTransitionHamiltonian}
@@ -26,20 +26,18 @@ we get the matrix elements
     \braket{j'm'|\J_3|jm} &= m \delta_{j'j}\delta_{m'm}\\
     \braket{j'm'|\J_\pm|jm} &= \sqrt{(j\mp m)(j\pm m+1)}\delta_{j'j}\delta_{m'm\pm 1},
 \end{align}
-where $\delta_{a'b}$ is Kronecker delta. Hamiltonian in eq. \ref{eq:firstOrderTransitionHamiltonian} can then be written as
+where $\delta_{a'b}$ is Kronecker delta. The Hamiltonian in Eq. \ref{eq:firstOrderTransitionHamiltonian} can be written as
 \begin{equation}
 \begin{split}
         % \left(\J_1+\chi(\J_3+j)\right)^2 &= \textcolor{purple}{\J_1^2} +\chi^2 (\J_3^2+j^2\Id+2j\J_3)+\chi(\textcolor{blue}{\J_1}\J_3+\J_3\textcolor{blue}{\J_1})+2\chi j\textcolor{blue}{\J_1}\\
         % \textcolor{purple}{\J_1^2}&= \frac{1}{4}(\J_++\J_-)^2= \frac{1}{4}(\J_+^2+\J_-^2+\textcolor{violet}{\J_+\J_-}+\textcolor{violet}{\J_-\J_+})\\ 
         % \textcolor{violet}{\J_\pm\J_\mp}&=\J^2-\J_3^2 \mp \J_3\\
         % \textcolor{blue}{\J_1}&=(\J_+ +\J_-),\\
-        \HH &= J_3-\frac{\lambda}{8j}(J_++J_-)^2-\frac{\chi}{4j}\left[(J_++J_-)(J_3+j\Id)+(J_3+j\Id)(J_++J_-)\right]\\
+        \HH =& J_3-\frac{\lambda}{8j}(J_++J_-)^2-\frac{\chi}{4j}\left[(J_++J_-)(J_3+j\Id)+(J_3+j\Id)(J_++J_-)\right]\\
         &-\frac{\chi^2}{2j}(J_3+j\Id)^2,
 \end{split}
 \end{equation}
 which has pentadiagonal matrix representation. During the whole paper, $j=N/2$ will be used. 
-
-The behavior of dimensions $N=1$ and $N=2$ are fundamentally different from higher dimensions and, therefore, the discussion will start at $N=3$, followed by $N=5$. Then the limit $N\rightarrow\infty$ will be taken along with the generalization of some characteristics to an arbitrary dimension. Due to the complexity of our Hamiltonian, it is not possible to prove every statement analytically. Some numerical methods, supported by some basic theorems, are needed. All figures and simulations were calculated in Mathematica.
 
 
 
@@ -52,6 +50,12 @@ The behavior of dimensions $N=1$ and $N=2$ are fundamentally different from high
 
 
 \section{Special cases}
+Because of pentadiagonal character of the Hamiltonian, the discussion will start at $N=3$, followed by $N=6$. Then the limit $N\rightarrow\infty$ will be taken along with the generalization of some characteristics to an arbitrary dimension. 
+
+Due to the complexity of our Hamiltonian, it is not possible to prove every statement analytically. Some numerical methods, supported by some basic theorems, are needed.
+
+
+
 \subsection{Case $N=3$}
 The lowest dimension behaving similarly to higher $N$ is 3 with the matrix represented Hamiltonian
 \begin{equation}
@@ -64,7 +68,7 @@ The lowest dimension behaving similarly to higher $N$ is 3 with the matrix repre
         \end{array}
         \right).
 \end{equation}
-The spectrum of this Hamiltonian can be calculated analytically using some substitutions $G, F, D, E$, see Appendix \ref{appendix1}, as
+The spectrum of this Hamiltonian can be calculated analytically using some complex functions $D, E, F, G:\C\rightarrow \C$, see Appendix \ref{appendix1}, as
 \begin{align}
         E_0 &= \frac{1}{12} \left(G-F-\frac{\sqrt{D-E}}{2}\right)
         \label{eq:N=3_en0}\\
@@ -75,7 +79,7 @@ The spectrum of this Hamiltonian can be calculated analytically using some subst
         E_3 &= \frac{1}{12}  \left(G+F+\frac{\sqrt{D+E}}{2}\right).
         \label{eq:N=3_en3}
 \end{align}
-Eigenvectors can also be written analytically, but doing it here would be redundant. On sections $\lambda=1$ and $\chi=1$, see Figures \ref{fig:N=3_energiesl} resp. \ref{fig:N=3_energiesc}, it can be seen the general behaviour of the spectrum, where the energies get close to each other somewhere around the center of our coordinate system $(\lambda;\chi)$ and then separate monotonously to never meet again. In addition, the spectrum is symmetrical for $\chi\leftrightarrow -\chi$.
+Eigenvectors can also be written analytically, but doing it here would be redundant. On sections $\lambda=1$ and $\chi=1$, see Figures \ref{fig:N=3_energiesl} resp. \ref{fig:N=3_energiesc}, it can be seen the general behavior of the spectrum, where the energies get close to each other somewhere around the center of our coordinate system $(\lambda;\chi)$ and then separate monotonously to never meet again. In addition, the spectrum is symmetrical for $\chi\leftrightarrow -\chi$.
 \begin{figure}[H]
     \centering
     \includegraphics{../img/N=3_energiesl.pdf}
@@ -89,7 +93,7 @@ Eigenvectors can also be written analytically, but doing it here would be redund
     \label{fig:N=3_energiesc}
 \end{figure}
 
-From the Equations \ref{eq:N=3_en0}, \ref{eq:N=3_en1} can be seen that there might exist degeneracy between every two neighboring energy levels\footnote{If substituted letters were real numbers, degeneracies would exist between every two neighboring energy levels. The problem here, that for functions $G,F,D,E$ the solution might not exist. Even though we will see that it's probably not that case and degeneracy exist between every two neighboring energy levels.}. Specifically, for $E_0=E_1$ for $D=E$, which for real values $\lambda,\;\chi$ has two solutions
+From the Equations \ref{eq:N=3_en0}, \ref{eq:N=3_en1} can be seen that there might exist degeneracy between every two neighboring energy levels\footnote{If the functions $D,E,F,G$ were real numbers, degeneracies would exist between every two neighboring energy levels. Because they are complex, the solution $E_i=E_j$ might not exist. Even though we will see that it's probably not that case and degeneracy exist between every two neighboring energy levels.}. Specifically, for $E_0=E_1$ for $D=E$, which for real values $\lambda,\;\chi$ has two solutions
 $$(\lambda_d,\pm \chi_d)=\left(-\frac{1}{2};\sqrt{\frac{3}{5}}\right).$$
 Point-like characteristics correspond to Theorem \ref{thm:n-2}, which states that Hamiltonian driven by two real parameters can be degenerated only on 0-dimensional manifolds. 
 
@@ -98,7 +102,7 @@ If the energy spectrum is degenerate and the metric tensor diverges, see individ
     \centering
     \includegraphics[scale=1.3]{../img/N=3_gComponents.pdf}
     \includegraphics[scale=1.3]{../img/N=3_barA.pdf}
-    \caption{Arctangent of metric tensor elements for the case $N=3$. From the top: $Arctan(g_{11})$, $Arctan(g_{12})=Arctan(g_{21})$, $Arctan(g_{22})$}
+    \caption{Arctangent of the metric tensor elements for the case $N=3$ in the parametric space. From the top: $\arctan(g_{11})$, $\arctan(g_{12})=\arctan(g_{21})$, $\arctan(g_{22})$}
     \label{fig:N=3_g}
 \end{figure}
 
@@ -106,7 +110,7 @@ If the energy spectrum is degenerate and the metric tensor diverges, see individ
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.3]{../img/N=3_gDivergence.pdf}
-    \caption{Metric tensor determinant in a parameter space for $N=3$.}
+    \caption{Ground state metric tensor determinant in a parametric space for $N=3$.}
     \label{fig:N=3_gDivenrgence}    
 \end{figure}
 
@@ -115,18 +119,20 @@ If the energy spectrum is degenerate and the metric tensor diverges, see individ
     \centering
     \includegraphics[scale=1.3]{../img/N=3_gammas.pdf}    
     \includegraphics[scale=1.3]{../img/N=3_barA.pdf}
-    \caption{1.0 Arctangent of Christoffel symbols for the case $N=3$. First row from left: $Arctan(\Gamma_{111})$, $Arctan(\Gamma_{121})$, $Arctan(\Gamma_{122})$. Second row from left: $Arctan(\Gamma_{211})$, $Arctan(\Gamma_{221})$, $Arctan(\Gamma_{222})$.}
+    \caption{Arctangent of the ground state Christoffel symbols for the case $N=3$. First row from left: $\arctan(\Gamma_{111})$, $\arctan(\Gamma_{121})$, $\arctan(\Gamma_{122})$. Second row from left: $\arctan(\Gamma_{211})$, $\arctan(\Gamma_{221})$, $\arctan(\Gamma_{222})$.}
     \label{fig:N=3_G}
 \end{figure}
 
-Due to metric tensor degeneracy, the space is not geodesically maximal. To see that the singularity is not the only \emph{coordinate one}\footnote{Coordinate singularity is present only in some coordinates. This is different from so called \emph{physical singularity}, which is present in every choice of the coordinate system.}, the Ricci scalar can be calculated, see Fig. \ref{fig:N=3_Ricci}. Divergent Ricci scalar implies the existence of a \emph{physical singularity}. This can be seen from the sections in $\chi$-direction drawn in Fig. \ref{fig:N=3_Ricci_section}, which at coordinate $(\lambda_d;\chi_d)$ diverges, implying the singularity is \emph{physical}. 
+Due to the metric tensor degeneracy, the space is not geodesically maximal. To see that the singularity is not the only \emph{coordinate one}\footnote{Coordinate singularity is present only in some coordinates. This is different from so-called \emph{physical singularity}, which is present in every choice of the coordinate system.}, the Ricci scalar can be calculated, see Fig. \ref{fig:N=3_Ricci}. Divergent Ricci scalar implies the existence of a \emph{physical singularity}. This can be seen from the sections in $\chi$-direction drawn in Fig. \ref{fig:N=3_Ricci_section}, which at coordinate $(\lambda_d;\chi_d)$ diverges. This implies the singularity is \emph{physical}. 
+
+\red{Not sure if true: Note that the energy spectrum degeneracy itself does not imply the metric tensor singularity. For example if the singularity would be only in one point, one might choose inverse radial coordinates. This would move the degeneracy to infinity, which can be removed as a boundary.}
 
 
-The presence of singularities means that our ground state manifold is geodesically incomplete and according to Theorem \ref{thm:hopf-Rinow_modified} there exist some geodesically unreachable coordinates.
+
 \begin{figure}[H]
     \centering
     \includegraphics{../img/N=3_Ricci.pdf}
-    \caption{Arctangent of Ricci curvature for the case $N=3$. \textcolor{blue}{Excuse the resolution, I will make better calculation in Metecentrum later.}}
+    \caption{Arctangent of Ricci curvature for the case $N=3$. \textcolor{red}{increase the resolution}}
     \label{fig:N=3_Ricci}
 \end{figure}
 
@@ -134,7 +140,7 @@ The presence of singularities means that our ground state manifold is geodesical
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.9]{../img/N=3_Ricci_section.pdf}
-    \caption{Ricci curvature sections for three different $\lambda=const.$}
+    \caption{Ricci's curvature sections for three different $\lambda$.}
     \label{fig:N=3_Ricci_section}
 \end{figure}
 % \begin{figure}[H]
@@ -144,24 +150,28 @@ The presence of singularities means that our ground state manifold is geodesical
 %     \label{fig:N=3_RicMinimas}    
 % \end{figure}
 
-The system characteristics can be seen more clearly from geodesics, i.e., by solving the initial value problem with conditions
-$$(\lambda(t_i);\chi(t_i))=(\lambda_i;\chi_i)$$
-$$\left(\der{\lambda(t)}{t};\der{\chi(t)}{t}\right)\Bigg|_{t_i}=(\lambda'_i;\chi'_i),$$
-where $t_i$ means \emph{initial time}.
+Some of the system characteristics can be seen from geodesics. \emph{Initial valued Geodesics} are solutions to
+$$(\lambda(T_i);\chi(T_i))\eqqcolon (\lambda_i;\chi_i)\in \R^2$$
+$$\left(\der{\lambda(t)}{t};\der{\chi(t)}{t}\right)\Bigg|_{T_i} \eqqcolon (\lambda'_i;\chi'_i) \in \R^2_+,$$
+where $T_i$ is \emph{initial time}, typically $0$. 
 
-Results for these geodesics starting at $(\lambda;\chi)=(0;0)$, $(\lambda',\chi')=(\cos\theta;\sin\theta)$ for $\theta\in [-0.63;0.63]$ and $\theta\in [\pi-0.225;\pi+0.225]$ with step $\Delta\theta=0.01$, can be seen in Fig. \ref{fig:N=3_geodesics}. Other values $\theta$ result in a close approach of the geodesics to the singularity, making the calculations numerically unstable. The fact that geodesics lean towards singularities is well known from the theory of General Relativity (GR). The main difference here is that our "test particle" seems to be partially repulsed by the singularity. The analogy with GR would therefore fail because of the nonexistence of negative mass and gravitational dipoles. The better analogy would be electromagnetism, which has a downside in the fact that one does not usually use the metric structures in this theory. Comparison of those two intuitive examples can be seen in Fig. \ref{fig:geodesicsinGR}. The geodesic behavior is not caused only by the singularity but also by a large Ricci curvature leaning to the right from it. This means that the distance across this gap is also large, leading to the strong tendency of the geodesics to go around the singularity rather than crossing it, which is again seen in Fig. \ref{fig:N=3_geodesics}.
+We might also choose \emph{boundary valued geodesics} with fixed initial $(\lambda(0);\chi(0))$ and final position $(\lambda(T_f);\chi(T_f))$. Because the shape of geodesics in parametric space does not depend on the initial derivative, it does not depend on the speed of driving in the parametric space. Initial valued geodesics are therefore more advantageous to calculate, because they have only two free parameters - the initial coordinate $(\lambda;\chi)$. Another reason is purely numeric, because the boundary valued geodesics are calculated by numerous evolutions of initial valued geodesics with response initial parameter tweaking. This makes the calculations slower (in our case they were $10$ to $100$ times slower).
+
+Results for the geodesics starting at $(\lambda_i;\chi_i)=(0;0)$, $
+(\lambda',\chi')=(\cos\theta;\sin\theta)$ can be seen in Fig. \ref{fig:N=3_geodesics}. Other values $\theta$ result in a close approach of the geodesics to the singularity, making the calculations numerically unstable. The fact that geodesics lean towards singularities is well known from the theory of General Relativity (GR). The main difference here is that our "test particle" seems to be partially repulsed by the singularity. The analogy with GR would therefore fail because of the nonexistence of negative mass and gravitational dipoles. The better analogy would be electromagnetism, which has a downside in the fact that the geometrical formalism is not used so much in this theory. Comparison of those two intuitive examples can be seen in Fig. \ref{fig:geodesicsinGR}. The geodesic behavior is not caused only by the singularity but also by a large Ricci curvature leaning to the right from it. This means that the distance across this \emph{\blueee{unreachable gap}}, marked by \blueee{blue line} in Fig. \ref{fig:N=3_geodesics}, is also large. This leads to the strong tendency of geodesics to go around the singularity rather than crossing it. The presence of singularities means that our ground state manifold is geodesically incomplete and according to Theorem \ref{thm:hopf-Rinow_modified} there exist some geodesically unreachable coordinates. From this goes the term \emph{\blueee{unreachable gap}}.
+
 
 
 \begin{figure}[H]
     \centering
     \includegraphics{../img/N=3_geodesics.pdf}
-    \caption{Geodesics for the case $N=3$ starting from $(\lambda_i;\chi_i)=(0;0)$ with $(\lambda'_i;\chi'_i)=(\cos\theta;\sin\theta)$, parametrized by angle $\theta$.}
+    \caption{Geodesics for the case $N=3$ starting from $(\lambda_i;\chi_i)=(0;0)$ with $(\lambda'_i;\chi'_i)=(\cos\theta;\sin\theta)$, parametrized by angle $\theta\in [-0.63;0.63]$, $\theta\in [\pi-0.225;\pi+0.225]$, with step $\Delta\theta=0.01$.\red{draw light blue line along the high ricci curvature line}}
     \label{fig:N=3_geodesics}    
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{../img/geodesicsinGR.png}
-    \caption{Comparing geodesics with repulsing (blue) and attracting (red) metric tensor divergence in the spherical symmetrical space. }
+    \caption{Comparing geodesics with \blue{repulsing (blue)} and \red{attracting (red)} metric tensor divergence in the spherically symmetrical space. }
     \label{fig:geodesicsinGR}
 \end{figure}
 
@@ -176,11 +186,11 @@ Results for these geodesics starting at $(\lambda;\chi)=(0;0)$, $(\lambda',\chi'
 
 
 
-\subsection{Case $N=5$}
+\subsection{Case $N=6$}
 
-Few characteristics in arbitrary dimension can be shown for the case $N=5$. First are the degeneracies between different energy levels, which can be seen in Fig. \ref{fig:singularitiesBetweenEnergiesN=6}. One can see that only $E_0=E_1$ the degeneracy lies on the separatrix and all others are distributed around. The $\chi\leftrightarrow-\chi$ symmetry holds for all of them. 
+Another special case is $N=6$. From analysis of the energy levels, we see that there are more degeneracies, see Fig. \ref{fig:singularitiesBetweenEnergiesN=6}. One can see that only $E_0=E_1$ the degeneracy lies on the separatrix and all others are distributed around. The $\chi\leftrightarrow-\chi$ symmetry holds for all of them. 
 
-Another fact, which is good to realize, is how the space itself looks like. This is best seen from the metric tensor determinant, fig. \ref{fig:N=5_det3D}.
+Another fact, which is good to realize, is how the space itself looks like. This is best seen from the metric tensor determinant, fig. \ref{fig:N=6_det3D}.
 
 
 
@@ -188,37 +198,36 @@ Another fact, which is good to realize, is how the space itself looks like. This
     \centering
     \includegraphics[scale=1.3]{../img/singularitiesBetweenEnergiesN=6.pdf}
     \includegraphics[scale=1.3]{../img/N=5_bar6.pdf}
-    \caption{Energy differences between neighboring energy levels for $N=5$. First row: $E_1-E_0$, $E_2-E_1$, second row: $E_3-E_2$, $E_4-E_3$, third row: $E_5-E_4$, $E_6-E_5$.}
+    \caption{Energy differences between neighboring energy levels for $N=6$. First row: $E_1-E_0$, $E_2-E_1$, second row: $E_3-E_2$, $E_4-E_3$, third row: $E_5-E_4$, $E_6-E_5$. Spectra degeneracies are marked with \blue{blue} cross.}
     \label{fig:singularitiesBetweenEnergiesN=6}    
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.3]{../img/N=5_det3D.pdf}
-    \caption{Metric tensor determinant for the case $N=5$.}
-    \label{fig:N=5_det3D}    
+    \caption{Metric tensor determinant for the case $N=6$.\red{make it N=6}}
+    \label{fig:N=6_det3D}    
 \end{figure}
 
 
 
-Geodesics for the case $N=5$ starting from the point $(0;0)$ have the characteristics already seen in the case $N=3$. However, when starting at $(\lambda;\chi)=(1;0)$, the behavior around the singularity is not the only interesting thing happening. As can be seen in Fig. \ref{fig:geod10}, the geodesics tend to deflect themselves from the area with high curvature around the axis $\chi=0$, which happens even for other initial conditions, just that for $(0;0)$ it is not so apparent. Small irregularity can be seen in Fig. \ref{fig:N=3_geodesics} around $(0.5;0.1)$. This implies that the geodesic equation might have at least two solutions as candidates for the globally shortest path between two points.\footnote{The existence of singularities implies that there are infinitely many solutions, because they can bounce between singularities, or go around one of them any number of times. Those are surely not the globally shortest paths, which we are interested in.} Example of three solutions between two points can be seen in Fig. \ref{fig:geodesicsBetweenPoints}.
- 
+Geodesics for the case $N=6$ starting from the point $(0;0)$ have the characteristics already seen in the case $N=3$. However, when starting at $(\lambda;\chi)=(1;0)$, the behavior around the singularity is not the only interesting thing happening. As can be seen in Fig. \ref{fig:geod10}, the geodesics tend to deflect themselves from the area with high curvature around the axis $\chi=0$, which happens even for other initial conditions, just that for $(0;0)$ it is not so apparent. Small irregularity can be seen in Fig. \ref{fig:N=3_geodesics} around $(0.5;0.1)$. This implies that the geodesic equation might have at least two solutions as candidates for the globally shortest\red{search global vs local shortest path and elaborate here} path between two points.\footnote{The existence of singularities implies that there are infinitely many solutions, because they can bounce between singularities, or go around one of them any number of times. Those are surely not the globally shortest paths, which we are interested in.} 
 
 
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.3]{../img/N=5_geods00.pdf}
-    \caption{Geodesics for the case $N=5$, starting from the point $(1;0)$. \emph{The numerics around the singularity breaks down, but the solution is close to the drawn one, i.e. they will pass close to the singularity and continue to the left.}}
+    \caption{Geodesics for the case $N=6$, starting from the point $(1;0)$. \emph{The numerics around the singularity breaks down, but the solution is close to the drawn one, i.e. they will pass close to the singularity and continue to the left.}\red{make it N=6, thinner green lines pls}}
     \label{fig:geod10}    
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.35]{../img/geodesicSolutionsDrawing.png}
-    \caption{Three possible solutions between points $(1;0)$ and $(4;0.5)$. The length of the yellow one is surely longer than other two, but the difference between green vs. blue solution is not clear on the first sight.}
-    \label{fig:geodesicsBetweenPoints}    
-\end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[scale=0.35]{../img/geodesicSolutionsDrawing.png}
+%     \caption{Three possible solutions between points $(1;0)$ and $(4;0.5)$. The length of the yellow one is surely longer than other two, but the difference between green vs. blue solution is not clear on the first sight.}
+%     \label{fig:geodesicsBetweenPoints}    
+% \end{figure}
 
 
 
@@ -226,7 +235,7 @@ Geodesics for the case $N=5$ starting from the point $(0;0)$ have the characteri
 
 
 \subsection{Limit \texorpdfstring{$N\rightarrow \infty$}{N->infty}}
-The limit $N\rightarrow \infty$ can be applied to the Hamiltonian in Eq. \ref{eq:firstOrderTransitionHamiltonian} using Holstein-Primakoff mapping for bosonic operators\footnote{Felipe did this and I have no idea how}
+The limit $N\rightarrow \infty$ can be applied to the Hamiltonian in Eq. \ref{eq:firstOrderTransitionHamiltonian} using Holstein-Primakoff mapping\red{cite something} for bosonic operators
 \begin{equation}
     \mathcal{H}\coloneqq\lim_{j\rightarrow\infty}\frac{\HH}{2j},
 \end{equation}
@@ -250,7 +259,7 @@ which represents the phase transition in the limit $N\rightarrow \infty$. In our
 \begin{figure}[H]
     \centering
     \includegraphics{../img/infiniteN_transitionCompare.pdf}
-    \caption{First order phase transition -- Separatrix (red), second order transition (blue point) compared to minimum between the ground state and first excited state in N=3 case (black, dashed).}
+    \caption{\red{First order phase transition, the Separatrix} (red), \blue{second order transition} (blue point) compared to \emph{minimum between the ground state and first excited state in N=3 case} (black, dashed).}
     \label{fig:transitionCompare}    
 \end{figure}
 

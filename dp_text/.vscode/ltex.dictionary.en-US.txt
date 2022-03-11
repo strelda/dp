@@ -11,3 +11,5 @@ observables
 Hamiltonians
 exponentials
 Eq
+Arctangent
+geodesical

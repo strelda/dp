@@ -1581,7 +1581,6 @@ INPUT ../img/overcritical.pdf
 INPUT ../img/overcritical.pdf
 INPUT ../img/overcritical.pdf
 INPUT ../img/overcritical.pdf
-INPUT /usr/share/texmf-dist/fonts/tfm/public/doublestroke/dsrom12.tfm
 INPUT ../img/dens2.pdf
 INPUT ../img/dens2.pdf
 INPUT ../img/dens2.pdf
@@ -1617,6 +1616,7 @@ INPUT ./chap07_lipkin.tex
 INPUT chap07_lipkin.tex
 INPUT ./chap07_lipkin.tex
 INPUT chap07_lipkin.tex
+INPUT /usr/share/texmf-dist/fonts/tfm/public/doublestroke/dsrom12.tfm
 INPUT ../img/N=3_energiesl.pdf
 INPUT ../img/N=3_energiesl.pdf
 INPUT ../img/N=3_energiesl.pdf
@@ -1692,11 +1692,6 @@ INPUT ../img/N=5_geods00.pdf
 INPUT ../img/N=5_geods00.pdf
 INPUT ../img/N=5_geods00.pdf
 INPUT ../img/N=5_geods00.pdf
-INPUT ../img/geodesicSolutionsDrawing.png
-INPUT ../img/geodesicSolutionsDrawing.png
-INPUT ../img/geodesicSolutionsDrawing.png
-INPUT ../img/geodesicSolutionsDrawing.png
-INPUT ../img/geodesicSolutionsDrawing.png
 INPUT ../img/infiniteN_transitionCompare.pdf
 INPUT ../img/infiniteN_transitionCompare.pdf
 INPUT ../img/infiniteN_transitionCompare.pdf

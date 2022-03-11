@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.2.10)  1 MAR 2022 21:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.2.10)  11 MAR 2022 15:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -744,7 +744,7 @@ Package caption Info: End \AtBeginDocument code.
 
  (./title.tex
 Package hyperref Info: Option `pageanchor' set `false' on input line 6.
-<../img/logo-en.pdf, id=275, 506.4591pt x 156.49065pt>
+<../img/logo-en.pdf, id=271, 506.4591pt x 156.49065pt>
 File: ../img/logo-en.pdf Graphic file (type pdf)
 <use ../img/logo-en.pdf>
 Package pdftex.def Info: ../img/logo-en.pdf  used on input line 9.
@@ -850,7 +850,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 47
  (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [6] [7]
-<../img/bundle.png, id=445, 557.08125pt x 214.8025pt>
+<../img/bundle.png, id=440, 557.08125pt x 214.8025pt>
 File: ../img/bundle.png Graphic file (type png)
 <use ../img/bundle.png>
 Package pdftex.def Info: ../img/bundle.png  used on input line 171.
@@ -890,12 +890,12 @@ Package natbib Warning: Citation `cheng_quantum_2013' on page 12 undefined on in
 
  (./chap03_driving.tex
 Chapter 3.
-<../img/manifold_basic_1.png, id=553, 2008.50375pt x 820.06375pt>
+<../img/manifold_basic_1.png, id=548, 2008.50375pt x 820.06375pt>
 File: ../img/manifold_basic_1.png Graphic file (type png)
 <use ../img/manifold_basic_1.png>
 Package pdftex.def Info: ../img/manifold_basic_1.png  used on input line 19.
 (pdftex.def)             Requested size: 412.56496pt x 168.4395pt.
-<../img/projectiveHilbertSpace.png, id=555, 1509.64pt x 763.85374pt>
+<../img/projectiveHilbertSpace.png, id=550, 1509.64pt x 763.85374pt>
 File: ../img/projectiveHilbertSpace.png Graphic file (type png)
 <use ../img/projectiveHilbertSpace.png>
 Package pdftex.def Info: ../img/projectiveHilbertSpace.png  used on input line 33.
@@ -911,12 +911,12 @@ Overfull \hbox (1.14816pt too wide) in paragraph at lines 53--55
  []
 
 [16 <../img/projectiveHilbertSpace.png>]
-<../img/manifold_full_1.png, id=574, 2495.3225pt x 1099.10625pt>
+<../img/manifold_full_1.png, id=569, 2495.3225pt x 1099.10625pt>
 File: ../img/manifold_full_1.png Graphic file (type png)
 <use ../img/manifold_full_1.png>
 Package pdftex.def Info: ../img/manifold_full_1.png  used on input line 76.
 (pdftex.def)             Requested size: 412.56496pt x 181.71367pt.
-<../img/manifoldCutIntuition.png, id=576, 1676.2625pt x 994.71625pt>
+<../img/manifoldCutIntuition.png, id=571, 1676.2625pt x 994.71625pt>
 File: ../img/manifoldCutIntuition.png Graphic file (type png)
 <use ../img/manifoldCutIntuition.png>
 Package pdftex.def Info: ../img/manifoldCutIntuition.png  used on input line 91.
@@ -926,7 +926,7 @@ Package pdftex.def Info: ../img/manifoldCutIntuition.png  used on input line 91.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [17 <../img/manifold_full_1.png (PNG copy)>]
-<../img/parallelTransportClosedCurve_1.png, id=588, 2112.89375pt x 838.13126pt>
+<../img/parallelTransportClosedCurve_1.png, id=583, 2112.89375pt x 838.13126pt>
 File: ../img/parallelTransportClosedCurve_1.png Graphic file (type png)
 <use ../img/parallelTransportClosedCurve_1.png>
 Package pdftex.def Info: ../img/parallelTransportClosedCurve_1.png  used on input line 117.
@@ -956,7 +956,7 @@ LaTeX Font Info:    Trying to load font information for U+dsrom on input line 60
  (/usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [28]
-<../img/counterdiabaticPotential.png, id=772, 1395.2125pt x 468.75125pt>
+<../img/counterdiabaticPotential.png, id=767, 1395.2125pt x 468.75125pt>
 File: ../img/counterdiabaticPotential.png Graphic file (type png)
 <use ../img/counterdiabaticPotential.png>
 Package pdftex.def Info: ../img/counterdiabaticPotential.png  used on input line 694.
@@ -985,29 +985,33 @@ Overfull \hbox (11.44095pt too wide) in paragraph at lines 7--8
 
 ]
 
-Package natbib Warning: Citation `Bukov2019' on page 32 undefined on input line 72.
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 62.
+
+
+Package natbib Warning: Citation `Bukov2019' on page 32 undefined on input line 73.
 
 [32] [33]
-<../img/quenchFidelityFrom00.pdf, id=830, 305.14pt x 259.97125pt>
+<../img/quenchFidelityFrom00.pdf, id=825, 305.14pt x 259.97125pt>
 File: ../img/quenchFidelityFrom00.pdf Graphic file (type pdf)
 <use ../img/quenchFidelityFrom00.pdf>
-Package pdftex.def Info: ../img/quenchFidelityFrom00.pdf  used on input line 186.
+Package pdftex.def Info: ../img/quenchFidelityFrom00.pdf  used on input line 189.
 (pdftex.def)             Requested size: 366.16614pt x 311.96393pt.
  [34]
-<../img/equidistantPointsOnPath.pdf, id=842, 326.21875pt x 264.99pt>
+<../img/equidistantPointsOnPath.pdf, id=837, 326.21875pt x 264.99pt>
 File: ../img/equidistantPointsOnPath.pdf Graphic file (type pdf)
 <use ../img/equidistantPointsOnPath.pdf>
-Package pdftex.def Info: ../img/equidistantPointsOnPath.pdf  used on input line 193.
+Package pdftex.def Info: ../img/equidistantPointsOnPath.pdf  used on input line 196.
 (pdftex.def)             Requested size: 391.46053pt x 317.9864pt.
-<../img/bg123.pdf, id=843, 275.0275pt x 157.58875pt>
+<../img/bg123.pdf, id=838, 275.0275pt x 157.58875pt>
 File: ../img/bg123.pdf Graphic file (type pdf)
 <use ../img/bg123.pdf>
-Package pdftex.def Info: ../img/bg123.pdf  used on input line 200.
+Package pdftex.def Info: ../img/bg123.pdf  used on input line 203.
 (pdftex.def)             Requested size: 330.03134pt x 189.10553pt.
-<../img/plotsFidelityQuenches.pdf, id=844, 528.97626pt x 499.8675pt>
+<../img/plotsFidelityQuenches.pdf, id=839, 528.97626pt x 499.8675pt>
 File: ../img/plotsFidelityQuenches.pdf Graphic file (type pdf)
 <use ../img/plotsFidelityQuenches.pdf>
-Package pdftex.def Info: ../img/plotsFidelityQuenches.pdf  used on input line 201.
+Package pdftex.def Info: ../img/plotsFidelityQuenches.pdf  used on input line 204.
 (pdftex.def)             Requested size: 317.3882pt x 299.9228pt.
  [35 <../img/quenchFidelityFrom00.pdf> <../img/equidistantPointsOnPath.pdf
 
@@ -1020,7 +1024,7 @@ pdfTeX warning: pdflatex (file ../img/plotsFidelityQuenches.pdf): PDF inclusion:
 
  (./chap05_spin.tex
 Chapter 5.
-<../img/blochArbitraryTransport.pdf, id=905, 260.975pt x 282.05376pt>
+<../img/blochArbitraryTransport.pdf, id=900, 260.975pt x 282.05376pt>
 File: ../img/blochArbitraryTransport.pdf Graphic file (type pdf)
 <use ../img/blochArbitraryTransport.pdf>
 Package pdftex.def Info: ../img/blochArbitraryTransport.pdf  used on input line 87.
@@ -1034,7 +1038,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ]
-<../img/blochPiHalfTransport.pdf, id=922, 294.09875pt x 323.2075pt>
+<../img/blochPiHalfTransport.pdf, id=917, 294.09875pt x 323.2075pt>
 File: ../img/blochPiHalfTransport.pdf Graphic file (type pdf)
 <use ../img/blochPiHalfTransport.pdf>
 Package pdftex.def Info: ../img/blochPiHalfTransport.pdf  used on input line 107.
@@ -1048,215 +1052,174 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  (./chap06_twoLevel.tex
 Chapter 6.
-
-Overfull \hbox (12.85045pt too wide) in paragraph at lines 40--42
-\OT1/lmr/m/n/12 with time vary-ing Hamil-to-nian. For 2-dimentional sys-tem with $[] =[][] (\OML/lmm/m/it/12 a\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 t\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 ; b\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 t\OT1/lmr/m/n/12 ))[]$|
- []
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 59.
-
 [40
 
 
 
 
 ]
-<../img/driving.pdf, id=970, 221.82875pt x 190.7125pt>
+Overfull \hbox (1.42975pt too wide) in paragraph at lines 131--133
+\OT1/lmr/m/n/12 can be rewrit-ten in-sert-ing iden-tity $[][]$ around Hamil-to-nian. Omit-|
+ []
+
+[41]
+<../img/driving.pdf, id=977, 221.82875pt x 190.7125pt>
 File: ../img/driving.pdf Graphic file (type pdf)
 <use ../img/driving.pdf>
-Package pdftex.def Info: ../img/driving.pdf  used on input line 115.
+Package pdftex.def Info: ../img/driving.pdf  used on input line 181.
 (pdftex.def)             Requested size: 266.19315pt x 228.85384pt.
- [41] [42 <../img/driving.pdf>]
-<../img/infidelityTimePlotGeod.pdf, id=1006, 325.215pt x 132.495pt>
+ [42] [43 <../img/driving.pdf>]
+<../img/infidelityTimePlotGeod.pdf, id=1013, 325.215pt x 132.495pt>
 File: ../img/infidelityTimePlotGeod.pdf Graphic file (type pdf)
 <use ../img/infidelityTimePlotGeod.pdf>
-Package pdftex.def Info: ../img/infidelityTimePlotGeod.pdf  used on input line 206.
+Package pdftex.def Info: ../img/infidelityTimePlotGeod.pdf  used on input line 277.
 (pdftex.def)             Requested size: 390.25604pt x 158.99318pt.
- [43]
-<../img/infidelityTfPlot.pdf, id=1021, 325.215pt x 131.49126pt>
+ [44]
+<../img/infidelityTfPlot.pdf, id=1028, 325.215pt x 131.49126pt>
 File: ../img/infidelityTfPlot.pdf Graphic file (type pdf)
 <use ../img/infidelityTfPlot.pdf>
-Package pdftex.def Info: ../img/infidelityTfPlot.pdf  used on input line 213.
+Package pdftex.def Info: ../img/infidelityTfPlot.pdf  used on input line 284.
 (pdftex.def)             Requested size: 390.25604pt x 157.7887pt.
-<../img/infidelityTfPlotLog.pdf, id=1022, 325.215pt x 128.48pt>
+<../img/infidelityTfPlotLog.pdf, id=1029, 325.215pt x 128.48pt>
 File: ../img/infidelityTfPlotLog.pdf Graphic file (type pdf)
 <use ../img/infidelityTfPlotLog.pdf>
-Package pdftex.def Info: ../img/infidelityTfPlotLog.pdf  used on input line 220.
+Package pdftex.def Info: ../img/infidelityTfPlotLog.pdf  used on input line 291.
 (pdftex.def)             Requested size: 390.25604pt x 154.17522pt.
-<../img/fidelityZeros.pdf, id=1027, 325.215pt x 131.49126pt>
-File: ../img/fidelityZeros.pdf Graphic file (type pdf)
-<use ../img/fidelityZeros.pdf>
-Package pdftex.def Info: ../img/fidelityZeros.pdf  used on input line 239.
-(pdftex.def)             Requested size: 390.25604pt x 157.7887pt.
- [44 <../img/infidelityTimePlotGeod.pdf> <../img/infidelityTfPlot.pdf
+ [45 <../img/infidelityTimePlotGeod.pdf> <../img/infidelityTfPlot.pdf
 
 pdfTeX warning: pdflatex (file ../img/infidelityTfPlot.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <../img/infidelityTfPlotLog.pdf
 
 pdfTeX warning: pdflatex (file ../img/infidelityTfPlotLog.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/dens3.pdf, id=1070, 256.96pt x 205.76875pt>
+<../img/fidelityZeros.pdf, id=1075, 325.215pt x 131.49126pt>
+File: ../img/fidelityZeros.pdf Graphic file (type pdf)
+<use ../img/fidelityZeros.pdf>
+Package pdftex.def Info: ../img/fidelityZeros.pdf  used on input line 310.
+(pdftex.def)             Requested size: 390.25604pt x 157.7887pt.
+<../img/dens3.pdf, id=1077, 256.96pt x 205.76875pt>
 File: ../img/dens3.pdf Graphic file (type pdf)
 <use ../img/dens3.pdf>
-Package pdftex.def Info: ../img/dens3.pdf  used on input line 249.
+Package pdftex.def Info: ../img/dens3.pdf  used on input line 320.
 (pdftex.def)             Requested size: 308.35045pt x 246.92125pt.
- [45 <../img/fidelityZeros.pdf> <../img/dens3.pdf
+ [46 <../img/fidelityZeros.pdf> <../img/dens3.pdf
 
 pdfTeX warning: pdflatex (file ../img/dens3.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/densVar.pdf, id=1105, 256.96pt x 205.76875pt>
+<../img/densVar.pdf, id=1112, 256.96pt x 205.76875pt>
 File: ../img/densVar.pdf Graphic file (type pdf)
 <use ../img/densVar.pdf>
-Package pdftex.def Info: ../img/densVar.pdf  used on input line 267.
+Package pdftex.def Info: ../img/densVar.pdf  used on input line 339.
 (pdftex.def)             Requested size: 308.35045pt x 246.92125pt.
- [46 <../img/densVar.pdf>]
-<../img/drivingLin.pdf, id=1131, 217.81375pt x 190.7125pt>
+ [47 <../img/densVar.pdf>]
+<../img/drivingLin.pdf, id=1138, 217.81375pt x 190.7125pt>
 File: ../img/drivingLin.pdf Graphic file (type pdf)
 <use ../img/drivingLin.pdf>
-Package pdftex.def Info: ../img/drivingLin.pdf  used on input line 282.
+Package pdftex.def Info: ../img/drivingLin.pdf  used on input line 354.
 (pdftex.def)             Requested size: 261.37517pt x 228.85384pt.
- [47 <../img/drivingLin.pdf>]
-<../img/infidelityInTimePlot1.pdf, id=1164, 376.40625pt x 130.4875pt>
+ [48 <../img/drivingLin.pdf>]
+<../img/infidelityInTimePlot1.pdf, id=1171, 376.40625pt x 130.4875pt>
 File: ../img/infidelityInTimePlot1.pdf Graphic file (type pdf)
 <use ../img/infidelityInTimePlot1.pdf>
-Package pdftex.def Info: ../img/infidelityInTimePlot1.pdf  used on input line 310.
+Package pdftex.def Info: ../img/infidelityInTimePlot1.pdf  used on input line 382.
 (pdftex.def)             Requested size: 446.03938pt x 154.62697pt.
 
-Overfull \hbox (33.47443pt too wide) in paragraph at lines 310--311
+Overfull \hbox (33.47443pt too wide) in paragraph at lines 382--383
  [][] |
  []
 
-
-LaTeX Warning: Reference `eq:eigenbasisDef' on page 48 undefined on input line 317.
-
-<../img/zeroState.pdf, id=1167, 333.245pt x 133.49875pt>
+<../img/zeroState.pdf, id=1176, 333.245pt x 133.49875pt>
 File: ../img/zeroState.pdf Graphic file (type pdf)
 <use ../img/zeroState.pdf>
-Package pdftex.def Info: ../img/zeroState.pdf  used on input line 320.
+Package pdftex.def Info: ../img/zeroState.pdf  used on input line 392.
 (pdftex.def)             Requested size: 399.89198pt x 160.19766pt.
-[48 <../img/infidelityInTimePlot1.pdf>]
-<../img/infidelityTfPlotLogLinCombined1.pdf, id=1186, 364.36125pt x 153.57375pt>
+[49 <../img/infidelityInTimePlot1.pdf>]
+<../img/infidelityTfPlotLogLinCombined1.pdf, id=1195, 364.36125pt x 153.57375pt>
 File: ../img/infidelityTfPlotLogLinCombined1.pdf Graphic file (type pdf)
 <use ../img/infidelityTfPlotLogLinCombined1.pdf>
-Package pdftex.def Info: ../img/infidelityTfPlotLogLinCombined1.pdf  used on input line 346.
+Package pdftex.def Info: ../img/infidelityTfPlotLogLinCombined1.pdf  used on input line 416.
 (pdftex.def)             Requested size: 437.23131pt x 184.28757pt.
 
-Overfull \hbox (24.66635pt too wide) in paragraph at lines 346--347
+Overfull \hbox (24.66635pt too wide) in paragraph at lines 416--417
  [][] |
  []
 
-[49 <../img/zeroState.pdf>]
-<../img/infidCombined1.pdf, id=1208, 364.36125pt x 156.585pt>
+[50 <../img/zeroState.pdf>]
+<../img/infidCombined1.pdf, id=1215, 364.36125pt x 156.585pt>
 File: ../img/infidCombined1.pdf Graphic file (type pdf)
 <use ../img/infidCombined1.pdf>
-Package pdftex.def Info: ../img/infidCombined1.pdf  used on input line 371.
+Package pdftex.def Info: ../img/infidCombined1.pdf  used on input line 441.
 (pdftex.def)             Requested size: 437.23131pt x 187.90105pt.
 
-Overfull \hbox (24.66635pt too wide) in paragraph at lines 371--372
+Overfull \hbox (24.66635pt too wide) in paragraph at lines 441--442
  [][] |
  []
 
-[50 <../img/infidelityTfPlotLogLinCombined1.pdf>]
-<../img/undercritical.pdf, id=1233, 333.245pt x 135.50626pt>
+[51 <../img/infidelityTfPlotLogLinCombined1.pdf>]
+<../img/undercritical.pdf, id=1241, 333.245pt x 135.50626pt>
 File: ../img/undercritical.pdf Graphic file (type pdf)
 <use ../img/undercritical.pdf>
-Package pdftex.def Info: ../img/undercritical.pdf  used on input line 381.
+Package pdftex.def Info: ../img/undercritical.pdf  used on input line 451.
 (pdftex.def)             Requested size: 399.89198pt x 162.60666pt.
-<../img/overcritical.pdf, id=1234, 333.245pt x 135.50626pt>
+<../img/overcritical.pdf, id=1242, 333.245pt x 135.50626pt>
 File: ../img/overcritical.pdf Graphic file (type pdf)
 <use ../img/overcritical.pdf>
-Package pdftex.def Info: ../img/overcritical.pdf  used on input line 388.
+Package pdftex.def Info: ../img/overcritical.pdf  used on input line 458.
 (pdftex.def)             Requested size: 399.89198pt x 162.60666pt.
- [51 <../img/infidCombined1.pdf> <../img/undercritical.pdf
+ [52 <../img/infidCombined1.pdf> <../img/undercritical.pdf
 
 pdfTeX warning: pdflatex (file ../img/undercritical.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 395.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 395.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 395.
-
-<../img/dens2.pdf, id=1265, 248.93pt x 205.76875pt>
+<../img/dens2.pdf, id=1272, 248.93pt x 205.76875pt>
 File: ../img/dens2.pdf Graphic file (type pdf)
 <use ../img/dens2.pdf>
-Package pdftex.def Info: ../img/dens2.pdf  used on input line 415.
+Package pdftex.def Info: ../img/dens2.pdf  used on input line 485.
 (pdftex.def)             Requested size: 298.7145pt x 246.92125pt.
-[52 <../img/overcritical.pdf>]
-<../img/dens2Zoom.pdf, id=1284, 248.93pt x 205.76875pt>
+ [53 <../img/overcritical.pdf>]
+<../img/dens2Zoom.pdf, id=1291, 248.93pt x 205.76875pt>
 File: ../img/dens2Zoom.pdf Graphic file (type pdf)
 <use ../img/dens2Zoom.pdf>
-Package pdftex.def Info: ../img/dens2Zoom.pdf  used on input line 422.
+Package pdftex.def Info: ../img/dens2Zoom.pdf  used on input line 492.
 (pdftex.def)             Requested size: 298.7145pt x 246.92125pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 428.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 428.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 428.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 428.
-
-<../img/allInOne.pdf, id=1285, 347.2975pt x 309.155pt>
+<../img/allInOne.pdf, id=1292, 347.2975pt x 309.155pt>
 File: ../img/allInOne.pdf Graphic file (type pdf)
 <use ../img/allInOne.pdf>
-Package pdftex.def Info: ../img/allInOne.pdf  used on input line 436.
+Package pdftex.def Info: ../img/allInOne.pdf  used on input line 504.
 (pdftex.def)             Requested size: 416.75491pt x 370.98413pt.
 
-Overfull \hbox (4.18996pt too wide) in paragraph at lines 436--437
+Overfull \hbox (4.18996pt too wide) in paragraph at lines 504--505
  [][] |
  []
 
-[53 <../img/dens2.pdf> <../img/dens2Zoom.pdf
+[54 <../img/dens2.pdf> <../img/dens2Zoom.pdf
 
 pdfTeX warning: pdflatex (file ../img/dens2Zoom.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [54 <../img/allInOne.pdf>]
-<../img/densVariance.pdf, id=1361, 274.02374pt x 205.76875pt>
+>] [55 <../img/allInOne.pdf>]
+<../img/densVariance.pdf, id=1369, 274.02374pt x 205.76875pt>
 File: ../img/densVariance.pdf Graphic file (type pdf)
 <use ../img/densVariance.pdf>
-Package pdftex.def Info: ../img/densVariance.pdf  used on input line 447.
+Package pdftex.def Info: ../img/densVariance.pdf  used on input line 515.
 (pdftex.def)             Requested size: 328.82684pt x 246.92125pt.
-<../img/contVariance.pdf, id=1362, 243.91125pt x 205.76875pt>
+<../img/contVariance.pdf, id=1370, 243.91125pt x 205.76875pt>
 File: ../img/contVariance.pdf Graphic file (type pdf)
 <use ../img/contVariance.pdf>
-Package pdftex.def Info: ../img/contVariance.pdf  used on input line 454.
+Package pdftex.def Info: ../img/contVariance.pdf  used on input line 522.
 (pdftex.def)             Requested size: 292.69202pt x 246.92125pt.
- [55 <../img/densVariance.pdf> <../img/contVariance.pdf
+) [56 <../img/densVariance.pdf> <../img/contVariance.pdf
 
 pdfTeX warning: pdflatex (file ../img/contVariance.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (1.42975pt too wide) in paragraph at lines 479--481
-\OT1/lmr/m/n/12 can be rewrit-ten in-sert-ing iden-tity $[][]$ around Hamil-to-nian. Omit-|
- []
-
-) [56]
 \openout2 = `chap07_lipkin.aux'.
 
  (./chap07_lipkin.tex
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 55.
+(hyperref)                removing `math shift' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 55.
+(hyperref)                removing `math shift' on input line 59.
 
 [57
 
@@ -1267,105 +1230,103 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 <../img/N=3_energiesl.pdf, id=1421, 361.35pt x 249.93375pt>
 File: ../img/N=3_energiesl.pdf Graphic file (type pdf)
 <use ../img/N=3_energiesl.pdf>
-Package pdftex.def Info: ../img/N=3_energiesl.pdf  used on input line 81.
+Package pdftex.def Info: ../img/N=3_energiesl.pdf  used on input line 85.
 (pdftex.def)             Requested size: 361.34912pt x 249.93314pt.
 <../img/N=3_energiesc.pdf, id=1422, 361.35pt x 249.93375pt>
 File: ../img/N=3_energiesc.pdf Graphic file (type pdf)
 <use ../img/N=3_energiesc.pdf>
-Package pdftex.def Info: ../img/N=3_energiesc.pdf  used on input line 87.
+Package pdftex.def Info: ../img/N=3_energiesc.pdf  used on input line 91.
 (pdftex.def)             Requested size: 361.34912pt x 249.93314pt.
- [58] [59 <../img/N=3_energiesl.pdf> <../img/N=3_energiesc.pdf
-
-pdfTeX warning: pdflatex (file ../img/N=3_energiesc.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<../img/N=3_gComponents.pdf, id=1474, 289.08pt x 433.62pt>
+ [58 <../img/N=3_energiesl.pdf>]
+<../img/N=3_gComponents.pdf, id=1455, 289.08pt x 433.62pt>
 File: ../img/N=3_gComponents.pdf Graphic file (type pdf)
 <use ../img/N=3_gComponents.pdf>
-Package pdftex.def Info: ../img/N=3_gComponents.pdf  used on input line 99.
+Package pdftex.def Info: ../img/N=3_gComponents.pdf  used on input line 103.
 (pdftex.def)             Requested size: 375.80394pt x 563.70595pt.
-<../img/N=3_barA.pdf, id=1475, 312.16624pt x 42.1575pt>
+<../img/N=3_barA.pdf, id=1456, 312.16624pt x 42.1575pt>
 File: ../img/N=3_barA.pdf Graphic file (type pdf)
 <use ../img/N=3_barA.pdf>
-Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 100.
+Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 104.
 (pdftex.def)             Requested size: 405.81607pt x 54.80472pt.
- [60]
-<../img/N=3_gDivergence.pdf, id=1483, 245.91875pt x 190.7125pt>
+ [59 <../img/N=3_energiesc.pdf>]
+<../img/N=3_gDivergence.pdf, id=1480, 245.91875pt x 190.7125pt>
 File: ../img/N=3_gDivergence.pdf Graphic file (type pdf)
 <use ../img/N=3_gDivergence.pdf>
-Package pdftex.def Info: ../img/N=3_gDivergence.pdf  used on input line 108.
+Package pdftex.def Info: ../img/N=3_gDivergence.pdf  used on input line 112.
 (pdftex.def)             Requested size: 319.69432pt x 247.92621pt.
- [61 <../img/N=3_gComponents.pdf> <../img/N=3_barA.pdf
+ [60 <../img/N=3_gComponents.pdf> <../img/N=3_barA.pdf
 
 pdfTeX warning: pdflatex (file ../img/N=3_barA.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/N=3_gammas.pdf, id=1507, 333.245pt x 249.93375pt>
+<../img/N=3_gammas.pdf, id=1504, 333.245pt x 249.93375pt>
 File: ../img/N=3_gammas.pdf Graphic file (type pdf)
 <use ../img/N=3_gammas.pdf>
-Package pdftex.def Info: ../img/N=3_gammas.pdf  used on input line 116.
+Package pdftex.def Info: ../img/N=3_gammas.pdf  used on input line 120.
 (pdftex.def)             Requested size: 433.21843pt x 324.91383pt.
 File: ../img/N=3_barA.pdf Graphic file (type pdf)
 <use ../img/N=3_barA.pdf>
-Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 117.
+Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 121.
 (pdftex.def)             Requested size: 405.81607pt x 54.80472pt.
 
-Overfull \hbox (20.65347pt too wide) in paragraph at lines 116--118
+Overfull \hbox (20.65347pt too wide) in paragraph at lines 120--122
  [][] |
  []
 
-[62 <../img/N=3_gDivergence.pdf> <../img/N=3_gammas.pdf
+[61 <../img/N=3_gDivergence.pdf> <../img/N=3_gammas.pdf
 
 pdfTeX warning: pdflatex (file ../img/N=3_gammas.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/N=3_Ricci.pdf, id=1533, 378.41376pt x 323.2075pt>
+<../img/N=3_Ricci.pdf, id=1529, 378.41376pt x 323.2075pt>
 File: ../img/N=3_Ricci.pdf Graphic file (type pdf)
 <use ../img/N=3_Ricci.pdf>
-Package pdftex.def Info: ../img/N=3_Ricci.pdf  used on input line 128.
+Package pdftex.def Info: ../img/N=3_Ricci.pdf  used on input line 134.
 (pdftex.def)             Requested size: 378.41283pt x 323.20671pt.
-<../img/N=3_Ricci_section.pdf, id=1534, 311.1625pt x 200.75pt>
+<../img/N=3_Ricci_section.pdf, id=1530, 311.1625pt x 200.75pt>
 File: ../img/N=3_Ricci_section.pdf Graphic file (type pdf)
 <use ../img/N=3_Ricci_section.pdf>
-Package pdftex.def Info: ../img/N=3_Ricci_section.pdf  used on input line 136.
+Package pdftex.def Info: ../img/N=3_Ricci_section.pdf  used on input line 142.
 (pdftex.def)             Requested size: 280.04366pt x 180.67331pt.
- [63 <../img/N=3_Ricci.pdf>]
-<../img/N=3_geodesics.pdf, id=1565, 311.1625pt x 308.15125pt>
+ [62 <../img/N=3_Ricci.pdf>]
+<../img/N=3_geodesics.pdf, id=1561, 311.1625pt x 308.15125pt>
 File: ../img/N=3_geodesics.pdf Graphic file (type pdf)
 <use ../img/N=3_geodesics.pdf>
-Package pdftex.def Info: ../img/N=3_geodesics.pdf  used on input line 157.
+Package pdftex.def Info: ../img/N=3_geodesics.pdf  used on input line 167.
 (pdftex.def)             Requested size: 311.16174pt x 308.15048pt.
-<../img/geodesicsinGR.png, id=1566, 903.375pt x 537.00626pt>
+<../img/geodesicsinGR.png, id=1562, 903.375pt x 537.00626pt>
 File: ../img/geodesicsinGR.png Graphic file (type png)
 <use ../img/geodesicsinGR.png>
-Package pdftex.def Info: ../img/geodesicsinGR.png  used on input line 163.
+Package pdftex.def Info: ../img/geodesicsinGR.png  used on input line 173.
 (pdftex.def)             Requested size: 247.54149pt x 147.14865pt.
- [64 <../img/N=3_Ricci_section.pdf>]
+ [63 <../img/N=3_Ricci_section.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 179.
+(hyperref)                removing `math shift' on input line 189.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 179.
+(hyperref)                removing `math shift' on input line 189.
 
-<../img/singularitiesBetweenEnergiesN=6.pdf, id=1589, 325.215pt x 439.6425pt>
+[64 <../img/N=3_geodesics.pdf> <../img/geodesicsinGR.png>]
+<../img/singularitiesBetweenEnergiesN=6.pdf, id=1598, 325.215pt x 439.6425pt>
 File: ../img/singularitiesBetweenEnergiesN=6.pdf Graphic file (type pdf)
 <use ../img/singularitiesBetweenEnergiesN=6.pdf>
-Package pdftex.def Info: ../img/singularitiesBetweenEnergiesN=6.pdf  used on input line 189.
+Package pdftex.def Info: ../img/singularitiesBetweenEnergiesN=6.pdf  used on input line 199.
 (pdftex.def)             Requested size: 422.77945pt x 571.53517pt.
-<../img/N=5_bar6.pdf, id=1590, 312.16624pt x 45.16875pt>
+<../img/N=5_bar6.pdf, id=1599, 312.16624pt x 45.16875pt>
 File: ../img/N=5_bar6.pdf Graphic file (type pdf)
 <use ../img/N=5_bar6.pdf>
-Package pdftex.def Info: ../img/N=5_bar6.pdf  used on input line 190.
+Package pdftex.def Info: ../img/N=5_bar6.pdf  used on input line 200.
 (pdftex.def)             Requested size: 405.81607pt x 58.71935pt.
 
-Overfull \hbox (10.2145pt too wide) in paragraph at lines 189--191
+Overfull \hbox (10.2145pt too wide) in paragraph at lines 199--201
  [][] |
  []
 
-[65 <../img/N=3_geodesics.pdf> <../img/geodesicsinGR.png>]
-<../img/N=5_det3D.pdf, id=1604, 305.14pt x 275.0275pt>
+[65]
+<../img/N=5_det3D.pdf, id=1605, 305.14pt x 275.0275pt>
 File: ../img/N=5_det3D.pdf Graphic file (type pdf)
 <use ../img/N=5_det3D.pdf>
-Package pdftex.def Info: ../img/N=5_det3D.pdf  used on input line 197.
+Package pdftex.def Info: ../img/N=5_det3D.pdf  used on input line 207.
 (pdftex.def)             Requested size: 396.68193pt x 357.5357pt.
  [66 <../img/singularitiesBetweenEnergiesN=6.pdf> <../img/N=5_bar6.pdf
 
@@ -1374,57 +1335,50 @@ pdfTeX warning: pdflatex (file ../img/N=5_bar6.pdf): PDF inclusion: multiple pdf
 <../img/N=5_geods00.pdf, id=1626, 334.24875pt x 264.99pt>
 File: ../img/N=5_geods00.pdf Graphic file (type pdf)
 <use ../img/N=5_geods00.pdf>
-Package pdftex.def Info: ../img/N=5_geods00.pdf  used on input line 211.
+Package pdftex.def Info: ../img/N=5_geods00.pdf  used on input line 220.
 (pdftex.def)             Requested size: 434.52332pt x 344.48695pt.
 
-Overfull \hbox (21.95836pt too wide) in paragraph at lines 211--212
+Overfull \hbox (21.95836pt too wide) in paragraph at lines 220--221
  [][] |
  []
 
-[67 <../img/N=5_det3D.pdf>]
-<../img/geodesicSolutionsDrawing.png, id=1640, 578.16pt x 580.1675pt>
-File: ../img/geodesicSolutionsDrawing.png Graphic file (type png)
-<use ../img/geodesicSolutionsDrawing.png>
-Package pdftex.def Info: ../img/geodesicSolutionsDrawing.png  used on input line 218.
-(pdftex.def)             Requested size: 202.35902pt x 203.06166pt.
- [68 <../img/N=5_geods00.pdf> <../img/geodesicSolutionsDrawing.png>]
+[67 <../img/N=5_det3D.pdf>] [68 <../img/N=5_geods00.pdf>]
 <../img/infiniteN_transitionCompare.pdf, id=1666, 361.35pt x 241.90375pt>
 File: ../img/infiniteN_transitionCompare.pdf Graphic file (type pdf)
 <use ../img/infiniteN_transitionCompare.pdf>
-Package pdftex.def Info: ../img/infiniteN_transitionCompare.pdf  used on input line 252.
+Package pdftex.def Info: ../img/infiniteN_transitionCompare.pdf  used on input line 261.
 (pdftex.def)             Requested size: 361.34912pt x 241.90315pt.
- [69 <../img/infiniteN_transitionCompare.pdf>]
-<../img/N=10_energiesl.pdf, id=1693, 331.2375pt x 225.84375pt>
+<../img/N=10_energiesl.pdf, id=1669, 331.2375pt x 225.84375pt>
 File: ../img/N=10_energiesl.pdf Graphic file (type pdf)
 <use ../img/N=10_energiesl.pdf>
-Package pdftex.def Info: ../img/N=10_energiesl.pdf  used on input line 274.
+Package pdftex.def Info: ../img/N=10_energiesl.pdf  used on input line 283.
 (pdftex.def)             Requested size: 331.23668pt x 225.84319pt.
-<../img/N=10_energies2.pdf, id=1694, 321.2pt x 221.82875pt>
+<../img/N=10_energies2.pdf, id=1670, 321.2pt x 221.82875pt>
 File: ../img/N=10_energies2.pdf Graphic file (type pdf)
 <use ../img/N=10_energies2.pdf>
-Package pdftex.def Info: ../img/N=10_energies2.pdf  used on input line 280.
+Package pdftex.def Info: ../img/N=10_energies2.pdf  used on input line 289.
 (pdftex.def)             Requested size: 321.19922pt x 221.82819pt.
- [70 <../img/N=10_energiesl.pdf> <../img/N=10_energies2.pdf
+ [69 <../img/infiniteN_transitionCompare.pdf>] [70 <../img/N=10_energiesl.pdf> <../img/N=10_energies2.pdf
 
 pdfTeX warning: pdflatex (file ../img/N=10_energies2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/singularitiesPlots.pdf, id=1731, 289.08pt x 464.73625pt>
+<../img/singularitiesPlots.pdf, id=1728, 289.08pt x 464.73625pt>
 File: ../img/singularitiesPlots.pdf Graphic file (type pdf)
 <use ../img/singularitiesPlots.pdf>
-Package pdftex.def Info: ../img/singularitiesPlots.pdf  used on input line 328.
+Package pdftex.def Info: ../img/singularitiesPlots.pdf  used on input line 337.
 (pdftex.def)             Requested size: 375.80394pt x 604.15704pt.
  [71]
-<../img/N=5_metricDeterminants.pdf, id=1741, 376.40625pt x 498.86375pt>
+<../img/N=5_metricDeterminants.pdf, id=1737, 376.40625pt x 498.86375pt>
 File: ../img/N=5_metricDeterminants.pdf Graphic file (type pdf)
 <use ../img/N=5_metricDeterminants.pdf>
-Package pdftex.def Info: ../img/N=5_metricDeterminants.pdf  used on input line 347.
+Package pdftex.def Info: ../img/N=5_metricDeterminants.pdf  used on input line 356.
 (pdftex.def)             Requested size: 451.68523pt x 598.63351pt.
 File: ../img/N=3_barA.pdf Graphic file (type pdf)
 <use ../img/N=3_barA.pdf>
-Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 348.
+Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 357.
 (pdftex.def)             Requested size: 374.59761pt x 50.58871pt.
 
-Overfull \hbox (39.12027pt too wide) in paragraph at lines 347--349
+Overfull \hbox (39.12027pt too wide) in paragraph at lines 356--358
  [][] |
  []
 
@@ -1432,15 +1386,15 @@ Overfull \hbox (39.12027pt too wide) in paragraph at lines 347--349
 Overfull \vbox (24.84254pt too high) has occurred while \output is active []
 
  [74 <../img/N=5_metricDeterminants.pdf>]
-<../img/fidelity_lineVSgeodesic.pdf, id=1767, 1156.32pt x 722.7pt>
+<../img/fidelity_lineVSgeodesic.pdf, id=1763, 1156.32pt x 722.7pt>
 File: ../img/fidelity_lineVSgeodesic.pdf Graphic file (type pdf)
 <use ../img/fidelity_lineVSgeodesic.pdf>
-Package pdftex.def Info: ../img/fidelity_lineVSgeodesic.pdf  used on input line 356.
+Package pdftex.def Info: ../img/fidelity_lineVSgeodesic.pdf  used on input line 365.
 (pdftex.def)             Requested size: 412.56496pt x 257.84499pt.
-<../img/fidelity_geodesicVSline_fuckedupcolors.png, id=1768, 1034.86626pt x 721.69624pt>
+<../img/fidelity_geodesicVSline_fuckedupcolors.png, id=1764, 1034.86626pt x 721.69624pt>
 File: ../img/fidelity_geodesicVSline_fuckedupcolors.png Graphic file (type png)
 <use ../img/fidelity_geodesicVSline_fuckedupcolors.png>
-Package pdftex.def Info: ../img/fidelity_geodesicVSline_fuckedupcolors.png  used on input line 357.
+Package pdftex.def Info: ../img/fidelity_geodesicVSline_fuckedupcolors.png  used on input line 366.
 (pdftex.def)             Requested size: 330.05322pt x 230.17667pt.
 ) [75 <../img/fidelity_lineVSgeodesic.pdf> <../img/fidelity_geodesicVSline_fuckedupcolors.png>]
 \openout2 = `epilog.aux'.
@@ -1476,7 +1430,12 @@ Underfull \hbox (badness 1178) in paragraph at lines 52--60
 
 
 
-] [79])
+]
+Overfull \hbox (4.70306pt too wide) in paragraph at lines 42--42
+ \OML/lmm/m/it/12 N \OT1/lmr/m/n/12 = 3$. First row from left: $[](^^@[])$, $[](^^@[])$, $[](^^@[])$. |
+ []
+
+[79])
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
@@ -1504,27 +1463,24 @@ See the caption package documentation for explanation.
 
 (./thesis.aux (./title.aux) (./notation.aux) (./preface.aux) (./chap01_intro.aux) (./chap02_geomQM.aux) (./chap03_driving.aux) (./chap04_groundManifold.aux) (./chap05_spin.aux) (./chap06_twoLevel.aux) (./chap07_lipkin.aux) (./epilog.aux) (./bibliography.aux) (./appendix1.aux))
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8882F22EE5794569803CCE1D7F4C5CC1;11367.
+(rerunfilecheck)             Checksum: F78E452D439F1B55789860F9FC105EB6;11241.
  ) 
 Here is how much of TeX's memory you used:
- 28485 strings out of 478353
- 518915 string characters out of 5854635
- 767618 words of memory out of 5000000
- 45435 multiletter control sequences out of 15000+600000
+ 28474 strings out of 478353
+ 518559 string characters out of 5854635
+ 767785 words of memory out of 5000000
+ 45427 multiletter control sequences out of 15000+600000
  494115 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,30n,80p,1382b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,30n,80p,1522b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} </home/strelda/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk>{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmib7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (86 pages, 42181597 bytes).
+Output written on thesis.pdf (86 pages, 42154201 bytes).
 PDF statistics:
- 2204 PDF objects out of 2487 (max. 8388607)
- 1787 compressed objects within 18 object streams
- 476 named destinations out of 1000 (max. 500000)
- 828 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2203 PDF objects out of 2487 (max. 8388607)
+ 1786 compressed objects within 18 object streams
+ 474 named destinations out of 1000 (max. 500000)
+ 815 words of extra memory for PDF output out of 10000 (max. 10000000)
 
