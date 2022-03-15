@@ -115,7 +115,7 @@ and geometric intuition can be seen on fig. \ref{fig:parallelTransportClosed}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{../img/parallelTransportClosedCurve_1.png}
-\caption{Parallel transport around some \greenn{closed curve $C$}. The \red{eigenstate} from $\P\M_s$ can be transported to another eigenstate in $\M_s$. The \reddd{anholonomy} represents their difference.}
+\caption{Parallel transport around some \greenn{closed curve $C$}. The \red{eigenstate} from $\P\M_s$ can be transported to another eigenstate in $\M_s$. The \textcolor{orange}{anholonomy} represents their difference in a \blue{gauge} direction.}
     \label{fig:parallelTransportClosed}
 \end{figure}
 
@@ -239,12 +239,12 @@ Let's first look at $\P\M_0$, which is needed to be \emph{gauge independent} in 
         \braket{o(\llambda)|\bm \nabla o(\llambda)}&\mapsto \braket{o(\llambda)|\bm \nabla o(\llambda)} + i\bm \nabla \varphi(\llambda) 
     \end{split}
 \end{equation} 
-For $\varphi(\llambda)\in \mathcal C^2$ we see from Eq. \ref{eq:vectorPotentialDef}\red{to uz nevidim!!}, that gauge independent choice would be for infinitesimal change for example
+For $\varphi(\llambda)\in \mathcal C^2$, the gauge independent choice would be for infinitesimal change for example
 \begin{equation}
     f=\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)},
     \label{eq:fidelityDefinition}
 \end{equation}
-sometimes referred to as the \emph{fidelity amplitude of a ground state}. The meaning of fidelity as a probability transition between the states during some quench, leads to the definition of \emph{distance on $\M_0$}\footnote{$\d$ notation is in differential geometry assumed to be an exterior differential. On functions, it acts as $\d: \F\M\rightarrow \mathcal{T}_1\M$ and intuitively corresponds to total differential from functional analysis.}
+sometimes referred to as the \emph{fidelity amplitude of a ground state}. The meaning of fidelity as a probability transition between the states during some quench, leads to the definition of \emph{distance on $\M_0$}\footnote{Reminder for $\d$ notation: It is assumed to be an exterior differential. On functions, it acts as $\d: \F\M\rightarrow \T\M$ and intuitively corresponds to total differential from functional analysis.}
 \begin{equation}
     \d s^2 \equiv 1-F(\ket{o(\bm\llambda+\delta\bm\llambda)},\ket{o(\llambda)})= 1-\left|\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)}\right|^2.
     \label{eq:distanceOnM0}
@@ -255,26 +255,56 @@ We can easily check, that the axioms for metric distance holds:
     \item symmetry for any two states $\kpsi$, $\kphi$ is implied by $|\braket{\psi|\varphi}|=|\braket{\varphi|\psi}|$
     \item triangle inequality: $s(\kpsi,\ket{\psi_2}) <s(\kpsi,\kpsi_1) + s(\ket{\psi_1},\ket{\psi_2})$ for any $\ket{\psi_1}$.
 \end{itemize}
-From this, $g^\mu\nu$ is a metric tensor.
+From this, $g^{\mu\nu}$ is a metric tensor.
 
 Because $1-f^2>0$, the first term of Taylor expansion is zero, thus we can use it for the metric tensor definition.
 
 \begin{definition}[Metric tensor on projective state manifolds]
-Because the projective state manifolds $\P\M_s$ are isomorphic to base manifold $\R^n$, we can define $g_{\mu\nu}: \R^n\times\R^n\rightarrow \R$ from
+Because the projective state manifolds $\P\M_s$ are isomorphic to base manifold $\R^n$, we can define
     \begin{equation}
-        g_{jk}\d \bm \lambda^j \d\bm \lambda^k+\O(\lambda^3) \equiv \d s^2 = 1-\left|\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)}\right|^2..
-        \label{eq:metricTensorDef}
+        \begin{split}
+            g_{\mu\nu}&: \T\mathcal U\times \T\mathcal U\rightarrow \R \\
+            g_{jk}\d \bm \lambda^j \d\bm \lambda^k+\O(\lambda^3) \equiv \d s^2 &\coloneqq 1-\left|\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)}\right|^2.
+            \label{eq:metricTensorDef}
+        \end{split}
     \end{equation} 
    
 \end{definition}
-Let's decompose it to two parts with clear physical meaning.
+Even though we call $g_{\mu\nu}$ the metric tensor \emph{on projective state manifolds}, it takes forms from $\T\mathcal U$. Using abstract indices this means
+\begin{equation}
+    g^{\mu\nu}\d_\mu \llambda \d_\nu \llambda.
+\end{equation}
+This whole procedure can be made more rigorous using so-called \emph{vector bundles}. In our case we can use the bijection $\redd{\T\mathcal U}\times \redd{\T\mathcal U} \rightarrow \bluee{\T\M}\times \bluee{\T\M}$ and simply write
+\begin{equation}
+    g_{jk}\redd{\d\llambda^j \d\llambda^k} = g_{jk}\frac{\redd{\d\llambda^j}}{\bluee{\d\bm v^l}}\frac{\redd{\d\llambda^k}}{\bluee{\d\bm v^m}} \bluee{\d\bm v^l \d \bm v^m} \eqqcolon G_{lm}\bluee{\d\bm v^l \d \bm v^m}.
+\end{equation}
+In calculations only $g_{\mu\nu}$ is used, thus what should have been called \emph{the metric tensor on state manifolds} $G_{\mu\nu}$ leaves without proper name. And some things that should not have been forgotten were lost \citep{lordOfTheRings}.
 
-This metric is called the \emph{Geometric tensor}, and can be expressed as 
+\subsubsection{Complex tensor generalization}
+Because the metric tensor is an analytical real function of coordinates, we can make an analytical continuation and say that it is in fact a real part of a more general \emph{Geometric tensor}, defined as
+
 \begin{equation}
     \chi_{\mu\nu}\coloneqq \braket{\partial_\mu o|\partial_\nu o}_c \equiv \braket{\partial_\mu o|\partial_\nu o} - \braket{\partial_\mu o|o}\braket{o|\partial_\nu o},
     \label{eq:geometricTensor}
 \end{equation}
-where shortened notation $\partial_\nu\coloneqq\pder{}{\lambda^\nu}$ was used. 
+where shortened notation $\partial_\nu\coloneqq\pder{}{\lambda^\nu}$ was used. The subscript $c$ means \emph{connected} and is defined by the formula.
+
+
+The Geometric tensor can be decomposed to  real and imaginary part as
+\begin{equation}
+    \chi_{\mu\nu} \equiv g_{\mu\nu} - i\frac{1}{2} \nu_{\mu\nu},
+\end{equation}
+where the Real part is our well-known metric, sometimes called the \emph{Fubini-Study tensor}\footnote{In some literature, this is called the Geometric tensor}. It can also be expressed as
+\begin{equation}
+    g_{\mu\nu} = \frac{\chi_{\mu\nu}+\chi_{\nu\mu}}{2} = \Re\braket{\partial_\mu o|\partial_\nu o}_c = \Re \sum_{o\neq j}\frac{\braket{o|\pder{\H}{\lambda^\mu}|j}\braket{j|\pder{\H}{\lambda^\nu}|o}}{(E_o-E_j)^2}.
+    \label{eq:metrictensorREdefinition}
+\end{equation}
+The second newly introduced tensor $\nu_{\mu\nu}$ is called the \emph{curvature tensor}, or \emph{Berry curvature}. It can be expressed as
+\begin{equation}
+        \nu_{\mu\nu} = i(\chi_{\mu\nu}-\chi_{\nu\mu})= \Im\braket{o|[\curlyleftarrow{\partial}_\nu,\partial_\mu]|o}_c = -2 \Im \sum_{o\neq j}\frac{\braket{o|\pder{\H}{\lambda^\mu}|j}\braket{j|\pder{\H}{\lambda^\nu}|o}}{(E_o-E_j)^2},
+    \label{eq:geom.tensorREdefinition}
+\end{equation}
+where $\curlyleftarrow{\partial}_\nu$ affects the covector on the left.
 
 %taylor is wrong
 % \begin{proof}[Proof for Geometric tensor expression] In one-dimensional case we get from eq. \ref{eq:fidelityDefinition} using Taylor expansion and shortened notation $o\coloneqq o(\lambda)$
@@ -294,51 +324,37 @@ where shortened notation $\partial_\nu\coloneqq\pder{}{\lambda^\nu}$ was used.
 %     Because only symmetric part contributes in the sum in eq. \ref{eq:metricTensorDef}, this proves symmetric part of equation \ref{eq:geometricTensor} and shows, that some more general tensor (\emph{geometric tensor}) exists.
 % \end{proof}
 
-It is practical to decompose it to the geometric tensor
-\begin{equation}
-    \chi_{\mu\nu} \equiv g_{\mu\nu} - i\frac{1}{2} \nu_{\mu\nu},
-\end{equation}
-where the \emph{Fubini-Study tensor}\footnote{In some literature, this is called Geometric tensor}, as it's called, is metric on $\P\M_0$ and can be expressed as
-\begin{equation}
-    g_{\mu\nu} = \frac{\chi_{\mu\nu}+\chi_{\nu\mu}}{2} = \Re\braket{\partial_\mu o|\partial_\nu o}_c = \Re \sum_{o\neq j}\frac{\braket{o|\pder{\H}{\lambda^\mu}|j}\braket{j|\pder{\H}{\lambda^\nu}|o}}{(E_o-E_j)^2},
-    \label{eq:metrictensorREdefinition}
-\end{equation}
-and the \emph{curvature tensor} a.k.a. \emph{Berry curvature} is
-\begin{equation}
-        \nu_{\mu\nu} = i(\chi_{\mu\nu}-\chi_{\nu\mu})= \Im\braket{o|[\curlyleftarrow{\partial}_\nu,\partial_\mu]|o}_c = -2 \Im \sum_{o\neq j}\frac{\braket{o|\pder{\H}{\lambda^\mu}|j}\braket{j|\pder{\H}{\lambda^\nu}|o}}{(E_o-E_j)^2},
-    \label{eq:geom.tensorREdefinition}
-\end{equation}
-where $\curlyleftarrow{\partial}_\nu$ affects the covector on the left.
 
 
-\subsection{Derivation of the geometric tensor}
-\label{sec:derivationOfGeometricTensor}
-To prove the correspondence of geometric tensor, described by eq. \ref{eq:geometricTensor}, to distance on $\M_0$, see eq. \ref{eq:distanceOnM0}, we start with eigenstate $\ket{o(\llambda)}\in \M_0\cap \H(\llambda)$. Changing parameters $\llambda$ to $\llambda+\delta \llambda$ results in Hamiltonian $\HH_f$ with eigenstates $\ket{s(\llambda+\delta \llambda)}\in \M_s\cap\H(\llambda+\delta \llambda)$, meaning it can be excited. Probability amplitude of going to such state is
-\begin{equation}
-    \begin{split}
-        a_s&=\braket{s(\llambda+\delta\llambda)|o(\llambda)}\approx \delta\lambda^\mu\braket{\partial_\mu s(\llambda)|o(\llambda)} \\
-        &= -\delta\lambda^\mu\braket{s(\llambda)|\partial_\mu|o(\llambda)}.
-    \end{split}
-\end{equation}
+\begin{proof}[\textbf{Proof of the  metric tensor definitions correspondence}]\
+    \label{sec:derivationOfGeometricTensor}
 
-If we introduce the \emph{gauge potential}, aka \emph{calibration potential}, as\footnote{In SI units, the gauge potential is $\AA_\mu\equiv i\hbar\partial_{\mu}$}
-\begin{equation}
-    \AA_\mu\equiv i\partial_{\mu},
-\end{equation}
-the probability amplitude can be expressed as
-\begin{equation}
-   a=i\braket{s(\llambda)|\AA_\mu |o(\llambda)}\delta\lambda^\mu,
-   \label{eq:probabilityOfTransitionIsGauge}
-\end{equation}
-which has meaning of matrix elements of the gauge potential. Probability of the excitation i.e. transition to any state $s>0$ from ground state is then (omitting the $\llambda$ dependence in notation)
-\begin{equation}
-    \begin{split}
-        \sum_{s\neq 0}|a_s|^2&=  \sum_{s\neq 0} \delta \lambda^\mu \delta \lambda^\nu\braket{o|\AA_\mu|s}\braket{s|\AA_\nu|o}+\O(|\delta \lambda^3|) \\
-        &= \delta \lambda^\mu \delta \lambda^\nu\braket{o|\AA_\mu \AA_\nu|o}_c\eqqcolon \delta \lambda^\mu \delta \lambda^\nu\chi_{\mu\nu}+\O(|\delta \lambda^3|),
-    \end{split}
-\end{equation}
-where last term defines the geometric tensor.
+    To prove the correspondence of geometric tensor, described by Eq. \ref{eq:geometricTensor}, to distance on $\M_0$ in Eq. \ref{eq:distanceOnM0}, we start with eigenstate $\ket{o(\llambda)}\in \M_0\cap \H(\llambda)$. Changing parameters $\llambda$ to $\llambda+\delta \llambda$ results in Hamiltonian $\HH_f$ with eigenstates $\ket{s(\llambda+\delta \llambda)}\in \M_s\cap\H(\llambda+\delta \llambda)$, meaning it can be excited. Probability amplitude of going to such state is
+    \begin{equation}
+        \begin{split}
+            a_s&=\braket{s(\llambda+\delta\llambda)|o(\llambda)}\approx \delta\lambda^\mu\braket{\partial_\mu s(\llambda)|o(\llambda)} \\
+            &= -\delta\lambda^\mu\braket{s(\llambda)|\partial_\mu|o(\llambda)}.
+        \end{split}
+    \end{equation}
 
+    If we introduce the \emph{gauge potential}, aka \emph{calibration potential}, as\footnote{In SI units, the gauge potential is $\AA_\mu\equiv i\hbar\partial_{\mu}$}
+    \begin{equation}
+        \AA_\mu\coloneqq i\partial_{\mu},
+    \end{equation}
+    the probability amplitude can be expressed as
+    \begin{equation}
+    a=i\braket{s(\llambda)|\AA_\mu |o(\llambda)}\delta\lambda^\mu,
+    \label{eq:probabilityOfTransitionIsGauge}
+    \end{equation}
+    which has meaning of matrix elements of the gauge potential. Probability of the excitation i.e. transition to any state $s>0$ from ground state is then (omitting the $\llambda$ dependence in notation)
+    \begin{equation}
+        \begin{split}
+            \sum_{s\neq 0}|a_s|^2&=  \sum_{s\neq 0} \delta \lambda^\mu \delta \lambda^\nu\braket{o|\AA_\mu|s}\braket{s|\AA_\nu|o}+\O(|\delta \lambda^3|) \\
+            &= \delta \lambda^\mu \delta \lambda^\nu\braket{o|\AA_\mu \AA_\nu|o}_c\eqqcolon \delta \lambda^\mu \delta \lambda^\nu\chi_{\mu\nu}+\O(|\delta \lambda^3|),
+        \end{split}
+    \end{equation}
+    where last term defines the geometric tensor.
+\end{proof}
 
 
 

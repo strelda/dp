@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -69,5 +69,11 @@ P.~Petersen.
 \newblock \emph{Riemannian Geometry}.
 \newblock Springer Verlag, 1998.
 \newblock ISBN 978-0-387-29403-2.
+
+\bibitem[Tolkien(1977)]{lordOfTheRings}
+J.~R.~R. Tolkien.
+\newblock \emph{The Lord of the Rings}.
+\newblock Folio Society, 1977.
+\newblock ISBN 978-0458907502.
 
 \end{thebibliography}

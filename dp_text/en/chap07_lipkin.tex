@@ -291,7 +291,7 @@ For higher dimensions we see the same characteristic behaviour in the energy spe
     \label{fig:N=10_energies2}    
 \end{figure}
 
-Special attention was given to the spectrum degeneracies between the zeroth and the first energy level, because those influence the metric tensor and geodesics. Their exact calculation is numerically costly, and only the first few cases, namely, $N\in\{3,4,5,6,7\}$, were calculated, see Tab. \ref{tab:singularities}. Those were later proven up to a numerical precision for cases $N\leq1000$.  
+Special attention was given to the spectrum degeneracies between the zeroth and the first energy level, because those influence the metric tensor and geodesics. Their exact calculation is numerically costly, and only the first few cases, namely, $N\in\{3,4,5,6,7\}$, were calculated, see Tab. \ref{tab:singularities}. 
 \begin{table}[H]
     \centering
     \begin{tabular}{c||c|c|c}
@@ -302,10 +302,12 @@ Special attention was given to the spectrum degeneracies between the zeroth and 
      6&$(-5          ;\sqrt{\frac{6}{7}}) $&$(-1          ;\sqrt{\frac{2}{3}}) $   & $(-\frac{1}{5};\sqrt{\frac{6}{11}})$     \\
      7&$(-\frac{5}{2};\sqrt{\frac{7}{9}}) $&$(-\frac{3}{4};\sqrt{\frac{7}{11}}) $  & $(-\frac{1}{6};\sqrt{\frac{7}{13}})$ 
     \end{tabular}
-    \caption{Singularities between the zeroth and first energy levels for dimensions 3--7. Subsript $l(r)$ means the most \emph{left(right)-wise} positioned coordinates in the $(\lambda,\chi)$-plot.}
+    \caption{Singularities between the zeroth and first energy levels for dimensions 3--7. Subscript $l(r)$ means the most \emph{left(right)-wise} positioned coordinates in the $(\lambda,\chi)$-plot.}
     \label{tab:singularities}
     \end{table} 
-The observed formula for $(\lambda_l,\chi_l)$ and $(\lambda_r,\chi_r)$, i.e., those with minimal, resp. maximal $\lambda$ coordinate is
+
+From the singularity behavior in low dimensions, one might see the pattern
+ for $(\lambda_l,\chi_l)$ and $(\lambda_r,\chi_r)$, i.e., those with minimal, resp maximal $\lambda$ coordinate is
 \begin{equation}
     (\lambda_l ;\pm\chi_l)= \begin{cases}
         \left(1-\frac{N}{2};\sqrt{\frac{N}{N+2}}\right) & , N\geq 3,N\text{ is odd}\\
@@ -318,8 +320,10 @@ The observed formula for $(\lambda_l,\chi_l)$ and $(\lambda_r,\chi_r)$, i.e., th
         \left(\frac{1}{1-N};\sqrt{\frac{N}{2N-1}}\right)\quad , N\geq 3.
         \label{eq:singularityCoordinateFormulaRight}
 \end{equation}
+Those were numerically proven to be singularities for cases up to $N=1000$. 
+
 Dimensions 3 to 10 are shown in Fig. \ref{fig:singularities3to10}.
-In addition, the degeneracies between the zeroth and the first energy levels belong to the separatrix described by Eq. \ref{eq:separatrix}. Due to this, the position of the singularities is constrained to the separatrix between points $(\lambda_l,\pm\chi_l)$ and $(\lambda_r,\pm\chi_r)$.
+In addition, the degeneracies between the zeroth and the first energy levels belong to the separatrix described by Eq. \ref{eq:separatrix}. Due to this, the position of the singularities is constrained to the \emph{second order phase transition line} between points $(\lambda_l,\pm\chi_l)$ and $(\lambda_r,\pm\chi_r)$.
 
 
 
@@ -328,14 +332,15 @@ In the limit $N\rightarrow\infty$ they converge to
     \lim_{N\rightarrow \infty}(\lambda_l ;\pm\chi_l)&= \left(-\infty,1\right)\\
     \lim_{N\rightarrow \infty}(\lambda_r ;\pm\chi_r)&= \left(0,\frac{1}{\sqrt{2}}\right).
 \end{align*}
-\textbf{One would expect the whole separatrix to be divergent, thus the left limit to be in the $-\infty$, as it is, and the right one to be at the point $(\lambda;\chi)=(1;0)$, which is not the case}. \textcolor{red}{This might mean that some new singularities are being constructed right of $\lambda_r$ and I will look at it.} In addition, because for $N\rightarrow\infty$ there is an infinite number of singularities and because the whole separatrix is divergent, they need to be dense.
+
+This means that the whole separatrix is not divergent in the limit $N\rightarrow \infty$. For that the $\chi_r\rightarrow 0$ limit would be needed. Because for $N\rightarrow\infty$ there is an infinite number of singularities and because the whole separatrix is divergent, they need to be dense. \red{this is contradiction, so either the whole separatrix is not divergent, or there appear some points right from $\lambda_r$.}
 
 
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.3]{../img/singularitiesPlots.pdf}
-    \caption{Spectrum degeneracy between $E_0$ and $E_1$. Hamiltonian dimensions are 1,3,5,7 in the first column and 2,4,6,8 in the second column. Black crosses mark most left-wise and right-wise singularity and the background corresponds to the metric tensor determinant. Other singularities are also well visible in the determinant.}
+    \caption{Spectrum degeneracies between $E_0$ and $E_1$. Hamiltonian dimensions are 1,3,5,7 in the first column and 2,4,6,8 in the second column. Black crosses mark most left-wise and right-wise singularity and the background corresponds to the metric tensor determinant. Other singularities are also well visible in the determinant.}
     \label{fig:singularities3to10}    
 \end{figure}
 
@@ -347,23 +352,23 @@ In the limit $N\rightarrow\infty$ they converge to
 
 
 
-\section{Higher state manifolds}
+% \section{Higher state manifolds}
 
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=1.2]{../img/N=5_metricDeterminants.pdf}
-    \includegraphics[scale=1.2]{../img/N=3_barA.pdf}
-    \caption{Arctangens of the metric tensor for higher state manifolds. By  rows: $M_0$, $M_1$; $M_2$, $M_3$; $M_4$, $M_5$.}
-    \label{fig:higherStateManifolds}    
-\end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[scale=1.2]{../img/N=5_metricDeterminants.pdf}
+%     \includegraphics[scale=1.2]{../img/N=3_barA.pdf}
+%     \caption{Arctangens of the metric tensor for higher state manifolds. By  rows: $M_0$, $M_1$; $M_2$, $M_3$; $M_4$, $M_5$.}
+%     \label{fig:higherStateManifolds}    
+% \end{figure}
 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{../img/fidelity_lineVSgeodesic.pdf}
-    \includegraphics[width=0.8\textwidth]{../img/fidelity_geodesicVSline_fuckedupcolors.png}
-    \caption{\textcolor{gray}{Infidelity difference between line and geodesic, above picture is original from Felipe, bottom one is edited in GIMP to see the difference more clearly.}}
-    \label{fig:higherStateManifolds}    
-\end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=1\textwidth]{../img/fidelity_lineVSgeodesic.pdf}
+%     \includegraphics[width=0.8\textwidth]{../img/fidelity_geodesicVSline_fuckedupcolors.png}
+%     \caption{\textcolor{gray}{Infidelity difference between line and geodesic, above picture is original from Felipe, bottom one is edited in GIMP to see the difference more clearly.}}
+%     \label{fig:higherStateManifolds}    
+% \end{figure}

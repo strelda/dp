@@ -23,45 +23,45 @@ Warning--I didn't find a database entry for "polkovnikov"
 Warning--I didn't find a database entry for "Bukov2019"
 Warning--empty journal in berry1989
 Warning--empty publisher in claudio
-You've used 9 entries,
+You've used 10 entries,
             2773 wiz_defined-function locations,
-            679 strings with 6614 characters,
-and the built_in function-call counts, 3510 in all, are:
-= -- 308
-> -- 157
-< -- 7
-+ -- 57
-- -- 48
-* -- 261
-:= -- 575
-add.period$ -- 40
-call.type$ -- 9
-change.case$ -- 39
-chr.to.int$ -- 9
-cite$ -- 20
-duplicate$ -- 181
-empty$ -- 312
-format.name$ -- 57
-if$ -- 721
+            686 strings with 6711 characters,
+and the built_in function-call counts, 3815 in all, are:
+= -- 333
+> -- 167
+< -- 8
++ -- 61
+- -- 51
+* -- 277
+:= -- 626
+add.period$ -- 44
+call.type$ -- 10
+change.case$ -- 42
+chr.to.int$ -- 10
+cite$ -- 22
+duplicate$ -- 201
+empty$ -- 344
+format.name$ -- 61
+if$ -- 785
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 13
-newline$ -- 66
-num.names$ -- 36
-pop$ -- 87
+missing$ -- 15
+newline$ -- 72
+num.names$ -- 40
+pop$ -- 98
 preamble$ -- 1
-purify$ -- 34
+purify$ -- 37
 quote$ -- 0
-skip$ -- 118
+skip$ -- 130
 stack$ -- 0
-substring$ -- 85
-swap$ -- 11
+substring$ -- 87
+swap$ -- 12
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 79
+type$ -- 85
 warning$ -- 2
-while$ -- 32
+while$ -- 35
 width$ -- 0
-write$ -- 143
+write$ -- 157
 (There were 7 warnings)
