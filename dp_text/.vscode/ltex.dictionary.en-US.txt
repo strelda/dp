@@ -13,3 +13,5 @@ exponentials
 Eq
 Arctangent
 geodesical
+Counter-diabatic
+counter-diabatic

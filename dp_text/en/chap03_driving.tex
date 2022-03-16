@@ -274,7 +274,7 @@ Even though we call $g_{\mu\nu}$ the metric tensor \emph{on projective state man
 \begin{equation}
     g^{\mu\nu}\d_\mu \llambda \d_\nu \llambda.
 \end{equation}
-This whole procedure can be made more rigorous using so-called \emph{vector bundles}. In our case we can use the bijection $\redd{\T\mathcal U}\times \redd{\T\mathcal U} \rightarrow \bluee{\T\M}\times \bluee{\T\M}$ and simply write
+This whole procedure can be made more rigorous using so-called \emph{vector bundles}, see \cite{lu}[Chap. 7]. In our case we can use the bijection $\redd{\T\mathcal U}\times \redd{\T\mathcal U} \rightarrow \bluee{\T\M}\times \bluee{\T\M}$ and simply write
 \begin{equation}
     g_{jk}\redd{\d\llambda^j \d\llambda^k} = g_{jk}\frac{\redd{\d\llambda^j}}{\bluee{\d\bm v^l}}\frac{\redd{\d\llambda^k}}{\bluee{\d\bm v^m}} \bluee{\d\bm v^l \d \bm v^m} \eqqcolon G_{lm}\bluee{\d\bm v^l \d \bm v^m}.
 \end{equation}
@@ -416,33 +416,40 @@ Those singularities appear in the system due to energy spectrum degeneracies, in
 
 \newpage
 \section{\red{General fidelity driving}}
+Until now, our interest was mostly in projective state manifolds $\P\M_s$. If every state during the driving belongs to $\P\M_s$, the fidelity $F=1$ all the time, and we are talking about \emph{unit fidelity driving}. But how to calculate the case when the fidelity is "almost one"?
+
+
 
 \subsection{APT}
-From \cite{Rigolin2008}.
-One important thing to bare in mind is \emph{locality of variables}. Let's call variable $V(s)$ \emph{\bluee{local}} if it depends only on infinitesimal sirrounding of $s$. These variables will be in shades of blue and non-local variables in shades of red.
+Following the article from \cite{Rigolin2008}, we approximate the wave-function by series. Because every element will then be decomposed into another series, we will bear in mind is the \emph{locality of variables}. Let's call variable $V(s)$ \emph{\bluee{local}} if it depends only on infinitesimal surrounding of $s$. These variables will be in shades of \bluee{blue} and \redd{non-local} variables in shades of \redd{red}.
 
-The power series will be derived using a small parameter $v=1/T$. Starting again with
+We will be interested in some driving along path $\{\gamma(t)|t\in[0,T]\}$ with an initial condition
+\begin{equation}
+    \ket{\psi(0)}=\ket{\psi_0}\in \P\M_0.
+\end{equation}
+One might directly solve the Schr\"odinger equation here, but we would like to find more simple solution, which holds for $F\approx 1$.
+
+The power series will be derived using a small parameter $v\coloneqq 1/T$
 \begin{equation}
     \red{\ket{\Psi(s)}}=\sum_{p=0}^\infty v^p \red{\ket{\Psi^{(p)}(s)}},
     \label{eq:mainSeries}
 \end{equation}
-
 for 
 \begin{equation}
     \red{\ket{\Psi^{(p)}(s)}}=\sum_{n=0} e^{-\frac{i}{v} \reddd{\omega_n(s)}}e^{i\reddd{\gamma_n(s)}}\redd{b_n^{(p)}(s)}\bluee{\ket{n(s)}}.
 \end{equation}
-Here the
+Here we have
 \begin{align}
-    \reddd{\omega_n(s)} &\coloneqq \frac{1}{\hbar}\int_0^s \bluee{E_n(s')}\d s'\\
-    \reddd{\gamma_n(s)} &\coloneqq i\int_0^s \bluee{\braket{n(s')|\frac{\d}{\d s'}n(s')}}\d s' \equiv i\int_0^s \bluee{M_{nn}(s')}\d s'
+    \text{dynamical phase }\reddd{\omega_n(s)} &\coloneqq \frac{1}{\hbar}\int_0^s \bluee{E_n(s')}\d s',\\
+    \text{Berry phase }\reddd{\gamma_n(s)} &\coloneqq i\int_0^s \bluee{\braket{n(s')|\frac{\d}{\d s'}n(s')}}\d s' \equiv i\int_0^s \bluee{M_{nn}(s')}\d s'
     \label{eq:gammadef}
 \end{align}
-are so-called \redd{dynamical} resp. \redd{Berry (geometric) phase} and $\bluee{\ket{n(s)}}$ are solution to
+and $\bluee{\ket{n(s)}}$ are solution to
 \begin{equation}
     \bluee{\HH(s)\ket{n(s)}}=\bluee{E_n(s) \ket{n(s)}}.
 \end{equation}
 Variables $\reddd{\omega_n(s)}$ and $\reddd{\gamma_n(s)}$ are defined using integration over the whole protocol, therefore there are \emph{\red{non-local variables}}.
-The problem now lies in determining $\redd{b_n^{(p)}(s)}$, which is also \red{nonlocal}. Because it depends on its relative \reddd{geometric} and \reddd{dynamical phase} to other \bluee{energy levels}, lets write it as a series
+The problem now lies in determining $\redd{b_n^{(p)}(s)}$, which is also \red{non-local}. Because it depends on its relative \reddd{geometric} and \reddd{dynamical phase} to other \bluee{energy levels}, let's write it as a series
 \begin{equation}
     \redd{b_n^{(p)}(s)}=\sum_{m=0} e^{\frac{i}{v}\reddd{\omega_{nm}(s)}}e^{-i\reddd{\gamma_{nm}(s)}}\blue{b_{nm}^{(p)}(s)},
 \end{equation}
@@ -459,7 +466,7 @@ Because the initial state is eigenstate, we get initial conditions $\blue{b_{nm}
     \frac{i}{\hbar}\bluee{\Delta_{nm}(s)}\blue{b_{nm}^{(p+1)}(s)}+\blue{\dot b_{nm}^{(p)}(s)}+\bluee{W_{nm}(s)} \blue{b_{nm}^{(p)}(s)}+\sum_{k=0,k\neq n}\bluee{M_{nk}(s)}\bluee{b_{km}^{(p)}(s)}=0,
     \label{eq:bSolution}
 \end{equation}
-for $\bluee{\Delta_nm(s)}\coloneqq \bluee{E_m-E_n}$, $\bluee{W_{nm}(s)}\coloneqq \bluee{M_{nn}(s)}-\bluee{M_{mm}(s)}$, where $\bluee{M_{mn}}$ is defined in Eq. \ref{eq:gammadef}. We can see that $\blue{b_{mn}^{(p)}}$, as a solution to Eq. \ref{eq:bSolution},\textbf{ only depends on difference between energy levels, eigenstates during the path and their directional derivatives. Not on the path itself}. All of those are easily obtained, once the driving path is prescribed.
+for $\bluee{\Delta_nm(s)}\coloneqq \bluee{E_m-E_n}$, $\bluee{W_{nm}(s)}\coloneqq \bluee{M_{nn}(s)}-\bluee{M_{mm}(s)}$, where $\bluee{M_{mn}}$ is defined in Eq. \ref{eq:gammadef}. We can see that $\blue{b_{mn}^{(p)}}$, as a solution to Eq. \ref{eq:bSolution}, only depends on difference between energy levels, eigenstates during the path and their directional derivatives. Not on the path itself. All of those are easily obtained, once the driving path is prescribed.
 
     
 
@@ -473,6 +480,14 @@ for $\bluee{\Delta_nm(s)}\coloneqq \bluee{E_m-E_n}$, $\bluee{W_{nm}(s)}\coloneqq
 
 
 \section{How to advantageously drive the system}
+In experimental setting, one needs to achieve as high fidelity as possible. Generally we have three methods\footnote{There is a nice analogy with driving a toy car \gray{(a quantum state)} in a curved terrain \gray{(a Hilbert space)}. To avoid the car flying in the air \gray{(the state excitation)}, you can either drive slowly, or you can go around the hills, or you can have a friend \gray{(a counter-diabatic element)}, who will push the car against the ground every time it is supposed to jump.}:
+\begin{itemize}
+    \item Close adiabatic driving - changing the driving parameters slowly, so the system has plenty of time to collapse into the ground state,
+    \item Path variation - varying the driving trajectory, avoiding the topological defects on manifolds,
+    \item Counter-diabatic driving - countering the excitation by adding some element to the Hamiltonian, making the fidelity precisely $1$.
+\end{itemize}
+
+
 
 \subsection{Adiabatic driving}
 Adiabatic transformation is such a transformation from $\M$ to $\M$, which does not excite the system, meaning the fidelity $f=1$. Generally it can be achieved by two ways -- infinitely slow transformation of states, or adding some \emph{counter-diabatic elements} to the Hamiltonian to counter the excitation.

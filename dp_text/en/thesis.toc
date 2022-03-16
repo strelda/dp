@@ -2,42 +2,36 @@
 \contentsline {chapter}{Introduction}{4}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Mathematical introduction}{5}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Fiber bundle}{8}{section.1.1}%
-\contentsline {section}{\numberline {1.2}\leavevmode {\color {red}Vector Bundle}}{9}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Connection on vector bundles}{9}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Metric on vector bundles}{9}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}\leavevmode {\color {red}Sections}}{9}{section.1.3}%
-\contentsline {section}{\numberline {1.4}\leavevmode {\color {red}Parallel transport on vector bundles}}{9}{section.1.4}%
-\contentsline {section}{\numberline {1.5}\leavevmode {\color {red}Antisymmetric tensors}}{9}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Riemannian geometry}{10}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Geometry in 2 dimensions}{11}{section.1.7}%
-\contentsline {chapter}{\numberline {2}\leavevmode {\color {red}Geometrization of quantum mechanics}}{12}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Kahler manifolds}{12}{section.2.1}%
-\contentsline {section}{\numberline {2.2}From the projective Hilbert space to state manifolds}{12}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Projective Hilbert space}{12}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Restriction to eigenstate manifolds}{13}{subsection.2.2.2}%
-\contentsline {chapter}{\numberline {3}Theory behind quantum driving}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Space of all states}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Rays and bare states}{16}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Sectioning the space}{16}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Transporting states on state manifolds}{17}{section.3.4}%
-\contentsline {subsubsection}{Dynamical phase}{18}{section*.9}%
-\contentsline {subsubsection}{Geometrical phase}{18}{section*.10}%
-\contentsline {subsection}{\numberline {3.4.1}3-dimensional parametric space $\mathcal {U}$}{19}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}Fidelity}{20}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Metric and geometric tensor}{21}{section.3.6}%
-\contentsline {subsubsection}{Complex tensor generalization}{22}{section*.12}%
-\contentsline {section}{\numberline {3.7}\leavevmode {\color {red}General fidelity driving}}{24}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}APT}{24}{subsection.3.7.1}%
-\contentsline {section}{\numberline {3.8}How to advantageously drive the system}{25}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Adiabatic driving}{25}{subsection.3.8.1}%
+\contentsline {section}{\numberline {1.2}Riemannian geometry}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Geometry in 2 dimensions}{10}{section.1.3}%
+\contentsline {chapter}{\numberline {2}\leavevmode {\color {red}Geometrization of quantum mechanics}}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Kahler manifolds}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}From the projective Hilbert space to state manifolds}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Projective Hilbert space}{11}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Restriction to eigenstate manifolds}{12}{subsection.2.2.2}%
+\contentsline {chapter}{\numberline {3}Theory behind quantum driving}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Space of all states}{14}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Rays and bare states}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Sectioning the space}{15}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Transporting states on state manifolds}{16}{section.3.4}%
+\contentsline {subsubsection}{Dynamical phase}{17}{section*.9}%
+\contentsline {subsubsection}{Geometrical phase}{17}{section*.10}%
+\contentsline {subsection}{\numberline {3.4.1}3-dimensional parametric space $\mathcal {U}$}{18}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}Fidelity}{19}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Metric and geometric tensor}{20}{section.3.6}%
+\contentsline {subsubsection}{Complex tensor generalization}{21}{section*.12}%
+\contentsline {section}{\numberline {3.7}\leavevmode {\color {red}General fidelity driving}}{23}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}APT}{23}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.8}How to advantageously drive the system}{24}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Adiabatic driving}{24}{subsection.3.8.1}%
 \contentsline {subsubsection}{Slow transports}{25}{section*.13}%
 \contentsline {subsection}{\numberline {3.8.2}Counterdiabatic driving}{26}{subsection.3.8.2}%
 \contentsline {subsubsection}{Gauge potentials}{26}{section*.14}%
-\contentsline {subsubsection}{Classical gauge potential}{27}{section*.15}%
+\contentsline {subsubsection}{Classical gauge potential}{26}{section*.15}%
 \contentsline {subsubsection}{Quantum gauge potential}{27}{section*.16}%
 \contentsline {subsubsection}{Adiabatic gauge potential}{28}{section*.17}%
 \contentsline {subsubsection}{Performing counter-diabatic driving}{29}{section*.18}%
-\contentsline {subsubsection}{Explicit form}{30}{section*.20}%
+\contentsline {subsubsection}{Explicit form}{29}{section*.20}%
 \contentsline {chapter}{\numberline {4}Driving on the ground state manifold}{31}{chapter.4}%
 \contentsline {subsection}{\numberline {4.0.1}Driving speed}{32}{subsection.4.0.1}%
 \contentsline {section}{\numberline {4.1}The role of geodesics}{32}{section.4.1}%
