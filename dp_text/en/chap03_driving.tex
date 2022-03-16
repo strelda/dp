@@ -223,7 +223,7 @@ We can see it's physical meaning on the state manifolds, imagining \emph{quantum
 
 
 
-\section{\red{Metric and geometric tensor}}
+\section{Metric and geometric tensor}
 As a playground for this chapter, we will choose the projective ground state manifold $\P\M_0\equiv \cup_{\llambda\in\R^d} \{\ket{o(\llambda)}\}$, but it can be easily generalized to any projective state manifold $\P\M_s$. This means the geometrical phase will be neglected, because the states are the physical states from the projective Hilbert space.
 % Our first guess might be
 % \begin{equation}
@@ -278,7 +278,7 @@ This whole procedure can be made more rigorous using so-called \emph{vector bund
 \begin{equation}
     g_{jk}\redd{\d\llambda^j \d\llambda^k} = g_{jk}\frac{\redd{\d\llambda^j}}{\bluee{\d\bm v^l}}\frac{\redd{\d\llambda^k}}{\bluee{\d\bm v^m}} \bluee{\d\bm v^l \d \bm v^m} \eqqcolon G_{lm}\bluee{\d\bm v^l \d \bm v^m}.
 \end{equation}
-In calculations only $g_{\mu\nu}$ is used, thus what should have been called \emph{the metric tensor on state manifolds} $G_{\mu\nu}$ leaves without proper name. And some things that should not have been forgotten were lost \citep{lordOfTheRings}.
+In calculations only $g_{\mu\nu}$ is used, thus what should have been called \emph{the metric tensor on state manifolds} $G_{\mu\nu}$ leaves without proper name. "And some things that should not have been forgotten were lost." \citep{lordOfTheRings}
 
 \subsubsection{Complex tensor generalization}
 Because the metric tensor is an analytical real function of coordinates, we can make an analytical continuation and say that it is in fact a real part of a more general \emph{Geometric tensor}, defined as
@@ -337,7 +337,7 @@ where $\curlyleftarrow{\partial}_\nu$ affects the covector on the left.
         \end{split}
     \end{equation}
 
-    If we introduce the \emph{gauge potential}, aka \emph{calibration potential}, as\footnote{In SI units, the gauge potential is $\AA_\mu\equiv i\hbar\partial_{\mu}$}
+    If we introduce the \emph{gauge potential}, aka \emph{calibration potential}, as\footnote{In SI units, the gauge potential is $\AA_\mu\coloneqq i\hbar\partial_{\mu}$}
     \begin{equation}
         \AA_\mu\coloneqq i\partial_{\mu},
     \end{equation}
@@ -362,42 +362,49 @@ where $\curlyleftarrow{\partial}_\nu$ affects the covector on the left.
 
 
 
-
-
-
-\section{Berry phase and curvature}
-Let's consider only the ground state manifold, because it will be used later on. Thought every step can be easily generalized to any state manifold $\M_s$.
-
-On the ground state manifold $\M_0\equiv \cup_{\varphi\in\R}\cup_{\llambda\in\R^d} e^{i\varphi}\{\ket{o(\llambda)}\}$, the \emph{Berry connection} is defined as
-\begin{equation}
-    A_\mu(\llambda)\equiv \braket{o(\llambda)|\AA_\mu|o(\llambda)}\coloneqq -i\hbar \braket{o(\llambda)|\partial_\mu|o(\llambda)},
-    \label{eq:berryConnection}
-\end{equation}
-which uses the decomposition of $\llambda$ to some basis, thus it empowers us to take derivatives in any direction in the base manifold $\R^d$ and thus the geometric tensor can be written as
+\begin{definition}[Berry connection]    
+    On the ground state manifold $\M_0$, the \emph{Berry connection} is defined as the mean value of calibration potential
+    \begin{equation}
+        A_j(\llambda)\coloneqq \braket{o(\llambda)|\AA_j|o(\llambda)}= -i \braket{o(\llambda)|\partial_j|o(\llambda)}= -i\der{\lambda^j}{x^i} \braket{o(\llambda)|\pder{}{\lambda^j}|o(\llambda)},
+        \label{eq:berryConnection}
+    \end{equation}
+    which uses the decomposition of $\llambda$ to some orthogonal basis $\{x_i\}_{i=1}^n$ of the base manifold $\R^n$. 
+\end{definition}
+    
+This empowers us to take derivatives in any direction and the expression for geometric tensor
 \begin{equation}
     \chi_{\mu\nu}(\llambda) = \partial_\mu A_\nu(\llambda)-\partial_\nu A_\mu(\llambda)
 \end{equation}
-and the \emph{Berry phase}\footnote{
-    The reasonability of this definition can be seen, if we assume the ground state of a free particle
-        $\braket{\bm{x}|i(\llambda)}=i(\bm{x},\llambda)= |i(\bm{x})|e^{i\varphi(\llambda)}$,
-    then the Berry connection is
+has a good meaning. This formula can be directly proven by comparing with \ref{eq:geometricTensor}. 
+
+
+\begin{definition}[Berry phase]
+    
+    The \emph{Berry phase}, as an integral of the Berry connection along some closed curve $\mathcal{C}$\footnote{
+        The reasonability of this definition can be seen, if we assume the ground state of a free particle
+        $\braket{\bm{x}|i(\llambda)}\equiv i(\bm{x},\llambda)= |i(\bm{x})|e^{i\varphi(\llambda)}$,
+        then the Berry connection is
+        \begin{equation}
+            A_\mu=-\int \d \bm{x}|i(\bm{x},\llambda)|^2\partial_\mu \varphi(\llambda) = -\partial_\mu \varphi(\llambda)
+        \end{equation} 
+        and Berry phase
+        \begin{equation}
+            \varphi_B=\oint_\mathcal{C} \partial_\mu \varphi \d \lambda^\mu,
+        \end{equation}
+        which represents total phase accumulated by the wave function. It is really the analogy for Berry phase in classical mechanics, which for example in the case Foucault pendulum on one trip around the Sun makes $\varphi_B=2\pi$
+        }
+
     \begin{equation}
-        A_\mu=-\int \d \bm{x}|i(\bm{x},\llambda)|^2\partial_\mu \varphi(\llambda) = -\partial_\mu \varphi(\llambda)
-    \end{equation} 
-    and Berry phase
-    \begin{equation}
-        \varphi_B=\oint_\mathcal{C} \partial_\mu \varphi \d \lambda^\mu,
+        \varphi_B\equiv-\oint_\mathcal{C} A_\mu(\llambda)\d \lambda^\mu=\int_\mathcal{S} \chi_{\mu\nu}(\llambda)\d \lambda^\mu \wedge \d\lambda^\nu,
     \end{equation}
-    which represents total phase accumulated by the wave function. It is really the analogy for Berry phase in classical mechanics, which for example in the case Foucault pendulum on one trip around the Sun makes $\varphi_B=2\pi$
-}
-as the integral of the Berry connection along some closed curve $\mathcal{C}$
-\begin{equation}
-    \varphi_B\equiv-\oint_\mathcal{C} A_\mu(\llambda)\d \lambda^\mu=\int_\mathcal{S} \chi_{\mu\nu}(\llambda)\d \lambda^\mu \wedge \d\lambda^\nu,
-\end{equation}
-where we used the Stokes theorem for some area $\mathcal{S}$ with boundary $\partial\mathcal{S}=\mathcal{C}$.
+    where we used the Stokes theorem for some area $\mathcal{S}$ with boundary $\partial\mathcal{S}=\mathcal{C}$.    
+    
+\end{definition}
 
-Berry phase is usually zero, except for the cases, when the curve goes around some geometric tensor singularity, meaning $\mathrm{Ind}_a \gamma(\lambda)>0$. Those singularities appear in the system due to energy spectrum degeneracies, in the case of ground state manifold, when $E_1-E_0=0$. Those points are called \emph{diabolic}, because of their shape in the $(\lambda,\chi)$ parameter space.\footnote{https://en.wikipedia.org/wiki/Diabolo}
+Berry phase is zero, when the curve does not go around some geometric tensor singularity. This can be formally written using the \emph{winding number}, which counts \emph{how many times the curve goes counterclockwise around some point of interest}. In our case the points of interest are singularities $a$, and we say:\red{maybe even $\Leftrightarrow$ can be here, not sure}
+$$\varphi_B=0 \Leftarrow \mathrm{Ind}_a \gamma(\lambda)=0.$$
 
+Those singularities appear in the system due to energy spectrum degeneracies, in the case of ground state manifold, when $E_1-E_0=0$. Those points are called \emph{diabolic}, because of their shape in the $(\lambda,\chi)$ parameter space.\footnote{https://en.wikipedia.org/wiki/Diabolo}
 
 
 
@@ -407,9 +414,8 @@ Berry phase is usually zero, except for the cases, when the curve goes around so
 
 
 
-
-
-\section{General fidelity driving}
+\newpage
+\section{\red{General fidelity driving}}
 
 \subsection{APT}
 From \cite{Rigolin2008}.

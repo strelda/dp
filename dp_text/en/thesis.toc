@@ -24,21 +24,20 @@
 \contentsline {subsubsection}{Geometrical phase}{18}{section*.10}%
 \contentsline {subsection}{\numberline {3.4.1}3-dimensional parametric space $\mathcal {U}$}{19}{subsection.3.4.1}%
 \contentsline {section}{\numberline {3.5}Fidelity}{20}{section.3.5}%
-\contentsline {section}{\numberline {3.6}\leavevmode {\color {red}Metric and geometric tensor}}{21}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Metric and geometric tensor}{21}{section.3.6}%
 \contentsline {subsubsection}{Complex tensor generalization}{22}{section*.12}%
-\contentsline {section}{\numberline {3.7}Berry phase and curvature}{23}{section.3.7}%
-\contentsline {section}{\numberline {3.8}General fidelity driving}{23}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}APT}{23}{subsection.3.8.1}%
-\contentsline {section}{\numberline {3.9}How to advantageously drive the system}{24}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Adiabatic driving}{24}{subsection.3.9.1}%
+\contentsline {section}{\numberline {3.7}\leavevmode {\color {red}General fidelity driving}}{24}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}APT}{24}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.8}How to advantageously drive the system}{25}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Adiabatic driving}{25}{subsection.3.8.1}%
 \contentsline {subsubsection}{Slow transports}{25}{section*.13}%
-\contentsline {subsection}{\numberline {3.9.2}Counterdiabatic driving}{26}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.8.2}Counterdiabatic driving}{26}{subsection.3.8.2}%
 \contentsline {subsubsection}{Gauge potentials}{26}{section*.14}%
-\contentsline {subsubsection}{Classical gauge potential}{26}{section*.15}%
+\contentsline {subsubsection}{Classical gauge potential}{27}{section*.15}%
 \contentsline {subsubsection}{Quantum gauge potential}{27}{section*.16}%
 \contentsline {subsubsection}{Adiabatic gauge potential}{28}{section*.17}%
 \contentsline {subsubsection}{Performing counter-diabatic driving}{29}{section*.18}%
-\contentsline {subsubsection}{Explicit form}{29}{section*.20}%
+\contentsline {subsubsection}{Explicit form}{30}{section*.20}%
 \contentsline {chapter}{\numberline {4}Driving on the ground state manifold}{31}{chapter.4}%
 \contentsline {subsection}{\numberline {4.0.1}Driving speed}{32}{subsection.4.0.1}%
 \contentsline {section}{\numberline {4.1}The role of geodesics}{32}{section.4.1}%
