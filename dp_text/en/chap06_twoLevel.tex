@@ -98,7 +98,8 @@ Note that we used the condition $\Delta\neq 0$. Because the energy spectrum has 
 
 
 \subsubsection{Classical mechanics correspondence}
-\red{this is totally useless to us, but it might be used somehow, so for potential readers I would leave it here. Possibly some gauge symmetries and Noether currents can be calculated from it.}
+When solving differential equations, it might be useful to know some analogy to classical mechanics Lagrangian. Even though it will not be used any further, let's quickly find it.
+
 From the perspective of classical mechanics, meaning $x(t)\coloneqq a(t)$ is a position in a phase space $(\bm x,\bm p)$, we can write classical Lagrangian from Eq. \ref{eq:harmonicOscillator} as
 \begin{equation}
     \mathcal L=\frac{1}{2}\exp{\left(\int_0^t\gamma(s)\d s\right)}\left(\dot x^2-\omega^2(t)x^2\right)
@@ -268,7 +269,6 @@ Sometimes the \emph{Infidelity}, defined as $F^*\coloneqq 1-F$, will be used. It
 
 
 \subsection{Analysis of the infidelity formula}
-\red{Rewrite 1-F to $F^*$ in every plot. }
 Infidelity can be calculated by numerical evolution of Schr\"odinger equation, or from Eq. \ref{eq:fidelitySimplified}. Sometimes both solutions are plotted for comparison between numerical precision. 
 
 For some fixed final time, the infidelity is an oscillating curve with values close to $0$. For $T_f=10$ it can be seen on Fig. \ref{fig:infidelityTimePlot}. The \emph{final infidelity} (at $t=T_f$) dependence on final time $T_f$ can be seen on Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
@@ -289,7 +289,7 @@ For some fixed final time, the infidelity is an oscillating curve with values cl
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlotLog.pdf}
-    \caption{Infidelity dependence on final time in logarithmic scale. We can observe difference in numerical precision of both methods in the height of spikes. As we will see later, the spikes should go to zero, thus analytical formula has better numerical precision. \red{align the legend position}}
+    \caption{Infidelity dependence on final time in logarithmic scale. We can observe difference in numerical precision of both methods in the height of spikes. As we will see later, the spikes should go to zero, thus analytical formula has better numerical precision.}
     \label{fig:infidelityTfPlotLog}
 \end{figure}
 
@@ -384,9 +384,10 @@ We can see that the final fidelity decreases with longer final time, which corre
   \label{fig:infidelityTimePlotLin}
 \end{figure}
 
+
 Because in the Harmonic oscillator $\gamma(t)=0$, the oscillations of $a(t)$ are not damped. What we are observing is infidelity 
 $$F^*(t)\coloneqq 1- |\braket{0(t)|\psi(t)}|^2 = 1-|\alpha(t)a(t)+\beta(t)b(t)|^2, $$
-where the $\ket{\psi(t)}\eqqcolon(a,b)^T$ represents the evolved state and $\ket{0(t)}\eqqcolon(\alpha,\beta)^T$ evolved ground state in the initial eigenbasis $\mathcal{B}$. Realize that the ground state is not generally constant. In our case, the ground state described by Eq. \ref{eq:eigenvectors} and is slowly changing its value from the first element $\alpha$ to the second element $\beta$, see Fig. \ref{fig:zeroState}. This means that at the beginning of driving, the projection to the ground state selects $b(t)$. Then it's getting more influenced by $a(t)$ until almost only $a(t)$ influences the fidelity. \textcolor{red}{I still don't see the damping here.}
+where the $\ket{\psi(t)}\eqqcolon(a,b)^T$ represents the evolved state and $\ket{0(t)}\eqqcolon(\alpha,\beta)^T$ evolved ground state in the initial eigenbasis $\mathcal{B}$. Realize that the ground state is not generally constant. In our case, the ground state described by Eq. \ref{eq:eigenvectors} and is slowly changing its value from the first element $\alpha$ to the second element $\beta$, see Fig. \ref{fig:zeroState}. This means that at the beginning of driving, the projection to the ground state selects $b(t)$. Then it's getting more influenced by $a(t)$ until almost only $a(t)$ influences the fidelity. \textcolor{red}{I still don't see the damping here. In Rabi oscillator,  frequency usually depends on energy difference. But damping?}
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/zeroState.pdf}

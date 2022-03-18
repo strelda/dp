@@ -1,9 +1,25 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ashtekar and Schilling(1995)]{ashtekar_geometry_1995}
+Abhay Ashtekar and Troy~A. Schilling.
+\newblock Geometry of quantum mechanics.
+\newblock In \emph{{AIP} {Conference} {Proceedings}}, volume 342, pages
+  471--478, Cancun (Mexico), 1995. AIP.
+\newblock \doi{10.1063/1.48786}.
+\newblock URL \url{http://aip.scitation.org/doi/abs/10.1063/1.48786}.
+\newblock ISSN: 0094243X.
+
+\bibitem[Ashtekar and Schilling(1997)]{ashtekar_geometrical_1997}
+Abhay Ashtekar and Troy~A. Schilling.
+\newblock Geometrical {Formulation} of {Quantum} {Mechanics}.
+\newblock \emph{arXiv:gr-qc/9706069}, June 1997.
+\newblock URL \url{http://arxiv.org/abs/gr-qc/9706069}.
+\newblock arXiv: gr-qc/9706069.
 
 \bibitem[Berry(1984)]{berry1984}
 M.~V. Berry.
@@ -63,6 +79,16 @@ W.~Tu Loring.
 \newblock \emph{Differential Geometry}.
 \newblock Springer International Publishing, 2017.
 \newblock \doi{10.1007/978-3-319-55084-8}.
+
+\bibitem[Molitor(2013)]{molitor_exponential_2013}
+Mathieu Molitor.
+\newblock Exponential families, {Kahler} geometry and quantum mechanics.
+\newblock \emph{Journal of Geometry and Physics}, 70:\penalty0 54--80, August
+  2013.
+\newblock ISSN 03930440.
+\newblock \doi{10.1016/j.geomphys.2013.03.015}.
+\newblock URL \url{http://arxiv.org/abs/1203.2056}.
+\newblock arXiv: 1203.2056.
 
 \bibitem[Petersen(1998)]{petersen}
 P.~Petersen.

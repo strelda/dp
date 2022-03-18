@@ -16,51 +16,50 @@ A level-1 auxiliary file: bibliography.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: appendix1.aux
 Database file #1: bibliography.bib
-Warning--I didn't find a database entry for "ashtekar_geometrical_1997"
 Warning--I didn't find a database entry for "cheng_quantum_2013"
 Warning--I didn't find a database entry for "polkovnikov"
 Warning--I didn't find a database entry for "Bukov2019"
 Warning--empty journal in berry1989
 Warning--empty publisher in claudio
-You've used 11 entries,
+You've used 14 entries,
             2773 wiz_defined-function locations,
-            691 strings with 6917 characters,
-and the built_in function-call counts, 4127 in all, are:
-= -- 362
-> -- 177
-< -- 9
-+ -- 65
-- -- 54
-* -- 294
-:= -- 678
-add.period$ -- 48
-call.type$ -- 11
-change.case$ -- 46
-chr.to.int$ -- 11
-cite$ -- 24
-duplicate$ -- 220
-empty$ -- 374
-format.name$ -- 65
-if$ -- 850
+            719 strings with 7503 characters,
+and the built_in function-call counts, 5568 in all, are:
+= -- 517
+> -- 229
+< -- 14
++ -- 83
+- -- 69
+* -- 396
+:= -- 896
+add.period$ -- 67
+call.type$ -- 14
+change.case$ -- 60
+chr.to.int$ -- 14
+cite$ -- 30
+duplicate$ -- 291
+empty$ -- 492
+format.name$ -- 87
+if$ -- 1166
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 16
-newline$ -- 78
-num.names$ -- 44
-pop$ -- 106
+missing$ -- 19
+newline$ -- 102
+num.names$ -- 56
+pop$ -- 125
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 51
 quote$ -- 0
-skip$ -- 143
+skip$ -- 198
 stack$ -- 0
-substring$ -- 89
-swap$ -- 13
-text.length$ -- 0
+substring$ -- 146
+swap$ -- 28
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 96
+type$ -- 129
 warning$ -- 2
-while$ -- 38
+while$ -- 52
 width$ -- 0
-write$ -- 171
-(There were 6 warnings)
+write$ -- 230
+(There were 5 warnings)

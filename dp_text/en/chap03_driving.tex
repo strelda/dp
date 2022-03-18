@@ -1,5 +1,5 @@
 \chapter{Theory behind quantum driving}
-\label{chap:physicalIntro}
+\label{chap:driving}
 This chapter heavily depends on the mathematical formalism developed in Chapter \ref{chap:mathIntro} and basic knowledge of quantum mechanics is required.
 
 Most parts of this chapter are inspired by \citet{kolodrubez} and original notes by \citet{berry1984}, \citet{berry1989}, \citet{berry2009} with attempt to give them more rigorous meaning in the language of differential geometry. We will see, that the structure of the space of states on which the driving will occur is quite complicated. The reason is its fiber structure, where every fiber is another fiber bundle. Luckily what we will be using later on are sections of this space, which will be much easier Riemannian manifolds. 
@@ -415,7 +415,7 @@ Those singularities appear in the system due to energy spectrum degeneracies, in
 
 
 \newpage
-\section{\red{General fidelity driving}}
+\section{General fidelity driving}
 Until now, our interest was mostly in projective state manifolds $\P\M_s$. If every state during the driving belongs to $\P\M_s$, the fidelity $F=1$ all the time, and we are talking about \emph{unit fidelity driving}. But how to calculate the case when the fidelity is "almost one"?
 
 
@@ -468,7 +468,6 @@ Because the initial state is eigenstate, we get initial conditions $\blue{b_{nm}
 \end{equation}
 for $\bluee{\Delta_nm(s)}\coloneqq \bluee{E_m-E_n}$, $\bluee{W_{nm}(s)}\coloneqq \bluee{M_{nn}(s)}-\bluee{M_{mm}(s)}$, where $\bluee{M_{mn}}$ is defined in Eq. \ref{eq:gammadef}. We can see that $\blue{b_{mn}^{(p)}}$, as a solution to Eq. \ref{eq:bSolution}, only depends on difference between energy levels, eigenstates during the path and their directional derivatives. Not on the path itself. All of those are easily obtained, once the driving path is prescribed.
 
-    
 
 
 
@@ -479,8 +478,9 @@ for $\bluee{\Delta_nm(s)}\coloneqq \bluee{E_m-E_n}$, $\bluee{W_{nm}(s)}\coloneqq
 
 
 
-\section{How to advantageously drive the system}
-In experimental setting, one needs to achieve as high fidelity as possible. Generally we have three methods\footnote{There is a nice analogy with driving a toy car \gray{(a quantum state)} in a curved terrain \gray{(a Hilbert space)}. To avoid the car flying in the air \gray{(the state excitation)}, you can either drive slowly, or you can go around the hills, or you can have a friend \gray{(a counter-diabatic element)}, who will push the car against the ground every time it is supposed to jump.}:
+\section{\red{How to advantageously drive the system}}
+\label{chap:typesOfDriving}
+In experimental setting, one needs to achieve as high fidelity as possible. If $F=1$ we speak about \emph{unit fidelity protocols}, and we say that the driving is \emph{adiabatic}. The fidelity can be practically improved by three methods\footnote{There is a nice analogy with driving a toy car \gray{(a quantum state)} in a curved terrain \gray{(a Hilbert space)}. To avoid the car flying in the air \gray{(the state excitation)}, you can either drive slowly, or you can go around the hills, or you can have a friend \gray{(a counter-diabatic element)}, who will push the car against the ground every time it is supposed to jump.}:
 \begin{itemize}
     \item Close adiabatic driving - changing the driving parameters slowly, so the system has plenty of time to collapse into the ground state,
     \item Path variation - varying the driving trajectory, avoiding the topological defects on manifolds,
@@ -489,8 +489,8 @@ In experimental setting, one needs to achieve as high fidelity as possible. Gene
 
 
 
-\subsection{Adiabatic driving}
-Adiabatic transformation is such a transformation from $\M$ to $\M$, which does not excite the system, meaning the fidelity $f=1$. Generally it can be achieved by two ways -- infinitely slow transformation of states, or adding some \emph{counter-diabatic elements} to the Hamiltonian to counter the excitation.
+\subsubsection{Adiabatic driving}
+Adiabatic transformation is such transformation from $\P\M$ to $\P\M$, which does not excite the system, meaning the fidelity $F=1$. Generally it can be achieved by two methods -- infinitely slow transformation of states, or adding some \emph{counter-diabatic element} to the Hamiltonian.
 
 
 In this chapter, we will be dealing with the system described by the finite-dimensional Hamiltonian $\HH(\llambda)$ which drives the system according to \Schrodinger equation from some initial state $\ket{s(\llambda}$ to $\ket{s(\tilde\llambda)}$ along the path $\gamma(\lambda)$. Before going throw the details of adiabatic transformations, let's define its meaning properly.
@@ -513,10 +513,10 @@ As was mentioned in the introduction of this chapter, one way to change the syst
     \end{equation}
     for \emph{adiabatic state}
     \begin{equation}
-        \ket{\psi_{ad}}= e^{\theta_n(\lambda)}e^{\gamma_n(\lambda)}\ket{\psi(\lambda)},
+        \ket{\psi_{ad}}= e^{\omega_n(\lambda)}e^{\gamma_n(\lambda)}\ket{\psi(\lambda)},
     \end{equation}
     where we define \emph{nongeometrical phase} induced by energy transitions,
-    $$\theta_n(\lambda)\equiv -\frac{1}{\hbar}\int_0^t E_n(\tau)\d \tau$$
+    $$\omega_n(\lambda)\equiv -\int_0^t E_n(\tau)\d \tau$$
     and \emph{geometrical phase}, also called \emph{Berry phase}
         $$\gamma_n(\lambda)\equiv \int_0^t \underbrace{i\braket{\psi_n(\tau)|\partial_t\psi_n(\tau)}}_{\nu_n(\tau)} \d \tau .$$
 \end{thm}

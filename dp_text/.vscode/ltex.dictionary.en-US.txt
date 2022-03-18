@@ -15,3 +15,6 @@ Arctangent
 geodesical
 Counter-diabatic
 counter-diabatic
+lensing
+qubits
+qubit

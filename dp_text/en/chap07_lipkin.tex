@@ -50,7 +50,7 @@ which has pentadiagonal matrix representation. During the whole paper, $j=N/2$ w
 
 
 \section{Special cases}
-Because of pentadiagonal character of the Hamiltonian, the discussion will start at $N=3$, followed by $N=6$. Then the limit $N\rightarrow\infty$ will be taken along with the generalization of some characteristics to an arbitrary dimension. 
+Because of pentadiagonal character of the Hamiltonian, the discussion will start at $N=3$, followed by $N=5$. Then the limit $N\rightarrow\infty$ will be taken along with the generalization of some characteristics to an arbitrary dimension. 
 
 Due to the complexity of our Hamiltonian, it is not possible to prove every statement analytically. Some numerical methods, supported by some basic theorems, are needed.
 
@@ -164,10 +164,18 @@ Results for the geodesics starting at $(\lambda_i;\chi_i)=(0;0)$, $
 
 \begin{figure}[H]
     \centering
-    \includegraphics{../img/N=3_geodesics.pdf}
-    \caption{Geodesics for the case $N=3$ starting from $(\lambda_i;\chi_i)=(0;0)$ with $(\lambda'_i;\chi'_i)=(\cos\theta;\sin\theta)$, parametrized by angle $\theta\in [-0.63;0.63]$, $\theta\in [\pi-0.225;\pi+0.225]$, with step $\Delta\theta=0.01$.\red{draw light blue line along the high ricci curvature line}}
+    % \includegraphics{../img/N=3_geodesics.pdf}
+    \begin{tikzpicture}
+        \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics{../img/N=3_geodesics.pdf}};
+        \draw[blueee,ultra thick] (4.5,9.56) -- (10.67,10.5);
+        \draw[blueee,ultra thick] (4.5,2.71) -- (10.67,1.8);
+    \end{tikzpicture}
+    \caption{\green{Geodesics} for the case $N=3$ starting from $(\lambda_i;\chi_i)=(0;0)$ with $(\lambda'_i;\chi'_i)=(\cos\theta;\sin\theta)$, parametrized by angle $\theta\in [-0.63;0.63]$, $\theta\in [\pi-0.225;\pi+0.225]$, with step $\Delta\theta=0.01$. \blueee{Blue} line marks the high Ricci curvature gap.}
     \label{fig:N=3_geodesics}    
 \end{figure}
+
+
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{../img/geodesicsinGR.png}
@@ -186,39 +194,39 @@ Results for the geodesics starting at $(\lambda_i;\chi_i)=(0;0)$, $
 
 
 
-\subsection{Case $N=6$}
+\subsection{Case $N=5$}
 
-Another special case is $N=6$. From analysis of the energy levels, we see that there are more degeneracies, see Fig. \ref{fig:singularitiesBetweenEnergiesN=6}. One can see that only $E_0=E_1$ the degeneracy lies on the separatrix and all others are distributed around. The $\chi\leftrightarrow-\chi$ symmetry holds for all of them. 
+Another special case is $N=5$. From analysis of the energy levels, we see that there are more degeneracies, see Fig. \ref{fig:singularitiesBetweenEnergiesN=5}. One can see that only $E_0=E_1$ the degeneracy lies on the separatrix and all others are distributed around. The $\chi\leftrightarrow-\chi$ symmetry holds for all of them. 
 
-Another fact, which is good to realize, is how the space itself looks like. This is best seen from the metric tensor determinant, fig. \ref{fig:N=6_det3D}.
+Another fact, which is good to realize, is how the space itself looks like. This is best seen from the metric tensor determinant, fig. \ref{fig:N=5_det3D}.
 
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=1.3]{../img/singularitiesBetweenEnergiesN=6.pdf}
+    \includegraphics[scale=1.3]{../img/singularitiesBetweenEnergiesN=5.pdf}
     \includegraphics[scale=1.3]{../img/N=5_bar6.pdf}
-    \caption{Energy differences between neighboring energy levels for $N=6$. First row: $E_1-E_0$, $E_2-E_1$, second row: $E_3-E_2$, $E_4-E_3$, third row: $E_5-E_4$, $E_6-E_5$. Spectra degeneracies are marked with \blue{blue} cross.}
-    \label{fig:singularitiesBetweenEnergiesN=6}    
+    \caption{Energy differences between neighboring energy levels for $N=5$. First row: $E_1-E_0$, second row: $E_2-E_1$, $E_3-E_2$, third row: $E_4-E_3$, $E_5-E_4$. Spectra degeneracies are marked with \blue{blue} cross.}
+    \label{fig:singularitiesBetweenEnergiesN=5}    
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.3]{../img/N=5_det3D.pdf}
-    \caption{Metric tensor determinant for the case $N=6$.\red{make it N=6}}
-    \label{fig:N=6_det3D}    
+    \caption{Metric tensor determinant for the case $N=5$.}
+    \label{fig:N=5_det3D}    
 \end{figure}
 
 
 
-Geodesics for the case $N=6$ starting from the point $(0;0)$ have the characteristics already seen in the case $N=3$. However, when starting at $(\lambda;\chi)=(1;0)$, the behavior around the singularity is not the only interesting thing happening. As can be seen in Fig. \ref{fig:geod10}, the geodesics tend to deflect themselves from the area with high curvature around the axis $\chi=0$, which happens even for other initial conditions, just that for $(0;0)$ it is not so apparent. Small irregularity can be seen in Fig. \ref{fig:N=3_geodesics} around $(0.5;0.1)$. This implies that the geodesic equation might have at least two solutions as candidates for the globally shortest path between two points.\footnote{One might recall the effect of gravitational lensing here. In the presence of any mass in the spacetime, there exists more possible light paths (solutions to the geodesic equation) between two points, differing by the initial condition.} 
+Geodesics for the case $N=5$ starting from the point $(0;0)$ have the characteristics already seen in the case $N=3$. However, when starting at $(\lambda;\chi)=(1;0)$, the behavior around the singularity is not the only interesting thing happening. As can be seen in Fig. \ref{fig:geod10}, the geodesics tend to deflect themselves from the area with high curvature around the axis $\chi=0$, which happens even for other initial conditions, just that for $(0;0)$ it is not so apparent. Small irregularity can be seen in Fig. \ref{fig:N=3_geodesics} around $(0.5;0.1)$. This implies that the geodesic equation might have at least two solutions as candidates for the globally shortest path between two points.\footnote{One might recall the effect of gravitational lensing here. In the presence of any mass in the spacetime, there exists more possible light paths (solutions to the geodesic equation) between two points, differing by the initial condition.} 
 
 
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.3]{../img/N=5_geods00.pdf}
-    \caption{Geodesics for the case $N=6$, starting from the point $(1;0)$. \emph{The numerics around the singularity breaks down, but the solution is close to the drawn one, i.e. they will pass close to the singularity and continue to the left.}\red{make it N=6, thinner green lines pls}}
+    \caption{Geodesics for the case $N=5$, starting from the point $(1;0)$. \emph{The numerics around the singularity breaks down, but the solution is close to the drawn one, i.e. they will pass close to the singularity and continue to the left.}}
     \label{fig:geod10}    
 \end{figure}
 
