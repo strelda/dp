@@ -1,4 +1,4 @@
-\chapter*{Introduction}
+\chapter*{\red{Introduction}}
 \addcontentsline{toc}{chapter}{Introduction}
 One of the unsolved problems of the quantum physics are quantum computers. There are many mathematical problems, which are solvable in exponential time on computers with classical bits, but are solvable in polynomial time on quantum computers. Essentially you prepare some initial state of qubits (these might be electron spins, or more recently, Josephson junctions are being used) and perform certain operations on them using \emph{quantum gates}. In the end you measure the qubits, causing the collapse of wave-function, and read the result. The first main problems in this area, is holding the superposition of qubits until all operations are performed. The second great problem is the quantum noise, either spontaneous emission of excited states, or interaction with the thermal basis of the surrounding. The impact of these effects can be seen on symmetrical experiment, in which we start with some state, let's say spin up. Perform any number of operation on it and then perform their inverse, leading to the same state, spin up. In perfect quantum computer, we would get the initial state with 100 \% accuracy. The problem is that due to noise we sometimes measure different state, in this case it would be spin down. The \emph{percentage of getting the result we want} is called the \emph{fidelity}.
 
@@ -6,13 +6,6 @@ This problem is of course more general. What is happening in the example above m
 
 The important question in quantum computing is: "How to achieve the greatest \emph{final fidelity}, meaning \emph{how to prepare the state we want to prepare with the highest percentage}?" During the driving one might add some energy to the qubit, which leads to its excitation and possibly destroying the superposition. This can be avoided by many methods. There are a few methods how to avoid this excitation, described in Chapter \ref{chap:typesOfDriving}. The surprising fact is that not every sequence of quantum gates leads to the same fidelity. For example if one starts with \emph{spin up}, applying the $X$ or $Y$ gate has the same effect. Both result in \emph{spin down}, because these gates just rotate the spin in a Bloch sphere around corresponding axis ($x$, resp. $y$).
 
+For some special drivings, such as driving using small \emph{quenches} (quick, but small change in driving parameter), one might get interested in \emph{ground state manifold properties}.
 
-
-
-
-\begin{itemize}
-    \item why we need it - quantum computer intro (create network of gates with some simple initial condition (all spins down for example), let it evolve. Measure the final state. Do this many times and measure the statistics. Composition of gates is not unique and some might give bigger and some smaller noise. The passing of the spin threw the gates can be considered as driving on some curved space.)
-    \item what is quantum driving
-    \item let's make it more geometrical and formal
-    \item ground state manifold and why should we study it - the most practical drivings are often unit fidelity, also to see its influence on general driving
-\end{itemize}
+To understand the general fidelity driving, a simple two level system was analyzed in Chapter \ref{chap:twoLevelSystem}. Some driving phenomena are noticed here, which are demonstrated on the two analytically solvable drivings. Because with the Hamiltonian complexity, the driving complicates noticeably, it is important to understand the geometry of ground state manifolds first. The ground state manifold consists of all ground states of Hamiltonian with different driving parameter value. Until now not many implications of this structure is known. Some of them were theoreticized in previous works, some of them were developed here. In Chapter \ref{chap:groundStateManifoldDriving}, there is a general introduction of driving on ground state manifold. 

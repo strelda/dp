@@ -18,3 +18,8 @@ counter-diabatic
 lensing
 qubits
 qubit
+Landau-Zener
+integrand
+braket
+fidelities
+diabatic

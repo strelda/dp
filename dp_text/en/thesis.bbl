@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -40,6 +40,15 @@ M~V Berry.
 Michael~V. Berry.
 \newblock {THE QUANTUM PHASE, FIVE YEARS AFTER}.
 \newblock 1989.
+
+\bibitem[Bukov et~al.(2019)Bukov, Sels, and Polkovnikov]{Bukov2019}
+Marin Bukov, Dries Sels, and Anatoli Polkovnikov.
+\newblock {Geometric Speed Limit of Accessible Many-Body State Preparation}.
+\newblock \emph{Physical Review X}, 9\penalty0 (1):\penalty0 011034, feb 2019.
+\newblock ISSN 2160-3308.
+\newblock \doi{10.1103/PhysRevX.9.011034}.
+\newblock URL \url{https://doi.org/10.1103/PhysRevX.9.011034
+  https://link.aps.org/doi/10.1103/PhysRevX.9.011034}.
 
 \bibitem[Fecko(2006)]{fecko}
 Marián Fecko.
@@ -89,6 +98,14 @@ Mathieu Molitor.
 \newblock \doi{10.1016/j.geomphys.2013.03.015}.
 \newblock URL \url{http://arxiv.org/abs/1203.2056}.
 \newblock arXiv: 1203.2056.
+
+\bibitem[Nakamura(2012)]{nonadiabaticTransition}
+Hiroki Nakamura.
+\newblock \emph{Nonadiabatic transition: concepts, basic theories and
+  applications}.
+\newblock World Scientific, Hackensack, New Jersey, second edition edition,
+  2012.
+\newblock ISBN 978-981-4329-77-4.
 
 \bibitem[Petersen(1998)]{petersen}
 P.~Petersen.

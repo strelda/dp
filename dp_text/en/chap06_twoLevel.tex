@@ -1,5 +1,5 @@
 \chapter{Two level system}
-
+\label{chap:twoLevelSystem}
 
 Let's have a Hamiltonian
 \begin{equation}
@@ -387,7 +387,7 @@ We can see that the final fidelity decreases with longer final time, which corre
 
 Because in the Harmonic oscillator $\gamma(t)=0$, the oscillations of $a(t)$ are not damped. What we are observing is infidelity 
 $$F^*(t)\coloneqq 1- |\braket{0(t)|\psi(t)}|^2 = 1-|\alpha(t)a(t)+\beta(t)b(t)|^2, $$
-where the $\ket{\psi(t)}\eqqcolon(a,b)^T$ represents the evolved state and $\ket{0(t)}\eqqcolon(\alpha,\beta)^T$ evolved ground state in the initial eigenbasis $\mathcal{B}$. Realize that the ground state is not generally constant. In our case, the ground state described by Eq. \ref{eq:eigenvectors} and is slowly changing its value from the first element $\alpha$ to the second element $\beta$, see Fig. \ref{fig:zeroState}. This means that at the beginning of driving, the projection to the ground state selects $b(t)$. Then it's getting more influenced by $a(t)$ until almost only $a(t)$ influences the fidelity. \textcolor{red}{I still don't see the damping here. In Rabi oscillator,  frequency usually depends on energy difference. But damping?}
+where the $\ket{\psi(t)}\eqqcolon(a,b)^T$ represents the evolved state and $\ket{0(t)}\eqqcolon(\alpha,\beta)^T$ evolved ground state in the initial eigenbasis $\mathcal{B}$. Realize that the ground state is not generally constant. In our case, the ground state described by Eq. \ref{eq:eigenvectors} and is slowly changing its value from the first element $\alpha$ to the second element $\beta$, see Fig. \ref{fig:zeroState}. This means that at the beginning of driving, the projection to the ground state selects $b(t)$. Then it's getting more influenced by $a(t)$ until almost only $a(t)$ influences the fidelity.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/zeroState.pdf}
@@ -445,39 +445,11 @@ Using this we can describe the driving using three regimes\footnote{The coeffici
 \end{figure}
 
 
-To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} with \ref{fig:overcritical}. Here we see two regimes, one for $t<T_c$ and on for $T>T_c$. The important observation is that in the first case it holds $F^*\neq 0$ anywhere and in the second case it touches zero periodically. The reason for this is that \red{landau zener vs APT explanation}  
+To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} with \ref{fig:overcritical}. Here we see two regimes, one for $t<T_c$ and on for $T>T_c$. The important observation is that in the first case it holds $F^*\neq 0$ anywhere and in the second case it touches zero periodically. The fidelity can be decomposed into a sum of two elements. Small oscillatory part, which can be explained by the theory of APT, and exponentially decreasing fidelity with final time, describable by Landau-Zener formula.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=1.2]{../img/undercritical.pdf}
-    \caption{Final infidelity as a function of $t$ for fast-driving regime, $T_f=80<T_c$.}
-    \label{fig:undercritical}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=1.2]{../img/overcritical.pdf}
-    \caption{Final infidelity as a function of $t$ for close-adiabatic regime. $T_f=170>T_c$}
-    \label{fig:overcritical}
-\end{figure}
-
-Two questions now arise. What are the coefficients $\xi$ and $\kappa$ and on which intervals in $T_f$ these transitions hold? 
-
-\subsection{The general behavior}
-The critical time $T_c$ is the point where the fidelity dependence on final time becomes polynomial. We have shown that 
+The boundary between exponential and linear regime is not strict and can be seen on Fig. \ref{fig:dens2},as the transition between \emph{smooth} and \emph{chaotic} regimes. This happend at $t=T_c$. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. This would be smoothed out using the averaged final fidelity. The approximated dependence is
 \begin{equation}
-    \text{for}\begin{cases}
-        T_f<T_c \\
-        T_f>T_c 
-    \end{cases}\text{the fidelity oscillate with amplitude } A \text{ is }
-    \begin{cases}
-        A<F^*_{final}\\
-        A>F^*_{final}
-    \end{cases}.
-\end{equation}
-On Fig. \ref{fig:dens2} we can see the dependence of critical time as the point of transition between \emph{smooth} and \emph{chaotic} regimes, on $\Delta=\Delta_{sc}$ for the linear driving. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. The approximated dependence is
-\begin{equation}
-    T_c\tilde\propto \Delta_{sc}^{-2}
+    T_c\tilde\propto \Delta_{sc}^{-2}.
 \end{equation}
 
 
@@ -496,8 +468,57 @@ On Fig. \ref{fig:dens2} we can see the dependence of critical time as the point 
 \end{figure}
 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.2]{../img/undercritical.pdf}
+    \caption{Final infidelity as a function of $t$ for fast-driving regime, $T_f=80<T_c$.}
+    \label{fig:undercritical}
+\end{figure}
 
-\subsubsection{Summary}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.2]{../img/overcritical.pdf}
+    \caption{Final infidelity as a function of $t$ for close-adiabatic regime. $T_f=170>T_c$}
+    \label{fig:overcritical}
+\end{figure}
+\subsubsection{\red{Oscillatory part from APT}}
+
+\subsubsection{Exponential part from Landau-Zener}
+Landau-Zener-Stueckelberg theory provides the WKB approximation formula for the fidelity during some transport. Full form can be seen in \cite{nonadiabaticTransition}. In our case, only simplified theorem is needed. 
+\begin{thm}[Landau-Zener-Stueckelberg for linear driving]
+    For 
+    \begin{itemize}
+        \item two level Hamiltonian
+        \item with degeneracy in only one point,
+        \item on the linear driving path in a parametric space
+    \end{itemize}
+    the fidelity can be described for times $(0,T_c)$ as
+    \begin{equation}
+        F = \exp\left(-\frac{2 \pi A^2}{\hbar v |\Delta F}\right),
+    \end{equation}
+    for a \emph{diabatic coupling} $A$ and difference between \emph{diabatic potentials} $\Delta F$. 
+\end{thm}
+
+In our case, $v=1/T_f$ and $2 A^2/|\Delta F|=\Omega_i^2/\Delta_{sc}$.
+
+
+% \subsection{Multiparametric behavior}
+% The critical time $T_c$ is the point where the fidelity dependence on final time becomes polynomial. We have shown that 
+% \begin{equation}
+%     \text{for}\begin{cases}
+%         T_f<T_c \\
+%         T_f>T_c 
+%     \end{cases}\text{the fidelity oscillate with amplitude } A \text{ is }
+%     \begin{cases}
+%         A<1-F_{final}\\
+%         A>1-F_{final}
+%     \end{cases}.
+% \end{equation}
+
+
+
+
+\subsection{Summary}
 Now we should understand all results separately, let's put it all together. On Fig. \ref{fig:AllInOne} we see some of the most important results.
 
 \begin{figure}[H]

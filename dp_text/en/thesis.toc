@@ -23,48 +23,46 @@
 \contentsline {section}{\numberline {3.7}General fidelity driving}{24}{section.3.7}%
 \contentsline {subsection}{\numberline {3.7.1}APT}{24}{subsection.3.7.1}%
 \contentsline {section}{\numberline {3.8}\leavevmode {\color {red}How to advantageously drive the system}}{25}{section.3.8}%
-\contentsline {subsubsection}{Adiabatic driving}{25}{section*.13}%
-\contentsline {subsubsection}{Slow transports}{26}{section*.14}%
-\contentsline {subsection}{\numberline {3.8.1}Counterdiabatic driving}{27}{subsection.3.8.1}%
-\contentsline {subsubsection}{Gauge potentials}{27}{section*.15}%
-\contentsline {subsubsection}{Classical gauge potential}{27}{section*.16}%
-\contentsline {subsubsection}{Quantum gauge potential}{28}{section*.17}%
-\contentsline {subsubsection}{Adiabatic gauge potential}{29}{section*.18}%
-\contentsline {subsubsection}{Performing counter-diabatic driving}{30}{section*.19}%
-\contentsline {subsubsection}{Explicit form}{30}{section*.21}%
-\contentsline {chapter}{\numberline {4}Driving on the ground state manifold}{32}{chapter.4}%
-\contentsline {subsection}{\numberline {4.0.1}Driving speed}{33}{subsection.4.0.1}%
-\contentsline {section}{\numberline {4.1}The role of geodesics}{33}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Minimizing the energy variance}{33}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Transport using quenches}{34}{subsection.4.1.2}%
-\contentsline {subsubsection}{Perturbed adiabatic driving}{35}{section*.22}%
-\contentsline {subsection}{\numberline {4.1.3}Most stable curves for counterdiabatic driving...this is like: "what if?", I have no idea haha}{37}{subsection.4.1.3}%
-\contentsline {chapter}{\numberline {5}\leavevmode {\color {blue}Spin 1/2}}{38}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Special case}{39}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Two level system}{41}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Harmonic oscillator correspondence}{42}{section.6.1}%
-\contentsline {subsubsection}{Classical mechanics correspondence}{42}{section*.28}%
-\contentsline {section}{\numberline {6.2}Energy variance for two level system}{42}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Geodesical driving}{43}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Derivation of the fidelity}{44}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Analysis of the infidelity formula}{45}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}\leavevmode {\color {red}Energy variance}}{48}{subsection.6.3.3}%
-\contentsline {section}{\numberline {6.4}Linear driving}{49}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Dependence on time}{50}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Final fidelity}{51}{subsection.6.4.2}%
-\contentsline {subsubsection}{Averaged final fidelity}{52}{section*.40}%
-\contentsline {subsection}{\numberline {6.4.3}The general behavior}{54}{subsection.6.4.3}%
-\contentsline {subsubsection}{Summary}{55}{section*.46}%
-\contentsline {subsection}{\numberline {6.4.4}\leavevmode {\color {red}Energy variance}}{57}{subsection.6.4.4}%
-\contentsline {chapter}{\numberline {7}Lipkin-Meshkov Glick model}{58}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Special cases}{58}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Case $N=3$}{59}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Case $N=5$}{65}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Limit $N\rightarrow \infty $}{69}{subsection.7.1.3}%
-\contentsline {section}{\numberline {7.2}General behavior}{70}{section.7.2}%
-\contentsline {chapter}{Conclusion}{74}{chapter*.67}%
-\contentsline {chapter}{Bibliography}{75}{chapter*.68}%
-\contentsline {chapter}{List of Figures}{77}{chapter*.69}%
-\contentsline {chapter}{\numberline {A}Appendix 1}{80}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Attachments}{81}{appendix.B}%
-\contentsline {section}{\numberline {B.1}First Attachment}{81}{section.B.1}%
+\contentsline {subsection}{\numberline {3.8.1}\leavevmode {\color {red}Adiabatic driving}}{25}{subsection.3.8.1}%
+\contentsline {subsubsection}{Slow transports}{26}{section*.13}%
+\contentsline {subsection}{\numberline {3.8.2}\leavevmode {\color {red}Counterdiabatic driving}}{27}{subsection.3.8.2}%
+\contentsline {subsubsection}{Gauge potentials}{27}{section*.14}%
+\contentsline {subsubsection}{Classical gauge potential}{27}{section*.15}%
+\contentsline {subsubsection}{Quantum gauge potential}{28}{section*.16}%
+\contentsline {subsubsection}{Adiabatic gauge potential}{29}{section*.17}%
+\contentsline {subsubsection}{Performing counter-diabatic driving}{30}{section*.18}%
+\contentsline {subsubsection}{Explicit form}{30}{section*.20}%
+\contentsline {chapter}{\numberline {4}Two level system}{32}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Harmonic oscillator correspondence}{33}{section.4.1}%
+\contentsline {subsubsection}{Classical mechanics correspondence}{33}{section*.21}%
+\contentsline {section}{\numberline {4.2}Energy variance for two level system}{33}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Geodesical driving}{34}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Derivation of the fidelity}{35}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Analysis of the infidelity formula}{36}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}\leavevmode {\color {red}Energy variance}}{39}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Linear driving}{40}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Dependence on time}{41}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Final fidelity}{42}{subsection.4.4.2}%
+\contentsline {subsubsection}{Averaged final fidelity}{43}{section*.33}%
+\contentsline {subsubsection}{\leavevmode {\color {red}Oscillatory part from APT}}{46}{section*.39}%
+\contentsline {subsubsection}{Exponential part from Landau-Zener}{46}{section*.40}%
+\contentsline {subsection}{\numberline {4.4.3}Summary}{47}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}\leavevmode {\color {red}Energy variance}}{48}{subsection.4.4.4}%
+\contentsline {chapter}{\numberline {5}Lipkin-Meshkov Glick model}{49}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Special cases}{49}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Case $N=3$}{50}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Case $N=5$}{56}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Limit $N\rightarrow \infty $}{60}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}General behavior}{61}{section.5.2}%
+\contentsline {chapter}{\numberline {6}\leavevmode {\color {red}Driving on the ground state manifold}}{65}{chapter.6}%
+\contentsline {subsubsection}{Minimizing the distance on state manifolds}{65}{section*.61}%
+\contentsline {section}{\numberline {6.1}Minimizing the energy variance}{66}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Transport using quenches}{66}{section.6.2}%
+\contentsline {subsubsection}{Closed adiabatic driving}{67}{section*.62}%
+\contentsline {subsection}{\numberline {6.2.1}\leavevmode {\color {red}Most stable curves for counterdiabatic driving...this is like: "what if?", I have no idea}}{70}{subsection.6.2.1}%
+\contentsline {chapter}{Conclusion}{71}{chapter*.65}%
+\contentsline {chapter}{Bibliography}{72}{chapter*.66}%
+\contentsline {chapter}{List of Figures}{74}{chapter*.67}%
+\contentsline {chapter}{\numberline {A}Appendix 1}{77}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Attachments}{78}{appendix.B}%
+\contentsline {section}{\numberline {B.1}First Attachment}{78}{section.B.1}%
