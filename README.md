@@ -1,5 +1,5 @@
 
-[**Whole thesis**](https://github.com/strelda/dp/blob/main/dp_text/en/thesis.tex)\
+[**Whole thesis**](https://github.com/strelda/dp/blob/main/dp_text/en/thesis.pdf)\
 Contains whole thesis, including little reports below.
 
 
