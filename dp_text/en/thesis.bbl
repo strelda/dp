@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -38,8 +38,9 @@ M~V Berry.
 
 \bibitem[Berry(1989)]{berry1989}
 Michael~V. Berry.
-\newblock {THE QUANTUM PHASE, FIVE YEARS AFTER}.
-\newblock 1989.
+\newblock {The quantum phase, five years after’ in ‘Geometric Phases in
+  Physics’}.
+\newblock \emph{A Shapere, F Wilczek. (World Scientific) 7-28}, 1989.
 
 \bibitem[Bukov et~al.(2019)Bukov, Sels, and Polkovnikov]{Bukov2019}
 Marin Bukov, Dries Sels, and Anatoli Polkovnikov.
@@ -49,6 +50,14 @@ Marin Bukov, Dries Sels, and Anatoli Polkovnikov.
 \newblock \doi{10.1103/PhysRevX.9.011034}.
 \newblock URL \url{https://doi.org/10.1103/PhysRevX.9.011034
   https://link.aps.org/doi/10.1103/PhysRevX.9.011034}.
+
+\bibitem[Cheng(2013)]{cheng_quantum_2013}
+Ran Cheng.
+\newblock Quantum {Geometric} {Tensor} ({Fubini}-{Study} {Metric}) in {Simple}
+  {Quantum} {System}: {A} pedagogical {Introduction}.
+\newblock \emph{arXiv:1012.1337 [math-ph, physics:quant-ph]}, April 2013.
+\newblock URL \url{http://arxiv.org/abs/1012.1337}.
+\newblock arXiv: 1012.1337.
 
 \bibitem[Fecko(2006)]{fecko}
 Marián Fecko.
@@ -60,6 +69,8 @@ Marián Fecko.
 C.~Gorodski.
 \newblock \emph{An introduction to Riemannian geometry}.
 \newblock 2012.
+\newblock URL
+  \url{https://www.ime.usp.br/~gorodski/teaching/mat5771-2016/gorodski-riem-geom-2012.pdf}.
 \newblock Preliminary version.
 
 \bibitem[Guti\'errez-Ruiz et~al.(2021)Guti\'errez-Ruiz, Gonzalez,

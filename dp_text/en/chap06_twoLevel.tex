@@ -46,7 +46,7 @@ with time varying Hamiltonian. For 2-dimentional system with
          b(t)    
     \end{pmatrix},
 \end{equation}
-we get the system of \emph{two coupled differentials equations of the 1. order with non-constant coefficients}
+we get the system of \emph{two coupled differentials equations of the first order with non-constant coefficients}
 \begin{align}
     \Omega(t)a(t)+\Delta(t)b(t)&=i\dot a(t)\label{eq:a1}\\
     \Delta(t)a(t)-\Omega(t)b(t)&=i\dot b(t)
@@ -81,7 +81,7 @@ and initial value
 \section{Harmonic oscillator correspondence}
 The Equations \ref{eq:a1}, \ref{eq:a2} have no general analytical solution, with an exception to a few easy protocols $\HH(t)$. Before moving to some of these special cases, let's analyze this coupled system of equations generally.
 
-N-dimensional Schr\"odinger equation can be rewritten to \emph{one differential equation of N$^{th}$ order with non-constant coefficients}. In our two dimensional case, this equation corresponds to \emph{damped harmonic oscillator without external force}
+N-dimensional Schr\"odinger equation can be rewritten to \emph{one differential equation of N$^{th}$ order with non-constant coefficients}. In our two-dimensional case, this equation corresponds to \emph{damped harmonic oscillator without external force}
 \begin{align}
     0&= \ddot a(t)+ \gamma(t) \dot a(t)+\omega^2(t)a(t) \label{eq:harmonicOscillator}\\
     \gamma(t)&\coloneqq -\frac{\dot \Delta(t)}{\Delta(t)} \label{eq:gammaDef}\\
@@ -160,8 +160,8 @@ for $F_k\coloneqq \braket{k|\psi}$, which has no practical simplification.
 
 
 
-\section{Geodesical driving}
-Some of the analytically solvable driving protocols are the \emph{Geodesics} of the projective ground state manifold. 
+\section{Geodesic driving}
+Some analytically solvable driving protocols are the \emph{Geodesics} of the projective ground state manifold. 
 
 Define driving in 3-dimensional space
 \begin{equation}
@@ -180,7 +180,7 @@ parametrized by time $t\in[0,1]$ and with use of \emph{speed regulating function
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/driving.pdf}
-    \caption{Driving along the geodesic. $\lambda_i$ and $\lambda_f$ are initial resp. final parameters. DensityPlot shows the difference between Hamiltonian eigenvalues.}
+    \caption{Driving along the geodesic. $\lambda_i$ and $\lambda_f$ are initial resp. final parameters. Density plot shows the difference between Hamiltonian eigenvalues.}
     \label{fig:driving}
 \end{figure}
 
@@ -208,7 +208,7 @@ This reflects the rotational symmetry of the system. The change of reference fra
         \underbrace{\left(\expsm \redd{\HH(t)}\expsp+ \frac{\omega}{2}\hat\sigma_y\right)}_{\bluee{\tilde H(t)}}\bluee{\tilde\psi(t)}&=i\bluee{\tilde\psi'(t)}.
     \end{split}
 \end{equation}
-Therefore we can equivalently solve the Fidelity problem in this new coordinate system.
+From this one can equivalently solve the Fidelity problem in this new coordinate system.
 
 Hamiltonian in the moving frame is
 \begin{equation}
@@ -249,7 +249,7 @@ and the ground state
     \end{pmatrix}},
 \end{equation}
 for a normalization constant $\redd{\mathcal{N}}\coloneqq |\redd{\braket{0(t)|0(t)}}|^{-1}$.
-Fidelity during the transport is then\footnote{If we would calculate the fidelity in the \bluee{comoving frame}, we would get exactly one. This realization leads to the counterdiabatic driving.}
+Fidelity during the transport is then\footnote{If we calculated the fidelity in the \bluee{comoving frame}, we would get exactly one. This realization leads to the counter-diabatic driving.}
 \begin{equation}
     F=\left|\redd{\braket{0(t)|\psi(t)}}\right|^2.
     \label{fid:definition}
@@ -318,12 +318,13 @@ Fidelity as a function of time and final time can be seen in Figures \ref{fig:de
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/dens3.pdf}
-    \caption{Fidelity dependence on time and final time in log log scale. Note that only $t<T_f$ has physical meaning.}
+    \caption{Fidelity dependence on time and final time in log-log scale. Note that only $t<T_f$ has physical meaning.}
     \label{fig:dens3}
 \end{figure}
 
-\subsection{\red{Energy variance}}
-Another interesting quantity is the energy variance. It has meaning in the \red{Polkovnikov theorem. I might test it here.}
+\subsection{Energy variance}
+Another interesting quantity is the energy variance. It will be important later on in Theorem \ref{thm:polkovnikov}. For now, let's just mention that there the energy variance is smaller that the geometrical distance, if some conditions are fulfilled. 
+
 Evaluating the fidelity for geodesical driving gives a function of time $t$ and final time $T_f$
 \begin{equation}
     \begin{split}        
@@ -332,7 +333,7 @@ Evaluating the fidelity for geodesical driving gives a function of time $t$ and 
         & +8 s^2 \omega  q \sin (2 t \omega ) \sin \left(t q\right) + \omega ^3 q \sin (2 t \omega ) \sin \left(2 t q\right) \Bigg],
 \end{split}
 \end{equation}
-see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. It's value as can be seen on Fig. \ref{fig:densVar}. Note that only $t<T_f$ has a physical meaning, therefore the dependence is smooth along the whole geodesical driving protocols.
+see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. Its value can be seen on Fig. \ref{fig:densVar}. Note that only $t<T_f$ has a physical meaning, therefore the dependence is smooth along the whole geodesical driving protocols.
 
 \begin{figure}[H]
     \centering
@@ -348,12 +349,12 @@ Another analytically solvable driving is defined with two scaling parameters as
     \Omega(t)=\Omega_{sc}\left(\frac{2t}{T_f}-1\right),\quad \Delta(t)=\Delta_{sc}, \;\;\text{ for } \Omega_{sc}=10, \Delta_{sc}=1,
     \label{eq:linearDrivingdef}
 \end{equation}
-see Fig. \ref{fig:driving}. 
+see Fig. \ref{fig:driving1}. 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/drivingLin.pdf}
-    \caption{Driving along the linear path. $\lambda_i=(-10;1)$ and $\lambda_f=(10;1)$ are initial resp. final parameters. DensityPlot shows the difference between Hamiltonian eigenvalues.}
-    \label{fig:driving}
+    \caption{Driving along the linear path. $\lambda_i=(-10;1)$ and $\lambda_f=(10;1)$ are initial resp. final parameters. Density plot shows the difference between Hamiltonian eigenvalues.}
+    \label{fig:driving1}
 \end{figure}
 
 From linear driving definition \ref{eq:linearDrivingdef} and energy dependence \ref{eq:energy} we have
@@ -403,9 +404,9 @@ leading to \emph{fidelity at the end of the driving}
 \begin{equation}
     F_{end}= \left|N_+ \left(
         \frac{E_0(t)+\Omega(t)}{\Delta(t)} a(t)+b(t)
-        \right)\right|^2 \approx b^2(t).
+        \right)\right|^2 \approx b^2(t),
 \end{equation}
-Therefore when $t$ is getting close to $T_f$ the fidelity is oscilating with frequency \ref{eq:frequency}.
+therefore when $t$ is getting close to $T_f$ the fidelity is oscillating with frequency \ref{eq:frequency}.
 
 
 
@@ -419,7 +420,7 @@ Because the oscillations after fast parameter change in the Hamiltonian never di
     \label{fig:infidelityTfPlotLogLinCombined}
 \end{figure}
 
-First of all, the numerical precision of this calculation was found to be around $10^{-13}$. This means that the oscillations we see on Fig. \ref{fig:infidelityTfPlotLogLinCombined} are of physical origin with some additional numerical error. In fact these small oscillations are the remnants of the fast excitation during close approach of energy levels, see Fig. \ref{fig:infidelityTimePlotLin}. 
+First, the numerical precision of this calculation was found to be around $10^{-13}$. This means that the oscillations we see on Fig. \ref{fig:infidelityTfPlotLogLinCombined} are of physical origin with some additional numerical error. In fact these small oscillations are the remnants of the fast excitation during close approach of energy levels, see Fig. \ref{fig:infidelityTimePlotLin}. 
 
 
 
@@ -428,9 +429,9 @@ We can eliminate the effect of oscillations by averaging over time. For that we 
 \begin{equation}
     \langle F^*\rangle_p(T_f) \coloneqq \frac{1}{(1-p) T_f}\int_{p T_f}^{T_f} F^*(t)\d t.
 \end{equation}
-It turned out that averaging over 1 \% or 10 \% of the drivine (i.e. taking $t=0.1$, resp. $p=0.01$) gave approximately the same results for long enough drivings. The same result can be obtained from analytical continuation of the fidelity formula to $t\rightarrow  \infty$. Even though this has no physical meaning, the analytical continuation of the harmonic oscillator solution leads to the Fidelity value around which the oscillations occur. The result of averaging can be seen on Fig. \ref{fig:infidCombined}.
+It turned out that averaging over 1 \% or 10 \% of the driving (i.e. taking $t=0.1$, resp. $p=0.01$) gave approximately the same results for long enough drivings. The same result can be obtained from analytical continuation of the fidelity formula to $t\rightarrow  \infty$. Even though this has no physical meaning, the analytical continuation of the harmonic oscillator solution leads to the Fidelity value around which the oscillations occur. The result of averaging can be seen on Fig. \ref{fig:infidCombined}.
 
-Using this we can describe the driving using three regimes\footnote{The coefficient $p$ is assumed to be small enough not to cover the biggest oscillations after $t=T_f/2$ and big enough to average over suffitient number of oscillations. Approximately $p\in[0.6T_f,0.999T_f]$}:
+Using this we can describe the driving using three regimes\footnote{The coefficient $p$ is assumed to be small enough not to cover the biggest oscillations after $t=T_f/2$ and big enough to average over sufficient number of oscillations. Approximately $p\in[0.6T_f,0.999T_f]$}:
 \begin{itemize}
     \item \emph{exponential/fast-driving regime} -- $\langle F^*\rangle_p= \exp(-\xi T_f)$, $\xi\in\R^+$
     \item \emph{transitional regime} -- happens around \emph{critical time} $T_c$.
@@ -440,14 +441,13 @@ Using this we can describe the driving using three regimes\footnote{The coeffici
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidCombined1.pdf}
-    \caption{Final infidelity as a function of $T_f$ in log log scale wit linear scaled plot inserted.}
+    \caption{Final infidelity as a function of $T_f$ in log-log scale wit linear scaled plot inserted.}
     \label{fig:infidCombined}
 \end{figure}
 
 
-To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} with \ref{fig:overcritical}. Here we see two regimes, one for $t<T_c$ and on for $T>T_c$. The important observation is that in the first case it holds $F^*\neq 0$ anywhere and in the second case it touches zero periodically. The fidelity can be decomposed into a sum of two elements. Small oscillatory part, which can be explained by the theory of APT, and exponentially decreasing fidelity with final time, describable by Landau-Zener formula.
 
-The boundary between exponential and linear regime is not strict and can be seen on Fig. \ref{fig:dens2},as the transition between \emph{smooth} and \emph{chaotic} regimes. This happend at $t=T_c$. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. This would be smoothed out using the averaged final fidelity. The approximated dependence is
+The boundary between exponential and linear regime is not strict and can be seen on Fig. \ref{fig:dens2},as the transition between \emph{smooth} and \emph{chaotic} regimes. This happens at $t=T_c$. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. This would be smoothed out using the averaged final fidelity. The approximated dependence is
 \begin{equation}
     T_c\tilde\propto \Delta_{sc}^{-2}.
 \end{equation}
@@ -468,6 +468,9 @@ The boundary between exponential and linear regime is not strict and can be seen
 \end{figure}
 
 
+
+To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} with \ref{fig:overcritical}. Here we see two regimes, one for $t<T_c$ and on for $T>T_c$. The important observation is that in the first case it holds $F^*\neq 0$ anywhere and in the second case it touches zero periodically. The fidelity can be decomposed into a sum of two elements. Small oscillatory part, which can be explained by the theory of APT, and exponentially decreasing fidelity with final time, describable by Landau-Zener formula.
+
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/undercritical.pdf}
@@ -481,10 +484,27 @@ The boundary between exponential and linear regime is not strict and can be seen
     \caption{Final infidelity as a function of $t$ for close-adiabatic regime. $T_f=170>T_c$}
     \label{fig:overcritical}
 \end{figure}
-\subsubsection{\red{Oscillatory part from APT}}
 
-\subsubsection{Exponential part from Landau-Zener}
-Landau-Zener-Stueckelberg theory provides the WKB approximation formula for the fidelity during some transport. Full form can be seen in \cite{nonadiabaticTransition}. In our case, only simplified theorem is needed. 
+\subsubsection{Exponential and polynomial part using Landau-Zener and APT}
+Landau-Zener-Stueckelberg theory provides the WKB approximation formula for the fidelity during some transport. Full form can be seen in \cite{nonadiabaticTransition}. In our case, only simplified theorem is needed. First let's review some definitions.
+
+\begin{definition}[Diabatic coupling]
+    Diabatic coupling functions are off-diagonal elements of two level Hamiltonian. At avoided crossing, it is half of Hamiltonian eigenvalue difference,
+    \begin{equation}
+        A=\frac{E_2-E_1}{2}.
+    \end{equation}
+\end{definition}
+\begin{definition}[Diabatic potential]
+    Difference between Hamiltonian eigenvalues can be approximated by lines
+    \begin{equation}
+        \Delta E\equiv E_1-E_0 \eqqcolon \alpha t
+    \end{equation}
+    Diabatic potential difference is the ratio
+    \begin{equation}
+        |\Delta F|\coloneqq \left|\frac{\alpha}{t}\right|.
+    \end{equation}
+\end{definition}
+
 \begin{thm}[Landau-Zener-Stueckelberg for linear driving]
     For 
     \begin{itemize}
@@ -492,16 +512,32 @@ Landau-Zener-Stueckelberg theory provides the WKB approximation formula for the 
         \item with degeneracy in only one point,
         \item on the linear driving path in a parametric space
     \end{itemize}
-    the fidelity can be described for times $(0,T_c)$ as
+    the fidelity can be described for times $t\in(0,T_c)$ as
     \begin{equation}
-        F = \exp\left(-\frac{2 \pi A^2}{\hbar v |\Delta F}\right),
+        F = \exp\left(-\frac{2 \pi A^2}{v|\Delta F|}\right),
+        \label{eq:exponentialPart}
     \end{equation}
-    for a \emph{diabatic coupling} $A$ and difference between \emph{diabatic potentials} $\Delta F$. 
+    for a \emph{diabatic coupling} $A$, and \emph{diabatic potential difference} $|\Delta F|$. 
 \end{thm}
 
-In our case, $v=1/T_f$ and $2 A^2/|\Delta F|=\Omega_i^2/\Delta_{sc}$.
+In our case, we have constant speed $v=1/T_f$, off-diagonal elements are also constant $A=\Delta_{sc}$, and the driving path is symmetric along $\Omega=0$ axis, leading to $|\Delta F|=2\Omega_i$.
+
+The polynomial, or chaotic regime, can be explained using APT. It holds that
+\begin{equation}
+    \log(1-F)=\log(T_f^{-2})+\log\left(\sum_{i=1}^n |b_n^(1)(T_f)|2\right),
+    \label{eq:polynomialPart}
+\end{equation}
+for functions $b_n^(1)$ from Eq. \ref{eq:bnAPT}. For more detail, see \red{Felipe unpublished report}.
+
+The Equations \ref{eq:exponentialPart}, \ref{eq:polynomialPart} can be seen in \ref{fig:landauCompare}. We see that they intersect at time $T_c$ and give the leading order in both regimes, if one omits the oscillations. In fact these two parts are not only the good approximation on both intervals, but if added together, they represent the whole fidelity curve with very high precision. It might not give a good mathematical meaning to add these two solutions together. But because the APT gives the infidelity of order $10^{-9}$, it creates negligible error. The advantage is that by this process one gets an approximation for the transitional regime.
 
 
+\begin{figure}[H]
+    \centering 
+    \includegraphics[scale=1.2]{../img/landauCompare.pdf}
+    \caption{Fidelity as a function of driving final time, approximated by the \green{sum (green)} of \red{Landau-Zener (red, dashed)} and \textcolor{purple}{APT (purple, dashed)}}
+    \label{fig:landauCompare}
+\end{figure}
 % \subsection{Multiparametric behavior}
 % The critical time $T_c$ is the point where the fidelity dependence on final time becomes polynomial. We have shown that 
 % \begin{equation}
@@ -537,22 +573,15 @@ Now we should understand all results separately, let's put it all together. On F
 
 
 \newpage
-\subsection{\red{Energy variance}}
-Energy variance resembles structure similar to fidelity. Compare Fig. \ref{fig:densVariance} with \ref{fig:dens3}. \red{why is it almost the same as fidelity of geodesical driving???}
+\subsection{Energy variance}
+Energy variance for the linear driving case can be seen on Fig \ref{fig:densVariance}, as a function of time and final time. $\Omega$ and final time.
+\red{Why is it almost the same as fidelity of geodesical driving???}
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/densVariance.pdf}
     \caption{Energy variance for $\Delta_{sc}=0.2$ for linear driving. Note that only $t<T_f$ has physical meaning.}
     \label{fig:densVariance}
 \end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=1.2]{../img/contVariance.pdf}
-    \caption{Energy variance for $t=T_f/2$ for linear driving.}
-    \label{fig:densVarLin}
-\end{figure}
-
 
 
 

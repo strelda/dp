@@ -1,6 +1,6 @@
 \chapter{Mathematical introduction}
 \label{chap:mathIntro}
-The modern approach to the closed system dynamics is using \emph{differential geometry} formalism. Before we get to the quantum mechanics itself, lets introduce this formalism and recapitulate some definitions of this branch of mathematics. More detailed notes can be found for example in \cite{lu}, or \cite{fecko}.
+The modern approach to the closed system dynamics is using \emph{differential geometry} formalism. Before we get to the quantum mechanics itself, let's introduce this formalism and recapitulate some definitions of this branch of mathematics. More detailed notes can be found for example in \cite{lu}, or \cite{fecko}.
 
 Let's have a manifold $\M$ and curves on it, parametrized by some real interval:
 $$\gamma:\R \supset (P_i,P_o) \rightarrow \M\; \qquad \xi\mapsto \gamma(\xi) \text{  for } \xi \in (P_i,P_o) .$$ 
@@ -10,12 +10,12 @@ The space of functions is $\FM\equiv\{f:\M\rightarrow \R\}$.
 To define \bluee{\emph{vectors}} on $\M$, we need to make sense of the \emph{direction}. It is defined using curves satisfying 
 $$\gamma_1(0)=\gamma_2(0)\equiv P$$
 $$\der{}{t}x^i(\gamma_1(t))\big|_{t=0}=\der{}{t}x^i(\gamma_2(t))\big|_{t=0}.$$
-Taking the equivalence class created by those two rules, sometimes noted as $\bluee{[\gamma]}=\bluee v$, we have element of the tangent space to $\M$. We will use standard notation for the \bluee{tangent space of $\M$} in some point $P$ as $\bluee{\T_P\M}$. Contangent space is denoted as $\blueee{\T^*_P\M}$. Unifying all \bluee{tangent}, resp. contangent spaces over all $x$ we get tangent and cotangent bundle, \bluee{$\TT\M$} and $\TT^*\M$ respective. To generalize this notation to higher tensors, we denote $\T_P\M\in \TT^1\M$, $\T^*_P\M\in \TT_1\M$. This offers to increase the order to arbitrary numbers, leading to $p-$times \bluee{contravariant} and $q-$times \blueee{covariant} tensors. These are standardly denoted $\TT^{\bluee p}_{\blueee q} \M$. Tensor space in point $P\in\M$ is denoted ${\TT_P}^{\bluee p}_{\blueee q} \M$
+Taking the equivalence class created by those two rules, sometimes noted as $\bluee{[\gamma]}=\bluee v$, we have element of the tangent space to $\M$. We will use standard notation for the \bluee{tangent space of $\M$} in some point $P$ as $\bluee{\T_P\M}$. Cotangent space is denoted as $\blueee{\T^*_P\M}$. Unifying all \bluee{tangent}, resp. cotangent spaces over all $x$ we get tangent and cotangent bundle, \bluee{$\TT\M$} and $\TT^*\M$ respective. To generalize this notation to higher tensors, we denote $\T_P\M\in \TT^1\M$, $\T^*_P\M\in \TT_1\M$. This offers to increase the order to arbitrary numbers, leading to $p-$times \bluee{contravariant} and $q-$times \blueee{covariant} tensors. These are usually denoted $\TT^{\bluee p}_{\blueee q} \M$. Tensor space in point $P\in\M$ is denoted ${\TT_P}^{\bluee p}_{\blueee q} \M$
 Using the congruence of curves on $\M$, the expression 
 \begin{equation}
     \bluee{\der{}{\xi}}f\circ \gamma(\xi)\bluee{\Big|_{\xi=0}}
 \end{equation}
-has a good meaning and we can define the \emph{vector} in some $P\in\M$ as
+has a good meaning, and we can define the \emph{vector} in some $P\in\M$ as
 \begin{equation}
     \bluee{\bm v}: \FM\rightarrow \R \qquad f\mapsto \bluee{\bm v[}f\bluee ]\equiv \frac{\bluee \d f(\gamma(\xi))}{\bluee{\d \xi}}\bluee{\Big|_P} \equiv \bluee{\partial_\xi\Big|_P} f .
 \end{equation}
@@ -30,12 +30,12 @@ which can be understood in coordinates as
 \begin{equation}
     \bluee{\bm v[}f\bluee ] = \bluee{\der{}{\bm v}} f\circ \gamma(\xi)\bluee{\Big|_{\xi=0}}=v^\mu\bluee{\der{}{x^\mu}} f(\bm x)\Big|_{P}.
 \end{equation}
-The directionnal derivative will be denoted $\bm\nabla_v$
+The directional derivative will be denoted $\bm\nabla_v$
 and in basis $\bluee{\bm e_i} \equiv \bluee{\partial/\partial x^i}$ we will denote 
 $$\bm\nabla=\bluee(\bluee{\bm e_1}, \bluee{\bm e_2},\bluee{\bm e_3}).$$
 
 
-During the whole thesis, the greek indeces will be \emph{abstract} and latin \emph{pointer}. Abstract indices show the rank of the tensor, meaning \emph{how many empty slots for contraction the tensor has}. Pointer indices exctract specific number from the tensor. For example
+During the whole thesis, the Greek indices will be \emph{abstract} and Latin \emph{pointer}. Abstract indices show the rank of the tensor, meaning \emph{how many empty slots for contraction the tensor has}. Pointer indices extract specific number from the tensor. For example
 $$t^\mu_{\nu\kappa} \in \TT^1_2\M, \quad \text{ whilst for some }i,j,k\in\N: t^i_{jk}\in \mathbb F.$$
 
 For \emph{Tensor contraction}, the index notation will be used. When it is clear what type of tensors we are operating with, the object notation can be used, for example $t(\bluee{\bm u},\bluee{\bm v})\equiv t_{\mu\nu}\bluee{\bm u^\mu \bm v^\nu}$. The contraction can also be noted using contraction operator $\mathbf C$, when it is clear which indices are contracted, or when it does no matter which of them are.
@@ -51,16 +51,13 @@ If the form $g_{\mu\nu}\in\TT^0_2\M$ is
 we call $g_{\mu\nu}$ a \emph{metric tensor}.
 \end{definition}
 
-We will often require \emph{differentiable metric tensor}, or at least almost everywhere differentiable\footnote{Almost everywhere means "with an exception of the submanifold of zero measure. Most often it means only a few point singularities.}. That will assure that \emph{covariant derivatives} and \emph{parallel transport} are well defined almost everywhere. 
+We will often require \emph{differentiable metric tensor}, or at least almost everywhere differentiable\footnote{Almost everywhere means \emph{with an exception to the submanifold of zero measure}. Most often it means only a few point singularities.}. That will assure that \emph{covariant derivatives} and \emph{parallel transport} are well-defined almost everywhere. 
 
 
 
 
 Vectors of tangent space to some manifold can be compared only within one such space. To perform some tensor operations we need to transport them to some common tangent space. This can be done using the \emph{parallel transport} which is connected to the notion of \emph{covariant derivative}.
 
-\begin{definition}[Derivative]
-    co je derivace obecne
-\end{definition}
 \begin{definition}[Pseudoderivative]
 \label{def:pseudoderivative}
     $\bm P$ is called a pseudoderivative of type $p,q$, if $\forall f\in\FM, \; \bm A,\bm B\in \TT^{\bluee p}_{\blueee q} \M: $
@@ -142,7 +139,7 @@ The vector $v\in \T_P\M$ is said to be parallel transported along curve $\gamma(
 
 \section{Fiber bundle}
 \label{sec:bundleDef}
-At every point of manifold we introduced a tensor space. This creates rather complicated structure, which can be simplified using so called \emph{fiber bundles}. From classical mechanics one might recognize the space of all vectors, \emph{vector bundle}, as a union of all vectors from the phase space $\cup_x\T_x\M$.
+At every point of manifold we introduced a tensor space. This creates rather complicated structure, which can be simplified using so-called \emph{fiber bundles}. From classical mechanics one might recognize the space of all vectors, \emph{vector bundle}, as a union of all vectors from the phase space $\cup_x\T_x\M$.
 \begin{definition}[Fiber bundle]
     \label{def:fiberBundle}
     Structure 
@@ -161,7 +158,7 @@ At every point of manifold we introduced a tensor space. This creates rather com
             \draw[->] (1.3,0.5)--(0.7,0.23);
         \end{tikzpicture}
 \end{center}
-    for topological spaces $\mathcal{E}$, $\mathcal{B}$, $\mathcal F$ and continuous surjection $\pi: \mathcal{E}\rightarrow \mathcal{B}$ satisfying a local triviality is called a \emph{Fiber bundle}. The local triviality means that $\mathcal{B}$ is connected\footnote{can't be represented as a union of two and more disjoint sets} and for every $x\in \mathcal{B}$, there is an open neighborhood $\mathcal{U}\subset \mathcal{B}$ \emph{(trivializing neighborhood)} such that there exists a homeomorphism from $\mathcal{U}$ to so-called \emph{product space}
+    for topological spaces $\mathcal{E}$, $\mathcal{B}$, $\mathcal F$ and continuous surjection $\pi: \mathcal{E}\rightarrow \mathcal{B}$ satisfying a local triviality is called a \emph{Fiber bundle}. The local triviality means that $\mathcal{B}$ is connected\footnote{Connected mean, it can't be represented as a union of two and more disjoint sets} and for every $x\in \mathcal{B}$, there is an open neighborhood $\mathcal{U}\subset \mathcal{B}$ \emph{(trivializing neighborhood)} such that there exists a homeomorphism from $\mathcal{U}$ to so-called \emph{product space}
     $$\phi: \pi^{-1}(\mathcal{U})\rightarrow \mathcal{U}\times \mathcal{F},$$
     such that $\pi^{-1}\circ \pi(\mathcal{U})=\mathcal{U}$.
     The structure is as follows: 
@@ -251,7 +248,7 @@ Because projections of products are open maps, $\pi: \mathcal{E}\rightarrow \mat
 \section{Riemannian geometry}
 Let's briefly mention some definitions and theorems from Riemannian geometry, which will be used later on.
 \begin{definition}[Riemannian manifold]
-    Manifold is called Riemannian, iff its equipped with positive definite metric tensor.
+    Manifold is called Riemannian, iff it's equipped with positive definite metric tensor.
 \end{definition}
 \begin{definition}[Connected manifold]
     Manifold is connected, iff the distance between two points is infimum of the lengths of curves joining the two points.
@@ -264,15 +261,15 @@ Let's briefly mention some definitions and theorems from Riemannian geometry, wh
 \end{definition}
 This condition holds if the space does not contain any singularities and its coordinate-independent notion.
 \begin{definition}[Geodesic maximality]
-    A manifold is said to be geodesically maximal if its eigter geodesically complete, or every non-complete geodesic (such that cannot be extended to infinite values of their affine parameter) ends in a singularity.
+    A manifold is said to be geodesically maximal if it's either geodesically complete, or every non-complete geodesic (such that cannot be extended to infinite values of their affine parameter) ends in a singularity.
 \end{definition}
-Geodesic maximality is coordinate dependent notion, if the manifold is geodesicaly complete.
+Geodesic maximality is coordinate dependent notion, only if the manifold is geodesicaly complete.
 
 
 \begin{thm}[Von Neumann-Wigner]
     \label{thm:n-2}
 (Von Neumann J, Wigner E. 1929. Physikalische Zeitschrift30:467-470 \red{can't find this anywhere})
-This, sometimes called the Non-Crossing Theorem states, that the eigenvalues of Hermitian matrix driven by $N$ continuous real parameters forms at maximum $N-2$ dimensional submanifold.
+This, sometimes called the Non-Crossing Theorem states, that the eigenvalues of Hermitian matrix driven by $N$ continuous real parameters forms at maximum $(N-2)$-dimensional submanifold.
 \end{thm}
 
 
@@ -316,7 +313,7 @@ which is second order symmetric tensor.
 \begin{equation}
     R\coloneqq R^\mu_{\;\;\mu}.
 \end{equation}
-This can be simplified for 2 dimensional manifold as
+This can be simplified for 2-dimensional manifold as
 \begin{equation}
     R=\frac{2}{g_{22}}\left(\Gamma^1_{\;22,1}-\Gamma^1_{\;12,2}+\Gamma^1_{\;11}\Gamma^1_{\;22}+\Gamma^1_{\;12}\Gamma^2_{\;22}-\Gamma^1_{\;21}\Gamma^1_{\;12}-\Gamma^1_{\;22}\Gamma^2_{\;12}\right).
     \label{eq:Ricci2D}
@@ -330,5 +327,5 @@ for
     \mathcal{A}&\coloneqq \left(\frac{g_{12}}{g_{11}\sqrt{\abs{g}}}g_{11,2}-\frac{1}{\sqrt{\abs{g}}}g_{22,1}\right)_{,1}\\
     \mathcal{B}&\coloneqq \left(\frac{2}{\sqrt{\abs{g}}}g_{12,1}-\frac{1}{\sqrt{\abs{g}}}g_{11,2}-\frac{g_{12}}{g_{11}\sqrt{\abs{g}}}g_{11,1}\right)_{,2}.
 \end{align}
-This equation turned out to give bigger numerical error, therefore eq. \ref{eq:Ricci2D} will be user later on.
+This equation turned out to give bigger numerical error, therefore Eq. \ref{eq:Ricci2D} will be user later on.
 

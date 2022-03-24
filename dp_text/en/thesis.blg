@@ -5,8 +5,8 @@ A level-1 auxiliary file: title.aux
 A level-1 auxiliary file: notation.aux
 A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: chap01_intro.aux
-A level-1 auxiliary file: chap02_geomQM.aux
 A level-1 auxiliary file: chap03_driving.aux
+A level-1 auxiliary file: chap02_geomQM.aux
 A level-1 auxiliary file: chap06_twoLevel.aux
 A level-1 auxiliary file: chap07_lipkin.aux
 A level-1 auxiliary file: chap04_groundManifold.aux
@@ -15,48 +15,46 @@ A level-1 auxiliary file: bibliography.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: appendix1.aux
 Database file #1: bibliography.bib
-Warning--I didn't find a database entry for "cheng_quantum_2013"
-Warning--empty journal in berry1989
 Warning--empty publisher in claudio
-You've used 16 entries,
+You've used 17 entries,
             2773 wiz_defined-function locations,
-            734 strings with 7944 characters,
-and the built_in function-call counts, 6412 in all, are:
-= -- 595
-> -- 269
-< -- 15
-+ -- 97
-- -- 81
-* -- 468
-:= -- 1033
-add.period$ -- 77
-call.type$ -- 16
-change.case$ -- 70
-chr.to.int$ -- 16
-cite$ -- 34
-duplicate$ -- 332
-empty$ -- 564
-format.name$ -- 101
-if$ -- 1342
+            741 strings with 8329 characters,
+and the built_in function-call counts, 6750 in all, are:
+= -- 630
+> -- 279
+< -- 16
++ -- 101
+- -- 84
+* -- 489
+:= -- 1091
+add.period$ -- 83
+call.type$ -- 17
+change.case$ -- 74
+chr.to.int$ -- 17
+cite$ -- 35
+duplicate$ -- 351
+empty$ -- 594
+format.name$ -- 105
+if$ -- 1413
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 22
-newline$ -- 116
-num.names$ -- 64
-pop$ -- 141
+missing$ -- 23
+newline$ -- 124
+num.names$ -- 68
+pop$ -- 145
 preamble$ -- 1
-purify$ -- 59
+purify$ -- 62
 quote$ -- 0
-skip$ -- 224
+skip$ -- 236
 stack$ -- 0
-substring$ -- 168
-swap$ -- 31
+substring$ -- 170
+swap$ -- 34
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 146
-warning$ -- 2
-while$ -- 59
+type$ -- 157
+warning$ -- 1
+while$ -- 62
 width$ -- 0
-write$ -- 265
-(There were 3 warnings)
+write$ -- 284
+(There was 1 warning)

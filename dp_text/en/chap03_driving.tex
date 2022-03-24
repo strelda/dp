@@ -59,7 +59,7 @@ holds. For eigenstates of instantaneous Hamiltonian it reads as energy \Schrodin
 Notice that these states are independent on the trajectory $\gamma_t$.
 For every $\HH(\llambda)$ its energies can be sorted from the lowest, defining the set $\sigma(\HH(\llambda))\coloneqq\{E_0,\dots,E_n\}$, which will be called \emph{spectrum of the Hamiltonian}. In this set, degeneracies are not unified into one element, therefore every $\sigma(\llambda)$ has $n$ elements. From this there exists an isomorphism between all $\sigma$-sets, and we can define \emph{section} 
 $$\mathrm{sec}_s: \ket{s(\llambda)}\mapsto \mathcal{U}\subset \R^d, \quad \text{for } s\in\{0,\dots, n-1\}.$$
-This maps eigenstates corresponding to energy $E_s$ to the base manifold. This mapping is similar to previously introduced $\pi$, except it chooses one point from the infinite dimensional Hilbert space and maps it to the base manifold. From this the $\sec_s$ is a isomorphism. 
+This maps eigenstates corresponding to energy $E_s$ to the base manifold. This mapping is similar to previously introduced $\pi$, except it chooses one point from the infinite dimensional Hilbert space and maps it to the base manifold. From this the $\sec_s$ is an isomorphism. 
 
 Now we have constructed $n$ sections of the full Hilbert space, which are isomorphic to the base manifold. Because $\mathcal U$ is a Riemannian manifold, these so-called \emph{projective energy manifolds} $\P\M_s$, must be also Riemannian.
 Special importance of the \emph{projective ground state manifold} $\P\M_0$, which will be used later on for adiabatic transports of ground states. Geometrical intuition is drawn on fig. \ref{fig:fullStructure}. 
@@ -145,7 +145,7 @@ We see, that the geometric phase does not depend on energy or time, only on the 
 
 
 
-\subsection{3-dimensional parametric space $\mathcal{U}$}
+\subsection{3-dimensional parametric space}
 The problem of calculating Eq. \ref{eq:gammaCoint} lies in the element $\partial_\llambda s(\llambda)$, which locally requires knowledge of single-valued basis $\{\ket{0},\dots, \ket{n}\}$. This can be avoided in 3-dimensions using Stokes's theorem for $S$ as the surface with boundary $\partial S=C$, for coordinate gradient $\bm \nabla$
 \begin{equation}
     \begin{split}
@@ -326,7 +326,7 @@ where $\curlyleftarrow{\partial}_\nu$ affects the covector on the left.
 
 
 
-\begin{proof}[\textbf{Proof of the  metric tensor definitions correspondence}]\
+\begin{proof}[Proof of the  metric tensor definitions correspondence]\
     \label{sec:derivationOfGeometricTensor}
 
     To prove the correspondence of geometric tensor, described by Eq. \ref{eq:geometricTensor}, to distance on $\M_0$ in Eq. \ref{eq:distanceOnM0}, we start with eigenstate $\ket{o(\llambda)}\in \M_0\cap \H(\llambda)$. Changing parameters $\llambda$ to $\llambda+\delta \llambda$ results in Hamiltonian $\HH_f$ with eigenstates $\ket{s(\llambda+\delta \llambda)}\in \M_s\cap\H(\llambda+\delta \llambda)$, meaning it can be excited. Probability amplitude of going to such state is
@@ -401,7 +401,7 @@ has a good meaning. This formula can be directly proven by comparing with \ref{e
     
 \end{definition}
 
-Berry phase is zero, when the curve does not go around some geometric tensor singularity. This can be formally written using the \emph{winding number}, which counts \emph{how many times the curve goes counterclockwise around some point of interest}. In our case the points of interest are singularities $a$, and we say:\red{maybe even $\Leftrightarrow$ can be here, not sure}
+Berry phase is zero, when the curve does not go around some geometric tensor singularity. This can be formally written using the \emph{winding number}, which counts \emph{how many times the curve goes counterclockwise around some point of interest}. In our case the points of interest are singularities $a$, and we say:
 $$\varphi_B=0 \Leftarrow \mathrm{Ind}_a \gamma(\lambda)=0.$$
 
 Those singularities appear in the system due to energy spectrum degeneracies, in the case of ground state manifold, when $E_1-E_0=0$. Those points are called \emph{diabolic}, because of their shape in the $(\lambda,\chi)$ parameter space.\footnote{https://en.wikipedia.org/wiki/Diabolo}
@@ -452,6 +452,7 @@ Variables $\reddd{\omega_n(s)}$ and $\reddd{\gamma_n(s)}$ are defined using inte
 The problem now lies in determining $\redd{b_n^{(p)}(s)}$, which is also \red{non-local}. Because it depends on its relative \reddd{geometric} and \reddd{dynamical phase} to other \bluee{energy levels}, let's write it as a series
 \begin{equation}
     \redd{b_n^{(p)}(s)}=\sum_{m=0} e^{\frac{i}{v}\reddd{\omega_{nm}(s)}}e^{-i\reddd{\gamma_{nm}(s)}}\blue{b_{nm}^{(p)}(s)},
+    \label{eq:bnAPT}
 \end{equation}
 where $\reddd{\omega_{nm}} \coloneqq \reddd{\omega_m}-\reddd{\omega_n}$, $\reddd{\gamma_{nm}} \coloneqq \reddd{\gamma_m}-\reddd{\gamma_n}$.  The reason for \blue{locality} of $\blue{b_{nm}^{(p)}(s)}$ will be clear soon.
 
@@ -478,9 +479,9 @@ for $\bluee{\Delta_nm(s)}\coloneqq \bluee{E_m-E_n}$, $\bluee{W_{nm}(s)}\coloneqq
 
 
 
-\section{\red{How to advantageously drive the system}}
+\section{How to advantageously drive the system}
 \label{chap:typesOfDriving}
-In many experimental settings, one needs to achieve as high fidelity as possible. If $F=1$ we speak about \emph{unit fidelity protocols}, and we say that the driving is \emph{adiabatic}. The fidelity can be practically improved by many methods, three of them in which we will be interested are\footnote{There is a nice analogy with driving a toy car \gray{(a quantum state)} in a curved terrain \gray{(a Hilbert space)}. To avoid the car flying in the air \gray{(the state excitation)}, you can either drive slowly, or you can go around the hills, or you can have a friend \gray{(a counter-diabatic element)}, who will push the car against the ground every time it is supposed to jump.}:
+In many experimental settings, one needs to achieve as high fidelity as possible. If $F=1$ we speak about \emph{unit fidelity protocols}. If the driving is slow enough that $F=1$, we say the driving is \emph{adiabatic}. The fidelity can be practically improved by many methods, three of them in which we will be interested are\footnote{There is a nice analogy with driving a toy car \gray{(a quantum state)} in a curved terrain \gray{(a Hilbert space)}. To avoid the car jumping on the hills \gray{(the state excitation)}, you can either drive slowly \gray{(close adiabatic driving)}, or you can go around the hills \gray{(vary the path)}, or you can have a friend \gray{(a counter-diabatic element)}, who will push the car against the ground every time it is supposed to jump.}:
 \begin{itemize}
     \item close adiabatic driving - changing the driving parameters slowly, so the system has plenty of time to collapse into the ground state,
     \item path variation - varying the driving trajectory, avoiding the topological defects on manifolds,
@@ -489,27 +490,26 @@ In many experimental settings, one needs to achieve as high fidelity as possible
 
 
 
-\subsection{\red{Adiabatic driving}}
-Adiabatic transformation is such transformation from $\P\M$ to $\P\M$, which does not excite the system, meaning the fidelity $F=1$. Generally it can be achieved by two methods -- infinitely slow transformation of states, or adding some \emph{counter-diabatic element} to the Hamiltonian.
+\subsection{Adiabatic driving}
+Adiabatic transformation is such transformation from $\P\M _0$ to $\P\M_0$, which does not excite the system, meaning the fidelity $F=1$. Generally it can be achieved by two methods -- \emph{infinitely slow transformation of states}, or adding some \emph{counter-diabatic element} to the Hamiltonian.
 
 
 In this chapter, we will be dealing with the system described by the finite-dimensional Hamiltonian $\HH(\llambda)$ which drives the system according to \Schrodinger equation from some initial state $\ket{s(\llambda}$ to $\ket{s(\tilde\llambda)}$ along the path $\gamma(\lambda)$. Before going throw the details of adiabatic transformations, let's define its meaning properly.
 
 \begin{definition}[Adibaticity]
-    Slow change of the driving parameters of the Hamiltonian $H(\llambda)$ in a sense, that it does not excite the system and allows the system to return to the same energetic state after circulation around any \emph{closed path} on the manifold with fidelity $F=1$. 
+    Slow change of the driving parameters of the Hamiltonian $H(\llambda)$ in a sense, that it does not excite the system and allows the system to return to the same energetic state after circulation around any closed path on the ground state manifold with fidelity $F=1$. 
 \end{definition}
 
 
 \subsubsection{Slow transports}
-\citep{kolodrubez}[chap. 2.3]
 As was mentioned in the introduction of this chapter, one way to change the system parameters without exciting it is to change the driving parameter slowly enough. The meaning of the word "slow" clears up next theorem.
 \begin{thm}[Adiabatic theorem]
     \label{adiabaticTheorem}
-    For Hamiltonian $\HH$ varying in the time range $T$, the solution of the Schrödinger equation 
+    For slowly varying Hamiltonian $\HH$ in the time range $(0,T_f)$, the solution of the Schrödinger equation 
     $$\HH(\lambda)\ket{\psi_n(\lambda)} = E_n(\lambda)\ket{\psi_n(\lambda)}$$
-    with initial condition in x-representation $\braket{x|\psi(t=0}=\psi_n(x,0)$ can be approximated as
+    with initial condition in x-representation $\braket{x|\psi(t=0}=\psi(x,0)$ can be approximated as
     \begin{equation}
-      ||\psi(\lambda) - \psi_{ad}(\lambda)||\approx o\left(\frac{1}{T}\right)
+      ||\psi(\lambda) - \psi_{ad}(\lambda)||\approx o\left(\frac{1}{T_f}\right)
     \end{equation}
     for \emph{adiabatic state}
     \begin{equation}
@@ -518,12 +518,28 @@ As was mentioned in the introduction of this chapter, one way to change the syst
     where we define \emph{dynamical phase} induced by energy transitions,
     $$\omega_n(\lambda)\equiv -\int_0^t E_n(\tau)\d \tau$$
     and \emph{geometrical phase}, also called \emph{Berry phase}
-        $$\gamma_n(\lambda)\equiv \int_0^t \underbrace{i\braket{\psi_n(\tau)|\partial_t\psi_n(\tau)}}_{\nu_n(\tau)} \d \tau .$$
+        $$\gamma_n(\lambda)\equiv \int_0^t i\braket{\psi_n(\tau)|\partial_t\psi_n(\tau)} \d \tau .$$
 \end{thm}
 \begin{myproof}
-    \textcolor{blue}{TBD (is on wikipedia :)} )
+    \textcolor{blue}{TBD (is on wikipedia :), it will give a sense to the theorem} )
 \end{myproof}
-Assume differentiable and non-singular Hamiltonian $\HH(\llambda)$ with non-degenerate basis $\{\ket{m,\llambda}\}_m$ called the \emph{adiabatic basis}. This is generally the family of adiabatically connected eigenstates\footnote{In the case of energy level crossing, the eigenstates are not unified, because transition between them is not adiabatical.} The transition amplitude between states for adiabatic change is
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{\red{Counter-diabatic driving}}
+
+Assume differentiable and non-singular Hamiltonian $\HH(\llambda)$ with non-degenerate basis $\{\ket{m,\llambda}\}_m$ called the \emph{adiabatic basis}. This is generally the family of adiabatically connected eigenstates\footnote{In the case of energy level crossing, the eigenstates are not unified, because transition between them is not adiabatic.} The transition amplitude between states for adiabatic change is
 \begin{equation}
     0=\bra{m(\llambda)}\HH\ket{n(\tilde\llambda)} \quad \text{for }n\neq m, \forall \llambda,\forall \tilde \llambda.
 \end{equation}
@@ -532,11 +548,11 @@ This can be driven along some curve $\gamma(\lambda)$, i.e. differentiated by $\
     \begin{split}
         0&=\bra{\partial_t m(\llambda)}\HH(\tilde \llambda)\ket{n(\tilde\llambda)}+ \bra{m(\llambda)}\overbrace{\partial_t\HH(\tilde \llambda)}^{\approx \partial_t\HH(\llambda)}\ket{n(\tilde\llambda)}+ \bra{m(\llambda)}\HH(\tilde \llambda)\ket{\partial_t n(\tilde \llambda)}\\
         &=E_n(\lambda)\braket{\partial_t m(\llambda)|n(\tilde \llambda)} + E_m(\lambda)\braket{m(\llambda)|\partial_t n(\tilde \llambda)}+ \bra{m(\llambda)}\partial_t \HH(\tilde\llambda)\ket{n(\tilde \llambda)}\\
-        &= (E_m(\lambda)-E_n(\lambda))\underbrace{\braket{m|\partial_t (\tilde \llambda)}}_{-\frac{i}{\hbar}\bra{m}\AA_t\ket{n(\tilde \llambda)}} + \braket{m|\partial_t\HH|n(\tilde \llambda)}.
+        &= (E_m(\lambda)-E_n(\lambda))\underbrace{\braket{m|\partial_t (\tilde \llambda)}}_{-\frac{i}{\hbar}\bra{m}\AA_t\ket{n(\tilde \llambda)}} + \braket{m|\partial_t\HH|n(\tilde \llambda)},
     \end{split}
 \end{equation}
 
-This can be rewritten in matrix form as
+which can be rewritten in matrix form as
 \begin{equation}
     i\hbar\partial_t\HH=[\AA_t,\HH]-i\hbar \hat{M}_t\qquad \text{for } \hat{M}_t\equiv -\sum_n\pder{E_n(\lambda)}{t}\ket{n(\lambda)}\bra{n(\lambda)}.
 \end{equation}
@@ -545,14 +561,20 @@ $\hat{M}$ is diagonal in energetic basis and its elements has meaning of \emph{g
     [\HH,i\hbar\partial_t\HH-[\AA_t,\HH]]=0.
     \label{eq:komutation}
 \end{equation}
-This can be used as the definition for \emph{counter-diabatic potential} $\AA_t$, because it was obtained from only one assumption -- adiabaticity. The strength of this equation lies in fact, that it finds counter-diabatic potential without the need of Hamiltonian diagonalization.
+This can be used as the definition for \emph{counter-diabatic potential} $\AA_t$, because it was obtained from only one assumption -- adiabaticity. The strength of this equation lies in fact, that it finds counter-diabatic potential without the need of Hamiltonian diagonalization. For more, see \cite{kolodrubez}[chap. 2.3].
 
 
 
 
-\subsection{\red{Counterdiabatic driving}}
+
+
+
+
+
+
+
 \subsubsection{Gauge potentials}
-In section \ref{sec:derivationOfGeometricTensor} we introduced the gauge potential without proving its gauge meaning, but only stating its correspondence to transition probability, see eq. \ref{eq:probabilityOfTransitionIsGauge}.
+In section \ref{sec:derivationOfGeometricTensor} we introduced the gauge potential without proving its gauge meaning, but only stating its correspondence to transition probability, see Eq. \ref{eq:probabilityOfTransitionIsGauge}.
 \emph{Gauge transformations}, in classical mechanics called \emph{canonical}, can be defined such, that they \emph{preserve Lagrangian of the system under local transformations from some Lie group}. This implies, that gauge transformed Hamiltonian $\HH(\llambda)$ and $\HH(\llambda+\d \llambda)$ commutes with its canonically transformed version\footnote{This can be easily reformulated to the world of classical physics, where the commutator is replaced by Poisson bracket.} 
  \begin{equation}
      [\HH(\llambda),\HH(\llambda+\delta \llambda)]=0.
@@ -708,7 +730,7 @@ for which $\tilde H \coloneqq\U^+\HH\U$ is diagonal, leading to
     i\hbar \der{\lambda}{t}\partial_\lambda\U(\tilde\llambda)\ket{\tilde \psi(\tilde\llambda)} + i\hbar \U(\tilde\llambda)\der{}{t}\ket{\tilde \psi(\tilde\llambda)} &= \HH(\lambda)\U(\tilde\llambda)\ket{\tilde \psi(\tilde\llambda)}.
 \end{align}
 
-This can be rewritten using adiabatic potential from eq. \ref{eq:adiabaticPotentialDefinition}, using \emph{dot} notation for time derivatives and omitting the points in which the objects are evaluated, as
+This can be rewritten using adiabatic potential from Eq. \ref{eq:adiabaticPotentialDefinition}, using \emph{dot} notation for time derivatives and omitting the points in which the objects are evaluated, as
 \begin{equation}
     i\hbar \der{}{t}\ket{\tilde\psi} = \left[\U^+\HH\U-\dot{\lambda}\tilde{\AA_\lambda}\right]\ket{\tilde\psi} = \left[\tilde H-\dot{\lambda}\tilde{\AA_\lambda}\right]\ket{\tilde{\psi}} \eqqcolon \tilde{H}_m \ket{\tilde{\psi}},
 \end{equation}
