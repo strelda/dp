@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -6,7 +6,7 @@
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
 \bibitem[Ashtekar and Schilling(1995)]{ashtekar_geometry_1995}
-Abhay Ashtekar and Troy~A. Schilling.
+A.~Ashtekar and T.~A. Schilling.
 \newblock Geometry of quantum mechanics.
 \newblock In \emph{{AIP} {Conference} {Proceedings}}, volume 342, pages
   471--478, Cancun (Mexico), 1995. AIP.
@@ -15,7 +15,7 @@ Abhay Ashtekar and Troy~A. Schilling.
 \newblock ISSN: 0094243X.
 
 \bibitem[Ashtekar and Schilling(1997)]{ashtekar_geometrical_1997}
-Abhay Ashtekar and Troy~A. Schilling.
+A.~Ashtekar and T.~A. Schilling.
 \newblock Geometrical {Formulation} of {Quantum} {Mechanics}.
 \newblock \emph{arXiv:gr-qc/9706069}, June 1997.
 \newblock URL \url{http://arxiv.org/abs/gr-qc/9706069}.
@@ -28,22 +28,22 @@ M.~V. Berry.
   March 1984.
 \newblock URL \url{http://rspa.royalsocietypublishing.org/content/392/1802/45}.
 
+\bibitem[Berry(1989)]{berry1989}
+M.~V. Berry.
+\newblock The quantum phase, five years after’ in ‘geometric phases in
+  physics’.
+\newblock \emph{A Shapere, F Wilczek. (World Scientific) 7-28}, 1989.
+
 \bibitem[Berry(2009)]{berry2009}
-M~V Berry.
+M.~V. Berry.
 \newblock Transitionless quantum driving.
 \newblock \emph{Journal of Physics A: Mathematical and Theoretical},
   42\penalty0 (36):\penalty0 365303, aug 2009.
 \newblock \doi{10.1088/1751-8113/42/36/365303}.
 \newblock URL \url{https://doi.org/10.1088/1751-8113/42/36/365303}.
 
-\bibitem[Berry(1989)]{berry1989}
-Michael~V. Berry.
-\newblock {The quantum phase, five years after’ in ‘Geometric Phases in
-  Physics’}.
-\newblock \emph{A Shapere, F Wilczek. (World Scientific) 7-28}, 1989.
-
 \bibitem[Bukov et~al.(2019)Bukov, Sels, and Polkovnikov]{Bukov2019}
-Marin Bukov, Dries Sels, and Anatoli Polkovnikov.
+M.~Bukov, D.~Sels, and A.~Polkovnikov.
 \newblock {Geometric Speed Limit of Accessible Many-Body State Preparation}.
 \newblock \emph{Physical Review X}, 9\penalty0 (1):\penalty0 011034, feb 2019.
 \newblock ISSN 2160-3308.
@@ -52,7 +52,7 @@ Marin Bukov, Dries Sels, and Anatoli Polkovnikov.
   https://link.aps.org/doi/10.1103/PhysRevX.9.011034}.
 
 \bibitem[Cheng(2013)]{cheng_quantum_2013}
-Ran Cheng.
+R.~Cheng.
 \newblock Quantum {Geometric} {Tensor} ({Fubini}-{Study} {Metric}) in {Simple}
   {Quantum} {System}: {A} pedagogical {Introduction}.
 \newblock \emph{arXiv:1012.1337 [math-ph, physics:quant-ph]}, April 2013.
@@ -60,7 +60,7 @@ Ran Cheng.
 \newblock arXiv: 1012.1337.
 
 \bibitem[Fecko(2006)]{fecko}
-Marián Fecko.
+M.~Fecko.
 \newblock \emph{Differential Geometry and Lie Groups for Physicists}.
 \newblock Cambridge University Press, 2006.
 \newblock \doi{10.1017/CBO9780511755590}.
@@ -68,24 +68,24 @@ Marián Fecko.
 \bibitem[Gorodski(2012)]{claudio}
 C.~Gorodski.
 \newblock \emph{An introduction to Riemannian geometry}.
-\newblock 2012.
+\newblock unpublished, 2012.
 \newblock URL
   \url{https://www.ime.usp.br/~gorodski/teaching/mat5771-2016/gorodski-riem-geom-2012.pdf}.
 \newblock Preliminary version.
 
 \bibitem[Guti\'errez-Ruiz et~al.(2021)Guti\'errez-Ruiz, Gonzalez,
   Ch\'avez-Carlos, Hirsch, and Vergara]{geometricTensorLipkin}
-Daniel Guti\'errez-Ruiz, Diego Gonzalez, Jorge Ch\'avez-Carlos, Jorge~G.
-  Hirsch, and J.~David Vergara.
+D.~Guti\'errez-Ruiz, D.~Gonzalez, J.~Ch\'avez-Carlos, J.~G. Hirsch, and J.~D.
+  Vergara.
 \newblock Quantum geometric tensor and quantum phase transitions in the
   lipkin-meshkov-glick model.
 \newblock \emph{Phys. Rev. B}, 103:\penalty0 174104, May 2021.
 \newblock \doi{10.1103/PhysRevB.103.174104}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.103.174104}.
 
-\bibitem[Kolodrubetz et~al.(2017)Kolodrubetz, Sels, Mehta, and
+\bibitem[Kolodrubetz et~al.(2017)Kolodrubetz, Mehta, and
   Polkovnikov]{kolodrubez}
-Michael Kolodrubetz, Dries Sels, Pankaj Mehta, and Anatoli Polkovnikov.
+M.~Kolodrubetz, P.~Mehta, and A.~Polkovnikov.
 \newblock Geometry and non-adiabatic response in quantum and classical systems.
 \newblock \emph{Physics Reports}, 697:\penalty0 1--87, 2017.
 \newblock ISSN 0370-1573.
@@ -94,14 +94,27 @@ Michael Kolodrubetz, Dries Sels, Pankaj Mehta, and Anatoli Polkovnikov.
   \url{https://www.sciencedirect.com/science/article/pii/S0370157317301989}.
 \newblock Geometry and non-adiabatic response in quantum and classical systems.
 
+\bibitem[Landau and Lifshitz(1981)]{landau}
+L.~D. Landau and L.~M. Lifshitz.
+\newblock \emph{Quantum Mechanics Non-Relativistic Theory, Third Edition:
+  Volume 3}.
+\newblock Butterworth-Heinemann, 3 edition, 1981.
+\newblock ISBN 0750635398.
+\newblock URL \url{http://www.worldcat.org/isbn/0750635398}.
+
 \bibitem[Loring(2017)]{lu}
 W.~Tu Loring.
 \newblock \emph{Differential Geometry}.
 \newblock Springer International Publishing, 2017.
 \newblock \doi{10.1007/978-3-319-55084-8}.
 
+\bibitem[Matus et~al.(2022)Matus, Cejnar, Stránský, and Střeleček]{felipe}
+F.~Matus, P.~Cejnar, P.~Stránský, and J.~Střeleček.
+\newblock unpublished.
+\newblock 2022.
+
 \bibitem[Molitor(2013)]{molitor_exponential_2013}
-Mathieu Molitor.
+M.~Molitor.
 \newblock Exponential families, {Kahler} geometry and quantum mechanics.
 \newblock \emph{Journal of Geometry and Physics}, 70:\penalty0 54--80, August
   2013.
@@ -111,7 +124,7 @@ Mathieu Molitor.
 \newblock arXiv: 1203.2056.
 
 \bibitem[Nakamura(2012)]{nonadiabaticTransition}
-Hiroki Nakamura.
+H.~Nakamura.
 \newblock \emph{Nonadiabatic transition: concepts, basic theories and
   applications}.
 \newblock World Scientific, Hackensack, New Jersey, second edition edition,
@@ -124,8 +137,8 @@ P.~Petersen.
 \newblock Springer Verlag, 1998.
 \newblock ISBN 978-0-387-29403-2.
 
-\bibitem[Rigolin(2008)]{Rigolin2008}
-Gerardo~Ortiz Rigolin, Gustavo.
+\bibitem[Rigolin and Ortiz(2008)]{Rigolin2008}
+G.~Rigolin and G.~Ortiz.
 \newblock Beyond the quantum adiabatic approximation: Adiabatic perturbation
   theory.
 \newblock \emph{Physical Review A 78, no. 5 (November 18, 2008): 052508}, 2008.

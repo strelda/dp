@@ -527,7 +527,7 @@ The polynomial, or chaotic regime, can be explained using APT. It holds that
     \log(1-F)=\log(T_f^{-2})+\log\left(\sum_{i=1}^n |b_n^(1)(T_f)|2\right),
     \label{eq:polynomialPart}
 \end{equation}
-for functions $b_n^(1)$ from Eq. \ref{eq:bnAPT}. For more detail, see \red{Felipe unpublished report}.
+for functions $b_n^(1)$ from Eq. \ref{eq:bnAPT}. For more detail, see \cite{felipe}.
 
 The Equations \ref{eq:exponentialPart}, \ref{eq:polynomialPart} can be seen in \ref{fig:landauCompare}. We see that they intersect at time $T_c$ and give the leading order in both regimes, if one omits the oscillations. In fact these two parts are not only the good approximation on both intervals, but if added together, they represent the whole fidelity curve with very high precision. It might not give a good mathematical meaning to add these two solutions together. But because the APT gives the infidelity of order $10^{-9}$, it creates negligible error. The advantage is that by this process one gets an approximation for the transitional regime.
 
@@ -555,7 +555,7 @@ The Equations \ref{eq:exponentialPart}, \ref{eq:polynomialPart} can be seen in \
 
 
 \subsection{Summary}
-Now we should understand all results separately, let's put it all together. On Fig. \ref{fig:AllInOne} we see some of the most important results.
+Now we should understand all results separately, let's put it all together. On Fig. \ref{fig:AllInOne} we see some of the most important results. One might notice difference in the close adiabatic regime and fast regime at the end of the driving. Also notice the chaotic regime being below the $t=T_f$ line and crossing it at $t=T_c$.
 
 \begin{figure}[H]
     \centering 
@@ -574,8 +574,7 @@ Now we should understand all results separately, let's put it all together. On F
 
 \newpage
 \subsection{Energy variance}
-Energy variance for the linear driving case can be seen on Fig \ref{fig:densVariance}, as a function of time and final time. $\Omega$ and final time.
-\red{Why is it almost the same as fidelity of geodesical driving???}
+Analogically to the geodesical driving, one might calculate the energy variance. In the linear driving case, the analytical formula is more complicated and only numerical result will be displayed here. On Fig. \ref{fig:densVariance} the energy variance is plotted as a function of time and final time.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/densVariance.pdf}

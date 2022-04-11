@@ -6,7 +6,7 @@ Most parts of this chapter are inspired by \citet{kolodrubez} and original notes
 
 From now on we will use natural units, so $\hbar=1$.
 
-
+There may be many constructions of the space, because usually only some special sections of the full space is used. The theory constructed below uses geometrical approach, but it does not reformulate the whole quantum mechanics into language of differential geometry. This is not an easy task. For basic ideas, see Appendix \ref{appendixGEOM}.
 
 
 \section{Space of all states}
@@ -57,7 +57,7 @@ holds. For eigenstates of instantaneous Hamiltonian it reads as energy \Schrodin
     \label{eq:energySchrodinger}
 \end{equation}
 Notice that these states are independent on the trajectory $\gamma_t$.
-For every $\HH(\llambda)$ its energies can be sorted from the lowest, defining the set $\sigma(\HH(\llambda))\coloneqq\{E_0,\dots,E_n\}$, which will be called \emph{spectrum of the Hamiltonian}. In this set, degeneracies are not unified into one element, therefore every $\sigma(\llambda)$ has $n$ elements. From this there exists an isomorphism between all $\sigma$-sets, and we can define \emph{section} 
+For every $\HH(\llambda)$ its energies can be sorted from the lowest, defining the set $\sigma(\HH(\llambda))\coloneqq\{E_0,\dots,E_n\}$, which is called \emph{spectrum of the Hamiltonian}. In this set, degeneracies are not unified into one element, therefore every $\sigma(\llambda)$ has $n$ elements. From this there exists an isomorphism between all $\sigma$-sets, and we can define \emph{section} 
 $$\mathrm{sec}_s: \ket{s(\llambda)}\mapsto \mathcal{U}\subset \R^d, \quad \text{for } s\in\{0,\dots, n-1\}.$$
 This maps eigenstates corresponding to energy $E_s$ to the base manifold. This mapping is similar to previously introduced $\pi$, except it chooses one point from the infinite dimensional Hilbert space and maps it to the base manifold. From this the $\sec_s$ is an isomorphism. 
 
@@ -69,7 +69,7 @@ The reason for calling these manifolds \emph{projective} is the gauge symmetry o
     \M_s\coloneqq \left\{\bigcup_{\varphi\in\R} \bigcup_{\llambda\in\mathcal U} e^{i\varphi}\ket{\psi(\llambda)}\right\}
 \end{equation}
 
-Because these manifolds were created by sectioning, they are considered to be vector spaces in a geometrical sense. This was expected, because they contain quantum states, which themselves are vectors. \red{Elaborate here, construction of basis should be enough.}
+Because these manifolds were created by sectioning, they are considered to be vector spaces in a geometrical sense. This was expected, because they contain quantum states, which themselves are vectors.
 
 \begin{figure}[H]
     \centering
@@ -202,22 +202,42 @@ As was mentioned, the above procedure from Eq. \ref{eq:gammaCoint} was performed
 The \emph{fidelity} measures "closeness" of two quantum states. It is generally defined for two density operators $\hat\rho, \hat\sigma$ as
 \begin{equation}
     \begin{split}
-        \mathcal F&: \End(\H)\times \End(\H)\mapsto \C, \\
-        &\mathcal F(\hat\rho,\hat\sigma)\coloneqq \left(\Tr \sqrt{\sqrt{\rho}\sigma\sqrt{\rho}}\right)^2.
+        \mathcal F&: \End(\H)\times \End(\H)\mapsto \R, \\
+        &\mathcal F(\hat\rho,\hat\sigma)\coloneqq \left(\Tr \sqrt{\sqrt{\rho}\sigma\sqrt{\rho}}\right)^2 = \left(\Tr\sqrt[4]{\rho \sigma \sigma \rho}\right)^2= \left(\Tr\sqrt[4]{\rho \sigma (\rho\sigma)^+ }\right)^2,
     \end{split}
+    \label{eq:fidelitydef}
 \end{equation}
-For pure states $\hat\rho\eqqcolon\ket{\rho}\!\!\bra{\rho}$, $\hat\sigma\eqqcolon\ket{\sigma}\!\!\bra{\sigma}$, this reduces to
-\begin{equation}
-    \begin{split}    
-        F&: \H\times\H\mapsto \C, \\
-        &F(\ket{\rho},\ket{\sigma}) \equiv  \mathcal F(\hat\rho,\hat\sigma)\left| \braket{\rho|\sigma}\right|^2.
-    \end{split}
-\end{equation}
+where last term comes from hermiticity of density matrices.
+The usefulness of this definition can be justified in three special cases.
 
+\begin{itemize}
+    \item If $\hat\rho=\ket{\rho}\!\!\bra{\rho}$ is a pure state, we have
+    \begin{equation}
+        \begin{split}
+            \mathcal F(\ket{\rho}\!\!\bra{\rho},\hat\sigma) &= \left(\Tr\sqrt{\ket{\rho}\!\!\bra{\rho}\hat\sigma \ket{\rho}\!\!\bra{\rho}} \right) = \bra{\rho}\hat\sigma \ket{\rho} \left(\Tr\sqrt{\ket{\rho}\!\!\bra{\rho}} \right) \\
+            &= \bra{\rho}\hat\sigma \ket{\rho}
+        \end{split}
+    \end{equation}
+    
+    \item If both states are pure, $\hat\rho\eqqcolon\ket{\rho}\!\!\bra{\rho}$, $\hat\sigma\eqqcolon\ket{\sigma}\!\!\bra{\sigma}$, the fidelity formula reduces to
+    \begin{equation}
+        \begin{split}    
+            F: \H\times\H&\mapsto \R, \\
+            F(\ket{\rho},\ket{\sigma}) &\equiv  \mathcal F(\hat\rho,\hat\sigma) = \left| \braket{\rho|\sigma}\right|^2.
+        \end{split}
+    \end{equation}
+    
 
+    \item For commuting density matrices, i.e. for probability distributions. Commutativity of density matrices implies, that $\hat\rho,\hat\sigma$ can be diagonalized in the same eigenbasis. Inserting $\hat\rho = \sum_i p_i \ket{i}\!\!\bra{i}$, $\hat\sigma = \sum_i s_i \ket{i}\!\!\bra{i}$ into the definition \ref{eq:fidelitydef}, we get
+    \begin{equation}
+        F(\hat\rho,\hat\sigma)=\sum_k\sqrt{p_k s_k}.
+    \end{equation} 
 
-We can see it's physical meaning on the state manifolds, imagining \emph{quantum quench} (rapid change of some Hamiltonian parameters). In this case $F$ is the probability that system will remain in the new ground state and $1-F$ is the probability of exciting the system during this quench.
-
+\end{itemize}
+    
+    
+The physical meaning of fidelity can be also seen on the state manifolds, imagining \emph{quantum quench} (rapid change of some Hamiltonian parameters). In this case $F$ is the probability that the system, prepared in the initial ground state $\ket{\rho}$, is found in the new ground state $\ket{\sigma}$. $1-F$ is then the probability of exciting the system during this quench.
+    
 
 
 
@@ -231,20 +251,20 @@ As a playground for this chapter, we will choose the projective ground state man
 % \end{equation}
 % This is \emph{gauge dependent}, meaning that it depends on our choice of the wave phase, i.e. on observer. 
 
-Let's first look at $\P\M_0$, which is needed to be \emph{gauge independent} in a sense, that the change in phase factor $\varphi$ of some state $\ket{o(\llambda)}\in \P\M_0\cap \H(\llambda)$ induces the change 
+Let's first look at $\P\M_0$, which is needed to be \emph{gauge independent} in a sense, that the change 
 \begin{equation}
-    \begin{split}        
-        \ket{o(\llambda)}&\mapsto e^{i\varphi(\llambda)} \ket{o(\llambda)} \\
-        &\,\Downarrow \\ 
-        \braket{o(\llambda)|\bm \nabla o(\llambda)}&\mapsto \braket{o(\llambda)|\bm \nabla o(\llambda)} + i\bm \nabla \varphi(\llambda) 
-    \end{split}
+    \ket{o(\llambda)}\mapsto e^{i\varphi(\llambda)} \ket{o(\llambda)}
+\end{equation}
+in phase factor $\varphi(\lambda)$ of some state $\ket{o(\llambda)}\in \P\M_0\cap \H(\llambda)$ induces the change 
+\begin{equation}
+        \braket{o(\llambda)|\bm \nabla o(\llambda)}\mapsto \braket{o(\llambda)|\bm \nabla o(\llambda)} + i\bm \nabla \varphi(\llambda) 
 \end{equation} 
-For $\varphi(\llambda)\in \mathcal C^2$, the gauge independent choice would be for infinitesimal change for example
+For $\varphi(\llambda)\in \mathcal C^2$, the gauge independent choice in phase $\phi$ would be for infinitesimal change for example
 \begin{equation}
-    f=\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)},
+    f\coloneqq \braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)},
     \label{eq:fidelityDefinition}
 \end{equation}
-sometimes referred to as the \emph{fidelity amplitude of a ground state}. The meaning of fidelity as a probability transition between the states during some quench, leads to the definition of \emph{distance on $\M_0$}\footnote{Reminder for $\d$ notation: It is assumed to be an exterior differential. On functions, it acts as $\d: \F\M\rightarrow \T\M$ and intuitively corresponds to total differential from functional analysis.}
+sometimes referred to as the \emph{fidelity amplitude of a ground state}, because for pure states we get the fidelity $F=|f|^2$. The meaning of fidelity as a probability transition between the states during some quench, leads to the definition of \emph{distance on $\M_0$}\footnote{Reminder for $\d$ notation: It is assumed to be an exterior differential. On functions, it acts as $\d: \F\M\rightarrow \T\M$ and intuitively corresponds to total differential from functional analysis.}
 \begin{equation}
     \d s^2 \equiv 1-F(\ket{o(\bm\llambda+\delta\bm\llambda)},\ket{o(\llambda)})= 1-\left|\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)}\right|^2.
     \label{eq:distanceOnM0}
@@ -253,11 +273,11 @@ We can easily check, that the axioms for metric distance holds:
 \begin{itemize}
     \item identity of indiscernibles $s(\kpsi,e^{i\alpha}\kpsi) = 0 \Leftrightarrow \kpsi=\kphi$, $\alpha\in\R$,
     \item symmetry for any two states $\kpsi$, $\kphi$ is implied by $|\braket{\psi|\varphi}|=|\braket{\varphi|\psi}|$
-    \item triangle inequality: $s(\kpsi,\ket{\psi_2}) <s(\kpsi,\kpsi_1) + s(\ket{\psi_1},\ket{\psi_2})$ for any $\ket{\psi_1}$.
+    \item triangle inequality: $s(\kpsi,\ket{\psi_2}) <s(\kpsi,\ket{\psi_1}) + s(\ket{\psi_1},\ket{\psi_2})$ for any $\ket{\psi_1}$.
 \end{itemize}
 From this, $g^{\mu\nu}$ is a metric tensor.
 
-Because $1-f^2>0$, the first term of Taylor expansion is zero, thus we can use it for the metric tensor definition.
+If we take the fidelity between two parameter dependent states, the infidelity $1-F(\ket{\psi(\llambda)},\ket{\psi(\llambda+\Delta)})>0$, the first term of Taylor expansion in $\Delta$ is zero, thus we can use it for the metric tensor definition.
 
 \begin{definition}[Metric tensor on projective state manifolds]
 Because the projective state manifolds $\P\M_s$ are isomorphic to base manifold $\R^n$, we can define
@@ -363,7 +383,7 @@ where $\curlyleftarrow{\partial}_\nu$ affects the covector on the left.
 
 
 \begin{definition}[Berry connection]    
-    On the ground state manifold $\M_0$, the \emph{Berry connection} is defined as the mean value of calibration potential
+    On the ground state manifold $\M_0$, the \emph{Berry connection} is defined as the mean value of gauge potential
     \begin{equation}
         A_j(\llambda)\coloneqq \braket{o(\llambda)|\AA_j|o(\llambda)}= -i \braket{o(\llambda)|\partial_j|o(\llambda)}= -i\der{\lambda^j}{x^i} \braket{o(\llambda)|\pder{}{\lambda^j}|o(\llambda)},
         \label{eq:berryConnection}
@@ -415,59 +435,57 @@ Those singularities appear in the system due to energy spectrum degeneracies, in
 
 
 \newpage
-\section{General fidelity driving}
-Until now, our interest was mostly in projective state manifolds $\P\M_s$. If every state during the driving belongs to $\P\M_s$, the fidelity $F=1$ all the time, and we are talking about \emph{unit fidelity driving}. But how to calculate the case when the fidelity is "almost one"?
+\section{Adiabatic perturbation theory}
+Until now, our interest was mostly in projective state manifolds $\P\M_s$. If every state during the driving belongs to $\P\M_s$, the fidelity $F=1$ all the time, and we are talking about \emph{unit fidelity driving}. But how to calculate the case when the fidelity is "almost one"? This is the aim of \emph{adiabatic perturbation theory}.
 
 
+Following the article from \cite{Rigolin2008}, we approximate the wave-function by series. Because every element will then be decomposed into another series, we will bear in mind the \emph{locality of variables}. Let's call variable $V(t)$ \emph{\bluee{local}} if it depends only on infinitesimal surrounding of real parameter $t$. These variables will be in shades of \bluee{blue} and \redd{non-local} variables in shades of \redd{red}.
 
-\subsection{APT}
-Following the article from \cite{Rigolin2008}, we approximate the wave-function by series. Because every element will then be decomposed into another series, we will bear in mind is the \emph{locality of variables}. Let's call variable $V(s)$ \emph{\bluee{local}} if it depends only on infinitesimal surrounding of $s$. These variables will be in shades of \bluee{blue} and \redd{non-local} variables in shades of \redd{red}.
-
-We will be interested in some driving along path $\{\gamma(t)|t\in[0,T]\}$ with an initial condition
+We will be interested in the driving along path $\{\gamma(t)|t\in[0,T]\}$, where usually $t$ is time and $T$ final time of the driving. Let the initial condition be
 \begin{equation}
     \ket{\psi(0)}=\ket{\psi_0}\in \P\M_0.
 \end{equation}
-One might directly solve the Schr\"odinger equation here, but we would like to find more simple solution, which holds for $F\approx 1$.
+Solving the Schr\"odinger equation might seem like a straightforward solution at this point, but if the fidelity is close to 1 ($F\approx 1$), the approximate methods might have two big advantages. First, they are numerically more stable, and second, they give an analytical solution.
 
 The power series will be derived using a small parameter $v\coloneqq 1/T$
 \begin{equation}
-    \red{\ket{\Psi(s)}}=\sum_{p=0}^\infty v^p \red{\ket{\Psi^{(p)}(s)}},
+    \red{\ket{\Psi(t)}}=\sum_{p=0}^\infty v^p \red{\ket{\Psi^{(p)}(t)}},
     \label{eq:mainSeries}
 \end{equation}
 for 
 \begin{equation}
-    \red{\ket{\Psi^{(p)}(s)}}=\sum_{n=0} e^{-\frac{i}{v} \reddd{\omega_n(s)}}e^{i\reddd{\gamma_n(s)}}\redd{b_n^{(p)}(s)}\bluee{\ket{n(s)}}.
+    \red{\ket{\Psi^{(p)}(t)}}=\sum_{n=0} e^{-\frac{i}{v} \reddd{\omega_n(t)}}e^{i\reddd{\gamma_n(t)}}\redd{b_n^{(p)}(t)}\bluee{\ket{n(t)}}.
 \end{equation}
 Here we have
 \begin{align}
-    \text{dynamical phase }\reddd{\omega_n(s)} &\coloneqq \frac{1}{\hbar}\int_0^s \bluee{E_n(s')}\d s',\\
-    \text{Berry phase }\reddd{\gamma_n(s)} &\coloneqq i\int_0^s \bluee{\braket{n(s')|\frac{\d}{\d s'}n(s')}}\d s' \equiv i\int_0^s \bluee{M_{nn}(s')}\d s'
+    \text{dynamical phase }\reddd{\omega_n(t)} &\coloneqq \frac{1}{\hbar}\int_0^s \bluee{E_n(t')}\d t',\\
+    \text{Berry phase }\reddd{\gamma_n(t)} &\coloneqq i\int_0^s \bluee{\braket{n(t')|\frac{\d}{\d t'}n(t')}}\d t' \equiv i\int_0^s \bluee{M_{nn}(t')}\d t'
     \label{eq:gammadef}
 \end{align}
-and $\bluee{\ket{n(s)}}$ are solution to
+and $\bluee{\ket{n(t)}}$ are solution to
 \begin{equation}
-    \bluee{\HH(s)\ket{n(s)}}=\bluee{E_n(s) \ket{n(s)}}.
+    \bluee{\HH(t)\ket{n(t)}}=\bluee{E_n(t) \ket{n(t)}}.
 \end{equation}
-Variables $\reddd{\omega_n(s)}$ and $\reddd{\gamma_n(s)}$ are defined using integration over the whole protocol, therefore there are \emph{\red{non-local variables}}.
-The problem now lies in determining $\redd{b_n^{(p)}(s)}$, which is also \red{non-local}. Because it depends on its relative \reddd{geometric} and \reddd{dynamical phase} to other \bluee{energy levels}, let's write it as a series
+Variables $\reddd{\omega_n(t)}$ and $\reddd{\gamma_n(t)}$ are defined using integration over the whole protocol, therefore they are \emph{\red{non-local variables}}.
+The problem now lies in determining $\redd{b_n^{(p)}(t)}$, which is also \red{non-local}. Because it depends on its relative \reddd{geometric} and \reddd{dynamical phase} to other \bluee{energy levels}, let's write it as a series
 \begin{equation}
-    \redd{b_n^{(p)}(s)}=\sum_{m=0} e^{\frac{i}{v}\reddd{\omega_{nm}(s)}}e^{-i\reddd{\gamma_{nm}(s)}}\blue{b_{nm}^{(p)}(s)},
+    \redd{b_n^{(p)}(t)}=\sum_{m=0} e^{\frac{i}{v}\reddd{\omega_{nm}(t)}}e^{-i\reddd{\gamma_{nm}(t)}}\blue{b_{nm}^{(p)}(t)},
     \label{eq:bnAPT}
 \end{equation}
-where $\reddd{\omega_{nm}} \coloneqq \reddd{\omega_m}-\reddd{\omega_n}$, $\reddd{\gamma_{nm}} \coloneqq \reddd{\gamma_m}-\reddd{\gamma_n}$.  The reason for \blue{locality} of $\blue{b_{nm}^{(p)}(s)}$ will be clear soon.
+where $\reddd{\omega_{nm}} \coloneqq \reddd{\omega_m}-\reddd{\omega_n}$, $\reddd{\gamma_{nm}} \coloneqq \reddd{\gamma_m}-\reddd{\gamma_n}$.  The reason for \blue{locality} of $\blue{b_{nm}^{(p)}(t)}$ will be clear soon.
 
 Inserting all to original series \ref{eq:mainSeries}, we get
 \begin{equation}
-    \red{\ket{\Psi(s)}}=\sum_{n,m=0}\sum_{p=0}^\infty v^p e^{-\frac{i}{v}\reddd{\omega_m(s)}}e^{i\reddd{\gamma_m(s)}}\redd{b_{nm}^{(p)}(s)}\bluee{\ket{n(s)}}.
+    \red{\ket{\Psi(t)}}=\sum_{n,m=0}\sum_{p=0}^\infty v^p e^{-\frac{i}{v}\reddd{\omega_m(t)}}e^{i\reddd{\gamma_m(t)}}\redd{b_{nm}^{(p)}(t)}\bluee{\ket{n(t)}}.
     \label{eq:solve0}
 \end{equation}
 
-Because the initial state is eigenstate, we get initial conditions $\blue{b_{nm}^{(0)}(s)=0}$. In addition, one can rewrite equation \ref{eq:solve0} to the iteratively solvable form
+Because the initial state is an eigenstate of the Hamiltonian at time $t=0$, we get initial condition $\blue{b_{nm}^{(0)}(t)=0}$. In addition, one can rewrite equation \ref{eq:solve0} to the iteratively solvable form
 \begin{equation}
-    \frac{i}{\hbar}\bluee{\Delta_{nm}(s)}\blue{b_{nm}^{(p+1)}(s)}+\blue{\dot b_{nm}^{(p)}(s)}+\bluee{W_{nm}(s)} \blue{b_{nm}^{(p)}(s)}+\sum_{k=0,k\neq n}\bluee{M_{nk}(s)}\bluee{b_{km}^{(p)}(s)}=0,
+    \frac{i}{\hbar}\bluee{\Delta_{nm}(t)}\blue{b_{nm}^{(p+1)}(t)}+\blue{\dot b_{nm}^{(p)}(t)}+\bluee{W_{nm}(t)} \blue{b_{nm}^{(p)}(t)}+\sum_{k=0,k\neq n}\bluee{M_{nk}(t)}\bluee{b_{km}^{(p)}(t)}=0,
     \label{eq:bSolution}
 \end{equation}
-for $\bluee{\Delta_nm(s)}\coloneqq \bluee{E_m-E_n}$, $\bluee{W_{nm}(s)}\coloneqq \bluee{M_{nn}(s)}-\bluee{M_{mm}(s)}$, where $\bluee{M_{mn}}$ is defined in Eq. \ref{eq:gammadef}. We can see that $\blue{b_{mn}^{(p)}}$, as a solution to Eq. \ref{eq:bSolution}, only depends on difference between energy levels, eigenstates during the path and their directional derivatives. Not on the path itself. All of those are easily obtained, once the driving path is prescribed.
+for $\bluee{\Delta_nm(t)}\coloneqq \bluee{E_m-E_n}$, $\bluee{W_{nm}(t)}\coloneqq \bluee{M_{nn}(t)}-\bluee{M_{mm}(t)}$, where $\bluee{M_{mn}}$ is defined in Eq. \ref{eq:gammadef}. We can see that $\blue{b_{mn}^{(p)}}$, as a solution to Eq. \ref{eq:bSolution}, only depends on difference between energy levels, eigenstates during the path and their directional derivatives. Not on the path itself. All of those are easily obtained, once the driving path is prescribed.
 
 
 
@@ -479,7 +497,7 @@ for $\bluee{\Delta_nm(s)}\coloneqq \bluee{E_m-E_n}$, $\bluee{W_{nm}(s)}\coloneqq
 
 
 
-\section{How to advantageously drive the system}
+\section{High fidelity driving}
 \label{chap:typesOfDriving}
 In many experimental settings, one needs to achieve as high fidelity as possible. If $F=1$ we speak about \emph{unit fidelity protocols}. If the driving is slow enough that $F=1$, we say the driving is \emph{adiabatic}. The fidelity can be practically improved by many methods, three of them in which we will be interested are\footnote{There is a nice analogy with driving a toy car \gray{(a quantum state)} in a curved terrain \gray{(a Hilbert space)}. To avoid the car jumping on the hills \gray{(the state excitation)}, you can either drive slowly \gray{(close adiabatic driving)}, or you can go around the hills \gray{(vary the path)}, or you can have a friend \gray{(a counter-diabatic element)}, who will push the car against the ground every time it is supposed to jump.}:
 \begin{itemize}
@@ -667,7 +685,7 @@ The adiabatic potential $\tilde{\AA_\lambda}$ can be transformed to non-tilde sy
         &= -i\hbar\partial_\lambda\big(\underbrace{U^+(\llambda)U(\llambda)}_{\mathds{1}}\big)-\big(\partial_\lambda U(\llambda)\big)U^+(\llambda) \big) =i\hbar \big(\partial_\lambda U(\llambda\big)U^+(\llambda).
     \end{split}
 \end{equation}
-From this we get the equations for adiabatic potential in two systems
+From this we get the equations for adiabatic potential in two systems \red{proof on page 10 of my notes from gauge theory, holds only for zero curvature space}
 \begin{align}
     \AA_\lambda&=i\hbar \big(\partial_\lambda U(\llambda)\big)U^+(\llambda)
     \label{eq:adiabaticPotential}\\

@@ -51,3 +51,5 @@ comoving
 Lipkin-Meshkov
 Glick
 Lipkin-Meshkov-Glick
+diagonalized
+hermiticity
