@@ -1,63 +1,64 @@
 \contentsline {chapter}{Some notes to the notation}{3}{chapter*.2}%
 \contentsline {chapter}{Introduction}{4}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Mathematical introduction}{6}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Fiber bundle}{9}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Riemannian geometry}{10}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Geometry in 2 dimensions}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.1}Fiber bundle}{8}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Riemannian geometry}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Geometry in 2 dimensions}{10}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Theory behind quantum driving}{12}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Space of all states}{12}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Rays and bare states}{12}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Sectioning the space}{13}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Transporting states on state manifolds}{14}{section.2.4}%
-\contentsline {subsubsection}{Dynamical phase}{15}{section*.9}%
-\contentsline {subsubsection}{Geometrical phase}{15}{section*.10}%
-\contentsline {subsection}{\numberline {2.4.1}3-dimensional parametric space}{16}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2.5}Fidelity}{17}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Metric and geometric tensor}{18}{section.2.6}%
-\contentsline {subsubsection}{Complex tensor generalization}{19}{section*.12}%
-\contentsline {section}{\numberline {2.7}Adiabatic perturbation theory}{22}{section.2.7}%
-\contentsline {section}{\numberline {2.8}High fidelity driving}{23}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}Adiabatic driving}{23}{subsection.2.8.1}%
-\contentsline {subsubsection}{Slow transports}{24}{section*.13}%
-\contentsline {subsection}{\numberline {2.8.2}\leavevmode {\color {red}Counter-diabatic driving}}{24}{subsection.2.8.2}%
-\contentsline {subsubsection}{Gauge potentials}{25}{section*.14}%
-\contentsline {subsubsection}{Classical gauge potential}{25}{section*.15}%
-\contentsline {subsubsection}{Quantum gauge potential}{26}{section*.16}%
-\contentsline {subsubsection}{Adiabatic gauge potential}{27}{section*.17}%
-\contentsline {subsubsection}{Performing counter-diabatic driving}{28}{section*.18}%
-\contentsline {subsubsection}{Explicit form}{28}{section*.20}%
-\contentsline {chapter}{\numberline {3}Two level system}{30}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Harmonic oscillator correspondence}{31}{section.3.1}%
-\contentsline {subsubsection}{Classical mechanics correspondence}{31}{section*.21}%
-\contentsline {section}{\numberline {3.2}Energy variance for two level system}{31}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Geodesic driving}{32}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Derivation of the fidelity}{33}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Analysis of the infidelity formula}{34}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Energy variance}{37}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Linear driving}{38}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Dependence on time}{39}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Final fidelity}{40}{subsection.3.4.2}%
-\contentsline {subsubsection}{Averaged final fidelity}{41}{section*.33}%
-\contentsline {subsubsection}{Exponential and polynomial part using Landau-Zener and APT}{44}{section*.39}%
-\contentsline {subsection}{\numberline {3.4.3}Summary}{45}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Energy variance}{47}{subsection.3.4.4}%
-\contentsline {chapter}{\numberline {4}Lipkin-Meshkov Glick model}{48}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Special cases}{48}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Case $N=3$}{49}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Case $N=5$}{55}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Limit $N\rightarrow \infty $}{59}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}General behavior}{60}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Driving on the ground state manifold}{64}{chapter.5}%
-\contentsline {subsubsection}{Minimizing the distance on state manifolds}{64}{section*.60}%
-\contentsline {section}{\numberline {5.1}Minimizing the energy variance}{65}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Transport using quenches}{65}{section.5.2}%
-\contentsline {subsubsection}{Closed adiabatic driving}{66}{section*.61}%
-\contentsline {chapter}{Conclusion}{70}{chapter*.64}%
-\contentsline {chapter}{Bibliography}{72}{chapter*.65}%
-\contentsline {chapter}{List of Figures}{74}{chapter*.66}%
-\contentsline {chapter}{\numberline {A}Geometrization of quantum mechanics}{77}{appendix.A}%
-\contentsline {section}{\numberline {A.1}From the projective Hilbert space to state manifolds}{77}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Restriction to eigenstate manifolds}{78}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Eigenvalues for Lipkin-Meshkov Glick model}{80}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Attachments}{82}{appendix.C}%
-\contentsline {section}{\numberline {C.1}First Attachment}{82}{section.C.1}%
+\contentsline {section}{\numberline {2.2}Rays and bare states}{13}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Sectioning the space}{14}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Transporting states on state manifolds}{15}{section.2.4}%
+\contentsline {subsubsection}{Dynamical phase}{16}{section*.9}%
+\contentsline {subsubsection}{Geometrical phase}{16}{section*.10}%
+\contentsline {subsubsection}{Restriction to 3-dimensional parametric space}{17}{section*.12}%
+\contentsline {section}{\numberline {2.5}Fidelity}{18}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Metric and geometric tensor}{19}{section.2.6}%
+\contentsline {subsubsection}{Complex tensor generalization}{20}{section*.13}%
+\contentsline {section}{\numberline {2.7}Driving on the ground state manifold}{22}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Minimizing the distance on state manifolds}{22}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Minimizing the energy variance}{23}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Transport using quenches}{24}{subsection.2.7.3}%
+\contentsline {subsubsection}{Closed adiabatic driving}{24}{section*.14}%
+\contentsline {section}{\numberline {2.8}Adiabatic perturbation theory}{25}{section.2.8}%
+\contentsline {section}{\numberline {2.9}High fidelity driving}{26}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Adiabatic driving}{27}{subsection.2.9.1}%
+\contentsline {subsubsection}{Slow transports}{27}{section*.15}%
+\contentsline {subsection}{\numberline {2.9.2}\leavevmode {\color {red}Counter-diabatic driving}}{28}{subsection.2.9.2}%
+\contentsline {subsubsection}{Gauge potentials}{28}{section*.16}%
+\contentsline {subsubsection}{Classical gauge potential}{29}{section*.17}%
+\contentsline {subsubsection}{Quantum gauge potential}{29}{section*.18}%
+\contentsline {subsubsection}{Adiabatic gauge potential}{30}{section*.19}%
+\contentsline {subsubsection}{Performing counter-diabatic driving}{31}{section*.20}%
+\contentsline {subsubsection}{Explicit form}{32}{section*.22}%
+\contentsline {chapter}{\numberline {3}Two level system}{33}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Hamiltonian}{33}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Harmonic oscillator correspondence}{34}{section.3.2}%
+\contentsline {subsubsection}{Classical mechanics correspondence}{34}{section*.23}%
+\contentsline {section}{\numberline {3.3}Energy variance for two level system}{34}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Geodesic driving}{35}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Derivation of the fidelity}{36}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Analysis of the infidelity formula}{37}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Energy variance}{40}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Linear driving}{41}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Dependence on time}{42}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Final fidelity}{43}{subsection.3.5.2}%
+\contentsline {subsubsection}{Averaged final fidelity}{44}{section*.35}%
+\contentsline {subsubsection}{Exponential and polynomial part using Landau-Zener and APT}{47}{section*.41}%
+\contentsline {subsection}{\numberline {3.5.3}Summary}{48}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Energy variance}{50}{subsection.3.5.4}%
+\contentsline {chapter}{\numberline {4}Lipkin-Meshkov-Glick model}{51}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dimensional choice for the Hamiltonian}{51}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}3-dimensional Hamiltonian}{52}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}5-dimensional Hamiltonian}{58}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Infinite dimension limit}{62}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}General behavior}{63}{section.4.2}%
+\contentsline {chapter}{Conclusion}{69}{chapter*.64}%
+\contentsline {chapter}{Bibliography}{70}{chapter*.65}%
+\contentsline {chapter}{List of Figures}{72}{chapter*.66}%
+\contentsline {chapter}{\numberline {A}Geometrization of quantum mechanics}{75}{appendix.A}%
+\contentsline {section}{\numberline {A.1}From the projective Hilbert space to state manifolds}{75}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Restriction to eigenstate manifolds}{76}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Eigenvalues for Lipkin-Meshkov Glick model}{78}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Attachments}{80}{appendix.C}%
+\contentsline {section}{\numberline {C.1}First Attachment}{80}{section.C.1}%

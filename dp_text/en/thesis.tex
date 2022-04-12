@@ -59,6 +59,7 @@
 \usepackage{subcaption}
 \usepackage{bbm}
 
+\usetikzlibrary{arrows} 
 \usepackage{subcaption}
 
 %\usepackage{array}
@@ -123,17 +124,17 @@
 % An optional dedication: you can thank whomever you wish (your supervisor,
 % consultant, a person who lent the software, etc.)
 \def\Dedication{%
-+Michal, Kuba, Martin.
+The biggest thanks go to my supervisor prof. Pavel Cejnar, who was willing to discuss the results and the theory for long hours. Explaining my ideas or the topic of this thesis to my friends was always helpful. Namely, Michal Grňo, Kuba Novotný and Martin Zika were always willing to discuss anything concerning quantum mechanics or differential geometry, allowing me to sort my thoughts. 
 }
 
 % Abstract (recommended length around 80-200 words; this is not a copy of your thesis assignment!)
 \def\Abstract{%
-Abstract.
+The theory of quantum driving is presented and reformulated into the language of differential geometry. The general fidelity driving in a two level Hamiltonian system is then analyzed with special importance of the fidelity dependence. For the Lipkin-Meshkov-Glick the adiabatic and close adiabatic drivings are calculated, along with the geometrical structure of its state manifolds.
 }
 
 % 3 to 5 keywords (recommended), each enclosed in curly braces
 \def\Keywords{%
-{key} {words}
+{fidelity} {adiabaticity} {driving} {quench} {Lipkin}
 }
 
 %% The hyperref package for clickable links in PDF and also for storing
@@ -141,7 +142,6 @@ Abstract.
 %% Most settings are pre-set by the pdfx package.
 \hypersetup{unicode}
 \hypersetup{breaklinks=true}
-
 % Definitions of macros (see description inside)
 \include{macros}
 
@@ -166,7 +166,6 @@ Abstract.
 \include{epilog}
 
 %%% Bibliography
-\red{check all}
 \include{bibliography}
 
 %%% Figures used in the thesis (consider if this is needed)

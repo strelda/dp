@@ -53,3 +53,4 @@ Glick
 Lipkin-Meshkov-Glick
 diagonalized
 hermiticity
+subcover

@@ -16,45 +16,45 @@ A level-1 auxiliary file: appendixGEOM.aux
 A level-1 auxiliary file: appendix1.aux
 Database file #1: bibliography.bib
 Warning--empty note in felipe
-You've used 19 entries,
+You've used 20 entries,
             2773 wiz_defined-function locations,
-            750 strings with 8479 characters,
-and the built_in function-call counts, 7576 in all, are:
-= -- 705
-> -- 341
-< -- 17
-+ -- 121
-- -- 102
-* -- 557
-:= -- 1229
-add.period$ -- 91
-call.type$ -- 19
-change.case$ -- 86
-chr.to.int$ -- 19
-cite$ -- 39
-duplicate$ -- 385
-empty$ -- 646
-format.name$ -- 129
-if$ -- 1581
+            755 strings with 8569 characters,
+and the built_in function-call counts, 7955 in all, are:
+= -- 738
+> -- 362
+< -- 18
++ -- 128
+- -- 108
+* -- 584
+:= -- 1290
+add.period$ -- 95
+call.type$ -- 20
+change.case$ -- 91
+chr.to.int$ -- 20
+cite$ -- 41
+duplicate$ -- 405
+empty$ -- 678
+format.name$ -- 138
+if$ -- 1661
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 25
-newline$ -- 136
-num.names$ -- 76
-pop$ -- 163
+missing$ -- 27
+newline$ -- 142
+num.names$ -- 80
+pop$ -- 174
 preamble$ -- 1
-purify$ -- 72
+purify$ -- 76
 quote$ -- 0
-skip$ -- 267
+skip$ -- 282
 stack$ -- 0
-substring$ -- 174
-swap$ -- 35
+substring$ -- 176
+swap$ -- 36
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 174
+type$ -- 180
 warning$ -- 1
-while$ -- 68
+while$ -- 71
 width$ -- 0
-write$ -- 313
+write$ -- 328
 (There was 1 warning)
