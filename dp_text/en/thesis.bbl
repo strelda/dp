@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -155,5 +155,15 @@ J.~R.~R. Tolkien.
 \newblock \emph{The Lord of the Rings}.
 \newblock Folio Society, 1977.
 \newblock ISBN 978-0458907502.
+
+\bibitem[Uhlmann(1976)]{uhlman}
+A.~Uhlmann.
+\newblock The “transition probability” in the state space of a *-algebra.
+\newblock \emph{Reports on Mathematical Physics}, 9\penalty0 (2):\penalty0
+  273--279, 1976.
+\newblock ISSN 0034-4877.
+\newblock \doi{https://doi.org/10.1016/0034-4877(76)90060-4}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0034487776900604}.
 
 \end{thebibliography}

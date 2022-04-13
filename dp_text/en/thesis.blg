@@ -6,6 +6,7 @@ A level-1 auxiliary file: notation.aux
 A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: chap01_intro.aux
 A level-1 auxiliary file: chap03_driving.aux
+A level-1 auxiliary file: chap04_stateDriving.aux
 A level-1 auxiliary file: chap06_twoLevel.aux
 A level-1 auxiliary file: chap07_lipkin.aux
 A level-1 auxiliary file: chap04_groundManifold.aux
@@ -16,45 +17,45 @@ A level-1 auxiliary file: appendixGEOM.aux
 A level-1 auxiliary file: appendix1.aux
 Database file #1: bibliography.bib
 Warning--empty note in felipe
-You've used 20 entries,
+You've used 21 entries,
             2773 wiz_defined-function locations,
-            755 strings with 8569 characters,
-and the built_in function-call counts, 7955 in all, are:
-= -- 738
-> -- 362
-< -- 18
-+ -- 128
-- -- 108
-* -- 584
-:= -- 1290
-add.period$ -- 95
-call.type$ -- 20
-change.case$ -- 91
-chr.to.int$ -- 20
-cite$ -- 41
-duplicate$ -- 405
-empty$ -- 678
-format.name$ -- 138
-if$ -- 1661
+            765 strings with 8835 characters,
+and the built_in function-call counts, 8377 in all, are:
+= -- 782
+> -- 372
+< -- 19
++ -- 132
+- -- 111
+* -- 617
+:= -- 1357
+add.period$ -- 101
+call.type$ -- 21
+change.case$ -- 95
+chr.to.int$ -- 21
+cite$ -- 43
+duplicate$ -- 425
+empty$ -- 718
+format.name$ -- 142
+if$ -- 1752
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 27
-newline$ -- 142
-num.names$ -- 80
-pop$ -- 174
+missing$ -- 28
+newline$ -- 150
+num.names$ -- 84
+pop$ -- 178
 preamble$ -- 1
-purify$ -- 76
+purify$ -- 79
 quote$ -- 0
-skip$ -- 282
+skip$ -- 295
 stack$ -- 0
-substring$ -- 176
-swap$ -- 36
+substring$ -- 199
+swap$ -- 37
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 180
+type$ -- 191
 warning$ -- 1
-while$ -- 71
+while$ -- 75
 width$ -- 0
-write$ -- 328
+write$ -- 347
 (There was 1 warning)

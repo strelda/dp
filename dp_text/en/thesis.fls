@@ -1143,6 +1143,9 @@ INPUT chap01_intro.aux
 INPUT ./chap03_driving.aux
 INPUT chap03_driving.aux
 INPUT chap03_driving.aux
+INPUT ./chap04_stateDriving.aux
+INPUT chap04_stateDriving.aux
+INPUT chap04_stateDriving.aux
 INPUT ./chap06_twoLevel.aux
 INPUT chap06_twoLevel.aux
 INPUT chap06_twoLevel.aux
@@ -1404,6 +1407,15 @@ INPUT ../img/parallelTransportClosedCurve_1.png
 INPUT ../img/parallelTransportClosedCurve_1.png
 INPUT ../img/parallelTransportClosedCurve_1.png
 INPUT ../img/parallelTransportClosedCurve_1.png
+INPUT ./chap04_stateDriving.tex
+OUTPUT chap04_stateDriving.aux
+INPUT ./chap04_stateDriving.tex
+INPUT ./chap04_stateDriving.tex
+INPUT ./chap04_stateDriving.tex
+INPUT ./chap04_stateDriving.tex
+INPUT chap04_stateDriving.tex
+INPUT ./chap04_stateDriving.tex
+INPUT chap04_stateDriving.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmbx12.tfm
 INPUT /usr/share/texmf-dist/tex/latex/doublestroke/Udsrom.fd
@@ -1418,6 +1430,9 @@ INPUT ../img/counterdiabaticPotential.png
 INPUT ../img/counterdiabaticPotential.png
 INPUT ../img/counterdiabaticPotential.png
 INPUT ../img/counterdiabaticPotential.png
+INPUT /usr/share/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT ./chap06_twoLevel.tex
 INPUT ./chap06_twoLevel.tex
 INPUT ./chap06_twoLevel.tex
@@ -1440,9 +1455,6 @@ INPUT ../img/driving.pdf
 INPUT ../img/driving.pdf
 INPUT ../img/driving.pdf
 INPUT ../img/driving.pdf
-INPUT /usr/share/texmf-dist/fonts/tfm/public/doublestroke/dsrom10.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/bbm/bbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/bbm/bbm7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/bbm/bbm5.tfm
@@ -1734,6 +1746,9 @@ INPUT chap01_intro.aux
 INPUT ./chap03_driving.aux
 INPUT chap03_driving.aux
 INPUT chap03_driving.aux
+INPUT ./chap04_stateDriving.aux
+INPUT chap04_stateDriving.aux
+INPUT chap04_stateDriving.aux
 INPUT ./chap06_twoLevel.aux
 INPUT chap06_twoLevel.aux
 INPUT chap06_twoLevel.aux

@@ -54,3 +54,5 @@ Lipkin-Meshkov-Glick
 diagonalized
 hermiticity
 subcover
+Uhlmann
+sesquilinearity
