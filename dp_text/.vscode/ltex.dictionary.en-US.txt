@@ -56,3 +56,4 @@ hermiticity
 subcover
 Uhlmann
 sesquilinearity
+endomorphism

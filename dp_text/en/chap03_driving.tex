@@ -17,13 +17,22 @@ The projection is defined as $\pi(\llambda): \ket{\psi(\llambda)}\mapsto \llambd
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{../img/manifold_basic_1.png}
-\caption{Base manifold $\mathcal U\subset \R^d$ is visualized as a line. From every point $\llambda$ one Hilbert space $\H(\llambda)$ is constructed as a fiber. The union of all these fibers is full Hilbert space $\H_{full}$.\red{draw it as donut around the U line}}
+    % \includegraphics[width=\textwidth]{../img/manifold_basic_1.png}
+    \begin{tikzpicture}
+        \node[] at (0,0) {\includegraphics[width=0.7\textwidth]{../img/fullHilbert.pdf}};
+        \node[] at (5.8,-0.7) {$\mathcal U\subset \gray{\R^n}$};
+        \node[] at (4.6,1.8) {$\H_{full}$};
+        \node[] at (-1.0,2.7) {$\blueee{\H(\llambda)}$};
+        \node[] at (1.0,2.5) {$\blueee{\H(\tilde\llambda)}$};
+        \node[] at (-0.8,0.55) {$\gray{\pi(\llambda)}$};
+        \node[] at (1.05,0.3) {$\gray{\pi(\tilde\llambda)}$};
+        \node[] at (-1.4,-0.17) {$\llambda$};
+        \node[] at (0.5,-0.4) {$\tilde\llambda$};
+    \end{tikzpicture}
+
+\caption{Base manifold $\mathcal U\subset \R^d$ is visualized as a line. From every point $\llambda$ one Hilbert space $\H(\llambda)$ is constructed as a fiber. The union of all these fibers is full Hilbert space $\H_{full}$.}
     \label{fig:wholeBundle}
 \end{figure}
-
-
-
 
 
 
@@ -79,6 +88,22 @@ Because these manifolds were created by sectioning, they are considered to be ve
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{../img/manifold_full_1.png}
+    \begin{tikzpicture}
+        \node[] at (0,0) {\includegraphics[width=0.7\textwidth]{../img/fullHilbert_1.pdf}};
+        \node[] at (5.8,-0.7) {$\mathcal U\subset \gray{\R^n}$};
+        \node[] at (4.6,1.8) {$\H_{full}$};
+        \node[] at (-1.0,2.7) {$\blueee{\H(\llambda)}$};
+        \node[] at (1.0,2.5) {$\blueee{\H(\tilde\llambda)}$};
+        \node[] at (-0.8,0.55) {$\gray{\pi(\llambda)}$};
+        \node[] at (1.05,0.3) {$\gray{\pi(\tilde\llambda)}$};
+        \node[] at (-1.4,-0.17) {$\llambda$};
+        \node[] at (0.5,-0.4) {$\tilde\llambda$};
+        \node[] at (-4.1,1.0) {$\textcolor{orange}{\P\M_0}$};
+        \node[] at (4.1,0.0) {$\textcolor{orange}{\M_0}$};
+        \node[] at (4.15,0.5) {$\textcolor{violet}{\M_1}$};
+        \node[] at (4.2,1) {$\textcolor{purple}{\M_s}$};
+        \node[] at (-5.1,2.3) {$\gray{\varphi\in[0,2\pi)}$};
+    \end{tikzpicture}
 \caption{From the full Hilbert space we identified eigenstates. First was caused by the fiber structure and separates different \bluee{Hilbert spaces $\H(\llambda)$}. Newly introduced sectioning correspond to eigenstates of individual Hamiltonians and creates \greenn{Riemannian manifolds $\M_s$}. The phase \textcolor{violet}{$\varphi$} is drawn as another \textcolor{violet}{direction}.}
     \label{fig:fullStructure}
 \end{figure}
@@ -111,7 +136,7 @@ This chapter is inspired by \citet{berry1984}. We will decompose of $\H_{full}$ 
 
 Changing the state from eigenstate $\ket{s(\llambda)}\in\M_s$ to $\ket{s(\tilde\llambda)}\in\M_s$ during some time period is unitary transformation and can be thought of as \emph{parallel transport on fiber bundle} between two states. Assuming the transport goes along curve parametrized by time $\gamma_s(T)\coloneqq\{\llambda(t)|t\in(0,T)\}\subset \mathcal U$. The transported state can be written at any time as
 \begin{equation}
-    \ket{s(\llambda(t))} = \Par_{\gamma_s(t)}\ket{s(\llambda(0))} = \exp\left(-i\int_0^tE_s(\tau)\d\tau)\right)\exp(i\gamma_s(t))\ket{s(\llambda(0))}.
+    \hspace{-5pt}\ket{s(\llambda(t))} = \Par_{\gamma_s(t)}\ket{s(\llambda(0))} = \exp\left(-i\int_0^tE_s(\tau)\d\tau)\right)\exp(i\gamma_s(t))\ket{s(\llambda(0))}.
     \label{eq:phasesOnManifold}
 \end{equation}
 Let's describe the meaning of two exponentials in this transport.
@@ -192,6 +217,7 @@ The element of summation $m=s$ in third step of derivation \ref{eq:stokes} is re
         \frac{\braket{m|\bm \nabla \HH(\llambda) |s}}
         { E_s(\llambda)-E_m(\llambda)}, \qquad s\neq m,
     \end{split}
+    \label{eq:mgradn_proof}
 \end{equation}
 
 where we used $\ket{\bm \nabla s}\coloneqq\bm \nabla \ket{ s}$.    
@@ -279,6 +305,7 @@ Before moving to the practical usage of fidelity, let's look at some general pro
 
 
 \section{Metric and geometric tensor}
+\label{chap:metricTensor}
 As a playground for this chapter, we will choose the projective ground state manifold $\P\M_0\equiv \cup_{\llambda\in\R^d} \{\ket{o(\llambda)}\}$, but it can be easily generalized to any projective state manifold $\P\M_s$. This means the geometrical phase will be neglected, because the states are considered to be the physical states from the projective Hilbert space.
 % Our first guess might be
 % \begin{equation}
@@ -439,7 +466,8 @@ To understand why the gauge potential generates some calibrational invariance, w
 
 This empowers us to take derivatives in any direction and the expression for geometric tensor on $\M_0$
 \begin{equation}
-    \chi_{jk}(\llambda) = \partial_j A_k(\llambda)-\partial_k A_j(\llambda).
+    \chi_{jk}(\llambda) = \partial_j A_k(\llambda)-\partial_k A_j(\llambda)
+    \label{eq:geometricTensor}.
 \end{equation}
 This formula can be directly proven by comparing with \ref{eq:geometricTensor}. Here we see that the calibrational invariance is 
 \begin{equation}
