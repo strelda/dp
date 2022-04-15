@@ -1,44 +1,45 @@
 \chapter{Mathematical introduction}
 \label{chap:mathIntro}
-The modern approach to the closed system dynamics is using \emph{differential geometry} formalism. Before we get to the quantum mechanics itself, let's introduce this formalism and recapitulate some definitions of this branch of mathematics. More detailed notes can be found for example in \cite{lu}, or \cite{fecko}. Because sometimes in physical theory the mathematical background is blurred, the basics of differential geometry will be recapitulated here. This chapter should lead the reader to better understanding of the physical theory in following chapters, but is not essential for performing the analysis of driving in Hamiltonian systems, which is the main goal of the thesis.
+The modern approach to the closed system dynamics is using \emph{differential geometry} formalism. Before we get to the quantum mechanics itself, let's introduce this formalism and recapitulate some definitions of this branch of mathematics. It is important to realize basic definitions and construction, so the mathematical formalism can be used rigorously. More detailed notes can be found for example in \citet{krtous}, \citet{lu}, or \citet{fecko}. This chapter should lead the reader to better understanding of the physical theory in following chapters, but is not essential for performing the analysis of driving in Hamiltonian systems.
 
-Let's have a manifold $\M$ over the field of complex numbers $\mathbb C$, usually complex numbers. Curves on this manifold are parametrized by some real interval:
-$$\gamma:\R \supset (P_i,P_f) \rightarrow \M\; \qquad \xi\mapsto \gamma(\xi) \text{  for } \xi \in (P_i,P_f) .$$ 
+Consider manifold $\M$ over the field of complex numbers $\mathbb C$. Curves on this manifold are parametrized by some real interval:
+$$\mathcal J:\R \supset (P_i,P_f) \rightarrow \M,\; \qquad \xi\mapsto \mathcal J(\xi) \text{  for } \xi \in (P_i,P_f) .$$ 
 The space of functions is $\FM\equiv\{f:\M\rightarrow \C\}$.
 
 
-To define \bluee{\emph{vectors}} on $\M$, we need to make sense of the \emph{direction}. It is defined using curves satisfying 
-$$\gamma_1(0)=\gamma_2(0)\equiv P$$
-$$\der{}{t}x^i(\gamma_1(t))\big|_{t=0}=\der{}{t}x^i(\gamma_2(t))\big|_{t=0}.$$
-Taking the equivalence class created by these two rules, sometimes noted as $\bluee{[\gamma]}=\bluee v$, we have an element of the tangent space to $\M$. We will use standard notation for the \bluee{tangent space of $\M$} in some point $P\in\M$ as $\bluee{\T_P\M}$. Cotangent space is denoted as $\blueee{\T^*_P\M}$. Unifying all \bluee{tangent}, resp cotangent spaces over all $x$ we get tangent and cotangent bundle, \bluee{$\TT\M$} and $\TT^*\M$ respective. To generalize this notation to higher tensors, we denote $\T_P\M\in \TT^1\M$, $\T^*_P\M\in \TT_1\M$. This gives us the possibility to increase the order, leading to $p-$times \bluee{contravariant} and $q-$times \blueee{covariant} tensors. These are usually denoted $\TT^{\bluee p}_{\blueee q} \M$. Tensor space in point $P\in\M$ is denoted ${\TT_P}^{\bluee p}_{\blueee q} \M$
+To define \bluee{\emph{vectors}} on $\M$, we need to make sense of the \emph{direction}. The direction is defined using curves $\mathcal J_i$ satisfying 
+$$\mathcal J_1(0)=\mathcal J_2(0)\equiv P$$
+$$\der{}{t}x^i(\mathcal J_1(t))\big|_{t=0}=\der{}{t}x^i(\mathcal J_2(t))\big|_{t=0}.$$
+Taking the equivalence class created by these two rules, sometimes noted as $\bluee{[\mathcal J]}=\bluee v$, we have an element of the tangent space to $\M$. We use standard notation for the \bluee{tangent space of $\M$} in some point $P\in\M$ as $\bluee{\T_P\M}$. Cotangent space is denoted as $\blueee{\T^*_P\M}$. Unifying all \bluee{tangent}, resp. cotangent spaces over all $x$ we get tangent and cotangent bundle, \bluee{$\TT\M$} and \blueee{$\TT^*\M$} respective. To generalize this notation to higher tensors, we denote $\bluee{\T_P\M}\in \TT_P^{\bluee{1}}\M$, $\blueee{\T^*_P\M}\in \TT_{P\blueee{1}}\M$. This gives us the possibility to increase the order, leading to $p-$times \bluee{contravariant} and $q-$times \blueee{covariant} tensors. These are usually denoted $\TT^{\bluee p}_{\blueee q} \M$. Tensor space in point $P\in\M$ is denoted ${\TT_P}^{\bluee p}_{\blueee q} \M$
 Using the congruence of curves on $\M$, the expression 
 \begin{equation}
-    \bluee{\der{}{\xi}}f\circ \gamma(\xi)\bluee{\Big|_{\xi=0}}
+    \bluee{\der{}{\xi}}f\circ \mathcal J(\xi)\bluee{\Big|_{\xi=0}}
 \end{equation}
 has a good meaning, and we can define the \emph{vector} in some $P\in\M$ as
 \begin{equation}
-    \bluee{\bm v}: \FM\rightarrow \mathbb F \qquad f\mapsto \bluee{\bm v[}f\bluee ]\equiv \frac{\bluee \d f(\gamma(\xi))}{\bluee{\d \xi}}\bluee{\Big|_P} \equiv \bluee{\partial_\xi\Big|_P} f .
+    \bluee{\bm v}: \FM\rightarrow \C \qquad f\mapsto \bluee{\bm v[}f\bluee ]\equiv \frac{\bluee \d f(\mathcal J(\xi))}{\bluee{\d \xi}}\bluee{\Big|_P} \equiv \bluee{\partial_\xi\Big|_P} f .
 \end{equation}
-It holds that $\bluee{\bm v}\in \bluee{\T_P\M}$ and can be expressed as the \emph{derivative in direction},\footnote{
-        The direction itself is usually denoted as
-        \begin{equation}
-            \frac{\D}{\d\bm\alpha}\gamma(\xi),
-        \end{equation}
-        where the "big D" notation is used to point out that it's not a classical derivative, but it maps curves to some entirely new space of directions.
-    } 
+It holds that $\bluee{\bm v}\in \bluee{\T_P\M}$ and can be expressed as the \emph{derivative in direction},
+% \footnote{
+%         The direction itself is usually denoted as
+%         \begin{equation}
+%             \frac{\D}{\d\bm\alpha}\mathcal J(\xi),
+%         \end{equation}
+%         where the "big D" notation is used to point out that it's not a classical derivative, but it maps curves to some entirely new space of directions.
+%     } 
 which can be understood in coordinates as
 \begin{equation}
-    \bluee{\bm v[}f\bluee ] = \bluee{\der{}{\bm v}} f\circ \gamma(\xi)\bluee{\Big|_{\xi=0}}=v^\mu\bluee{\der{}{x^\mu}} f(\bm x)\Big|_{P}.
+    \bluee{\bm v[}f\bluee ] = \bluee{\der{}{\bm v}} f\circ \mathcal J(\xi)\bluee{\Big|_{\xi=0}}=v^k\bluee{\der{}{x^k}} f(\bm x)\Big|_{P}.
 \end{equation}
-The directional derivative will be denoted $\bm\nabla_v$
+The directional derivative is denoted $\bm\nabla_v$
 and in basis $\bluee{\bm e_i} \equiv \bluee{\partial/\partial x^i}$ it becomes
 $$\bm\nabla=\bluee(\bluee{\bm e_1}, \bluee{\bm e_2},\bluee{\bm e_3}).$$
 
 
-During the whole thesis, the \emph{abstract indices} (written by Greek letters) and \emph{pointer indices} (written using Latin letters) will be differentiated. Abstract indices show the rank of the tensor, meaning \emph{how many empty slots for contraction the tensor has}. Pointer indices extract specific number from the tensor. For example
+During the whole thesis, the \emph{abstract indices} (written by Greek letters) and \emph{pointer indices} (written using Latin letters) is differentiated. Abstract indices show the rank of the tensor, meaning \emph{how many empty slots for contraction the tensor has}. Pointer indices extract specific number from the tensor. For example
 $$t^\mu_{\nu\kappa} \in \TT^1_2\M, \quad \text{ whilst for some }i,j,k\in\N: t^i_{jk}\in \mathbb C.$$
 
-For \emph{Tensor contraction}, the index notation will be used. When it is clear what type of tensors we are operating with, the object notation can be used, for example $t(\bluee{\bm u},\bluee{\bm v})\equiv t_{\mu\nu}\bluee{\bm u^\mu \bm v^\nu}$. The contraction can also be noted using contraction operator $\mathbf C$, when it is clear which indices are contracted, or when it does not matter which of them are.
+For \emph{Tensor contraction}, the index notation is used. When it is clear what type of tensors we are operating with, the object notation can be used, for example $t(\bluee{\bm u},\bluee{\bm v})\equiv t_{\mu\nu}\bluee{\bm u^\mu \bm v^\nu}$. The contraction can also be noted using contraction operator $\mathbf C$, when it is clear which indices are contracted, or when it does not matter which of them are.
 
 Now we have the notation to define one strong structure on manifolds -- \emph{metric tensor}. 
 \begin{definition}[Metric tensor]
@@ -51,7 +52,7 @@ If the 2-form $g_{\mu\nu}\in\TT^0_2\M$ is
 we call $g_{\mu\nu}$ a \emph{metric tensor}. The $^*$ marks complex conjugation.
 \end{definition}
 
-We will often require \emph{differentiable metric tensor}, or at least almost everywhere differentiable\footnote{Almost everywhere means \emph{with an exception to the submanifold of zero measure}. Often it means only a few point singularities.}. That will assure that \emph{covariant derivatives} and \emph{parallel transport} are well-defined almost everywhere. 
+We often require \emph{differentiable metric tensor}, or at least almost everywhere \footnote{Almost everywhere means \emph{with an exception to the submanifold of zero measure}.}. That assures that \emph{covariant derivatives} and \emph{parallel transport} are well-defined almost everywhere. 
 
 
 
@@ -60,21 +61,21 @@ Vectors of tangent space to some manifold can be compared only within one such s
 
 \begin{definition}[Covariant derivative]
 \label{def:covariantDerivative}
-    $\bm\nabla_{\bluee{\bm v}}$ is called the covariant derivative in a direction $\bluee{\bm v} \in \bluee{\T_P\M}$, if $\forall f\in\FM, \; \bm A,\bm B\in \TT^{\bluee p}_{\blueee q} \M,\; \alpha\in\C: $
+    $\bm D_{\bluee{\bm v}}$ is called the covariant derivative in a direction $\bluee{\bm v} \in \bluee{\T_P\M}$, if $\forall f\in\FM, \; \bm A,\bm B\in \TT^{\bluee p}_{\blueee q} \M,\; \alpha\in\C: $
     \begin{itemize}
-        \item $\bm\nabla_{\bluee{\bm v}}:\; \TT^{\bluee p}_{\blueee q} \M \rightarrow {\TT_P}^{\bluee p}_{\blueee q} \M$
-        \item $\bm\nabla_{f\bluee{\bm v}}\bm A=f\bm\nabla_{\bluee{\bm v}} $ (ultralocality in a direction)
-        \item $\bm\nabla_{\bluee{\bm v}}(\bm A+\alpha \bm B)=\bm\nabla_{\bluee{\bm v}}\bm A+\alpha\bm\nabla_{\bluee{\bm v}}\bm B$ (linearity in argument)
-        \item $\bm\nabla_{\bluee{\bm v}}(\bm{AB})=(\bm\nabla_{\bluee{\bm v}}\bm A)\bm B+\bm A(\bm\nabla_{\bluee{\bm v}}\bm B)$ (Leibniz rule)
-        \item $\bm\nabla_{\bluee{\bm v}}(\mathbf C \bm A)=\mathbf C \bm\nabla_{\bluee{\bm v}}(\bm A)$ (commutation with contraction)
-        \item $\bm\nabla_{\bluee{\bm v}}f=\bluee{\bm v[}f\bluee ]\equiv\bluee{\bm v^\beta \bm \d_\beta} f$ (operation on functions)
+        \item $\bm D_{\bluee{\bm v}}:\; \TT^{\bluee p}_{\blueee q} \M \rightarrow {\TT_P}^{\bluee p}_{\blueee q} \M$
+        \item $\bm D_{f\bluee{\bm v}}\bm A=f\bm D_{\bluee{\bm v}} $ \emph(ultralocality in a direction\emph)
+        \item $\bm D_{\bluee{\bm v}}(\bm A+\alpha \bm B)=\bm D_{\bluee{\bm v}}\bm A+\alpha\bm D_{\bluee{\bm v}}\bm B$ \emph(linearity in argument\emph)
+        \item $\bm D_{\bluee{\bm v}}(\bm{AB})=(\bm D_{\bluee{\bm v}}\bm A)\bm B+\bm A(\bm D_{\bluee{\bm v}}\bm B)$ \emph(Leibniz rule\emph)
+        \item $\bm D_{\bluee{\bm v}}(\mathbf C \bm A)=\mathbf C \bm D_{\bluee{\bm v}}(\bm A)$ \emph(commutation with contraction\emph)
+        \item $\bm D_{\bluee{\bm v}}f=\bluee{\bm v[}f\bluee ]\equiv\bluee{\bm v^\beta \bm \d_\beta} f$ \emph(operation on functions\emph)
     \end{itemize}
 \end{definition}
 
 % \begin{definition}[Coavariant differential]
 %     For $\bluee{\bm v} \in \bluee{\T_P\M}, \bm A\in \TT^{\bluee p}_{\blueee q} \M$, the covariant differential is defined as
-%     $$\bm\nabla:\; \TT^{\bluee p}_{\blueee q} \M \rightarrow {\TT_P}^{\bluee p}_{\blueee{q+1}} \M
-%     \text{, for which } \bm\nabla_{\bluee{\bm v}}\bm A^{\alpha\dots}_{\beta\dots}=\bluee{\bm v^\gamma} \bm\nabla_{\gamma}\bm A^{\alpha\dots}_{\beta\dots}$$
+%     $$\bm D:\; \TT^{\bluee p}_{\blueee q} \M \rightarrow {\TT_P}^{\bluee p}_{\blueee{q+1}} \M
+%     \text{, for which } \bm D_{\bluee{\bm v}}\bm A^{\alpha\dots}_{\beta\dots}=\bluee{\bm v^\mathcal J} \bm D_{\mathcal J}\bm A^{\alpha\dots}_{\beta\dots}$$
 % \end{definition}
 
 % \begin{definition}[Pseudoderivative]
@@ -90,13 +91,13 @@ Vectors of tangent space to some manifold can be compared only within one such s
 % \end{definition}
     
 \begin{definition}[Parallel transport]
-    Parallel transport of tensors in tensor field $A\in \TT^{\bluee p}_{\blueee q} \M$ along some path $\gamma$ going from $P_i\in\M$ to $P_f\in\M$ is denoted
+    Parallel transport of tensors in tensor field $\bm A\in \TT^{\bluee p}_{\blueee q} \M$ along some path $\mathcal J$ going from $P_i\in\M$ to $P_f\in\M$ is denoted
     \begin{align*}
-        \Par_\gamma:\; {\TT _{P_i}}^{\bluee p}_{\blueee q}\M&\rightarrow {\TT_{P_f}}^{\bluee p}_{\blueee q}\M\\
-        A|_{P_i} &\mapsto \Par_\gamma \bm A|_{P_f}.
+        \Par_{\mathcal J}:\; {\TT _{P_i}}^{\bluee p}_{\blueee q}\M&\rightarrow {\TT_{P_f}}^{\bluee p}_{\blueee q}\M\\
+        \bm A|_{P_i} &\mapsto (\Par_{\mathcal J} \bm A)|_{P_f}.
     \end{align*}
 \end{definition}
-This means that the parallel transport takes a tensor at some ${\TT_{P_i}}^{\bluee p}_{\blueee q} \M$ and transports it to ${\TT_{P_f}}^{\bluee p}_{\blueee q} \M$.  Those two tensors belong to the same tensor field, but are essentially different. One cannot simply add or subtract them. For that they need to be transported into the same tensor space $\TT^{\bluee p}_{\blueee q} \M$ using the parallel transport.
+This means that the parallel transport takes a tensor at some ${\TT_{P_i}}^{\bluee p}_{\blueee q} \M$ and transports it to ${\TT_{P_f}}^{\bluee p}_{\blueee q} \M$.  Those two tensors belong to the same tensor field, but are essentially different. One cannot simply add or subtract them. For that they need to be parallel transported into the same tensor space $\TT^{\bluee p}_{\blueee q} \M$.
 
 % \begin{definition}[Coordinate derivative]
 %     Associate the derivative $\bm \partial$ with coordinates $x^\mu$ on some $O\subset\M$ as
@@ -108,13 +109,13 @@ This means that the parallel transport takes a tensor at some ${\TT_{P_i}}^{\blu
 % \end{equation}
 % where on the expression on the left means \emph{taking the covariant derivative of the tensor} and the expression on the right \emph{multiplying the basis of the tensor space by derivative of the elements of tensor $\bm A$}.
 % \begin{thm}[Difference of covariant derivatives]
-%      Difference of two covariant derivatives, i.e. two objects $\bm \nabla$, $\bm{\tilde\nabla}$ satisfying Def. \ref{def:covariantDerivative},
-%       $$\bm\nabla-\bm{\tilde\nabla}$$
+%      Difference of two covariant derivatives, i.e. two objects $\bm  D$, $\bm{\tilde D}$ satisfying Def. \ref{def:covariantDerivative},
+%       $$\bm D-\bm{\tilde D}$$
 %     is a pseudoderivative from Def. \ref{def:pseudoderivative}.
 % \end{thm}
 
-Another object, which will be heavily used further on is the \emph{affine connection}. It is generally defined as the difference of covariant and coordinate derivative
-$\bm \Gamma\coloneqq \bm\nabla-\bm\partial$. Because this definition is rather complicated and requires some additional theory, only the \emph{connection on metric spaces} will be provided here. 
+Another object which is needed for computing the covariant derivative is \emph{affine connection}. It is generally defined as the difference of covariant and coordinate derivative
+$\bm \Gamma\coloneqq \bm D-\bm\partial$. Because this definition requires some additional theory, only the \emph{connection on metric spaces} is provided here.
 
 \begin{definition}[Connection and Christoffel symbols]
 The Affine connection on metric spaces can be defined as
@@ -123,7 +124,7 @@ The Affine connection on metric spaces can be defined as
     \end{equation}
     where we used comma notation for the coordinate derivative. Its elements are called the \emph{Christoffel symbols}.
 \end{definition}
-    The covariant derivative of a vector $\bluee{\bm a}\in \T_P\M$ for manifold with coordinates $x^\mu$ can be expressed as (using $D$ notation instead of $\bm \nabla$)
+    The covariant derivative of a vector $\bluee{\bm a}\in \T_P\M$ for manifold with coordinates $x^\mu$ can be expressed as
     \begin{equation}
         \Der{\bluee{\bm a^\mu}}{x^\nu}=\bluee{\bm a_{\;,\nu}^\mu}-\Gamma^\mu_{\alpha\beta} x^\alpha \bluee{\bm a^\beta}
     \end{equation}
@@ -132,7 +133,7 @@ The Affine connection on metric spaces can be defined as
     \Der{\blueee{\bm \alpha_\mu}}{x^\nu}=\blueee{\bm \alpha_{\mu,\nu}}-\Gamma^\alpha_{\mu\beta}x^\beta \blueee{\bm \alpha_\alpha}
 \end{equation}
 
-The vector $\bluee{\bm v}\in \T_P\M$ is said to be parallel transported along curve $\gamma(\lambda)$, if its covariant derivative vanishes along $\gamma(\xi)$
+The vector $\bluee{\bm v}\in \T_P\M$ is said to be parallel transported along curve $\mathcal J(\lambda)$, if its covariant derivative vanishes along $\mathcal J(\xi)$, meaning
 \begin{equation}
     \Der{\bluee{\bm v^\mu}}{\xi}=0.
 \end{equation}
@@ -141,14 +142,14 @@ The vector $\bluee{\bm v}\in \T_P\M$ is said to be parallel transported along cu
 \label{sec:bundleDef}
 Sometimes one needs to add additional structure to every point on manifold. These structures are usually imagined like fibers going from the manifold, similarly to the hair going from your head.
 
-At every point of the manifold we introduced a tensor space. This structure can be described by so-called \emph{fiber bundles}. From classical mechanics one might recognize the space of all vectors, \emph{vector bundle}, as a union of all vectors from the phase space $\cup_x\T_x\M$.
+At every point of the manifold we introduced a tensor space. This structure can be described by so-called \emph{fiber bundles}.
 \begin{definition}[Fiber bundle]
     \label{def:fiberBundle}
     Structure 
 \begin{center}
     \begin{tikzpicture}[remember picture]
         \node {\(\displaystyle(
-            \mathcal{E},\mathcal{B},\pi,\mathcal{F}),
+            \mathcal{E},\mathcal{U},\pi,\mathcal{F}),
             \)};
             \node[text width=3cm] at (-1,-0.7) {total space};
             \node[text width=3cm] at (1.3,-0.7) {surjection};
@@ -160,9 +161,9 @@ At every point of the manifold we introduced a tensor space. This structure can 
             \draw[->] (1.3,0.5)--(0.7,0.3);
         \end{tikzpicture}
 \end{center}
-    for topological spaces $\mathcal{E}$, $\mathcal{B}$, $\mathcal F$ and continuous surjection $\pi: \mathcal{E}\rightarrow \mathcal{B}$ satisfying a local triviality, is called a \emph{Fiber bundle}. The local triviality means that $\mathcal{B}$ is connected\footnote{Connected mean, it can't be represented as a union of two and more disjoint sets} and for every $x\in \mathcal{B}$, there is an open neighborhood $\mathcal{U}\subset \mathcal{B}$ \emph{(trivializing neighborhood)} such that there exists a homeomorphism from $\mathcal{U}$ to so-called \emph{product space}
-    $$\phi: \pi^{-1}(\mathcal{U})\rightarrow \mathcal{U}\times \mathcal{F},$$
-    such that $\pi^{-1}\circ \pi(\mathcal{U})=\mathcal{U}$. Plus there exist natural projection from $\mathcal{U}\times \mathcal{F}$ to $\mathcal U$, setting the coordinate in fibers to zero. The structure can be visualized as follows: 
+    for topological spaces $\mathcal{E}$, $\mathcal{U}$, $\mathcal F$ and continuous surjection $\pi: \mathcal{E}\rightarrow \mathcal{U}$ satisfying a local triviality, is called a \emph{Fiber bundle}. The local triviality means that $\mathcal{U}$ is connected\footnote{Connected mean, it can't be represented as a union of two and more disjoint sets} and for every $x\in \mathcal{U}$, there is an open neighborhood $\mathcal{N}\subset \mathcal{U}$ \emph{(trivializing neighborhood)} such that there exists a homeomorphism from $\mathcal{N}$ to so-called \emph{product space}
+    $$\phi: \pi^{-1}(\mathcal{N})\rightarrow \mathcal{N}\times \mathcal{F},$$
+    such that $\pi^{-1}\circ \pi(\mathcal{N})=\mathcal{N}$. Plus there exist natural projection from $\mathcal{N}\times \mathcal{F}$ to $\mathcal N$, setting the coordinate in fibers to zero. The structure can be visualized as follows: 
     % See the mappings on Fig. \ref{fig:bundle}.
 
     \begin{figure}[H]
@@ -182,9 +183,9 @@ At every point of the manifold we introduced a tensor space. This structure can 
     \end{figure}
 
 \end{definition}
-Because the projections of products are open maps, $\pi: \mathcal{E}\rightarrow \mathcal{B}$ must be an open map. The manifolds at every point $x\in \mathcal{F}$ are all locally diffeomorphic to each other.
+Because the projections of products are open maps, $\pi: \mathcal{E}\rightarrow \mathcal{N}$ must be an open map. The manifolds at every point $x\in \mathcal{F}$ are all locally diffeomorphic to each other.
 
-With the analogy to the hair on your head, one can say that $\mathcal B$ is the head, $\mathcal F$ is the hair, $\pi$ applied on the hair returns the point on your head and $\mathcal E$ is the head with all the hairs.
+With the analogy to the hair on your head, one can say that $\mathcal N$ is the head, $\mathcal F$ is the hair, $\pi$ applied on the any point on hair returns the point on your head and $\mathcal E$ is the head with all the hairs. This analogy holds only if all of your hairs are the same.
 
 
 % \section{\red{Vector Bundle}}
@@ -204,13 +205,13 @@ With the analogy to the hair on your head, one can say that $\mathcal B$ is the 
 
 % \subsection{Metric on vector bundles}
 % Map
-% $$g_{\mu\nu}: \mathcal{B}\times \mathcal{B} \rightarrow \R$$
+% $$g_{\mu\nu}: \mathcal{N}\times \mathcal{N} \rightarrow \R$$
 
 % \section{\red{Sections}}
 % \label{sec:section}
 % \emph{Section} is a function
-% $$f:\mathcal{B}\rightarrow \mathcal{F},$$
-% such that $\pi(f(x))=x$ for $\forall x\in \mathcal{B}$. This defines new manifold cutting throw $\mathcal{E}$.
+% $$f:\mathcal{N}\rightarrow \mathcal{F},$$
+% such that $\pi(f(x))=x$ for $\forall x\in \mathcal{N}$. This defines new manifold cutting throw $\mathcal{E}$.
 
 % \textcolor{red}{Sectioning of fiber bundles creates vector spaces}
 
@@ -226,7 +227,7 @@ With the analogy to the hair on your head, one can say that $\mathcal B$ is the 
 % $$\phi^*:\F \mathcal{N}\rightarrow \F\M \qquad  \tilde f\mapsto f=(\phi^*\tilde f)(x)\equiv \phi^*\tilde f(x) =\tilde f(\phi x).$$
 % \emph{Push-forward of a vector} is defined as
 % $$\phi_*: \T_x\M \rightarrow \T_{\phi x}\mathcal N\qquad \phi_* 
-% \Der{\gamma(\xi)}{\xi}\Big|_x=\Der{\phi \gamma(\xi)}{\xi}\Big|_x$$
+% \Der{\mathcal J(\xi)}{\xi}\Big|_x=\Der{\phi \mathcal J(\xi)}{\xi}\Big|_x$$
 % and \emph{pull-back of a covector} $\bm\tilde\alpha\in \T_{\phi x}\mathcal N$ is
 % $$\phi^*: \T_{\phi x}\mathcal N\rightarrow \T_x\M  \qquad (\phi^*\bm \tilde\alpha)_\mu v^\mu\big|_x= \tilde\alpha_\mu (\phi_* \bm v)^\mu\big|_{\phi x}.$$
 % If $\phi$ has a smooth inversion, i.e. it is a dippheomorphism, we can define pull-back of vectors as
@@ -243,8 +244,8 @@ With the analogy to the hair on your head, one can say that $\mathcal B$ is the 
 
 % \section{\red{Parallel transport on vector bundles}}
 % \textcolor{blue}{this is what we need}
-% Parallel transport of vector $V$ along curve $\gamma$ will be denoted
-% $$\Par_\gamma V.$$
+% Parallel transport of vector $V$ along curve $\mathcal J$ will be denoted
+% $$\Par_{\mathcal J} V.$$
 
 
 
@@ -262,7 +263,8 @@ With the analogy to the hair on your head, one can say that $\mathcal B$ is the 
 % \end{equation}
 
 \section{Riemannian geometry}
-Let's briefly mention some definitions and theorems from Riemannian geometry, which will be used later on.
+Some Riemannian geometry theorems have implications in theory of quantum driving on ground state manifolds. First, some basic definitions are needed.
+
 \begin{definition}[Riemannian manifold]
     Manifold is called Riemannian, iff it's equipped with positive definite metric tensor.
 \end{definition}
@@ -289,7 +291,7 @@ Geodesic maximality is coordinate dependent notion, only if the manifold is geod
 \end{thm}
 
 
-\begin{thm}[Hopf-Rinow Theorem]\citep{petersen}[p.125]
+\begin{thm}[Hopf-Rinow Theorem]\citep{petersen}[page 125]
     \label{thm:hopf-Rinow}
 
 
@@ -337,14 +339,14 @@ This can be simplified for 2-dimensional manifold as
     R=\frac{2}{g_{22}}\left(\Gamma^1_{\;22,1}-\Gamma^1_{\;12,2}+\Gamma^1_{\;11}\Gamma^1_{\;22}+\Gamma^1_{\;12}\Gamma^2_{\;22}-\Gamma^1_{\;21}\Gamma^1_{\;12}-\Gamma^1_{\;22}\Gamma^2_{\;12}\right).
     \label{eq:Ricci2D}
 \end{equation}
-Another possibility to express the Ricci tensor, see \citet[eq. 6,7]{geometricTensorLipkin}, is
+Another possibility to express the Ricci tensor in two dimensions, see \citet[eq. 6,7]{geometricTensorLipkin}, is
 \begin{equation}
-    R=\frac{1}{\sqrt{\abs{g}}}(\mathcal{A}+\mathcal{B}),
+    R=\frac{1}{\sqrt{\abs{g}}}(\mathcal{A}+\mathcal{N}),
 \end{equation}
 for
 \begin{align}
     \mathcal{A}&\coloneqq \left(\frac{g_{12}}{g_{11}\sqrt{\abs{g}}}g_{11,2}-\frac{1}{\sqrt{\abs{g}}}g_{22,1}\right)_{,1}\\
-    \mathcal{B}&\coloneqq \left(\frac{2}{\sqrt{\abs{g}}}g_{12,1}-\frac{1}{\sqrt{\abs{g}}}g_{11,2}-\frac{g_{12}}{g_{11}\sqrt{\abs{g}}}g_{11,1}\right)_{,2}.
+    \mathcal{N}&\coloneqq \left(\frac{2}{\sqrt{\abs{g}}}g_{12,1}-\frac{1}{\sqrt{\abs{g}}}g_{11,2}-\frac{g_{12}}{g_{11}\sqrt{\abs{g}}}g_{11,1}\right)_{,2}.
 \end{align}
-This equation turned out to be less numerically stable, therefore Eq. \ref{eq:Ricci2D} will be user later on for calculating the Ricci tensor.
+% This equation turned out to be less numerically stable, therefore Eq. \ref{eq:Ricci2D} is used later on for calculating the Ricci tensor.
 

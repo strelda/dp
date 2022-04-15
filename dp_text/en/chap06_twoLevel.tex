@@ -1,6 +1,6 @@
 \chapter{Two level system}
 \label{chap:twoLevelSystem}
-Before we move to more complicated Hamiltonian model, we investigate a simple two level system. To understand the general behavior of fidelity on Hamiltonian spectrum, two analytically solvable drivings -- \emph{geodesic} and \emph{linear} -- will be investigated.
+Before we move to more complicated Hamiltonian model, we investigate a simple two level system. To understand the general behavior of fidelity on Hamiltonian spectrum, two analytically solvable drivings -- \emph{geodesic} and \emph{linear} -- is investigated.
 
 \section{Hamiltonian}
 Let's have a Hamiltonian
@@ -37,7 +37,7 @@ we get the eigenvectors
 \end{equation}
 for normalization constants $N_\pm\coloneqq\left(\left(\frac{\pm E_0(t)+\Omega(t)}{\Delta(t)}\right)^2+1\right)^{-1/2}$. One needs to realize that at any time $t$ the eigenbases differ. The basis $\mathcal B$ forms an eigenbasis at time $t=0$.
 
-The goal will be to find \emph{fidelity} $F\coloneqq |\braket{0(t)|\psi(t)}|^2$ of different driving protocols. For this we need to solve time Schr\"odinger equation
+The goal is to find \emph{fidelity} $F\coloneqq |\braket{0(t)|\psi(t)}|^2$ of different driving protocols. For this we need to solve time Schr\"odinger equation
 \begin{equation}
     \HH(t)\ket{\psi(t)}=i\frac{\d}{\d t}\ket{\psi(t)}
 \end{equation}
@@ -100,7 +100,7 @@ Note that we used the condition $\Delta\neq 0$. Because the energy spectrum has 
 
 
 \subsubsection{Classical mechanics correspondence}
-When solving differential equations, it might be useful to know some analogy to classical mechanics Lagrangian. Even though it will not be used any further, let's quickly find it.
+When solving differential equations, it might be useful to know some analogy to classical mechanics Lagrangian. Even though it is not used any further, let's quickly find it.
 
 From the perspective of classical mechanics, meaning $x(t)\coloneqq a(t)$ is a position in a phase space $(\bm x,\bm p)$, we can write classical Lagrangian from Eq. \ref{eq:harmonicOscillator} as
 \begin{equation}
@@ -177,7 +177,7 @@ Define driving in 3-dimensional space
         s \sin(\omega(T_f)t)
     \end{pmatrix}
 \end{equation}
-parametrized by time $t\in[0,1]$ and with use of \emph{speed regulating function} $\omega(T_f)\coloneqq \pi/T_f$. The reason for 3-dimensional driving will be the usage of $\hat\sigma$ matrix formalism. Such defined drivings are half-spheres in the parametric space, see Fig. \ref{fig:driving}. Note that the driving velocity is constant on the parametric space and on the manifold.
+parametrized by time $t\in[0,1]$ and with use of \emph{speed regulating function} $\omega(T_f)\coloneqq \pi/T_f$. The reason for 3-dimensional driving are the usage of $\hat\sigma$ matrix formalism. Such defined drivings are half-spheres in the parametric space, see Fig. \ref{fig:driving}. Note that the driving velocity is constant on the parametric space and on the manifold.
 
 \begin{figure}[H]
     \centering
@@ -267,7 +267,7 @@ $$
     \lim_{t\rightarrow 0}F=1\; ,\;\; \lim_{T_f\rightarrow 0}F=0.
 $$
 
-Sometimes the \emph{Infidelity}, defined as $F^*\coloneqq 1-F$, will be used. Its meaning is \emph{the probability of excitation of the state}.
+Sometimes the \emph{Infidelity}, defined as $F^*\coloneqq 1-F$, is used. Its meaning is \emph{the probability of excitation of the state}.
 
 
 \subsection{Analysis of the infidelity formula}
@@ -291,7 +291,7 @@ For some fixed final time, the infidelity is an oscillating curve with values cl
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlotLog.pdf}
-    \caption{Infidelity dependence on final time in logarithmic scale. We can observe difference in numerical precision of both methods in the height of spikes. As we will see later, the spikes should go to zero, thus analytical formula has better numerical precision.}
+    \caption{Infidelity dependence on final time in logarithmic scale. We can observe difference in numerical precision of both methods in the height of spikes. As it will be shown later, the spikes should go to zero, thus analytical formula has better numerical precision.}
     \label{fig:infidelityTfPlotLog}
 \end{figure}
 
@@ -576,7 +576,7 @@ Now we should understand all results separately, let's put it all together. On F
 
 \newpage
 \subsection{Energy variance}
-Analogically to the geodesical driving, one might calculate the energy variance. In the linear driving case, the analytical formula is more complicated and only numerical result will be displayed here. On Fig. \ref{fig:densVariance} the energy variance is plotted as a function of time and final time.
+Analogically to the geodesical driving, one might calculate the energy variance. In the linear driving case, the analytical formula is more complicated and only numerical result are displayed here. On Fig. \ref{fig:densVariance} the energy variance is plotted as a function of time and final time.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/densVariance.pdf}

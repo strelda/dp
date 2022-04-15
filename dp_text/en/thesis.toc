@@ -8,53 +8,53 @@
 \contentsline {section}{\numberline {2.1}Space of all states}{12}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Rays and bare states}{13}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Sectioning the space}{14}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Transporting states on state manifolds}{16}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Transporting states on state manifolds}{15}{section.2.4}%
 \contentsline {subsubsection}{Dynamical phase}{16}{section*.9}%
 \contentsline {subsubsection}{Geometrical phase}{16}{section*.10}%
-\contentsline {subsubsection}{Restriction to 3-dimensional parametric space}{17}{section*.12}%
-\contentsline {section}{\numberline {2.5}Fidelity}{19}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Metric and geometric tensor}{20}{section.2.6}%
-\contentsline {subsubsection}{Complex tensor generalization}{21}{section*.13}%
-\contentsline {chapter}{\numberline {3}Quantum state driving}{24}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Adiabatic driving}{24}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Slow transports}{24}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}\leavevmode {\color {red}Counter-diabatic driving}}{25}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}The Hamiltonian gauge transformation}{26}{subsection.3.2.1}%
-\contentsline {subsubsection}{Classical gauge potential}{26}{section*.14}%
-\contentsline {subsubsection}{Quantum gauge potential}{27}{section*.15}%
-\contentsline {section}{\numberline {3.3}Driving on the ground state manifold}{28}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Minimizing the distance on state manifolds}{28}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Minimizing the energy variance}{29}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Transport using quenches}{30}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Adiabatic perturbation theory}{31}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Two level system}{33}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Hamiltonian}{33}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Harmonic oscillator correspondence}{34}{section.4.2}%
-\contentsline {subsubsection}{Classical mechanics correspondence}{34}{section*.16}%
-\contentsline {section}{\numberline {4.3}Energy variance for two level system}{34}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Geodesic driving}{35}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Derivation of the fidelity}{36}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Analysis of the infidelity formula}{37}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Energy variance}{40}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Linear driving}{41}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Dependence on time}{42}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Final fidelity}{43}{subsection.4.5.2}%
-\contentsline {subsubsection}{Averaged final fidelity}{44}{section*.28}%
-\contentsline {subsubsection}{Exponential and polynomial part using Landau-Zener and APT}{47}{section*.34}%
-\contentsline {subsection}{\numberline {4.5.3}Summary}{48}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Energy variance}{50}{subsection.4.5.4}%
-\contentsline {chapter}{\numberline {5}Lipkin-Meshkov-Glick model}{51}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Dimensional choice for the Hamiltonian}{51}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}3-dimensional Hamiltonian}{52}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}5-dimensional Hamiltonian}{58}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Infinite dimension limit}{62}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}General behavior}{63}{section.5.2}%
-\contentsline {chapter}{Conclusion}{69}{chapter*.57}%
-\contentsline {chapter}{Bibliography}{70}{chapter*.58}%
-\contentsline {chapter}{List of Figures}{72}{chapter*.59}%
-\contentsline {chapter}{\numberline {A}Geometrization of quantum mechanics}{75}{appendix.A}%
-\contentsline {section}{\numberline {A.1}From the projective Hilbert space to state manifolds}{75}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Restriction to eigenstate manifolds}{76}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Eigenvalues for Lipkin-Meshkov Glick model}{78}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Attachments}{80}{appendix.C}%
-\contentsline {section}{\numberline {C.1}First Attachment}{80}{section.C.1}%
+\contentsline {subsubsection}{Restriction to 3-dimensional parametric space}{17}{section*.11}%
+\contentsline {section}{\numberline {2.5}Fidelity}{18}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Metric and geometric tensor}{19}{section.2.6}%
+\contentsline {subsubsection}{Complex tensor generalization}{20}{section*.12}%
+\contentsline {chapter}{\numberline {3}Quantum state driving}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Adiabatic driving}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Counter-diabatic driving}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Classical gauge potential}{25}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Quantum gauge potential}{26}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Driving on the ground state manifold}{27}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Minimizing the distance on state manifolds}{27}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Minimizing the energy variance}{28}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Transport using quenches}{29}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Adiabatic perturbation theory}{30}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Two level system}{32}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Hamiltonian}{32}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Harmonic oscillator correspondence}{33}{section.4.2}%
+\contentsline {subsubsection}{Classical mechanics correspondence}{33}{section*.13}%
+\contentsline {section}{\numberline {4.3}Energy variance for two level system}{33}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Geodesic driving}{34}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Derivation of the fidelity}{35}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Analysis of the infidelity formula}{36}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Energy variance}{39}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Linear driving}{40}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Dependence on time}{41}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Final fidelity}{42}{subsection.4.5.2}%
+\contentsline {subsubsection}{Averaged final fidelity}{43}{section*.25}%
+\contentsline {subsubsection}{Exponential and polynomial part using Landau-Zener and APT}{46}{section*.31}%
+\contentsline {subsection}{\numberline {4.5.3}Summary}{47}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Energy variance}{49}{subsection.4.5.4}%
+\contentsline {chapter}{\numberline {5}Lipkin-Meshkov-Glick model}{50}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Dimensional choice for the Hamiltonian}{50}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}3-dimensional Hamiltonian}{51}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}5-dimensional Hamiltonian}{57}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Infinite dimension limit}{61}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}General behavior}{62}{section.5.2}%
+\contentsline {chapter}{Conclusion}{68}{chapter*.54}%
+\contentsline {chapter}{Bibliography}{69}{chapter*.55}%
+\contentsline {chapter}{List of Figures}{71}{chapter*.56}%
+\contentsline {chapter}{\numberline {A}Geometrization of quantum mechanics}{74}{appendix.A}%
+\contentsline {section}{\numberline {A.1}From the projective Hilbert space to state manifolds}{74}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Restriction to eigenstate manifolds}{75}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Eigenvalues for Lipkin-Meshkov Glick model}{77}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Attachments}{79}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Computing the metric tensor}{79}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Computing the Geodesics}{79}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Computing the driving fidelity}{79}{section.C.3}%
