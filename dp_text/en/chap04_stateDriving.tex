@@ -2,12 +2,12 @@
 \label{chap:typesOfDriving}
 The concept of quantum state driving was introduced in the previous chapter. One usually starts with some initial state $\ket{\psi(\llambda)}$ and change the driving parameter $\llambda$ inducing the change in Hamiltonian $\HH(\llambda)$ and in $\ket{\psi(\llambda)}$. Often the initial state is chosen to be the instantaneous ground state and one needs to achieve as high fidelity as possible during the driving, meaning avoiding the state excitation. If $F=1$ we speak about \emph{unit fidelity driving} and the path in parametric space is called the \emph{unit fidelity protocol}. If the driving is slow enough that $F=1$, we say the driving is \emph{adiabatic}. Higher fidelity can be achieved by many methods, three of them in which we are interested are\footnote{There is a nice analogy with driving a toy car \gray{(a quantum state)} in a curved terrain \gray{(a Hilbert space)}. To avoid the car jumping on the hills \gray{(the state excitation)}, you can either drive slowly \gray{(close adiabatic driving)}, or you can go around the hills \gray{(vary the path)}, or you can alter the space for a specific driving \gray{(add a counter-diabatic element)}, such that it exactly copies the jumping trajectory, therefore the car does not leave the ground.}:
 \begin{itemize}
-    \item close adiabatic driving - changing the driving parameters slowly, so the system has plenty of time to collapse into the ground state,
-    \item path variation - varying the driving trajectory, avoiding the topological defects on manifolds, which would excite the system,
-    \item counter-diabatic driving - countering the excitation by adding some element to the Hamiltonian, making the fidelity precisely $1$.
+    \item close adiabatic driving -- changing the driving parameters slowly, so the system has plenty of time to collapse into the ground state,
+    \item path variation -- varying the driving trajectory, avoiding the topological defects on manifolds, which would excite the system,
+    \item counter-diabatic driving -- countering the excitation by adding some element to the Hamiltonian, making the fidelity precisely $1$.
 \end{itemize}
 
-
+Let's formulate these methods in a more precise manner.
 
 \section{Adiabatic driving}
 Adiabatic transport is an endomorphism of $\P\M _0$. This means the system is not excited during the adiabatic transport and the fidelity is one. Generally it can be achieved by two methods -- \emph{infinitely slow transformation of states}, or adding some \emph{counter-diabatic element} to the Hamiltonian.
@@ -25,19 +25,19 @@ As was mentioned in the introduction of this chapter, one way to change the syst
 \begin{thm}[Adiabatic theorem]
     \label{adiabaticTheorem}
     For slowly varying Hamiltonian $\HH$ in the time range $(0,T_f)$, the solution of the Schrödinger equation 
-    $$\HH(\lambda)\ket{\psi_n(\lambda)} = E_n(\lambda)\ket{\psi_n(\lambda)}$$
+    $$\HH(\lambda)\ket{\psi_s(\lambda)} = E_s(\lambda)\ket{\psi_s(\lambda)}$$
     with initial condition in x-representation $\braket{x|\psi(t=0}=\psi(x,0)$ can be approximated as
     \begin{equation}
       ||\psi(\lambda) - \psi_{ad}(\lambda)||\approx o\left(\frac{1}{T_f}\right)
     \end{equation}
     for the adiabatic state evolved according to Eq. \ref{eq:phasesOnManifold}
     \begin{equation}
-        \ket{\psi_{ad}}= e^{\omega_n(\lambda)}e^{\gamma_n(\lambda)}\ket{\psi(\lambda)},
+        \ket{\psi_{ad}}= e^{\omega_s(\lambda)}e^{\gamma_s(\lambda)}\ket{\psi(\lambda)},
     \end{equation}
     for dynamical phase
-    $$\omega_n(\lambda)\equiv -\int_0^t E_n(\tau)\d \tau$$
+    $$\omega_s(\lambda)\equiv -\int_0^t E_s(\tau)\d \tau$$
     and geometrical phase
-        $$\gamma_n(\lambda)\equiv \int_0^t i\braket{\psi_n(\tau)|\partial_t\psi_n(\tau)} \d \tau .$$
+        $$\gamma_s(\lambda)\equiv \int_0^t i\braket{\psi_s(\tau)|\partial_t\psi_s(\tau)} \d \tau .$$
 \end{thm}
 \begin{myproof}
     The proof can be found in \cite{sakurai}[chap. 6].
@@ -66,13 +66,13 @@ Differentiation by $\partial_t$ yields
 \begin{equation}
     \begin{split}
         0&=\bra{\partial_t m(\llambda)}\HH(\tilde \llambda)\ket{n(\tilde\llambda)}+ \bra{m(\llambda)}\overbrace{\partial_t\HH(\tilde \llambda)}^{\approx \partial_t\HH(\llambda)}\ket{n(\tilde\llambda)}+ \bra{m(\llambda)}\HH(\tilde \llambda)\ket{\partial_t n(\tilde \llambda)}\\
-        &=E_n(\lambda)\braket{\partial_t m(\llambda)|n(\tilde \llambda)} + E_m(\lambda)\braket{m(\llambda)|\partial_t n(\tilde \llambda)}+ \bra{m(\llambda)}\partial_t \HH(\tilde\llambda)\ket{n(\tilde \llambda)}\\
-        &= (E_m(\lambda)-E_n(\lambda))\underbrace{\braket{m|\partial_t n(\tilde \llambda)}}_{-\frac{i}{\hbar}\bra{m}\AA_t\ket{n(\tilde \llambda)}} + \braket{m|\partial_t\HH|n(\tilde \llambda)},
+        &=E_s(\lambda)\braket{\partial_t m(\llambda)|n(\tilde \llambda)} + E_m(\lambda)\braket{m(\llambda)|\partial_t n(\tilde \llambda)}+ \bra{m(\llambda)}\partial_t \HH(\tilde\llambda)\ket{n(\tilde \llambda)}\\
+        &= (E_m(\lambda)-E_s(\lambda))\underbrace{\braket{m|\partial_t n(\tilde \llambda)}}_{-\frac{i}{\hbar}\bra{m}\AA_t\ket{n(\tilde \llambda)}} + \braket{m|\partial_t\HH|n(\tilde \llambda)},
     \end{split}
 \end{equation}
 which can be rewritten in matrix form as
 \begin{equation}
-    i\hbar\partial_t\HH=[\AA_t,\HH]-i\hbar \hat{M}_t\qquad \text{for } \hat{M}_t\equiv -\sum_n\pder{E_n(\lambda)}{t}\ket{n(\lambda)}\!\!\bra{n(\lambda)}.
+    i\hbar\partial_t\HH=[\AA_t,\HH]-i\hbar \hat{M}_t\qquad \text{for } \hat{M}_t\equiv -\sum_s\pder{E_s(\lambda)}{t}\ket{n(\lambda)}\!\!\bra{n(\lambda)}.
 \end{equation}
 $\hat{M}$ is diagonal in energetic basis and its elements has meaning of \emph{generalized force}. We can easily see that $[\HH,\hat{M}]=0$, implying
 \begin{equation}
@@ -135,16 +135,16 @@ Because the Hamiltonian is generator of the movement in the phase space $(\bm{q}
 
 \subsection{Quantum gauge potential}
 This part is inspired by \citet{kolodrubez}[chap. 2.2].
-Here we find some special basis transformations $\U$ between initial system $S$ and the transformed $\tilde{S}$. Both of them describe the system with Hamiltonian $\HH(\llambda)$ with eigenstates $\ket{n(\llambda)}$ on projective state manifolds $\P\M_n\equiv \cup_\llambda \{\ket{n(\llambda)}\}$. 
+Here we find some special basis transformations $\U$ between initial system $S$ and the transformed $\tilde{S}$. Both of them describe the system with Hamiltonian $\HH(\llambda)$ with eigenstates $\ket{s(\llambda)}$ on projective state manifolds $\P\M_s\equiv \cup_\llambda \{\ket{s(\llambda)}\}$. 
 
 Any state of $\H(\llambda)$ for $\forall \llambda\in \mathcal U$ can be decomposed as
     \begin{equation}
-    \ket{\psi(\llambda)}\equiv \sum_n \psi_n(\llambda)\ket{n}
+    \ket{\psi(\llambda)}\equiv \sum_s \psi_s(\llambda)\ket{s}
 \end{equation}    
-for some coordinate independent basis $\{\ket{n}\}_n$.
+for some coordinate independent basis $\{\ket{s}\}_{s=0}^{N-1}$.
 Then there exist unitary transformation
 \begin{equation}
-    \U(\llambda): \tilde S\rightarrow S,\quad \U(\llambda)\ket{m(\llambda)}=\ket{n}.
+    \U(\llambda): \tilde S\rightarrow S,\quad \U(\llambda)\ket{m(\llambda)}=\ket{s}.
     \label{eq:transformationU}
 \end{equation}
 where scalar parameter $\llambda(t)$ is assumed to be changing along the path $\mathcal J(t)$ parametrized by time, therefore we can write the Hamiltonian and states only as functions of $t$. The unitary transformation then satisfies
@@ -157,9 +157,9 @@ for $\HH$ the full Hamiltonian of the system and any point on $\tilde{\mathcal J
 
 % The wave function $\kpsi$ in $S$ can be decomposed using Schmidt decomposition\footnote{The Schmidt decomposition can be performed in finite dimension, or if the Hamiltonian is compact, which is not automatic in quantum mechanics. What's more, the Hamiltonian is usually not even bounded. Anyway, for simple systems with bounded energy we can assume so.}
 % \begin{equation}
-%     \ket{\psi(\llambda)} = \sum_{m,n}\psi_n(\llambda) \ket{m(\llambda)}\overbrace{\braket{m(\llambda)|n}}^{U_{mn}(\llambda)} =\sum_m \overbrace{\tilde{\psi}_m(\llambda)}^{\braket{m(\llambda)|\psi_n|n}}\ket{m(\llambda)},
+%     \ket{\psi(\llambda)} = \sum_{m,n}\psi_n(\llambda) \ket{m(\llambda)}\overbrace{\braket{m(\llambda)|n}}^{U_{ms}(\llambda)} =\sum_m \overbrace{\tilde{\psi}_m(\llambda)}^{\braket{m(\llambda)|\psi_n|n}}\ket{m(\llambda)},
 % \end{equation}
-% where $U_{mn}(\llambda)$ are matrix elements of unitary transformation $\U(\llambda)$. In this work, we will be interested only in the gauge transformations preserving energy of the system.
+% where $U_{ms}(\llambda)$ are matrix elements of unitary transformation $\U(\llambda)$. In this work, we will be interested only in the gauge transformations preserving energy of the system.
 
 
 
@@ -194,11 +194,11 @@ analogically for non-tilde potential.
 
 Using the eigenbasis of $\HH$, the matrix elements are
 \begin{equation}
-    \bra{n}\tilde{\AA_\lambda}\ket{m}=i\hbar\bra{n}\U(\llambda)^+\partial_\lambda\U(\llambda)\ket{m} = i\hbar\bra{n(\llambda)}\partial_\lambda\ket{m(\llambda)}.
+    \bra{s}\tilde{\AA_\lambda}\ket{m}=i\hbar\bra{s}\U(\llambda)^+\partial_\lambda\U(\llambda)\ket{m} = i\hbar\bra{s(\llambda)}\partial_\lambda\ket{m(\llambda)}.
 \end{equation}
 and because
 \begin{equation}
-    \bra{n(\llambda)}\AA_\lambda\ket{ m(\llambda)}= \bra{n}\tilde{\AA_\lambda}\ket{m},
+    \bra{s(\llambda)}\AA_\lambda\ket{ m(\llambda)}= \bra{s}\tilde{\AA_\lambda}\ket{m},
 \end{equation}
 we get
 \begin{equation}
@@ -506,38 +506,38 @@ The power series is derived using a small parameter $v\coloneqq 1/T$
 \end{equation}
 for 
 \begin{equation}
-    \red{\ket{\Psi^{(p)}(t)}}=\sum_{n=0} e^{-\frac{i}{v} \reddd{\omega_n(t)}}e^{i\reddd{\gamma_n(t)}}\redd{b_n^{(p)}(t)}\bluee{\ket{n(t)}}.
+    \red{\ket{\Psi^{(p)}(t)}}=\sum_{s=0} e^{-\frac{i}{v} \reddd{\omega_s(t)}}e^{i\reddd{\gamma_s(t)}}\redd{b_s^{(p)}(t)}\bluee{\ket{s(t)}}.
 \end{equation}
 Here we have
 \begin{align}
-    \text{dynamical phase }\reddd{\omega_n(t)} &\coloneqq \frac{1}{\hbar}\int_0^s \bluee{E_n(t')}\d t',\\
-    \text{Berry phase }\reddd{\gamma_n(t)} &\coloneqq i\int_0^s \bluee{\braket{n(t')|\frac{\d}{\d t'}n(t')}}\d t' \equiv i\int_0^s \bluee{M_{nn}(t')}\d t'
+    \text{dynamical phase }\reddd{\omega_s(t)} &\coloneqq \frac{1}{\hbar}\int_0^s \bluee{E_s(t')}\d t',\\
+    \text{Berry phase }\reddd{\gamma_s(t)} &\coloneqq i\int_0^s \bluee{\braket{s(t')|\frac{\d}{\d t'}s(t')}}\d t' \equiv i\int_0^s \bluee{M_{nn}(t')}\d t'
     \label{eq:gammadef}
 \end{align}
-and $\bluee{\ket{n(t)}}$ are solution to
+and $\bluee{\ket{s(t)}}$ are solution to
 \begin{equation}
-    \bluee{\HH(t)\ket{n(t)}}=\bluee{E_n(t) \ket{n(t)}}.
+    \bluee{\HH(t)\ket{s(t)}}=\bluee{E_s(t) \ket{s(t)}}.
 \end{equation}
-Variables $\reddd{\omega_n(t)}$ and $\reddd{\gamma_n(t)}$ are defined using integration over the whole protocol, therefore they are \emph{\red{non-local variables}}.
-The problem now lies in determining $\redd{b_n^{(p)}(t)}$, which is also \red{non-local}. Because it depends on its relative \reddd{geometric} and \reddd{dynamical phase} to other \bluee{energy levels}, let's write it as a series
+Variables $\reddd{\omega_s(t)}$ and $\reddd{\gamma_s(t)}$ are defined using integration over the whole protocol, therefore they are \emph{\red{non-local variables}}.
+The problem now lies in determining $\redd{b_s^{(p)}(t)}$, which is also \red{non-local}. Because it depends on its relative \reddd{geometric} and \reddd{dynamical phase} to other \bluee{energy levels}, let's write it as a series
 \begin{equation}
-    \redd{b_n^{(p)}(t)}=\sum_{m=0} e^{\frac{i}{v}\reddd{\omega_{nm}(t)}}e^{-i\reddd{\gamma_{nm}(t)}}\blue{b_{nm}^{(p)}(t)},
+    \redd{b_s^{(p)}(t)}=\sum_{m=0} e^{\frac{i}{v}\reddd{\omega_{sm}(t)}}e^{-i\reddd{\gamma_{sm}(t)}}\blue{b_{sm}^{(p)}(t)},
     \label{eq:bnAPT}
 \end{equation}
-where $\reddd{\omega_{nm}} \coloneqq \reddd{\omega_m}-\reddd{\omega_n}$, $\reddd{\gamma_{nm}} \coloneqq \reddd{\gamma_m}-\reddd{\gamma_n}$.  The reason for \blue{locality} of $\blue{b_{nm}^{(p)}(t)}$ will be clear soon.
+where $\reddd{\omega_{sm}} \coloneqq \reddd{\omega_m}-\reddd{\omega_s}$, $\reddd{\gamma_{sm}} \coloneqq \reddd{\gamma_m}-\reddd{\gamma_s}$.  The reason for \blue{locality} of $\blue{b_{sm}^{(p)}(t)}$ will be clear soon.
 
 Inserting all to original series \ref{eq:mainSeries}, we get
 \begin{equation}
-    \red{\ket{\Psi(t)}}=\sum_{n,m=0}\sum_{p=0}^\infty v^p e^{-\frac{i}{v}\reddd{\omega_m(t)}}e^{i\reddd{\gamma_m(t)}}\redd{b_{nm}^{(p)}(t)}\bluee{\ket{n(t)}}.
+    \red{\ket{\Psi(t)}}=\sum_{s,m=0}\sum_{p=0}^\infty v^p e^{-\frac{i}{v}\reddd{\omega_m(t)}}e^{i\reddd{\gamma_m(t)}}\redd{b_{sm}^{(p)}(t)}\bluee{\ket{s(t)}}.
     \label{eq:solve0}
 \end{equation}
 
-Because the initial state is an eigenstate of the Hamiltonian at time $t=0$, we get initial condition $\blue{b_{nm}^{(0)}(t)=0}$. In addition, one can rewrite equation \ref{eq:solve0} to the iteratively solvable form
+Because the initial state is an eigenstate of the Hamiltonian at time $t=0$, we get initial condition $\blue{b_{sm}^{(0)}(t)=0}$. In addition, one can rewrite equation \ref{eq:solve0} to the iteratively solvable form
 \begin{equation}
-    \frac{i}{\hbar}\bluee{\Delta_{nm}(t)}\blue{b_{nm}^{(p+1)}(t)}+\blue{\dot b_{nm}^{(p)}(t)}+\bluee{W_{nm}(t)} \blue{b_{nm}^{(p)}(t)}+\sum_{k=0,k\neq n}\bluee{M_{nk}(t)}\bluee{b_{km}^{(p)}(t)}=0,
+    \frac{i}{\hbar}\bluee{\Delta_{sm}(t)}\blue{b_{sm}^{(p+1)}(t)}+\blue{\dot b_{sm}^{(p)}(t)}+\bluee{W_{sm}(t)} \blue{b_{sm}^{(p)}(t)}+\sum_{k=0,k\neq s}\bluee{M_{nk}(t)}\bluee{b_{km}^{(p)}(t)}=0,
     \label{eq:bSolution}
 \end{equation}
-for $\bluee{\Delta_nm(t)}\coloneqq \bluee{E_m-E_n}$, $\bluee{W_{nm}(t)}\coloneqq \bluee{M_{nn}(t)}-\bluee{M_{mm}(t)}$, where $\bluee{M_{mn}}$ is defined in Eq. \ref{eq:gammadef}. We can see that $\blue{b_{mn}^{(p)}}$, as a solution to Eq. \ref{eq:bSolution}, only depends on difference between energy levels, eigenstates during the path and their directional derivatives. Not on the path itself. All of those are easily obtained, once the driving path is prescribed.
+for $\bluee{\Delta_sm(t)}\coloneqq \bluee{E_m-E_s}$, $\bluee{W_{sm}(t)}\coloneqq \bluee{M_{ss}(t)}-\bluee{M_{mm}(t)}$, where $\bluee{M_{ms}}$ is defined in Eq. \ref{eq:gammadef}. We can see that $\blue{b_{ms}^{(p)}}$, as a solution to Eq. \ref{eq:bSolution}, only depends on difference between energy levels, eigenstates during the path and their directional derivatives. Not on the path itself. All of those are easily obtained, once the driving path is prescribed.
 
 
 
@@ -561,11 +561,11 @@ for $\bluee{\Delta_nm(t)}\coloneqq \bluee{E_m-E_n}$, $\bluee{W_{nm}(t)}\coloneqq
 % \begin{hypot}[Eigenstate thermalization hypotheses]
 %   For the difference between eigenstates of $\HH$ and extensive thermodynamic entropy $S$, it holds that
 %     \begin{equation}
-%     E_n-E_m\propto \exp\left(\frac{S}{2}\right).
+%     E_s-E_m\propto \exp\left(\frac{S}{2}\right).
 %   \end{equation}
-%   If the states are close, better approximation would be $E_n-E_m\propto \exp(S)$. For matrix elements it holds, that they vanish exponentially with the characteristic scale of the system $a$, i.e.
+%   If the states are close, better approximation would be $E_s-E_m\propto \exp(S)$. For matrix elements it holds, that they vanish exponentially with the characteristic scale of the system $a$, i.e.
 %   \begin{equation}
-%     \bra{m}\AA_\lambda\ket{n} = i\hbar\frac{\braket{m|\partial_\lambda \HH|n}}{E_m-E_n} \propto \exp(-a).
+%     \bra{m}\AA_\lambda\ket{n} = i\hbar\frac{\braket{m|\partial_\lambda \HH|n}}{E_m-E_s} \propto \exp(-a).
 %     \label{eq:thermalizationMatrixElements}
 % \end{equation}
 % \end{hypot}

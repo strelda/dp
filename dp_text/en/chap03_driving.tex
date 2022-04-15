@@ -204,25 +204,25 @@ we generally get $\Par_C \ket{\psi(\llambda)}\neq \ket{\psi(\llambda)}$. This pr
 Substituting general solution \ref{eq:phasesOnManifold} to Eq. \ref{eq:schrodinger} yields\footnote{Here the derivation along upper bound $F(x)\coloneqq\int_0^{g(x)}f(t)\d t \Rightarrow F'(x)=f(g(x))g'(x)$ for $f(t)\in L^1(0,g(x))$ and differentiable function $g$, is used.} 
 \begin{align}
     \HH(\llambda(t))\kpsit &= i\der{}{t}\kpsit\\
-    E_s(\llambda(t)) \ket{s(\llambda(t))} &= E_s(\llambda(t))\ket{s(\llambda(t))} -\der{\mathcal J(t)}{t}\ket{s(\llambda(t))}+ \der{}{t}\ket{s(\llambda(t))}\\
-    \der{\mathcal J(t)}{t}&=i\braket{s(\llambda(t))|
+    E_s(\llambda(t)) \ket{s(\llambda(t))} &= E_s(\llambda(t))\ket{s(\llambda(t))} -\der{\gamma_s(t)}{t}\ket{s(\llambda(t))}+ \der{}{t}\ket{s(\llambda(t))}\\
+    \der{\gamma_s(t)}{t}&=i\braket{s(\llambda(t))|
     \der{}{t}|s(\llambda(t))}.
 \end{align}
  Separating the dependence of vectors on driving parameter and time, we get
 \begin{equation}
-    \der{\mathcal J(\llambda(t))}{t} =i\braket{s(\llambda(t))|\partial_j s(\llambda)} \der{\llambda^j(\lambda)}{t} .
+    \der{\gamma_s(\llambda(t))}{t} =i\braket{s(\llambda(t))|\partial_j s(\llambda)} \dot\llambda^j(\lambda),
 \end{equation}
-Integrating this equation around some closed curve $C$ and assuming the dynamical phase to be zero, we get
+for partial derivative along $\mathcal U$ coordinates $\partial_j$ and dot as time derivative. Integrating this equation around some closed curve $C$ and assuming the dynamical phase to be zero, we get
 \begin{equation}
     \gamma_s(C)=i\oint_C\braket{s(\llambda)|\partial_j s(\llambda)}\d \llambda^j.
     \label{eq:gammaCoint}
 \end{equation}
-We see, that the geometric phase does not depend on energy or time, only on the sequence of Hamiltonians, which means it depends only on the path itself.
+This equation implies that the geometric phase does not depend on energy or time, only on the sequence of Hamiltonians, which means it depends only on the path $\mathcal J$ and spectrum $\sigma(\HH(\llambda))$.
 
 
 
 \subsubsection{Restriction to 3-dimensional parametric space}
-The problem of calculating Eq. \ref{eq:gammaCoint} lies in the element $\partial_\llambda s(\llambda)$, which locally requires knowledge of single-valued basis $\{\ket{0},\dots, \ket{n}\}$. This can be avoided in 3-dimensions using Stokes's theorem for $S$ as the surface with boundary $\partial S=C$, for coordinate gradient $\bm \nabla$
+The problem in integration in Eq. \ref{eq:gammaCoint} lies in the derivative $\partial_\llambda s(\llambda)$, which locally requires knowledge of single-valued basis $\{\ket{0},\dots, \ket{N-1}\}$. This can be avoided in 3-dimensions using Stokes's theorem for $S$ as the surface with boundary $\partial S=C$, for coordinate gradient $\bm \nabla$
 \begin{equation}
     \begin{split}
         \gamma_s(C) &= -\Im \iint_C \bm\d S \cdot \bm \nabla \times \braket{s(\llambda)|\bm \nabla n(\llambda)}\\
@@ -235,28 +235,12 @@ The problem of calculating Eq. \ref{eq:gammaCoint} lies in the element $\partial
 for 
 \begin{equation}
     \bm V_s(\llambda) = \sum_{m\neq s} \Im \frac{
-            \braket{s(\llambda)\bm \nabla_\llambda \HH(\llambda) |m(\llambda)}\times \braket{m(\llambda)|\bm \nabla_\llambda \HH(\llambda)|s(\llambda)}    
+            \braket{s(\llambda)|\bm \nabla\HH(\llambda) |m(\llambda)}\times \braket{m(\llambda)|\bm \nabla\HH(\llambda)|s(\llambda)}    
              }{
 (E_m(\llambda)-E_s(\llambda))^2
              }.
 \end{equation}
 The element of summation $m=s$ in third step of derivation \ref{eq:stokes} is real, therefore has no influence on $\gamma_s$ and can be omitted. 
-
-\begin{proof}
- All steps in Eq. \ref{eq:stokes} are simple algebraic operations, except for the last equivalence. This can be shown by differentiating the Schr\"odinger equation \ref{eq:energySchrodinger}. For any $\ket{s(\llambda)}\in \M_m,\;\ket{m(\llambda)}\in \M_m$ (the dependence on $\llambda$ in notation is omitted), we get
-\begin{equation}
-    \begin{split}
-        \bm \nabla (\overbrace{\HH(\llambda)\ket{s}}^{E_s(\llambda)\ket{s}})&= (\bm\nabla \HH(\llambda))\ket{\bm \nabla s} +\HH(\llambda) \ket{\bm \nabla s}\\
-        \braket{m|E_s(\llambda)|s}&= \braket{m|\bm \nabla \HH(\llambda)| s}+ \underbrace{\bra{m} \HH(\llambda)}_{\bra{m} E_m(\llambda)} |\bm\nabla s\rangle \\
-        \braket{m|\bm \nabla s}&=
-        \frac{\braket{m|\bm \nabla \HH(\llambda) |s}}
-        { E_s(\llambda)-E_m(\llambda)}, \qquad s\neq m,
-    \end{split}
-    \label{eq:mgradn_proof}
-\end{equation}
-
-where we used $\ket{\bm \nabla s}\coloneqq\bm \nabla \ket{ s}$.    
-\end{proof} 
 
 Comparing the first expression in Eq. \ref{eq:stokes} with its last one and extending it to real numbers, we get
 \begin{equation}
@@ -265,15 +249,32 @@ Comparing the first expression in Eq. \ref{eq:stokes} with its last one and exte
 \end{equation}
 defining \emph{vector potential} $\bm V_s(\llambda)$.
 
+\begin{proof}[Proof of Eq. \ref{eq:stokes}]
+ All steps are simple algebraic operations, except for the last equivalence. This can be shown by differentiating the Schr\"odinger equation \ref{eq:energySchrodinger}. For any $\ket{s(\llambda)}\in \M_s,\;\ket{m(\llambda)}\in \M_m$ (the dependence on $\llambda$ in notation is omitted), we get
+\begin{equation}
+    \begin{split}
+        \bm \nabla (\overbrace{\HH\ket{s}}^{E_s\ket{s}})&= (\bm\nabla \HH)\ket{\bm \nabla s} +\HH \ket{\bm \nabla s}\\
+        \braket{m|E_s|s}&= \braket{m|\bm \nabla \HH| s}+ \underbrace{\bra{m} \HH}_{\bra{m} E_m} |\bm\nabla s\rangle \\
+        \braket{m|\bm \nabla s}&=
+        \frac{\braket{m|\bm \nabla \HH |s}}
+        { E_s-E_m}, \qquad s\neq m,
+    \end{split}
+    \label{eq:mgradn_proof}
+\end{equation}
+
+where we used $\ket{\bm \nabla s}\coloneqq\bm \nabla \ket{ s}$.    
+\end{proof} 
+
 As was mentioned, the above procedure from Eq. \ref{eq:gammaCoint} was performed only for three-dimensional space. Proper generalization to k-dimensional space would yield
 \begin{equation}
     \gamma_s(C) = -\iint_C (\bm\d S)^{\alpha\beta} \cdot\Im \frac{
-        \overbrace{\braket{s(\llambda)\bm\d_\alpha \HH(\llambda) |m(\llambda)}}^{\in\TT_1\M}\wedge \overbrace{\braket{m(\llambda)|\bm\d_\beta\HH(\llambda)|s(\llambda)}}^{\in\TT_1\M}    
+        \overbrace{\braket{s(\llambda)|\bm\d_\alpha \HH(\llambda) |m(\llambda)}}^{\in\TT_1\M}\wedge \overbrace{\braket{m(\llambda)|\bm\d_\beta\HH(\llambda)|s(\llambda)}}^{\in\TT_1\M}    
     }{
         (E_m(\llambda)-E_s(\llambda))^2
-    }.
+    },
     \label{eq:mgrads}
 \end{equation}
+for exterior derivative $\bm\d$.
                 
                 
                 
@@ -289,7 +290,7 @@ The \emph{fidelity} measures "closeness" of two quantum states. It is generally 
     \end{split}
     \label{eq:fidelitydef}
 \end{equation}
-where last term comes from hermiticity of density matrices.
+where last equality holds due to hermiticity of density matrices.
 The usefulness of this definition can be shown in three special cases.
 
 \begin{itemize}
@@ -297,15 +298,13 @@ The usefulness of this definition can be shown in three special cases.
     \begin{equation}
         \begin{split}    
             F: \H\times\H&\mapsto \R, \\
-            \mathcal F(\hat\rho,\hat\sigma)  \equiv F(\ket{\rho},\ket{\sigma}) &= \left| \braket{\rho|\sigma}\right|^2.
+            \mathcal F(\hat\rho,\hat\sigma)  \eqqcolon F(\ket{\rho},\ket{\sigma}) &= \left| \braket{\rho|\sigma}\right|^2.
         \end{split}
     \end{equation}
 
-    \item If $\hat\rho=\ket{\rho}\!\!\bra{\rho}$ is a pure state, we have
+    \item For pure state $\hat\rho=\ket{\rho}\!\!\bra{\rho}$, the fidelity is
     \begin{equation}
-        \begin{split}
-            \hspace{-23pt}\mathcal F(\ket{\rho}\!\!\bra{\rho},\hat\sigma) &= \left(\Tr\sqrt{\ket{\rho}\!\!\bra{\rho}\hat\sigma \ket{\rho}\!\!\bra{\rho}} \right)^2 = \bra{\rho}\hat\sigma \ket{\rho} \left(\Tr\sqrt{\ket{\rho}\!\!\bra{\rho}} \right)^2 = \bra{\rho}\hat\sigma \ket{\rho}
-        \end{split}
+        \mathcal F(\hat\rho,\hat\sigma) = \bra{\rho}\hat\sigma \ket{\rho} \left(\Tr\sqrt{\ket{\rho}\!\!\bra{\rho}} \right)^2 = \bra{\rho}\hat\sigma \ket{\rho}.
     \end{equation}
     
     \item Commuting density matrices have a meaning of probability distributions. The commutativity implies that $\hat\rho,\hat\sigma$ can be diagonalized in the same eigenbasis. For $\hat\rho = \sum_i p_i \ket{i}\!\!\bra{i}$, $\hat\sigma = \sum_i s_i \ket{i}\!\!\bra{i}$ we get
@@ -328,9 +327,9 @@ Before moving to the practical usage of fidelity, let's look at some general pro
 \begin{thm}[The fidelity properties]
     For any two density matrices $\hat\rho,\;\hat\sigma$
     \begin{itemize}
-        \item $\mathcal F(\hat\rho,\hat\sigma)\in[0,1]$ (normalization),
-        \item $\mathcal F(\hat\rho,\hat\sigma) = \mathcal F(\hat\sigma,\hat\rho)$ (symmetry),
-        \item $\mathcal F(\hat\rho,\hat\sigma)=1 \Leftrightarrow \hat\rho\hat\sigma$.
+        \item $\mathcal F(\hat\rho,\hat\sigma)\in[0,1]$ \emph(normalization\emph),
+        \item $\mathcal F(\hat\rho,\hat\sigma) = \mathcal F(\hat\sigma,\hat\rho)$ \emph(symmetry\emph),
+        \item $\mathcal F(\hat\rho,\hat\sigma)=1 \Leftrightarrow \hat\rho=\hat\sigma$.
     \end{itemize}
 \end{thm}
 \begin{proof}
@@ -341,22 +340,22 @@ Before moving to the practical usage of fidelity, let's look at some general pro
 
 \section{Metric and geometric tensor}
 \label{chap:metricTensor}
-As a playground for this chapter, we choose the projective ground state manifold $\P\M_0\equiv \cup_{\llambda\in\R^N} \{\ket{o(\llambda)}\}$, but it can be easily generalized to any projective state manifold $\P\M_s$. This means the geometrical phase is neglected, because the states are considered to be the physical states from the projective Hilbert space.
+As a playground for this chapter, we choose the projective ground state manifold $\P\M_0$, but it can be easily generalized to any $\P\M_s$. This means the geometrical phase is neglected, because the states are considered to be the physical states from the projective Hilbert space.
 % Our first guess might be
 % \begin{equation}
 %     \d \tilde{s}^2 = \braket{i(\bm\llambda+\d\bm\llambda)|i(\bm\llambda+\d\bm\llambda)} = 1-2\Re{\braket{i(\bm\llambda+\bm\d\llambda)|i(\bm\llambda)}}.
 % \end{equation}
 % This is \emph{gauge dependent}, meaning that it depends on our choice of the wave phase, i.e. on observer. 
 
-Let's first look at $\P\M_0$, which is needed to be \emph{gauge independent} in a sense, that the change in phase factor $\varphi(\lambda)$ of ground state $\ket{o(\llambda)}$ of the Hamiltonian $\HH(\llambda)$\footnote{Note that we can also write $\ket{o(\llambda)}\in \P\M_0\cap \H(\llambda)$, which is the set containing exactly one vector -- the ground state of $\HH(\llambda)$.}
+To obtain restriction on metric tensor definition, the local gauge dependence needs to be suppressed. This means the distance on $\P\M_0$ cannot depend on coordinate dependent gauge phase $\varphi(\llambda)$. This phase induces the change in a ground state $\ket{o(\llambda)}$ of the Hamiltonian $\HH(\llambda)$\footnote{Note that we can also write $\ket{o(\llambda)}\in \P\M_0\cap \H(\llambda)$, which is the set containing exactly one vector -- the ground state of $\HH(\llambda)$.}
 \begin{equation}
-    \ket{o(\llambda)}\mapsto e^{i\varphi(\llambda)} \ket{o(\llambda)}
+    \ket{o(\llambda)}\mapsto e^{i\varphi(\llambda)} \ket{o(\llambda)},
 \end{equation}
- induces the change 
+which implies
 \begin{equation}
         \braket{o(\llambda)|\bm \nabla o(\llambda)}\mapsto \braket{o(\llambda)|\bm \nabla o(\llambda)} + i\bm \nabla \varphi(\llambda) 
 \end{equation} 
-For $\varphi(\llambda)\in \mathcal C^2$, the gauge independent choice of phase $\varphi$ would be for infinitesimal change for example
+For twice differentiable function $\varphi(\llambda)\in \mathcal C^2$, the gauge independent function $f$ would be for infinitesimal change for example
 \begin{equation}
     f\coloneqq \braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)},
     \label{eq:fidelityDefinition}
@@ -368,32 +367,35 @@ sometimes referred to as the \emph{fidelity amplitude of a ground state}, becaus
 \end{equation}
 We can easily check, that the axioms for metric distance holds:
 \begin{itemize}
-    \item identity of indiscernibles $s(\kpsi,e^{i\alpha}\kpsi) = 0 \Leftrightarrow \kpsi=\kphi$, $\alpha\in\R$,
+    \item identity of indiscernibles $s(\kpsi,e^{i\alpha}\kphi) = 0 \Leftrightarrow \kpsi=\kphi$, $\alpha\in\R$,
     \item symmetry for any two states $\kpsi$, $\kphi$ is implied by $|\braket{\psi|\varphi}|=|\braket{\varphi|\psi}|$
-    \item triangle inequality: $s(\kpsi,\ket{\psi_2}) <s(\kpsi,\ket{\psi_1}) + s(\ket{\psi_1},\ket{\psi_2})$ for any $\ket{\psi_1}$.
+    \item triangle inequality: $s(\kpsi,\ket{\psi_2}) <s(\kpsi,\ket{\psi_1}) + s(\ket{\psi_1},\ket{\psi_2})$\\
+    for any $\ket{\psi}$,$\ket{\psi_1}$,$\ket{\psi_2}$.
 \end{itemize}
 If we take the fidelity between two parameter dependent states, the infidelity $1-F(\ket{\psi(\llambda)},\ket{\psi(\llambda+\Delta)})>0$ and the first term of Taylor expansion in $\Delta$ is zero, implying it can be used for the metric tensor definition.
 
 \begin{definition}[Metric tensor on projective state manifolds]
+    \label{def:metricTensor}
+
 Because the projective state manifolds $\P\M_s$ are isomorphic to the base manifold $\R^N$, we can define
     \begin{equation}
         \begin{split}
-            g_{\mu\nu}&: \T\mathcal U\times \T\mathcal U\rightarrow \R \\
-            g_{jk}\d \bm \lambda^j \d\bm \lambda^k+\O(\lambda^3) \equiv \d s^2 &\coloneqq 1-\left|\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)}\right|^2.
+            g_{\mu\nu}&: \redd{\T\mathcal U}\times \redd{\T\mathcal U}\rightarrow \R \\
+            g_{jk}\redd{\d \bm \lambda^j \d\bm \lambda^k}+\O(\lambda^3) \equiv \d s^2 &\coloneqq 1-\left|\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)}\right|^2.
             \label{eq:metricTensorDef}
         \end{split}
     \end{equation} 
    
 \end{definition}
-Even though we call $g_{\mu\nu}$ the metric tensor \emph{on projective state manifolds}, it takes forms from $\T\mathcal U$. Using abstract indices this means
+Even though we call $g_{\mu\nu}$ the metric tensor \emph{on projective state manifolds}, it takes forms from $\redd{\T\mathcal U}$. Using abstract indices this means
 \begin{equation}
-    g^{\mu\nu}\d_\mu \llambda \d_\nu \llambda.
+    g^{\mu\nu}\redd{\d_\mu \llambda \d_\nu \llambda}.
 \end{equation}
-This whole procedure can be made more rigorous using so-called \emph{vector bundles}, see \cite{lu}[Chap. 7]. In our case we can use the bijection $\redd{\T\mathcal U}\times \redd{\T\mathcal U} \rightarrow \bluee{\T\M}\times \bluee{\T\M}$ and simply write
+This whole procedure can be made more rigorous using so-called \emph{vector bundles}, see \cite{lu}[Chap. 7]. In our case we can use the isomorphism of $\redd{\T\mathcal U}\times \redd{\T\mathcal U}$ and $\bluee{\T\M}\times \bluee{\T\M}$ and simply write
 \begin{equation}
-    g_{jk}\redd{\d\llambda^j \d\llambda^k} = g_{jk}\frac{\redd{\d\llambda^j}}{\bluee{\d\bm v^l}}\frac{\redd{\d\llambda^k}}{\bluee{\d\bm v^m}} \bluee{\d\bm v^l \d \bm v^m} \eqqcolon G_{lm}\bluee{\d\bm v^l \d \bm v^m}.
+    g_{jk}\redd{\d\llambda^j \d\llambda^k} = g_{jk}\frac{\redd{\partial\llambda^j}}{\bluee{\partial\bm v^l}}\frac{\redd{\partial\llambda^k}}{\bluee{\partial\bm v^m}} \bluee{\d\bm v^l \d \bm v^m} \eqqcolon G_{lm}\bluee{\d\bm v^l \d \bm v^m}.
 \end{equation}
-In calculations only $g_{jk}$ is used, thus what should have been called \emph{the metric tensor on state manifolds} $G_{\mu\nu}$ leaves forgotten. "And some things that should not have been forgotten were lost." \citep{lordOfTheRings}
+Practically only $g_{jk}$ is used, thus what should have been called \emph{the metric tensor on state manifolds} $G_{\mu\nu}$ leaves forgotten. "And some things that should not have been forgotten were lost." \citep{lordOfTheRings}
 
 
 
@@ -401,52 +403,63 @@ In calculations only $g_{jk}$ is used, thus what should have been called \emph{t
 
 
 
-\subsubsection{Complex tensor generalization}
-The scalar product (braket) of two quantum states is a 2-form $\chi_{\mu\nu}: \H\times\H\rightarrow \C$ and can be decomposed to real and imaginary part as
+% \subsubsection{Geometric tensor}
+% \red{Add more info from quantum\_geometric\_tensor\_pedagogical.pdf The scalar product (braket) of two quantum states is a 2-form $\chi_{\mu\nu}: \H\times\H\rightarrow \C$ and can be decomposed to real and imaginary part as
+% \begin{equation}
+%     \braket{\psi_1|\psi_2}\equiv \chi(\psi_1,\psi_2)=g(\psi_1,\psi_2)-i\nu(\psi_1,\psi_2).
+%     \label{eq:quantumProd}
+% \end{equation}
+% }
+% \red{From braket sesquilinearity goes that $g_{\mu\nu}$ is symmetric and $\nu_{\mu\nu}$ antisymmetric, thus they can be uniquely written into one 2-form $\chi_{\mu\nu}$, called the \emph{Fubini-Study metric} or the \emph{Geometric tensor}, with property
+% \begin{equation}
+%     g=\Re \chi ;\qquad \nu=\Im \chi.
+% \end{equation}
+% Here we call the $g$ a \emph{metric tensor} and $k$ the \emph{curvature tensor}, or \emph{Berry curvature}. 
+% }
+% The distance between quantum states can also be defined as
+% \begin{equation}
+%     \d s^2 \coloneqq |\psi(\llambda+\d \llambda)-\psi(\llambda)|^2 = \braket{\delta\psi|\delta\psi} = \underbrace{\braket{\partial_j\psi|\partial_k\psi}}_{\chi_{jk}(\llambda)} \d\llambda^j \d\llambda^k 
+% \end{equation}
+
+Because the metric tensor is a real analytical function of coordinates, its analytical continuation into complex numbers can be performed. For the motivation behind following definition, see \cite{cheng_quantum_2013}.
+
+\begin{definition}[Geometric tensor]
+    On the ground state manifold $\M_0$, the geometric tensor can be defined as
+    \begin{equation}
+        \chi_{jk}\coloneqq \braket{\partial_j o|\partial_k o}_c \equiv \braket{\partial_j o|\partial_k o} - \braket{\partial_j o|o}\braket{o|\partial_k o},
+        \label{eq:geometricTensor}
+    \end{equation}
+    where shortened notation $\partial_k\coloneqq\pder{}{\llambda^k}$ is used. The subscript $c$ means \emph{connected} and is defined by the formula.
+\end{definition}
+This definition is in fact gauge independent and can be extended onto any state manifold. 
+
+Real part of geometric tensor is symmetric, and it is the metric tensor from Def. \ref{def:metricTensor}. The imaginary part is antisymmetric and is called the \emph{curvature tensor}, or \emph{Berry curvature}. The metric tensor can then be expressed as
 \begin{equation}
-    \braket{\psi_1|\psi_2}\equiv \chi(\psi_1,\psi_2)=g(\psi_1,\psi_2)-i\nu(\psi_1,\psi_2).
-    \label{eq:quantumProd}
-\end{equation}
-
-From braket sesquilinearity goes that $g_{\mu\nu}$ is symmetric and $\nu_{\mu\nu}$ antisymmetric, thus they can be uniquely written into one 2-form $\chi_{\mu\nu}$, called the \emph{Fubini-Study metric} or the \emph{Geometric tensor}, with property
-\begin{equation}
-    g=\Re \chi ;\qquad \nu=\Im \chi.
-\end{equation}
-Here we call the $g$ a \emph{metric tensor} and $k$ the \emph{curvature tensor}, or \emph{Berry curvature}. 
-
-The geometric tensor is sometimes defined directly on the ground state manifold $\M_0$ from the fact, that the metric tensor is an analytical real function of coordinates, and we can make an analytical continuation into complex numbers, as
-\begin{equation}
-    \chi_{jk}\coloneqq \braket{\partial_j o|\partial_k o}_c \equiv \braket{\partial_j o|\partial_k o} - \braket{\partial_j o|o}\braket{o|\partial_k o},
-    \label{eq:geometricTensor}
-\end{equation}
-where shortened notation $\partial_k\coloneqq\pder{}{\lambda^k}$ was used. The subscript $c$ means \emph{connected} and is defined in the formula.
-
-The metric tensor can then be expressed as
-\begin{equation}
-    g_{jk} = \frac{1}{2}(\chi_{jk}+\chi_{kj}) = \Re\braket{\partial_j o|\partial_k o}_c = \Re \sum_{o\neq s}\frac{\braket{o|\pder{\H}{\lambda^j}|s}\braket{s|\pder{\H}{\lambda^k}|o}}{(E_o-E_s)^2}.
+    g_{jk} =\Re \chi = \frac{1}{2}(\chi_{jk}+\chi_{kj}) = \Re \sum_{o\neq s}\frac{\braket{o|\pder{\H}{\llambda^j}|s}\braket{s|\pder{\H}{\llambda^k}|o}}{(E_o-E_s)^2}.
+    % =\Re\braket{\partial_j o|\partial_k o}_c = 
     \label{eq:metrictensorREdefinition}
 \end{equation}
 The Berry curvature is
 \begin{equation}
-        \nu_{jk} = \frac{i}{2}(\chi_{jk}-\chi_{kj})= \frac{1}{2}\Im\braket{o|[\curlyleftarrow{\partial}_k,\partial_j]|o}_c = - \Im \sum_{o\neq s}\frac{\braket{o|\pder{\H}{\lambda^j}|s}\braket{s|\pder{\H}{\lambda^k}|o}}{(E_o-E_s)^2},
+        \nu_{jk} =\Im \chi= \frac{i}{2}(\chi_{jk}-\chi_{kj})=  - \Im \sum_{o\neq s}\frac{\braket{o|\pder{\H}{\llambda^j}|s}\braket{s|\pder{\H}{\llambda^k}|o}}{(E_o-E_s)^2}.
+        % =\frac{1}{2}\Im\braket{o|[\curlyleftarrow{\partial}_k,\partial_j]|o}_c =
     \label{eq:geom.tensorREdefinition}
 \end{equation}
-where $\curlyleftarrow{\partial}_k$ affects the object on the left.
 
 %taylor is wrong
-% \begin{proof}[Proof for Geometric tensor expression] In one-dimensional case we get from eq. \ref{eq:fidelityDefinition} using Taylor expansion and shortened notation $o\coloneqq o(\lambda)$
+% \begin{proof}[Proof for Geometric tensor expression] In one-dimensional case we get from eq. \ref{eq:fidelityDefinition} using Taylor expansion and shortened notation $o\coloneqq o(\llambda)$
 %     \begin{equation}
-%         f=1+\braket{\partial_\lambda o|o}\delta\lambda-\frac{1}{2}\braket{\partial_\lambda^2 o|o}\delta\lambda^2+\mathcal{O}(\lambda^3),
+%         f=1+\braket{\partial_\llambda o|o}\delta\llambda-\frac{1}{2}\braket{\partial_\llambda^2 o|o}\delta\llambda^2+\mathcal{O}(\llambda^3),
 %     \end{equation}
 %     which plugged into eq. \ref{eq:distanceOnM0} gives
 %     \begin{equation}
 %         \begin{split}
-%             \d s^2&=1-\bar{f}f=\left[-\braket{o|\partial_\lambda o}\braket{\partial_\lambda o|o}+\frac{1}{2}\braket{\partial_\lambda^2 o|o}+\frac{1}{2}\braket{o|\partial_\lambda^2 o}\right]\delta \lambda^2.
+%             \d s^2&=1-\bar{f}f=\left[-\braket{o|\partial_\llambda o}\braket{\partial_\llambda o|o}+\frac{1}{2}\braket{\partial_\llambda^2 o|o}+\frac{1}{2}\braket{o|\partial_\llambda^2 o}\right]\delta \llambda^2.
 %         \end{split}
 %     \end{equation}
-%     Generalizing for $\lambda\in \R^N$, we get\footnote{assuming Hermiticity of the derivative operator everywhere on the ground state manifold}
+%     Generalizing for $\llambda\in \R^N$, we get\footnote{assuming Hermiticity of the derivative operator everywhere on the ground state manifold}
 %     \begin{equation}
-%         \d s^2=\left[-\braket{o|\partial_j o}\braket{\partial_k o|o}+\underbrace{\frac{1}{2}\braket{o|\partial_j \partial_k|o}+\frac{1}{2}\braket{o|\partial_k \partial_j| o}}_{\Re\braket{\partial_mu o|\partial_k o}}\right]\delta \lambda^j\delta \lambda^k.
+%         \d s^2=\left[-\braket{o|\partial_j o}\braket{\partial_k o|o}+\underbrace{\frac{1}{2}\braket{o|\partial_j \partial_k|o}+\frac{1}{2}\braket{o|\partial_k \partial_j| o}}_{\Re\braket{\partial_mu o|\partial_k o}}\right]\delta \llambda^j\delta \llambda^k.
 %     \end{equation}
 %     Because only symmetric part contributes in the sum in eq. \ref{eq:metricTensorDef}, this proves symmetric part of equation \ref{eq:geometricTensor} and shows, that some more general tensor (\emph{geometric tensor}) exists.
 % \end{proof}
@@ -456,31 +469,31 @@ where $\curlyleftarrow{\partial}_k$ affects the object on the left.
 \begin{proof}[Proof of the  metric tensor definitions correspondence]\
     \label{sec:derivationOfGeometricTensor}
 
-    To prove the correspondence of geometric tensor, defined by Eq. \ref{eq:geometricTensor}, to distance on $\M_0$ in Eq. \ref{eq:distanceOnM0}, we start with the state $\ket{o(\llambda)}\in \M_s\cap\H(\llambda)$, which is the ground state of $\HH(\llambda)$. Changing parameter $\llambda$ to $\llambda+\delta \llambda$ results in a state, which is a linear combination of eigenstates $\ket{s(\llambda+\delta \llambda)}\in \M_s\cap\H(\llambda+\delta \llambda)$ of $\HH(\llambda+\delta \llambda)$, meaning the state is no longer a ground state. Probability amplitude of going to any new eigenstate is
+    To prove the correspondence of geometric tensor, defined by Eq. \ref{eq:geometricTensor}, to distance on $\M_0$ in Eq. \ref{eq:distanceOnM0}, we start with the state $\ket{o(\llambda)}\in \M_s\cap\H(\llambda)$, which is the ground state of $\HH(\llambda)$. Changing parameter $\llambda$ to $\llambda+\delta \llambda$ results in a state, which is a linear combination of eigenstates $\ket{s(\llambda+\delta \llambda)}\in \M_s\cap\H(\llambda+\delta \llambda)$, meaning the state is no longer eigenstate. Its collapse to any new eigenstate has a probability amplitude
     \begin{equation}
         \begin{split}
-            a_s&=\braket{s(\llambda+\delta\llambda)|o(\llambda)}\approx \delta\lambda^j\braket{\partial_j s(\llambda)|o(\llambda)} \\
-            &= -\delta\lambda^j\braket{s(\llambda)|\partial_j|o(\llambda)}.
+            a_s&=\braket{s(\llambda+\delta\llambda)|o(\llambda)}\approx \delta\llambda^j\braket{\partial_j s(\llambda)|o(\llambda)} \\
+            &= -\delta\llambda^j\braket{s(\llambda)|\partial_j|o(\llambda)}.
         \end{split}
     \end{equation}
 
-    If we introduce the \emph{gauge potential}, aka the \emph {calibration potential}, as\footnote{In SI units, the gauge potential is $\AA_j\coloneqq i\hbar\partial_{j}$}
+    If we introduce the \emph{gauge potential}, sometimes called the \emph {calibration potential}, as\footnote{In SI units, the gauge potential is $\AA_j\coloneqq i\hbar\partial_{j}$}
     \begin{equation}
         \AA_j\coloneqq i\partial_{j},
     \end{equation}
     the probability amplitude can be expressed as
     \begin{equation}
-    a=i\braket{s(\llambda)|\AA_j |o(\llambda)}\delta\lambda^j,
+    a=i\braket{s(\llambda)|\AA_j |o(\llambda)}\delta\llambda^j,
     \label{eq:probabilityOfTransitionIsGauge}
     \end{equation}
     which has a meaning of gauge potential matrix elements. Probability of the excitation, i.e. the transition to any state $s>0$ from ground state is then (omitting the $\llambda$ dependence in notation)
     \begin{equation}
         \begin{split}
-            \sum_{s\neq 0}|a_s|^2&=  \sum_{s\neq 0} \delta \lambda^j \delta \lambda^k\braket{o|\AA_j|s}\braket{s|\AA_k|o}+\O(|\delta \lambda^3|) \\
-            &= \delta \lambda^j \delta \lambda^k\braket{o|\AA_j \AA_k|o}_c\eqqcolon \delta \lambda^j \delta \lambda^k\chi_{jk}+\O(|\delta \lambda^3|),
+            \sum_{s\neq 0}|a_s|^2&=  \sum_{s\neq 0} \delta \llambda^j \delta \llambda^k\bluee{\braket{o|\AA_j|s}\braket{s|\AA_k|o}}\gray{+\O(|\delta \llambda^3|)} \\
+            &= \delta \llambda^j \delta \llambda^k\bluee{\braket{o|\AA_j \AA_k|o}_c}\gray{+\O(|\delta \llambda^3|)}\eqqcolon \delta \llambda^j \delta \llambda^k\bluee{\chi_{jk}}\gray{+\O(|\delta \llambda^3|)},
         \end{split}
     \end{equation}
-    where last term defines the geometric tensor.
+    where last term defines the \bluee{geometric tensor}.
 \end{proof}
 
 
@@ -488,21 +501,20 @@ where $\curlyleftarrow{\partial}_k$ affects the object on the left.
 
 
 
-To understand why the gauge potential generates some calibrational invariance, we define the Berry connection.
+To understand why the gauge potential generates some calibrational invariance, let's define the Berry connection.
 \begin{definition}[Berry connection]    
     On the ground state manifold $\M_0$, the \emph{Berry connection} is defined as the mean value of gauge potential
     \begin{equation}
-        A_j(\llambda)\coloneqq \braket{o(\llambda)|\AA_j|o(\llambda)}= -i \braket{o(\llambda)|\partial_j|o(\llambda)}= -i\der{\lambda^j}{x^i} \braket{o(\llambda)|\pder{}{\lambda^j}|o(\llambda)},
+        A_j(\llambda)\coloneqq \braket{o(\llambda)|\AA_j|o(\llambda)}= -i \braket{o(\llambda)|\partial_j|o(\llambda)}.
         \label{eq:berryConnection}
     \end{equation}
-    which uses the decomposition of $\llambda$ to some orthogonal basis $\{x_i\}_{i=1}^n$ of the base manifold $\R^N$. 
 \end{definition}
     
 
 This empowers us to take derivatives in any direction and the expression for geometric tensor on $\M_0$
 \begin{equation}
     \chi_{jk}(\llambda) = \partial_j A_k(\llambda)-\partial_k A_j(\llambda)
-    \label{eq:geometricTensor}.
+    \label{eq:geometricTensorRedef}.
 \end{equation}
 This formula can be directly proven by comparing with \ref{eq:geometricTensor}. Here we see that the calibrational invariance is 
 \begin{equation}
@@ -521,39 +533,19 @@ meaning any twice differentiable function can be added to the gauge potential, l
         \end{equation} 
         and Berry phase
         \begin{equation}
-            \varphi_B=\oint_\mathcal{C} \partial_j \varphi \d \lambda^j,
+            \varphi_B=\oint_\mathcal{C} \partial_j \varphi \d \llambda^j,
         \end{equation}
         which represents total phase accumulated by the wave function. It is really the analogy for Berry phase in classical mechanics, which for example in the case Foucault pendulum on one trip around the Sun makes $\varphi_B=2\pi$
         }
 
     \begin{equation}
-        \varphi_B\coloneqq-\oint_\mathcal{C} A_j(\llambda)\d \lambda^j=\int_\mathcal{S} \chi_{jk}(\llambda)\d \lambda^j \wedge \d\lambda^k,
+        \varphi_B\coloneqq-\oint_\mathcal{C} A_j(\llambda)\d \llambda^j=\int_\mathcal{S} \chi_{jk}(\llambda)\d \llambda^j \wedge \d\llambda^k,
     \end{equation}
     where we used the Stokes theorem for some area $\mathcal{S}$ with boundary $\partial\mathcal{S}=\mathcal{C}$.    
     
 \end{definition}
 
-Berry phase is zero, when the curve does not go around some geometric tensor singularity. This can be formally written using the \emph{winding number}, which counts \emph{how many times the curve goes counterclockwise around some point of interest}. In our case the points of interest are singularities $a$, and we say:
-$$\mathrm{Ind}_a \mathcal J(\lambda)=0 \Rightarrow \varphi_B=0.$$
+Berry phase is zero, when the curve does not go around some geometric tensor singularity. This can be formally written using the \emph{winding number}, which counts \emph{how many times the curve goes counterclockwise around some point of interest}. In our case the points of interest are singularities $a$, and we have:
+$$\mathrm{Ind}_a \mathcal J(\llambda)=0 \Rightarrow \varphi_B=0.$$
 
-Those singularities appear in the system due to energy spectrum degeneracies, in the case of ground state manifold, when $E_1-E_0=0$. These points are called \emph{diabolic}, because of the energy spectrum shape in the $(\lambda,\chi)$ parameter space.\footnote{https://en.wikipedia.org/wiki/Diabolo}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+These singularities appear in the system due to energy spectrum degeneracies, in the case of ground state manifold, when $E_1-E_0=0$. These points are called \emph{diabolic}, because of the energy spectrum shape in the $(\llambda,\chi)$ parameter space.\footnote{https://en.wikipedia.org/wiki/Diabolo}
