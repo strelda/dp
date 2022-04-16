@@ -15,15 +15,14 @@
 \contentsline {section}{\numberline {2.5}Fidelity}{18}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Metric and geometric tensor}{19}{section.2.6}%
 \contentsline {chapter}{\numberline {3}Quantum state driving}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Adiabatic driving}{23}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Counter-diabatic driving}{24}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Classical gauge potential}{25}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Quantum gauge potential}{26}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Driving on the ground state manifold}{27}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Minimizing the distance on state manifolds}{27}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Minimizing the energy variance}{28}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Transport using quenches}{29}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Adiabatic perturbation theory}{30}{section.3.4}%
+\contentsline {section}{\numberline {3.1}Counter-diabatic driving}{24}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Classical gauge potential}{25}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Quantum gauge potential}{26}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Driving on the ground state manifold}{27}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Minimizing the distance on state manifolds}{27}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Minimizing the energy variance}{28}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Transport using quenches}{29}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Adiabatic perturbation theory}{30}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Two level system}{32}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Hamiltonian}{32}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Harmonic oscillator correspondence}{33}{section.4.2}%
