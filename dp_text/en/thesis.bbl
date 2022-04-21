@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -112,6 +112,19 @@ W.~Tu Loring.
 \newblock \emph{Differential Geometry}.
 \newblock Springer International Publishing, 2017.
 \newblock \doi{10.1007/978-3-319-55084-8}.
+
+\bibitem[Loss and DiVincenzo(1998)]{dots}
+D.~Loss and D.~P. DiVincenzo.
+\newblock Quantum computation with quantum dots.
+\newblock \emph{Phys. Rev. A}, 57:\penalty0 120--126, Jan 1998.
+\newblock \doi{10.1103/PhysRevA.57.120}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.57.120}.
+
+\bibitem[Makhlin et~al.(2000)Makhlin, Schön, and Shnirman]{josephson}
+Y.~Makhlin, G.~Schön, and A.~Shnirman.
+\newblock Josephson junction based quantum computing.
+\newblock \emph{AAECC 10}, page 375–382, 2000.
+\newblock \doi{https://doi.org/10.1007/s002000050136}.
 
 \bibitem[Molitor(2013)]{molitor_exponential_2013}
 M.~Molitor.

@@ -2,10 +2,7 @@
 \label{appendixGEOM}
 Differential geometry is believed to be the modern language of physics and there is a strong urge to reformulate theories in this language. As introduction to the problem, see \cite{ashtekar_geometrical_1997}, \cite{ashtekar_geometry_1995}, or more mathematical work by \cite{molitor_exponential_2013}.
 
-In the previous chapter, we have used classical formulation of quantum mechanics with some parts described using differential geometry. Here, the complete reformulation of quantum mechanics and the bridge between this theory and the one we have already formulated will be build. Reformulating the whole theory of quantum driving into the language of differential geometry might give some new insights, but it is beyond the scope of this thesis.
-
-% \section{K\"ahler manifolds}
-
+In the whole thesis, classical formulation of quantum mechanics with some parts described using differential geometry is used. Here, the complete reformulation of quantum mechanics and the bridge between this theory and the one already formulated is introduced. Reformulating the whole theory of quantum driving into the language of differential geometry might give some new insights, but it is beyond the scope of this thesis.
 
 
 \section{From the projective Hilbert space to state manifolds}
@@ -13,15 +10,15 @@ In the previous chapter, we have used classical formulation of quantum mechanics
 
 Consider the Hilbert space $\H$ to be a space of \emph{bare states} and $\mathcal{S}$ to be the space of \emph{normalized bare states}. Physical observables are related to the \emph{space of rays}, defined as $\PH\coloneqq \mathcal{H}/U(1)$, for the factorization by elements of one-dimensional unitary group $U(1)$. This group consists of unitary transformations $e^{i\varphi}$ for $\varphi\in\R$, defining gauge symmetry between quantum states. $\PH$ is then considered to be the \emph{space of pure states}. We will consider the states to be normalized, leading to the \emph{space of normalized pure physical states}. 
 
-It can be shown, that $\PH$ is of K\"ahler structure, meaning it has two non-degenerate sesquilinear\footnote{We are in physics, so complex conjugated is the first input of the 2-form.} 2-forms embedded along with complex unit operator
+It can be shown, that $\PH$ is of K\"ahler structure, meaning it has two non-degenerate sesquilinear\footnote{Complex conjugated is the first input of the 2-form.} 2-forms embedded along with complex unit operator $J$, defining structure
 $$(J, G, \Omega),$$
 such that
 \begin{equation}
-    J^2=\Id
+    J^2=\Id.
 \end{equation}
-and any bracket of $\ket{\psi_1},\ket{\psi_2}\in \PH$ can be decomposed into real and imaginary part\citep{ashtekar_geometrical_1997}
+Any bracket of $\ket{\psi_1},\ket{\psi_2}\in \PH$ can be decomposed into real and imaginary part\citep{ashtekar_geometrical_1997}
 \begin{equation}
-    \braket{\psi_1|\psi_2}\equiv Q(\psi_1,\psi_2)=G(\psi_1,\psi_2)-i\Omega(\psi_1,\psi_2).
+    \braket{\psi_1|\psi_2}\equiv Q(\psi_1,\psi_2)=\frac{1}{2}G(\psi_1,\psi_2)-\frac{i}{2}\Omega(\psi_1,\psi_2).
 \end{equation}
 
 From braket sesquilinearity goes that $G$ is symmetric and $\Omega$ antisymmetric form, thus they can be uniquely written into one 2-form called \emph{Fubini-Study metric} with property
@@ -29,17 +26,18 @@ From braket sesquilinearity goes that $G$ is symmetric and $\Omega$ antisymmetri
     G=\Re Q ;\qquad \Omega=\Im Q.
 \end{equation}
 
-Because $|\braket{\psi_1|\psi_2}|\in[0,1]$ we say, that the metric is measuring the geodesic distance on the Bloch sphere. Here if we define
+Because $|\braket{\psi_1|\psi_2}|\in[0,1]$ we say, that the \emph{metric is measuring the geodesic distance on the Bloch sphere}. Here if we define
 \begin{equation}
     |\braket{\psi_1|\psi_2}|=\cos^2 \frac{\theta}{2},
 \end{equation}
 we get $\d \theta= 2\d s=2\sqrt{|g_{\mu\nu}\d \llambda^\mu\d \llambda^\nu|}$, see \citet{cheng_quantum_2013}.
 
-To write the metric in a standard form, we need to realize how our space looks like. For finite $(n+1)$-dimensional Hilbert space, one dimension is lost in the gauge transformation, leaving us with $n$-dimensional $\PH$. Another dimension is lost due to normalization, which is usually done by mapping to an n--dimensional complex sphere
-$$CP^n= \left\{ \bm Z=(Z_0,Z_1,\dots,Z_n)\in \mathbb{C}^{n+1}/\{0\} \right\}\Big/ \{\bm Z\sim c\bm Z \text{ for } c\in \mathbb{C}\}.$$
+To write the metric in a standard form, we need to realize how our space looks like. For finite $(N+1)$-dimensional Hilbert space, one dimension is lost in the gauge transformation, leaving us with $N$-dimensional $\PH$. Another dimension is lost due to normalization, which is usually done by mapping to an n--dimensional complex sphere
+$$CP^N= \left\{ \bm Z=(Z_0,Z_1,\dots,Z_N)\in \mathbb{C}^{N+1}/\{0\} \right\}\Big/ \{\bm Z\sim c\bm Z \text{ for } c\in \mathbb{C}\}.$$
 
 Natural property of such complex spaces is splitting of its tangent space to holonomous and anholonomous part\footnote{The line over index means complex conjugation.}
 $$\mathcal T^1_0\M=\Span\left\{\frac{\partial}{\partial Z_i}\right\}; \qquad \mathcal T^0_1\M=\Span\left\{\frac{\partial}{\partial Z_{\overline{i}}}\right\}.$$
+For suitable distance $\d Z$, this can be used to define distance on state manifolds.
 
 
 Distance on $\mathbb{C}^{n+1}$ is usually defined using Hermitian metric\footnote{Hermitian metric is by definition sesquilinear, as one would expect in quantum mechanics later on.} 
@@ -57,7 +55,7 @@ Distance on $\mathbb{C}^{n+1}$ is usually defined using Hermitian metric\footnot
 
 
 \section{Restriction to eigenstate manifolds}
-In quantum mechanics, one can examine a Hamiltonian $\HH(\llambda)$, for some parameter $\llambda\in \R^n$. At every point $\llambda$ we get projective Hilbert space $\PH(\llambda)$. This creates a fiber structure space, in which there are some sections with interesting physical applications. Some of these sections are \emph{eigenstate manifolds}, defined by setting only one non-zero coefficient $Z_k$ in eigenbasis $\ket{\psi}=\sum_{k=0}^n Z_k \ket{k}$. From normalization goes automatically $Z_k=1$. The distance on these manifolds is, as derived in Eq. \ref{eq:distanceOnM0},
+In quantum mechanics, one can examine a Hamiltonian $\HH(\llambda)$, for some parameter $\llambda\in \mathcal U\subset \R^n$. At every point $\llambda$ we get projective Hilbert space $\PH(\llambda)$. This creates a fiber structure space, in which there are some sections with interesting physical applications. Some of these sections are \emph{eigenstate manifolds}, defined by setting only one non-zero coefficient $Z_k$ in eigenbasis $\ket{\psi}=\sum_{k=0}^n Z_k \ket{k}$. From normalization goes automatically $Z_k=1$. The distance on these manifolds is, as derived in Eq. \ref{eq:distanceOnM0},
 \begin{equation}
     \begin{split}
         \d s^2 &= \textcolor{gray}{1}-\bra{k+\delta k}\textcolor{gray}{k\rangle \langle k}\ket{k+\delta k}=\textcolor{gray}{1}-\bra{k+\delta k}\textcolor{gray}{\big(\Id-\sum_{j\neq k} \ket{j}\bra{j}\big)}\ket{k+\delta k} \\

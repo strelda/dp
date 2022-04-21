@@ -3,19 +3,58 @@
 
 \begin{tabular} {@{}C{1.9cm}@{}p{8cm}@{}C{3.77cm}}
 	\toprule
-	\textbf{Symbol}& \textbf{Meaning}& \textbf{Defining formula}\\\bottomrule
-	$\A$ & Gauge (calibrational) potential & $\A_\mu=i\hbar \partial_\mu$ \\
-	$\mathbb{N}$ & Natural numbers, without zero \\
-	$\mathcal{C}^k$ & k-times differentiable function \\
-	
+	\textbf{Symbol}& \textbf{Meaning}& \hspace{-30pt}\textbf{Characterizing formula}\\\bottomrule
+	$\A_\mu$ & Calibrational (gauge) potential & $\A_\mu\coloneqq i\hbar \partial_\mu$ \\
+	$A_\mu$ & Berry connection & $A_\mu\coloneqq \braket{o|\A_\mu|o}$ \\
+	$\mathcal{C}^k$ & k-times continuously differentiable function \\
+	$\C$ & complex numbers & \\
+	  $\gamma_s$& geometrical phase induced by $s^{\text{th}}$ energy level &  \\
+	  $D_\mu$&covariant derivative  &  \\
+	  $\d$& exterior derivative  &  \\
+	  $E_s$&$s^{\text{th}}$ energy level of Hamiltonian &  \\
+	  $F$& fidelity & \hspace{-10pt}$F(\ket{\psi},\ket{\phi})=|\braket{\psi|\phi}|^2$  \\
+	  $F^*$& infidelity & $F^*\coloneqq 1-F$  \\
+	  $f$& fidelity amplitude  & $|f|^2=F$  \\
+	  $g_{\mu\nu}$& metric tensor& $g_{\mu\nu}= \Re\chi_{\mu\nu}$ \\
+	  $\HH(\llambda)$& parametric controlled Hamiltonian  &  \\ 
+	  $\mathcal H$& Hilbert space  &  \\ 
+	  $\mathcal H(\llambda)$& Hilbert space for $H(\llambda)$ &  \\ 
+	  $\mathrm{Ind}_a$ & winding number around point $a$ & \\
+	  $\mathcal J$ & driving curve in parametric space &  \\
+	  $\llambda$& $n$-dimensional real parameter of Hamiltonian &$\llambda\in \mathcal U\subset \R^n$  \\
+	  $\lambda$&$1$-dimensional  real parameter of Hamiltonian &$\lambda\in \R$  \\
+	  $\M$& manifold &  \\
+	  $\M_s$& $s^{\text{th}}$ energy state manifold &  \\
+	  $N$ & Hamiltonian system dimension & \\
+	  $\mathbb{N}$ & Natural numbers (excluding zero) \\
+	  $\ket{o(\llambda)}$& ground state of Hamiltonian $\HH(\llambda)$  &  \\
+	  $\mathcal O$& big-O notation  &  \\
+	  $\P\M_s$& $s^{\text{th}}$ energy projective state manifold &  \\
+	  $\varphi_B$ & Berry phase & \\
+	  $\R$& Real numbers  &  \\
+	  $R^\alpha_{\mu\nu\kappa}$ &Riemann tensor & \\
+	  $R_{\mu\nu}$ & Ricci tensor & $R_{\mu\nu}\coloneqq R^\alpha_{\;\;\mu\alpha\nu}$\\
+	  $R$ & Ricci scalar & $R\coloneqq R^\mu_{\;\;\mu}$\\
+	  $\nu_{\mu\nu}$ & Berry curvature & $\nu_{\mu\nu}= \Im\chi_{\mu\nu}$ \\ 
+	  $\ket{s}$& eigenstate corresponding to energy $E_s$& $\HH\ket{s}=E_s\ket{s}$ \\
+	  $t$& time  &  \\
+	  $T_f$& final time of driving  &  \\
+	  $\mathbb T_a \M$& tangent field of $\M$ at point $a\in \M$ &  \\
+	  $\mathbb T_a^* \M$& cotangent field of $\M$ at point $a\in \M$ &  \\
+	  $\T^p_q\M$& $q$-times covariant and $p$-times contravariant tensor field of $\M$&  \\
+	  $\mathcal U$& parametric space, open subset of $\R^n$  & \\
+	  $U(k)$& $k$-parametric unitary transformation group  &  \\
+	  $\chi_{\mu\nu}$ &geometric tensor &  \\
+	  $(\chi,\lambda)$&Lipkin model parameters  & $(\chi,\lambda)\equiv \llambda\in\R^2$ \\
+		$\omega$ & dynamical phase \\
 \bottomrule
 \multicolumn{3}{l}{\footnotesize}
 \end{tabular}
 
-Few more notes to notation:
-\begin{enumerate}
-	\item Quantum operators are denoted with \emph{hat}. Coordinate derivative is sometimes denoted using comma and covariant derivative using semicolon. 
-	\item Abstract indices are written in \emph{greek}, pointer indices in \emph{latin}. 
-	\item If the object is defined by the formula on right, "$\coloneqq$" is used. If the equality holds by definition, "$\equiv$" is used. 
-	\item The colored text is sometimes used during the derivations. The text can be understood without the colors, its goal is strictly pedagogical and helps reader to see some underlying connections.
-\end{enumerate}
+\begin{itemize}
+	\item Quantum operators are denoted with \emph{hat} ($\hat O$), 
+	\item abstract indices are written in \emph{Greek}, pointer indices in \emph{Latin}. 
+	\item If the object is defined by the formula on right, “$\coloneqq$” is used. If the equality holds by definition, “$\equiv$” is used. 
+	\item Coordinate derivative can be denoted using comma ($\partial_\mu O\equiv O_{,\mu}$) and covariant derivative using semicolon ($D_\mu O\equiv O_{;\mu}$). 
+	\item The colored text is sometimes used. The text can be understood without the colors, its goal is strictly pedagogical and helps reader to see some underlying connections.
+\end{itemize}

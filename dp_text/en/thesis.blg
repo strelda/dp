@@ -16,44 +16,44 @@ The style file: plainnat.bst
 A level-1 auxiliary file: appendixGEOM.aux
 A level-1 auxiliary file: appendix1.aux
 Database file #1: bibliography.bib
-You've used 22 entries,
+You've used 24 entries,
             2773 wiz_defined-function locations,
-            759 strings with 8692 characters,
-and the built_in function-call counts, 8280 in all, are:
-= -- 766
-> -- 353
-< -- 21
-+ -- 127
-- -- 105
-* -- 565
-:= -- 1346
-add.period$ -- 97
-call.type$ -- 22
-change.case$ -- 96
-chr.to.int$ -- 22
-cite$ -- 44
-duplicate$ -- 441
-empty$ -- 731
-format.name$ -- 137
-if$ -- 1736
+            775 strings with 9011 characters,
+and the built_in function-call counts, 9393 in all, are:
+= -- 881
+> -- 404
+< -- 23
++ -- 144
+- -- 120
+* -- 644
+:= -- 1502
+add.period$ -- 106
+call.type$ -- 24
+change.case$ -- 107
+chr.to.int$ -- 24
+cite$ -- 48
+duplicate$ -- 501
+empty$ -- 813
+format.name$ -- 156
+if$ -- 1986
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 29
-newline$ -- 148
-num.names$ -- 88
-pop$ -- 188
+missing$ -- 31
+newline$ -- 161
+num.names$ -- 96
+pop$ -- 206
 preamble$ -- 1
-purify$ -- 79
+purify$ -- 88
 quote$ -- 0
-skip$ -- 313
+skip$ -- 369
 stack$ -- 0
-substring$ -- 165
-swap$ -- 32
-text.length$ -- 2
+substring$ -- 212
+swap$ -- 54
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 202
+type$ -- 224
 warning$ -- 0
-while$ -- 76
+while$ -- 85
 width$ -- 0
-write$ -- 346
+write$ -- 378
