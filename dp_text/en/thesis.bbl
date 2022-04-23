@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -55,11 +55,6 @@ R.~Cheng.
 \newblock \emph{arXiv:1012.1337 [math-ph, physics:quant-ph]}, 2013.
 \newblock URL \url{http://arxiv.org/abs/1012.1337}.
 
-\bibitem[{et al.}(2022)]{felipe}
-{Matus, F.} {et al.}
-\newblock unpublished.
-\newblock \emph{MFF UK}, 2022.
-
 \bibitem[Fecko(2006)]{fecko}
 M.~Fecko.
 \newblock \emph{Differential Geometry and Lie Groups for Physicists}.
@@ -82,6 +77,13 @@ D.~Guti\'errez-Ruiz, D.~Gonzalez, J.~Ch\'avez-Carlos, J.~G. Hirsch, and J.~D.
   lipkin-meshkov-glick model.
 \newblock \emph{Phys. Rev. B}, 103, May 2021.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.103.174104}.
+
+\bibitem[Holstein and Primakoff(1940)]{holstein}
+T.~Holstein and H.~Primakoff.
+\newblock Field dependence of the intrinsic domain magnetization of a
+  ferromagnet.
+\newblock \emph{Phys. Rev.}, 58:\penalty0 1098--1113, Dec 1940.
+\newblock \doi{10.1103/PhysRev.58.1098}.
 
 \bibitem[Kolodrubetz et~al.(2017)Kolodrubetz, Mehta, and
   Polkovnikov]{kolodrubez}
@@ -125,6 +127,11 @@ Y.~Makhlin, G.~Schön, and A.~Shnirman.
 \newblock Josephson junction based quantum computing.
 \newblock \emph{AAECC 10}, page 375–382, 2000.
 \newblock \doi{https://doi.org/10.1007/s002000050136}.
+
+\bibitem[Matus et~al.(2022)Matus, Cejnar, Stránský, and Střeleček]{felipe}
+F.~Matus, P.~Cejnar, P.~Stránský, and J.~Střeleček.
+\newblock unpublished.
+\newblock \emph{MFF UK}, 2022.
 
 \bibitem[Molitor(2013)]{molitor_exponential_2013}
 M.~Molitor.

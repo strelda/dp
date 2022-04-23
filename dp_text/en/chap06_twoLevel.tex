@@ -1,6 +1,6 @@
 \chapter{Two level system}
 \label{chap:twoLevelSystem}
-Before we move to more complicated Hamiltonian model, we investigate a simple two level system. To understand the general behavior of fidelity on Hamiltonian spectrum, two analytically solvable drivings -- \emph{geodesic} and \emph{linear} -- is investigated.
+Before we move to more complicated Hamiltonian model, we investigate a simple two level system. To understand the general behavior of fidelity on Hamiltonian spectrum, two analytically solvable drivings — \emph{geodesic} and \emph{linear} — is investigated.
 
 \section{Hamiltonian}
 Let's have a Hamiltonian
@@ -10,7 +10,7 @@ Let's have a Hamiltonian
         \Delta(t)&-\Omega(t)
     \end{pmatrix}
 \end{equation}
-for $\Omega: \R^+\rightarrow \R$, $\Delta: \R^+\rightarrow \R$. Its spectrum is
+for $\Omega: \R^+\rightarrow \R$, $\Delta: \R^+\rightarrow \R$ and time $t$. Its spectrum is
 \begin{equation}
     E_1(t)=-E_0(t)= \sqrt{\Omega^2(t)+\Delta^2(t)}
     \label{eq:energy}
@@ -26,7 +26,7 @@ and using the eigenbasis
         \end{pmatrix} \right\},
     \label{eq:eigenbasisDef}
 \end{equation}
-we get the eigenvectors 
+the eigenvectors  can be written as 
 \begin{equation}
 \ket{0(t)}=N_+ \begin{pmatrix}
     1\\ \frac{E_0(t)+\Omega(t)}{\Delta(t)}
@@ -35,13 +35,16 @@ we get the eigenvectors
    \end{pmatrix}
    \label{eq:eigenvectors}
 \end{equation}
-for normalization constants $N_\pm\coloneqq\left(\left(\frac{\pm E_0(t)+\Omega(t)}{\Delta(t)}\right)^2+1\right)^{-1/2}$. One needs to realize that at any time $t$ the eigenbases differ. The basis $\mathcal B$ forms an eigenbasis at time $t=0$.
+for normalization constants $N_\pm\coloneqq\left(\left(\frac{\pm E_0(t)+\Omega(t)}{\Delta(t)}\right)^2+1\right)^{-1/2}$. Notice that the eigenbases differ in time, but are described using constant basis $\mathcal B$, which forms an eigenbasis at time $t=0$.
 
-The goal is to find \emph{fidelity} $F\coloneqq |\braket{0(t)|\psi(t)}|^2$ of different driving protocols. For this we need to solve time Schr\"odinger equation
+The goal is to find \emph{fidelity} $F_{\mathcal J}(t)\coloneqq |\braket{0(t)|\psi(t)}|^2$ of different driving protocols \begin{equation}
+    \mathcal J\coloneqq\{\llambda(t)|t\in[0,T],\; \llambda\in \mathcal U\} \subset \R^N.
+\end{equation}
+For this we need to solve time Schr\"odinger equation
 \begin{equation}
     \HH(t)\ket{\psi(t)}=i\frac{\d}{\d t}\ket{\psi(t)}
 \end{equation}
-with time varying Hamiltonian. For 2-dimentional system with 
+with time varying Hamiltonian $\HH(\llambda(t))\eqqcolon \HH(t)$ and $\llambda$ on path $\mathcal J$. For 2-dimentional system with 
 \begin{equation}
     \ket{\psi(t)}\eqqcolon \begin{pmatrix}
          a(t) \\
@@ -56,7 +59,7 @@ we get the system of \emph{two coupled differentials equations of the first orde
 \end{align}
 with normalization
 \begin{equation}
-    a^2(t)+b^2(t)=1, \quad \forall t\in [0,T_f].
+    a^2(t)+b^2(t)=1, \quad \forall t\in [0,T].
     \label{eq:normalizationCondition}
 \end{equation}
 and initial value 
@@ -81,7 +84,7 @@ and initial value
 
 
 \section{Harmonic oscillator correspondence}
-The Equations \ref{eq:a1}, \ref{eq:a2} have no general analytical solution, with an exception to a few easy protocols $\HH(t)$. Before moving to some of these special cases, let's analyze this coupled system of equations generally.
+Coupled Equations \ref{eq:a1}, \ref{eq:a2} have no general analytical solution, with an exception to a few easy protocols $\mathcal J$. Before moving to some of these special cases, let's analyze this coupled system of equations generally.
 
 N-dimensional Schr\"odinger equation can be rewritten to \emph{one differential equation of N$^{th}$ order with non-constant coefficients}. In our two-dimensional case, this equation corresponds to \emph{damped harmonic oscillator without external force}
 \begin{align}
@@ -128,11 +131,11 @@ From the perspective of classical mechanics, meaning $x(t)\coloneqq a(t)$ is a p
 
 
 \section{Energy variance for two level system}
-For two level system, the variance
+For two level system, the variance of wave-fucntion at time $t$
 \begin{equation}
-    \delta E^2(t)\coloneqq \braket{\psi(t)|\HH^2|\psi(t)}-\braket{\psi(t)|\HH|\psi(t)}^2
+    \delta E^2(t)\coloneqq \braket{\psi(t)|\HH^2(t)|\psi(t)}-\braket{\psi(t)|\HH(t)|\psi(t)}^2
 \end{equation}
-can be rewritten inserting identity $\bluee{\Id=\ket{0}\bra{0}+\ket{1}\bra{1}}$ around Hamiltonian. Omitting the time dependence of every element we get
+can be rewritten inserting identity $\bluee{\Id=\ket{0}\!\!\bra{0}+\ket{1}\!\!\bra{1}}$ around Hamiltonian. Omitting the time dependence of every element we get
 \begin{equation}
     \begin{split}
         \delta E^2 =& \braket{\psi|\bluee{\Id}\HH^2\bluee{\Id}|\psi}-\braket{\psi|\bluee{\Id}\HH\bluee{\Id}|\psi}^2\\
@@ -142,9 +145,9 @@ can be rewritten inserting identity $\bluee{\Id=\ket{0}\bra{0}+\ket{1}\bra{1}}$ 
         +&\textcolor{gray}{\braket{\psi|0}\underbrace{\braket{0|\HH|1}}_{\propto \braket{0|1}=0}\braket{1|\psi}+\braket{\psi|1}\underbrace{\braket{1|\HH|0}}_{\propto \braket{0|1}=0}\braket{0|\psi}}\Big)^2.
     \end{split}
 \end{equation}
-Using Fidelity definition $F(t)=\left|\braket{0(t)|\psi(t)}\right|^2$ and Schr\"odinger equation $\HH\ket{k}=E_k\ket{k}$ we have
+Using Fidelity definition $F(t)=\left|\braket{0(t)|\psi(t)}\right|^2$ and Schr\"odinger equation $\HH\ket{k}=E_k\ket{k}$ we get a simplified formula for energy variance
 \begin{equation}
-    \delta E^2 = FE_0^2+(1-F)E_1^2 - (FE_0+(1-F)E_1)^2 = F(1-F)(E_0-E_1)^2.
+    \delta E^2\gray{(t)} = F\gray{(t)}(1-F\gray{(t)})(E_0\gray{(t)}-E_1\gray{(t)})^2.
 \end{equation}
 For three level system we have $\bluee{\Id=\ket{0}\bra{0}+\ket{1}\bra{1}+\ket{2}\bra{2}}$ and
 \begin{equation}
@@ -163,7 +166,7 @@ for $F_k\coloneqq \braket{k|\psi}$, which has no practical simplification.
 
 
 \section{Geodesic driving}
-Some analytically solvable driving protocols are the \emph{Geodesics} of the projective ground state manifold. 
+Some analytically solvable driving protocols are the \emph{Geodesics} of projective ground state manifold. 
 
 Define driving in 3-dimensional space
 \begin{equation}
@@ -172,17 +175,17 @@ Define driving in 3-dimensional space
         \Xi(t)\\
         \Delta(t)
     \end{pmatrix}\coloneqq \begin{pmatrix}
-        -s \cos(\omega(T_f)t)\\
+        -s \cos(\omega(T)t)\\
         0\\
-        s \sin(\omega(T_f)t)
+        s \sin(\omega(T)t)
     \end{pmatrix}
 \end{equation}
-parametrized by time $t\in[0,1]$ and with use of \emph{speed regulating function} $\omega(T_f)\coloneqq \pi/T_f$. The reason for 3-dimensional driving are the usage of $\hat\sigma$ matrix formalism. Such defined drivings are half-spheres in the parametric space, see Fig. \ref{fig:driving}. Note that the driving velocity is constant on the parametric space and on the manifold.
+for \emph{speed regulating function} $\omega(T)\coloneqq \pi/T$. The reason for 3-dimensional driving is the possibility to use Pauli matrix formalism. Such defined drivings are half-spheres in the parametric space, see Fig. \ref{fig:driving}. Note that the driving velocity is constant in the parametric space and on the manifold.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/driving.pdf}
-    \caption{Driving along the geodesic. $\lambda_i$ and $\lambda_f$ are initial resp. final parameters. Density plot shows the difference between Hamiltonian eigenvalues.}
+    \caption{Driving along the geodesic. $\lambda_i\equiv (\Omega_i,\Delta_i)$ and $\lambda_f\equiv (\Omega_f,\Delta_f)$ are initial and final parameters respective. Density plot shows the difference between Hamiltonian eigenvalues.}
     \label{fig:driving}
 \end{figure}
 
@@ -198,7 +201,7 @@ Because the Hamiltonian can be rewritten using Pauli matrices
 \end{equation}
 for vector $\hat{\bm\sigma}\coloneqq (\hat\sigma_1,\hat\sigma_2,\hat\sigma_3)^T$.
 
-One can see that changing from the \redd{original frame} with function $\ket{\psi}$ to \bluee{moving frame of reference}, with $\ket{\tilde\psi}$ (let's omit the final time dependence $\omega=\omega(T_f)$ for a while) is described as
+One can see that changing from the \redd{original frame} with function $\ket{\psi}$ to \bluee{moving frame of reference}, with $\ket{\tilde\psi}$ (let's omit the final time dependence $\omega=\omega(T)$ for a while) is described as
 \begin{equation}
     \redd{\psi(t)} \eqqcolon \expsp \bluee{\tilde\psi(t)}.
 \end{equation}
@@ -215,22 +218,22 @@ From this one can equivalently solve the Fidelity problem in this new coordinate
 Hamiltonian in the moving frame is
 \begin{equation}
     \bluee{\tilde H}=\bluee{\begin{pmatrix}
-        -s&-i\omega(T_f)/2\\
-        i\omega(T_f)/2&s
+        -s&-i\omega(T)/2\\
+        i\omega(T)/2&s
     \end{pmatrix}},
 \end{equation}
-which is time independent. The Schr\"odinger equation can now be easily solved using evolution operator
+which is time independent and depends only on final time. The Schr\"odinger equation can now be easily solved using evolution operator
 \begin{equation}
     \begin{split}
         \bluee{\UU(t)}=&e^{-i\bluee{\tilde H}t}\\
         =&\bluee{\begin{pmatrix}
-            \cos \left(\frac{t}{2} q(T_f)\right)+\frac{2 i s \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} & -\frac{\omega(T_f)  \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} \\
-            \frac{\omega(T_f)  \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} & \cos \left(\frac{t}{2} q(T_f)\right)-\frac{2 i s \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)} \\
+            \cos \left(\frac{t}{2} q\right)+\frac{2 i s \sin \left(\frac{t}{2} q\right)}{q} & -\frac{\omega  \sin \left(\frac{t}{2} q\right)}{q} \\
+            \frac{\omega  \sin \left(\frac{t}{2} q\right)}{q} & \cos \left(\frac{t}{2} q\right)-\frac{2 i s \sin \left(\frac{t}{2} q\right)}{q} \\
         \end{pmatrix}},
     \end{split}
     \label{eq:evolutionBlue}
 \end{equation}
-for $q(T_f)=\sqrt{4 s^2+\omega(T_f) ^2}$.
+for $q\coloneqq\sqrt{4 s^2+\omega(T) ^2}$.
 
 In the original frame we get the evolution of the state $\psi(0)$
 \begin{equation}
@@ -239,14 +242,14 @@ In the original frame we get the evolution of the state $\psi(0)$
 The evolved wave-function the reads as
 \begin{equation}
     \redd{\ket{\psi(t)}}=\redd{\begin{pmatrix}
-        \cos \left(\frac{t}{2} q(T_f)\right)+\frac{2 i s \cos (t \omega(T_f) ) \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)}\\
-        \frac{(\omega(T_f) -2 i s \sin (t \omega(T_f) )) \sin \left(\frac{t}{2} q(T_f)\right)}{q(T_f)}
+        \cos \left(\frac{t}{2} q\right)+\frac{2 i s}{q} \cos (t \omega ) \sin \left(\frac{t}{2} q\right)\\
+        \frac{\omega -2 i s\sin (t \omega )}{q}  \sin \left(\frac{t}{2} q\right)
     \end{pmatrix}}
 \end{equation}
 and the ground state
 \begin{equation}
     \redd{\ket{0(t)}}=\redd{\mathcal{N}\begin{pmatrix}
-        -\cot (\frac{t}{2}\omega(T_f))\\
+        -\cot (\frac{t}{2}\omega(T))\\
         1
     \end{pmatrix}},
 \end{equation}
@@ -257,77 +260,75 @@ Fidelity during the transport is then\footnote{If we calculated the fidelity in 
     \label{fid:definition}
 \end{equation}
 
- An explicit formula for fidelity in time $t$ and geodesic driving with final time $T_f$ is
+Explicit formula for fidelity in time $t$ and geodesic driving with final time $T$ is finally
 \begin{equation}
-    F(t,T_f)=\frac{\pi ^2 \left(\cos \left(t \sqrt{\frac{\pi ^2}{T_f^2}+4 s^2}\right)+1\right)+8 s^2 T_f^2}{2 \sin ^4\left(\frac{\pi  t}{2 T_f}\right) \left(4 s^2 T_f^2+\pi ^2\right) \left(\left| \cot \left(\frac{\pi  t}{2 T_f}\right)\right|^2+1\right)^2}.
+    F(t,T)=\frac{\pi ^2 \left(\cos \left(t \sqrt{\frac{\pi ^2}{T^2}+4 s^2}\right)+1\right)+8 s^2 T^2}{2 \sin ^4\left(\frac{\pi  t}{2 T}\right) \left(4 s^2 T^2+\pi ^2\right) \left(\left| \cot \left(\frac{\pi  t}{2 T}\right)\right|^2+1\right)^2}.
     \label{eq:fidelitySimplified}
 \end{equation}
-The domain can be extended from $t\in(0,T_f)$ to $[0,T_f]$ for any $T_f\in[0,\infty]$, because 
+The domain can be extended from $t\in(0,T)$ to $[0,T]$ for any $T\in[0,\infty]$, because 
 $$
-    \lim_{t\rightarrow 0}F=1\; ,\;\; \lim_{T_f\rightarrow 0}F=0.
+    \lim_{t\rightarrow 0}F=1\; ,\;\; \lim_{T\rightarrow 0}F=0.
 $$
 
-Sometimes the \emph{Infidelity}, defined as $F^*\coloneqq 1-F$, is used. Its meaning is \emph{the probability of excitation of the state}.
+Sometimes the \emph{Infidelity}, defined as $F^*\coloneqq 1-F$, is used. It has a meaning of \emph{excitation probability during the transport}.
 
 
 \subsection{Analysis of the infidelity formula}
 Infidelity can be calculated by numerical evolution of Schr\"odinger equation, or from Eq. \ref{eq:fidelitySimplified}. Sometimes both solutions are plotted for comparison between numerical precision. 
 
-For some fixed final time, the infidelity is an oscillating curve with values close to $0$. For $T_f=10$ it can be seen on Fig. \ref{fig:infidelityTimePlot}. The \emph{final infidelity} (at $t=T_f$) dependence on final time $T_f$ can be seen on Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
+For some fixed final time, the infidelity is an oscillating curve with values close to $0$, see the driving for final time $T=10$ on Fig. \ref{fig:infidelityTimePlot}. The \emph{final infidelity} (fidelity at $t=T$) dependence on final time $T$ can be seen on Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTimePlotGeod.pdf}
-    \caption{Infidelity in time for final time $T_f=1$ for geodesical driving.}
+    \caption{Infidelity in time for final time $T=1$ for geodesical driving.}
   \label{fig:infidelityTimePlot}
 \end{figure}
 
 \vspace{-10pt}\begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlot.pdf}
-    \caption{Final infidelity dependence on final time $T_f$ for geodesical driving.}
+    \caption{Final infidelity dependence on final time $T$ for geodesical driving.}
     \label{fig:infidelityTfPlot}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlotLog.pdf}
-    \caption{Infidelity dependence on final time in logarithmic scale. We can observe difference in numerical precision of both methods in the height of spikes. As it will be shown later, the spikes should go to zero, thus analytical formula has better numerical precision.}
+    \caption{Infidelity dependence on final time in logarithmic scale. The difference in numerical precision of both methods can be seen in the spikes height. As it will be shown later, the spikes should go to zero, thus analytical formula has higher numerical precision.}
     \label{fig:infidelityTfPlotLog}
 \end{figure}
 
 
 
-From the fidelity formula \ref{eq:fidelitySimplified} goes that $F=1$ is equivalent to
+From the fidelity formula \ref{eq:fidelitySimplified} goes that condition $F=1$ is equivalent to
 \begin{equation}
     \cos \left(\sqrt{T_s^2+\pi ^2}\right)=1,
 \end{equation}
-for $T_s\coloneqq 2sT_f$. The solution to this equation is
+for $T_s\coloneqq 2s T$. The solution to this equation is
 \begin{equation}
     T_s=\sqrt{(2 \pi  k)^2-\pi ^2} \text{  for }k\in \mathbb{N},
     \label{eq:solutionT}
 \end{equation}
-see Fig. \ref{fig:fidelityZeros}. Because $F=1$ has solutions \ref{eq:solutionT}, its dependence on final time in logarithmic scale has spikes going to $0$, see Fig. \ref{fig:infidelityTfPlotLog}, and their density is linear in $T_f$.
+see Fig. \ref{fig:fidelityZeros}. This implies that spikes on Fig. \ref{fig:infidelityTfPlotLog} have minimal value $1-F=0$. In addition, observe that their density is linear in $T$.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/fidelityZeros.pdf}
-    \caption{Rescaled final infidelity $T_s\coloneqq 2s T_f$ dependence on final time. Red points mark the condition $F=1$.}
+    \caption{Rescaled final infidelity $T_s\coloneqq 2s T$ dependence on final time. Red points mark the condition $F=1$.}
     \label{fig:fidelityZeros}
 \end{figure}
 
 
-Fidelity as a function of time and final time can be seen in Figures \ref{fig:dens3}. Note that only $t<T_f$ has physical meaning.
+Fidelity as a function of time and final time can be seen in Fig. \ref{fig:dens3}. Note that only $t<T$ has physical meaning.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/dens3.pdf}
-    \caption{Fidelity dependence on time and final time in log-log scale. Note that only $t<T_f$ has physical meaning.}
+    \caption{Fidelity dependence on time and final time in log-log scale. Note that only $t<T$ has physical meaning.}
     \label{fig:dens3}
 \end{figure}
 
 \subsection{Energy variance}
-Another interesting quantity is the energy variance. It will be important later on in Theorem \ref{thm:polkovnikov}. For now, let's just mention that there the energy variance is smaller that the geometrical distance, if some conditions are fulfilled. 
-
-Evaluating the fidelity for geodesical driving gives a function of time $t$ and final time $T_f$
+Another interesting quantity is the energy variance, specially because of Theorem \ref{thm:polkovnikov}. Evaluating the fidelity for geodesical driving gives a function of time $t$ and final time $T$
 \begin{equation}
     \begin{split}        
         \delta E^2 =& \frac{s^2}{2 q^2}\Bigg[\Big[16 s^4+2 s^2 \left(\left(\omega ^2-8 s^2\right) \cos (2 t \omega )-8 \omega ^2 \cos ^2(t \omega ) \cos \left(t \sqrt{q}\right)\right)\\
@@ -335,27 +336,27 @@ Evaluating the fidelity for geodesical driving gives a function of time $t$ and 
         & +8 s^2 \omega  q \sin (2 t \omega ) \sin \left(t q\right) + \omega ^3 q \sin (2 t \omega ) \sin \left(2 t q\right) \Bigg],
 \end{split}
 \end{equation}
-see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. Its value can be seen on Fig. \ref{fig:densVar}. Note that only $t<T_f$ has a physical meaning, therefore the dependence is smooth along the whole geodesical driving protocols.
+see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. The result of energy variance can be seen on Fig. \ref{fig:densVar}. Note that only $t<T$ has a physical meaning, therefore the dependence is smooth along the whole geodesical driving protocols.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/densVar.pdf}
-    \caption{Energy variance for geodesical driving protocol.}
+    \caption{Energy variance for geodesical driving protocol, dependent on time $t$ and final time $T$. Driving occurs only in area $t<T$.}
     \label{fig:densVar}
 \end{figure}
 
 \newpage 
 \section{Linear driving}
-Another analytically solvable driving is defined with two scaling parameters as 
+Another analytically solvable driving is defined using two scaling parameters $\Omega_{sc},\;\Delta_{sc}$, as 
 \begin{equation}
-    \Omega(t)=\Omega_{sc}\left(\frac{2t}{T_f}-1\right),\quad \Delta(t)=\Delta_{sc}, \;\;\text{ for } \Omega_{sc}=10, \Delta_{sc}=1,
+    \Omega(t)=\Omega_{sc}\left(\frac{2t}{T}-1\right),\quad \Delta(t)=\Delta_{sc}, \;\;\text{ for } \Omega_{sc}=10, \Delta_{sc}=1,
     \label{eq:linearDrivingdef}
 \end{equation}
 see Fig. \ref{fig:driving1}. 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/drivingLin.pdf}
-    \caption{Driving along the linear path. $\lambda_i=(-10;1)$ and $\lambda_f=(10;1)$ are initial resp. final parameters. Density plot shows the difference between Hamiltonian eigenvalues.}
+    \caption{Driving along the linear path. $\lambda_i\coloneqq(-10;1)$ and $\lambda_f\coloneqq(10;1)$ are initial and final parameters respective. Density plot shows the difference between Hamiltonian eigenvalues.}
     \label{fig:driving1}
 \end{figure}
 
@@ -363,10 +364,10 @@ From linear driving definition \ref{eq:linearDrivingdef} and energy dependence \
 \begin{equation}
     \dot \Delta(t)=0;\quad \Delta(t) \overset{\textcolor{gray}{\Delta(t)>0}}{=} \sqrt{\frac{E^2_{dif}(t)}{4}-\Omega^2(t)};\quad E_{dif}\coloneqq E_1-E_0.
 \end{equation}
-Substituting to functions from the Harmonic oscillator (Eq. \ref{eq:gammaDef}, \ref{eq:frequency}) we get 
+Substituting to Harmonic oscillator damping and frequency functions (Eq. \ref{eq:gammaDef} and \ref{eq:frequency}) we get 
 \begin{align}
     \gamma(t) &= 0\\
-    \omega^2(t)&=i\frac{2\Omega_{sc}}{T_f}+\frac{\Omega_{sc}}{4}\left(\frac{2t}{T_f}-1\right)^2+\frac{\Delta_{sc}^2}{4}=i\frac{2\Omega_{sc}}{T_f}+\frac{E^2_{dif}(t)}{4}.
+    \omega^2(t)&=i\frac{2\Omega_{sc}}{T}+\frac{\Omega_{sc}}{4}\left(\frac{2t}{T}-1\right)^2+\frac{\Delta_{sc}^2}{4}=i\frac{2\Omega_{sc}}{T}+\frac{E^2_{dif}(t)}{4}.
     \label{eq:oscillationsLinear}
 \end{align}
 Corresponding differential equation of second order is
@@ -376,21 +377,21 @@ Corresponding differential equation of second order is
 which is of \emph{Weber type}\footnote{https://mathworld.wolfram.com/WeberDifferentialEquations.html} with Parabolic Cylinder functions\footnote{https://mathworld.wolfram.com/ParabolicCylinderFunction.html} as a solution, see \cite{felipe}. 
 
 \subsection{Dependence on time}
-The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. For $t\approx T_f/2$ Hamiltonian parameters change quickly which leads to fast state excitation. Then the Harmonic oscillator damping gets involved and oscillations are quickly going to zero, never disappearing entirely.
+The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. For $t\approx T/2$ Hamiltonian parameters change quickly which leads to fast state excitation. Then the Harmonic oscillator damping gets involved and oscillations are quickly going to zero, never disappearing entirely.
 
-We can see that the final fidelity decreases with longer final time, which correctly leads to adiabatic driving, where $\lim_{T_f\rightarrow \infty} F^*=0$. For short final times we can observe so called quench, $\lim_{T_f\rightarrow 0} F^*=1$. The interesting phenomenon on this image are the oscillations around $t=T_f/2$, which frequency increases with longer final time. 
+We can see that the final fidelity decreases with longer final time, which correctly leads to adiabatic driving, where $\lim_{T\rightarrow \infty} F^*=0$. For short final times we can observe so called quench, $\lim_{T\rightarrow 0} F^*=1$. The interesting phenomenon on this image are the oscillations around $t=T/2$, for which the frequency increases with longer final time. 
 
 \begin{figure}[H]
     \centering 
     \includegraphics[scale=1.185]{../img/infidelityInTimePlot1.pdf}
-    \caption{Infidelity in time for three final times $T_f\in\{1,5,20\}$ for the linear driving defined in \ref{eq:linearDrivingdef}.}
+    \caption{Infidelity in time for three final times $T\in\{1,5,20\}$ for the linear driving defined in \ref{eq:linearDrivingdef}.}
   \label{fig:infidelityTimePlotLin}
 \end{figure}
 
 
 Because in the Harmonic oscillator $\gamma(t)=0$, the oscillations of $a(t)$ are not damped. What we are observing is infidelity 
 $$F^*(t)\coloneqq 1- |\braket{0(t)|\psi(t)}|^2 = 1-|\alpha(t)a(t)+\beta(t)b(t)|^2, $$
-where the $\ket{\psi(t)}\eqqcolon(a,b)^T$ represents the evolved state and $\ket{0(t)}\eqqcolon(\alpha,\beta)^T$ evolved ground state in the initial eigenbasis $\mathcal{B}$. Realize that the ground state is not generally constant. In our case, the ground state described by Eq. \ref{eq:eigenvectors} and is slowly changing its value from the first element $\alpha$ to the second element $\beta$, see Fig. \ref{fig:zeroState}. This means that at the beginning of driving, the projection to the ground state selects $b(t)$. Then it's getting more influenced by $a(t)$ until almost only $a(t)$ influences the fidelity.
+where the $\ket{\psi(t)}\eqqcolon(a,b)^T$ represents the evolved state and $\ket{0(t)}\eqqcolon(\alpha,\beta)^T$ evolved ground state in fixed eigenbasis $\mathcal{B}$. The ground state is not generally constant. In our case, the ground state described by Eq. \ref{eq:eigenvectors} and is slowly changing its value from the first element $\alpha$ to the second element $\beta$, see Fig. \ref{fig:zeroState}. This means that at the beginning of driving, the projection to the ground state selects $b(t)$. Then it's getting more influenced by $a(t)$ until almost only $a(t)$ influences the fidelity.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/zeroState.pdf}
@@ -398,27 +399,27 @@ where the $\ket{\psi(t)}\eqqcolon(a,b)^T$ represents the evolved state and $\ket
     \label{fig:zeroState}
 \end{figure}
 
-Because of varying ground state during the transport, the oscillations cannot be analyzed only from $\omega^2(t)$ described by Eq. \ref{eq:oscillationsLinear}. At the end of the driving we have 
+Because of varying ground state during transport, the oscillations cannot be analyzed only from $\omega^2(t)$ described by Eq. \ref{eq:oscillationsLinear}. At the end of the driving we have 
 \begin{equation}
    \frac{1}{N_+} \ket{0(t)}^1=\frac{E_0(t)+\Omega(t)}{\Delta(t)}\gg 1 =\frac{1}{N_+} \ket{0(t)}^2,
 \end{equation}
-leading to \emph{fidelity at the end of the driving}
+leading to the \emph{fidelity at the end of the driving}
 \begin{equation}
     F_{end}= \left|N_+ \left(
         \frac{E_0(t)+\Omega(t)}{\Delta(t)} a(t)+b(t)
         \right)\right|^2 \approx b^2(t),
 \end{equation}
-therefore when $t$ is getting close to $T_f$ the fidelity is oscillating with frequency \ref{eq:frequency}.
+therefore when $t$ is getting close to $T$ the fidelity is oscillating with  harmonic oscillator frequency \ref{eq:frequency}.
 
 
 
 
 \subsection{Final fidelity}
-Because the oscillations after fast parameter change in the Hamiltonian never disappear entirely, we must observe these oscillations even at the final time. \emph{Final fidelity} (meaning the fidelity at $t=T_f$) has dependence on $T_f$ as can be seen in Fig. \ref{fig:infidelityTfPlotLogLinCombined}. Because after the final time $T_f^{\Delta_{sc}=1}\approx 120$ the values are so small, we can observe some fine structure of the fidelity, along with numerical error artifacts.
+Because the oscillations after fast parameter change in the Hamiltonian never disappear entirely, we must observe these oscillations even at the final time. \emph{Final fidelity} (meaning the fidelity at $t=T$) has dependence on $T$ as can be seen in Fig. \ref{fig:infidelityTfPlotLogLinCombined}. Because after the final time $T\approx 120$ the values are so small, we can observe some fine structure of the fidelity, along with numerical error artifacts.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlotLogLinCombined1.pdf}
-    \caption{Final infidelity as a function of $T_f$ with zoom on transitional part.}
+    \caption{Final infidelity as a function of $T$ with zoom on the transitional part.}
     \label{fig:infidelityTfPlotLogLinCombined}
 \end{figure}
 
@@ -429,36 +430,36 @@ First, the numerical precision of this calculation was found to be around $10^{-
 \subsubsection{Averaged final fidelity}
 We can eliminate the effect of oscillations by averaging over time. For that we define the \emph{average final infidelity}
 \begin{equation}
-    \langle F^*\rangle_p(T_f) \coloneqq \frac{1}{(1-p) T_f}\int_{p T_f}^{T_f} F^*(t)\d t.
+    \langle F^*\rangle_p(T) \coloneqq \frac{1}{(1-p) T}\int\limits_{(1-p) T}^{T} F^*(t)\d t.
 \end{equation}
-It turned out that averaging over 1 \% or 10 \% of the driving (i.e. taking $t=0.1$, resp. $p=0.01$) gave approximately the same results for long enough drivings. The same result can be obtained from analytical continuation of the fidelity formula to $t\rightarrow  \infty$. Even though this has no physical meaning, the analytical continuation of the harmonic oscillator solution leads to the Fidelity value around which the oscillations occur. The result of averaging can be seen on Fig. \ref{fig:infidCombined}.
+It turned out that averaging over 1 \% ($p=0.01$) or 10 \% ($p=0.1$) of the driving gave approximately the same results for long enough drivings ($T\overset{\sim}{>} 10$). The same result can be obtained from analytical continuation of the fidelity formula to $t\rightarrow  \infty$. This analytical continuation of harmonic oscillator solution leads to the Fidelity value around which the oscillations occur. The result of averaging can be seen on Fig. \ref{fig:infidCombined}.
 
-Using this we can describe the driving using three regimes\footnote{The coefficient $p$ is assumed to be small enough not to cover the biggest oscillations after $t=T_f/2$ and big enough to average over sufficient number of oscillations. Approximately $p\in[0.6T_f,0.999T_f]$}:
+Using this we can describe the driving using three regimes\footnote{The coefficient $p$ is assumed to be small enough not to cover the biggest oscillations after $t=T/2$ and big enough to average over sufficient number of oscillations. Approximately $p\in[0.6T,0.999T]$.}.
 \begin{itemize}
-    \item \emph{exponential/fast-driving regime} -- $\langle F^*\rangle_p= \exp(-\xi T_f)$, $\xi\in\R^+$
-    \item \emph{transitional regime} -- happens around \emph{critical time} $T_c$.
-    \item \emph{polynomial/close-adiabatic regime} -- $\langle F^*\rangle_p\propto T_f^{-\kappa}$ for $\kappa\in \R^+$.
+    \item \emph{Exponential/fast-driving regime} — $\langle F^*\rangle_p= \exp(-\xi T)$, $\xi\in\R^+$
+    \item \emph{transitional regime} — happens around \emph{critical time} $T_c$.
+    \item \emph{Polynomial/close-adiabatic regime} — $\langle F^*\rangle_p\propto T^{-\kappa}$ for $\kappa\in \R^+$.
 \end{itemize}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidCombined1.pdf}
-    \caption{Final infidelity as a function of $T_f$ in log-log scale wit linear scaled plot inserted.}
+    \caption{Final infidelity as a function of $T$ in log-log scale wit linear scaled plot inserted.}
     \label{fig:infidCombined}
 \end{figure}
 
 
 
-The boundary between exponential and linear regime is not strict and can be seen on Fig. \ref{fig:dens2},as the transition between \emph{smooth} and \emph{chaotic} regimes. This happens at $t=T_c$. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. This would be smoothed out using the averaged final fidelity. The approximated dependence is
+The boundary between exponential and linear regime is not strict and can be seen on Fig. \ref{fig:dens2}, as transition between \emph{smooth} and \emph{chaotic} regimes. This happens around $t=T_c$. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. This would be smoothed out using the averaged final fidelity. The approximated dependence for final time was numerically estimated as
 \begin{equation}
-    T_c\tilde\propto \Delta_{sc}^{-2}.
+    T_c\overset{\sim}{\propto} \Delta_{sc}^{-2}.
 \end{equation}
 
 
 \begin{figure}[H]
     \centering 
     \includegraphics[scale=1.2]{../img/dens2.pdf}
-    \caption{Final infidelity as a function of $\Delta$ and $T_f$ and its three regimes. Zoomed boundary between them can be seen on \ref{fig:dens2Zoom}.}
+    \caption{Final infidelity as a function of $\Delta$ and $T$ and its three regimes. Zoomed boundary between them can be seen on \ref{fig:dens2Zoom}.}
     \label{fig:dens2}
 \end{figure}
 
@@ -471,33 +472,33 @@ The boundary between exponential and linear regime is not strict and can be seen
 
 
 
-To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} with \ref{fig:overcritical}. Here we see two regimes, one for $t<T_c$ and on for $T>T_c$. The important observation is that in the first case it holds $F^*\neq 0$ anywhere and in the second case it touches zero periodically. The fidelity can be decomposed into a sum of two elements. Small oscillatory part, which can be explained by the theory of APT, and exponentially decreasing fidelity with final time, describable by Landau-Zener formula.
+To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} with \ref{fig:overcritical}. Here we see two regimes, one for $t<T_c$ and on for $T>T_c$. The important observation is that in the first case $F^*\neq 0$ for all $t>0$ and in the second case it touches zero periodically. The fidelity can be decomposed into a sum of two elements. Small oscillatory part, which can be explained by the theory of APT, and exponentially decreasing fidelity with final time, describable by Landau-Zener formula.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/undercritical.pdf}
-    \caption{Final infidelity as a function of $t$ for fast-driving regime, $T_f=80<T_c$.}
+    \caption{Infidelity as function of time for fast-driving regime, $T=80<T_c$.}
     \label{fig:undercritical}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/overcritical.pdf}
-    \caption{Final infidelity as a function of $t$ for close-adiabatic regime. $T_f=170>T_c$}
+    \caption{Infidelity as function of time for close-adiabatic regime. $T=170>T_c$}
     \label{fig:overcritical}
 \end{figure}
 
-\subsubsection{Exponential and polynomial part using Landau-Zener and APT}
+\subsubsection{Exponential and polynomial part, Landau-Zener and APT}
 Landau-Zener-Stueckelberg theory provides the WKB approximation formula for the fidelity during some transport. Full form can be seen in \cite{nonadiabaticTransition}. In our case, only simplified theorem is needed. First let's review some definitions.
 
 \begin{definition}[Diabatic coupling]
-    Diabatic coupling functions are off-diagonal elements of two level Hamiltonian. At avoided crossing, it is half of Hamiltonian eigenvalue difference,
+    Diabatic coupling functions are off-diagonal elements of two-level Hamiltonian. At avoided crossing, it is half of Hamiltonian eigenvalue difference,
     \begin{equation}
         A=\frac{E_2-E_1}{2}.
     \end{equation}
 \end{definition}
 \begin{definition}[Diabatic potential]
-    Difference between Hamiltonian eigenvalues can be approximated by lines
+    Difference between Hamiltonian eigenvalues can be linearly approximated as
     \begin{equation}
         \Delta E\equiv E_1-E_0 \eqqcolon \alpha t
     \end{equation}
@@ -507,7 +508,7 @@ Landau-Zener-Stueckelberg theory provides the WKB approximation formula for the 
     \end{equation}
 \end{definition}
 
-\begin{thm}[Landau-Zener-Stueckelberg for linear driving]
+\begin{thm}[Landau-Zener-Stueckelberg (LZS) for linear driving]
     For 
     \begin{itemize}
         \item two level Hamiltonian
@@ -522,16 +523,16 @@ Landau-Zener-Stueckelberg theory provides the WKB approximation formula for the 
     for a \emph{diabatic coupling} $A$, and \emph{diabatic potential difference} $|\Delta F|$. 
 \end{thm}
 
-In our case, we have constant speed $v=1/T_f$, off-diagonal elements are also constant $A=\Delta_{sc}$, and the driving path is symmetric along $\Omega=0$ axis, leading to $|\Delta F|=2\Omega_i$.
+In our case, we have constant speed $v=1/T$, off-diagonal elements are also constant $A=\Delta_{sc}$, and the driving path is symmetric along $\Omega=0$ axis, leading to $|\Delta F|=2\Omega_i$.
 
 The polynomial, or chaotic regime, can be explained using APT. It holds that
 \begin{equation}
-    \log(1-F)=\log(T_f^{-2})+\log\left(\sum_{i=1}^n |b_n^(1)(T_f)|2\right),
+    \log(F^*)=\log(T^{-2})+\log\left(\sum_{i=1}^n |b_n^{(1)}(T)|^2\right),
     \label{eq:polynomialPart}
 \end{equation}
-for functions $b_n^(1)$ from Eq. \ref{eq:bnAPT}. For more detail, see \cite{felipe}.
+for functions $b_n^{(1)}$ from Eq. \ref{eq:bnAPT}. For more details, see \cite{felipe}.
 
-The Equations \ref{eq:exponentialPart}, \ref{eq:polynomialPart} can be seen in \ref{fig:landauCompare}. We see that they intersect at time $T_c$ and give the leading order in both regimes, if one omits the oscillations. In fact these two parts are not only the good approximation on both intervals, but if added together, they represent the whole fidelity curve with very high precision. It might not give a good mathematical meaning to add these two solutions together. But because the APT gives the infidelity of order $10^{-9}$, it creates negligible error. The advantage is that by this process one gets an approximation for the transitional regime.
+The LZS approximation can be seen on Fig. \ref{fig:landauCompare}. The LZS and APT approximations give the leading order in corresponding regimes (omitting the oscillations) and intersect at time $T_c$. In fact these two parts are not only the good approximation on both intervals, but if added together, they represent the whole fidelity curve with very high precision. It might not give a good mathematical meaning to add these two solutions together. But because the APT gives the infidelity of order $10^{-9}$, it creates negligible error. The advantage is that by this process one gets suitable approximation for the transitional regime.
 
 
 \begin{figure}[H]
@@ -544,8 +545,8 @@ The Equations \ref{eq:exponentialPart}, \ref{eq:polynomialPart} can be seen in \
 % The critical time $T_c$ is the point where the fidelity dependence on final time becomes polynomial. We have shown that 
 % \begin{equation}
 %     \text{for}\begin{cases}
-%         T_f<T_c \\
-%         T_f>T_c 
+%         T<T_c \\
+%         T>T_c 
 %     \end{cases}\text{the fidelity oscillate with amplitude } A \text{ is }
 %     \begin{cases}
 %         A<1-F_{final}\\
@@ -556,13 +557,13 @@ The Equations \ref{eq:exponentialPart}, \ref{eq:polynomialPart} can be seen in \
 
 
 
-\subsection{Summary}
-Now we should understand all results separately, let's put it all together. On Fig. \ref{fig:AllInOne} we see some of the most important results. One might notice difference in the close adiabatic regime and fast regime at the end of the driving. Also notice the chaotic regime being below the $t=T_f$ line and crossing it at $t=T_c$.
+\subsection{Summary of linear driving}
+Now we understand all results separately, let's put it all together. On Fig. \ref{fig:AllInOne} the most important results can be seen. The difference in the close adiabatic regime and fast regime at the end of the driving is if $F^*=0$. The chaotic regime is below $t=T$ line for $T<T_c$ and the chaotic cone is crossing this line around $t=T_c$.
 
 \begin{figure}[H]
     \centering 
     \includegraphics[scale=1.2]{../img/allInOne.pdf}
-    \caption{Fidelity dependence for linear driving with $\Delta=1$. Black line marks $t=T_f$, dashed black line $t=T_f/2$ and \redd{purple} dashed line is the approximate value of $T_c$. \bluee{Blue} lines marks driving from Fig. \ref{fig:undercritical}, \ref{fig:overcritical}, visualizing the final times of the driving.}
+    \caption{Fidelity dependence for linear driving with $\Delta=1$. Black line marks $t=T$, dashed black line $t=T/2$ and \redd{purple} dashed line is the approximate value of $T_c$. \bluee{Blue} lines marks driving from Fig. \ref{fig:undercritical}, \ref{fig:overcritical}, visualizing the final times of the driving.}
     \label{fig:AllInOne}
 \end{figure}
 
@@ -576,11 +577,11 @@ Now we should understand all results separately, let's put it all together. On F
 
 \newpage
 \subsection{Energy variance}
-Analogically to the geodesical driving, one might calculate the energy variance. In the linear driving case, the analytical formula is more complicated and only numerical result are displayed here. On Fig. \ref{fig:densVariance} the energy variance is plotted as a function of time and final time.
+Analogically to the geodesical driving, one might be interested in energy variance. In the linear driving case, the analytical formula is more complicated and only numerical result are displayed here. On Fig. \ref{fig:densVariance} the energy variance is plotted as a function of time and final time.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/densVariance.pdf}
-    \caption{Energy variance for $\Delta_{sc}=0.2$ for linear driving. Note that only $t<T_f$ has physical meaning.}
+    \caption{Energy variance for $\Delta_{sc}=0.2$ for linear driving. Note that only $t<T$ has physical meaning.}
     \label{fig:densVariance}
 \end{figure}
 

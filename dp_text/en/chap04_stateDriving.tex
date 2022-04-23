@@ -2,7 +2,7 @@
 \label{chap:typesOfDriving}
 The concept of quantum state driving was introduced in the previous chapter. In this chapter the initial state is chosen as eigenstate $\ket{s(\llambda}$. The driving parameter $\llambda$ is changed along path parametrized by time $t$
 \begin{equation}
-    \mathcal J\coloneqq\{\llambda(t)|t\in[0,T_f],\; \llambda\in \mathcal U\} \subset \R^N,\quad \llambda(0)=\llambda,\; \llambda(T_f)=\tilde\llambda,
+    \mathcal J\coloneqq\{\llambda(t)|t\in[0,T],\; \llambda\in \mathcal U\} \subset \R^N,\quad \llambda(0)=\llambda,\; \llambda(T)=\tilde\llambda,
     \label{eq:defJ_QSdriving}
 \end{equation}
 inducing the change in Hamiltonian $\HH(\llambda)$ and consequently in $\ket{\psi(\llambda)}$, according to the Schr\"odinger equation. This leads to solving the system of $N$ first order differential equations with initial condition $\ket{\psi(\llambda)}=\ket{s(0)}$.
@@ -22,11 +22,11 @@ Before going through individual methods, let's define the meaning of adiabaticit
 This means that adiabatic transport is an endomorphism of $\M _s$. The meaning of the word "slow" clears up next theorem. It defines when the distance between two states can be considered zero.
 \begin{thm}[Adiabatic theorem]
     \label{adiabaticTheorem}
-    For slowly varying Hamiltonian $\HH$ in the time range $(0,T_f)$, the solution of the Schrödinger equation 
+    For slowly varying Hamiltonian $\HH$ in the time range $(0,T)$, the solution of the Schrödinger equation 
     $$\HH(\lambda)\ket{\psi_s(\lambda)} = E_s(\lambda)\ket{\psi_s(\lambda)}$$
     with initial condition in x-representation $\braket{x|\psi(t=0}=\psi(x,0)$ can be approximated as
     \begin{equation}
-      ||\psi(\lambda) - \psi_{ad}(\lambda)||\approx o\left(\frac{1}{T_f}\right)
+      ||\psi(\lambda) - \psi_{ad}(\lambda)||\approx o\left(\frac{1}{T}\right)
     \end{equation}
     for the adiabatic state evolved according to Eq. \ref{eq:phasesOnManifold}
     \begin{equation}
@@ -323,11 +323,11 @@ As was mentioned in the introduction of chapter \ref{chap:typesOfDriving}, one m
 
 \subsection{Minimizing the distance on state manifolds}
 Let's have path $\mathcal J$ defined in Eq. \ref{eq:defJ_QSdriving} and a geodesic $\mathcal G(\llambda(t))$ with fixed boundary conditions
- $$\mathcal{G}(0)=\mathcal J(0),\qquad \mathcal{G}(T_f)=\mathcal J(T_f).$$
+ $$\mathcal{G}(0)=\mathcal J(0),\qquad \mathcal{G}(T)=\mathcal J(T).$$
 
 The driving on projective ground state manifold $\P\M_0$ then consists of infinitesimal quenches over the distance $\d s$. By integration over this path we get the distance
 \begin{equation}
-    s_{\mathcal J}=\int\limits_{\mathcal J}\d s=\int\limits_{0}^{T_f}\sqrt{g_{jk}\dot\llambda^j\dot\llambda^k}\d t
+    s_{\mathcal J}=\int\limits_{\mathcal J}\d s=\int\limits_{0}^{T}\sqrt{g_{jk}\dot\llambda^j\dot\llambda^k}\d t
     \label{eq:distancesgamma}
 \end{equation}
 Let's state and prove the theorem demonstrating the importance of geodesics.
@@ -338,7 +338,7 @@ Let's state and prove the theorem demonstrating the importance of geodesics.
 \begin{proof}
     Functional of distance is
     \begin{equation}
-        s=\int\limits_0^{T_f} \sqrt{g_{jk}\d\llambda^j\d\llambda^k}=\int\limits_0^{T_f} \sqrt{g_{jk}\der{\llambda^j}{t}\der{\llambda^k}{t}}\d t \eqqcolon \int\limits_0^{T_f} \mathcal{L}(t,\llambda^j,\dot\llambda^j)\d t
+        s=\int\limits_0^{T} \sqrt{g_{jk}\d\llambda^j\d\llambda^k}=\int\limits_0^{T} \sqrt{g_{jk}\der{\llambda^j}{t}\der{\llambda^k}{t}}\d t \eqqcolon \int\limits_0^{T} \mathcal{L}(t,\llambda^j,\dot\llambda^j)\d t
     \end{equation}
     for 
     \begin{equation}
@@ -373,9 +373,9 @@ The driving can be restricted to the ground state manifold only in approximation
 
 \begin{thm}
     \label{thm:polkovnikov}
-    For any fast-forward Hamiltonian\footnote{The system is driven to the target state in some fixed final time $T_f$.} $\HH(\lambda(t))$ driven along one dimensional path $\lambda: \R\mapsto \R$ using time $t$ as parametrization, there exist driving speed, for which the fidelity is close to one, $F(t)\approx 1, \;\forall t\in[0,T_f]$, and the energy fluctuations $\delta E^2$, averaged along the path, are larger than the geodesic length $l_\lambda$
+    For any fast-forward Hamiltonian\footnote{The system is driven to the target state in some fixed final time $T$.} $\HH(\lambda(t))$ driven along one dimensional path $\lambda: \R\mapsto \R$ using time $t$ as parametrization, there exist driving speed, for which the fidelity is close to one, $F(t)\approx 1, \;\forall t\in[0,T]$, and the energy fluctuations $\delta E^2$, averaged along the path, are larger than the geodesic length $l_\lambda$
     \begin{equation}
-        \int\limits_0^{T_f}\sqrt{\delta E^2(t)}\d t \eqqcolon l_t\geq l_\lambda \coloneqq \int\limits_{\lambda_i}^{\lambda_f} \sqrt{g_{\lambda\lambda}\d \lambda\d \lambda} =\int_0^{T_f} \sqrt{g_{\lambda\lambda}}|\dot \lambda|\d t.
+        \int\limits_0^{T}\sqrt{\delta E^2(t)}\d t \eqqcolon l_t\geq l_\lambda \coloneqq \int\limits_{\lambda_i}^{\lambda_f} \sqrt{g_{\lambda\lambda}\d \lambda\d \lambda} =\int_0^{T} \sqrt{g_{\lambda\lambda}}|\dot \lambda|\d t.
     \end{equation}
     The length $l_\llambda$ is defined in parametric space For energy variance it holds
     \begin{equation}
@@ -490,10 +490,10 @@ If we imagine $\delta\llambda$ to be finite (not infinitely small, as the notati
 Until now, our interest was mostly in \emph{unit fidelity protocols}. But how to calculate the case when the fidelity is "almost one"? This is the aim of \emph{adiabatic perturbation theory}.
 
 
-Following the article from \cite{Rigolin2008}, the wave-function can be approximated by series. Because every element is then decomposed into another series, we bear in mind the \emph{locality of variables}, which clears the reason for performing this procedure. Let's call variable $V(t)$ \emph{\bluee{local}} if it depends only on infinitesimal surrounding of its parameter $t\in\R$. These variables are in shades of \bluee{blue} and \redd{non-local} variables in shades of \redd{red}.
+Following the article from \cite{Rigolin2008}, the wave-function can be approximated by series. Because every element is then decomposed into another series, we bear in mind the \emph{locality of variables}, which clarifies the reason for performing this procedure. Let's call variable $V(t)$ \emph{\bluee{local}} if it does not depend on driving path. These variables are in shades of \bluee{blue} and \redd{non-local} variables, written in shades of \redd{red}, are usually expressed as an integral over driving path $\mathcal J$.
 
 We are interested in the driving along path $\mathcal J$ defined by Eq. \ref{eq:defJ_QSdriving},
-where $t$ is time and $T_f$ final time of the driving. Let the initial condition be
+where $t$ is time and $T$ final time of the driving. Let the initial condition be
 \begin{equation}
     \ket{\psi(0)}\eqqcolon\ket{\psi_0}\in \P\M_0.
 \end{equation}

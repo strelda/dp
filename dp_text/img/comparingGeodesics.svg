@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48.750149mm"
+   height="43.065536mm"
+   viewBox="0 0 48.750149 43.065536"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="comparingGeodesics.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4.359103"
+     inkscape:cx="102.54403"
+     inkscape:cy="85.682766"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-65.392978,-49.166076)">
+    <circle
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.120081"
+       id="path31"
+       cx="68.98365"
+       cy="54.101635"
+       r="1.4079521" />
+    <path
+       style="fill:none;stroke:#e82323;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 88.139724,91.737428 c 0,0 -25.495948,-29.89172 -22.340668,-38.689428 3.155284,-8.797708 47.493774,0.645377 47.493774,0.645377"
+       id="path1433" />
+    <path
+       style="fill:none;stroke:#5656ed;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 88.139724,91.737428 c 0,0 -20.333881,-28.822169 -16.165249,-35.533428 4.168634,-6.711257 41.318355,-2.510623 41.318355,-2.510623"
+       id="path1548"
+       sodipodi:nodetypes="csc" />
+    <circle
+       style="fill:#868686;fill-opacity:1;fill-rule:evenodd;stroke-width:0.0656854"
+       id="path31-3-6"
+       cx="113.37296"
+       cy="53.79343"
+       r="0.77016211" />
+    <circle
+       style="fill:#868686;fill-opacity:1;fill-rule:evenodd;stroke-width:0.0656854"
+       id="path31-3"
+       cx="88.146835"
+       cy="91.461449"
+       r="0.77016211" />
+  </g>
+</svg>
