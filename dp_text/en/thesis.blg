@@ -16,32 +16,33 @@ The style file: plainnat.bst
 A level-1 auxiliary file: appendixGEOM.aux
 A level-1 auxiliary file: appendix1.aux
 Database file #1: bibliography.bib
+Warning--empty note in krtous
 You've used 25 entries,
             2773 wiz_defined-function locations,
             784 strings with 9215 characters,
-and the built_in function-call counts, 10043 in all, are:
-= -- 941
+and the built_in function-call counts, 10044 in all, are:
+= -- 940
 > -- 454
 < -- 23
 + -- 160
 - -- 135
-* -- 709
-:= -- 1602
+* -- 711
+:= -- 1601
 add.period$ -- 110
 call.type$ -- 25
 change.case$ -- 115
 chr.to.int$ -- 25
-cite$ -- 50
+cite$ -- 51
 duplicate$ -- 522
 empty$ -- 855
 format.name$ -- 174
-if$ -- 2119
+if$ -- 2118
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 32
 newline$ -- 167
 num.names$ -- 100
-pop$ -- 218
+pop$ -- 219
 preamble$ -- 1
 purify$ -- 95
 quote$ -- 0
@@ -53,7 +54,8 @@ text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 235
-warning$ -- 0
+warning$ -- 1
 while$ -- 90
 width$ -- 0
-write$ -- 393
+write$ -- 392
+(There was 1 warning)

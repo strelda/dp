@@ -1,17 +1,18 @@
 \contentsline {chapter}{Some notes to the notation}{4}{chapter*.2}%
 \contentsline {chapter}{Introduction}{6}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Mathematical introduction}{8}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Fiber bundle}{10}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Riemannian geometry}{11}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Geometry in 2 dimensions}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.1}Essentials}{8}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Fiber bundle}{10}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Riemannian geometry}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Geometry in 2 dimensions}{12}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Introduction to quantum geometry}{14}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Space of all states}{14}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Rays and bare states}{15}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Sectioning the space}{16}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Transporting states on state manifolds}{17}{section.2.4}%
-\contentsline {subsubsection}{Dynamical phase}{18}{section*.9}%
-\contentsline {subsubsection}{Geometrical phase}{18}{section*.10}%
-\contentsline {subsubsection}{Restriction to 3-dimensional parametric space}{19}{section*.11}%
+\contentsline {subsubsection}{Dynamical phase}{18}{section*.10}%
+\contentsline {subsubsection}{Geometrical phase}{18}{section*.11}%
+\contentsline {subsubsection}{Restriction to 3-dimensional parametric space}{19}{section*.12}%
 \contentsline {section}{\numberline {2.5}Fidelity}{20}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Metric and geometric tensor}{21}{section.2.6}%
 \contentsline {chapter}{\numberline {3}Quantum state driving}{25}{chapter.3}%
@@ -26,7 +27,7 @@
 \contentsline {chapter}{\numberline {4}Two level system}{34}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Hamiltonian}{34}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Harmonic oscillator correspondence}{35}{section.4.2}%
-\contentsline {subsubsection}{Classical mechanics correspondence}{35}{section*.12}%
+\contentsline {subsubsection}{Classical mechanics correspondence}{35}{section*.13}%
 \contentsline {section}{\numberline {4.3}Energy variance for two level system}{35}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Geodesic driving}{36}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Derivation of the fidelity}{37}{subsection.4.4.1}%
@@ -35,21 +36,21 @@
 \contentsline {section}{\numberline {4.5}Linear driving}{42}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Dependence on time}{43}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Final fidelity}{44}{subsection.4.5.2}%
-\contentsline {subsubsection}{Averaged final fidelity}{45}{section*.24}%
-\contentsline {subsubsection}{Exponential and polynomial part, Landau-Zener and APT}{47}{section*.30}%
+\contentsline {subsubsection}{Averaged final fidelity}{45}{section*.25}%
+\contentsline {subsubsection}{Exponential and polynomial part, Landau-Zener and APT}{47}{section*.31}%
 \contentsline {subsection}{\numberline {4.5.3}Summary of linear driving}{49}{subsection.4.5.3}%
 \contentsline {subsection}{\numberline {4.5.4}Energy variance}{50}{subsection.4.5.4}%
 \contentsline {chapter}{\numberline {5}Lipkin-Meshkov-Glick model}{51}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Dimensional choice for the Hamiltonian}{51}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}3-dimensional Hamiltonian}{52}{subsection.5.1.1}%
-\contentsline {subsubsection}{Geodesics}{57}{section*.41}%
+\contentsline {subsubsection}{Geodesics}{57}{section*.42}%
 \contentsline {subsection}{\numberline {5.1.2}5-dimensional Hamiltonian}{58}{subsection.5.1.2}%
 \contentsline {subsection}{\numberline {5.1.3}Infinite dimension limit}{61}{subsection.5.1.3}%
 \contentsline {section}{\numberline {5.2}General behavior}{62}{section.5.2}%
-\contentsline {subsubsection}{Transport using quenches}{66}{section*.52}%
-\contentsline {chapter}{Conclusion}{68}{chapter*.55}%
-\contentsline {chapter}{Bibliography}{69}{chapter*.56}%
-\contentsline {chapter}{List of Figures}{71}{chapter*.57}%
+\contentsline {subsubsection}{Transport using quenches}{66}{section*.53}%
+\contentsline {chapter}{Conclusion}{68}{chapter*.56}%
+\contentsline {chapter}{Bibliography}{69}{chapter*.57}%
+\contentsline {chapter}{List of Figures}{71}{chapter*.58}%
 \contentsline {chapter}{\numberline {A}Geometrization of quantum mechanics}{74}{appendix.A}%
 \contentsline {section}{\numberline {A.1}From the projective Hilbert space to state manifolds}{74}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Restriction to eigenstate manifolds}{75}{section.A.2}%
