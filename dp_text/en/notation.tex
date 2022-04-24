@@ -1,11 +1,12 @@
 
 \chapwithtoc{Some notes to the notation}
 
-\begin{tabular} {@{}C{1.9cm}@{}p{8cm}@{}C{3.77cm}}
+\vspace{-0pt}\begin{tabular} {@{}C{1.9cm}@{}p{8cm}@{}C{3.77cm}}
 	\toprule
 	\textbf{Symbol}& \textbf{Meaning}& \hspace{-30pt}\textbf{Characterizing formula}\\\bottomrule
 	$\A_\mu$ & Calibrational (gauge) potential & $\A_\mu\coloneqq i\hbar \partial_\mu$ \\
 	$A_\mu$ & Berry connection & $A_\mu\coloneqq \braket{o|\A_\mu|o}$ \\
+	$\mathcal C$ & closed driving curve in parametric space &  \\
 	$\mathcal{C}^k$ & k-times continuously differentiable function \\
 	$\C$ & complex numbers & \\
 	  $\gamma_s$& geometrical phase induced by $s^{\text{th}}$ energy level &  \\
@@ -19,6 +20,7 @@
 	  $\mathcal H$& Hilbert space  &  \\ 
 	  $\mathcal H(\llambda)$& Hilbert space for $\HH(\llambda)$ &  \\ 
 	  $\mathrm{Ind}_a$ & winding number around point $a$ & \\
+	  $\bm\J$ & angular momentum operator & \\
 	  $\mathcal J$ & driving curve in parametric space &  \\
 	  $\llambda$& $n$-dimensional real parameter of Hamiltonian &$\llambda\in \mathcal U\subset \R^n$  \\
 	  $\M$& manifold &  \\
@@ -28,7 +30,7 @@
 	  $\ket{o(\llambda)}$& ground state of Hamiltonian $\HH(\llambda)$  &  \\
 	  $\mathcal O$& order of the function (Big O notation)  &  \\
 	  $\P\M_s$& $s^{\text{th}}$ energy projective state manifold & $\P\M_s\coloneqq\cup_{\llambda\in\mathcal U} \ket{s(\llambda)}$ \\
-	  $\varphi_B$ & Berry phase & \\
+	  $\varphi_B$ & Berry phase & $\varphi_B\coloneqq-\oint_\mathcal{C} A_j(\llambda)\d \llambda^j$\\
 	  $\R$& Real numbers  &  \\
 	  $R^\alpha_{\;\;\mu\nu\kappa}$ &Riemann tensor & \\
 	  $R_{\mu\nu}$ & Ricci tensor & $R_{\mu\nu}\coloneqq R^\alpha_{\;\;\mu\alpha\nu}$\\
@@ -42,15 +44,27 @@
 	  $\T^p_q\M$& $q$-times covariant and $p$-times contravariant tensor field of $\M$&  \\
 	  $\mathcal U$& parametric space, open subset of $\R^n$  & \\
 	  $U(k)$& $k$-parametric unitary transformation group  &  \\
-	  $\chi_{\mu\nu}$ & geometric tensor &  \\
+	  $\chi_{\mu\nu}$ & geometric tensor & $\chi_{jk}\coloneqq \braket{\partial_j o|\partial_k o}_c,
+	  $ \\
 	  $(\chi;\lambda)$& LMG model parameters  & $(\chi,\lambda)\equiv \llambda\in\R^2$ \\
 \bottomrule
 \multicolumn{3}{l}{\footnotesize}
 \end{tabular}
 
 
+	  \begin{tabular} {@{}C{4cm}@{}p{9.67cm}}
+	\toprule
+	\textbf{Operation}& \textbf{Notation}\\\bottomrule	
+	commutator & $[A,B]$ \\
+	connected braket & ${\partial_j o|\partial_k o}_c \equiv \braket{\partial_j o|\partial_k o} - \braket{\partial_j o|o}\braket{o|\partial_k o}$\\
+	fiber space & $(\mathcal{E},\mathcal{U},\pi,\mathcal{F})\equiv(\text{total space},\text{base space}, \text{surjection},\text{fiber})$\\
+	Poisson braket & $\{A,B\}$ \\
+	quantum braket & $\braket{\psi|\phi}$\\
+	\bottomrule
+\end{tabular}
 
-\begin{tabular} {@{}C{3cm}@{}p{9cm}}
+
+\begin{tabular} {@{}C{4cm}@{}p{9.67cm}}
 	\toprule
 	\textbf{Shortcut}& \textbf{Full name}\\\bottomrule
 	

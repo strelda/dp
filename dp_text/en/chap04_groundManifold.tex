@@ -1,12 +1,12 @@
 \subsubsection{Transport using quenches}
-In Chapter \ref{chap:groundStateManifoldDriving}, the transport using quenches was introduced. This transport also resembles some ground state manifold characteristics. Performing quench from $(\lambda_i;\chi_i)=(0;0)$ to $(\lambda;\chi)$, the fidelity is small for final coordinates below separatrix. When crossing the \emph{quantum phase transition} line, the fidelity increases dramatically, as can be seen on Fig. \ref{fig:quenchFidelityFrom00}.
+In Chapter \ref{chap:groundStateManifoldDriving}, the transport using quenches was introduced. This transport also resembles some ground state manifold characteristics. Performing quench from $(\lambda_i;\chi_i)=(0;0)$ to $(\lambda;\chi)$, the fidelity is small if the final coordinates are below separatrix. When it is behind the \greenn{minimal line}, the fidelity increases dramatically, as can be seen on Fig. \ref{fig:quenchFidelityFrom00}.
 
 Transport using quenches can be observed on Fig. \ref{fig:plotsFidelityQuenches}. The quenches are performed around paths with $\int_{a}^{b} \d s=\text{const}$ between every two neighboring points on ground state manifold geodesic. One can see that if the system is measured periodically, the quenches jump smaller distances when closer to a point of degeneracy. Decreasing time step $\Delta t$ has no effect on the relative fidelity of quenches during the evolution but has an effect on their absolute fidelity. As one would expect that for $\Delta t\rightarrow 0$ transport becomes adiabatic, and the fidelity at any time will become $1$. See that the shape of the curves looks similar in the columns, but their magnitude decreases.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/quenchFidelityFrom00.pdf}
-    \caption{Arctangent of the fidelity of quench from $(\lambda_i;\chi_i)=(0;0)$ to the coordinate $(\lambda;\chi)$.}
+    \caption{Fidelity of quench from $(\lambda_i;\chi_i)=(0;0)$ to the coordinate $(\lambda;\chi)$. \greenn{Minimal line} (\greenn{green line}) is plotted for comparison.}
     \label{fig:quenchFidelityFrom00}    
 \end{figure}
 

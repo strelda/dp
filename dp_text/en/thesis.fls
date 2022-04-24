@@ -1660,11 +1660,6 @@ INPUT ../img/singularitiesBetweenEnergiesN=5.pdf
 INPUT ../img/singularitiesBetweenEnergiesN=5.pdf
 INPUT ../img/singularitiesBetweenEnergiesN=5.pdf
 INPUT ../img/singularitiesBetweenEnergiesN=5.pdf
-INPUT ../img/N=5_bar6.pdf
-INPUT ../img/N=5_bar6.pdf
-INPUT ../img/N=5_bar6.pdf
-INPUT ../img/N=5_bar6.pdf
-INPUT ../img/N=5_bar6.pdf
 INPUT ../img/N=5_det3D.pdf
 INPUT ../img/N=5_det3D.pdf
 INPUT ../img/N=5_det3D.pdf
@@ -1820,8 +1815,8 @@ INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /home/strelda/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
-INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
