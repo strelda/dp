@@ -59,3 +59,4 @@ sesquilinearity
 endomorphism
 Cejnar
 Calibrational
+devaluates
