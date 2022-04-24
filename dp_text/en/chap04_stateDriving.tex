@@ -17,9 +17,9 @@ Often needs to achieve as high fidelity as possible during the driving, meaning 
 Before going through individual methods, let's define the meaning of adiabaticity properly.
 
 \begin{definition}[Adibaticity]
-    Slow change of the driving parameters of the Hamiltonian $H(\llambda)$ in a sense, that it does not excite the system and allows the system to return to the same energetic state after circulation around any closed path on the ground state manifold with fidelity $F=1$. 
+    The slow change of the driving parameters of the Hamiltonian $H(\llambda)$ in a sense, that it does not excite the system and allows the system to return to the same energetic state after circulation around any closed path on the ground state manifold with fidelity $F=1$. 
 \end{definition}
-This means that adiabatic transport is an endomorphism of $\M _s$. The meaning of the word "slow" clears up next theorem. It defines when the distance between two states can be considered zero.
+This means that adiabatic transport is an endomorphism of $\M _s$. The meaning of the word "slow" clears up the next theorem. It defines when the distance between two states can be considered zero.
 \begin{thm}[Adiabatic theorem]
     \label{adiabaticTheorem}
     For slowly varying Hamiltonian $\HH$ in the time range $(0,T)$, the solution of the Schrödinger equation 
@@ -77,7 +77,7 @@ $\hat{M}$ is diagonal in energetic basis and its elements has meaning of \emph{g
     [\HH,i\hbar\partial_t\HH-[\AA_t,\HH]]=0.
     \label{eq:komutation}
 \end{equation}
-This equation is essentially the system with constraint $\AA_t$. Its strength lies in fact that it finds the counter-diabatic potential without Hamiltonian diagonalization. For more, see \cite{kolodrubez}[chap. 2.3].
+This equation is essentially the system with constraint $\AA_t$. Its strength lies in the fact that it finds the counter-diabatic potential without Hamiltonian diagonalization. For more, see \cite{kolodrubez}[chap. 2.3].
 
 
 
@@ -93,7 +93,7 @@ This equation is essentially the system with constraint $\AA_t$. Its strength li
 In section \ref{sec:derivationOfGeometricTensor} we introduced the gauge potential and stated its correspondence to transition probability, see Eq. \ref{eq:probabilityOfTransitionIsGauge}.
 \emph{Gauge transformations}, in classical mechanics called \emph{canonical}, can be defined such that they \emph{preserve Lagrangian of the system under local transformations from some Lie group}. This implies that Hamiltonian $\HH(\llambda)$ commutes with its canonically transformed version.\footnote{This can be easily reformulated to the world of classical physics, where the commutator is replaced by Poisson bracket.}
 
-To understand the meaning of gauge symmetries, let's first consider classical system and then move to quantum mechanics.
+To understand the meaning of gauge symmetries, let's first consider classical systems and then move to quantum mechanics.
 
 
 
@@ -127,13 +127,13 @@ If $\lambda$ is time parameter and $\A_t=-H$, equations \ref{eq:gaugeAsGenerator
     \dot{p}_j&=-\{H,p_j\} = -\pder{H}{q^j}.
 \end{split}
 \end{equation}
-Because the Hamiltonian is generator of the movement in the phase space $(\bm{q},\bm{p})$, we can interpret $\A_t$ as the generators of the movement on $\M$. Other specific choice might be $\lambda=q^i$, which gives us the momentum components $\A_{q^i}=p_i$.
+Because the Hamiltonian is a generator of the movement in the phase space $(\bm{q},\bm{p})$, we can interpret $\A_t$ as the generators of the movement on $\M$. Another specific choice might be $\lambda=q^i$, which gives us the momentum components $\A_{q^i}=p_i$.
 
 
 
 \subsection{Quantum gauge potential}
 This part is inspired by \citet{kolodrubez}[chap. 2.2].
-Now the aim is to find some special basis transformations $\U$ between initial system $S$ and the transformed $\tilde{S}$. Both of them describe the system with Hamiltonian $\HH(\llambda)$ with eigenstates $\ket{s(\llambda)}$ on state manifolds $\P\M_s$. 
+Now the aim is to find some special basis transformations $\U$ between the initial system $S$ and the transformed $\tilde{S}$. Both of them describe the system with Hamiltonian $\HH(\llambda)$ with eigenstates $\ket{s(\llambda)}$ on state manifolds $\P\M_s$. 
 
 Any state of $\H(\llambda)$ for $\forall \llambda\in \mathcal U$ can be decomposed as
     \begin{equation}
@@ -215,7 +215,7 @@ The fact that second element is missing implies the zero space curvature
 \begin{equation}
     \chi_{jk}(\llambda) = \partial_j A_k(\llambda)-\partial_k A_j(\llambda) = 0.
 \end{equation}
-This formula is the same as Eq. \ref{eq:geometricTensor}. This means that adiabatic gauge transformations are class of gauge transformations with fidelity $F=1$, meaning that if the system is driven by Hamiltonian $\HH(\llambda)$ with fidelity $F<1$, there exists such adiabatic potential $\A_\lambda$, that driving of the same system using $\HH-\A_\lambda$ has unit fidelity.
+This formula is the same as Eq. \ref{eq:geometricTensor}. This means that adiabatic gauge transformations are a class of gauge transformations with fidelity $F=1$, meaning that if the system is driven by Hamiltonian $\HH(\llambda)$ with fidelity $F<1$, there exists such adiabatic potential $\A_\lambda$, that driving of the same system using $\HH-\A_\lambda$ has unit fidelity.
 
 The adiabatic gauge potentials can then be understood as affine connections defining the parallel transport on fiber bundle, if we define covariant derivative as
 \begin{equation}
@@ -231,7 +231,7 @@ Calculating these potentials has many practical applications, so let's introduce
 
 
 % \subsection{Performing counter-diabatic driving}
-% This example is taken from \citet{kolodrubez}[page 15--17]. The idea of a counter-diabatic driving is that any excitation of the system can be countered by adding the counter-diabatic potential to the Hamiltonian. Consider again any eigenstate $\ket{\psi(\llambda)}$ of the Hamiltonian $\HH=\HH(\llambda)$ driven along the curve $\mathcal J(\llambda(t))$ on $\P\M_0$ depending on time $t$. Because the system is not measured during the driving, it can't be stated if or if not it was excited, but the main goal here is to achieve fidelity $F=1$, which is iff $\tilde H$ is diagonal along the driving path. For diagonalizable Hamiltonian, there exist a transformation, see Eq. \ref{eq:transformationU}, for which the fidelity will be zero. Such transformation does not have to be unique, but we can choose any one of them. This can be seen more clearly from direct transformation of the Schr\"odinger equation. 
+% This example is taken from \citet{kolodrubez}[page 15--17]. The idea of counter-diabatic driving is that any excitation of the system can be countered by adding the counter-diabatic potential to the Hamiltonian. Consider again any eigenstate $\ket{\psi(\llambda)}$ of the Hamiltonian $\HH=\HH(\llambda)$ driven along the curve $\mathcal J(\llambda(t))$ on $\P\M_0$ depending on time $t$. Because the system is not measured during the driving, it can't be stated if or if not it was excited, but the main goal here is to achieve fidelity $F=1$, which is iff $\tilde H$ is diagonal along the driving path. For a diagonalizable Hamiltonian, there exist a transformation, see Eq. \ref{eq:transformationU}, for which the fidelity will be zero. Such transformation does not have to be unique, but we can choose any one of them. This can be seen more clearly from a direct transformation of the Schr\"odinger equation. 
 
 % From now on assume $\llambda=\llambda(t)$. The Schrödinger equation
 % \begin{equation}
@@ -255,7 +255,7 @@ Calculating these potentials has many practical applications, so let's introduce
 % where the term $-\dot{\lambda}\tilde{\AA_\lambda}$ is called \emph{Galilean} and $ \tilde{H}_m$ is the Hamiltonian in transformed system. Because $\tilde{H}$ is diagonal, it drives $\ket{\tilde{\psi}}$ with fidelity $f=1$. This means that for any driving defined by $\HH(\lambda(t))$, which defines the unitary transformation $\U$, there exists such \emph{counter-diabatic potential} $\AA_\lambda$, that $\HH_m + \dot{\lambda}\AA_\lambda$ has $f=1$.
 
 
-% % Intuition for transformations using original Hamiltonian vs. transformed one can be seen on Fig. \ref{fig:counterdiabaticPotential}. It is good to point out, that the eigenstates on this figure belong to the space $\P\M$, but the paths itself need to be considered in the whole $\M$, which can be seen as the phase change described by equation \ref{eq:evolutionUduringTransition}.
+% % Intuition for transformations using original Hamiltonian vs. transformed one can be seen on Fig. \ref{fig:counterdiabaticPotential}. It is good to point out, that the eigenstates on this figure belong to the space $\P\M$, but the paths themselves need to be considered in the whole $\M$, which can be seen as the phase change described by equation \ref{eq:evolutionUduringTransition}.
 
 % % \begin{figure}[h]
 % %     \centering
@@ -319,7 +319,7 @@ Calculating these potentials has many practical applications, so let's introduce
 
 \section{Driving on the ground state manifold}
 \label{chap:groundStateManifoldDriving}
-As was mentioned in the introduction of chapter \ref{chap:typesOfDriving}, one method of achieving low driving fidelity is \emph{path variation}. This means \emph{finding the best possible driving path}. One might say that the ground state manifold geodesics are a good candidate for this path, because they minimize the distance. The problem is that general fidelity driving does not happen on any state manifold and this premise cannot be used. The natural question here is: "For which drivings do geodesics minimize the fidelity?". The full role of geodesics is not yet known, but there are a few known cases in which they have particular meaning and which are demonstrated here.
+As was mentioned in the introduction of chapter \ref{chap:typesOfDriving}, one method of achieving low driving fidelity is \emph{path variation}. This means \emph{finding the best possible driving path}. One might say that the ground state manifold geodesics are a good candidate for this path because they minimize the distance. The problem is that general fidelity driving does not happen on any state manifold and this premise cannot be used. The natural question here is: "For which drivings do geodesics minimize the fidelity?". The full role of geodesics is not yet known, but there are a few known cases in which they have particular meaning and which are demonstrated here.
 
 \subsection{Minimizing the distance on state manifolds}
 Let's have path $\mathcal J$ defined in Eq. \ref{eq:defJ_QSdriving} and a geodesic $\mathcal G(\llambda(t))$ with fixed boundary conditions
@@ -369,7 +369,7 @@ Let's state and prove the theorem demonstrating the importance of geodesics.
 
 
 \subsection{Minimizing the energy variance}
-The driving can be restricted to the ground state manifold only in approximation, such that the excited parts of wave-function can be neglected in every step. This fact is used for so-called \emph{close adiabatic drivings}. The first theorem about geodesics is from \cite{Bukov2019}.
+The driving can be restricted to the ground state manifold only in approximation, such that the excited parts of the wave function can be neglected in every step. This fact is used for so-called \emph{close adiabatic drivings}. The first theorem about geodesics is from \cite{Bukov2019}.
 
 \begin{thm}
     \label{thm:polkovnikov}
@@ -399,7 +399,7 @@ The driving can be restricted to the ground state manifold only in approximation
     where $\O(\dot\lambda^4)$ needs to be positive for any real-valued Hamiltonian. This comes from the fact, that the system has instantaneous time-reversal symmetry. For details see \cite{Bukov2019}.
 \end{proof}
 
-The conjecture can be extended to an arbitrary dimensional path. The main problem of this conjecture is the statement \emph{close unit fidelity protocol}. It is not clear how good the approximation needs to be. This makes the statement much weaker, because it only states that \emph{for any driving, there exist nonzero driving speed for which the energy variance is minimized on geodesics.}
+The conjecture can be extended to an arbitrary dimensional path. The main problem of this conjecture is the statement \emph{close unit fidelity protocol}. It is not clear how good the approximation needs to be. This makes the statement much weaker because it only states that \emph{for any driving, there exists nonzero driving speed for which the energy variance is minimized on geodesics.}
 
 
 
@@ -428,9 +428,9 @@ From Euler-Lagrange equations, the fidelity is minimized if $\mathcal J$ is geod
 % \end{equation}
 % which needs to be zero for integration over any subset $(t_i,\tau)$. This can be achieved for any path only if the integrand itself is zero, which happens if the geodesic equation is satisfied.
 
-% The fidelity $F$ measures transition probability between two eigenstates, $\ket{\psi_1}$, $\ket{\psi_2}$, of different Hamiltonians at two different points $\llambda_1$, $\llambda_2$. These two states belong to the same Fiber space $\PH(\llambda)$ from which the coefficients $$(\text{index of energy state $s$}; \llambda)\in (\Z,\mathcal U)$$ are taken. Because $\PH(\llambda)$ are canonically isomorphic for $\forall \llambda\in \mathcal U$, there is no problem in parallel transport from one space to another, which is needed for evaluating the braket $\braket{\psi(\llambda_1)|\psi(\llambda_2)}$. This is important notice, because the integration in braket can be performed only if both elements belong to the same space.
+% The fidelity $F$ measures transition probability between two eigenstates, $\ket{\psi_1}$, $\ket{\psi_2}$, of different Hamiltonians at two different points $\llambda_1$, $\llambda_2$. These two states belong to the same Fiber space $\PH(\llambda)$ from which the coefficients $$(\text{index of energy state $s$}; \llambda)\in (\Z,\mathcal U)$$ are taken. Because $\PH(\llambda)$ are canonically isomorphic for $\forall \llambda\in \mathcal U$, there is no problem in parallel transport from one space to another, which is needed for evaluating the braket $\braket{\psi(\llambda_1)|\psi(\llambda_2)}$. This is important notice because the integration in braket can be performed only if both elements belong to the same space.
 
-% The distance minimization runs into some interpretation problems. On one hand, minimization of the distance is equivalent to maximization of the sum of infinitezimal fidelities along the path (we say we \emph{maximize the fidelity along the path}). On the other hand we are using only ground states in every step of the transport, therefore defining the fidelity to be one. There are actually two ways out of this confusion. \emph{Perturbed adiabatic driving} and \emph{transport using quenches}.
+% The distance minimization runs into some interpretation problems. On one hand, minimization of the distance is equivalent to maximization of the sum of infinitesimal fidelities along the path (we say we \emph{maximize the fidelity along the path}). On the other hand, we are using only ground states in every step of the transport, therefore defining the fidelity to be one. There are two ways out of this confusion. \emph{Perturbed adiabatic driving} and \emph{transport using quenches}.
 
 
 Imagine at every point of transport that the fidelity is small enough, so for some small parameters $\Delta_i\in \C$ the transport over distance $\d s$ in eigenbasis at time $t=0$ is
@@ -453,7 +453,7 @@ $$\ket{o(\llambda_i)}\equiv \begin{pmatrix}
 where the last term is neglected, because
 $$\braket{\Delta(\llambda)|o(\llambda+\delta\llambda)}\approx 0.$$
 
-This might have interesting implication for slow transports, or small distance transports. For slow transports, this condition is hardly fulfilled, because one needs to neglect the sum of many of these terms. One possible way out of this is to reset the state into the ground-state when the fidelity would get too far from 1. This can be achieved by projecting the state $\ket{\psi(t)}$ to the ground state $\ket{0(t)}$ periodically, such that every time the fidelity is almost one. These small jumps are sometimes called \emph{quenches}, and it can be achieved by introducing thermalization to the system.
+This might have interesting implications for slow transports or small distance transports. For slow transport, this condition is hardly fulfilled, because one needs to neglect the sum of many of these terms. One possible way out of this is to reset the state into the ground-state when the fidelity would get too far from 1. This can be achieved by projecting the state $\ket{\psi(t)}$ to the ground state $\ket{0(t)}$ periodically, such that every time the fidelity is almost one. These small jumps are sometimes called \emph{quenches}, and they can be achieved by introducing thermalization to the system.
 
 
 
@@ -490,7 +490,7 @@ If we imagine $\delta\llambda$ to be finite (not infinitely small, as the notati
 Until now, our interest was mostly in \emph{unit fidelity protocols}. But how to calculate the case when the fidelity is "almost one"? This is the aim of \emph{adiabatic perturbation theory}.
 
 
-Following the article from \cite{Rigolin2008}, the wave-function can be approximated by series. Because every element is then decomposed into another series, we bear in mind the \emph{locality of variables}, which clarifies the reason for performing this procedure. Let's call variable $V(t)$ \emph{\bluee{local}} if it does not depend on driving path. These variables are in shades of \bluee{blue} and \redd{non-local} variables, written in shades of \redd{red}, are usually expressed as an integral over driving path $\mathcal J$.
+Following the article from \cite{Rigolin2008}, the wave function can be approximated by series. Because every element is then decomposed into another series, we bear in mind the \emph{locality of variables}, which clarifies the reason for performing this procedure. Let's call variable $V(t)$ \emph{\bluee{local}} if it does not depend on driving path. These variables are in shades of \bluee{blue} and \redd{non-local} variables, written in shades of \redd{red}, are usually expressed as an integral over driving path $\mathcal J$.
 
 We are interested in the driving along path $\mathcal J$ defined by Eq. \ref{eq:defJ_QSdriving},
 where $t$ is time and $T$ final time of the driving. Let the initial condition be
@@ -556,7 +556,7 @@ for $\bluee{\Delta_sm(t)}\coloneqq \bluee{E_m-E_s}$, $\bluee{W_{sm}(t)}\coloneqq
 % \section{\textcolor{blue}{Approximations of adiabatic potentials}}
 % Adiabatic potentials can be calculated from the principal of minimal action, which leads to variational method.
 
-% If the difference between eigenstates of $\HH$ is small, or generalized force between some states is zero, the computation of the adiabatic potential is numerically unstable. The knowledge of exact adiabatic potential would allow to maintain the system in the ground state thus not exciting it, as the Eigenstate thermalization hypotheses states.
+% If the difference between eigenstates of $\HH$ is small, or the generalized force between some states is zero, the computation of the adiabatic potential is numerically unstable. The knowledge of exact adiabatic potential would allow to maintain the system in the ground state thus not exciting it, as the Eigenstate thermalization hypotheses state.
 
 % \begin{hypot}[Eigenstate thermalization hypotheses]
 %   For the difference between eigenstates of $\HH$ and extensive thermodynamic entropy $S$, it holds that
@@ -574,4 +574,4 @@ for $\bluee{\Delta_sm(t)}\coloneqq \bluee{E_m-E_s}$, $\bluee{W_{sm}(t)}\coloneqq
 
 
 % \subsection{Variational methods}
-% In the case of simple systems, the adiabatic potentials can be found analytically, but for more complicated Hamiltonians we will be forced to use approximations, or some perturbational and variational methods.
+% In the case of simple systems, the adiabatic potentials can be found analytically, but for more complicated Hamiltonians we will be forced to use approximations or some perturbational and variational methods.

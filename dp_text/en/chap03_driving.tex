@@ -2,9 +2,9 @@
 \label{chap:driving}
 This chapter depends on the mathematical formalism developed in Chapter \ref{chap:mathIntro} and some basic knowledge of quantum mechanics is required. Most parts are inspired by \citet{kolodrubez} and original notes by \citet{berry1984}, \citet{berry1989}, \citet{berry2009} with attempt to give them more rigorous meaning in the language of differential geometry. 
 
-The aim of this chapter is the construction of space on which the \emph{driving of quantum states} (changing the states by controlling the Hamiltonian parameter) is performed and introducing some basic concepts needed. There may be many geometrical constructions of the space, because usually only some sections of the full space are used. Different constructions require different mathematical formalism. One might choose the way of \emph{vector bundles}, or \emph{fiber bundles} (our case), or just sectioning one Hilbert space in different ways, constructing the needed physical spaces. The reason for choosing the way of fiber bundles is that from the Hamiltonian with free parameter $\HH(\lambda)$ we get one Hilbert space for every value of the parameter. The fiber structure then gives the natural formalism for connecting these spaces and embeds the space with natural geometry due to changing eigenbasis during the driving. In addition, the fiber space holds the information about driving parameter $\lambda$.
+The aim of this chapter is the construction of space on which the \emph{driving of quantum states} (changing the states by controlling the Hamiltonian parameter) is performed and introducing some basic concepts needed. There may be many geometrical constructions of the space because usually only some sections of the full space are used. Different constructions require different mathematical formalism. One might choose the way of \emph{vector bundles}, or \emph{fiber bundles} (our case), or just sectioning one Hilbert space in different ways, constructing the needed physical spaces. The reason for choosing the way of fiber bundles is that from the Hamiltonian with free parameter $\HH(\lambda)$ we get one Hilbert space for every value of the parameter. The fiber structure then gives the natural formalism for connecting these spaces and embeds the space with natural geometry due to changing eigenbasis during the driving. In addition, the fiber space holds the information about driving parameter $\lambda$.
 
-Even though the theory below depends on differential geometry, it does not reformulate the whole quantum mechanics into this language. This is rather complicated task and for introduction into this approach see Appendix \ref{appendixGEOM}.
+Even though the theory below depends on differential geometry, it does not reformulate the whole quantum mechanics into this language. This is a rather complicated task and for an introduction to this approach see Appendix \ref{appendixGEOM}.
 
 From now on we use natural units, so $\hbar=1$.
 
@@ -101,7 +101,7 @@ The reason for calling the manifolds \emph{projective} is the gauge symmetry of 
     \M_s\coloneqq \left\{\bigcup_{\varphi\in[0,2\pi)} \bigcup_{\llambda\in\mathcal U} e^{i\varphi}\ket{s(\llambda)}\right\}
 \end{equation}
 
-Because these manifolds were created by sectioning, they are considered to be vector spaces in a geometrical sense. This was expected, because they contain quantum states, which themselves are vectors.
+Because these manifolds were created by sectioning, they are considered to be vector spaces in a geometrical sense. This was expected because they contain quantum states, which themselves are vectors.
 
 \begin{figure}[H]
     \centering
@@ -129,7 +129,7 @@ Because these manifolds were created by sectioning, they are considered to be ve
 
 
 
-The Hilbert spaces in different points $\llambda$ have the same finite dimension, so the natural question is if we really need the fiber structure and if we could understand the projection $\pi$ as a surjection from one Hilbert space to the base manifold $\pi: \H\rightarrow \M$. This can surely be done, but we would lose some generality. For example, the natural choice for basis in the Hilbert space is the eigenbasis. This basis is different for every $\H(\llambda)$ and this opens up two different approaches to a wave-function collapse.
+The Hilbert spaces in different points $\llambda$ have the same finite dimension, so the natural question is if we need the fiber structure at all and if we could understand the projection $\pi$ as a surjection from one Hilbert space to the base manifold $\pi: \H\rightarrow \M$. This can surely be done, but we would lose some generality. For example, the natural choice for basis in the Hilbert space is the eigenbasis. This basis is different for every $\H(\llambda)$ and this opens up two different approaches to a wave-function collapse.
 \begin{enumerate}
     \item In the fiber structure, we can imagine changing the parameter $\llambda$ as moving between $\H(\llambda)$ subspaces of $\H_{full}$, in which the eigenbasis can be embedded geometrically. The space structure can be precalculated, and every driving can be performed in this space.
     \item If we imagine only one Hilbert space, the eigenbasis varies in time and the driving is performed in a changing space in time.
@@ -175,7 +175,7 @@ Changing the state from eigenstate $\ket{s(\llambda)}$ to $\ket{s(\tilde\llambda
 \end{equation}
 Let's describe the meaning of two exponentials in this transport.
 \subsubsection{Dynamical phase}
-The first exponential in Eq. \ref{eq:phasesOnManifold}, the \emph{dynamical phase}, is well known solution to the energy Schr\"odinger equation \ref{eq:energySchrodinger} and depends only on time and Hemiltonian spectrum during the transport. This dynamical phase changes the states only within the projective state manifold $\P\M_s$. 
+The first exponential in Eq. \ref{eq:phasesOnManifold}, the \emph{dynamical phase}, is well known solution to the energy Schr\"odinger equation \ref{eq:energySchrodinger} and depends only on time and Hamiltonian spectrum during the transport. This dynamical phase changes the states only within the projective state manifold $\P\M_s$. 
 
 \subsubsection{Geometrical phase}
 The complication arises with the fact that our playground is a state manifold $\M_s$ and some element $\varphi=\gamma_s(t)$, called \emph{geometrical phase} needs to be included. This phase is generally non-integrable, meaning it depends on the whole path and cannot be written simply as $\gamma_s(\llambda)$. For a closed curve
@@ -240,7 +240,7 @@ for
 (E_m(\llambda)-E_s(\llambda))^2
              }.
 \end{equation}
-The element of summation $m=s$ in third step of derivation \ref{eq:stokes} is real, therefore has no influence on $\gamma_s$ and can be omitted. 
+The element of summation $m=s$ in the third step of derivation \ref{eq:stokes} is real, therefore has no influence on $\gamma_s$ and can be omitted. 
 
 Comparing the first expression in Eq. \ref{eq:stokes} with its last one and extending it to real numbers, we get
 \begin{equation}
@@ -319,7 +319,7 @@ The usefulness of this definition can be shown in three special cases.
 \end{itemize}
     
     
-The physical meaning of fidelity can be also seen on the state manifolds, imagining \emph{quantum quench between two states} (rapid change of some Hamiltonian parameters). In this case $F$ is the probability that system prepared in some initial ground state $\ket{\rho}$, is found in the new ground state $\ket{\sigma}$. $1-F$ is then the probability of exciting the system during this quench.
+The physical meaning of fidelity can be also seen on the state manifolds, imagining \emph{quantum quench between two states} (rapid change of some Hamiltonian parameters). In this case, $F$ is the probability that the system prepared in some initial ground state $\ket{\rho}$, is found in the new ground state $\ket{\sigma}$. $1-F$ is then the probability of exciting the system during this quench.
 
 Before moving to the practical usage of fidelity, let's look at some general properties.
     
@@ -333,7 +333,7 @@ Before moving to the practical usage of fidelity, let's look at some general pro
     \end{itemize}
 \end{thm}
 \begin{proof}
-    First statement is a consequence of Cauchy-Schwarz inequality. Second and third goes from Uhlmann's theorem, see for example \cite{uhlman}.
+    The first statement is a consequence of Cauchy-Schwarz inequality. The second and third go from Uhlmann's theorem, see for example \cite{uhlman}.
 \end{proof}
 
 
@@ -372,7 +372,7 @@ We can easily check, that the axioms for metric distance holds:
     \item triangle inequality: $s(\kpsi,\ket{\psi_2}) <s(\kpsi,\ket{\psi_1}) + s(\ket{\psi_1},\ket{\psi_2})$\\
     for any $\ket{\psi}$,$\ket{\psi_1}$,$\ket{\psi_2}$.
 \end{itemize}
-If we take the fidelity between two parameter dependent states, the infidelity $1-F(\ket{\psi(\llambda)},\ket{\psi(\llambda+\Delta)})>0$ and the first term of Taylor expansion in $\Delta$ is zero, implying it can be used for the metric tensor definition.
+If we take the fidelity between two parameter-dependent states, the infidelity $1-F(\ket{\psi(\llambda)},\ket{\psi(\llambda+\Delta)})>0$ and the first term of Taylor expansion in $\Delta$ is zero, implying it can be used for the metric tensor definition.
 
 \begin{definition}[Metric tensor on projective state manifolds]
     \label{def:metricTensor}
@@ -421,7 +421,7 @@ Practically only $g_{jk}$ is used, thus what should have been called \emph{the m
 %     \d s^2 \coloneqq |\psi(\llambda+\d \llambda)-\psi(\llambda)|^2 = \braket{\delta\psi|\delta\psi} = \underbrace{\braket{\partial_j\psi|\partial_k\psi}}_{\chi_{jk}(\llambda)} \d\llambda^j \d\llambda^k 
 % \end{equation}
 
-Because the metric tensor is a real analytical function of coordinates, its analytical continuation into complex numbers can be performed. For the motivation behind following definition, see \cite{cheng_quantum_2013}.
+Because the metric tensor is a real analytical function of coordinates, its analytical continuation into complex numbers can be performed. For the motivation behind the following definition, see \cite{cheng_quantum_2013}.
 
 \begin{definition}[Geometric tensor]
     On the ground state manifold $\M_0$, the geometric tensor can be defined as
@@ -501,7 +501,7 @@ The Berry curvature is
 
 
 
-To understand why the gauge potential generates some calibrational invariance, let's define the Berry connection.
+To understand why the gauge potential generates some calibration invariance, let's define the Berry connection.
 \begin{definition}[Berry connection]    
     On the ground state manifold $\M_0$, the \emph{Berry connection} is defined as the mean value of gauge potential
     \begin{equation}
@@ -516,7 +516,7 @@ This empowers us to take derivatives in any direction and the expression for geo
     \chi_{jk}(\llambda) = \partial_j A_k(\llambda)-\partial_k A_j(\llambda)
     \label{eq:geometricTensorRedef}.
 \end{equation}
-This formula can be directly proven by comparing with \ref{eq:geometricTensor}. Here we see that the calibrational invariance is 
+This formula can be directly proven by comparing with \ref{eq:geometricTensor}. Here we see that the calibration invariance is 
 \begin{equation}
     A_j \mapsto A_j+\partial_j \alpha(\llambda),\qquad \alpha\in\mathcal C^2,
 \end{equation}
@@ -545,7 +545,7 @@ meaning any twice differentiable function can be added to the gauge potential, l
     
 \end{definition}
 
-Berry phase is zero, when the curve does not go around some geometric tensor singularity. This can be formally written using the \emph{winding number}, which counts \emph{how many times the curve goes counterclockwise around some point of interest}. In our case the points of interest are singularities $a$, and we have:
+Berry phase is zero when the curve does not go around some geometric tensor singularity. This can be formally written using the \emph{winding number}, which counts \emph{how many times the curve goes counterclockwise around some point of interest}. In our case, the points of interest are singularities $a$, and we have:
 $$\mathrm{Ind}_a \mathcal J(\llambda)=0 \Rightarrow \varphi_B=0.$$
 
-These singularities appear in the system due to energy spectrum degeneracies, in the case of ground state manifold, when $E_1-E_0=0$. These points are called \emph{diabolic}, because of the energy spectrum shape in the $\llambda)$ parameter space.\footnote{https://en.wikipedia.org/wiki/Diabolo}
+These singularities appear in the system due to energy spectrum degeneracies, in the case of the ground-state manifold, when $E_1-E_0=0$. These points are called \emph{diabolic}, because of the energy spectrum shape in the $\llambda)$ parameter space.\footnote{https://en.wikipedia.org/wiki/Diabolo}

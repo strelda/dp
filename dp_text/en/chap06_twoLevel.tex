@@ -1,6 +1,6 @@
 \chapter{Two level system}
 \label{chap:twoLevelSystem}
-Before we move to more complicated Hamiltonian model, we investigate a simple two level system. To understand the general behavior of fidelity on Hamiltonian spectrum, two analytically solvable drivings — \emph{geodesic} and \emph{linear} — is investigated.
+Before we move to a more complicated Hamiltonian model, we investigate a simple two-level system. To understand the general behavior of fidelity on a Hamiltonian spectrum, two analytically solvable drivings — \emph{geodesic} and \emph{linear} — are investigated.
 
 \section{Hamiltonian}
 Let's have a Hamiltonian
@@ -130,7 +130,7 @@ From the perspective of classical mechanics, meaning $x(t)\coloneqq a(t)$ is a p
 
 
 
-\section{Energy variance for two level system}
+\section{Energy variance for two-level system}
 For two level system, the variance of wave-fucntion at time $t$
 \begin{equation}
     \delta E^2(t)\coloneqq \braket{\psi(t)|\HH^2(t)|\psi(t)}-\braket{\psi(t)|\HH(t)|\psi(t)}^2
@@ -260,7 +260,7 @@ Fidelity during the transport is then\footnote{If we calculated the fidelity in 
     \label{fid:definition}
 \end{equation}
 
-Explicit formula for fidelity in time $t$ and geodesic driving with final time $T$ is finally
+An explicit formula for fidelity in time $t$ and geodesic driving with final time $T$ is finally
 \begin{equation}
     F(t,T)=\frac{\pi ^2 \left(\cos \left(t \sqrt{\frac{\pi ^2}{T^2}+4 s^2}\right)+1\right)+8 s^2 T^2}{2 \sin ^4\left(\frac{\pi  t}{2 T}\right) \left(4 s^2 T^2+\pi ^2\right) \left(\left| \cot \left(\frac{\pi  t}{2 T}\right)\right|^2+1\right)^2}.
     \label{eq:fidelitySimplified}
@@ -379,7 +379,7 @@ which is of \emph{Weber type}\footnote{https://mathworld.wolfram.com/WeberDiffer
 \subsection{Dependence on time}
 The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. For $t\approx T/2$ Hamiltonian parameters change quickly which leads to fast state excitation. Then the Harmonic oscillator damping gets involved and oscillations are quickly going to zero, never disappearing entirely.
 
-We can see that the final fidelity decreases with longer final time, which correctly leads to adiabatic driving, where $\lim_{T\rightarrow \infty} F^*=0$. For short final times we can observe so called quench, $\lim_{T\rightarrow 0} F^*=1$. The interesting phenomenon on this image are the oscillations around $t=T/2$, for which the frequency increases with longer final time. 
+We can see that the final fidelity decreases with a longer final time, which correctly leads to adiabatic driving, where $\lim_{T\rightarrow \infty} F^*=0$. For short final times we can observe so-called quench, $\lim_{T\rightarrow 0} F^*=1$. The interesting phenomenon in this image are the oscillations around $t=T/2$, for which the frequency increases with a longer final time. 
 
 \begin{figure}[H]
     \centering 
@@ -423,7 +423,7 @@ Because the oscillations after fast parameter change in the Hamiltonian never di
     \label{fig:infidelityTfPlotLogLinCombined}
 \end{figure}
 
-First, the numerical precision of this calculation was found to be around $10^{-13}$. This means that the oscillations we see on Fig. \ref{fig:infidelityTfPlotLogLinCombined} are of physical origin with some additional numerical error. In fact these small oscillations are the remnants of the fast excitation during close approach of energy levels, see Fig. \ref{fig:infidelityTimePlotLin}. 
+First, the numerical precision of this calculation was found to be around $10^{-13}$. This means that the oscillations we see in Fig. \ref{fig:infidelityTfPlotLogLinCombined} are of physical origin with some additional numerical error. These small oscillations are the remnants of the fast excitation during the close approach of energy levels, see Fig. \ref{fig:infidelityTimePlotLin}. 
 
 
 
@@ -432,7 +432,7 @@ We can eliminate the effect of oscillations by averaging over time. For that we 
 \begin{equation}
     \langle F^*\rangle_p(T) \coloneqq \frac{1}{(1-p) T}\int\limits_{(1-p) T}^{T} F^*(t)\d t.
 \end{equation}
-It turned out that averaging over 1 \% ($p=0.01$) or 10 \% ($p=0.1$) of the driving gave approximately the same results for long enough drivings ($T\overset{\sim}{>} 10$). The same result can be obtained from analytical continuation of the fidelity formula to $t\rightarrow  \infty$. This analytical continuation of harmonic oscillator solution leads to the Fidelity value around which the oscillations occur. The result of averaging can be seen on Fig. \ref{fig:infidCombined}.
+It turned out that averaging over 1 \% ($p=0.01$) or 10 \% ($p=0.1$) of the driving gave approximately the same results for long enough drivings ($T\overset{\sim}{>} 10$). The same result can be obtained from the analytical continuation of the fidelity formula to $t\rightarrow  \infty$. This analytical continuation of the harmonic oscillator solution leads to the Fidelity value around which the oscillations occur. The result of averaging can be seen in Fig. \ref{fig:infidCombined}.
 
 Using this we can describe the driving using three regimes\footnote{The coefficient $p$ is assumed to be small enough not to cover the biggest oscillations after $t=T/2$ and big enough to average over sufficient number of oscillations. Approximately $p\in[0.6T,0.999T]$.}.
 \begin{itemize}
@@ -472,7 +472,7 @@ The boundary between exponential and linear regime is not strict and can be seen
 
 
 
-To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} with \ref{fig:overcritical}. Here we see two regimes, one for $t<T_c$ and on for $T>T_c$. The important observation is that in the first case $F^*\neq 0$ for all $t>0$ and in the second case it touches zero periodically. The fidelity can be decomposed into a sum of two elements. Small oscillatory part, which can be explained by the theory of APT, and exponentially decreasing fidelity with final time, describable by Landau-Zener formula.
+To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} with \ref{fig:overcritical}. Here we see two regimes, one for $t<T_c$ and on for $T>T_c$. The important observation is that in the first case $F^*\neq 0$ for all $t>0$ and in the second case it touches zero periodically. The fidelity can be decomposed into a sum of two elements. The small oscillatory part, which can be explained by the theory of APT, and exponentially decreasing fidelity with final time, is describable by the Landau-Zener formula.
 
 \begin{figure}[H]
     \centering
@@ -489,7 +489,7 @@ To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} 
 \end{figure}
 
 \subsubsection{Exponential and polynomial part, Landau-Zener and APT}
-Landau-Zener-Stueckelberg theory provides the WKB approximation formula for the fidelity during some transport. Full form can be seen in \cite{nonadiabaticTransition}. In our case, only simplified theorem is needed. First let's review some definitions.
+Landau-Zener-Stueckelberg's theory provides the WKB approximation formula for the fidelity during some transport. The full form can be seen in \cite{nonadiabaticTransition}. In our case, only a simplified theorem is needed. First, let's review some definitions.
 
 \begin{definition}[Diabatic coupling]
     Diabatic coupling functions are off-diagonal elements of two-level Hamiltonian. At avoided crossing, it is half of Hamiltonian eigenvalue difference,
@@ -532,7 +532,7 @@ The polynomial, or chaotic regime, can be explained using APT. It holds that
 \end{equation}
 for functions $b_n^{(1)}$ from Eq. \ref{eq:bnAPT}. For more details, see \cite{felipe}.
 
-The LZS approximation can be seen on Fig. \ref{fig:landauCompare}. The LZS and APT approximations give the leading order in corresponding regimes (omitting the oscillations) and intersect at time $T_c$. In fact these two parts are not only the good approximation on both intervals, but if added together, they represent the whole fidelity curve with very high precision. It might not give a good mathematical meaning to add these two solutions together. But because the APT gives the infidelity of order $10^{-9}$, it creates negligible error. The advantage is that by this process one gets suitable approximation for the transitional regime.
+The LZS approximation can be seen in Fig. \ref{fig:landauCompare}. The LZS and APT approximations give the leading order in corresponding regimes (omitting the oscillations) and intersect at time $T_c$. These two parts are not only a good approximation on both intervals, but if added together, they represent the whole fidelity curve with very high precision. It might not give a good mathematical meaning to add these two solutions together. But because the APT gives the infidelity of order $10^{-9}$, it creates a negligible error. The advantage is that by this process one gets a suitable approximation for the transitional regime.
 
 
 \begin{figure}[H]
@@ -554,11 +554,8 @@ The LZS approximation can be seen on Fig. \ref{fig:landauCompare}. The LZS and A
 %     \end{cases}.
 % \end{equation}
 
-
-
-
 \subsection{Summary of linear driving}
-Now we understand all results separately, let's put it all together. On Fig. \ref{fig:AllInOne} the most important results can be seen. The difference in the close adiabatic regime and fast regime at the end of the driving is if $F^*=0$. The chaotic regime is below $t=T$ line for $T<T_c$ and the chaotic cone is crossing this line around $t=T_c$.
+Now we understand all results separately, let's put it all together. In Fig. \ref{fig:AllInOne} the most important results can be seen. The difference between the close adiabatic regime and the fast regime at the end of the driving is if $F^*=0$. The chaotic regime is below $t=T$ line for $T<T_c$ and the chaotic cone is crossing this line around $t=T_c$.
 
 \begin{figure}[H]
     \centering 
@@ -566,13 +563,6 @@ Now we understand all results separately, let's put it all together. On Fig. \re
     \caption{Fidelity dependence for linear driving with $\Delta=1$. Black line marks $t=T$, dashed black line $t=T/2$ and \redd{purple} dashed line is the approximate value of $T_c$. \bluee{Blue} lines marks driving from Fig. \ref{fig:undercritical}, \ref{fig:overcritical}, visualizing the final times of the driving.}
     \label{fig:AllInOne}
 \end{figure}
-
-
-
-
-
-
-
 
 
 \newpage
@@ -584,19 +574,3 @@ Analogically to the geodesical driving, one might be interested in energy varian
     \caption{Energy variance for $\Delta_{sc}=0.2$ for linear driving. Note that only $t<T$ has physical meaning.}
     \label{fig:densVariance}
 \end{figure}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
