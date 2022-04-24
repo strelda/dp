@@ -55,7 +55,3 @@
 \contentsline {section}{\numberline {A.1}From the projective Hilbert space to state manifolds}{73}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Restriction to eigenstate manifolds}{74}{section.A.2}%
 \contentsline {chapter}{\numberline {B}Eigenvalues for Lipkin-Meshkov Glick model}{76}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Attachments}{78}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Computing the metric tensor}{78}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Computing the Geodesics}{78}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Computing the driving fidelity}{78}{section.C.3}%
