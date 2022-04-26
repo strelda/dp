@@ -1,0 +1,20 @@
+{
+    "grammarly.overrides": [
+        {
+            "files": [
+                "**/en/chap06_twoLevel.tex"
+            ],
+            "config": {
+                "audience": "expert",
+                "dialect": "american",
+                "domain": "academic",
+                "emotions": [
+                    "neutral"
+                ],
+                "goals": [
+                    "inform"
+                ]
+            }
+        }
+    ]
+}

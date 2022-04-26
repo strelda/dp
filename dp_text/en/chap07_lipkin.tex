@@ -1,7 +1,7 @@
 \chapter{Lipkin-Meshkov-Glick model}
 \label{chap:lipkin}
 
-The Lipkin-Meshkov-Glick (LMG) model is a simple model manifesting the quantum phase transitions. It represents a many-body fermion system. This chapter aims on understanding the properties of the ground state and its influence on different driving protocols.
+The Lipkin-Meshkov-Glick (LMG) model is a simple model manifesting the quantum phase transitions. It represents a many-body fermion system. This chapter aims to understand the properties of the ground state and its influence on different driving protocols.
 
 
 The model is defined on a parametric space $\llambda\equiv (\lambda;\chi)\in\mathcal U\coloneqq \R^2$ with Hamiltonian
@@ -100,7 +100,7 @@ From Eq. \ref{eq:N=3_en0}, \ref{eq:N=3_en1} can be seen the possible existence o
 $$(\lambda_d,\pm \chi_d)=\left(-\frac{1}{2};\sqrt{\frac{3}{5}}\right).$$
 According to Theorem \ref{thm:n-2}, Hamiltonian driven by two real parameters can be degenerated only on 0-dimensional manifolds. This means that degeneracies can be only separated points in the parametric space.
 
-If the energy spectrum is degenerate and the metric tensor diverges, see individual elements in Fig. \ref{fig:N=3_g}, its determinant also diverges, as shown in Fig. \ref{fig:N=3_gDivenrgence}, along with Christoffel symbols in Fig. \ref{fig:N=3_G}. Note that the metric tensor determinant is positive definite, thus the manifold is Riemannian. Further on, it reflects the symmetry $\chi\leftrightarrow-\chi$, except for elements $g_{12}$, $\Gamma_{121}$, $\Gamma_{211}$, and $\Gamma_{222}$, which switch their sign.
+If the energy spectrum is degenerate and the metric tensor diverges, see individual elements in Fig. \ref{fig:N=3_g}, its determinant also diverges, as shown in Fig. \ref{fig:N=3_gDivenrgence}, along with Christoffel symbols in Fig. \ref{fig:N=3_G}. The metric tensor determinant is positive definite; therefore, the manifold is Riemannian. Further on, it reflects the symmetry $\chi\leftrightarrow-\chi$, except for elements $g_{12}$, $\Gamma_{121}$, $\Gamma_{211}$, and $\Gamma_{222}$, which switch their sign.
 
 \begin{figure}[H]
     \centering
@@ -140,7 +140,7 @@ If the energy spectrum is degenerate and the metric tensor diverges, see individ
 \end{figure}
 
 
-Due to metric tensor degeneracy, the space is not geodesically maximal. To see that the singularity is not only \emph{coordinate one}\footnote{Coordinate singularity is present only in some coordinates. This is different from the so-called \emph{physical singularity}, which is present in every choice of the coordinate system.}, the Ricci scalar can be calculated, see Fig. \ref{fig:N=3_Ricci}. Divergent Ricci scalar implies that singularity is physical. This can be seen from sections in $\chi$-direction drawn in Fig. \ref{fig:N=3_Ricci_section}, which at coordinate $(\lambda_d;\chi_d)$ diverges. This implies the singularity is \emph{physical}. 
+Due to metric tensor degeneracy, the space is not geodesically maximal. To see that the singularity is not only \emph{coordinate one}\footnote{Coordinate singularity is present only in some coordinates. This is different from the so-called \emph{physical singularity}, which is present in every choice of the coordinate system.} the Ricci scalar can be calculated, see Fig. \ref{fig:N=3_Ricci}. Divergent Ricci scalar implies that singularity is physical. This can be seen from sections in $\chi$-direction drawn in Fig. \ref{fig:N=3_Ricci_section}, which at coordinate $(\lambda_d;\chi_d)$ diverges. The coordinate independence implies the singularity is \emph{physical}. 
 
 
 \begin{figure}[H]
@@ -171,12 +171,12 @@ $$(\lambda(0);\chi(0))\eqqcolon (\lambda_i;\chi_i)$$
 $$\left(\der{\lambda(t)}{t};\der{\chi(t)}{t}\right)\Bigg|_{t=0} \eqqcolon (\lambda'_i;\chi'_i),$$
 where zero was set as initial time.
 
-One might also choose \emph{boundary valued geodesics} with fixed initial $(\lambda(0);\chi(0))$ and final position $(\lambda(T);\chi(T))$. Because the shape of geodesics in parametric space does not depend on the initial derivative, it does not depend on the speed of driving in the parametric space. Initial valued geodesics are therefore more advantageous to calculate because they have only three free parameters — the initial coordinates $(\lambda_i;\chi_i)$ and ratio $\lambda'_i/\chi'_i$. Another reason is purely numeric, which is that boundary-valued geodesics are calculated by numerous evolutions of initial valued geodesics with \emph{response initial parameter tweaking}. This makes the calculations slower (in this case the calculation time was $10$ to $100$ times longer).
+One might also choose \emph{boundary valued geodesics} with fixed initial $(\lambda(0);\chi(0))$ and final position $(\lambda(T);\chi(T))$. Because the shape of geodesics in parametric space does not depend on the initial derivative, it does not depend on the speed of driving in the parametric space. Initial valued geodesics are therefore more advantageous to calculate because they have only three free parameters — the initial coordinates $(\lambda_i;\chi_i)$ and ratio $\lambda'_i/\chi'_i$. Another reason is purely numeric, which is that boundary-valued geodesics are calculated by numerous evolutions of initial valued geodesics. Essentially the software evolves many initial valued geodesics and checks if the final boundary condition is satisfied. If not, the initial parameters are tweaked in response until it fits the boundary conditions. Calculating the boundary valued geodesics is generally much slower. In this case, the calculation time was $10$ to $100$ times longer.
 
 Results for geodesics starting at $(\lambda_i;\chi_i)=(0;0)$, $
-(\lambda',\chi')=(\cos\theta;\sin\theta)$ can be seen in Fig. \ref{fig:N=3_geodesics}. Other values $\theta$ result in a close approach of the geodesics to the singularity, making the calculation numerically unstable. The fact that geodesics lean toward singularities is well known from the theory of General Relativity (GR). The main difference here is that our "test particle" seems to be partially repulsed by the singularity. The analogy with GR would therefore fail because of the nonexistence of negative mass and gravitational dipoles. The better analogy is electromagnetism, which has a downside in the fact that geometrical formalism is not used so much in this theory. A comparison of these two intuitive examples can be seen in Fig. \ref{fig:geodesicsinGR}. The geodesic behavior is not caused only by the singularity but also by a large Ricci curvature leaning to the right from it. This means the distance across this \emph{\blueee{unreachable gap}}, marked by \blueee{blue line} in Fig. \ref{fig:N=3_geodesics}, is also large. This leads to a strong tendency of geodesics to go around the singularity rather than crossing it. The presence of singularities means that our ground state manifold is geodesically incomplete and according to Theorem \ref{thm:hopf-Rinow_modified} there exist some geodesically unreachable coordinates. From this goes the term \emph{\blueee{unreachable gap}}.
+(\lambda',\chi')=(\cos\theta;\sin\theta)$ can be seen in Fig. \ref{fig:N=3_geodesics}. Other values $\theta$ result in a close approach of the geodesics to the singularity, making the calculation numerically unstable. The fact that geodesics lean toward singularities is well known from the theory of General Relativity (GR). The main difference here is that our "test particle" seems to be partially repulsed by the singularity. The analogy with GR then fails because of the nonexistence of negative mass and gravitational dipoles. The better analogy is electromagnetism, which has a downside in the fact that geometrical formalism is not used so much in this theory. A comparison of these two intuitive examples can be seen in Fig. \ref{fig:geodesicsinGR}. The geodesic behavior is caused not only by the singularity but also by a large Ricci curvature leaning to the right from it. This means the distance across this \emph{\blueee{unreachable gap}}, marked by \blueee{blue line} in Fig. \ref{fig:N=3_geodesics}, is also large. The geodesics then tend to go around this line rather than crossing it. The presence of singularities means that our ground state manifold is geodesically incomplete, and according to Theorem \ref{thm:hopf-Rinow_modified}, there exist some geodesically unreachable coordinates. From this goes the term \emph{\blueee{unreachable gap}}.
 
-The fact that geodesics lean toward singularities and parts of parametric space with small energy level difference $\Delta E$ implies, that for general fidelity driving the geodesics cannot be advantageous in the case of fidelity. The excitation probability increases with smaller $\Delta E$ leading to a decrease in fidelity for such drivings.
+The fact that geodesics lean toward singularities and parts of parametric space with small energy level difference $\Delta E$ implies that for general fidelity driving, the geodesics cannot be advantageous in the case of fidelity. The excitation probability increases with smaller $\Delta E$ leading to a fidelity decrease for such drivings.
 
 
 \begin{figure}[H]
@@ -220,7 +220,7 @@ The fact that geodesics lean toward singularities and parts of parametric space 
 
 \subsection{5-dimensional Hamiltonian}
 
-Another special case is $N=5$. Between every neighboring energy levels, there are many degeneracies, as can be seen in Fig. \ref{fig:singularitiesBetweenEnergiesN=5}. $E_0=E_1$ degeneracy lies approximately on the line called \emph{separatrix} (see Chap. \ref{chap:infiniteDimensionLimit}) and other singularities are distributed around. The $\chi\leftrightarrow-\chi$ symmetry holds for all of them.
+Another special case is $N=5$. Between every two neighboring energy levels, there are many degeneracies, as can be seen in Fig. \ref{fig:singularitiesBetweenEnergiesN=5}. $E_0=E_1$ degeneracy lies approximately on the line called \emph{separatrix} (see Chap. \ref{chap:infiniteDimensionLimit}) and other singularities are distributed around. The $\chi\leftrightarrow-\chi$ symmetry holds for all of them.
 
 
 \begin{figure}[H]
@@ -249,7 +249,7 @@ The ground state manifold can be understood from the metric tensor determinant, 
 
 
 
-Geodesics for case $N=5$ starting at $(\lambda;\chi)=(0;0)$ have the characteristics already seen in the case $N=3$. However, when starting at $(1;0)$, the behavior around the singularity is not the only interesting thing happening. As can be seen in Fig. \ref{fig:geod10}, the geodesics tend to deflect themselves from the area with high curvature around the axis $\chi=0$, which happens even for other initial conditions, just that for $(0;0)$ it is not so apparent. Small irregularity can be seen in Fig. \ref{fig:N=3_geodesics} around point $(0.5;0.1)$. This implies that the geodesic equation might have at least two solutions as candidates for the globally shortest path between two points.\footnote{One might recall the effect of gravitational lensing here. In the presence of any mass in spacetime, there exist more possible light paths (solutions to the geodesic equation) between two points, differing by the initial condition.} 
+Geodesics for case $N=5$ starting at $(\lambda;\chi)=(0;0)$ have the characteristics already seen in the case $N=3$. However, when starting at $(1;0)$, the behavior around the singularity is not the only interesting thing happening. As can be seen in Fig. \ref{fig:geod10}, the geodesics tend to deflect themselves from the area with high curvature around the axis $\chi=0$, which happens even for other initial conditions, just that for $(0;0)$ it is not so apparent. Small irregularity can be seen in Fig. \ref{fig:N=3_geodesics} around point $(0.5;0.1)$ and means that the geodesic equation might have at least two solutions as candidates for the globally shortest path between two points.\footnote{One might recall the effect of gravitational lensing here. In the presence of any mass in spacetime, there exist more possible light paths (solutions to the geodesic equation) between two points, differing by the initial condition.} 
 
 
 
@@ -293,7 +293,7 @@ The \emph{separatrix} is line, where the minima of function $\H(x,p)$ lies. In t
     \chi^2=\frac{\lambda-1}{\lambda-2}.
     \label{eq:separatrix}
 \end{equation}
-The separatrix represents phase transition in the limit $N\rightarrow \infty$. In the case of the LMG model, the transition is of first-order everywhere, except in $(\lambda;\chi)=(1;0)$, where it has order two. The separatrix is shown in Fig. \ref{fig:transitionCompare} compared to minimum of $E_1-E_0$ function line, so-called \emph{minimal line}. With increasing $N$ it converges to separatrix.
+The separatrix represents phase transition in the limit $N\rightarrow \infty$. In the case of the LMG model, the transition is of first-order everywhere, except in $(\lambda;\chi)=(1;0)$, where it has order two. The separatrix is shown in Fig. \ref{fig:transitionCompare} compared to minimum of $E_1-E_0$ function line, so-called \emph{minimal line}. With increasing $N$, it converges to separatrix.
 
 \begin{figure}[H]
     \centering
@@ -314,7 +314,7 @@ The separatrix represents phase transition in the limit $N\rightarrow \infty$. I
 
 
 \section{General spectrum behavior}
-For higher dimensions we see the same characteristic behaviour in the energy spectrum sections, see the example in Fig. \ref{fig:N=10_energiesl}, \ref{fig:N=10_energies2} for $N=10$ case. It is not yet clear if there is a degeneracy between every two neighboring energy levels. From numerical observation on $N<10$ goes that there are $N-2$ crossings for $N$ odd and $N-3$ for $N$ even. Proving this generally is not an easy task, because the singularities might not exist on the real axis, therefore analytical proof needs to be provided.
+For higher dimensions we see the same characteristic behaviour in the energy spectrum sections, see the example in Fig. \ref{fig:N=10_energiesl}, \ref{fig:N=10_energies2} for $N=10$ case. It is not yet clear if there is a degeneracy between every two neighboring energy levels. From numerical observation on $N<10$ goes that there are $N-2$ crossings for $N$ odd and $N-3$ for $N$ even. Here the analytical proof needs to be found.
 
 
 \begin{figure}[H]
@@ -371,7 +371,7 @@ In the limit $N\rightarrow\infty$ they converge to
     \lim_{N\rightarrow \infty}(\lambda_r ;\pm\chi_r)&= \left(0,\frac{1}{\sqrt{2}}\right).
 \end{align*}
 
-This means that for $N\rightarrow \infty$, the separatrix is covered by singularities on $\lambda<0$.
+It is still unclear if in the limit $N\rightarrow \infty$ the singularities cover the part of separatrix with $\lambda<0$.
 
 \begin{figure}[H]
     \centering

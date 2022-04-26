@@ -1,6 +1,6 @@
 \chapter{Two level system}
 \label{chap:twoLevelSystem}
-Before we move to a more complicated Hamiltonian model, we investigate a simple two-level system. To understand the general behavior of fidelity on a Hamiltonian spectrum, two analytically solvable drivings — \emph{geodesic} and \emph{linear} — are investigated.
+A simple two-level system is investigated before moving to a more complicated Hamiltonian model. To understand the general behavior of fidelity on a Hamiltonian spectrum, two analytically solvable drivings — \emph{geodesic} and \emph{linear} — are investigated.
 
 \section{Hamiltonian}
 Let's have a Hamiltonian
@@ -84,7 +84,7 @@ and initial value
 
 
 \section{Harmonic oscillator correspondence}
-Coupled Equations \ref{eq:a1}, \ref{eq:a2} have no general analytical solution, with an exception to a few easy protocols $\mathcal J$. Before moving to some of these special cases, let's analyze this coupled system of equations generally.
+Coupled Equations \ref{eq:a1}, \ref{eq:a2} have no general analytical solution, with an exception to a few easy protocols $\mathcal J$. Before moving to some of these special cases, it is important to understand the general behavior of such coupled system of equations.
 
 N-dimensional Schr\"odinger equation can be rewritten to \emph{one differential equation of N$^{th}$ order with non-constant coefficients}. In our two-dimensional case, this equation corresponds to \emph{damped harmonic oscillator without external force}
 \begin{align}
@@ -103,7 +103,7 @@ Note that we used the condition $\Delta\neq 0$. Because the energy spectrum has 
 
 
 \subsubsection{Classical mechanics correspondence}
-When solving differential equations, it might be useful to know some analogy to classical mechanics Lagrangian. Even though it is not used any further, let's quickly find it.
+It might be useful to know some analogy to classical mechanics Lagrangian when solving differential equations. It is not used any further, but it can be useful for additional analysis.
 
 From the perspective of classical mechanics, meaning $x(t)\coloneqq a(t)$ is a position in a phase space $(\bm x,\bm p)$, we can write classical Lagrangian from Eq. \ref{eq:harmonicOscillator} as
 \begin{equation}
@@ -213,7 +213,7 @@ This reflects the rotational symmetry of the system. The change of reference fra
         \underbrace{\left(\expsm \redd{\HH(t)}\expsp+ \frac{\omega}{2}\hat\sigma_y\right)}_{\bluee{\tilde H(t)}}\bluee{\tilde\psi(t)}&=i\bluee{\tilde\psi'(t)}.
     \end{split}
 \end{equation}
-From this one can equivalently solve the Fidelity problem in this new coordinate system.
+One can equivalently solve the Fidelity problem in this new coordinate system.
 
 Hamiltonian in the moving frame is
 \begin{equation}
@@ -377,9 +377,9 @@ Corresponding differential equation of second order is
 which is of \emph{Weber type}\footnote{https://mathworld.wolfram.com/WeberDifferentialEquations.html} with Parabolic Cylinder functions\footnote{https://mathworld.wolfram.com/ParabolicCylinderFunction.html} as a solution, see \cite{felipe}. 
 
 \subsection{Dependence on time}
-The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. For $t\approx T/2$ Hamiltonian parameters change quickly which leads to fast state excitation. Then the Harmonic oscillator damping gets involved and oscillations are quickly going to zero, never disappearing entirely.
+The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. For $t\approx T/2$, the Hamiltonian spectrum changes quickly, which leads to fast state excitation. Then the Harmonic oscillator damping gets involved, and oscillations quickly go to zero, never disappearing entirely.
 
-We can see that the final fidelity decreases with a longer final time, which correctly leads to adiabatic driving, where $\lim_{T\rightarrow \infty} F^*=0$. For short final times we can observe so-called quench, $\lim_{T\rightarrow 0} F^*=1$. The interesting phenomenon in this image are the oscillations around $t=T/2$, for which the frequency increases with a longer final time. 
+We can see that the final fidelity decreases with a longer final time, which correctly leads to adiabatic driving, where $\lim_{T\rightarrow \infty} F^*=0$. For short final times we can observe so-called quench, $\lim_{T\rightarrow 0} F^*=1$. The interesting phenomena in this image are the oscillations around $t=T/2$, for which the frequency increases with a longer final time. 
 
 \begin{figure}[H]
     \centering 
@@ -415,7 +415,7 @@ therefore when $t$ is getting close to $T$ the fidelity is oscillating with  har
 
 
 \subsection{Final fidelity}
-Because the oscillations after fast parameter change in the Hamiltonian never disappear entirely, we must observe these oscillations even at the final time. \emph{Final fidelity} (meaning the fidelity at $t=T$) has dependence on $T$ as can be seen in Fig. \ref{fig:infidelityTfPlotLogLinCombined}. Because after the final time $T\approx 120$ the values are so small, we can observe some fine structure of the fidelity, along with numerical error artifacts.
+Because the oscillations after fast parameter change in the Hamiltonian never disappear entirely, we must observe these oscillations even at the final time. \emph{Final fidelity} (meaning the fidelity at $t=T$) has dependence on $T$ as can be seen in Fig. \ref{fig:infidelityTfPlotLogLinCombined}. Because after the final time $T\approx 120$, the values are small enough to observe some fine structure of the fidelity and numerical error artifacts.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlotLogLinCombined1.pdf}
@@ -472,7 +472,7 @@ The boundary between exponential and linear regime is not strict and can be seen
 
 
 
-To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} with \ref{fig:overcritical}. Here we see two regimes, one for $t<T_c$ and on for $T>T_c$. The important observation is that in the first case $F^*\neq 0$ for all $t>0$ and in the second case it touches zero periodically. The fidelity can be decomposed into a sum of two elements. The small oscillatory part, which can be explained by the theory of APT, and exponentially decreasing fidelity with final time, is describable by the Landau-Zener formula.
+To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} with \ref{fig:overcritical}. Here we see two regimes, one for $t<T_c$ and on for $T>T_c$. The important observation is that in the first case, $F^*\neq 0$ for all $t>0$, and in the second case, it touches zero periodically. The fidelity can be decomposed into a sum of two elements. The small oscillatory part, which the theory of APT can explain, and exponentially decreasing fidelity with final time, is described by the Landau-Zener formula.
 
 \begin{figure}[H]
     \centering
@@ -489,7 +489,7 @@ To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} 
 \end{figure}
 
 \subsubsection{Exponential and polynomial part, Landau-Zener and APT}
-Landau-Zener-Stueckelberg's theory provides the WKB approximation formula for the fidelity during some transport. The full form can be seen in \cite{nonadiabaticTransition}. In our case, only a simplified theorem is needed. First, let's review some definitions.
+Landau-Zener-Stueckelberg's theory provides the WKB approximation formula for the fidelity during some transport. The complete form can be seen in \cite{nonadiabaticTransition}. In our case, only a simplified theorem is needed. First, let's review some definitions.
 
 \begin{definition}[Diabatic coupling]
     Diabatic coupling functions are off-diagonal elements of two-level Hamiltonian. At avoided crossing, it is half of Hamiltonian eigenvalue difference,
@@ -532,7 +532,7 @@ The polynomial, or chaotic regime, can be explained using APT. It holds that
 \end{equation}
 for functions $b_n^{(1)}$ from Eq. \ref{eq:bnAPT}. For more details, see \cite{felipe}.
 
-The LZS approximation can be seen in Fig. \ref{fig:landauCompare}. The LZS and APT approximations give the leading order in corresponding regimes (omitting the oscillations) and intersect at time $T_c$. These two parts are not only a good approximation on both intervals, but if added together, they represent the whole fidelity curve with very high precision. It might not give a good mathematical meaning to add these two solutions together. But because the APT gives the infidelity of order $10^{-9}$, it creates a negligible error. The advantage is that by this process one gets a suitable approximation for the transitional regime.
+The LZS approximation can be seen in Fig. \ref{fig:landauCompare}. The LZS and APT approximations give the leading order in corresponding regimes (omitting the oscillations) and intersect at time $T_c$. These two parts are not only a good approximation on both intervals, but if added together, they represent the whole fidelity curve with very high precision. Adding these two solutions together might not give a good mathematical meaning. It can be done because the APT gives the infidelity of order $10^{-9}$, it creates a negligible error. The advantage is that one gets a suitable approximation for the transitional regime with this process.
 
 
 \begin{figure}[H]
@@ -555,7 +555,7 @@ The LZS approximation can be seen in Fig. \ref{fig:landauCompare}. The LZS and A
 % \end{equation}
 
 \subsection{Summary of linear driving}
-Now we understand all results separately, let's put it all together. In Fig. \ref{fig:AllInOne} the most important results can be seen. The difference between the close adiabatic regime and the fast regime at the end of the driving is if $F^*=0$. The chaotic regime is below $t=T$ line for $T<T_c$ and the chaotic cone is crossing this line around $t=T_c$.
+Now that we understand all results separately let's put it all together. In Fig. \ref{fig:AllInOne} the most important results can be seen. The difference between the close adiabatic regime and the fast regime at the end of the driving is if $F^*=0$. The chaotic regime is below $t=T$ line for $T<T_c$ and the chaotic cone is crossing this line around $t=T_c$.
 
 \begin{figure}[H]
     \centering 

@@ -5,20 +5,77 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Ashtekar and Schilling(1995)]{ashtekar_geometry_1995}
-A.~Ashtekar and T.~A. Schilling.
-\newblock Geometry of quantum mechanics.
-\newblock In \emph{{AIP} {Conference} {Proceedings}}, volume 342, pages
-  471--478, Cancun (Mexico), 1995. AIP.
-\newblock URL \url{http://aip.scitation.org/doi/abs/10.1063/1.48786}.
-\newblock ISSN: 0094243X.
+\bibitem[Loss and DiVincenzo(1998)]{dots}
+D.~Loss and D.~P. DiVincenzo.
+\newblock Quantum computation with quantum dots.
+\newblock \emph{Phys. Rev. A}, 57:\penalty0 120--126, Jan 1998.
+\newblock \doi{10.1103/PhysRevA.57.120}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.57.120}.
 
-\bibitem[Ashtekar and Schilling(1997)]{ashtekar_geometrical_1997}
-A.~Ashtekar and T.~A. Schilling.
-\newblock Geometrical {Formulation} of {Quantum} {Mechanics}.
-\newblock \emph{arXiv:gr-qc/9706069}, 1997.
-\newblock URL \url{http://arxiv.org/abs/gr-qc/9706069}.
-\newblock arXiv: gr-qc/9706069.
+\bibitem[Makhlin et~al.(2000)Makhlin, Schön, and Shnirman]{josephson}
+Y.~Makhlin, G.~Schön, and A.~Shnirman.
+\newblock Josephson junction based quantum computing.
+\newblock \emph{AAECC 10}, page 375–382, 2000.
+\newblock \doi{https://doi.org/10.1007/s002000050136}.
+
+\bibitem[Krtouš(2013)]{krtous}
+P.~Krtouš.
+\newblock Geometrické metody ve fyzice, studijní těxt k přednáškám
+  geometrické metody fyziky i a ii.
+\newblock 2013.
+
+\bibitem[Loring(2017)]{lu}
+W.~Tu Loring.
+\newblock \emph{Differential Geometry}.
+\newblock Springer International Publishing, 2017.
+\newblock \doi{10.1007/978-3-319-55084-8}.
+
+\bibitem[Fecko(2006)]{fecko}
+M.~Fecko.
+\newblock \emph{Differential Geometry and Lie Groups for Physicists}.
+\newblock Cambridge University Press, 2006.
+\newblock \doi{10.1017/CBO9780511755590}.
+
+\bibitem[Landau and Lifshitz(1981)]{landau}
+L.~D. Landau and L.~M. Lifshitz.
+\newblock \emph{Quantum Mechanics Non-Relativistic Theory, Third Edition:
+  Volume 3}.
+\newblock Butterworth-Heinemann, 3 edition, 1981.
+\newblock ISBN 0750635398.
+\newblock URL \url{http://www.worldcat.org/isbn/0750635398}.
+
+\bibitem[Petersen(1998)]{petersen}
+P.~Petersen.
+\newblock \emph{Riemannian Geometry}.
+\newblock Springer Verlag, 1998.
+\newblock ISBN 978-0-387-29403-2.
+
+\bibitem[Gorodski(2012)]{claudio}
+C.~Gorodski.
+\newblock \emph{An introduction to Riemannian geometry}.
+\newblock unpublished, 2012.
+\newblock URL
+  \url{https://www.ime.usp.br/~gorodski/teaching/mat5771-2016/gorodski-riem-geom-2012.pdf}.
+\newblock Preliminary version.
+
+\bibitem[Guti\'errez-Ruiz et~al.(2021)Guti\'errez-Ruiz, Gonzalez,
+  Ch\'avez-Carlos, Hirsch, and Vergara]{geometricTensorLipkin}
+D.~Guti\'errez-Ruiz, D.~Gonzalez, J.~Ch\'avez-Carlos, J.~G. Hirsch, and J.~D.
+  Vergara.
+\newblock Quantum geometric tensor and quantum phase transitions in the
+  lipkin-meshkov-glick model.
+\newblock \emph{Phys. Rev. B}, 103, May 2021.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.103.174104}.
+
+\bibitem[Kolodrubetz et~al.(2017)Kolodrubetz, Mehta, and
+  Polkovnikov]{kolodrubez}
+M.~Kolodrubetz, P.~Mehta, and A.~Polkovnikov.
+\newblock Geometry and non-adiabatic response in quantum and classical systems.
+\newblock \emph{Physics Reports}, 697:\penalty0 1--87, 2017.
+\newblock ISSN 0370-1573.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0370157317301989}.
+\newblock Geometry and non-adiabatic response in quantum and classical systems.
 
 \bibitem[Berry(1984)]{berry1984}
 M.~V. Berry.
@@ -40,13 +97,20 @@ M.~V. Berry.
   42\penalty0 (36), 2009.
 \newblock URL \url{https://doi.org/10.1088/1751-8113/42/36/365303}.
 
-\bibitem[Bukov et~al.(2019)Bukov, Sels, and Polkovnikov]{Bukov2019}
-M.~Bukov, D.~Sels, and A.~Polkovnikov.
-\newblock {Geometric Speed Limit of Accessible Many-Body State Preparation}.
-\newblock \emph{Physical Review X}, 9\penalty0 (1):\penalty0 011034, 2019.
-\newblock ISSN 2160-3308.
-\newblock URL \url{https://doi.org/10.1103/PhysRevX.9.011034
-  https://link.aps.org/doi/10.1103/PhysRevX.9.011034}.
+\bibitem[Uhlmann(1976)]{uhlman}
+A.~Uhlmann.
+\newblock The “transition probability” in the state space of a *-algebra.
+\newblock \emph{Reports on Mathematical Physics}, 9\penalty0 (2):\penalty0
+  273--279, 1976.
+\newblock ISSN 0034-4877.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/0034487776900604}.
+
+\bibitem[Tolkien(1977)]{lordOfTheRings}
+J.~R.~R. Tolkien.
+\newblock \emph{The Lord of the Rings}.
+\newblock Folio Society, 1977.
+\newblock ISBN 978-0458907502.
 
 \bibitem[Cheng(2013)]{cheng_quantum_2013}
 R.~Cheng.
@@ -55,92 +119,31 @@ R.~Cheng.
 \newblock \emph{arXiv:1012.1337 [math-ph, physics:quant-ph]}, 2013.
 \newblock URL \url{http://arxiv.org/abs/1012.1337}.
 
-\bibitem[Fecko(2006)]{fecko}
-M.~Fecko.
-\newblock \emph{Differential Geometry and Lie Groups for Physicists}.
-\newblock Cambridge University Press, 2006.
-\newblock \doi{10.1017/CBO9780511755590}.
+\bibitem[Sakurai and Napolitano(2020)]{sakurai}
+J.~J. Sakurai and Jim Napolitano.
+\newblock \emph{Modern Quantum Mechanics}.
+\newblock Cambridge University Press, 3 edition, 2020.
+\newblock \doi{10.1017/9781108587280}.
 
-\bibitem[Gorodski(2012)]{claudio}
-C.~Gorodski.
-\newblock \emph{An introduction to Riemannian geometry}.
-\newblock unpublished, 2012.
-\newblock URL
-  \url{https://www.ime.usp.br/~gorodski/teaching/mat5771-2016/gorodski-riem-geom-2012.pdf}.
-\newblock Preliminary version.
+\bibitem[Bukov et~al.(2019)Bukov, Sels, and Polkovnikov]{Bukov2019}
+M.~Bukov, D.~Sels, and A.~Polkovnikov.
+\newblock {Geometric Speed Limit of Accessible Many-Body State Preparation}.
+\newblock \emph{Physical Review X}, 9\penalty0 (1):\penalty0 011034, 2019.
+\newblock ISSN 2160-3308.
+\newblock URL \url{https://doi.org/10.1103/PhysRevX.9.011034
+  https://link.aps.org/doi/10.1103/PhysRevX.9.011034}.
 
-\bibitem[Guti\'errez-Ruiz et~al.(2021)Guti\'errez-Ruiz, Gonzalez,
-  Ch\'avez-Carlos, Hirsch, and Vergara]{geometricTensorLipkin}
-D.~Guti\'errez-Ruiz, D.~Gonzalez, J.~Ch\'avez-Carlos, J.~G. Hirsch, and J.~D.
-  Vergara.
-\newblock Quantum geometric tensor and quantum phase transitions in the
-  lipkin-meshkov-glick model.
-\newblock \emph{Phys. Rev. B}, 103, May 2021.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.103.174104}.
-
-\bibitem[Holstein and Primakoff(1940)]{holstein}
-T.~Holstein and H.~Primakoff.
-\newblock Field dependence of the intrinsic domain magnetization of a
-  ferromagnet.
-\newblock \emph{Phys. Rev.}, 58:\penalty0 1098--1113, Dec 1940.
-\newblock \doi{10.1103/PhysRev.58.1098}.
-
-\bibitem[Kolodrubetz et~al.(2017)Kolodrubetz, Mehta, and
-  Polkovnikov]{kolodrubez}
-M.~Kolodrubetz, P.~Mehta, and A.~Polkovnikov.
-\newblock Geometry and non-adiabatic response in quantum and classical systems.
-\newblock \emph{Physics Reports}, 697:\penalty0 1--87, 2017.
-\newblock ISSN 0370-1573.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0370157317301989}.
-\newblock Geometry and non-adiabatic response in quantum and classical systems.
-
-\bibitem[Krtouš(2013)]{krtous}
-P.~Krtouš.
-\newblock Geometrické metody ve fyzice, studijní těxt k přednáškám
-  geometrické metody fyziky i a ii.
-\newblock 2013.
-
-\bibitem[Landau and Lifshitz(1981)]{landau}
-L.~D. Landau and L.~M. Lifshitz.
-\newblock \emph{Quantum Mechanics Non-Relativistic Theory, Third Edition:
-  Volume 3}.
-\newblock Butterworth-Heinemann, 3 edition, 1981.
-\newblock ISBN 0750635398.
-\newblock URL \url{http://www.worldcat.org/isbn/0750635398}.
-
-\bibitem[Loring(2017)]{lu}
-W.~Tu Loring.
-\newblock \emph{Differential Geometry}.
-\newblock Springer International Publishing, 2017.
-\newblock \doi{10.1007/978-3-319-55084-8}.
-
-\bibitem[Loss and DiVincenzo(1998)]{dots}
-D.~Loss and D.~P. DiVincenzo.
-\newblock Quantum computation with quantum dots.
-\newblock \emph{Phys. Rev. A}, 57:\penalty0 120--126, Jan 1998.
-\newblock \doi{10.1103/PhysRevA.57.120}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.57.120}.
-
-\bibitem[Makhlin et~al.(2000)Makhlin, Schön, and Shnirman]{josephson}
-Y.~Makhlin, G.~Schön, and A.~Shnirman.
-\newblock Josephson junction based quantum computing.
-\newblock \emph{AAECC 10}, page 375–382, 2000.
-\newblock \doi{https://doi.org/10.1007/s002000050136}.
+\bibitem[Rigolin and Ortiz(2008)]{Rigolin2008}
+G.~Rigolin and G.~Ortiz.
+\newblock Beyond the quantum adiabatic approximation: Adiabatic perturbation
+  theory.
+\newblock \emph{Physical Review A 78, no. 5 (November 18, 2008): 052508}, 2008.
+\newblock URL \url{https://doi.org/10.1103/PhysRevA.78.052508}.
 
 \bibitem[Matus et~al.(2022)Matus, Cejnar, Stránský, and Střeleček]{felipe}
 F.~Matus, P.~Cejnar, P.~Stránský, and J.~Střeleček.
 \newblock unpublished.
 \newblock \emph{MFF UK}, 2022.
-
-\bibitem[Molitor(2013)]{molitor_exponential_2013}
-M.~Molitor.
-\newblock Exponential families, {Kahler} geometry and quantum mechanics.
-\newblock \emph{Journal of Geometry and Physics}, 70:\penalty0 54--80, 2013.
-\newblock ISSN 03930440.
-\newblock \doi{10.1016/j.geomphys.2013.03.015}.
-\newblock URL \url{http://arxiv.org/abs/1203.2056}.
-\newblock arXiv: 1203.2056.
 
 \bibitem[Nakamura(2012)]{nonadiabaticTransition}
 H.~Nakamura.
@@ -150,38 +153,35 @@ H.~Nakamura.
   2012.
 \newblock ISBN 978-981-4329-77-4.
 
-\bibitem[Petersen(1998)]{petersen}
-P.~Petersen.
-\newblock \emph{Riemannian Geometry}.
-\newblock Springer Verlag, 1998.
-\newblock ISBN 978-0-387-29403-2.
+\bibitem[Holstein and Primakoff(1940)]{holstein}
+T.~Holstein and H.~Primakoff.
+\newblock Field dependence of the intrinsic domain magnetization of a
+  ferromagnet.
+\newblock \emph{Phys. Rev.}, 58:\penalty0 1098--1113, Dec 1940.
+\newblock \doi{10.1103/PhysRev.58.1098}.
 
-\bibitem[Rigolin and Ortiz(2008)]{Rigolin2008}
-G.~Rigolin and G.~Ortiz.
-\newblock Beyond the quantum adiabatic approximation: Adiabatic perturbation
-  theory.
-\newblock \emph{Physical Review A 78, no. 5 (November 18, 2008): 052508}, 2008.
-\newblock URL \url{https://doi.org/10.1103/PhysRevA.78.052508}.
+\bibitem[Ashtekar and Schilling(1997)]{ashtekar_geometrical_1997}
+A.~Ashtekar and T.~A. Schilling.
+\newblock Geometrical {Formulation} of {Quantum} {Mechanics}.
+\newblock \emph{arXiv:gr-qc/9706069}, 1997.
+\newblock URL \url{http://arxiv.org/abs/gr-qc/9706069}.
+\newblock arXiv: gr-qc/9706069.
 
-\bibitem[Sakurai and Napolitano(2020)]{sakurai}
-J.~J. Sakurai and Jim Napolitano.
-\newblock \emph{Modern Quantum Mechanics}.
-\newblock Cambridge University Press, 3 edition, 2020.
-\newblock \doi{10.1017/9781108587280}.
+\bibitem[Ashtekar and Schilling(1995)]{ashtekar_geometry_1995}
+A.~Ashtekar and T.~A. Schilling.
+\newblock Geometry of quantum mechanics.
+\newblock In \emph{{AIP} {Conference} {Proceedings}}, volume 342, pages
+  471--478, Cancun (Mexico), 1995. AIP.
+\newblock URL \url{http://aip.scitation.org/doi/abs/10.1063/1.48786}.
+\newblock ISSN: 0094243X.
 
-\bibitem[Tolkien(1977)]{lordOfTheRings}
-J.~R.~R. Tolkien.
-\newblock \emph{The Lord of the Rings}.
-\newblock Folio Society, 1977.
-\newblock ISBN 978-0458907502.
-
-\bibitem[Uhlmann(1976)]{uhlman}
-A.~Uhlmann.
-\newblock The “transition probability” in the state space of a *-algebra.
-\newblock \emph{Reports on Mathematical Physics}, 9\penalty0 (2):\penalty0
-  273--279, 1976.
-\newblock ISSN 0034-4877.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/0034487776900604}.
+\bibitem[Molitor(2013)]{molitor_exponential_2013}
+M.~Molitor.
+\newblock Exponential families, {Kahler} geometry and quantum mechanics.
+\newblock \emph{Journal of Geometry and Physics}, 70:\penalty0 54--80, 2013.
+\newblock ISSN 03930440.
+\newblock \doi{10.1016/j.geomphys.2013.03.015}.
+\newblock URL \url{http://arxiv.org/abs/1203.2056}.
+\newblock arXiv: 1203.2056.
 
 \end{thebibliography}

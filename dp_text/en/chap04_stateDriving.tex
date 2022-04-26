@@ -91,7 +91,7 @@ This equation is essentially the system with constraint $\AA_t$. Its strength li
 
 % \subsection{The Hamiltonian gauge transformation}
 In section \ref{sec:derivationOfGeometricTensor} we introduced the gauge potential and stated its correspondence to transition probability, see Eq. \ref{eq:probabilityOfTransitionIsGauge}.
-\emph{Gauge transformations}, in classical mechanics called \emph{canonical}, can be defined such that they \emph{preserve Lagrangian of the system under local transformations from some Lie group}. This implies that Hamiltonian $\HH(\llambda)$ commutes with its canonically transformed version.\footnote{This can be easily reformulated to the world of classical physics, where the commutator is replaced by Poisson bracket.}
+\emph{Gauge transformations}, in classical mechanics called \emph{canonical}, can be defined such that they \emph{preserve Lagrangian of the system under local transformations from some Lie group}. This implies that Hamiltonian $\HH(\llambda)$ commutes with its canonically transformed version.
 
 To understand the meaning of gauge symmetries, let's first consider classical systems and then move to quantum mechanics.
 
@@ -123,8 +123,8 @@ Substituting this to relations of orthogonality \ref{eq:canonicalCommutationDelt
 If $\lambda$ is time parameter and $\A_t=-H$, equations \ref{eq:gaugeAsGeneratorOfMotion1},\ref{eq:gaugeAsGeneratorOfMotion2} are identical to the Hamilton equations
 \begin{equation}
 \begin{split}
-    \dot{q}^j&=-\{H,q^j\} = \pder{H}{p_j}\\
-    \dot{p}_j&=-\{H,p_j\} = -\pder{H}{q^j}.
+    \dot{q}^j&=\{q^j,H\} = \pder{H}{p_j}\\
+    \dot{p}_j&=\{p_j,H\} = -\pder{H}{q^j}.
 \end{split}
 \end{equation}
 Because the Hamiltonian is a generator of the movement in the phase space $(\bm{q},\bm{p})$, we can interpret $\A_t$ as the generators of the movement on $\M$. Another specific choice might be $\lambda=q^i$, which gives us the momentum components $\A_{q^i}=p_i$.
@@ -206,16 +206,15 @@ we get
 
 % It's good to point out, that we were applying tilde operators to non-tilde states et vice versa. This can be justified only if we consider $\M$ big enough to contain all necessary states, which can be achieved during the transformation.
 
-
-Full form of adiabatic potential in the theory of gauge symmetries is
+To see that the gauge potential performs transformation to non-exciting system, one can recall the general form of the adiabatic potential
 \begin{equation}
     \AA_\lambda=i\hbar \big(\partial_\lambda \U(\llambda)\big)\U^+(\llambda) + \U \AA \U^{-1}.
 \end{equation}
-The fact that second element is missing implies the zero space curvature
+The fact that second element is missing in Eq. \ref{eq:adiabaticPotential} implies the space has zero curvature. According to Eq. \ref{eq:geometricTensor}, the curvature is
 \begin{equation}
     \chi_{jk}(\llambda) = \partial_j A_k(\llambda)-\partial_k A_j(\llambda) = 0.
 \end{equation}
-This formula is the same as Eq. \ref{eq:geometricTensor}. This means that adiabatic gauge transformations are a class of gauge transformations with fidelity $F=1$, meaning that if the system is driven by Hamiltonian $\HH(\llambda)$ with fidelity $F<1$, there exists such adiabatic potential $\A_\lambda$, that driving of the same system using $\HH-\A_\lambda$ has unit fidelity.
+This means that adiabatic gauge transformations are a class of gauge transformations with $g_{jk}=\Re\chi_{jk}=0$ and according to Eq. \ref{eq:distanceOnM0}, fidelity $F=1$. Therefore the system is driven by Hamiltonian $\HH(\llambda)$ with fidelity $F<1$, there exists such adiabatic potential $\A_\lambda$, that driving of the same system using $\HH-\A_\lambda$ has unit fidelity.
 
 The adiabatic gauge potentials can then be understood as affine connections defining the parallel transport on fiber bundle, if we define covariant derivative as
 \begin{equation}

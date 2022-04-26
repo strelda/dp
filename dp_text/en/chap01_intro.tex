@@ -1,6 +1,6 @@
 \chapter{Mathematical introduction}
 \label{chap:mathIntro}
-The modern approach to the closed system dynamics is using \emph{differential geometry} formalism. Before we get to the quantum mechanics itself, let's introduce this formalism and recapitulate some definitions of this branch of mathematics. It is important to realize basic definitions and construction so that mathematical formalism can be used rigorously. More detailed notes can be found for example in \citet{krtous}, \citet{lu}, or \citet{fecko}. This chapter should lead the reader to a better understanding of physical theory in the following chapters but is not essential for performing the analysis of driving in Hamiltonian systems.
+The modern approach to the closed system dynamics is using \emph{differential geometry} formalism. Before we get to the quantum mechanics itself, let's introduce this formalism and recapitulate some definitions of this branch of mathematics. It is important to realize basic definitions and construction to use mathematical formalism rigorously. More detailed notes can be found for example in \citet{krtous}, \citet{lu}, or \citet{fecko}. This chapter should lead the reader to a better understanding of physical theory in the following chapters but is not essential for analyzing driving in Hamiltonian systems.
 \section{Essentials}
 Consider manifold $\M$ over the field of complex numbers $\mathbb C$. Curves on this manifold are parametrized by some real interval:
 $$\mathcal J:\R \supset (P_i,P_f) \rightarrow \M,\; \qquad \xi\mapsto \mathcal J(\xi) \text{  for } \xi \in (P_i,P_f) .$$ 
@@ -39,7 +39,7 @@ $$\bm\nabla=\bluee(\bluee{\bm e_1}, \bluee{\bm e_2},\bluee{\bm e_3}).$$
 During the whole thesis, the \emph{abstract indices} (written by Greek letters) and \emph{pointer indices} (written using Latin letters) is differentiated. Abstract indices show the rank of the tensor, meaning \emph{how many empty slots for contraction the tensor has}. Pointer indices extract specific number from the tensor. For example
 $$t^\mu_{\nu\kappa} \in \TT^1_2\M, \quad \text{ whilst for some }i,j,k\in\N: t^i_{jk}\in \mathbb C.$$
 
-For \emph{Tensor contraction}, the index notation is used. When it is clear what type of tensors we are operating with, the Object notation can be used, for example $t(\bluee{\bm u},\bluee{\bm v})\equiv t_{\mu\nu}\bluee{\bm u^\mu \bm v^\nu}$. The contraction can also be noted using contraction operator $\mathbf C$ when it is clear which indices are contracted, or when it does not matter which of them are.
+For \emph{Tensor contraction}, the index notation is used. When it is clear what type of tensors we are operating with, the Object notation can be used, for example $t(\bluee{\bm u},\bluee{\bm v})\equiv t_{\mu\nu}\bluee{\bm u^\mu \bm v^\nu}$. The contraction can also be noted using the contraction operator $\mathbf C$ when it is clear which indices are contracted or when it does not matter which of them are.
 
 Now we have the notation to define one strong structure on manifolds -- \emph{metric tensor}. 
 \begin{definition}[Metric tensor]
@@ -57,7 +57,7 @@ We often require \emph{differentiable metric tensor}, or at least almost everywh
 
 
 
-Vectors of tangent space to some manifold can be compared only within one such space. To perform some tensor operations we need to transport them to some common tangent space. This can be done using the \emph{parallel transport} which is connected to the notion of \emph{covariant derivative}.
+Vectors of tangent space to some manifold can be compared only within one such space, and for that, they need to be transported to some common tangent space. The transport can be done using \emph{parallel transport} which is connected to the notion of \emph{covariant derivative}.
 
 \begin{definition}[Covariant derivative]
 \label{def:covariantDerivative}
@@ -140,7 +140,7 @@ The vector $\bluee{\bm v}\in \T_P\M$ is said to be parallel transported along cu
 
 \section{Fiber bundle}
 \label{sec:bundleDef}
-Sometimes one needs to add additional structure to every point on the manifold. These structures are usually imagined like fibers going from the manifold, similarly to the hair going from your head.
+Sometimes one needs to add additional structure to every point on the manifold. These structures are usually imagined like fibers from the manifold, similar to your head's hair.
 
 At every point of the manifold we introduced a tensor space. This structure can be described by so-called \emph{fiber bundles}.
 \begin{definition}[Fiber bundle]
@@ -185,7 +185,7 @@ At every point of the manifold we introduced a tensor space. This structure can 
 \end{definition}
 Because the projections of products are open maps, $\pi: \mathcal{E}\rightarrow \mathcal{N}$ must be an open map. The manifolds at every point $x\in \mathcal{F}$ are all locally diffeomorphic to each other.
 
-With the analogy to the hair on your head, one can say that $\mathcal N$ is the head, $\mathcal F$ is the hair, $\pi$ applied on any point on hair returns the point on your head and $\mathcal E$ is the head with all the hairs. This analogy holds only if all of your hairs are the same.
+With the analogy to the hair on your head, one can say that $\mathcal N$ is the head, $\mathcal F$ is the hair, $\pi$ applied on any point on hair returns the point on the head, and $\mathcal E$ is the head with all the hairs. This analogy holds only if all hairs are the same.
 
 
 % \section{\red{Vector Bundle}}
@@ -266,10 +266,10 @@ With the analogy to the hair on your head, one can say that $\mathcal N$ is the 
 Some Riemannian geometry theorems have implications in the theory of quantum driving on ground state manifolds. First, some basic definitions are needed.
 
 \begin{definition}[Riemannian manifold]
-    Manifold is called Riemannian, iff it's equipped with a positive definite metric tensor.
+    Manifold is called Riemannian iff it is equipped with a positive definite metric tensor.
 \end{definition}
 \begin{definition}[Connected manifold]
-    Manifold is connected, iff the distance between two points is the infimum of the lengths of curves joining the two points.
+    Manifold is connected iff the distance between two points is the infimum of the lengths of curves joining the two points.
 \end{definition}
 \begin{definition}[Compact manifold]
     Manifold is said to be compact if its every open cover has a finite subcover.
@@ -279,9 +279,9 @@ Some Riemannian geometry theorems have implications in the theory of quantum dri
 \end{definition}
 This condition holds if the space does not contain any singularities. It is a coordinate-independent notion.
 \begin{definition}[Geodesic maximality]
-    A manifold is said to be geodesically maximal if it is either geodesically complete, or every non-complete geodesic (such that cannot be extended to infinite values of their affine parameter) ends in a singularity.
+    A manifold is said to be geodesically maximal if it is either geodesically complete or every non-complete geodesic (such that cannot be extended to infinite values of their affine parameter) ends in a singularity.
 \end{definition}
-Geodesic maximality is a coordinate-dependent notion, only if the manifold is geodesically complete.
+Geodesic maximality is a coordinate-dependent notion only if the manifold is geodesically complete.
 
 
 \begin{thm}[Von Neumann-Wigner]\citep{landau}[page 305]
@@ -308,7 +308,7 @@ Geodesic maximality is a coordinate-dependent notion, only if the manifold is ge
 
     For connected Riemannian manifold $\M$ with the metric $g$, any two points on $\M$ can be joined with a minimizing geodesic.
 \end{thm}
-This generally means that in a space with singularity exists such points, which cannot be connected with the rest of the manifold using geodesics. In General relativity, this area is for example below the event horizon of black holes.
+This generally means that in a space with singularity exists such points, which cannot be connected with the rest of the manifold using geodesics. In General relativity, this area is, for example, below the event horizon of black holes.
 
 \begin{thm}\citep{claudio}[Chapter 3]
     \label{thm:compact}

@@ -18,7 +18,7 @@
 \contentsline {chapter}{\numberline {3}Quantum state driving}{24}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Counter-diabatic driving}{25}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Classical gauge potential}{26}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Quantum gauge potential}{27}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}Quantum gauge potential}{26}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Driving on the ground state manifold}{28}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Minimizing the distance on state manifolds}{28}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Minimizing the energy variance}{29}{subsection.3.2.2}%
