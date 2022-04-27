@@ -374,7 +374,7 @@ Corresponding differential equation of second order is
 \begin{equation}
     a''(t)+\omega^2(t) a(t)=0,
 \end{equation}
-which is of \emph{Weber type}\footnote{https://mathworld.wolfram.com/WeberDifferentialEquations.html} with Parabolic Cylinder functions\footnote{https://mathworld.wolfram.com/ParabolicCylinderFunction.html} as a solution, see \cite{felipe}. 
+which is of \emph{Weber type}\footnote{https://mathworld.wolfram.com/WeberDifferentialEquations.html} with Parabolic Cylinder functions\footnote{https://mathworld.wolfram.com/ParabolicCylinderFunction.html} as a solution, see \citet{felipe}. 
 
 \subsection{Dependence on time}
 The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. For $t\approx T/2$, the Hamiltonian spectrum changes quickly, which leads to fast state excitation. Then the Harmonic oscillator damping gets involved, and oscillations quickly go to zero, never disappearing entirely.
@@ -489,7 +489,7 @@ To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} 
 \end{figure}
 
 \subsubsection{Exponential and polynomial part, Landau-Zener and APT}
-Landau-Zener-Stueckelberg's theory provides the WKB approximation formula for the fidelity during some transport. The complete form can be seen in \cite{nonadiabaticTransition}. In our case, only a simplified theorem is needed. First, let's review some definitions.
+Landau-Zener-Stueckelberg's theory provides the WKB approximation formula for the fidelity during some transport. The complete form can be seen in \citet{nonadiabaticTransition}. In our case, only a simplified theorem is needed. First, let's review some definitions.
 
 \begin{definition}[Diabatic coupling]
     Diabatic coupling functions are off-diagonal elements of two-level Hamiltonian. At avoided crossing, it is half of Hamiltonian eigenvalue difference,
@@ -530,7 +530,7 @@ The polynomial, or chaotic regime, can be explained using APT. It holds that
     \log(F^*)=\log(T^{-2})+\log\left(\sum_{i=1}^n |b_n^{(1)}(T)|^2\right),
     \label{eq:polynomialPart}
 \end{equation}
-for functions $b_n^{(1)}$ from Eq. \ref{eq:bnAPT}. For more details, see \cite{felipe}.
+for functions $b_n^{(1)}$ from Eq. \ref{eq:bnAPT}. For more details, see \citet{felipe}.
 
 The LZS approximation can be seen in Fig. \ref{fig:landauCompare}. The LZS and APT approximations give the leading order in corresponding regimes (omitting the oscillations) and intersect at time $T_c$. These two parts are not only a good approximation on both intervals, but if added together, they represent the whole fidelity curve with very high precision. Adding these two solutions together might not give a good mathematical meaning. It can be done because the APT gives the infidelity of order $10^{-9}$, it creates a negligible error. The advantage is that one gets a suitable approximation for the transitional regime with this process.
 

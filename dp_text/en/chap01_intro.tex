@@ -1,16 +1,16 @@
 \chapter{Mathematical introduction}
 \label{chap:mathIntro}
-The modern approach to the closed system dynamics is using \emph{differential geometry} formalism. Before we get to the quantum mechanics itself, let's introduce this formalism and recapitulate some definitions of this branch of mathematics. It is important to realize basic definitions and construction to use mathematical formalism rigorously. More detailed notes can be found for example in \citet{krtous}, \citet{lu}, or \citet{fecko}. This chapter should lead the reader to a better understanding of physical theory in the following chapters but is not essential for analyzing driving in Hamiltonian systems.
+The modern approach to the closed system dynamics is using \emph{differential geometry} formalism. Before we get to the quantum mechanics itself, let's introduce this formalism and recapitulate some definitions of this branch of mathematics. It is important to realize basic definitions and construction to use mathematical formalism rigorously. More detailed notes can be found for example in notes by \citet{krtous}, \citet{lu}, or \citet{fecko}. This chapter should lead the reader to a better understanding of physical theory in the following chapters but is not essential for analyzing driving in Hamiltonian systems.
 \section{Essentials}
 Consider manifold $\M$ over the field of complex numbers $\mathbb C$. Curves on this manifold are parametrized by some real interval:
 $$\mathcal J:\R \supset (P_i,P_f) \rightarrow \M,\; \qquad \xi\mapsto \mathcal J(\xi) \text{  for } \xi \in (P_i,P_f) .$$ 
 The space of functions is $\FM\equiv\{f:\M\rightarrow \C\}$.
 
 
-To define \bluee{\emph{vectors}} on $\M$, we need to make sense of the \emph{direction}. The direction is defined using curves $\mathcal J_i$ satisfying 
+To define \bluee{\emph{vectors}} on $\M$, it is important to have some meaning of the \emph{direction}. The direction is defined using curves $\mathcal J_i$ satisfying 
 $$\mathcal J_1(0)=\mathcal J_2(0)\equiv P$$
 $$\der{}{t}x^i(\mathcal J_1(t))\big|_{t=0}=\der{}{t}x^i(\mathcal J_2(t))\big|_{t=0}.$$
-Taking the equivalence class created by these two rules, sometimes noted as $\bluee{[\mathcal J]}=\bluee v$, we have an element of the tangent space to $\M$. We use standard notation for the \bluee{tangent space of $\M$} in some point $P\in\M$ as $\bluee{\T_P\M}$. Cotangent space is denoted as $\blueee{\T^*_P\M}$. Unifying all \bluee{tangent}, resp. cotangent spaces over all $x$ we get tangent and cotangent bundle, \bluee{$\TT\M$} and \blueee{$\TT^*\M$} respective. To generalize this notation to higher tensors, we denote $\bluee{\T_P\M}\in \TT_P^{\bluee{1}}\M$, $\blueee{\T^*_P\M}\in \TT_{P\blueee{1}}\M$. This gives us the possibility to increase the order, leading to $p-$times \bluee{contravariant} and $q-$times \blueee{covariant} tensors. These are usually denoted $\TT^{\bluee p}_{\blueee q} \M$. Tensor space in point $P\in\M$ is denoted ${\TT_P}^{\bluee p}_{\blueee q} \M$
+Taking the equivalence class created by these two rules, sometimes noted as $\bluee{[\mathcal J]}$, we have an element of the tangent space to $\M$. We use standard notation for the \bluee{tangent space of $\M$} in some point $P\in\M$ as $\bluee{\T_P\M}$. Cotangent space is denoted as $\blueee{\T^*_P\M}$. Unifying all \bluee{tangent}, resp. cotangent spaces over all $x$ we get tangent and cotangent bundle, \bluee{$\TT\M$} and \blueee{$\TT^*\M$} respective. To generalize this notation to higher tensors, we denote $\bluee{\TT\M}\equiv\TT^{\bluee{1}}\M$, $\blueee{\TT^*\M}\equiv \TT_{\blueee{1}}\M$. This gives us the possibility to increase the order, leading to $p-$times \bluee{contravariant} and $q-$times \blueee{covariant} tensors. These are denoted $\TT^{\bluee p}_{\blueee q} \M$. Tensor space in point $P\in\M$ is denoted ${\TT_P}^{\bluee p}_{\blueee q} \M$.
 Using the congruence of curves on $\M$, the expression 
 \begin{equation}
     \bluee{\der{}{\xi}}f\circ \mathcal J(\xi)\bluee{\Big|_{\xi=0}}
@@ -36,10 +36,9 @@ and in basis $\bluee{\bm e_i} \equiv \bluee{\partial/\partial x^i}$ it becomes
 $$\bm\nabla=\bluee(\bluee{\bm e_1}, \bluee{\bm e_2},\bluee{\bm e_3}).$$
 
 
-During the whole thesis, the \emph{abstract indices} (written by Greek letters) and \emph{pointer indices} (written using Latin letters) is differentiated. Abstract indices show the rank of the tensor, meaning \emph{how many empty slots for contraction the tensor has}. Pointer indices extract specific number from the tensor. For example
+During the whole thesis, the \emph{abstract indices} (written by Greek letters) and \emph{pointer indices} (written using Latin letters) are differentiated. Abstract indices show the rank of the tensor, meaning \emph{how many empty slots for contraction the tensor has}. Pointer indices extract specific number from the tensor. For example
 $$t^\mu_{\nu\kappa} \in \TT^1_2\M, \quad \text{ whilst for some }i,j,k\in\N: t^i_{jk}\in \mathbb C.$$
-
-For \emph{Tensor contraction}, the index notation is used. When it is clear what type of tensors we are operating with, the Object notation can be used, for example $t(\bluee{\bm u},\bluee{\bm v})\equiv t_{\mu\nu}\bluee{\bm u^\mu \bm v^\nu}$. The contraction can also be noted using the contraction operator $\mathbf C$ when it is clear which indices are contracted or when it does not matter which of them are.
+The summation over abstract and Latin indices has the same meaning. For \emph{Tensor contraction}, the index notation is used. When it is clear what type of tensors we are operating with, the Object notation can be used, for example $t(\bluee{\bm u},\bluee{\bm v})\equiv t_{\mu\nu}\bluee{\bm u^\mu \bm v^\nu}$. The contraction can also be noted using the contraction operator $\mathbf C$ when it is clear which indices are contracted or when it does not matter which of them are.
 
 Now we have the notation to define one strong structure on manifolds -- \emph{metric tensor}. 
 \begin{definition}[Metric tensor]
@@ -49,7 +48,7 @@ If the 2-form $g_{\mu\nu}\in\TT^0_2\M$ is
     \item hermitian: $\forall \bluee{\bm v,\bm w}\in \bluee{\TT^1\M}: \; g(\bluee{\bm v},\bluee{\bm w})=g(\bluee{\bm w},\bluee{\bm v})^*$,
     \item non-degenerate: $\forall \bluee{\bm v}\in\bluee{\TT^1\M}$ the function $\bluee{\bm w}\mapsto g(\bluee{\bm v},\bluee{\bm w})$ is not identically zero,
 \end{itemize} 
-we call $g_{\mu\nu}$ a \emph{metric tensor}. The $^*$ marks complex conjugation.
+we call $g_{\mu\nu}$ a \emph{metric tensor}. The \emph{star} $^*$ marks complex conjugation.
 \end{definition}
 
 We often require \emph{differentiable metric tensor}, or at least almost everywhere \footnote{Almost everywhere means \emph{with an exception to the submanifold of zero measure}.}. That assures that \emph{covariant derivatives} and \emph{parallel transport} are well-defined almost everywhere. 
@@ -63,7 +62,7 @@ Vectors of tangent space to some manifold can be compared only within one such s
 \label{def:covariantDerivative}
     $\bm D_{\bluee{\bm v}}$ is called the covariant derivative in a direction $\bluee{\bm v} \in \bluee{\T_P\M}$, if $\forall f\in\FM, \; \bm A,\bm B\in \TT^{\bluee p}_{\blueee q} \M,\; \alpha\in\C: $
     \begin{itemize}
-        \item $\bm D_{\bluee{\bm v}}:\; \TT^{\bluee p}_{\blueee q} \M \rightarrow {\TT_P}^{\bluee p}_{\blueee q} \M$
+        \item $\bm D_{\bluee{\bm v}}:\; \TT^{\bluee p}_{P\blueee q} \M \rightarrow {\TT}^{\bluee p}_{\blueee q} \M$
         \item $\bm D_{f\bluee{\bm v}}\bm A=f\bm D_{\bluee{\bm v}} $ \emph(ultralocality in a direction\emph)
         \item $\bm D_{\bluee{\bm v}}(\bm A+\alpha \bm B)=\bm D_{\bluee{\bm v}}\bm A+\alpha\bm D_{\bluee{\bm v}}\bm B$ \emph(linearity in argument\emph)
         \item $\bm D_{\bluee{\bm v}}(\bm{AB})=(\bm D_{\bluee{\bm v}}\bm A)\bm B+\bm A(\bm D_{\bluee{\bm v}}\bm B)$ \emph(Leibniz rule\emph)
@@ -114,15 +113,15 @@ This means that the parallel transport takes a tensor at some ${\TT_{P_i}}^{\blu
 %     is a pseudoderivative from Def. \ref{def:pseudoderivative}.
 % \end{thm}
 
-Another object which is needed for computing the covariant derivative is \emph{affine connection}. It is generally defined as the difference between covariant and coordinate derivative
+Another object needed for calculating the covariant derivative is \emph{affine connection}. It is generally defined as the difference between covariant and coordinate derivative
 $\bm \Gamma\coloneqq \bm D-\bm\partial$. Because this definition requires some additional theory, only the \emph{connection on metric spaces} is provided here.
 
 \begin{definition}[Connection and Christoffel symbols]
 The Affine connection on metric spaces can be defined as
     \begin{equation}
-        \Gamma^{\alpha}_{\mu\nu} \coloneqq \frac{1}{2}g^{\alpha \beta}\left(g_{\beta\mu,\nu}+g_{\nu\beta,\mu}-g_{\mu\nu,\beta}\right),
+        \Gamma^{\alpha}_{\;\mu\nu} \coloneqq \frac{1}{2}g^{\alpha \beta}\left(g_{\beta\mu,\nu}+g_{\nu\beta,\mu}-g_{\mu\nu,\beta}\right),
     \end{equation}
-    where we used comma notation for the coordinate derivative. Its elements are called the \emph{Christoffel symbols}.
+    where \emph{comma notation} for coordinate derivative is used. Its elements are called the \emph{Christoffel symbols}.
 \end{definition}
     The covariant derivative of a vector $\bluee{\bm a}\in \T_P\M$ for manifold with coordinates $x^\mu$ can be expressed as
     \begin{equation}
@@ -140,9 +139,7 @@ The vector $\bluee{\bm v}\in \T_P\M$ is said to be parallel transported along cu
 
 \section{Fiber bundle}
 \label{sec:bundleDef}
-Sometimes one needs to add additional structure to every point on the manifold. These structures are usually imagined like fibers from the manifold, similar to your head's hair.
-
-At every point of the manifold we introduced a tensor space. This structure can be described by so-called \emph{fiber bundles}.
+Sometimes one needs to add additional structure to every point on the manifold. At every point of the manifold we introduced a tensor space. This structure can be described by so-called \emph{fiber bundles}.
 \begin{definition}[Fiber bundle]
     \label{def:fiberBundle}
     Structure 
@@ -185,7 +182,7 @@ At every point of the manifold we introduced a tensor space. This structure can 
 \end{definition}
 Because the projections of products are open maps, $\pi: \mathcal{E}\rightarrow \mathcal{N}$ must be an open map. The manifolds at every point $x\in \mathcal{F}$ are all locally diffeomorphic to each other.
 
-With the analogy to the hair on your head, one can say that $\mathcal N$ is the head, $\mathcal F$ is the hair, $\pi$ applied on any point on hair returns the point on the head, and $\mathcal E$ is the head with all the hairs. This analogy holds only if all hairs are the same.
+These structures are usually imagined like fibers from the manifold, similar to your head's hair. One can imagine the $\mathcal N$ as head, $\mathcal F$ the hair, $\pi$ applied on any point on hair returns the point on the head, and $\mathcal E$ is the head with all the hairs. This analogy holds only if all hairs are the same.
 
 
 % \section{\red{Vector Bundle}}
@@ -263,13 +260,13 @@ With the analogy to the hair on your head, one can say that $\mathcal N$ is the 
 % \end{equation}
 
 \section{Riemannian geometry}
-Some Riemannian geometry theorems have implications in the theory of quantum driving on ground state manifolds. First, some basic definitions are needed.
+Some Riemannian geometry theorems have implications in the theory of quantum driving. First, some basic definitions are needed.
 
 \begin{definition}[Riemannian manifold]
-    Manifold is called Riemannian iff it is equipped with a positive definite metric tensor.
+    Manifold is called Riemannian if it is equipped with a positive definite metric tensor.
 \end{definition}
 \begin{definition}[Connected manifold]
-    Manifold is connected iff the distance between two points is the infimum of the lengths of curves joining the two points.
+    Manifold is connected if the distance between two points is the infimum of the lengths of curves joining the two points.
 \end{definition}
 \begin{definition}[Compact manifold]
     Manifold is said to be compact if its every open cover has a finite subcover.
@@ -284,33 +281,33 @@ This condition holds if the space does not contain any singularities. It is a co
 Geodesic maximality is a coordinate-dependent notion only if the manifold is geodesically complete.
 
 
-\begin{thm}[Von Neumann-Wigner]\citep{landau}[page 305]
+\begin{thm}[Von Neumann-Wigner]\citet[page 305]{landau}
     \label{thm:n-2}
 
     This, sometimes called the Non-Crossing Theorem, states that the eigenvalues of the Hermitian matrix driven by $N$ continuous real parameters forms at a maximum $(N-2)$-dimensional submanifold.
 \end{thm}
 
 
-\begin{thm}[Hopf-Rinow Theorem]\citep{petersen}[page 125]
+\begin{thm}[Hopf-Rinow Theorem]\citet[page 125]{petersen}
     \label{thm:hopf-Rinow}
 
 
     For connected Riemannian manifold $\M$ with the metric $g$, following are equivalent:
     \begin{itemize}
-        \item $(\M,g)$ is geodesically complete, i.e. all geodesics are infinite
-        \item $(\M,g)$ is geodesically complete at some point $P$, i.e. geodesics going through $P$ are infinite
-        \item $(\M,g)$ satisfies the Heine-Borel property, i.e. every closed bounded set is compact
+        \item $(\M,g)$ is geodesically complete, i.e. all geodesics are infinite,
+        \item $(\M,g)$ is geodesically complete at some point $P$, i.e. geodesics going through $P$ are infinite,
+        \item $(\M,g)$ satisfies the Heine-Borel property, i.e. every closed bounded set is compact,
         \item $(\M,g)$ is complete as a metric space.
     \end{itemize}
 \end{thm}
-\begin{thm}[Modified Hopf-Rinow Theorem]\citep{claudio}[Chapter 3]
+\begin{thm}[Modified Hopf-Rinow Theorem]\citet[Chapter 3]{claudio}
     \label{thm:hopf-Rinow_modified}
 
     For connected Riemannian manifold $\M$ with the metric $g$, any two points on $\M$ can be joined with a minimizing geodesic.
 \end{thm}
 This generally means that in a space with singularity exists such points, which cannot be connected with the rest of the manifold using geodesics. In General relativity, this area is, for example, below the event horizon of black holes.
 
-\begin{thm}\citep{claudio}[Chapter 3]
+\begin{thm}\citet[Chapter 3]{claudio}
     \label{thm:compact}
 
     A compact Riemannian manifold is geodesically complete.
@@ -320,7 +317,6 @@ This generally means that in a space with singularity exists such points, which 
 
 
 
-\section{Geometry in 2 dimensions}
 An important tensor in differential geometry is the \emph{Riemann tensor}
 \begin{equation}
     R^\alpha_{\;\;\beta\gamma\delta}\coloneqq \Gamma^\alpha_{\;\;\beta\delta,\gamma}-\Gamma^\alpha_{\;\;\beta\gamma,\delta}+\Gamma^\mu_{\;\;\beta\delta}\Gamma^\alpha_{\;\;\mu\gamma}-\Gamma^\mu_{\;\;\beta\gamma}\Gamma^\alpha_{\;\;\mu\delta}.
@@ -334,7 +330,10 @@ which is second order symmetric tensor.
 \begin{equation}
     R\coloneqq R^\mu_{\;\;\mu}.
 \end{equation}
-This can be simplified for 2-dimensional manifold as
+
+
+\section{Geometry in 2 dimensions}
+Ricci scalar can be simplified for 2-dimensional manifold as
 \begin{equation}
     R=\frac{2}{g_{22}}\left(\Gamma^1_{\;22,1}-\Gamma^1_{\;12,2}+\Gamma^1_{\;11}\Gamma^1_{\;22}+\Gamma^1_{\;12}\Gamma^2_{\;22}-\Gamma^1_{\;21}\Gamma^1_{\;12}-\Gamma^1_{\;22}\Gamma^2_{\;12}\right).
     \label{eq:Ricci2D}
