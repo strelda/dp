@@ -21,3 +21,24 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QInstitute of Particle Nuclear Physics Ústav jaderné a čásicové fyziky Physics Fyzika Theoretical physics Teoretická fyzika\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qprof.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRNDr.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QPavel Cejnar, Dr., DSc.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QI hereby thank Michal Grňo, Jakub Novotný, and Martin Zika for allowing me to sort thoughts in this way.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qadiabaticity driving fidelity Lipkin-Meshkov-Glick quench\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q[autostyle, english = american]csquotes \"\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q[autostyle, english = american]csquotes \"\\E$"}
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\QWe can set \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, leading for \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q to \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q Plugging to Equation \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and considering \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, we get metric on a ground state manifold \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\QFor any \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q (the dependence on \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q in notation is omitted), we get \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qwhere \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"SENT_START_NUM","sentence":"^\\Q7].\\E$"}
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\QThe metric tensor can then be expressed as \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q The Berry curvature is \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\QOn the ground state manifold \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, the Berry connection is defined as the mean value of gauge potential \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"THREE_NN","sentence":"^\\QThese points are called diabolic because of the energy spectrum shape in the parametric space.\\E$"}
+{"rule":"TOO_LONG_SENTENCE","sentence":"^\\QThe slow change of the driving parameters of the Hamiltonian \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q in a sense that it does not excite the system and allows the system to return to the same energetic state after circulation around any closed path on the ground state manifold with fidelity \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\QBecause \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, we get \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"TOO_LONG_SENTENCE","sentence":"^\\QFor any fast-forward Hamiltonian \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q driven along one dimensional path \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q using time \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q as parametrization, there exist driving speed, for which the fidelity is close to one, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, and the energy fluctuations \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, averaged along the path, are larger than the geodesic length \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\QHere the fidelity \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and distance \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q are \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\QNow we have explicit formulas for adiabatic potential in two systems \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"PUNCTUATION_PARAGRAPH_END","sentence":"^\\QFidelity during the transport is then \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QDIPLOMOVÁ PRÁCE\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qto 0.45 # 0.5em[t]0.45 # Vedoucí diplomové práce: Studijní program: Studijní obor:\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qto 0.45 # 0.5em[t]0.45 # Supervisor of the master thesis: Study programme: Study branch:\\E$"}

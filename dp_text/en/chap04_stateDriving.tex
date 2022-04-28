@@ -9,9 +9,9 @@ inducing the change in Hamiltonian $\HH(\llambda)$ and consequently in $\ket{\ps
 
 Often needs to achieve as high fidelity as possible during the driving, meaning avoiding the state excitation. If $F=1$, we speak about \emph{unit fidelity driving} or \emph{adiabatic driving} and $\mathcal J$ is called the \emph{unit fidelity protocol}. Higher fidelity can be achieved by many methods; three of them are
 \begin{itemize}
-    \item close adiabatic driving -- changing the driving parameters $\llambda$ slowly, so the system has plenty of time to collapse into the ground state,
-    \item path variation -- varying the driving trajectory $\mathcal J$, avoiding the topological defects on manifolds, which would excite the system,
-    \item counter-diabatic driving -- countering the excitation by adding some element to the Hamiltonian, making the fidelity precisely $1$.\footnote{There is a nice analogy with driving a toy car \gray{(a quantum state)} in a curved terrain \gray{(a Hilbert space)}. To avoid the car jumping on the hills \gray{(the state excitation)}, you can either drive slowly \gray{(close adiabatic driving)}, or you can go around the hills \gray{(vary the path)}, or you can alter the space for a specific driving \gray{(add a counter-diabatic element)}, such that it exactly copies the jumping trajectory, therefore the car does not leave the ground.}
+    \item close adiabatic driving — changing the driving parameters $\llambda$ slowly, so the system has plenty of time to collapse into the ground state,
+    \item path variation — varying the driving trajectory $\mathcal J$, avoiding the topological defects on manifolds, which would excite the system,
+    \item counter-diabatic driving — countering the excitation by adding some element to the Hamiltonian, making the fidelity precisely $1$.\footnote{There is a nice analogy with driving a toy car \gray{(a quantum state)} in a curved terrain \gray{(a Hilbert space)}. To avoid the car jumping on the hills \gray{(the state excitation)}, you can either drive slowly \gray{(close adiabatic driving)}, or you can go around the hills \gray{(vary the path)}, or you can alter the space for a specific driving \gray{(add a counter-diabatic element)}, such that it exactly copies the jumping trajectory, therefore the car does not leave the ground.}
 \end{itemize}
 
 Before going through individual methods, let's look at the adiabaticity itself.
@@ -38,7 +38,7 @@ This means that adiabatic transport is an endomorphism of $\M _s$. The meaning o
         $$\gamma_s(\lambda)\equiv \int_0^t i\braket{\psi_s(\tau)|\partial_t\psi_s(\tau)} \d \tau .$$
 \end{thm}
 \begin{myproof}
-    The proof can be found in \citet{sakurai}[chap. 6].
+    The proof can be found in \citet[Chap. 6]{sakurai}.
 \end{myproof}
 
 
@@ -178,7 +178,7 @@ Now we have explicit formulas for adiabatic potential in two systems
 \begin{align}
     \AA_\lambda&=i\hbar \big(\partial_\lambda \U(\llambda)\big)\U^+(\llambda)
     \label{eq:adiabaticPotential}\\
-    \tilde{\AA_\lambda} &= -i\hbar\left(\partial_\lambda \U^+(\llambda)\right)\U(\llambda)
+    \tilde{\AA_\lambda} &= -i\hbar\left(\partial_\lambda \U^+(\llambda)\right)\U(\llambda).
     \label{eq:adiabaticPotentialTilde}
 \end{align}
 
@@ -193,7 +193,7 @@ Using the eigenbasis of $\HH$, the matrix elements are
 \begin{equation}
     \bra{s}\tilde{\AA_\lambda}\ket{m}=i\hbar\bra{s}\U(\llambda)^+\partial_\lambda\U(\llambda)\ket{m} = i\hbar\bra{s(\llambda)}\partial_\lambda\ket{m(\llambda)}.
 \end{equation}
-and because
+Because
 \begin{equation}
     \bra{s(\llambda)}\AA_\lambda\ket{ m(\llambda)}= \bra{s}\tilde{\AA_\lambda}\ket{m},
 \end{equation}
@@ -213,7 +213,7 @@ The fact that second element is missing in Eq. \ref{eq:adiabaticPotential} impli
 \begin{equation}
     \chi_{jk}(\llambda) = \partial_j A_k(\llambda)-\partial_k A_j(\llambda) = 0.
 \end{equation}
-This means that adiabatic gauge transformations are a class of gauge transformations with $g_{jk}=\Re\chi_{jk}=0$ and according to Eq. \ref{eq:distanceOnM0}, fidelity $F=1$. Therefore the system is driven by Hamiltonian $\HH(\llambda)$ with fidelity $F<1$, there exists such adiabatic potential $\A_\lambda$, that driving of the same system using $\HH-\A_\lambda$ has unit fidelity.
+This means that adiabatic gauge transformations are a class of gauge transformations with $g_{jk}=\Re\chi_{jk}=0$ and according to Eq. \ref{eq:distanceOnM0}, fidelity $F=1$. Therefore, the system is driven by Hamiltonian $\HH(\llambda)$ with fidelity $F<1$, there exists such adiabatic potential $\A_\lambda$, that driving of the same system using $\HH-\A_\lambda$ has unit fidelity.
 
 The adiabatic gauge potentials can then be understood as affine connections defining the parallel transport on fiber bundle, if we define covariant derivative as
 \begin{equation}
@@ -385,7 +385,7 @@ The driving can be restricted to the ground state manifold only in approximation
     \begin{equation}
         g_{\lambda\lambda}\coloneqq \braket{\partial_\lambda o(t)|\partial_\lambda o(t)})_c,
     \end{equation}
-    see chapter \ref{chap:metricTensor}
+    see Chapter \ref{chap:metricTensor}.
 \end{thm}
 
 

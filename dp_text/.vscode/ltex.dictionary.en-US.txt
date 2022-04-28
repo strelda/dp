@@ -63,3 +63,5 @@ devaluates
 Ferromagnet
 Holstein-Primakoff
 Střeleček
+Kähler
+preparable

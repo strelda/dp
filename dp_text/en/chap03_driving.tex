@@ -29,7 +29,7 @@ The projection is defined as $\pi(\llambda): \ket{\psi(\llambda)}\mapsto \llambd
         \node[] at (0.5,-0.4) {\green{$\tilde\llambda$}};
     \end{tikzpicture}
 
-\caption{Base manifold $\greenn{\mathcal U}\subset \gray{\R^N}$ is visualized as a line. For every point $\green\llambda\in\greenn{\mathcal U}$ one \bluee{Hilbert space $\H(\llambda)$ (blue disk)} is constructed as a \bluee{fiber}. The union of all these fibers creates the full Hilbert space $\H_{full}$ (holow cylinder) and from every Hilbert space there exist projection $\gray{\pi}$ onto the base manifold.}
+\caption{Base manifold $\greenn{\mathcal U}\subset \gray{\R^N}$ is visualized as a line. For every point $\green\llambda\in\greenn{\mathcal U}$ one \bluee{Hilbert space $\H(\llambda)$ (blue disk)} is constructed as a \bluee{fiber}. The union of all these fibers creates the full Hilbert space $\H_{full}$ (hollow cylinder) and from every Hilbert space there exist projection $\gray{\pi}$ onto the base manifold.}
     \label{fig:wholeBundle}
 \end{figure}
 
@@ -98,7 +98,7 @@ Of special importance is the \emph{projective ground state manifold} $\P\M_0$, w
 
 The reason for calling the manifolds \emph{projective} is the gauge symmetry of the Schr\"odinger equation. We can change the phase of vector $\ket{s}\mapsto e^{i\varphi}\ket{s}$ by any $\varphi\in\R$. If all the possible $\P\M$ are unified over all phases (only interval $[0,2\pi]$ is used to avoid degeneracy), we get \emph{state manifolds}
 \begin{equation}
-    \M_s\coloneqq \left\{\bigcup_{\varphi\in[0,2\pi)} \bigcup_{\llambda\in\mathcal U} e^{i\varphi}\ket{s(\llambda)}\right\}
+    \M_s\coloneqq \left\{\bigcup_{\varphi\in[0,2\pi)} \bigcup_{\llambda\in\mathcal U} e^{i\varphi}\ket{s(\llambda)}\right\}.
 \end{equation}
 
 Because these manifolds were created by sectioning, they are considered vector spaces in a geometrical sense. This was expected because they contain quantum states, which themselves are vectors.
@@ -350,13 +350,13 @@ As a playground for this chapter, we choose the projective ground state manifold
 % \end{equation}
 % This is \emph{gauge dependent}, meaning that it depends on our choice of the wave phase, i.e. on observer. 
 
-To obtain restriction on metric tensor definition, the local gauge dependence needs to be suppressed. This means the distance on $\P\M_0$ cannot depend on coordinate dependent gauge phase $\varphi(\llambda)$. This phase induces the change in a ground state $\ket{o(\llambda)}$ of the Hamiltonian $\HH(\llambda)$\footnote{Note that we can also write $\ket{o(\llambda)}\in \P\M_0\cap \H(\llambda)$, which is the set containing exactly one vector -- the ground state of $\HH(\llambda)$.}
+To obtain restriction on metric tensor definition, the local gauge dependence needs to be suppressed. This means the distance on $\P\M_0$ cannot depend on coordinate dependent gauge phase $\varphi(\llambda)$. This phase induces the change in a ground state $\ket{o(\llambda)}$ of the Hamiltonian $\HH(\llambda)$\footnote{Note that we can also write $\ket{o(\llambda)}\in \P\M_0\cap \H(\llambda)$, which is the set containing exactly one vector — the ground state of $\HH(\llambda)$.}
 \begin{equation}
     \ket{o(\llambda)}\mapsto e^{i\varphi(\llambda)} \ket{o(\llambda)},
 \end{equation}
 which implies
 \begin{equation}
-        \braket{o(\llambda)|\bm \nabla o(\llambda)}\mapsto \braket{o(\llambda)|\bm \nabla o(\llambda)} + i\bm \nabla \varphi(\llambda) 
+        \braket{o(\llambda)|\bm \nabla o(\llambda)}\mapsto \braket{o(\llambda)|\bm \nabla o(\llambda)} + i\bm \nabla \varphi(\llambda).
 \end{equation} 
 For twice differentiable function $\varphi(\llambda)\in \mathcal C^2$, the gauge independent function $f$ would be for infinitesimal change for example
 \begin{equation}
@@ -446,7 +446,7 @@ The Berry curvature is
 \begin{equation}
         \nu_{jk} =\Im \chi= \frac{i}{2}(\chi_{jk}-\chi_{kj})=  - \Im \sum_{o\neq s}\frac{\braket{o|\pder{\H}{\llambda^j}|s}\braket{s|\pder{\H}{\llambda^k}|o}}{(E_o-E_s)^2}.
         % =\frac{1}{2}\Im\braket{o|[\curlyleftarrow{\partial}_k,\partial_j]|o}_c =
-    \label{eq:geom.tensorREdefinition}
+    \label{eq:geomtensorREdefinition}
 \end{equation}
 
 %taylor is wrong
@@ -489,7 +489,7 @@ The Berry curvature is
     a=i\braket{s(\llambda)|\AA_j |o(\llambda)}\delta\llambda^j,
     \label{eq:probabilityOfTransitionIsGauge}
     \end{equation}
-    which has a meaning of gauge potential matrix elements. Probability of the excitation, i.e. the transition to any state $s>0$ from ground state is then (omitting the $\llambda$ dependence in notation)
+    which has a meaning of gauge potential matrix elements. Probability of the excitation, i.e., the transition to any state $s>0$ from ground state is then (omitting the $\llambda$ dependence in notation)
     \begin{equation}
         \begin{split}
             \sum_{s\neq 0}|a_s|^2&=  \sum_{s\neq 0} \delta \llambda^j \delta \llambda^k\bluee{\braket{o|\AA_j|s}\braket{s|\AA_k|o}}\gray{+\O(|\delta \llambda^3|)} \\

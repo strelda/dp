@@ -10,7 +10,7 @@ The space of functions is $\FM\equiv\{f:\M\rightarrow \C\}$.
 To define \bluee{\emph{vectors}} on $\M$, it is important to have some meaning of the \emph{direction}. The direction is defined using curves $\mathcal J_i$ satisfying 
 $$\mathcal J_1(0)=\mathcal J_2(0)\equiv P$$
 $$\der{}{t}x^i(\mathcal J_1(t))\big|_{t=0}=\der{}{t}x^i(\mathcal J_2(t))\big|_{t=0}.$$
-Taking the equivalence class created by these two rules, sometimes noted as $\bluee{[\mathcal J]}$, we have an element of the tangent space to $\M$. We use standard notation for the \bluee{tangent space of $\M$} in some point $P\in\M$ as $\bluee{\T_P\M}$. Cotangent space is denoted as $\blueee{\T^*_P\M}$. Unifying all \bluee{tangent}, resp. cotangent spaces over all $x$ we get tangent and cotangent bundle, \bluee{$\TT\M$} and \blueee{$\TT^*\M$} respective. To generalize this notation to higher tensors, we denote $\bluee{\TT\M}\equiv\TT^{\bluee{1}}\M$, $\blueee{\TT^*\M}\equiv \TT_{\blueee{1}}\M$. This gives us the possibility to increase the order, leading to $p-$times \bluee{contravariant} and $q-$times \blueee{covariant} tensors. These are denoted $\TT^{\bluee p}_{\blueee q} \M$. Tensor space in point $P\in\M$ is denoted ${\TT_P}^{\bluee p}_{\blueee q} \M$.
+Taking the equivalence class created by these two rules, sometimes noted as $\bluee{[\mathcal J]}$, we have an element of the tangent space to $\M$. We use standard notation for the \bluee{tangent space of $\M$} in some point $P\in\M$ as $\bluee{\T_P\M}$. Cotangent space is denoted as $\blueee{\T^*_P\M}$. Unifying all \bluee{tangent} and cotangent spaces over all $x$ we get tangent \bluee{$\TT\M$} and cotangent \blueee{$\TT^*\M$} bundle respective. To generalize this notation to higher tensors, we denote $\bluee{\TT\M}\equiv\TT^{\bluee{1}}\M$, $\blueee{\TT^*\M}\equiv \TT_{\blueee{1}}\M$. This gives us the possibility to increase the order, leading to $p-$times \bluee{contravariant} and $q-$times \blueee{covariant} tensors. These are denoted $\TT^{\bluee p}_{\blueee q} \M$. Tensor space in point $P\in\M$ is denoted ${\TT_P}^{\bluee p}_{\blueee q} \M$.
 Using the congruence of curves on $\M$, the expression 
 \begin{equation}
     \bluee{\der{}{\xi}}f\circ \mathcal J(\xi)\bluee{\Big|_{\xi=0}}
@@ -40,7 +40,7 @@ During the whole thesis, the \emph{abstract indices} (written by Greek letters) 
 $$t^\mu_{\nu\kappa} \in \TT^1_2\M, \quad \text{ whilst for some }i,j,k\in\N: t^i_{jk}\in \mathbb C.$$
 The summation over abstract and Latin indices has the same meaning. For \emph{Tensor contraction}, the index notation is used. When it is clear what type of tensors we are operating with, the Object notation can be used, for example $t(\bluee{\bm u},\bluee{\bm v})\equiv t_{\mu\nu}\bluee{\bm u^\mu \bm v^\nu}$. The contraction can also be noted using the contraction operator $\mathbf C$ when it is clear which indices are contracted or when it does not matter which of them are.
 
-Now we have the notation to define one strong structure on manifolds -- \emph{metric tensor}. 
+Now we have the notation to define one strong structure on manifolds — \emph{metric tensor}. 
 \begin{definition}[Metric tensor]
 If the 2-form $g_{\mu\nu}\in\TT^0_2\M$ is
 \begin{itemize}
@@ -51,7 +51,7 @@ If the 2-form $g_{\mu\nu}\in\TT^0_2\M$ is
 we call $g_{\mu\nu}$ a \emph{metric tensor}. The \emph{star} $^*$ marks complex conjugation.
 \end{definition}
 
-We often require \emph{differentiable metric tensor}, or at least almost everywhere \footnote{Almost everywhere means \emph{with an exception to the submanifold of zero measure}.}. That assures that \emph{covariant derivatives} and \emph{parallel transport} are well-defined almost everywhere. 
+We often require \emph{differentiable metric tensor}, or at least almost everywhere\footnote{Almost everywhere means \emph{with an exception to the submanifold of zero measure}.}. That assures that \emph{covariant derivatives} and \emph{parallel transport} are well-defined almost everywhere. 
 
 
 
@@ -129,7 +129,7 @@ The Affine connection on metric spaces can be defined as
     \end{equation}
     and for $\blueee{\bm\alpha\in} \T_P^*\M$ it is
 \begin{equation}
-    \Der{\blueee{\bm \alpha_\mu}}{x^\nu}=\blueee{\bm \alpha_{\mu,\nu}}-\Gamma^\alpha_{\mu\beta}x^\beta \blueee{\bm \alpha_\alpha}
+    \Der{\blueee{\bm \alpha_\mu}}{x^\nu}=\blueee{\bm \alpha_{\mu,\nu}}-\Gamma^\alpha_{\mu\beta}x^\beta \blueee{\bm \alpha_\alpha}.
 \end{equation}
 
 The vector $\bluee{\bm v}\in \T_P\M$ is said to be parallel transported along curve $\mathcal J(\lambda)$, if its covariant derivative vanishes along $\mathcal J(\xi)$, meaning
@@ -266,10 +266,10 @@ Some Riemannian geometry theorems have implications in the theory of quantum dri
     Manifold is called Riemannian if it is equipped with a positive definite metric tensor.
 \end{definition}
 \begin{definition}[Connected manifold]
-    Manifold is connected if the distance between two points is the infimum of the lengths of curves joining the two points.
+    A manifold is connected if the distance between two points is the infimum of the lengths of curves joining the two points.
 \end{definition}
 \begin{definition}[Compact manifold]
-    Manifold is said to be compact if its every open cover has a finite subcover.
+    A manifold is said to be compact if its every open cover has a finite subcover.
 \end{definition}
 \begin{definition}[Geodesical completeness]
     A manifold is said to be geodesically complete if every geodesic on it can be extended to infinite values of their affine parameter. 
@@ -294,9 +294,9 @@ Geodesic maximality is a coordinate-dependent notion only if the manifold is geo
 
     For connected Riemannian manifold $\M$ with the metric $g$, following are equivalent:
     \begin{itemize}
-        \item $(\M,g)$ is geodesically complete, i.e. all geodesics are infinite,
-        \item $(\M,g)$ is geodesically complete at some point $P$, i.e. geodesics going through $P$ are infinite,
-        \item $(\M,g)$ satisfies the Heine-Borel property, i.e. every closed bounded set is compact,
+        \item $(\M,g)$ is geodesically complete, i.e., all geodesics are infinite,
+        \item $(\M,g)$ is geodesically complete at some point $P$, meaning the geodesics going through $P$ are infinite,
+        \item $(\M,g)$ satisfies the Heine-Borel property, i.e., every closed bounded set is compact,
         \item $(\M,g)$ is complete as a metric space.
     \end{itemize}
 \end{thm}
