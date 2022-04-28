@@ -35,9 +35,9 @@ the eigenvectors  can be written as
    \end{pmatrix}
    \label{eq:eigenvectors}
 \end{equation}
-for normalization constants $N_\pm\coloneqq\left(\left(\frac{\pm E_0(t)+\Omega(t)}{\Delta(t)}\right)^2+1\right)^{-1/2}$. Notice that the eigenbases differ in time, but are described using constant basis $\mathcal B$, which forms an eigenbasis at time $t=0$.
+for normalization constants $N_\pm\coloneqq\left(\left(\frac{\pm E_0(t)+\Omega(t)}{\Delta(t)}\right)^2+1\right)^{-1/2}$. The instantaneous eigenbases changes in time, but is described using constant basis $\mathcal B$, which forms an eigenbasis at time $t=0$.
 
-The goal is to find \emph{fidelity} $F_{\mathcal J}(t)\coloneqq |\braket{0(t)|\psi(t)}|^2$ of different driving protocols \begin{equation}
+The goal is to find \emph{fidelity} between initial state anad state evolved along $\mathcal J$, $F_{\mathcal J}(t)\coloneqq |\braket{0(t)|\psi(t)}|^2$ for different driving protocols \begin{equation}
     \mathcal J\coloneqq\{\llambda(t)|t\in[0,T],\; \llambda\in \mathcal U\} \subset \R^N.
 \end{equation}
 For this we need to solve time Schr\"odinger equation
@@ -99,7 +99,7 @@ Along with normalization condition \ref{eq:normalizationCondition} and initial c
         a(0)\\b(0)
     \end{pmatrix}=\ket{0(0)}; \quad \dot a(0)=-i\left(\Omega(0) a(0)+\Delta(0)b(0)\right).
 \end{equation}
-Note that we used the condition $\Delta\neq 0$. Because the energy spectrum has $\Delta\leftrightarrow \Omega$ symmetry, we can change the driving by interchanging $\Delta$ and $\Omega$ on any intervals, where the parameters \ref{eq:gammaDef}, \ref{eq:frequency} would diverge.
+The condition $\Delta\neq 0$ is used here. Because the energy spectrum has $\Delta\leftrightarrow \Omega$ symmetry, we can change the driving by interchanging $\Delta$ and $\Omega$ on any intervals, where the parameters \ref{eq:gammaDef}, \ref{eq:frequency} would diverge.
 
 
 \subsubsection{Classical mechanics correspondence}
@@ -225,8 +225,8 @@ Hamiltonian in the moving frame is
 which is time independent and depends only on final time. The Schr\"odinger equation can now be easily solved using evolution operator
 \begin{equation}
     \begin{split}
-        \bluee{\UU(t)}=&e^{-i\bluee{\tilde H}t}\\
-        =&\bluee{\begin{pmatrix}
+        \bluee{\UU(t)}=&e^{-i\bluee{\tilde H}t}
+        =\bluee{\begin{pmatrix}
             \cos \left(\frac{t}{2} q\right)+\frac{2 i s \sin \left(\frac{t}{2} q\right)}{q} & -\frac{\omega  \sin \left(\frac{t}{2} q\right)}{q} \\
             \frac{\omega  \sin \left(\frac{t}{2} q\right)}{q} & \cos \left(\frac{t}{2} q\right)-\frac{2 i s \sin \left(\frac{t}{2} q\right)}{q} \\
         \end{pmatrix}},
@@ -235,7 +235,7 @@ which is time independent and depends only on final time. The Schr\"odinger equa
 \end{equation}
 for $q\coloneqq\sqrt{4 s^2+\omega(T) ^2}$.
 
-In the original frame we get the evolution of the state $\psi(0)$
+In the original frame we get the evolution of $\psi(0)$ as
 \begin{equation}
     \redd{\psi(t)}=\expsp \bluee{\UU(t) \tilde\psi(0)} = \underbrace{\expsp \bluee{\UU}\expsm}_{\redd{\UU(t)}} \underbrace{\expsp \bluee{\tilde\psi(0)}}_{\redd{\psi(0)}}.
 \end{equation}
@@ -249,12 +249,12 @@ The evolved wave-function the reads as
 and the ground state
 \begin{equation}
     \redd{\ket{0(t)}}=\redd{\mathcal{N}\begin{pmatrix}
-        -\cot (\frac{t}{2}\omega(T))\\
+        -\cot (\frac{t}{2}\omega)\\
         1
     \end{pmatrix}},
 \end{equation}
 for a normalization constant $\redd{\mathcal{N}}\coloneqq |\redd{\braket{0(t)|0(t)}}|^{-1}$.
-Fidelity during the transport is then\footnote{If we calculated the fidelity in the \bluee{comoving frame}, we would get exactly one. This realization leads to the counter-diabatic driving.}
+Fidelity during the transport is then\footnote{If we calculate the fidelity in the \bluee{comoving frame}, we get exactly one. This realization leads to the counter-diabatic driving.}
 \begin{equation}
     F=\left|\redd{\braket{0(t)|\psi(t)}}\right|^2.
     \label{fid:definition}
@@ -270,13 +270,17 @@ $$
     \lim_{t\rightarrow 0}F=1\; ,\;\; \lim_{T\rightarrow 0}F=0.
 $$
 
-Sometimes the \emph{Infidelity}, defined as $F^*\coloneqq 1-F$, is used. It has a meaning of \emph{excitation probability during the transport}.
+It is practical to define \emph{Infidelity} as
+\begin{equation}
+    F^*\coloneqq 1-F.
+\end{equation} 
+It has a meaning of \emph{excitation probability during the transport}.
 
 
 \subsection{Analysis of the infidelity formula}
 Infidelity can be calculated by numerical evolution of Schr\"odinger equation, or from Eq. \ref{eq:fidelitySimplified}. Sometimes both solutions are plotted for comparison between numerical precision. 
 
-For some fixed final time, the infidelity is an oscillating curve with values close to $0$, see the driving for final time $T=10$ on Fig. \ref{fig:infidelityTimePlot}. The \emph{final infidelity} (fidelity at $t=T$) dependence on final time $T$ can be seen on Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
+For some fixed final time, the infidelity is an oscillating curve with values close to $0$, see the driving for final time $T=1$ on Fig. \ref{fig:infidelityTimePlot}. The \emph{final infidelity} (fidelity at $t=T$) dependence on final time $T$ can be seen on Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTimePlotGeod.pdf}
@@ -294,7 +298,7 @@ For some fixed final time, the infidelity is an oscillating curve with values cl
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlotLog.pdf}
-    \caption{Infidelity dependence on final time in logarithmic scale. The difference in numerical precision of both methods can be seen in the spikes height. As it will be shown later, the spikes should go to zero, thus analytical formula has higher numerical precision.}
+    \caption{Final infidelity dependence on final time $T$ for geodesical driving; in logarithmic scale9. The difference in numerical precision of both methods can be seen in the spikes height. As it will be shown later, the spikes should go to zero, thus analytical formula has higher numerical precision.}
     \label{fig:infidelityTfPlotLog}
 \end{figure}
 
@@ -309,7 +313,7 @@ for $T_s\coloneqq 2s T$. The solution to this equation is
     T_s=\sqrt{(2 \pi  k)^2-\pi ^2} \text{  for }k\in \mathbb{N},
     \label{eq:solutionT}
 \end{equation}
-see Fig. \ref{fig:fidelityZeros}. This implies that spikes on Fig. \ref{fig:infidelityTfPlotLog} have minimal value $1-F=0$. In addition, observe that their density is linear in $T$.
+see Fig. \ref{fig:fidelityZeros}. This implies that spikes on Fig. \ref{fig:infidelityTfPlotLog} have minimal value $1-F=0$, and their density is linear in $T$.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/fidelityZeros.pdf}
@@ -323,7 +327,7 @@ Fidelity as a function of time and final time can be seen in Fig. \ref{fig:dens3
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/dens3.pdf}
-    \caption{Fidelity dependence on time and final time in log-log scale. Note that only $t<T$ has physical meaning.}
+    \caption{Fidelity dependence on time and final time in log-log scale. Only $t<T$ has a physical meaning.}
     \label{fig:dens3}
 \end{figure}
 
@@ -377,7 +381,7 @@ Corresponding differential equation of second order is
 which is of \emph{Weber type}\footnote{https://mathworld.wolfram.com/WeberDifferentialEquations.html} with Parabolic Cylinder functions\footnote{https://mathworld.wolfram.com/ParabolicCylinderFunction.html} as a solution, see \citet{felipe}. 
 
 \subsection{Dependence on time}
-The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. For $t\approx T/2$, the Hamiltonian spectrum changes quickly, which leads to fast state excitation. Then the Harmonic oscillator damping gets involved, and oscillations quickly go to zero, never disappearing entirely.
+The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. For $t\approx T/2$, the difference between energy levels is minimal, which leads to fast state excitation. Then the Harmonic oscillator damping gets involved, and oscillations quickly go to zero, never disappearing entirely.
 
 We can see that the final fidelity decreases with a longer final time, which correctly leads to adiabatic driving, where $\lim_{T\rightarrow \infty} F^*=0$. For short final times we can observe so-called quench, $\lim_{T\rightarrow 0} F^*=1$. The interesting phenomena in this image are the oscillations around $t=T/2$, for which the frequency increases with a longer final time. 
 
@@ -415,7 +419,7 @@ therefore when $t$ is getting close to $T$ the fidelity is oscillating with  har
 
 
 \subsection{Final fidelity}
-Because the oscillations after fast parameter change in the Hamiltonian never disappear entirely, we must observe these oscillations even at the final time. \emph{Final fidelity} (meaning the fidelity at $t=T$) has dependence on $T$ as can be seen in Fig. \ref{fig:infidelityTfPlotLogLinCombined}. Because after the final time $T\approx 120$, the values are small enough to observe some fine structure of the fidelity and numerical error artifacts.
+Because the oscillations after fast parameter change in the Hamiltonian never disappear entirely, we must observe these oscillations even at the final time. \emph{Final fidelity} (meaning the fidelity at $t=T$) has dependence on $T$ as can be seen in Fig. \ref{fig:infidelityTfPlotLogLinCombined}. Because after the final time $T\approx 120$, the values are small enough to observe some fine structure of the fidelity along with numerical error artifacts.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlotLogLinCombined1.pdf}
@@ -423,16 +427,16 @@ Because the oscillations after fast parameter change in the Hamiltonian never di
     \label{fig:infidelityTfPlotLogLinCombined}
 \end{figure}
 
-First, the numerical precision of this calculation was found to be around $10^{-13}$. This means that the oscillations we see in Fig. \ref{fig:infidelityTfPlotLogLinCombined} are of physical origin with some additional numerical error. These small oscillations are the remnants of the fast excitation during the close approach of energy levels, see Fig. \ref{fig:infidelityTimePlotLin}. 
+First, the numerical precision of this calculation was found to be around $10^{-13}$. This means that the oscillations we see in Fig. \ref{fig:infidelityTfPlotLogLinCombined} are of physical origin with some additional numerical error. These small oscillations are the remnants of the fast excitation during the close approach of energy levels, see Fig. \ref{fig:infidelityTimePlotLin}. The reason is that the choice $t=T$ sometimes corresponds to the oscillation minima and sometimes to its maxima.
 
 
 
 \subsubsection{Averaged final fidelity}
 We can eliminate the effect of oscillations by averaging over time. For that we define the \emph{average final infidelity}
 \begin{equation}
-    \langle F^*\rangle_p(T) \coloneqq \frac{1}{(1-p) T}\int\limits_{(1-p) T}^{T} F^*(t)\d t.
+    \langle F^*\rangle_p(T) \coloneqq \frac{1}{(1-p) T}\int\limits_{p T}^{T} F^*(t)\d t.
 \end{equation}
-It turned out that averaging over 1 \% ($p=0.01$) or 10 \% ($p=0.1$) of the driving gave approximately the same results for long enough drivings ($T\overset{\sim}{>} 10$). The same result can be obtained from the analytical continuation of the fidelity formula to $t\rightarrow  \infty$. This analytical continuation of the harmonic oscillator solution leads to the Fidelity value around which the oscillations occur. The result of averaging can be seen in Fig. \ref{fig:infidCombined}.
+It turned out that averaging over 1 \% ($p=0.99$) or 10 \% ($p=0.9$) of the driving gave approximately the same results for long enough drivings ($T\overset{\sim}{>} 10$). The same result can be obtained from the analytical continuation of the fidelity formula to $t\rightarrow  \infty$. This analytical continuation of the harmonic oscillator solution leads to the Fidelity value around which the oscillations occur. The result of averaging can be seen in Fig. \ref{fig:infidCombined}.
 
 Using this we can describe the driving using three regimes\footnote{The coefficient $p$ is assumed to be small enough not to cover the biggest oscillations after $t=T/2$ and big enough to average over sufficient number of oscillations. Approximately $p\in[0.6T,0.999T]$.}.
 \begin{itemize}
@@ -450,7 +454,7 @@ Using this we can describe the driving using three regimes\footnote{The coeffici
 
 
 
-The boundary between exponential and linear regime is not strict and can be seen on Fig. \ref{fig:dens2}, as transition between \emph{smooth} and \emph{chaotic} regimes. This happens around $t=T_c$. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. This would be smoothed out using the averaged final fidelity. The approximated dependence for final time was numerically estimated as
+The boundary between exponential and linear regime is not strict and can be seen on Fig. \ref{fig:dens2}, as transition between \emph{smooth} and \emph{chaotic} regimes. This happens around $t=T_c$. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. This can be< smoothed out using the averaged final fidelity. The approximated dependence for final time was numerically estimated as
 \begin{equation}
     T_c\overset{\sim}{\propto} \Delta_{sc}^{-2}.
 \end{equation}
@@ -459,11 +463,11 @@ The boundary between exponential and linear regime is not strict and can be seen
 \begin{figure}[H]
     \centering 
     \includegraphics[scale=1.2]{../img/dens2.pdf}
-    \caption{Final infidelity as a function of $\Delta$ and $T$ and its three regimes. Zoomed boundary between them can be seen on \ref{fig:dens2Zoom}.}
+    \caption{Final infidelity as a function of $\Delta$ and $T$ and its three regimes. Zoom on the boundary between them can be seen on \ref{fig:dens2Zoom}.}
     \label{fig:dens2}
 \end{figure}
 
-\begin{figure}[H]
+\vspace{-10pt}\begin{figure}[H]
     \centering 
     \includegraphics[scale=1.2]{../img/dens2Zoom.pdf}
     \caption{Fine structure of the boundary between fast-driving and adiabatic regimes of final infidelity.}
@@ -472,24 +476,24 @@ The boundary between exponential and linear regime is not strict and can be seen
 
 
 
-To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} with \ref{fig:overcritical}. Here we see two regimes, one for $t<T_c$ and on for $T>T_c$. The important observation is that in the first case, $F^*\neq 0$ for all $t>0$, and in the second case, it touches zero periodically. The fidelity can be decomposed into a sum of two elements. The small oscillatory part, which the theory of APT can explain, and exponentially decreasing fidelity with final time, is described by the Landau-Zener formula.
+To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} with \ref{fig:overcritical}. Here we see two regimes, one for $t<T_c$ and one for $T>T_c$. The important observation is that in the first case, $F^*\neq 0$ for all $t>0$, and in the second case, it touches zero periodically. The fidelity can be decomposed into a sum of two elements. The small oscillatory part, which the theory of APT can explain, and exponentially decreasing fidelity with final time, is described by the Landau-Zener formula.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/undercritical.pdf}
-    \caption{Infidelity as function of time for fast-driving regime, $T=80<T_c$.}
+    \caption{Infidelity as a function of time for fast-driving regime, $T=80<T_c$.}
     \label{fig:undercritical}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.2]{../img/overcritical.pdf}
-    \caption{Infidelity as function of time for close-adiabatic regime. $T=170>T_c$}
+    \caption{Infidelity as a function of time for close-adiabatic regime. $T=170>T_c$}
     \label{fig:overcritical}
 \end{figure}
 
 \subsubsection{Exponential and polynomial part, Landau-Zener and APT}
-Landau-Zener-Stueckelberg's theory provides the WKB approximation formula for the fidelity during some transport. The complete form can be seen in \citet{nonadiabaticTransition}. In our case, only a simplified theorem is needed. First, let's review some definitions.
+Landau-Zener-Stueckelberg's theory provides the WKB approximation formula for the fidelity during some transport. The complete form can be seen in the book by \citet{nonadiabaticTransition}. In this case, only a simplified theorem is needed. First, let's review some definitions.
 
 \begin{definition}[Diabatic coupling]
     Diabatic coupling functions are off-diagonal elements of two-level Hamiltonian. At avoided crossing, it is half of Hamiltonian eigenvalue difference,
@@ -513,7 +517,7 @@ Landau-Zener-Stueckelberg's theory provides the WKB approximation formula for th
     \begin{itemize}
         \item two level Hamiltonian
         \item with degeneracy in only one point,
-        \item on the linear driving path in a parametric space
+        \item on the linear driving path in a parametric space,
     \end{itemize}
     the fidelity can be described for times $t\in(0,T_c)$ as
     \begin{equation}
@@ -523,7 +527,7 @@ Landau-Zener-Stueckelberg's theory provides the WKB approximation formula for th
     for a \emph{diabatic coupling} $A$, and \emph{diabatic potential difference} $|\Delta F|$. 
 \end{thm}
 
-In our case, we have constant speed $v=1/T$, off-diagonal elements are also constant $A=\Delta_{sc}$, and the driving path is symmetric along $\Omega=0$ axis, leading to $|\Delta F|=2\Omega_i$.
+In our case, the speed $v=1/T$ is constant, off-diagonal elements are also constant $A=\Delta_{sc}$, and the driving path is symmetric along $\Omega=0$ axis, leading to $|\Delta F|=2\Omega_i$.
 
 The polynomial, or chaotic regime, can be explained using APT. It holds that
 \begin{equation}

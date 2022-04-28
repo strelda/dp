@@ -28,11 +28,11 @@
 \contentsline {section}{\numberline {4.1}Hamiltonian}{33}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Harmonic oscillator correspondence}{34}{section.4.2}%
 \contentsline {subsubsection}{Classical mechanics correspondence}{34}{section*.13}%
-\contentsline {section}{\numberline {4.3}Energy variance for two-level system}{34}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Energy variance for two-level system}{35}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Geodesic driving}{35}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Derivation of the fidelity}{36}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Analysis of the infidelity formula}{37}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Energy variance}{39}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.3}Energy variance}{40}{subsection.4.4.3}%
 \contentsline {section}{\numberline {4.5}Linear driving}{41}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Dependence on time}{42}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Final fidelity}{43}{subsection.4.5.2}%

@@ -60,3 +60,6 @@ endomorphism
 Cejnar
 Calibrational
 devaluates
+Ferromagnet
+Holstein-Primakoff
+Střeleček

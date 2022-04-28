@@ -1,0 +1,23 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QGeometrické metody ve fyzice, Studijní těxt k přednáškám Geometrické metody fyziky I a II\\E$"}
+{"rule":"I_A","sentence":"^\\QGeometrické metody ve fyzice, Studijní těxt k přednáškám Geometrické metody fyziky I a II\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QProc.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QLond.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QQuantal Phase Factors Accompanying Adiabatic Changes\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QA Shapere, F Wilczek.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTransitionless quantum driving\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QarXiv:gr-qc/9706069\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QComment: 41 pages, ReVTeX\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QExponential families, Kahler geometry and quantum mechanics\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QNonadiabatic transition: concepts, basic theories and applications\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QarXiv:1012.1337 [math-ph, physics:quant-ph]\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAAECC 10\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QBecause of a penta-diagonal form of the Hamiltonian, the discussion starts at \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, followed by \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MISSING_GENITIVE","sentence":"^\\QRicci curvature sections for three different \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"SENTENCE_FRAGMENT","sentence":"^\\QAs can be seen in Fig.\\E$"}
+{"rule":"THE_SUPERLATIVE","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q around point \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and means that the geodesic equation might have at least two solutions as candidates for the globally shortest path between two points.\\E$"}
+{"rule":"TOO_LONG_SENTENCE","sentence":"^\\QFrom singularity behavior in low dimensions, one might see the pattern for \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, i.e., those with minimal, resp maximal \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q coordinate \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q is odd \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q is even \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q These were numerically proven to be singularities for cases up to \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QGeometric approach to externally driven quantum systems Geometrický přístup k externě vedeným kvantovým systémům\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QInstitute of Particle & Nuclear Physics Ústav jaderné a čásicové fyziky\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QInstitute of Particle Nuclear Physics Ústav jaderné a čásicové fyziky Physics Fyzika Theoretical physics Teoretická fyzika\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qprof.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRNDr.\\E$"}

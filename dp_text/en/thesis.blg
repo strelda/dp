@@ -16,46 +16,44 @@ The style file: unsrtnat.bst
 A level-1 auxiliary file: appendixGEOM.aux
 A level-1 auxiliary file: appendix1.aux
 Database file #1: bibliography.bib
-Warning--empty note in krtous
 You've used 25 entries,
             2481 wiz_defined-function locations,
             743 strings with 8807 characters,
-and the built_in function-call counts, 8583 in all, are:
-= -- 796
+and the built_in function-call counts, 8611 in all, are:
+= -- 795
 > -- 319
 < -- 23
 + -- 140
 - -- 90
-* -- 556
-:= -- 1392
-add.period$ -- 110
+* -- 554
+:= -- 1388
+add.period$ -- 109
 call.type$ -- 25
 change.case$ -- 45
 chr.to.int$ -- 25
-cite$ -- 26
-duplicate$ -- 492
-empty$ -- 800
+cite$ -- 25
+duplicate$ -- 494
+empty$ -- 813
 format.name$ -- 129
-if$ -- 1854
+if$ -- 1867
 int.to.chr$ -- 1
 int.to.str$ -- 26
 missing$ -- 32
-newline$ -- 167
+newline$ -- 166
 num.names$ -- 75
-pop$ -- 191
+pop$ -- 199
 preamble$ -- 1
 purify$ -- 25
 quote$ -- 0
-skip$ -- 305
+skip$ -- 308
 stack$ -- 0
 substring$ -- 245
-swap$ -- 81
+swap$ -- 82
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 151
-warning$ -- 1
+warning$ -- 0
 while$ -- 65
 width$ -- 0
-write$ -- 392
-(There was 1 warning)
+write$ -- 391

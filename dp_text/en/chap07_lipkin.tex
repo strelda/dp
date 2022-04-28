@@ -40,7 +40,7 @@ where $\delta_{a'b}$ is Kronecker delta. The Hamiltonian in Eq. \ref{eq:firstOrd
 \end{equation}
 which has pentadiagonal matrix representation. During the whole chapter, $j=N/2$ is used. 
 
-First, the low dimensional cases of this Hamiltonian are analyzed, especially $N=3$, where the analytical formula for energy spectrum can be found. The limit $N\rightarrow \infty$ is then taken, showing the correspondence to the classical system. Finally, some generalization to an arbitrary dimension and an example of transport using quenches is presented. 
+First, the low dimensional cases of the Hamiltonian are analyzed, especially $N=3$, where the analytical formula for energy spectrum can be found. The limit $N\rightarrow \infty$ is then taken, showing the correspondence to the classical system. Finally, some generalization to an arbitrary dimension and an example of transport using quenches is presented. 
 
 
 
@@ -92,13 +92,13 @@ Eigenvectors can also be expressed analytically, but due to their complexity onl
 \begin{figure}[h]
     \centering
     \includegraphics[scale=1.3]{../img/N=3_energiesc.pdf}
-    \caption{Energy spectrum for $N=3$, section $\chi=1$}
+    \caption{Energy spectrum for $N=3$, section $\chi=1$.}
     \label{fig:N=3_energiesc}
 \end{figure}
 
 From Eq. \ref{eq:N=3_en0}, \ref{eq:N=3_en1} can be seen the possible existence of spectrum degeneracies between every two neighboring energy levels\footnote{If the functions $D,E,F,G$ were into real numbers, degeneracies would exist between every two neighboring energy levels. Because they are complex, the solution $E_i=E_j$ might not exist. From numerical results, degeneracies exist between every two neighboring energy levels.}. Degeneracy $\bluee{E_0}=\textcolor{orange}{E_1}$ holds for $D=E$, which for real values $\lambda,\;\chi$ has two solutions
 $$(\lambda_d,\pm \chi_d)=\left(-\frac{1}{2};\sqrt{\frac{3}{5}}\right).$$
-According to Theorem \ref{thm:n-2}, Hamiltonian driven by two real parameters can be degenerated only on 0-dimensional manifolds. This means that degeneracies can be only separated points in the parametric space.
+According to Theorem \ref{thm:n-2}, Hamiltonian driven by two real parameters can be degenerated only on 0-dimensional manifolds. This means that degeneracies are separated points in the parametric space.
 
 If the energy spectrum is degenerate and the metric tensor diverges, see individual elements in Fig. \ref{fig:N=3_g}, its determinant also diverges, as shown in Fig. \ref{fig:N=3_gDivenrgence}, along with Christoffel symbols in Fig. \ref{fig:N=3_G}. The metric tensor determinant is positive definite; therefore, the manifold is Riemannian. Further on, it reflects the symmetry $\chi\leftrightarrow-\chi$, except for elements $g_{12}$, $\Gamma_{121}$, $\Gamma_{211}$, and $\Gamma_{222}$, which switch their sign.
 
@@ -171,10 +171,10 @@ $$(\lambda(0);\chi(0))\eqqcolon (\lambda_i;\chi_i)$$
 $$\left(\der{\lambda(t)}{t};\der{\chi(t)}{t}\right)\Bigg|_{t=0} \eqqcolon (\lambda'_i;\chi'_i),$$
 where zero was set as initial time.
 
-One might also choose \emph{boundary valued geodesics} with fixed initial $(\lambda(0);\chi(0))$ and final position $(\lambda(T);\chi(T))$. Because the shape of geodesics in parametric space does not depend on the initial derivative, it does not depend on the speed of driving in the parametric space. Initial valued geodesics are therefore more advantageous to calculate because they have only three free parameters — the initial coordinates $(\lambda_i;\chi_i)$ and ratio $\lambda'_i/\chi'_i$. Another reason is purely numeric, which is that boundary-valued geodesics are calculated by numerous evolutions of initial valued geodesics. Essentially the software evolves many initial valued geodesics and checks if the final boundary condition is satisfied. If not, the initial parameters are tweaked in response until it fits the boundary conditions. Calculating the boundary valued geodesics is generally much slower. In this case, the calculation time was $10$ to $100$ times longer.
+One might also choose \emph{boundary valued geodesics} with fixed initial $(\lambda(0);\chi(0))$ and final position $(\lambda(T);\chi(T))$. Because the shape of geodesics in parametric space does not depend on the initial derivative, it does not depend on the speed of driving in the parametric space. Initial valued geodesics are therefore more advantageous to calculate because they have only three free parameters — the initial coordinates $(\lambda_i;\chi_i)$ and ratio $\lambda'_i/\chi'_i$. Another reason is purely numeric, which is that boundary-valued geodesics are calculated by numerous evolutions of initial valued geodesics. Usually the software evolves many initial valued geodesics and checks if the final boundary condition is satisfied. If not, the initial parameters are tweaked in response until it fits the boundary condition. Calculating the boundary valued geodesics is generally much slower. In this case, the calculation time was $10$ to $100$ times longer.
 
 Results for geodesics starting at $(\lambda_i;\chi_i)=(0;0)$, $
-(\lambda',\chi')=(\cos\theta;\sin\theta)$ can be seen in Fig. \ref{fig:N=3_geodesics}. Other values $\theta$ result in a close approach of the geodesics to the singularity, making the calculation numerically unstable. The fact that geodesics lean toward singularities is well known from the theory of General Relativity (GR). The main difference here is that our "test particle" seems to be partially repulsed by the singularity. The analogy with GR then fails because of the nonexistence of negative mass and gravitational dipoles. The better analogy is electromagnetism, which has a downside in the fact that geometrical formalism is not used so much in this theory. A comparison of these two intuitive examples can be seen in Fig. \ref{fig:geodesicsinGR}. The geodesic behavior is caused not only by the singularity but also by a large Ricci curvature leaning to the right from it. This means the distance across this \emph{\blueee{unreachable gap}}, marked by \blueee{blue line} in Fig. \ref{fig:N=3_geodesics}, is also large. The geodesics then tend to go around this line rather than crossing it. The presence of singularities means that our ground state manifold is geodesically incomplete, and according to Theorem \ref{thm:hopf-Rinow_modified}, there exist some geodesically unreachable coordinates. From this goes the term \emph{\blueee{unreachable gap}}.
+(\lambda',\chi')=(\cos\theta;\sin\theta)$ can be seen in Fig. \ref{fig:N=3_geodesics}. Other values $\theta$ result in a close approach of the geodesics to the singularity, making the calculation numerically unstable. The fact that geodesics lean toward singularities is well known from the theory of General Relativity (GR). The main difference here is that our "test particle" seems to be partially repulsed by the singularity. The analogy with GR then fails because of the nonexistence of negative mass and gravitational dipoles. The better analogy is electromagnetism, which has a downside in the fact that geometrical formalism is not used so much in this theory. A comparison of these two intuitive examples can be seen in Fig. \ref{fig:geodesicsinGR}. The geodesic behavior is caused not only by the singularity but also by a large Ricci curvature leaning to the right from it. This means the distance across this \emph{\blueee{unreachable gap}}, marked by \blueee{blue line} in Fig. \ref{fig:N=3_geodesics}, is also large. The geodesics then have a strong tendency to avoid its crossing. The presence of singularities means that our ground state manifold is geodesically incomplete, and according to Theorem \ref{thm:hopf-Rinow_modified}, there exist some geodesically unreachable coordinates. From this goes the term \emph{\blueee{unreachable gap}}.
 
 The fact that geodesics lean toward singularities and parts of parametric space with small energy level difference $\Delta E$ implies that for general fidelity driving, the geodesics cannot be advantageous in the case of fidelity. The excitation probability increases with smaller $\Delta E$ leading to a fidelity decrease for such drivings.
 
@@ -201,7 +201,7 @@ The fact that geodesics lean toward singularities and parts of parametric space 
         \node[] at (3.0,1.5) {\gray{$(\lambda_i;\chi_i)$}};
         \node[] at (0.8,-1.9) {\gray{$(\lambda_f;\chi_f)$}};        
     \end{tikzpicture}
-    \caption{Comparing \gray{boundary} valued geodesics with \blue{repulsing (inner line)} and \red{attracting (outer line)} metric tensor divergence in the spherically symmetrical space. }
+    \caption{Comparing \gray{boundary} valued geodesics for \blue{repulsing (inner line)} and \red{attracting (outer line)} metric tensor divergence in the spherically symmetrical space. }
     \label{fig:geodesicsinGR}
 \end{figure}
 
@@ -288,7 +288,7 @@ resulting in classical Hamiltonian
 \end{equation}
 For more, see \citet{felipe}.
 
-The \emph{separatrix} is line, where the minima of function $\H(x,p)$ lies. In this case it can be expressed as
+The minima of function $\H(x,p)$ form a line, called \emph{separatrix}. In this case it can be expressed as
 \begin{equation}
     \chi^2=\frac{\lambda-1}{\lambda-2}.
     \label{eq:separatrix}
@@ -314,7 +314,7 @@ The separatrix represents phase transition in the limit $N\rightarrow \infty$. I
 
 
 \section{General spectrum behavior}
-For higher dimensions we see the same characteristic behaviour in the energy spectrum sections, see the example in Fig. \ref{fig:N=10_energiesl}, \ref{fig:N=10_energies2} for $N=10$ case. It is not yet clear if there is a degeneracy between every two neighboring energy levels. From numerical observation on $N<10$ goes that there are $N-2$ crossings for $N$ odd and $N-3$ for $N$ even. Here the analytical proof needs to be found.
+For higher dimensions we see the same characteristic behavior in the energy spectrum sections, see the example in Fig. \ref{fig:N=10_energiesl}, \ref{fig:N=10_energies2} for $N=10$ case. It is not yet clear if there is a degeneracy between every two neighboring energy levels. From numerical observation on $N<10$ goes that there are $N-2$ crossings for $N$ odd and $N-3$ for $N$ even. Here the analytical proof needs to be found.
 
 
 \begin{figure}[H]
@@ -330,7 +330,7 @@ For higher dimensions we see the same characteristic behaviour in the energy spe
     \label{fig:N=10_energies2}    
 \end{figure}
 
-Special attention was given to the spectrum degeneracies between zeroth and first energy level because these influence the metric tensor and ground-state manifold geodesics the most. Their exact calculation is numerically expensive, and only the first few cases, namely, $N\in\{3,4,5,6,7\}$, were calculated, see Tab. \ref{tab:singularities}. 
+Special attention is given to the spectrum degeneracies between zeroth and first energy level because these influence the metric tensor and ground-state manifold geodesics the most. Their exact calculation is numerically expensive, and only the first few cases, namely, $N\in\{3,4,5,6,7\}$, were calculated, see Tab. \ref{tab:singularities}. 
 \begin{table}[H]
     \centering
     \begin{tabular}{c||c|c|c}
