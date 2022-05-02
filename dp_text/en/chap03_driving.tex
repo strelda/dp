@@ -13,7 +13,7 @@ Assume parameter $\llambda\in\mathcal{U}\subset\R^N$ for $\mathcal U$ open set. 
 $$\left(\H_{full}\coloneqq \bigcup_{\llambda\in\mathcal U} \H(\llambda),\;\;\mathcal{U}\subset \R^N,\;\;\pi,\;\; \H(\llambda) \coloneqq \bigcup_{states}\ket{\psi(\llambda)}  \right).$$
 The projection is defined as $\pi(\llambda): \ket{\psi(\llambda)}\mapsto \llambda$ and $\H(\llambda)$ is a Hilbert space containing all pure states of $\HH(\llambda)$. Geometric intuition is displayed in Fig. \ref{fig:wholeBundle}.
 
-\begin{figure}[H]
+\begin{figure}[h]
     \centering
     % \includegraphics[width=\textwidth]{../img/manifold_basic_1.png}
     \begin{tikzpicture}
@@ -36,7 +36,7 @@ The projection is defined as $\pi(\llambda): \ket{\psi(\llambda)}\mapsto \llambd
 
 
 \section{Rays and bare states}
-Physical observables in quantum mechanics are related to the \emph{space of rays} or \emph{projective Hilbert space}, defined as $\P\H\coloneqq \H/U(1)$, where elements of $U(1)$ are unitary transformations $e^{i\varphi}$ for $\varphi\in[0,\pi)$. This defines the \bluee{global} gauge symmetry between quantum states. The phase $\varphi$ is \bluee{chosen the same for every vector} and can be chosen arbitrarily. We cannot alter the phase of individual vectors, meaning there is no local gauge symmetry. 
+Physical observables in quantum mechanics are related to the \emph{space of rays} or \emph{projective Hilbert space}, defined as $\P\H\coloneqq \H/U(1)$, where elements of $U(1)$ are unitary transformations $e^{i\varphi}$ for $\varphi\in[0,2\pi)$. This defines the \bluee{global} gauge symmetry between quantum states. The phase $\varphi$ is \bluee{chosen the same for every vector} and can be chosen arbitrarily. We cannot alter the phase of individual vectors, meaning there is no local gauge symmetry. 
 
 This resembles the fiber structure
 $$\left(\H,\;\P\H,\;\pi_{rays},\;\{e^{i\varphi}| \varphi\in[0,2\pi)\}\right),$$
@@ -44,7 +44,7 @@ where $\pi_{rays}$ is just rule setting phase $\varphi$ to arbitrary value. The 
 
 
 
-\begin{figure}[H]
+\begin{figure}[h]
     \centering
     % \includegraphics[width=0.8\textwidth]{../img/projectiveHilbertSpace.png}
     \begin{tikzpicture}
@@ -103,7 +103,7 @@ The reason for calling the manifolds \emph{projective} is the gauge symmetry of 
 
 Because these manifolds were created by sectioning, they are considered vector spaces in a geometrical sense. This was expected because they contain quantum states, which themselves are vectors.
 
-\begin{figure}[H]
+\begin{figure}[h]
     \centering
     % \includegraphics[width=\textwidth]{../img/manifold_full_1.png}
     \begin{tikzpicture}
@@ -122,14 +122,14 @@ Because these manifolds were created by sectioning, they are considered vector s
         \node[] at (3.8,1) {$\textcolor{violet}{\M_s}$};
         \node[] at (-5.1,2.3) {$\gray{\varphi\in[0,2\pi)}$};
     \end{tikzpicture}
-\caption{From the full Hilbert space $\H_{full}$ (the biggest hollow cylinder) we identified eigenstates and unified them into \textcolor{violet}{state manifolds $M_s$}. These are drawn as inner cylinders of $\H_{full}$, especially see the \greenn{ground state manifold $\M_0$} as the \greenn{inner cylinder}. The phase \textcolor{gray}{$\varphi$} introduces gauge symmetry \gray{$e^{i\varphi}$}. If it is fixed, we get projective state manifolds $\textcolor{magenta}{\P\M_s}$, especially see $\textcolor{orange}{\P\M_0}$. Projective state manifolds are isomorphic to the base manifold $\mathcal U$.}
+\caption{From the full Hilbert space $\H_{full}$ (the biggest hollow cylinder) we identified eigenstates and unified them into \textcolor{violet}{state manifolds $\M_s$}. These are drawn as inner cylinders of $\H_{full}$, especially see the \greenn{ground state manifold $\M_0$} as the \greenn{inner cylinder}. The phase \textcolor{gray}{$\varphi$} introduces gauge symmetry \gray{$e^{i\varphi}$}. If it is fixed, we get projective state manifolds $\textcolor{magenta}{\P\M_s}$, especially see $\textcolor{orange}{\P\M_0}$. Projective state manifolds are isomorphic to the base manifold $\mathcal U$.}
     \label{fig:fullStructure}
 \end{figure}
 
 
 
 
-The Hilbert spaces in different points $\llambda$ have the same finite dimension, so the natural question is if we need the fiber structure at all and if we could understand the projection $\pi$ as a surjection from one Hilbert space to the base manifold $\pi: \H\rightarrow \M$. This can indeed be done, but we would lose some generality. For example, the natural choice for basis in the Hilbert space is the eigenbasis, which is different for every $\H(\llambda)$. In addition, dependent on the space structure, two different interpretations of a wave-function collapse can be considered.
+The Hilbert spaces in different points $\llambda$ have the same finite dimension, so the natural question is if we need the fiber structure at all and if we could understand the projection $\pi$ as a surjection from one Hilbert space to the base manifold $\pi: \H\rightarrow \M$. This can indeed be done, but we would lose some generality. For example, the natural choice for basis in the Hilbert space is the eigenbasis, which is different for every $\H(\llambda)$. In addition, dependent on the space structure, two different interpretations of a wavefunction collapse can be considered.
 \begin{enumerate}
     \item In the fiber structure, we can imagine changing the parameter $\llambda$ as moving between $\H(\llambda)$ subspaces of $\H_{full}$, in which the eigenbasis can be embedded geometrically. The space coordinate then holds information about $\llambda$ and position in Hilbert space. 
     \item If we imagine only one Hilbert space, the eigenbasis varies in time, and the driving is performed in a time-varying space. Therefore, one holds two sets of coordinates — in the Hilbert space and in the parametric space.
@@ -153,7 +153,7 @@ Changing the state from eigenstate $\ket{s(\llambda)}$ to $\ket{s(\tilde\llambda
 
 
 The geometric intuition on driving can be seen on Fig. \ref{fig:manifoldCutIntuition}.
-\begin{figure}[H]
+\begin{figure}[h]
     \centering
     % \includegraphics[width=\textwidth]{../img/manifoldCutIntuition.png}
         \begin{tikzpicture}
@@ -185,26 +185,7 @@ The complication arises with the fact that our playground is a state manifold $\
 \begin{equation}
     C=\{\llambda(t)|t\in[0,T] \text{, such that }\llambda(0)=\llambda(T)\}\subset \mathcal U
 \end{equation} 
-we generally get $\Par_C \ket{\psi(\llambda)}\neq \ket{\psi(\llambda)}$. This property is sometimes called an \emph{anholonomy} and can be imagined on Fig. \ref{fig:manifoldCutIntuition} as change of the path color after circulating around some closed path on $\M_s$. Without anholonomy the path does not change the color. On Fig. \ref{fig:fullStructure}, the change of phase means the curve goes around the inner cylinder $\M_s$ and without anholonomy it gets restricted to $\textcolor{orange}{\P\M_s}$ line.
-% and should be defined properly.
-% \begin{definition}[Anholonomy]
-%     Geometrical phenomenon, which causes some variable $V(\mathcal J(p))$ not to return to it's original value while varying it's parameter $p$ around some closed curve $\mathcal J(p)$. 
-% \end{definition}
-% and geometric intuition can be seen on Fig. \ref{fig:parallelTransportClosed}. 
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{../img/parallelTransportClosedCurve_1.png}
-% \caption{Parallel transport around some \greenn{closed curve $C$}. The \red{eigenstate $\ket{i(\mathcal J(0))}\in\P\M_s$} can be transported to another eigenstate $\ket{f(\mathcal J(T))}\in\M_s$. The \textcolor{orange}{anholonomy} represents their difference in a \blue{gauge} direction.\red{ressemble the pictures above, change the states to $\mathcal J(0),\mathcal J(T)$}}
-%     \label{fig:parallelTransportClosed}
-% \end{figure}
-
-% For quantum states, the anholonomy can be measured as a non-zero angle between $\ket{V}$ and $\Par_C\ket{V}$, meaning
-% \begin{equation}
-%     \braket{V|\Par_C|V}\neq 0.
-% \end{equation} 
-
-
-Substituting general solution \ref{eq:phasesOnManifold} to Eq. \ref{eq:schrodinger} yields\footnote{Here the derivation along upper bound $F(x)\coloneqq\int_0^{g(x)}f(t)\d t \Rightarrow F'(x)=f(g(x))g'(x)$ for $f(t)\in L^1(0,g(x))$ and differentiable function $g$, is used.} 
+we generally get $\Par_C \ket{\psi(\llambda)}\neq \ket{\psi(\llambda)}$. This property is sometimes called an \emph{anholonomy} and can be imagined on Fig. \ref{fig:manifoldCutIntuition} as change of the path color after circulating around some closed path on $\M_s$. Without anholonomy the path does not change the color. On Fig. \ref{fig:fullStructure}, the change of phase means the curve goes around the inner cylinder $\M_s$ and without anholonomy it gets restricted to $\textcolor{orange}{\P\M_s}$ line. Substituting general solution \ref{eq:phasesOnManifold} to Eq. \ref{eq:schrodinger} yields\footnote{Here the derivation along upper bound $F(x)\coloneqq\int_0^{g(x)}f(t)\d t \Rightarrow F'(x)=f(g(x))g'(x)$ for $f(t)\in L^1(0,g(x))$ and differentiable function $g$, is used.} 
 \begin{align}
     \HH(\llambda(t))\kpsit &= i\der{}{t}\kpsit\\
     E_s(\llambda(t)) \ket{s(\llambda(t))} &= E_s(\llambda(t))\ket{s(\llambda(t))} -\der{\gamma_s(t)}{t}\ket{s(\llambda(t))}+ \der{}{t}\ket{s(\llambda(t))}\\
@@ -538,7 +519,7 @@ meaning any twice differentiable function can be added to the gauge potential, l
         \begin{equation}
             \varphi_B=\oint_\mathcal{C} \partial_j \phi \d \llambda^j,
         \end{equation}
-        which represents total phase accumulated by the wave function. It is really the analogy for Berry phase in classical mechanics, which for example in the case Foucault pendulum on one trip around the Sun makes $\varphi_B=2\pi$
+        which represents total phase accumulated by the wavefunction. It is really the analogy for Berry phase in classical mechanics, which for example in the case Foucault pendulum on one trip around the Sun makes $\varphi_B=2\pi$
         }
 
     \begin{equation}

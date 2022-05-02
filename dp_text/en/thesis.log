@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.28)  28 APR 2022 17:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.28)  2 MAY 2022 21:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -762,42 +762,36 @@ Package csquotes Info: Making character " active on input line 152.
 
  (./title.tex
 Package hyperref Info: Option `pageanchor' set `false' on input line 6.
-<../img/logo-cs.pdf, id=206, 506.4591pt x 156.49065pt>
-File: ../img/logo-cs.pdf Graphic file (type pdf)
-<use ../img/logo-cs.pdf>
-Package pdftex.def Info: ../img/logo-cs.pdf  used on input line 9.
+Package hyperref Info: Option `pageanchor' set `false' on input line 10.
+<../img/logo-en.pdf, id=215, 506.4591pt x 156.49065pt>
+File: ../img/logo-en.pdf Graphic file (type pdf)
+<use ../img/logo-en.pdf>
+Package pdftex.def Info: ../img/logo-en.pdf  used on input line 13.
 (pdftex.def)             Requested size: 472.31573pt x 145.9455pt.
  [1
 
 
- <../img/logo-cs.pdf>]
-Package hyperref Info: Option `pageanchor' set `false' on input line 51.
-<../img/logo-en.pdf, id=228, 506.4591pt x 156.49065pt>
-File: ../img/logo-en.pdf Graphic file (type pdf)
-<use ../img/logo-en.pdf>
-Package pdftex.def Info: ../img/logo-en.pdf  used on input line 54.
-(pdftex.def)             Requested size: 472.31573pt x 145.9455pt.
- [2 <../img/logo-en.pdf>]
-Package hyperref Info: Option `pageanchor' set `true' on input line 101.
+ <../img/logo-en.pdf>]
+Package hyperref Info: Option `pageanchor' set `true' on input line 60.
  [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 132--138
+Underfull \hbox (badness 10000) in paragraph at lines 91--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--138
+Underfull \hbox (badness 10000) in paragraph at lines 91--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--138
+Underfull \hbox (badness 10000) in paragraph at lines 91--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--138
+Underfull \hbox (badness 10000) in paragraph at lines 91--97
 
  []
 
@@ -865,7 +859,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 3.
-<../img/introDriving.pdf, id=339, 300.66928pt x 115.2361pt>
+<../img/introDriving.pdf, id=332, 300.66928pt x 115.2361pt>
 File: ../img/introDriving.pdf Graphic file (type pdf)
 <use ../img/introDriving.pdf>
 Package pdftex.def Info: ../img/introDriving.pdf  used on input line 10.
@@ -890,18 +884,21 @@ Chapter 1.
 
  (./chap03_driving.tex
 Chapter 2.
-<../img/fullHilbert.pdf, id=447, 332.76408pt x 183.18886pt>
+<../img/fullHilbert.pdf, id=440, 332.76408pt x 183.18886pt>
 File: ../img/fullHilbert.pdf Graphic file (type pdf)
 <use ../img/fullHilbert.pdf>
 Package pdftex.def Info: ../img/fullHilbert.pdf  used on input line 20.
 (pdftex.def)             Requested size: 288.7942pt x 158.98726pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [13
 
 
 
 
 ]
-<../img/drawing-projectiveSpace.pdf, id=458, 508.30699pt x 184.88261pt>
+<../img/drawing-projectiveSpace.pdf, id=451, 508.30699pt x 184.88261pt>
 File: ../img/drawing-projectiveSpace.pdf Graphic file (type pdf)
 <use ../img/drawing-projectiveSpace.pdf>
 Package pdftex.def Info: ../img/drawing-projectiveSpace.pdf  used on input line 51.
@@ -910,18 +907,26 @@ Package pdftex.def Info: ../img/drawing-projectiveSpace.pdf  used on input line 
 
 pdfTeX warning: pdflatex (file ../img/drawing-projectiveSpace.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/fullHilbert_1.pdf, id=470, 332.76408pt x 183.18886pt>
+<../img/fullHilbert_1.pdf, id=462, 332.76408pt x 183.18886pt>
 File: ../img/fullHilbert_1.pdf Graphic file (type pdf)
 <use ../img/fullHilbert_1.pdf>
 Package pdftex.def Info: ../img/fullHilbert_1.pdf  used on input line 110.
 (pdftex.def)             Requested size: 288.7942pt x 158.98726pt.
- [15]
-<../img/manifold_structure.pdf, id=485, 492.62045pt x 313.79848pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15]
+<../img/manifold_structure.pdf, id=478, 492.62045pt x 313.79848pt>
 File: ../img/manifold_structure.pdf Graphic file (type pdf)
 <use ../img/manifold_structure.pdf>
 Package pdftex.def Info: ../img/manifold_structure.pdf  used on input line 160.
 (pdftex.def)             Requested size: 371.30594pt x 236.53094pt.
- [16 <../img/fullHilbert_1.pdf>] [17 <../img/manifold_structure.pdf>] [18] [19] [20] [21] [22]) [23]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16 <../img/fullHilbert_1.pdf>] [17 <../img/manifold_structure.pdf>] [18] [19] [20] [21] [22]) [23]
 \openout2 = `chap04_stateDriving.aux'.
 
  (./chap04_stateDriving.tex
@@ -951,161 +956,195 @@ Chapter 4.
 
 
 ] [34]
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 138.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 140.
  (/usr/share/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-Overfull \hbox (0.91533pt too wide) in paragraph at lines 169--170
+Overfull \hbox (0.91533pt too wide) in paragraph at lines 171--172
 \OT1/lmr/m/n/12 Some an-a-lyt-i-cally solv-able driv-ing pro-to-cols are the \OT1/lmr/m/it/12 Geodesics \OT1/lmr/m/n/12 of pro-jec-tive ground
  []
 
-<../img/driving.pdf, id=843, 221.82875pt x 190.7125pt>
+[35]
+<../img/driving.pdf, id=846, 221.82875pt x 190.7125pt>
 File: ../img/driving.pdf Graphic file (type pdf)
 <use ../img/driving.pdf>
-Package pdftex.def Info: ../img/driving.pdf  used on input line 187.
+Package pdftex.def Info: ../img/driving.pdf  used on input line 189.
 (pdftex.def)             Requested size: 266.19315pt x 228.85384pt.
-[35] [36 <../img/driving.pdf>]
-<../img/infidelityTimePlotGeod.pdf, id=880, 325.215pt x 131.49126pt>
+ [36 <../img/driving.pdf>] [37]
+<../img/infidelityTimePlotGeod.pdf, id=889, 325.215pt x 131.49126pt>
 File: ../img/infidelityTimePlotGeod.pdf Graphic file (type pdf)
 <use ../img/infidelityTimePlotGeod.pdf>
-Package pdftex.def Info: ../img/infidelityTimePlotGeod.pdf  used on input line 286.
+Package pdftex.def Info: ../img/infidelityTimePlotGeod.pdf  used on input line 302.
 (pdftex.def)             Requested size: 390.25604pt x 157.7887pt.
- [37]
-<../img/infidelityTfPlot.pdf, id=893, 325.215pt x 131.49126pt>
+<../img/infidelityTfPlot.pdf, id=890, 325.215pt x 131.49126pt>
 File: ../img/infidelityTfPlot.pdf Graphic file (type pdf)
 <use ../img/infidelityTfPlot.pdf>
-Package pdftex.def Info: ../img/infidelityTfPlot.pdf  used on input line 293.
+Package pdftex.def Info: ../img/infidelityTfPlot.pdf  used on input line 309.
 (pdftex.def)             Requested size: 390.25604pt x 157.7887pt.
-<../img/infidelityTfPlotLog.pdf, id=894, 325.215pt x 128.48pt>
+<../img/infidelityTfPlotLog.pdf, id=891, 325.215pt x 128.48pt>
 File: ../img/infidelityTfPlotLog.pdf Graphic file (type pdf)
 <use ../img/infidelityTfPlotLog.pdf>
-Package pdftex.def Info: ../img/infidelityTfPlotLog.pdf  used on input line 300.
+Package pdftex.def Info: ../img/infidelityTfPlotLog.pdf  used on input line 316.
 (pdftex.def)             Requested size: 390.25604pt x 154.17522pt.
- [38 <../img/infidelityTimePlotGeod.pdf> <../img/infidelityTfPlot.pdf
 
-pdfTeX warning: pdflatex (file ../img/infidelityTfPlot.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <../img/infidelityTfPlotLog.pdf
 
-pdfTeX warning: pdflatex (file ../img/infidelityTfPlotLog.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<../img/fidelityZeros.pdf, id=935, 325.215pt x 131.49126pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../img/fidelityZeros.pdf, id=892, 325.215pt x 131.49126pt>
 File: ../img/fidelityZeros.pdf Graphic file (type pdf)
 <use ../img/fidelityZeros.pdf>
-Package pdftex.def Info: ../img/fidelityZeros.pdf  used on input line 319.
+Package pdftex.def Info: ../img/fidelityZeros.pdf  used on input line 324.
 (pdftex.def)             Requested size: 390.25604pt x 157.7887pt.
-<../img/dens3.pdf, id=937, 250.9375pt x 205.76875pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../img/dens3.pdf, id=893, 250.9375pt x 205.76875pt>
 File: ../img/dens3.pdf Graphic file (type pdf)
 <use ../img/dens3.pdf>
-Package pdftex.def Info: ../img/dens3.pdf  used on input line 329.
+Package pdftex.def Info: ../img/dens3.pdf  used on input line 332.
 (pdftex.def)             Requested size: 301.12347pt x 246.92125pt.
- [39 <../img/fidelityZeros.pdf> <../img/dens3.pdf
 
-pdfTeX warning: pdflatex (file ../img/dens3.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[38 <../img/infidelityTimePlotGeod.pdf> <../img/infidelityTfPlot.pdf
+
+pdfTeX warning: pdflatex (file ../img/infidelityTfPlot.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/densVar.pdf, id=976, 250.9375pt x 205.76875pt>
+<../img/densVar.pdf, id=924, 250.9375pt x 205.76875pt>
 File: ../img/densVar.pdf Graphic file (type pdf)
 <use ../img/densVar.pdf>
-Package pdftex.def Info: ../img/densVar.pdf  used on input line 347.
+Package pdftex.def Info: ../img/densVar.pdf  used on input line 350.
 (pdftex.def)             Requested size: 301.12347pt x 246.92125pt.
- [40 <../img/densVar.pdf>]
+ [39 <../img/infidelityTfPlotLog.pdf> <../img/fidelityZeros.pdf
+
+pdfTeX warning: pdflatex (file ../img/fidelityZeros.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [40 <../img/dens3.pdf> <../img/densVar.pdf
+
+pdfTeX warning: pdflatex (file ../img/densVar.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 <../img/drivingLin.pdf, id=1004, 217.81375pt x 190.7125pt>
 File: ../img/drivingLin.pdf Graphic file (type pdf)
 <use ../img/drivingLin.pdf>
-Package pdftex.def Info: ../img/drivingLin.pdf  used on input line 362.
+Package pdftex.def Info: ../img/drivingLin.pdf  used on input line 382.
 (pdftex.def)             Requested size: 261.37517pt x 228.85384pt.
  [41 <../img/drivingLin.pdf>]
-<../img/infidelityInTimePlot1.pdf, id=1040, 376.40625pt x 130.4875pt>
+<../img/infidelityInTimePlot1.pdf, id=1033, 376.40625pt x 130.4875pt>
 File: ../img/infidelityInTimePlot1.pdf Graphic file (type pdf)
 <use ../img/infidelityInTimePlot1.pdf>
-Package pdftex.def Info: ../img/infidelityInTimePlot1.pdf  used on input line 390.
+Package pdftex.def Info: ../img/infidelityInTimePlot1.pdf  used on input line 395.
 (pdftex.def)             Requested size: 446.03938pt x 154.62697pt.
 
-Overfull \hbox (33.47443pt too wide) in paragraph at lines 390--391
+Overfull \hbox (33.47443pt too wide) in paragraph at lines 395--396
  [][] 
  []
 
-<../img/zeroState.pdf, id=1045, 333.245pt x 133.49875pt>
+<../img/zeroState.pdf, id=1038, 333.245pt x 133.49875pt>
 File: ../img/zeroState.pdf Graphic file (type pdf)
 <use ../img/zeroState.pdf>
-Package pdftex.def Info: ../img/zeroState.pdf  used on input line 401.
+Package pdftex.def Info: ../img/zeroState.pdf  used on input line 406.
 (pdftex.def)             Requested size: 399.89198pt x 160.19766pt.
-[42 <../img/infidelityInTimePlot1.pdf>]
-<../img/infidelityTfPlotLogLinCombined1.pdf, id=1064, 364.36125pt x 152.57pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[42 <../img/infidelityInTimePlot1.pdf>] [43 <../img/zeroState.pdf>]
+<../img/infidelityTfPlotLogLinCombined1.pdf, id=1082, 364.36125pt x 152.57pt>
 File: ../img/infidelityTfPlotLogLinCombined1.pdf Graphic file (type pdf)
 <use ../img/infidelityTfPlotLogLinCombined1.pdf>
-Package pdftex.def Info: ../img/infidelityTfPlotLogLinCombined1.pdf  used on input line 425.
+Package pdftex.def Info: ../img/infidelityTfPlotLogLinCombined1.pdf  used on input line 457.
 (pdftex.def)             Requested size: 437.23131pt x 183.08308pt.
 
-Overfull \hbox (24.66635pt too wide) in paragraph at lines 425--426
+Overfull \hbox (24.66635pt too wide) in paragraph at lines 457--458
  [][] 
  []
 
-[43 <../img/zeroState.pdf> <../img/infidelityTfPlotLogLinCombined1.pdf
-
-pdfTeX warning: pdflatex (file ../img/infidelityTfPlotLogLinCombined1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<../img/infidCombined1.pdf, id=1097, 364.36125pt x 154.5775pt>
+<../img/infidCombined1.pdf, id=1083, 364.36125pt x 154.5775pt>
 File: ../img/infidCombined1.pdf Graphic file (type pdf)
 <use ../img/infidCombined1.pdf>
-Package pdftex.def Info: ../img/infidCombined1.pdf  used on input line 450.
+Package pdftex.def Info: ../img/infidCombined1.pdf  used on input line 463.
 (pdftex.def)             Requested size: 437.23131pt x 185.49205pt.
 
-Overfull \hbox (24.66635pt too wide) in paragraph at lines 450--451
+Overfull \hbox (24.66635pt too wide) in paragraph at lines 463--464
  [][] 
  []
 
-[44 <../img/infidCombined1.pdf>]
-<../img/dens2.pdf, id=1123, 250.9375pt x 205.76875pt>
+<../img/dens2.pdf, id=1084, 250.9375pt x 205.76875pt>
 File: ../img/dens2.pdf Graphic file (type pdf)
 <use ../img/dens2.pdf>
-Package pdftex.def Info: ../img/dens2.pdf  used on input line 465.
+Package pdftex.def Info: ../img/dens2.pdf  used on input line 473.
 (pdftex.def)             Requested size: 301.12347pt x 246.92125pt.
-<../img/dens2Zoom.pdf, id=1126, 250.9375pt x 205.76875pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../img/dens2Zoom.pdf, id=1087, 250.9375pt x 205.76875pt>
 File: ../img/dens2Zoom.pdf Graphic file (type pdf)
 <use ../img/dens2Zoom.pdf>
-Package pdftex.def Info: ../img/dens2Zoom.pdf  used on input line 472.
+Package pdftex.def Info: ../img/dens2Zoom.pdf  used on input line 480.
 (pdftex.def)             Requested size: 301.12347pt x 246.92125pt.
- [45 <../img/dens2.pdf> <../img/dens2Zoom.pdf
 
-pdfTeX warning: pdflatex (file ../img/dens2Zoom.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[44 <../img/infidelityTfPlotLogLinCombined1.pdf> <../img/infidCombined1.pdf
+
+pdfTeX warning: pdflatex (file ../img/infidCombined1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/undercritical.pdf, id=1175, 333.245pt x 135.50626pt>
+<../img/undercritical.pdf, id=1124, 333.245pt x 135.50626pt>
 File: ../img/undercritical.pdf Graphic file (type pdf)
 <use ../img/undercritical.pdf>
-Package pdftex.def Info: ../img/undercritical.pdf  used on input line 483.
+Package pdftex.def Info: ../img/undercritical.pdf  used on input line 491.
 (pdftex.def)             Requested size: 399.89198pt x 162.60666pt.
-<../img/overcritical.pdf, id=1176, 333.245pt x 134.5025pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../img/overcritical.pdf, id=1125, 333.245pt x 134.5025pt>
 File: ../img/overcritical.pdf Graphic file (type pdf)
 <use ../img/overcritical.pdf>
-Package pdftex.def Info: ../img/overcritical.pdf  used on input line 490.
+Package pdftex.def Info: ../img/overcritical.pdf  used on input line 498.
 (pdftex.def)             Requested size: 399.89198pt x 161.40216pt.
- [46 <../img/undercritical.pdf> <../img/overcritical.pdf
 
-pdfTeX warning: pdflatex (file ../img/overcritical.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<../img/landauCompare.pdf, id=1207, 333.245pt x 130.4875pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[45 <../img/dens2.pdf>]
+<../img/landauCompare.pdf, id=1165, 333.245pt x 130.4875pt>
 File: ../img/landauCompare.pdf Graphic file (type pdf)
 <use ../img/landauCompare.pdf>
-Package pdftex.def Info: ../img/landauCompare.pdf  used on input line 544.
+Package pdftex.def Info: ../img/landauCompare.pdf  used on input line 552.
 (pdftex.def)             Requested size: 399.89198pt x 156.5842pt.
- [47 <../img/landauCompare.pdf>]
-<../img/allInOne.pdf, id=1234, 347.2975pt x 309.155pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[46 <../img/dens2Zoom.pdf>]
+<../img/densVariance.pdf, id=1194, 269.005pt x 205.76875pt>
+File: ../img/densVariance.pdf Graphic file (type pdf)
+<use ../img/densVariance.pdf>
+Package pdftex.def Info: ../img/densVariance.pdf  used on input line 575.
+(pdftex.def)             Requested size: 322.80437pt x 246.92125pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../img/allInOne.pdf, id=1196, 347.2975pt x 309.155pt>
 File: ../img/allInOne.pdf Graphic file (type pdf)
 <use ../img/allInOne.pdf>
-Package pdftex.def Info: ../img/allInOne.pdf  used on input line 566.
+Package pdftex.def Info: ../img/allInOne.pdf  used on input line 584.
 (pdftex.def)             Requested size: 416.75491pt x 370.98413pt.
 
-Overfull \hbox (4.18996pt too wide) in paragraph at lines 566--567
+Overfull \hbox (4.18996pt too wide) in paragraph at lines 584--585
  [][] 
  []
 
-[48 <../img/allInOne.pdf>]
-<../img/densVariance.pdf, id=1265, 269.005pt x 205.76875pt>
-File: ../img/densVariance.pdf Graphic file (type pdf)
-<use ../img/densVariance.pdf>
-Package pdftex.def Info: ../img/densVariance.pdf  used on input line 577.
-(pdftex.def)             Requested size: 322.80437pt x 246.92125pt.
-) [49 <../img/densVariance.pdf>]
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[47 <../img/undercritical.pdf> <../img/overcritical.pdf
+
+pdfTeX warning: pdflatex (file ../img/overcritical.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [48 <../img/landauCompare.pdf> <../img/densVariance.pdf
+
+pdfTeX warning: pdflatex (file ../img/densVariance.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [49 <../img/allInOne.pdf>]
 \openout2 = `chap07_lipkin.aux'.
 
  (./chap07_lipkin.tex
@@ -1115,176 +1154,192 @@ Chapter 5.
 
 
 
-]
-<../img/N=3_energiesl.pdf, id=1312, 260.975pt x 130.4875pt>
+] [51]
+<../img/N=3_energiesl.pdf, id=1327, 260.975pt x 130.4875pt>
 File: ../img/N=3_energiesl.pdf Graphic file (type pdf)
 <use ../img/N=3_energiesl.pdf>
-Package pdftex.def Info: ../img/N=3_energiesl.pdf  used on input line 88.
+Package pdftex.def Info: ../img/N=3_energiesl.pdf  used on input line 109.
 (pdftex.def)             Requested size: 339.26746pt x 169.63371pt.
-<../img/N=3_energiesc.pdf, id=1313, 260.975pt x 130.4875pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../img/N=3_energiesc.pdf, id=1328, 260.975pt x 130.4875pt>
 File: ../img/N=3_energiesc.pdf Graphic file (type pdf)
 <use ../img/N=3_energiesc.pdf>
-Package pdftex.def Info: ../img/N=3_energiesc.pdf  used on input line 94.
+Package pdftex.def Info: ../img/N=3_energiesc.pdf  used on input line 115.
 (pdftex.def)             Requested size: 339.26746pt x 169.63371pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[51]
-<../img/N=3_gComponents.pdf, id=1334, 289.08pt x 433.62pt>
+[52]
+<../img/N=3_gComponents.pdf, id=1347, 289.08pt x 433.62pt>
 File: ../img/N=3_gComponents.pdf Graphic file (type pdf)
 <use ../img/N=3_gComponents.pdf>
-Package pdftex.def Info: ../img/N=3_gComponents.pdf  used on input line 108.
+Package pdftex.def Info: ../img/N=3_gComponents.pdf  used on input line 127.
 (pdftex.def)             Requested size: 375.80394pt x 563.70595pt.
-<../img/N=3_barA.pdf, id=1335, 312.16624pt x 42.1575pt>
+<../img/N=3_barA.pdf, id=1348, 312.16624pt x 42.1575pt>
 File: ../img/N=3_barA.pdf Graphic file (type pdf)
 <use ../img/N=3_barA.pdf>
-Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 109.
+Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 128.
 (pdftex.def)             Requested size: 405.81607pt x 54.80472pt.
 
-Overfull \hbox (1.08348pt too wide) in paragraph at lines 113--114
+Overfull \hbox (1.08348pt too wide) in paragraph at lines 132--133
  [][] 
  []
 
-[52 <../img/N=3_energiesl.pdf> <../img/N=3_energiesc.pdf
+[53 <../img/N=3_energiesl.pdf> <../img/N=3_energiesc.pdf
 
 pdfTeX warning: pdflatex (file ../img/N=3_energiesc.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/N=3_gDivergence.pdf, id=1370, 245.91875pt x 190.7125pt>
+<../img/N=3_gDivergence.pdf, id=1382, 245.91875pt x 190.7125pt>
 File: ../img/N=3_gDivergence.pdf Graphic file (type pdf)
 <use ../img/N=3_gDivergence.pdf>
-Package pdftex.def Info: ../img/N=3_gDivergence.pdf  used on input line 120.
+Package pdftex.def Info: ../img/N=3_gDivergence.pdf  used on input line 139.
 (pdftex.def)             Requested size: 319.69432pt x 247.92621pt.
- [53 <../img/N=3_gComponents.pdf> <../img/N=3_barA.pdf
+ [54 <../img/N=3_gComponents.pdf> <../img/N=3_barA.pdf
 
 pdfTeX warning: pdflatex (file ../img/N=3_barA.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/N=3_gammas.pdf, id=1394, 333.245pt x 249.93375pt>
+<../img/N=3_gammas.pdf, id=1406, 333.245pt x 249.93375pt>
 File: ../img/N=3_gammas.pdf Graphic file (type pdf)
 <use ../img/N=3_gammas.pdf>
-Package pdftex.def Info: ../img/N=3_gammas.pdf  used on input line 129.
+Package pdftex.def Info: ../img/N=3_gammas.pdf  used on input line 148.
 (pdftex.def)             Requested size: 433.21843pt x 324.91383pt.
 File: ../img/N=3_barA.pdf Graphic file (type pdf)
 <use ../img/N=3_barA.pdf>
-Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 130.
+Package pdftex.def Info: ../img/N=3_barA.pdf  used on input line 149.
 (pdftex.def)             Requested size: 405.81607pt x 54.80472pt.
 
-Overfull \hbox (29.01102pt too wide) in paragraph at lines 137--138
+Overfull \hbox (29.01102pt too wide) in paragraph at lines 156--157
  [][] 
  []
 
-[54 <../img/N=3_gDivergence.pdf> <../img/N=3_gammas.pdf
+<../img/N=3_Ricci.pdf, id=1407, 350.30875pt x 307.1475pt>
+File: ../img/N=3_Ricci.pdf Graphic file (type pdf)
+<use ../img/N=3_Ricci.pdf>
+Package pdftex.def Info: ../img/N=3_Ricci.pdf  used on input line 164.
+(pdftex.def)             Requested size: 350.30789pt x 307.14674pt.
+[55 <../img/N=3_gDivergence.pdf> <../img/N=3_gammas.pdf
 
 pdfTeX warning: pdflatex (file ../img/N=3_gammas.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/N=3_Ricci.pdf, id=1419, 345.29pt x 307.1475pt>
-File: ../img/N=3_Ricci.pdf Graphic file (type pdf)
-<use ../img/N=3_Ricci.pdf>
-Package pdftex.def Info: ../img/N=3_Ricci.pdf  used on input line 148.
-(pdftex.def)             Requested size: 345.28914pt x 307.14674pt.
-<../img/N=3_Ricci_section.pdf, id=1420, 311.1625pt x 200.75pt>
+<../img/N=3_Ricci_section.pdf, id=1429, 311.1625pt x 200.75pt>
 File: ../img/N=3_Ricci_section.pdf Graphic file (type pdf)
 <use ../img/N=3_Ricci_section.pdf>
-Package pdftex.def Info: ../img/N=3_Ricci_section.pdf  used on input line 156.
+Package pdftex.def Info: ../img/N=3_Ricci_section.pdf  used on input line 172.
 (pdftex.def)             Requested size: 280.04366pt x 180.67331pt.
- [55 <../img/N=3_Ricci.pdf> <../img/N=3_Ricci_section.pdf
+<../img/N=3_geodesics.pdf, id=1430, 311.1625pt x 308.15125pt>
+File: ../img/N=3_geodesics.pdf Graphic file (type pdf)
+<use ../img/N=3_geodesics.pdf>
+Package pdftex.def Info: ../img/N=3_geodesics.pdf  used on input line 188.
+(pdftex.def)             Requested size: 311.16174pt x 308.15048pt.
+ [56 <../img/N=3_Ricci.pdf> <../img/N=3_Ricci_section.pdf
 
 pdfTeX warning: pdflatex (file ../img/N=3_Ricci_section.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/N=3_geodesics.pdf, id=1466, 311.1625pt x 308.15125pt>
-File: ../img/N=3_geodesics.pdf Graphic file (type pdf)
-<use ../img/N=3_geodesics.pdf>
-Package pdftex.def Info: ../img/N=3_geodesics.pdf  used on input line 186.
-(pdftex.def)             Requested size: 311.16174pt x 308.15048pt.
- [56]
-<../img/comparingGeodesics.pdf, id=1476, 138.7076pt x 122.53333pt>
+<../img/comparingGeodesics.pdf, id=1469, 138.7076pt x 122.53333pt>
 File: ../img/comparingGeodesics.pdf Graphic file (type pdf)
 <use ../img/comparingGeodesics.pdf>
-Package pdftex.def Info: ../img/comparingGeodesics.pdf  used on input line 199.
+Package pdftex.def Info: ../img/comparingGeodesics.pdf  used on input line 201.
 (pdftex.def)             Requested size: 123.77074pt x 109.34038pt.
-<../img/singularitiesBetweenEnergiesN=5.pdf, id=1479, 325.215pt x 439.6425pt>
-File: ../img/singularitiesBetweenEnergiesN=5.pdf Graphic file (type pdf)
-<use ../img/singularitiesBetweenEnergiesN=5.pdf>
-Package pdftex.def Info: ../img/singularitiesBetweenEnergiesN=5.pdf  used on input line 229.
-(pdftex.def)             Requested size: 422.77945pt x 571.53517pt.
-
-Overfull \hbox (18.04686pt too wide) in paragraph at lines 235--238
- [][] 
- []
-
-[57 <../img/N=3_geodesics.pdf> <../img/comparingGeodesics.pdf
+ [57 <../img/N=3_geodesics.pdf> <../img/comparingGeodesics.pdf
 
 pdfTeX warning: pdflatex (file ../img/comparingGeodesics.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../img/N=5_det3D.pdf, id=1493, 260.975pt x 186.6975pt>
-File: ../img/N=5_det3D.pdf Graphic file (type pdf)
-<use ../img/N=5_det3D.pdf>
-Package pdftex.def Info: ../img/N=5_det3D.pdf  used on input line 245.
-(pdftex.def)             Requested size: 339.26746pt x 242.70671pt.
- [58 <../img/singularitiesBetweenEnergiesN=5.pdf>]
-<../img/N=5_geods00.pdf, id=1508, 325.215pt x 264.99pt>
-File: ../img/N=5_geods00.pdf Graphic file (type pdf)
-<use ../img/N=5_geods00.pdf>
-Package pdftex.def Info: ../img/N=5_geods00.pdf  used on input line 258.
-(pdftex.def)             Requested size: 422.77945pt x 344.48695pt.
+<../img/singularitiesBetweenEnergiesN=5.pdf, id=1488, 325.215pt x 439.6425pt>
+File: ../img/singularitiesBetweenEnergiesN=5.pdf Graphic file (type pdf)
+<use ../img/singularitiesBetweenEnergiesN=5.pdf>
+Package pdftex.def Info: ../img/singularitiesBetweenEnergiesN=5.pdf  used on input line 232.
+(pdftex.def)             Requested size: 422.77945pt x 571.53517pt.
 
-Overfull \hbox (10.2145pt too wide) in paragraph at lines 258--259
+Overfull \hbox (18.04686pt too wide) in paragraph at lines 238--241
  [][] 
  []
 
-[59 <../img/N=5_det3D.pdf>]
-<../img/infiniteN_transitionCompare.pdf, id=1525, 361.35pt x 241.90375pt>
+[58]
+<../img/N=5_det3D.pdf, id=1497, 260.975pt x 186.6975pt>
+File: ../img/N=5_det3D.pdf Graphic file (type pdf)
+<use ../img/N=5_det3D.pdf>
+Package pdftex.def Info: ../img/N=5_det3D.pdf  used on input line 247.
+(pdftex.def)             Requested size: 339.26746pt x 242.70671pt.
+ [59 <../img/singularitiesBetweenEnergiesN=5.pdf>]
+<../img/N=5_geods00.pdf, id=1508, 325.215pt x 264.99pt>
+File: ../img/N=5_geods00.pdf Graphic file (type pdf)
+<use ../img/N=5_geods00.pdf>
+Package pdftex.def Info: ../img/N=5_geods00.pdf  used on input line 255.
+(pdftex.def)             Requested size: 422.77945pt x 344.48695pt.
+
+Overfull \hbox (10.2145pt too wide) in paragraph at lines 255--256
+ [][] 
+ []
+
+[60 <../img/N=5_det3D.pdf> <../img/N=5_geods00.pdf
+
+pdfTeX warning: pdflatex (file ../img/N=5_geods00.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<../img/infiniteN_transitionCompare.pdf, id=1543, 361.35pt x 241.90375pt>
 File: ../img/infiniteN_transitionCompare.pdf Graphic file (type pdf)
 <use ../img/infiniteN_transitionCompare.pdf>
-Package pdftex.def Info: ../img/infiniteN_transitionCompare.pdf  used on input line 300.
+Package pdftex.def Info: ../img/infiniteN_transitionCompare.pdf  used on input line 297.
 (pdftex.def)             Requested size: 361.34912pt x 241.90315pt.
- [60 <../img/N=5_geods00.pdf>]
-<../img/N=10_energiesl.pdf, id=1556, 238.8925pt x 116.435pt>
+ [61 <../img/infiniteN_transitionCompare.pdf>]
+<../img/N=10_energiesl.pdf, id=1573, 238.8925pt x 116.435pt>
 File: ../img/N=10_energiesl.pdf Graphic file (type pdf)
 <use ../img/N=10_energiesl.pdf>
-Package pdftex.def Info: ../img/N=10_energiesl.pdf  used on input line 322.
+Package pdftex.def Info: ../img/N=10_energiesl.pdf  used on input line 364.
 (pdftex.def)             Requested size: 334.4472pt x 163.00787pt.
-<../img/N=10_energies2.pdf, id=1557, 231.86626pt x 117.43875pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../img/N=10_energies2.pdf, id=1574, 231.86626pt x 117.43875pt>
 File: ../img/N=10_energies2.pdf Graphic file (type pdf)
 <use ../img/N=10_energies2.pdf>
-Package pdftex.def Info: ../img/N=10_energies2.pdf  used on input line 328.
+Package pdftex.def Info: ../img/N=10_energies2.pdf  used on input line 370.
 (pdftex.def)             Requested size: 324.61052pt x 164.4131pt.
- [61 <../img/infiniteN_transitionCompare.pdf> <../img/N=10_energiesl.pdf
 
-pdfTeX warning: pdflatex (file ../img/N=10_energiesl.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [62 <../img/N=10_energies2.pdf>]
-<../img/singularitiesPlots.pdf, id=1619, 289.08pt x 464.73625pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../img/singularitiesPlots.pdf, id=1575, 289.08pt x 464.73625pt>
 File: ../img/singularitiesPlots.pdf Graphic file (type pdf)
 <use ../img/singularitiesPlots.pdf>
 Package pdftex.def Info: ../img/singularitiesPlots.pdf  used on input line 378.
 (pdftex.def)             Requested size: 375.80394pt x 604.15704pt.
- [63]) [64 <../img/singularitiesPlots.pdf>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [62] [63 <../img/N=10_energiesl.pdf> <../img/N=10_energies2.pdf
+
+pdfTeX warning: pdflatex (file ../img/N=10_energies2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [64 <../img/singularitiesPlots.pdf>]
 \openout2 = `chap04_groundManifold.aux'.
 
  (./chap04_groundManifold.tex
-<../img/quenchFidelityFrom00.pdf, id=1637, 302.12875pt x 259.97125pt>
+<../img/quenchFidelityFrom00.pdf, id=1632, 302.12875pt x 259.97125pt>
 File: ../img/quenchFidelityFrom00.pdf Graphic file (type pdf)
 <use ../img/quenchFidelityFrom00.pdf>
 Package pdftex.def Info: ../img/quenchFidelityFrom00.pdf  used on input line 8.
 (pdftex.def)             Requested size: 362.55267pt x 311.96393pt.
-<../img/bg123.pdf, id=1638, 275.0275pt x 157.58875pt>
+<../img/bg123.pdf, id=1633, 275.0275pt x 157.58875pt>
 File: ../img/bg123.pdf Graphic file (type pdf)
 <use ../img/bg123.pdf>
 Package pdftex.def Info: ../img/bg123.pdf  used on input line 22.
 (pdftex.def)             Requested size: 330.03134pt x 189.10553pt.
-<../img/plotsFidelityQuenches.pdf, id=1639, 263.98625pt x 279.0425pt>
+<../img/plotsFidelityQuenches.pdf, id=1634, 263.98625pt x 279.0425pt>
 File: ../img/plotsFidelityQuenches.pdf Graphic file (type pdf)
 <use ../img/plotsFidelityQuenches.pdf>
 Package pdftex.def Info: ../img/plotsFidelityQuenches.pdf  used on input line 23.
 (pdftex.def)             Requested size: 316.7819pt x 334.8493pt.
- [65
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [65
 
 
 
- <../img/quenchFidelityFrom00.pdf>]) [66 <../img/bg123.pdf> <../img/plotsFidelityQuenches.pdf
+ <../img/quenchFidelityFrom00.pdf>] [66 <../img/bg123.pdf> <../img/plotsFidelityQuenches.pdf
 
 pdfTeX warning: pdflatex (file ../img/plotsFidelityQuenches.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
@@ -1299,22 +1354,12 @@ pdfTeX warning: pdflatex (file ../img/plotsFidelityQuenches.pdf): PDF inclusion:
 \openout2 = `bibliography.aux'.
 
  (./bibliography.tex (./thesis.bbl
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 13.
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 54.
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 2591) in paragraph at lines 53--59
-[]\OT1/lmr/m/n/12 C. Gorod-ski.  \OT1/lmr/m/it/12 An in-tro-duc-tion to Rie-man-nian ge-om-e-try\OT1/lmr/m/n/12 .  un-pub-
- []
-
-
-Underfull \hbox (badness 2980) in paragraph at lines 53--59
-\OT1/lmr/m/n/12 lished, 2012.  URL []$\OT1/lmtt/m/n/12 https : / / www . ime . usp . br / []gorodski / teaching /
- []
-
-
-Underfull \hbox (badness 1014) in paragraph at lines 80--85
-\OT1/lmr/m/it/12 Proc. R. Soc. Lond. A\OT1/lmr/m/n/12 , 392(1802):45--57, 1984.  URL []$\OT1/lmtt/m/n/12 http : / / rspa .
+Underfull \hbox (badness 10000) in paragraph at lines 51--56
+[]$\OT1/lmtt/m/n/12 https : / / www . ime . usp . br / []gorodski / teaching / mat5771-[]2016 /
  []
 
 [68
@@ -1355,21 +1400,21 @@ See the caption package documentation for explanation.
 
 (./thesis.aux (./title.aux) (./notation.aux) (./preface.aux) (./chap01_intro.aux) (./chap03_driving.aux) (./chap04_stateDriving.aux) (./chap06_twoLevel.aux) (./chap07_lipkin.aux) (./chap04_groundManifold.aux) (./epilog.aux) (./bibliography.aux) (./appendixGEOM.aux) (./appendix1.aux))
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CD7CF4B24FC4FBC93522932015391BFC;8859.
+(rerunfilecheck)             Checksum: 4B92548A28ED64AD5C56B0DCC5D083FE;9132.
  ) 
 Here is how much of TeX's memory you used:
- 30002 strings out of 478276
- 547883 string characters out of 5853013
- 804254 words of memory out of 5000000
- 47059 multiletter control sequences out of 15000+600000
+ 30001 strings out of 478276
+ 547823 string characters out of 5853013
+ 803316 words of memory out of 5000000
+ 47056 multiletter control sequences out of 15000+600000
  557989 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,30n,80p,1463b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} </home/strelda/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk>{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmib7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (82 pages, 28832793 bytes).
+Output written on thesis.pdf (81 pages, 28318730 bytes).
 PDF statistics:
- 2124 PDF objects out of 2487 (max. 8388607)
- 1743 compressed objects within 18 object streams
- 451 named destinations out of 1000 (max. 500000)
- 647 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2100 PDF objects out of 2487 (max. 8388607)
+ 1726 compressed objects within 18 object streams
+ 454 named destinations out of 1000 (max. 500000)
+ 658 words of extra memory for PDF output out of 10000 (max. 10000000)
 

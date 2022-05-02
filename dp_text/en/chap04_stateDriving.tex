@@ -152,7 +152,7 @@ where scalar parameter $\llambda(t)$ is assumed to be changing along the path $\
 for $\HH$ the full Hamiltonian of the system and any point on $\mathcal J$, along which the partial derivative is taken.
 
 
-% The wave function $\kpsi$ in $S$ can be decomposed using Schmidt decomposition\footnote{The Schmidt decomposition can be performed in finite dimension, or if the Hamiltonian is compact, which is not automatic in quantum mechanics. What's more, the Hamiltonian is usually not even bounded. Anyway, for simple systems with bounded energy we can assume so.}
+% The wavefunction $\kpsi$ in $S$ can be decomposed using Schmidt decomposition\footnote{The Schmidt decomposition can be performed in finite dimension, or if the Hamiltonian is compact, which is not automatic in quantum mechanics. What's more, the Hamiltonian is usually not even bounded. Anyway, for simple systems with bounded energy we can assume so.}
 % \begin{equation}
 %     \ket{\psi(\llambda)} = \sum_{m,s}\psi_n(\llambda) \ket{m(\llambda)}\overbrace{\braket{m(\llambda)|s}}^{U_{ms}(\llambda)} =\sum_m \overbrace{\tilde{\psi}_m(\llambda)}^{\braket{m(\llambda)|\psi_n|s}}\ket{m(\llambda)},
 % \end{equation}
@@ -163,7 +163,7 @@ for $\HH$ the full Hamiltonian of the system and any point on $\mathcal J$, alon
 
 
 % \subsubsection{Adiabatic gauge potential}
-The generators of unitary transformations are the adiabatic potentials, which can be defined on wave function $\ket{\tilde\psi(\llambda)}$ defined in system $\tilde S$, as
+The generators of unitary transformations are the adiabatic potentials, which can be defined on wavefunction $\ket{\tilde\psi(\llambda)}$ defined in system $\tilde S$, as
 \begin{equation}
     i\hbar\partial_\lambda \ket{\tilde{\psi}(\llambda)} = i\hbar \partial_\lambda\left(\U^+(\llambda)\ket{\psi} \right)= \underbrace{i\hbar\left(\partial_\lambda \U^+(\llambda)\right)\U(\llambda)}_{-\tilde{\AA_\lambda}}\ket{\tilde{\psi}(\llambda)}.
 \end{equation}
@@ -367,7 +367,7 @@ Let's state and prove the theorem demonstrating the importance of geodesics.
 
 
 \subsection{Minimizing the energy variance}
-The driving can be restricted to the ground state manifold only in approximation, such that the excited parts of the wave function can be neglected in every step. This fact is used for so-called \emph{close adiabatic drivings}. The first theorem about geodesics is from \citet{Bukov2019}.
+The driving can be restricted to the ground state manifold only in approximation, such that the excited parts of the wavefunction can be neglected in every step. This fact is used for so-called \emph{close adiabatic drivings}. The first theorem about geodesics is from \citet{Bukov2019}.
 
 \begin{thm}
     \label{thm:polkovnikov}
@@ -488,7 +488,7 @@ If we imagine $\delta\llambda$ to be finite (not infinitely small, as the notati
 Until now, our interest was mainly in \emph{unit fidelity protocols}. But how to calculate the case when the fidelity is "almost one"? This is the aim of \emph{adiabatic perturbation theory}.
 
 
-Following the article from \citet{Rigolin2008}, the wave function can be approximated by series. Because every element is then decomposed into another series, we bear in mind the \emph{locality of variables}, which clarifies the reason for performing this procedure. Let's call variable $V(t)$ \emph{\bluee{local}} if it does not depend on driving path. These variables are in shades of \bluee{blue} and \redd{non-local} variables, written in shades of \redd{red}, are usually expressed as an integral over driving path $\mathcal J$.
+Following the article from \citet{Rigolin2008}, the wavefunction can be approximated by series. Because every element is then decomposed into another series, we bear in mind the \emph{locality of variables}, which clarifies the reason for performing this procedure. Let's call variable $V(\llambda(t))$ \emph{\bluee{local}} if it depends only on the system characteristics in point $\llambda(t)$. These variables can usually be obtained only from the spectrum \bluee{$\sigma(\HH(\llambda(t)))$} and are written in shades of \bluee{blue}. In opposite, a \redd{non-local} variable, written in shades of \redd{red}, depends on the driving path. These are usually expressed as an integral over the driving path $\mathcal J$, but might generally depend on any point which is not on path $\mathcal C$.
 
 We are interested in the driving along path $\mathcal J$ defined by Eq. \ref{eq:defJ_QSdriving},
 where $t$ is time and $T$ final time of the driving. Let the initial condition be

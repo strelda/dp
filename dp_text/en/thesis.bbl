@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,13 +10,12 @@ D.~Loss and D.~P. DiVincenzo.
 \newblock Quantum computation with quantum dots.
 \newblock \emph{Phys. Rev. A}, 57:\penalty0 120--126, Jan 1998.
 \newblock \doi{10.1103/PhysRevA.57.120}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.57.120}.
 
 \bibitem[Makhlin et~al.(2000)Makhlin, Schön, and Shnirman]{josephson}
 Y.~Makhlin, G.~Schön, and A.~Shnirman.
 \newblock Josephson junction based quantum computing.
 \newblock \emph{AAECC 10}, page 375–382, 2000.
-\newblock \doi{https://doi.org/10.1007/s002000050136}.
+\newblock \doi{10.1007/978-3-030-20726-7_17}.
 
 \bibitem[Krtouš(2013)]{krtous}
 P.~Krtouš.
@@ -41,7 +40,6 @@ L.~D. Landau and L.~M. Lifshitz.
   Volume 3}.
 \newblock Butterworth-Heinemann, 3 edition, 1981.
 \newblock ISBN 0750635398.
-\newblock URL \url{http://www.worldcat.org/isbn/0750635398}.
 
 \bibitem[Petersen(1998)]{petersen}
 P.~Petersen.
@@ -51,8 +49,7 @@ P.~Petersen.
 
 \bibitem[Gorodski(2012)]{claudio}
 C.~Gorodski.
-\newblock \emph{An introduction to Riemannian geometry}.
-\newblock unpublished, 2012.
+\newblock An introduction to riemannian geometry, 2012.
 \newblock URL
   \url{https://www.ime.usp.br/~gorodski/teaching/mat5771-2016/gorodski-riem-geom-2012.pdf}.
 \newblock Preliminary version.
@@ -64,7 +61,7 @@ D.~Guti\'errez-Ruiz, D.~Gonzalez, J.~Ch\'avez-Carlos, J.~G. Hirsch, and J.~D.
 \newblock Quantum geometric tensor and quantum phase transitions in the
   lipkin-meshkov-glick model.
 \newblock \emph{Phys. Rev. B}, 103, May 2021.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.103.174104}.
+\newblock \doi{10.1103/PhysRevB.103.174104}.
 
 \bibitem[Kolodrubetz et~al.(2017)Kolodrubetz, Mehta, and
   Polkovnikov]{kolodrubez}
@@ -72,29 +69,26 @@ M.~Kolodrubetz, P.~Mehta, and A.~Polkovnikov.
 \newblock Geometry and non-adiabatic response in quantum and classical systems.
 \newblock \emph{Physics Reports}, 697:\penalty0 1--87, 2017.
 \newblock ISSN 0370-1573.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0370157317301989}.
-\newblock Geometry and non-adiabatic response in quantum and classical systems.
 
 \bibitem[Berry(1984)]{berry1984}
 M.~V. Berry.
 \newblock Quantal phase factors accompanying adiabatic changes.
 \newblock \emph{Proc. R. Soc. Lond. A}, 392\penalty0 (1802):\penalty0 45--57,
   1984.
-\newblock URL \url{http://rspa.royalsocietypublishing.org/content/392/1802/45}.
+\newblock \doi{10.1098/rspa.1984.0023}.
 
 \bibitem[Berry(1989)]{berry1989}
 M.~V. Berry.
-\newblock The quantum phase, five years after’ in ‘geometric phases in
-  physics’.
+\newblock The quantum phase, five years after.
 \newblock \emph{A Shapere, F Wilczek. (World Scientific) 7-28}, 1989.
+\newblock Geometric phases in physics, 7–28, Adv. Ser. Math. Phys., 5,.
 
 \bibitem[Berry(2009)]{berry2009}
 M.~V. Berry.
 \newblock Transitionless quantum driving.
 \newblock \emph{Journal of Physics A: Mathematical and Theoretical},
   42\penalty0 (36), 2009.
-\newblock URL \url{https://doi.org/10.1088/1751-8113/42/36/365303}.
+\newblock \doi{10.1088/1751-8113/42/36/365303}.
 
 \bibitem[Uhlmann(1976)]{uhlman}
 A.~Uhlmann.
@@ -102,8 +96,7 @@ A.~Uhlmann.
 \newblock \emph{Reports on Mathematical Physics}, 9\penalty0 (2):\penalty0
   273--279, 1976.
 \newblock ISSN 0034-4877.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/0034487776900604}.
+\newblock \doi{https://doi.org/10.1016/0034-4877(76)90060-4}.
 
 \bibitem[Tolkien(1977)]{lordOfTheRings}
 J.~R.~R. Tolkien.
@@ -129,15 +122,13 @@ M.~Bukov, D.~Sels, and A.~Polkovnikov.
 \newblock {Geometric Speed Limit of Accessible Many-Body State Preparation}.
 \newblock \emph{Physical Review X}, 9\penalty0 (1):\penalty0 011034, 2019.
 \newblock ISSN 2160-3308.
-\newblock URL \url{https://doi.org/10.1103/PhysRevX.9.011034
-  https://link.aps.org/doi/10.1103/PhysRevX.9.011034}.
 
-\bibitem[Rigolin and Ortiz(2008)]{Rigolin2008}
-G.~Rigolin and G.~Ortiz.
+\bibitem[Rigolin et~al.(2008)Rigolin, Ortiz, and Ponce]{Rigolin2008}
+G.~Rigolin, G.~Ortiz, and V.~H. Ponce.
 \newblock Beyond the quantum adiabatic approximation: Adiabatic perturbation
   theory.
 \newblock \emph{Physical Review A 78, no. 5 (November 18, 2008): 052508}, 2008.
-\newblock URL \url{https://doi.org/10.1103/PhysRevA.78.052508}.
+\newblock \doi{10.1103/PhysRevA.78.052508}.
 
 \bibitem[Matus et~al.(2022)Matus, Cejnar, Stránský, and Střeleček]{felipe}
 F.~Matus, P.~Cejnar, P.~Stránský, and J.~Střeleček.
@@ -159,6 +150,14 @@ T.~Holstein and H.~Primakoff.
 \newblock \emph{Phys. Rev.}, 58:\penalty0 1098--1113, Dec 1940.
 \newblock \doi{10.1103/PhysRev.58.1098}.
 
+\bibitem[Schuetzhold and Schaller(2006)]{shuetzhold}
+R.~Schuetzhold and G.~Schaller.
+\newblock Adiabatic quantum algorithms as quantum phase transitions: First
+  versus second order.
+\newblock \emph{Phys. Rev. A}, 74\penalty0 (6), 12 2006.
+\newblock ISSN 1050-2947.
+\newblock \doi{10.1103/PHYSREVA.74.060304}.
+
 \bibitem[Ashtekar and Schilling(1997)]{ashtekar_geometrical_1997}
 A.~Ashtekar and T.~A. Schilling.
 \newblock Geometrical {Formulation} of {Quantum} {Mechanics}.
@@ -171,7 +170,6 @@ A.~Ashtekar and T.~A. Schilling.
 \newblock Geometry of quantum mechanics.
 \newblock In \emph{{AIP} {Conference} {Proceedings}}, volume 342, pages
   471--478, Cancun (Mexico), 1995. AIP.
-\newblock URL \url{http://aip.scitation.org/doi/abs/10.1063/1.48786}.
 \newblock ISSN: 0094243X.
 
 \bibitem[Molitor(2013)]{molitor_exponential_2013}
@@ -180,7 +178,6 @@ M.~Molitor.
 \newblock \emph{Journal of Geometry and Physics}, 70:\penalty0 54--80, 2013.
 \newblock ISSN 03930440.
 \newblock \doi{10.1016/j.geomphys.2013.03.015}.
-\newblock URL \url{http://arxiv.org/abs/1203.2056}.
 \newblock arXiv: 1203.2056.
 
 \end{thebibliography}

@@ -65,3 +65,4 @@ Holstein-Primakoff
 Střeleček
 Kähler
 preparable
+wavefunction
