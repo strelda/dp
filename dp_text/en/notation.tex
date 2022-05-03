@@ -1,7 +1,7 @@
 
 \chapwithtoc{Some notes to the notation}
 
-\vspace{-0pt}\begin{tabular} {@{}C{1.9cm}@{}p{8cm}@{}C{3.77cm}}
+\vspace{-14pt}\begin{tabular} {@{}C{1.9cm}@{}p{8cm}@{}C{3.77cm}}
 	\toprule
 	\textbf{Symbol}& \textbf{Meaning}& \hspace{-30pt}\textbf{Characterizing formula}\\\bottomrule
 	$\A_\mu$ & Calibrational (gauge) potential & $\A_\mu\coloneqq i\hbar \partial_\mu$ \\
@@ -25,6 +25,7 @@
 	  $\llambda$& $n$-dimensional real parameter of Hamiltonian &$\llambda\in \mathcal U\subset \R^n$  \\
 	  $\M$& manifold &  \\
 	  $\M_s$& $s^{\text{th}}$ energy state manifold & $\hspace{-43pt}\M_s\coloneqq\cup_{\llambda\in\mathcal U,\;\varphi\in[0,2\pi)} e^{i\varphi}\ket{s(\llambda)}$ \\
+	  $n$ & dimension of the parametric space & \\
 	  $N$ & dimension of the Hamiltonian & \\
 	  $\mathbb{N}$ & natural numbers (excluding zero) \\
 	  $\ket{o(\llambda)}$& ground state of Hamiltonian $\HH(\llambda)$  &  \\
@@ -39,13 +40,12 @@
 	  $\ket{s}$& eigenstate corresponding to energy $E_s$& $\HH\ket{s}=E_s\ket{s}$ \\
 	  $t$& time  &  \\
 	  $T$& final time of driving  &  \\
-	  $\mathbb T_a \M$& tangent field of $\M$ in $a\in \M$ &  \\
-	  $\mathbb T_a^* \M$& cotangent field of $\M$ in $a\in \M$ &  \\
+	  $\mathbb T_a \M$& tangent vector field of $\M$ in $a\in \M$ &  \\
+	  $\mathbb T_a^* \M$& cotangent vector field of $\M$ in $a\in \M$ &  \\
 	  $\T^p_q\M$& $q$-times covariant and $p$-times contravariant tensor field of $\M$&  \\
 	  $\mathcal U$& parametric space, open subset of $\R^n$  & \\
 	  $U(k)$& $k$-parametric unitary transformation group  &  \\
-	  $\chi_{\mu\nu}$ & geometric tensor & $\chi_{jk}\coloneqq \braket{\partial_j o|\partial_k o}_c,
-	  $ \\
+	  $\chi_{\mu\nu}$ & geometric tensor & $\chi_{jk}\coloneqq \braket{\partial_j o|\partial_k o}_c$ \\
 	  $(\chi;\lambda)$& LMG model parameters  & $(\chi,\lambda)\equiv \llambda\in\R^2$ \\
 \bottomrule
 \multicolumn{3}{l}{\footnotesize}
@@ -56,10 +56,10 @@
 	\toprule
 	\textbf{Operation}& \textbf{Notation}\\\bottomrule	
 	commutator & $[A,B]$ \\
-	connected braket & ${\partial_j o|\partial_k o}_c \equiv \braket{\partial_j o|\partial_k o} - \braket{\partial_j o|o}\braket{o|\partial_k o}$\\
+	connected bra-ket & $\braket{\partial_j o|\partial_k o}_c \equiv \braket{\partial_j o|\partial_k o} - \braket{\partial_j o|o}\braket{o|\partial_k o}$\\
 	fiber space & $(\mathcal{E},\mathcal{U},\pi,\mathcal{F})\equiv(\text{total space},\text{base space}, \text{surjection},\text{fiber})$\\
-	Poisson braket & $\{A,B\}$ \\
-	quantum braket & $\braket{\psi|\phi}$\\
+	Poisson bracket & $\{A,B\}$ \\
+	quantum bra-ket & $\braket{\psi|\phi}$\\
 	\bottomrule
 \end{tabular}
 

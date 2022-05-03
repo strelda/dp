@@ -7,10 +7,10 @@
 \contentsline {section}{\numberline {1.4}Geometry in 2 dimensions}{11}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Introduction to quantum geometry}{13}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Space of all states}{13}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Rays and bare states}{13}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Sectioning the space}{14}{section.2.3}%
+\contentsline {section}{\numberline {2.2}Rays and bare states}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Sectioning the space}{15}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Transporting states on state manifolds}{16}{section.2.4}%
-\contentsline {subsubsection}{Dynamical phase}{16}{section*.10}%
+\contentsline {subsubsection}{Dynamical phase}{17}{section*.10}%
 \contentsline {subsubsection}{Geometrical phase}{17}{section*.11}%
 \contentsline {subsubsection}{Restriction to 3-dimensional parametric space}{18}{section*.12}%
 \contentsline {section}{\numberline {2.5}Fidelity}{19}{section.2.5}%

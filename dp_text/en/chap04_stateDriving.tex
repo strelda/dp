@@ -2,12 +2,12 @@
 \label{chap:typesOfDriving}
 The concept of quantum state driving was introduced in the previous chapter. In this chapter the initial state is chosen as eigenstate $\ket{s(\llambda)}$. The driving parameter $\llambda$ is changed along path parametrized by time $t$
 \begin{equation}
-    \mathcal J\coloneqq\{\llambda(t)|t\in[0,T],\; \llambda\in \mathcal U\} \subset \R^N,\quad \llambda(0)=\llambda,\; \llambda(T)=\tilde\llambda,
+    \mathcal J\coloneqq\{\llambda(t)|t\in[0,T],\; \llambda\in \mathcal U\} \subset \R^n,\quad \llambda(0)=\llambda,\; \llambda(T)=\tilde\llambda,
     \label{eq:defJ_QSdriving}
 \end{equation}
-inducing the change in Hamiltonian $\HH(\llambda)$ and consequently in $\ket{\psi(\llambda)}$, according to the Schr\"odinger equation. This leads to solving the system of $N$ first order differential equations with initial condition $\ket{\psi(\llambda)}=\ket{s(0)}$.
+inducing the change in Hamiltonian $\HH(\llambda)$ of dim $N$, and consequently in $\ket{\psi(\llambda)}$, according to the Schr\"odinger equation. This leads to solving the system of $N$ first order differential equations with initial condition $\ket{\psi(\llambda(0))}=\ket{o(0)}$.
 
-Often needs to achieve as high fidelity as possible during the driving, meaning avoiding the state excitation. If $F=1$, we speak about \emph{unit fidelity driving} or \emph{adiabatic driving} and $\mathcal J$ is called the \emph{unit fidelity protocol}. Higher fidelity can be achieved by many methods; three of them are
+It is often needed to achieve as high fidelity as possible during the driving, meaning avoiding the state excitation. If $F=1$, we speak about \emph{unit fidelity driving} or \emph{adiabatic driving} and $\mathcal J$ is called the \emph{unit fidelity protocol}. Higher fidelity can be achieved by many methods; three of them are
 \begin{itemize}
     \item close adiabatic driving — changing the driving parameters $\llambda$ slowly, so the system has plenty of time to collapse into the ground state,
     \item path variation — varying the driving trajectory $\mathcal J$, avoiding the topological defects on manifolds, which would excite the system,
@@ -30,12 +30,12 @@ This means that adiabatic transport is an endomorphism of $\M _s$. The meaning o
     \end{equation}
     for the adiabatic state evolved according to Eq. \ref{eq:phasesOnManifold}
     \begin{equation}
-        \ket{\psi_{ad}}= e^{\omega_s(\lambda)}e^{\gamma_s(\lambda)}\ket{\psi(\lambda)},
+        \ket{\psi_{ad}}= e^{\omega_s(\lambda)}e^{\gamma_s(\lambda(t))}\ket{\psi(\lambda)},
     \end{equation}
     for dynamical phase
     $$\omega_s(\lambda)\equiv -\int_0^t E_s(\tau)\d \tau$$
     and geometrical phase
-        $$\gamma_s(\lambda)\equiv \int_0^t i\braket{\psi_s(\tau)|\partial_t\psi_s(\tau)} \d \tau .$$
+        $$\gamma_s(\lambda(t))\equiv \int_0^t i\braket{\psi_s(\tau)|\partial_t\psi_s(\tau)} \d \tau .$$
 \end{thm}
 \begin{myproof}
     The proof can be found in \citet[Chap. 6]{sakurai}.
@@ -64,15 +64,15 @@ Differentiation by $\partial_t$ yields
 \begin{equation}
     \begin{split}
         0&=\bra{\partial_t m(\llambda)}\HH(\tilde \llambda)\ket{s(\tilde\llambda)}+ \bra{m(\llambda)}\overbrace{\partial_t\HH(\tilde \llambda)}^{\approx \partial_t\HH(\llambda)}\ket{s(\tilde\llambda)}+ \bra{m(\llambda)}\HH(\tilde \llambda)\ket{\partial_t s(\tilde \llambda)}\\
-        &=E_s(\lambda)\braket{\partial_t m(\llambda)|s(\tilde \llambda)} + E_m(\lambda)\braket{m(\llambda)|\partial_t s(\tilde \llambda)}+ \bra{m(\llambda)}\partial_t \HH(\tilde\llambda)\ket{s(\tilde \llambda)}\\
-        &= (E_m(\lambda)-E_s(\lambda))\underbrace{\braket{m|\partial_t s(\tilde \llambda)}}_{-\frac{i}{\hbar}\bra{m}\AA_t\ket{s(\tilde \llambda)}} + \braket{m|\partial_t\HH|s(\tilde \llambda)},
+        &=E_s(\llambda)\braket{\partial_t m(\llambda)|s(\tilde \llambda)} + E_m(\llambda)\braket{m(\llambda)|\partial_t s(\tilde \llambda)}+ \bra{m(\llambda)}\partial_t \HH(\tilde\llambda)\ket{s(\tilde \llambda)}\\
+        &= (E_m(\llambda)-E_s(\llambda))\underbrace{\braket{m|\partial_t s(\tilde \llambda)}}_{-\frac{i}{\hbar}\bra{m}\AA_t\ket{s(\tilde \llambda)}} + \braket{m|\partial_t\HH|s(\tilde \llambda)},
     \end{split}
 \end{equation}
 which can be rewritten in matrix form as
 \begin{equation}
     i\hbar\partial_t\HH=[\AA_t,\HH]-i\hbar \hat{M}_t\qquad \text{for } \hat{M}_t\equiv -\sum_s\pder{E_s(\lambda)}{t}\ket{s(\lambda)}\!\!\bra{s(\lambda)}.
 \end{equation}
-$\hat{M}$ is diagonal in energetic basis and its elements has meaning of \emph{generalized force}. We can see that $[\HH,\hat{M}]=0$, implying
+$\hat{M}$ is diagonal in energy basis and its elements has meaning of \emph{generalized force}. We can see that $[\HH,\hat{M}]=0$, implying
 \begin{equation}
     [\HH,i\hbar\partial_t\HH-[\AA_t,\HH]]=0.
     \label{eq:komutation}
@@ -171,7 +171,7 @@ The adiabatic potential $\tilde{\AA_\lambda}$ can be transformed to non-tilde sy
 \begin{equation}
     \begin{split}
         \AA_\lambda&=\U(\llambda)\tilde{\AA_\lambda}\U^+(\llambda) = -i\hbar\U(\llambda)\big(\partial_\lambda \U^+(\llambda)\big) =\\
-        &= -i\hbar\partial_\lambda\big(\underbrace{\U^+(\llambda)\U(\llambda)}_{\mathds{1}}\big)-\big(\partial_\lambda \U(\llambda)\big)\U^+(\llambda) \big) =i\hbar \big(\partial_\lambda \U(\llambda\big)\U^+(\llambda).
+        &= -i\hbar\partial_\lambda\big(\underbrace{\U^+(\llambda)\U(\llambda)}_{\mathds{1}}\big)-\big(\partial_\lambda \U(\llambda)\big)\U^+(\llambda) \big) =i\hbar \big(\partial_\lambda \U(\llambda)\big)\U^+(\llambda).
     \end{split}
 \end{equation}
 Now we have explicit formulas for adiabatic potential in two systems
@@ -209,10 +209,7 @@ To see that the gauge potential performs transformation to non-exciting system, 
 \begin{equation}
     \bm{\mathcal A}=\big(\bm\nabla U(t)\big)U^{-1}(t) + U(t) \bm{\mathcal A} U^{-1}(t).
 \end{equation}
-The fact that second element is missing in Eq. \ref{eq:adiabaticPotential} implies the space has zero curvature. According to Eq. \ref{eq:geometricTensor}, the curvature is
-\begin{equation}
-    \chi_{jk}(\llambda) = \partial_j A_k(\llambda)-\partial_k A_j(\llambda) = 0.
-\end{equation}
+The fact that second element is missing in Eq. \ref{eq:adiabaticPotentialDefinition} implies the space has zero curvature. The curvature $\partial_j A_k(\llambda)-\partial_k A_j(\llambda)$ equals, according to Eq. \ref{eq:geometricTensor}, $\chi_{jk}$.
 This means that adiabatic gauge transformations are a class of gauge transformations with $g_{jk}=\Re\chi_{jk}=0$ and according to Eq. \ref{eq:distanceOnM0}, fidelity $F=1$. Therefore, the system is driven by Hamiltonian $\HH(\llambda)$ with fidelity $F<1$, there exists such adiabatic potential $\A_\lambda$, that driving of the same system using $\HH-\A_\lambda$ has unit fidelity.
 
 The adiabatic gauge potentials can then be understood as affine connections defining the parallel transport on fiber bundle, if we define covariant derivative as
@@ -221,7 +218,6 @@ The adiabatic gauge potentials can then be understood as affine connections defi
 \end{equation}
 which yields $D_j\ket{\psi_n}=0$ for every eigenstate, meaning the transport of eigenvalues on $\P\M_0$ is parallel. $\AA_j$ is generally defined by Eq. \ref{eq:adiabaticPotential}, which gives non-zero covariant derivative for states not belonging to $\P\M_0$. 
 
-Calculating these potentials has many practical applications, so let's introduce one computational analytical procedure.
 
 
 
@@ -253,7 +249,7 @@ Calculating these potentials has many practical applications, so let's introduce
 % where the term $-\dot{\lambda}\tilde{\AA_\lambda}$ is called \emph{Galilean} and $ \tilde{H}_m$ is the Hamiltonian in transformed system. Because $\tilde{H}$ is diagonal, it drives $\ket{\tilde{\psi}}$ with fidelity $f=1$. This means that for any driving defined by $\HH(\lambda(t))$, which defines the unitary transformation $\U$, there exists such \emph{counter-diabatic potential} $\AA_\lambda$, that $\HH_m + \dot{\lambda}\AA_\lambda$ has $f=1$.
 
 
-% % Intuition for transformations using original Hamiltonian vs. transformed one can be seen on Fig. \ref{fig:counterdiabaticPotential}. It is good to point out that the eigenstates on this figure belong to the space $\P\M$. However, the paths themselves need to be considered in the whole $\M$, which can be seen as the phase change described by equation \ref{eq:evolutionUduringTransition}.
+% % Intuition for transformations using original Hamiltonian vs. transformed one can be seen in Fig. \ref{fig:counterdiabaticPotential}. It is good to point out that the eigenstates on this figure belong to the space $\P\M$. However, the paths themselves need to be considered in the whole $\M$, which can be seen as the phase change described by equation \ref{eq:evolutionUduringTransition}.
 
 % % \begin{figure}[h]
 % %     \centering
@@ -320,9 +316,7 @@ Calculating these potentials has many practical applications, so let's introduce
 As was mentioned in the introduction of chapter \ref{chap:typesOfDriving}, one method of achieving low driving fidelity is \emph{path variation}. It means \emph{finding the best possible driving path}. One might say that the ground state manifold geodesics are a good candidate for this path because they minimize the distance. The problem is that general fidelity driving does not happen on any state manifold, and this premise cannot be used. The natural question here is: "For which drivings do geodesics minimize the fidelity?". The whole role of geodesics is not yet known, but there are a few known cases in which they have particular meaning and which are demonstrated here.
 
 \subsection{Minimizing the distance on state manifolds}
-Let's have path $\mathcal J$ defined in Eq. \ref{eq:defJ_QSdriving} and a geodesic $\mathcal G(\llambda(t))$ with fixed boundary conditions
- $$\mathcal{G}(0)=\mathcal J(0),\qquad \mathcal{G}(T)=\mathcal J(T).$$
-
+Let's have path $\mathcal J$ with fixed boundary conditions $\llambda(0)=\llambda_i$, $\llambda(T)=\llambda_f$.
 The driving on projective ground state manifold $\P\M_0$ then consists of infinitesimal quenches over the distance $\d s$. By integration over this path we get the distance
 \begin{equation}
     s_{\mathcal J}=\int\limits_{\mathcal J}\d s=\int\limits_{0}^{T}\sqrt{g_{jk}\dot\llambda^j\dot\llambda^k}\d t
@@ -377,13 +371,13 @@ The driving can be restricted to the ground state manifold only in approximation
     \end{equation}
     The length $l_\llambda$ is defined in parametric space. For energy variance it holds
     \begin{equation}
-        \delta E^2\coloneqq \braket{o(t)|\HH(t)^2|o(t)}-\braket{o(t)|\HH(t)|o(t)}^2=\braket{\partial_t  o(t)|\partial_t o(t)})_c=G_{tt},
+        \delta E^2\coloneqq \braket{o(t)|\HH(t)^2|o(t)}-\braket{o(t)|\HH(t)|o(t)}^2=\braket{\partial_t  o(t)|\partial_t o(t)}_c=G_{tt},
     \end{equation}    
     where in second equality the Schr\"odinger equation is used. 
     
     The Metric tensor in parametric space is defined as
     \begin{equation}
-        g_{\lambda\lambda}\coloneqq \braket{\partial_\lambda o(t)|\partial_\lambda o(t)})_c,
+        g_{\lambda\lambda}\coloneqq \braket{\partial_\lambda o(t)|\partial_\lambda o(t)}_c,
     \end{equation}
     see Chapter \ref{chap:metricTensor}.
 \end{thm}
@@ -411,7 +405,7 @@ The conjecture can be extended to an arbitrary dimensional path. The main proble
 \label{sec:quenches}
 Unifying the ground states $\ket{o(\llambda)}$ over all points $\llambda\in\mathcal U$ in parametric space, we get the ground state manifold. Here the fidelity $F$ and distance $s$ are
 \begin{equation}
-    \d s^2 = 1-F(\llambda+\delta\llambda,\llambda) = 1-\left|\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)}\right|^2.
+    \d s^2 = 1-F(\ket{\llambda+\delta\llambda},\ket{\llambda}) = 1-\left|\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)}\right|^2.
     \label{eq:distanceOnM0_1}
 \end{equation}
 
@@ -431,27 +425,27 @@ From Euler-Lagrange equations, the fidelity is minimized if $\mathcal J$ is geod
 % The distance minimization runs into some interpretation problems. On the one hand, minimization of the distance is equivalent to maximization of the sum of infinitesimal fidelities along the path (we say we \emph{maximize the fidelity along the path}). On the other hand, we are using only ground states in every step of the transport, therefore defining the fidelity to be one. There are two ways out of this confusion. \emph{Perturbed adiabatic driving} and \emph{transport using quenches}.
 
 
-Imagine at every point of transport that the fidelity is small enough, so for some small parameters $\Delta_i\in \C$ the transport over distance $\d s$ in eigenbasis at time $t=0$ is
-$$\ket{o(\llambda_i)}\equiv \begin{pmatrix}
-    Z_0(\llambda_i)\\
+Imagine at every point of transport that the fidelity is small enough, so for some small parameter $\delta \llambda\in \R^n$ the transport over distance $\d s$ in eigenbasis at time $t=0$ is
+$$\ket{o(\llambda)}\equiv \begin{pmatrix}
+    Z_0(\llambda)\\
     0\\
     \vdots \\
     0
-\end{pmatrix} \overset{\text{transport }\d s}{\longrightarrow} \ket{o(\llambda_i+\delta \llambda)}\equiv\begin{pmatrix}
-    Z_0(\llambda_i+\delta \llambda)\\
+\end{pmatrix} \overset{\text{transport }\d s}{\longrightarrow} \ket{o(\llambda+\delta \llambda)}\equiv\begin{pmatrix}
+    Z_0(\llambda+\delta \llambda)\\
     0\\
     \vdots \\
     0
 \end{pmatrix} +\underbrace{\begin{pmatrix}
     0\\
-    \Delta_1(\llambda_i+\delta \llambda)\\
+    \Delta_1(\llambda+\delta \llambda)\\
     \vdots \\
-    \Delta_n(\llambda_i+\delta \llambda)
-\end{pmatrix}}_{\mathbf{\Delta}(\llambda_i+\delta \llambda)}, $$
-where the last term is neglected, because
-$$\braket{\Delta(\llambda)|o(\llambda+\delta\llambda)}\approx 0.$$
+    \Delta_n(\llambda+\delta \llambda)
+\end{pmatrix}}_{\mathbf{\Delta}(\llambda+\delta \llambda)}. $$
 
-This might have interesting implications for slow transports or small distance transports. For slow transport, this condition is hardly fulfilled because one needs to neglect the sum of many of these terms. One possible way out of this is to reset the state into the ground-state when the fidelity would get too far from 1. It can be achieved by projecting the state $\ket{\psi(t)}$ to the ground state $\ket{o(t)}$ periodically, such that every time the fidelity is almost one. These small jumps are sometimes called \emph{quenches}, and they can be achieved by introducing thermalization to the system.
+This has interesting implications for slow transports or small distance transports. For slow transport, the element $\bm\Delta$ increases with time and is hardly fulfilled because one needs to neglect the sum of many of these terms. One possible way out of this is to reset the state into the ground-state when the fidelity would get too far from 1. It can be achieved by projecting the state $\ket{\psi(t)}$ to the ground state $\ket{o(t)}$ periodically. Then because
+$$\braket{\Delta(\llambda+\delta\llambda)|o(\llambda+\delta\llambda)}= 0,$$
+the fidelity of such driving is almost one. These small jumps are sometimes called \emph{quenches}, and they can be achieved by introducing thermalization to the system.
 
 
 
@@ -488,7 +482,7 @@ If we imagine $\delta\llambda$ to be finite (not infinitely small, as the notati
 Until now, our interest was mainly in \emph{unit fidelity protocols}. But how to calculate the case when the fidelity is "almost one"? This is the aim of \emph{adiabatic perturbation theory}.
 
 
-Following the article from \citet{Rigolin2008}, the wavefunction can be approximated by series. Because every element is then decomposed into another series, we bear in mind the \emph{locality of variables}, which clarifies the reason for performing this procedure. Let's call variable $V(\llambda(t))$ \emph{\bluee{local}} if it depends only on the system characteristics in point $\llambda(t)$. These variables can usually be obtained only from the spectrum \bluee{$\sigma(\HH(\llambda(t)))$} and are written in shades of \bluee{blue}. In opposite, a \redd{non-local} variable, written in shades of \redd{red}, depends on the driving path. These are usually expressed as an integral over the driving path $\mathcal J$, but might generally depend on any point which is not on path $\mathcal C$.
+Following the article from \citet{Rigolin2008}, the wavefunction can be approximated by series. Because every element is then decomposed into another series, we bear in mind the \emph{locality of variables}, which clarifies the reason for performing this procedure. Let's call variable $V(\llambda(t))$ \emph{\bluee{local}} if it depends only on the system characteristics in point $\llambda(t)$. These variables can usually be obtained only from the spectrum \bluee{$\sigma(\HH(\llambda(t)))$} and are written in shades of \bluee{blue}. In opposite, a \redd{non-local} variable, written in shades of \redd{red}, depends on the driving path. These are usually expressed as an integral over the driving path $\mathcal J$, but might generally depend on any point which is not on this path.
 
 We are interested in the driving along path $\mathcal J$ defined by Eq. \ref{eq:defJ_QSdriving},
 where $t$ is time and $T$ final time of the driving. Let the initial condition be
@@ -517,7 +511,7 @@ and $\bluee{\ket{s(t)}}$ are solutions to
     \bluee{\HH(t)\ket{s(t)}}=\bluee{E_s(t) \ket{s(t)}}.
 \end{equation}
 Variables $\reddd{\omega_s(t)}$ and $\reddd{\gamma_s(t)}$ are defined using integration over the whole protocol, therefore they are \emph{\red{non-local variables}}.
-The problem now lies in determining $\redd{b_s^{(p)}(t)}$, which is also \red{non-local}. Because it depends on its relative \reddd{geometric} and \reddd{dynamical phase} to other \bluee{energy levels}, let's write it as a series
+The problem now lies in determining $\redd{b_s^{(p)}(t)}$, which is also \red{non-local}. Because it depends on its relative \reddd{geometrical} and \reddd{dynamical phase} to other \bluee{energy levels}, let's write it as a series
 \begin{equation}
     \redd{b_s^{(p)}(t)}=\sum_{m=0}^{N-1} e^{\frac{i}{v}\reddd{\omega_{sm}(t)}}e^{-i\reddd{\gamma_{sm}(t)}}\blue{b_{sm}^{(p)}(t)},
     \label{eq:bnAPT}
@@ -535,7 +529,7 @@ Because the initial state is an eigenstate of the Hamiltonian at time $t=0$, we 
     \frac{i}{\hbar}\bluee{\Delta_{sm}(t)}\blue{b_{sm}^{(p+1)}(t)}+\blue{\dot b_{sm}^{(p)}(t)}+\bluee{W_{sm}(t)} \blue{b_{sm}^{(p)}(t)}+\sum_{k=0,k\neq s}\bluee{M_{sk}(t)}\bluee{b_{km}^{(p)}(t)}=0,
     \label{eq:bSolution}
 \end{equation}
-for $\bluee{\Delta_sm(t)}\coloneqq \bluee{E_m-E_s}$, $\bluee{W_{sm}(t)}\coloneqq \bluee{M_{ss}(t)}-\bluee{M_{mm}(t)}$, where $\bluee{M_{ms}}$ is defined in Eq. \ref{eq:gammadef}. We can see that $\blue{b_{ms}^{(p)}}$, as a solution to Eq. \ref{eq:bSolution}, only depends on difference between energy levels, eigenstates during the path and their directional derivatives. Not on the path itself. All of these are easily obtained, once the driving path is prescribed.0
+for $\bluee{\Delta_{sm}(t)}\coloneqq \bluee{E_m-E_s}$, $\bluee{W_{sm}(t)}\coloneqq \bluee{M_{ss}(t)}-\bluee{M_{mm}(t)}$, where $\bluee{M_{ms}}$ is defined in Eq. \ref{eq:gammadef}. We can see that $\blue{b_{ms}^{(p)}}$, as a solution to Eq. \ref{eq:bSolution}, only depends on difference between energy levels, eigenstates during the path and their directional derivatives. Not on the path itself. All of these are easily obtained, once the driving path is prescribed.
 
 
 

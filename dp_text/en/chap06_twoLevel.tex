@@ -40,7 +40,7 @@ the eigenvectors  can be written as
 for normalization constants $N_\pm\coloneqq\left(\left(\frac{\pm E_0(t)+\Omega(t)}{\Delta(t)}\right)^2+1\right)^{-1/2}$. The instantaneous eigenbases changes in time, but is described using constant basis $\mathcal B$, which forms an eigenbasis at time $t=0$.
 
 The goal is to find \emph{fidelity} between initial state and state evolved along $\mathcal J$, $F_{\mathcal J}(t)\coloneqq |\braket{0(t)|\psi(t)}|^2$ for different driving protocols \begin{equation}
-    \mathcal J\coloneqq\{\llambda(t)|t\in[0,T],\; \llambda\in \mathcal U\} \subset \R^N.
+    \mathcal J\coloneqq\{\llambda(t)|t\in[0,T],\; \llambda\in \mathcal U\} \subset \R^n.
 \end{equation}
 For this we need to solve time Schr\"odinger equation
 \begin{equation}
@@ -61,7 +61,7 @@ we get the system of \emph{two coupled differentials equations of the first orde
 \end{align}
 with normalization
 \begin{equation}
-    a^2(t)+b^2(t)=1, \quad \forall t\in [0,T].
+    a^2(t)+b^2(t)=1, \quad \forall t\in [0,T],
     \label{eq:normalizationCondition}
 \end{equation}
 and initial value 
@@ -88,7 +88,7 @@ and initial value
 \section{Harmonic oscillator correspondence}
 Coupled Equations \ref{eq:a1}, \ref{eq:a2} have no general analytical solution, with an exception to a few easy protocols $\mathcal J$. Before moving to some of these special cases, it is important to understand the general behavior of such coupled system of equations.
 
-N-dimensional Schr\"odinger equation can be rewritten to \emph{one differential equation of N$^{th}$ order with non-constant coefficients}. In our two-dimensional case, this equation corresponds to \emph{damped harmonic oscillator without external force}
+N-dimensional Schr\"odinger equation can be rewritten to \emph{one differential equation of N$^{th}$ order with non-constant coefficients}. In our two-dimensional case, this equation corresponds to a \emph{damped harmonic oscillator without external force}
 \begin{align}
     0&= \ddot a(t)+ \gamma(t) \dot a(t)+\omega^2(t)a(t) \label{eq:harmonicOscillator}\\
     \gamma(t)&\coloneqq -\frac{\dot \Delta(t)}{\Delta(t)} \label{eq:gammaDef}\\
@@ -168,9 +168,7 @@ for $F_k\coloneqq \braket{k|\psi}$, which has no practical simplification.
 
 
 \section{Geodesic driving}
-Some analytically solvable driving protocols are the \emph{Geodesics} of projective ground state manifold. 
-
-Define driving in 3-dimensional space
+First analytically solvable driving emphasized here is the \emph{geodesic driving} on the ground state manifold. It can be defined in 3-dimensional space as
 \begin{equation}
     d(t)\equiv \begin{pmatrix}
         \Omega(t)\\
@@ -282,7 +280,7 @@ It has a meaning of \emph{excitation probability during the transport}.
 \subsection{Analysis of the infidelity formula}
 Infidelity can be calculated by numerical evolution of Schr\"odinger equation, or from Eq. \ref{eq:fidelitySimplified}. Sometimes both solutions are plotted for comparison between numerical precision. 
 
-For some fixed final time, the infidelity is an oscillating curve with values close to $0$, see the driving for final time $T=1$ on Fig. \ref{fig:infidelityTimePlot}. The \emph{final infidelity} (fidelity at $t=T$) dependence on final time $T$ can be seen on Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
+For some fixed final time, the infidelity is an oscillating curve with values close to $0$, see the driving for final time $T=1$ in Fig. \ref{fig:infidelityTimePlot}. The \emph{final infidelity} (fidelity at $t=T$) dependence on final time $T$ can be seen in Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
 
 From the fidelity formula \ref{eq:fidelitySimplified} goes that condition $F=1$ is equivalent to
 \begin{equation}
@@ -293,7 +291,7 @@ for $T_s\coloneqq 2s T$. The solution to this equation is
     T_s=\sqrt{(2 \pi  k)^2-\pi ^2} \text{  for }k\in \mathbb{N},
     \label{eq:solutionT}
 \end{equation}
-see Fig. \ref{fig:fidelityZeros}. This implies that spikes on Fig. \ref{fig:infidelityTfPlotLog} have minimal value $1-F=0$, and their density is linear in $T$.
+see Fig. \ref{fig:fidelityZeros}. This implies that spikes in Fig. \ref{fig:infidelityTfPlotLog} have minimal value $1-F=0$, and their density is linear in $T$.
 
 Fidelity as a function of time and final time can be seen in Fig. \ref{fig:dens3}. Note that only $t<T$ has physical meaning.
 
@@ -343,7 +341,7 @@ Another interesting quantity is the energy variance, specially because of Theore
         & +8 s^2 \omega  q \sin (2 t \omega ) \sin \left(t q\right) + \omega ^3 q \sin (2 t \omega ) \sin \left(2 t q\right) \Bigg],
 \end{split}
 \end{equation}
-see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. The result of energy variance can be seen on Fig. \ref{fig:densVar}. Note that only $t<T$ has a physical meaning, therefore the dependence is smooth along the whole geodesical driving protocols.
+see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. The result of energy variance can be seen in Fig. \ref{fig:densVar}. Note that only $t<T$ has a physical meaning, therefore the dependence is smooth along the whole geodesical driving protocols.
 
 \begin{figure}[H]
     \centering
@@ -386,7 +384,7 @@ which is of \emph{Weber type}\footnote{https://mathworld.wolfram.com/WeberDiffer
 
 
 \subsection{Dependence on time}
-The fidelity in time can be seen on Fig. \ref{fig:infidelityTimePlotLin}. For $t\approx T/2$, the difference between energy levels is minimal, which leads to fast state excitation. Then the Harmonic oscillator damping gets involved, and oscillations quickly go to zero, never disappearing entirely.
+The fidelity in time can be seen in Fig. \ref{fig:infidelityTimePlotLin}. For $t\approx T/2$, the difference between energy levels is minimal, which leads to fast state excitation. Then the Harmonic oscillator damping gets involved, and oscillations quickly go to zero, never disappearing entirely.
 
 We can see that the final fidelity decreases with a longer final time, which correctly leads to adiabatic driving, where $\lim_{T\rightarrow \infty} F^*=0$. For short final times we can observe so-called quench, $\lim_{T\rightarrow 0} F^*=1$. The interesting phenomena in this image are the oscillations around $t=T/2$, for which the frequency increases with a longer final time. 
 
@@ -440,7 +438,7 @@ It turned out that averaging over 1 \% ($p=0.99$) or 10 \% ($p=0.9$) of the driv
 
 Using this we can describe the driving using three regimes\footnote{The coefficient $p$ is assumed to be small enough not to cover the biggest oscillations after $t=T/2$ and big enough to average over sufficient number of oscillations. Approximately $p\in[0.6T,0.999T]$.}.
 
-The boundary between exponential and linear regime is not strict and can be seen on Fig. \ref{fig:dens2}, as transition between \emph{smooth} and \emph{chaotic} regimes. This happens around $t=T_c$. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. This can be< smoothed out using the averaged final fidelity. The approximated dependence for final time was numerically estimated as
+The boundary between exponential and linear regime is not strict and can be seen in Fig. \ref{fig:dens2}, as transition between \emph{smooth} and \emph{chaotic} regimes. This happens around $t=T_c$. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. This can be< smoothed out using the averaged final fidelity. The approximated dependence for final time was numerically estimated as
 \begin{equation}
     T_c\overset{\sim}{\propto} \Delta_{sc}^{-2}.
 \end{equation}
@@ -568,7 +566,7 @@ The LZS approximation can be seen in Fig. \ref{fig:landauCompare}. The LZS and A
 
 
 \subsection{Energy variance}
-Analogically to the geodesical driving, one might be interested in energy variance. In the linear driving case, the analytical formula is more complicated and only numerical result are displayed here. On Fig. \ref{fig:densVariance} the energy variance is plotted as a function of time and final time.
+Analogically to the geodesical driving, one might be interested in energy variance. In the linear driving case, the analytical formula is more complicated and only numerical result are displayed here. In Fig. \ref{fig:densVariance} the energy variance is plotted as a function of time and final time.
 
 \begin{figure}[h]
     \centering

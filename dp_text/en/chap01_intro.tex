@@ -1,6 +1,6 @@
 \chapter{Mathematical introduction}
 \label{chap:mathIntro}
-The modern approach to the closed system dynamics is using \emph{differential geometry} formalism. Before we get to the quantum mechanics itself, let's introduce this formalism and recapitulate some definitions of this branch of mathematics. It is important to realize basic definitions and construction to use mathematical formalism rigorously. More detailed notes can be found for example in notes by \citet{krtous}, \citet{lu}, or \citet{fecko}. This chapter should lead the reader to a better understanding of physical theory in the following chapters but is not essential for analyzing driving in Hamiltonian systems.
+The modern approach to the closed system dynamics is using \emph{differential geometry} formalism. Before we get to the quantum mechanics itself, let's introduce this formalism and recapitulate some definitions of this branch of mathematics. This chapter does not serve the full introduction to differential geometry, but reminds the essential realizations which should lead the reader to a better understanding of physical theory in the following chapters. Full introduction to differential geometry can be found for example in notes by \citet{krtous}, \citet{lu}, or \citet{fecko}. 
 \section{Essentials}
 Consider manifold $\M$ over the field of complex numbers $\mathbb C$. Curves on this manifold are parametrized by some real interval:
 $$\mathcal J:\R \supset (P_i,P_f) \rightarrow \M,\; \qquad \xi\mapsto \mathcal J(\xi) \text{  for } \xi \in (P_i,P_f) .$$ 
@@ -36,7 +36,7 @@ and in basis $\bluee{\bm e_i} \equiv \bluee{\partial/\partial x^i}$ it becomes
 $$\bm\nabla=\bluee(\bluee{\bm e_1}, \bluee{\bm e_2},\bluee{\bm e_3}).$$
 
 
-During the whole thesis, the \emph{abstract indices} (written by Greek letters) and \emph{pointer indices} (written using Latin letters) are differentiated. Abstract indices show the rank of the tensor, meaning \emph{how many empty slots for contraction the tensor has}. Pointer indices extract specific number from the tensor. For example
+If needed, the \emph{abstract indices} (written by Greek letters) and \emph{pointer indices} (written using Latin letters) are differentiated. Abstract indices show the rank of the tensor, meaning \emph{how many empty slots for contraction the tensor has}. Pointer indices extract specific number from the tensor. For example
 $$t^\mu_{\nu\kappa} \in \TT^1_2\M, \quad \text{ whilst for some }i,j,k\in\N: t^i_{jk}\in \mathbb C.$$
 The summation over abstract and Latin indices has the same meaning. For \emph{Tensor contraction}, the index notation is used. When it is clear what type of tensors we are operating with, the Object notation can be used, for example $t(\bluee{\bm u},\bluee{\bm v})\equiv t_{\mu\nu}\bluee{\bm u^\mu \bm v^\nu}$. The contraction can also be noted using the contraction operator $\mathbf C$ when it is clear which indices are contracted or when it does not matter which of them are.
 
@@ -51,7 +51,7 @@ If the 2-form $g_{\mu\nu}\in\TT^0_2\M$ is
 we call $g_{\mu\nu}$ a \emph{metric tensor}. The \emph{star} $^*$ marks complex conjugation.
 \end{definition}
 
-We often require \emph{differentiable metric tensor}, or at least almost everywhere\footnote{Almost everywhere means \emph{with an exception to the submanifold of zero measure}.}. That assures that \emph{covariant derivatives} and \emph{parallel transport} are well-defined almost everywhere. 
+We often require \emph{differentiable metric tensor}, or at least almost everywhere\footnote{Almost everywhere means \emph{with an exception to the submanifold of zero measure}.}. That assures that \emph{covariant derivatives} and \emph{parallel transport} are well-defined almost everywhere differentiable. 
 
 
 
@@ -161,7 +161,7 @@ Sometimes one needs to add additional structure to every point on the manifold. 
     for topological spaces $\mathcal{E}$, $\mathcal{U}$, $\mathcal F$ and continuous surjection $\pi: \mathcal{E}\rightarrow \mathcal{U}$ satisfying a local triviality, is called a \emph{Fiber bundle}. The local triviality means that $\mathcal{U}$ is connected\footnote{Connected mean, it can't be represented as a union of two and more disjoint sets} and for every $x\in \mathcal{U}$, there is an open neighborhood $\mathcal{N}\subset \mathcal{U}$ \emph{(trivializing neighborhood)} such that there exists a homeomorphism from $\mathcal{N}$ to so-called \emph{product space}
     $$\phi: \pi^{-1}(\mathcal{N})\rightarrow \mathcal{N}\times \mathcal{F},$$
     such that $\pi^{-1}\circ \pi(\mathcal{N})=\mathcal{N}$. Plus there exist natural projection from $\mathcal{N}\times \mathcal{F}$ to $\mathcal N$, setting the coordinate in fibers to zero. The structure can be visualized as follows: 
-    % See the mappings on Fig. \ref{fig:bundle}.
+    % See the mappings in Fig. \ref{fig:bundle}.
 
     \begin{figure}[H]
         \centering
@@ -274,7 +274,7 @@ Some Riemannian geometry theorems have implications in the theory of quantum dri
 \begin{definition}[Geodesical completeness]
     A manifold is said to be geodesically complete if every geodesic on it can be extended to infinite values of their affine parameter. 
 \end{definition}
-This condition holds if the space does not contain any singularities. It is a coordinate-independent notion.
+The geodesical completeness is a coordinate-independent notion.
 \begin{definition}[Geodesic maximality]
     A manifold is said to be geodesically maximal if it is either geodesically complete or every non-complete geodesic (such that cannot be extended to infinite values of their affine parameter) ends in a singularity.
 \end{definition}
