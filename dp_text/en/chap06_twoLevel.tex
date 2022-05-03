@@ -180,7 +180,7 @@ First analytically solvable driving emphasized here is the \emph{geodesic drivin
         s \sin(\omega(T)t)
     \end{pmatrix}
 \end{equation}
-for \emph{speed regulating function} $\omega(T)\coloneqq \pi/T$. The reason for 3-dimensional driving is the possibility to use Pauli matrix formalism. Such defined drivings are half-spheres in the parametric space, see Fig. \ref{fig:driving}. Note that the driving velocity is constant in the parametric space and on the manifold.
+for \emph{speed regulating function} $\omega(T)\coloneqq \pi/T$ and \emph{scaling factor} $s$. The reason for 3-dimensional driving is the possibility to use Pauli matrix formalism. Such defined drivings are half-spheres in the parametric space, see Fig. \ref{fig:driving}. Note that the driving velocity is constant in the parametric space and on the state manifold.
 
 \begin{figure}[h]
     \centering
@@ -197,7 +197,7 @@ Because the Hamiltonian can be rewritten using Pauli matrices
          -s \cos (t \omega ) & s \sin (t \omega ) \\
          s \sin (t \omega ) & s \cos (t \omega ) \\
         \end{pmatrix}
-        =\Delta(t)\sigma_x+ \Omega(t)\sigma_z= d(t).\mathbf{\hat{\bm\sigma}},
+        =\Delta(t)\sigma_x+ \Omega(t)\sigma_z= d(t)\cdot\mathbf{\hat{\bm\sigma}},
 \end{equation}
 for vector $\hat{\bm\sigma}\coloneqq (\hat\sigma_1,\hat\sigma_2,\hat\sigma_3)^T$.
 
@@ -235,11 +235,11 @@ which is time independent and depends only on final time. The Schr\"odinger equa
 \end{equation}
 for $q\coloneqq\sqrt{4 s^2+\omega(T) ^2}$.
 
-In the original frame we get the evolution of $\psi(0)$ as
+In the original frame we get the evolution of $\bluee{\tilde\psi(0)}$ as
 \begin{equation}
     \redd{\psi(t)}=\expsp \bluee{\UU(t) \tilde\psi(0)} = \underbrace{\expsp \bluee{\UU}\expsm}_{\redd{\UU(t)}} \underbrace{\expsp \bluee{\tilde\psi(0)}}_{\redd{\psi(0)}}.
 \end{equation}
-The evolved wavefunction the reads as
+The evolved wavefunction then reads as
 \begin{equation}
     \redd{\ket{\psi(t)}}=\redd{\begin{pmatrix}
         \cos \left(\frac{t}{2} q\right)+\frac{2 i s}{q} \cos (t \omega ) \sin \left(\frac{t}{2} q\right)\\
@@ -278,7 +278,7 @@ It has a meaning of \emph{excitation probability during the transport}.
 
 
 \subsection{Analysis of the infidelity formula}
-Infidelity can be calculated by numerical evolution of Schr\"odinger equation, or from Eq. \ref{eq:fidelitySimplified}. Sometimes both solutions are plotted for comparison between numerical precision. 
+Infidelity can be calculated by numerical evolution of the Schr\"odinger equation, or from Eq. \ref{eq:fidelitySimplified}. Sometimes both solutions are plotted for comparison between numerical precision. 
 
 For some fixed final time, the infidelity is an oscillating curve with values close to $0$, see the driving for final time $T=1$ in Fig. \ref{fig:infidelityTimePlot}. The \emph{final infidelity} (fidelity at $t=T$) dependence on final time $T$ can be seen in Fig. \ref{fig:infidelityTfPlot} and \ref{fig:infidelityTfPlotLog}.
 
@@ -312,7 +312,7 @@ Fidelity as a function of time and final time can be seen in Fig. \ref{fig:dens3
 \begin{figure}[h]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlotLog.pdf}
-    \caption{Final infidelity dependence on final time $T$ for geodesical driving; in logarithmic scale9. The difference in numerical precision of both methods can be seen in the spike's height. As it will be shown later, the spikes should go to zero, thus analytical formula has higher numerical precision.}
+    \caption{Final infidelity dependence on final time $T$ for geodesical driving; in logarithmic scale. The difference in numerical precision of both methods can be seen in the spike's height. As it will be shown later, the spikes should go to zero, thus analytical formula has higher numerical precision.}
     \label{fig:infidelityTfPlotLog}
 \end{figure}
 
@@ -341,7 +341,7 @@ Another interesting quantity is the energy variance, specially because of Theore
         & +8 s^2 \omega  q \sin (2 t \omega ) \sin \left(t q\right) + \omega ^3 q \sin (2 t \omega ) \sin \left(2 t q\right) \Bigg],
 \end{split}
 \end{equation}
-see the definition of $q$ under Eq. \ref{eq:evolutionBlue}. The result of energy variance can be seen in Fig. \ref{fig:densVar}. Note that only $t<T$ has a physical meaning, therefore the dependence is smooth along the whole geodesical driving protocols.
+for $q$ defined under Eq. \ref{eq:evolutionBlue}. The result of energy variance can be seen in Fig. \ref{fig:densVar}. Note that only $t<T$ has a physical meaning, therefore the dependence is smooth along the whole geodesical driving protocols.
 
 \begin{figure}[H]
     \centering
@@ -369,7 +369,7 @@ Substituting to Harmonic oscillator damping and frequency functions (Eq. \ref{eq
     \omega^2(t)&=i\frac{2\Omega_{sc}}{T}+\frac{\Omega_{sc}}{4}\left(\frac{2t}{T}-1\right)^2+\frac{\Delta_{sc}^2}{4}=i\frac{2\Omega_{sc}}{T}+\frac{E^2_{dif}(t)}{4}.
     \label{eq:oscillationsLinear}
 \end{align}
-Corresponding differential equation of second order is
+Differential equation corresponding to Eq. \ref{eq:harmonicOscillator} is then
 \begin{equation}
     a''(t)+\omega^2(t) a(t)=0,
 \end{equation}
@@ -398,15 +398,15 @@ We can see that the final fidelity decreases with a longer final time, which cor
 
 Because in the Harmonic oscillator $\gamma(t)=0$, the oscillations of $a(t)$ are not damped. What we are observing is infidelity 
 $$F^*(t)\coloneqq 1- |\braket{0(t)|\psi(t)}|^2 = 1-|\alpha(t)a(t)+\beta(t)b(t)|^2, $$
-where the $\ket{\psi(t)}\eqqcolon(a,b)^T$ represents the evolved state and $\ket{0(t)}\eqqcolon(\alpha,\beta)^T$ evolved ground state in fixed eigenbasis $\mathcal{B}$. The ground state is not generally constant. In our case, the ground state described by Eq. \ref{eq:eigenvectors} and is slowly changing its value from the first element $\alpha$ to the second element $\beta$, see Fig. \ref{fig:zeroState}. This means that at the beginning of driving, the projection to the ground state selects $b(t)$. Then it's getting more influenced by $a(t)$ until almost only $a(t)$ influences the fidelity.
+where the $\ket{\psi(t)}\eqqcolon(a,b)^T$ represents the evolved state and $\ket{0(t)}\eqqcolon(\alpha,\beta)^T$ evolved ground state in fixed eigenbasis $\mathcal{B}$. The ground state is not generally constant. In our case, the ground state described by Eq. \ref{eq:eigenvectors} and is slowly changing its value from the first element $\alpha$ to the second element $\beta$, see Fig. \ref{fig:zeroState}. This means that at the beginning of driving, the projection to the ground state selects $b(t)$. Then it is getting more influenced by $a(t)$ until almost only $a(t)$ influences the fidelity.
 \begin{figure}[h]
     \centering
     \includegraphics[scale=1.2]{../img/zeroState.pdf}
-    \caption{Value of first element of the ground state vector $\alpha\equiv \ket{0(t)}^1$ during linear driving.}
+    \caption{Value of first element of the ground state vector $\alpha\equiv \ket{0(t)}^1$ during the linear driving.}
     \label{fig:zeroState}
 \end{figure}
 
-Because of varying ground state during transport, the oscillations cannot be analyzed only from $\omega^2(t)$ described by Eq. \ref{eq:oscillationsLinear}. At the end of the driving we have 
+Because of varying ground state during the transport, the oscillations cannot be analyzed only from $\omega^2(t)$ described by Eq. \ref{eq:oscillationsLinear}. At the end of the driving we have 
 \begin{equation}
    \frac{1}{N_+} \ket{0(t)}^1=\frac{E_0(t)+\Omega(t)}{\Delta(t)}\gg 1 =\frac{1}{N_+} \ket{0(t)}^2,
 \end{equation}
