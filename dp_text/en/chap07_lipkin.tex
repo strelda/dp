@@ -87,7 +87,7 @@ Eigenvectors can also be expressed analytically, but due to their complexity onl
 \begin{figure}[h]
     \centering
     \includegraphics[scale=1.3]{../img/N=3_energiesl.pdf}
-    \vspace{-3pt}\caption{Energy spectrum for $N=3$, section $\lambda=1$}
+    \vspace{-3pt}\caption{Energy spectrum for $N=3$, section $\lambda=1$.}
     \label{fig:N=3_energiesl}
 \end{figure}
 \begin{figure}[h]
@@ -170,8 +170,12 @@ Due to the metric tensor degeneracy, the space is not geodesically maximal. To s
 \newpage
 \subsubsection{Geodesics}
 The importance of geodesics was described in Chapter \ref{chap:groundStateManifoldDriving}. In addition, they give a tool for observing some system characteristics, such as singularities, or curvature in general. \emph{Initial valued Geodesics} are solutions to
-$$(\lambda(0);\chi(0))\eqqcolon (\lambda_i;\chi_i)$$
-$$\left(\der{\lambda(t)}{t};\der{\chi(t)}{t}\right)\Bigg|_{t=0} \eqqcolon (\lambda'_i;\chi'_i),$$
+\begin{equation}
+    (\lambda(0);\chi(0))\eqqcolon (\lambda_i;\chi_i)
+\end{equation}
+\begin{equation}
+    \left(\der{\lambda(t)}{t};\der{\chi(t)}{t}\right)\Bigg|_{t=0} \eqqcolon (\lambda'_i;\chi'_i),
+\end{equation}
 where zero was set as an initial time.
 
 One might also choose the \emph{boundary valued geodesics} with fixed initial and final position, $(\lambda(0);\chi(0))$ and $(\lambda(T);\chi(T))$ respective. Because the shape of geodesics in parametric space does not depend on the initial derivative, it does not depend on the speed of driving in the parametric space. Initial valued geodesics are therefore more advantageous to calculate because they have only three free parameters — the initial coordinates $(\lambda_i;\chi_i)$ and the ratio $\lambda'_i/\chi'_i$. Another reason is purely numeric, which is that the boundary-valued geodesics are calculated by numerous evolutions of the initial valued geodesics. Usually the software evolves many initial valued geodesics and checks if the final boundary condition is satisfied. If not, the initial parameters are tweaked in response until it fits the boundary condition. Calculating the boundary valued geodesics is generally much slower. In this case, the calculation time was $10$ to $100$ times longer.
@@ -198,7 +202,7 @@ The fact that geodesics lean toward singularities and parts of parametric space 
 
 \begin{figure}[H]
     \centering
-    \vspace{30pt}\begin{tikzpicture}
+    \vspace{50pt}\begin{tikzpicture}
         \node[] at (0,0) {\includegraphics[width=0.3\textwidth]{../img/comparingGeodesics.pdf}};
         \node[] at (-3.2,1.53) {singularity};
         \node[] at (3.0,1.5) {\gray{$(\lambda_i;\chi_i)$}};
