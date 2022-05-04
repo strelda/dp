@@ -37,17 +37,17 @@
 \contentsline {subsection}{\numberline {4.5.1}Dependence on time}{42}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Final fidelity}{43}{subsection.4.5.2}%
 \contentsline {subsubsection}{Averaged final fidelity}{43}{section*.24}%
-\contentsline {subsubsection}{Exponential and polynomial part, Landau-Zener and APT}{45}{section*.31}%
+\contentsline {subsubsection}{Exponential and polynomial part, Landau-Zener and APT}{46}{section*.31}%
 \contentsline {subsection}{\numberline {4.5.3}Energy variance}{47}{subsection.4.5.3}%
 \contentsline {subsection}{\numberline {4.5.4}Linear driving summary}{47}{subsection.4.5.4}%
 \contentsline {chapter}{\numberline {5}Lipkin-Meshkov-Glick model}{50}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Hamiltonian}{50}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Geometry for fixed dimension}{51}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}3-dimensional Hamiltonian}{51}{subsection.5.2.1}%
-\contentsline {subsubsection}{Geodesics}{52}{section*.35}%
+\contentsline {subsubsection}{Geodesics}{56}{section*.42}%
 \contentsline {subsection}{\numberline {5.2.2}5-dimensional Hamiltonian}{58}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Infinite dimension limit}{61}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}General spectrum behavior}{62}{section.5.3}%
+\contentsline {subsection}{\numberline {5.2.3}Infinite dimension limit}{60}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}General spectrum behavior}{61}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Transport using quenches}{65}{section.5.4}%
 \contentsline {chapter}{Conclusion}{67}{chapter*.55}%
 \contentsline {chapter}{Bibliography}{68}{chapter*.56}%

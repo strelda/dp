@@ -422,10 +422,7 @@ therefore when $t$ is getting close to $T$ the fidelity is oscillating with  har
 
 
 \subsection{Final fidelity}
-Because the oscillations after fast parameter change in the Hamiltonian never disappear entirely, we must observe these oscillations even at the final time. \emph{Final fidelity} (meaning the fidelity at $t=T$) has dependence on $T$ as can be seen in Fig. \ref{fig:infidelityTfPlotLogLinCombined}. Because after the final time $T\approx 120$, the values are small enough to observe some fine structure of the fidelity along with numerical error artifacts.
-
-
-First, the numerical precision of this calculation was found to be around $10^{-13}$. This means that the oscillations we see in Fig. \ref{fig:infidelityTfPlotLogLinCombined} are of physical origin with some additional numerical error. These small oscillations are the remnants of the fast excitation during the close approach of energy levels, see Fig. \ref{fig:infidelityTimePlotLin}. The reason is that the choice $t=T$ sometimes corresponds to the oscillation minima and sometimes to its maxima.
+\emph{Final fidelity} (meaning the fidelity at $t=T$) for the linear driving as a dependence on $T$ can be seen in Fig. \ref{fig:infidelityTfPlotLogLinCombined}. For final times longer than $T\approx 120$, the final fidelity is small enough to observe some fine structure. The numerical precision of this calculation was found to be around $10^{-13}$. This means that observed fine structure is mainly of a physical origin with some additional numerical error. In fact, the small oscillations are the remnants of the fast excitation during the close approach of energy levels, see Fig. \ref{fig:infidelityTimePlotLin}. The reason is that the choice $t=T$ sometimes corresponds to the oscillation minima and sometimes to its maxima.
 
 
 
@@ -434,22 +431,17 @@ We can eliminate the effect of oscillations by averaging over time. For that we 
 \begin{equation}
     \langle F^*\rangle_p(T) \coloneqq \frac{1}{(1-p) T}\int\limits_{p T}^{T} F^*(t)\d t.
 \end{equation}
-It turned out that averaging over 1 \% ($p=0.99$) or 10 \% ($p=0.9$) of the driving gave approximately the same results for long enough drivings ($T\overset{\sim}{>} 10$). The same result can be obtained from the analytical continuation of the fidelity formula to $t\rightarrow  \infty$. This analytical continuation of the harmonic oscillator solution leads to the Fidelity value around which the oscillations occur. The result of averaging can be seen in Fig. \ref{fig:infidCombined}.
+It turned out that averaging over 1 \% ($p=0.99$) or 10 \% ($p=0.9$) of the driving gave approximately the same results for long enough drivings ($T\overset{\sim}{>} 10$). The same result can be obtained from the analytical continuation of the fidelity formula to $t\rightarrow  \infty$. This analytical continuation of the harmonic oscillator solution leads to the Fidelity value around which the oscillations occur. The result of averaging can be seen in Fig. \ref{fig:infidCombined}. Using the averaging we can describe the driving using three regimes\footnote{The coefficient $p$ is assumed to be small enough not to cover the biggest oscillations after $t=T/2$ and big enough to average over sufficient number of oscillations. Approximately $p\in[0.6T,0.999T]$.}.
+\begin{itemize}
+    \item \emph{Exponential/fast-driving regime} — $\langle F^*\rangle_p= \exp(-\xi T)$, $\xi\in\R^+$
+    \item \emph{transitional regime} — happens around \emph{critical time} $T_c$,
+    \item \emph{polynomial/close-adiabatic regime} — $\langle F^*\rangle_p\propto T^{-\kappa}$ for $\kappa\in \R^+$.
+\end{itemize}
 
-Using this we can describe the driving using three regimes\footnote{The coefficient $p$ is assumed to be small enough not to cover the biggest oscillations after $t=T/2$ and big enough to average over sufficient number of oscillations. Approximately $p\in[0.6T,0.999T]$.}.
-
-The boundary between exponential and linear regime is not strict and can be seen in Fig. \ref{fig:dens2}, as transition between \emph{smooth} and \emph{chaotic} regimes. This happens around $t=T_c$. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. This can be< smoothed out using the averaged final fidelity. The approximated dependence for final time was numerically estimated as
+The boundary between exponential and linear regime is not strict and can be seen in Fig. \ref{fig:dens2}, as transition between \emph{smooth} and \emph{chaotic} regimes. This happens around $t=T_c$. The fine structure, see Fig. \ref{fig:dens2Zoom}, is caused by the oscillatory character of the final fidelity. This can be smoothed out using the averaged final fidelity. The approximated dependence for final time was numerically estimated as
 \begin{equation}
     T_c\overset{\sim}{\propto} \Delta_{sc}^{-2}.
 \end{equation}
-
-
-\begin{itemize}
-    \item \emph{Exponential/fast-driving regime} — $\langle F^*\rangle_p= \exp(-\xi T)$, $\xi\in\R^+$
-    \item \emph{transitional regime} — happens around \emph{critical time} $T_c$.
-    \item \emph{Polynomial/close-adiabatic regime} — $\langle F^*\rangle_p\propto T^{-\kappa}$ for $\kappa\in \R^+$.
-\end{itemize}
-
 \begin{figure}[h]
     \centering
     \includegraphics[scale=1.2]{../img/infidelityTfPlotLogLinCombined1.pdf}
@@ -466,14 +458,14 @@ The boundary between exponential and linear regime is not strict and can be seen
 
 
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering 
     \includegraphics[scale=1.2]{../img/dens2.pdf}
     \caption{Final infidelity as a function of $\Delta$ and $T$ and its three regimes. Zoom on the boundary between them can be seen on \ref{fig:dens2Zoom}.}
     \label{fig:dens2}
 \end{figure}
 
-\vspace{-10pt}\begin{figure}[h]
+\begin{figure}[H]
     \centering 
     \includegraphics[scale=1.2]{../img/dens2Zoom.pdf}
     \caption{Fine structure of the boundary between fast-driving and adiabatic regimes of final infidelity.}
@@ -487,19 +479,19 @@ To understand the infidelity oscillations, compare Fig. \ref{fig:undercritical} 
 \begin{figure}[h]
     \centering
     \includegraphics[scale=1.2]{../img/undercritical.pdf}
-    \caption{Infidelity as a function of time for fast-driving regime, $T=80<T_c$.}
+    \caption{Infidelity as a function of time for the fast-driving regime, $T=80<T_c$.}
     \label{fig:undercritical}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[scale=1.2]{../img/overcritical.pdf}
-    \caption{Infidelity as a function of time for close-adiabatic regime. $T=170>T_c$}
+    \caption{Infidelity as a function of time for the close-adiabatic regime. $T=170>T_c$}
     \label{fig:overcritical}
 \end{figure}
 
 \subsubsection{Exponential and polynomial part, Landau-Zener and APT}
-Landau-Zener-Stueckelberg's theory provides the WKB approximation formula for the fidelity during some transport. The complete form can be seen in the book by \citet{nonadiabaticTransition}. In this case, only a simplified theorem is needed. First, let's review some definitions.
+Landau-Zener-Stueckelberg's theory provides the WKB approximation formula for the fidelity during quantum state transport. The complete form can be seen in the book by \citet{nonadiabaticTransition}. In this case, only a simplified theorem is needed. First, let's review some definitions.
 
 \begin{definition}[Diabatic coupling]
     Diabatic coupling functions are off-diagonal elements of two-level Hamiltonian. At avoided crossing, it is half of Hamiltonian eigenvalue difference,
@@ -530,7 +522,7 @@ Landau-Zener-Stueckelberg's theory provides the WKB approximation formula for th
         F = \exp\left(-\frac{2 \pi A^2}{v|\Delta F|}\right),
         \label{eq:exponentialPart}
     \end{equation}
-    for a \emph{diabatic coupling} $A$, and \emph{diabatic potential difference} $|\Delta F|$. 
+    for a \emph{diabatic coupling} $A$, and a \emph{diabatic potential difference} $|\Delta F|$. 
 \end{thm}
 
 In our case, the speed $v=1/T$ is constant, off-diagonal elements are also constant $A=\Delta_{sc}$, and the driving path is symmetric along $\Omega=0$ axis, leading to $|\Delta F|=2\Omega_i$.
@@ -542,13 +534,13 @@ The polynomial, or chaotic regime, can be explained using APT. It holds that
 \end{equation}
 for functions $b_n^{(1)}$ from Eq. \ref{eq:bnAPT}. For more details, see \citet{felipe}.
 
-The LZS approximation can be seen in Fig. \ref{fig:landauCompare}. The LZS and APT approximations give the leading order in corresponding regimes (omitting the oscillations) and intersect at time $T_c$. These two parts are not only a good approximation on both intervals, but if added together, they represent the whole fidelity curve with very high precision. Adding these two solutions together might not give a good mathematical meaning. It can be done because the APT gives the infidelity of order $10^{-9}$, it creates a negligible error. The advantage is that one gets a suitable approximation for the transitional regime with this process.
+The LZS approximation can be seen in Fig. \ref{fig:landauCompare}. The LZS and APT approximations give the leading order in corresponding regimes (omitting the oscillations) and intersect at time $T_c$. These two parts are not only a good approximation on both intervals, but if added together, they represent the whole fidelity curve with very high precision. Adding these two solutions together might not have a good mathematical meaning, but it can be done because the APT gives the infidelity of order $10^{-9}$, which causes a negligible error. The advantage is that one gets a suitable approximation for the transitional regime with this process.
 
 
 \begin{figure}[h]
     \centering 
     \includegraphics[scale=1.2]{../img/landauCompare.pdf}
-    \caption{Fidelity as a function of driving final time, approximated by the \green{sum (green)} of \red{Landau-Zener (red, dashed)} and \textcolor{purple}{APT (purple, dashed)}}
+    \caption{Final infidelity as a function of driving final time T, approximated by the \green{sum (green)} of \red{Landau-Zener (red, dashed)} and \textcolor{purple}{APT (purple, dotted)}}
     \label{fig:landauCompare}
 \end{figure}
 % \subsection{Multiparametric behavior}

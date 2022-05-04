@@ -67,3 +67,5 @@ Kähler
 preparable
 wavefunction
 bra-ket
+expecially
+penta-diagonal
