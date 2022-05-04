@@ -204,7 +204,7 @@ The fact that geodesics lean toward singularities and parts of parametric space 
         \node[] at (3.0,1.5) {\gray{$(\lambda_i;\chi_i)$}};
         \node[] at (0.8,-1.9) {\gray{$(\lambda_f;\chi_f)$}};        
     \end{tikzpicture}
-    \caption{Comparing \gray{boundary} valued geodesics for \blue{repulsing (inner line)} and \red{attracting (outer line)} metric tensor divergence in the spherically symmetrical space. }
+    \caption{Comparing the \gray{boundary} valued geodesics for \blue{repulsing (inner line)} and \red{attracting (outer line)} metric tensor divergence in the spherically symmetrical space. }
     \label{fig:geodesicsinGR}
 \end{figure}
 
@@ -222,11 +222,11 @@ The fact that geodesics lean toward singularities and parts of parametric space 
 \subsection{5-dimensional Hamiltonian}
 Another special case is $N=5$. The ground state manifold can be understood from the metric tensor determinant, see Fig. \ref{fig:N=5_det3D}. Here we see the spectrum degeneracy causes high positive values of metric tensor determinant and the \blueee{unreachable gap} is characterized by small determinant values. 
 
-Between every two neighboring energy levels, there are many degeneracies, as can be seen in Fig. \ref{fig:singularitiesBetweenEnergiesN=5}. $E_0=E_1$ degeneracy lies approximately on the line called \emph{separatrix} (see Chap. \ref{chap:infiniteDimensionLimit}) and other singularities are distributed around. The $\chi\leftrightarrow-\chi$ symmetry holds for all of them.
+Between every two neighboring energy levels, there are many degeneracies, as can be seen in Fig. \ref{fig:singularitiesBetweenEnergiesN=5}. $E_0=E_1$ degeneracy lies approximately on the line called the \emph{separatrix} (see Chap. \ref{chap:infiniteDimensionLimit}) and other singularities are distributed around. The $\chi\leftrightarrow-\chi$ symmetry holds for all of them.
 
 
 
-Geodesics for case $N=5$ starting at $(\lambda;\chi)=(0;0)$ have the characteristics already seen in the case $N=3$. However, when starting at $(1;0)$, the behavior around the singularity is not the only interesting thing happening. As can be seen in Fig. \ref{fig:geod10}, the geodesics tend to deflect themselves from the area with high curvature around the axis $\chi=0$, which happens even for other initial conditions, just that for $(0;0)$ it is not so apparent. Small irregularity can be seen in Fig. \ref{fig:N=3_geodesics} around point $(0.5;0.1)$ and means that the geodesic equation might have at least two solutions as candidates for the globally shortest path between two points.\footnote{One might recall the effect of gravitational lensing here. In the presence of any mass in spacetime, there exist more possible light paths (solutions to the geodesic equation) between two points, differing by the initial condition.} 
+Geodesics for the case $N=5$ starting at $(\lambda;\chi)=(0;0)$ have similar characteristics to the case $N=3$. However, the behavior around the singularity is not the only interesting thing happening. Another phenomenon arises for the initial coordinates in the higher curvature around $(1;0)$. As can be seen in Fig. \ref{fig:geod10}, the geodesics tend to deflect themselves from the area with high curvature around the axis $\chi=0$. This effect is present even for the initial coordinate $(0;0)$, but it is not so apparent. Small irregularity can be seen in Fig. \ref{fig:N=3_geodesics} around point $(0.5;0.1)$ and means that the geodesic equation might have at least two solutions as candidates for the globally shortest path between two points.\footnote{One might recall the effect of gravitational lensing here. In the presence of any mass in spacetime, there exist more possible light paths (solutions to the geodesic equation) between two points, differing by the initial condition.} 
 
 \begin{figure}[H]
     \centering
@@ -256,7 +256,7 @@ Geodesics for case $N=5$ starting at $(\lambda;\chi)=(0;0)$ have the characteris
 \begin{figure}[H]
     \centering
     \includegraphics[scale=1.3]{../img/N=5_geods00.pdf}
-    \caption{Geodesics for the case $N=5$, starting at $(1;0)$. \emph{The numerics for geodesics passing close to singularity can be observed to break down.}}
+    \caption{Geodesics for the case $N=5$, starting at $(1;0)$. The numerics for geodesics passing close to the singularity can be observed to break down — their evaluation stopped.}
     \label{fig:geod10}    
 \end{figure}
 
@@ -288,20 +288,19 @@ resulting in classical Hamiltonian
 \end{equation}
 For more, see \citet{felipe}.
 
-The minima of function $\H(x,p)$ form a line, called \emph{separatrix}. In this case it can be expressed as
+The minima of function $\H(x,p)$ form a line, called the \emph{separatrix}. In this case it can be expressed as
 \begin{equation}
     \chi^2=\frac{\lambda-1}{\lambda-2}.
     \label{eq:separatrix}
 \end{equation}
-The separatrix represents phase transition in the limit $N\rightarrow \infty$. In the case of the LMG model, the transition is of first-order everywhere, except in $(\lambda;\chi)=(1;0)$, where it has order two. The separatrix is shown in Fig. \ref{fig:transitionCompare} compared to minimum of $E_1-E_0$ function line, so-called \emph{minimal line}. With increasing $N$, it converges to separatrix. The driving over the first order transition are is generally more advantageous than when the transition is of the second order. The reason is in the energy difference $E_1-E_0$ dependence on system dimension $N$. For details, see \citet{shuetzhold}.
-
-\begin{figure}[H]
+The separatrix represents phase transition in the limit $N\rightarrow \infty$. In the case of the LMG model, the transition is of first-order everywhere, except in $(\lambda;\chi)=(1;0)$, 
+\begin{figure}[h]
     \centering
-    \includegraphics{../img/infiniteN_transitionCompare.pdf}
-    \caption{\red{First order phase transition, the separatrix (red line)}, \blue{second order transition (blue point)} compared to \emph{minimal line in N=3 case} (black, dashed).}
+    \includegraphics[scale=1.2]{../img/infiniteN_transitionCompare.pdf}
+    \caption{\red{First order phase transition, the separatrix (red line)}, \blue{second order transition (blue point)} compared to the \emph{minimal line in N=3 case} (black, dashed).}
     \label{fig:transitionCompare}    
 \end{figure}
-
+where it has order two. The separatrix is shown in Fig. \ref{fig:transitionCompare} compared to the minimum of $E_1-E_0$ line, so-called the \emph{minimal line}. With increasing $N$, it converges to the separatrix. The driving over the first-order transition is generally more advantageous than when the transition is of the second order. The reason is in the $E_1-E_0$ dependence on system dimension $N$. For details, see \citet{shuetzhold}.
 
 
 
@@ -314,13 +313,13 @@ The separatrix represents phase transition in the limit $N\rightarrow \infty$. I
 
 
 \section{General spectrum behavior}
-For higher dimensions we see the same characteristic behavior in the energy spectrum sections, see the example in Fig. \ref{fig:N=10_energiesl}, \ref{fig:N=10_energies2} for $N=10$ case. It is not yet clear if there is a degeneracy between every two neighboring energy levels. From numerical observation on $N<10$ goes that there are $N-2$ crossings for $N$ odd and $N-3$ for $N$ even. Here the analytical proof needs to be found.
+In higher dimensions $N$ we see the same characteristic behavior in the energy spectrum sections, see the example in Fig. \ref{fig:N=10_energiesl}, \ref{fig:N=10_energies2} for $N=10$ case. It is not yet clear if there is a degeneracy between every two neighboring energy levels. From numerical observation on $N<10$ goes that there are $N-2$ crossings for $N$ odd and $N-3$ for $N$ even. Here the analytical proof needs to be found.
 
 
 Special attention is given to the spectrum degeneracies between zeroth and first energy level because these influence the metric tensor and ground-state manifold geodesics the most. Their exact calculation is numerically expensive, and only the first few cases, namely, $N\in\{3,4,5,6,7\}$, were calculated, see Tab. \ref{tab:singularities}. 
 \begin{table}[h]
     \centering
-    \begin{tabular}{c||c|c|c}
+    \vspace{-3pt}\begin{tabular}{c||c|c|c}
      N&$(\lambda_l;\pm\chi_l)$&$(\lambda_2;\pm\chi_2)$&$(\lambda_r;\pm\chi_r)$        \\ \hline\hline
      3&$(-\frac{1}{2};\sqrt{\frac{3}{5}}) $&                                       &                                         \\
      4&$(-3          ;\sqrt{\frac{4}{5}}) $&                                       & $(-\frac{1}{3};\sqrt{\frac{4}{7}})$     \\
@@ -332,7 +331,8 @@ Special attention is given to the spectrum degeneracies between zeroth and first
     \label{tab:singularities}
     \end{table} 
 
-From singularity behavior in low dimensions, one might see the pattern for $(\lambda_l,\chi_l)$ and $(\lambda_r,\chi_r)$, i.e., those with minimal, resp maximal $\lambda$ coordinate
+From the singularity behavior in low dimensions, one might see the pattern for $(\lambda_l,\chi_l)$ and $(\lambda_r,\chi_r)$, i.e., those with minimal, resp maximal $\lambda$ coordinate
+
 \begin{equation}
     (\lambda_l ;\pm\chi_l)= \begin{cases}
         \left(1-\frac{N}{2};\sqrt{\frac{N}{N+2}}\right) & , N\geq 3,N\text{ is odd}\\
@@ -347,31 +347,27 @@ From singularity behavior in low dimensions, one might see the pattern for $(\la
 \end{equation}
 These were numerically proven to be singularities for cases up to $N=1000$. 
 
-Dimensions 3 to 10 are shown in Fig. \ref{fig:singularities3to10}.
-In addition, the degeneracies between zeroth and first energy levels belong to the separatrix described by Eq. \ref{eq:separatrix}. Due to this, the position of singularities is constrained to the \emph{second order phase transition line} between points $(\lambda_l,\pm\chi_l)$ and $(\lambda_r,\pm\chi_r)$.
-
-
-
-In the limit $N\rightarrow\infty$ they converge to
+The singularities in dimensions 3 to 10 are shown in Fig. \ref{fig:singularities3to10} along with the metric tensors determinant for corresponding state manifolds.
+In addition, the degeneracies between zeroth and first energy levels belong to the minimal line, which is close to the separatrix described by Eq. \ref{eq:separatrix}. Due to this, the position of singularities is constrained to the \emph{second order phase transition line} between points $(\lambda_l,\pm\chi_l)$ and $(\lambda_r,\pm\chi_r)$. In the limit $N\rightarrow\infty$ they converge to
 \begin{align*}
     \lim_{N\rightarrow \infty}(\lambda_l ;\pm\chi_l)&= \left(-\infty,1\right)\\
     \lim_{N\rightarrow \infty}(\lambda_r ;\pm\chi_r)&= \left(0,\frac{1}{\sqrt{2}}\right).
 \end{align*}
 
-It is still unclear if in the limit $N\rightarrow \infty$ the singularities cover the part of separatrix with $\lambda<0$.
+It is still unclear if in the limit $N\rightarrow \infty$ the singularities cover the whole part $\lambda<0$ of the separatrix.
 
 
 
 \begin{figure}[h]
     \centering
     \includegraphics[scale=1.4]{../img/N=10_energiesl.pdf}
-    \caption{Energy spectrum as function of $\chi$. $\lambda=1$ and $N=10$.}
+    \vspace{-1pt}\caption{The energy spectrum as a function of $\chi$. $\lambda=1$ and $N=10$.}
     \label{fig:N=10_energiesl}    
 \end{figure}
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=1.4]{../img/N=10_energies2.pdf}
-    \caption{Energy spectrum as function of $\lambda$. $\chi=1$ and $N=10$.}
+    \vspace{-18pt}\includegraphics[scale=1.4]{../img/N=10_energies2.pdf}
+    \vspace{-1pt}\caption{The energy spectrum as a function of $\lambda$. $\chi=1$ and $N=10$.}
     \label{fig:N=10_energies2}    
 \end{figure}
 
@@ -379,7 +375,7 @@ It is still unclear if in the limit $N\rightarrow \infty$ the singularities cove
 \begin{figure}[h]
     \centering
     \includegraphics[scale=1.3]{../img/singularitiesPlots.pdf}
-    \caption{Spectrum degeneracies between $E_0$ and $E_1$. Hamiltonian dimensions are 1,3,5,7 in the first column and 2,4,6,8 in the second column. Black crosses mark most left-wise and right-wise singularity and the background corresponds to the metric tensor determinant. Other singularities are also well visible in the determinant as defects on the \emph{high determinant value line}.}
+    \caption{Spectrum degeneracies between $E_0$ and $E_1$. Hamiltonian dimensions are 3,5,7,9 in the first column and 4,6,8,10 in the second column. Black crosses mark most left-wise and right-wise singularity and the background corresponds to the metric tensor determinant. Other singularities are also well visible in the determinant as defects on the \emph{high determinant value line}.}
     \label{fig:singularities3to10}    
 \end{figure}
 

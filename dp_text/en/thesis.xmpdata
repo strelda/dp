@@ -1,0 +1,7 @@
+% Metadata to be stored in PDF, see documentation of the pdfx package for more details.
+
+\Author{Jan Střeleček}
+\Title{Geometric approach to externally driven quantum systems}
+\Keywords{adiabaticity\sep driving\sep fidelity \sep Lipkin-Meshkov-Glick \sep quench}
+\Subject{The theory of quantum driving is presented and reformulated using the language of differential geometry. The general fidelity driving in a two-level Hamiltonian system is then analyzed with the particular importance of the fidelity time dependence. For the Lipkin-Meshkov-Glick model, the geometrical structure of its energy state manifolds is calculated with an aim to analyze adiabatic and close adiabatic drivings.}
+\Publisher{Charles University}

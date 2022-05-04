@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.28)  4 MAY 2022 11:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.28)  4 MAY 2022 16:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -183,13 +183,21 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (/usr/share/texmf-dist/tex/latex/pdfx/AdobeColorProfiles.tex) (/usr/share/texmf-dist/tex/latex/pdfx/8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 )
-** pdfx: No file thesis.xmpdata . Metadata will be incomplete!
-<<sRGB.icc>> (/usr/share/texmf-dist/tex/latex/pdfx/8bit.def
+** pdfx: Metadata file thesis.xmpdata read successfully.
+(./thesis.xmpdata)<<sRGB.icc>> (/usr/share/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+) (/usr/share/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+) (/usr/share/texmf-dist/tex/generic/stringenc/se-utf8.def
+File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
+) (/usr/share/texmf-dist/tex/latex/pdfx/8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 )
 Package hyperref Info: Option `unicode' set `true' on input line 2411.
 Package hyperref Info: Option `unicode' set `true' on input line 2412.
- (/usr/share/texmf-dist/tex/generic/pdftex/glyphtounicode.tex) (/usr/share/texmf-dist/tex/latex/pdfx/glyphtounicode-cmr.tex) (/usr/share/texmf-dist/tex/latex/pdfx/glyphtounicode-ntx.tex) (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+ (/usr/share/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+) (/usr/share/texmf-dist/tex/generic/pdftex/glyphtounicode.tex) (/usr/share/texmf-dist/tex/latex/pdfx/glyphtounicode-cmr.tex) (/usr/share/texmf-dist/tex/latex/pdfx/glyphtounicode-ntx.tex) (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 ) (/usr/share/texmf-dist/tex/latex/xmpincl/xmpincl.sty
 Package: xmpincl 2021/09/22 v2.4 Include XMP data in pdflatex
@@ -641,11 +649,11 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \arrowsize=\dimen293
 ))
-Package hyperref Info: Option `unicode' set `true' on input line 144.
-Package hyperref Info: Option `breaklinks' set `true' on input line 145.
+Package hyperref Info: Option `unicode' set `true' on input line 142.
+Package hyperref Info: Option `breaklinks' set `true' on input line 143.
 
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 147.
+LaTeX Warning: \include should only be used after \begin{document} on input line 145.
 
 (./macros.tex
 \c@thm=\count321
@@ -683,9 +691,9 @@ Package csquotes Info: ... none found.
 
 
 Package csquotes Warning: No multilingual support.
-(csquotes)                Cannot enable multilingual quotes on input line 152.
+(csquotes)                Cannot enable multilingual quotes on input line 150.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 152.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 150.
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -695,24 +703,24 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (./thesis.aux (./title.aux) (./notation.aux) (./preface.aux) (./chap01_intro.aux) (./chap03_driving.aux) (./chap04_stateDriving.aux) (./chap06_twoLevel.aux) (./chap07_lipkin.aux) (./chap04_groundManifold.aux) (./epilog.aux) (./bibliography.aux) (./appendixGEOM.aux) (./appendix1.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count334
@@ -738,7 +746,7 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 152.
+Package hyperref Info: Link coloring OFF on input line 150.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -748,16 +756,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count340
 )
-LaTeX Info: Redefining \ref on input line 152.
-LaTeX Info: Redefining \pageref on input line 152.
-LaTeX Info: Redefining \nameref on input line 152.
+LaTeX Info: Redefining \ref on input line 150.
+LaTeX Info: Redefining \pageref on input line 150.
+LaTeX Info: Redefining \nameref on input line 150.
  (./thesis.out) (./thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-Package csquotes Info: Making character " active on input line 152.
+Package csquotes Info: Making character " active on input line 150.
 \openout2 = `title.aux'.
 
  (./title.tex
@@ -1257,54 +1265,54 @@ Overfull \hbox (10.2145pt too wide) in paragraph at lines 258--259
  [][] |
  []
 
-[59 <../img/singularitiesBetweenEnergiesN=5.pdf>] [60 <../img/N=5_geods00.pdf>]
-<../img/infiniteN_transitionCompare.pdf, id=1550, 361.35pt x 241.90375pt>
+[59 <../img/singularitiesBetweenEnergiesN=5.pdf>]
+<../img/infiniteN_transitionCompare.pdf, id=1520, 260.975pt x 128.48pt>
 File: ../img/infiniteN_transitionCompare.pdf Graphic file (type pdf)
 <use ../img/infiniteN_transitionCompare.pdf>
-Package pdftex.def Info: ../img/infiniteN_transitionCompare.pdf  used on input line 300.
-(pdftex.def)             Requested size: 361.34912pt x 241.90315pt.
+Package pdftex.def Info: ../img/infiniteN_transitionCompare.pdf  used on input line 299.
+(pdftex.def)             Requested size: 313.16844pt x 154.17522pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[61 <../img/infiniteN_transitionCompare.pdf>]
-<../img/N=10_energiesl.pdf, id=1581, 238.8925pt x 116.435pt>
+[60 <../img/N=5_geods00.pdf>] [61 <../img/infiniteN_transitionCompare.pdf>]
+<../img/N=10_energiesl.pdf, id=1579, 238.8925pt x 116.435pt>
 File: ../img/N=10_energiesl.pdf Graphic file (type pdf)
 <use ../img/N=10_energiesl.pdf>
-Package pdftex.def Info: ../img/N=10_energiesl.pdf  used on input line 367.
+Package pdftex.def Info: ../img/N=10_energiesl.pdf  used on input line 363.
 (pdftex.def)             Requested size: 334.4472pt x 163.00787pt.
-<../img/N=10_energies2.pdf, id=1582, 231.86626pt x 117.43875pt>
+<../img/N=10_energies2.pdf, id=1580, 231.86626pt x 117.43875pt>
 File: ../img/N=10_energies2.pdf Graphic file (type pdf)
 <use ../img/N=10_energies2.pdf>
-Package pdftex.def Info: ../img/N=10_energies2.pdf  used on input line 373.
+Package pdftex.def Info: ../img/N=10_energies2.pdf  used on input line 369.
 (pdftex.def)             Requested size: 324.61052pt x 164.4131pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../img/singularitiesPlots.pdf, id=1583, 289.08pt x 464.73625pt>
+<../img/singularitiesPlots.pdf, id=1581, 289.08pt x 464.73625pt>
 File: ../img/singularitiesPlots.pdf Graphic file (type pdf)
 <use ../img/singularitiesPlots.pdf>
-Package pdftex.def Info: ../img/singularitiesPlots.pdf  used on input line 381.
+Package pdftex.def Info: ../img/singularitiesPlots.pdf  used on input line 377.
 (pdftex.def)             Requested size: 375.80394pt x 604.15704pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [62 <../img/N=10_energiesl.pdf>] [63 <../img/N=10_energies2.pdf>] [64 <../img/singularitiesPlots.pdf>]
+) [62 <../img/N=10_energiesl.pdf> <../img/N=10_energies2.pdf
+
+pdfTeX warning: pdflatex (file ../img/N=10_energies2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [63 <../img/singularitiesPlots.pdf>]
 \openout2 = `chap04_groundManifold.aux'.
 
  (./chap04_groundManifold.tex
-<../img/quenchFidelityFrom00.pdf, id=1636, 302.12875pt x 259.97125pt>
+<../img/quenchFidelityFrom00.pdf, id=1631, 302.12875pt x 259.97125pt>
 File: ../img/quenchFidelityFrom00.pdf Graphic file (type pdf)
 <use ../img/quenchFidelityFrom00.pdf>
 Package pdftex.def Info: ../img/quenchFidelityFrom00.pdf  used on input line 8.
 (pdftex.def)             Requested size: 362.55267pt x 311.96393pt.
-<../img/bg123.pdf, id=1637, 275.0275pt x 157.58875pt>
+<../img/bg123.pdf, id=1632, 275.0275pt x 157.58875pt>
 File: ../img/bg123.pdf Graphic file (type pdf)
 <use ../img/bg123.pdf>
 Package pdftex.def Info: ../img/bg123.pdf  used on input line 22.
 (pdftex.def)             Requested size: 330.03134pt x 189.10553pt.
-<../img/plotsFidelityQuenches.pdf, id=1638, 263.98625pt x 279.0425pt>
+<../img/plotsFidelityQuenches.pdf, id=1633, 263.98625pt x 279.0425pt>
 File: ../img/plotsFidelityQuenches.pdf Graphic file (type pdf)
 <use ../img/plotsFidelityQuenches.pdf>
 Package pdftex.def Info: ../img/plotsFidelityQuenches.pdf  used on input line 23.
@@ -1313,17 +1321,17 @@ Package pdftex.def Info: ../img/plotsFidelityQuenches.pdf  used on input line 23
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [65
+) [64
 
 
 
- <../img/quenchFidelityFrom00.pdf>] [66 <../img/bg123.pdf> <../img/plotsFidelityQuenches.pdf
+ <../img/quenchFidelityFrom00.pdf>] [65 <../img/bg123.pdf> <../img/plotsFidelityQuenches.pdf
 
 pdfTeX warning: pdflatex (file ../img/plotsFidelityQuenches.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 \openout2 = `epilog.aux'.
 
- (./epilog.tex) [67
+ (./epilog.tex) [66
 
 
 
@@ -1340,38 +1348,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--56
 []$\OT1/lmtt/m/n/12 https : / / www . ime . usp . br / []gorodski / teaching / mat5771-[]2016 /
  []
 
-[68
+[67
 
 
 
 
-])) [69] (./thesis.lof [70
+])) [68] (./thesis.lof [69
 
 
 
-] [71])
+] [70])
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [72]
+ [71]
 \openout2 = `appendixGEOM.aux'.
 
  (./appendixGEOM.tex
 Appendix A.
-[73
+[72
 
 
-] [74]) [75]
+] [73]) [74]
 \openout2 = `appendix1.aux'.
 
  (./appendix1.tex
 Appendix B.
-[76
+[75
 
 
 
 
-]) [77]
+]) [76]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 65.
 See the caption package documentation for explanation.
@@ -1381,18 +1389,18 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 4B92548A28ED64AD5C56B0DCC5D083FE;9132.
  ) 
 Here is how much of TeX's memory you used:
- 30002 strings out of 478276
- 547844 string characters out of 5853013
- 804429 words of memory out of 5000000
- 47057 multiletter control sequences out of 15000+600000
+ 30024 strings out of 478276
+ 548368 string characters out of 5853013
+ 808663 words of memory out of 5000000
+ 47069 multiletter control sequences out of 15000+600000
  557989 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,30n,80p,1463b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} </home/strelda/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk>{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmib7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (81 pages, 28321465 bytes).
+Output written on thesis.pdf (80 pages, 28325200 bytes).
 PDF statistics:
- 2106 PDF objects out of 2487 (max. 8388607)
- 1732 compressed objects within 18 object streams
- 454 named destinations out of 1000 (max. 500000)
+ 2103 PDF objects out of 2487 (max. 8388607)
+ 1730 compressed objects within 18 object streams
+ 453 named destinations out of 1000 (max. 500000)
  658 words of extra memory for PDF output out of 10000 (max. 10000000)
 

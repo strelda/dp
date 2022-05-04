@@ -1,12 +1,12 @@
 \section{Transport using quenches}
-In Chapter \ref{chap:groundStateManifoldDriving}, the transport using quenches was introduced. This transport also resembles some ground-state manifold characteristics. Performing quench from $(\lambda_i;\chi_i)=(0;0)$ to $(\lambda;\chi)$, the fidelity is small if the final coordinates are below separatrix. When it is behind the \greenn{minimal line}, the fidelity decreases dramatically, as can be seen in Fig. \ref{fig:quenchFidelityFrom00}.
+In Chapter \ref{chap:groundStateManifoldDriving}, the transport using quenches was introduced. This transport also resembles some ground-state manifold characteristics. Performing quench from $(\lambda_i;\chi_i)=(0;0)$ to $(\lambda;\chi)$, the fidelity is small if the final coordinates are below separatrix. Crossing the \greenn{minimal line} leads to dramatic decrease in the fidelity, as can be seen in Fig. \ref{fig:quenchFidelityFrom00}.
 
-Transport using quenches can be observed in Fig. \ref{fig:plotsFidelityQuenches}. The quenches are performed around paths with $\int_{a}^{b} \d s=\text{const}$ between every two neighboring points on ground-state manifold geodesic. If the system is measured periodically, the quenches jump smaller distances when the coordinates in parametric space are closer to the degeneracy. Decreasing time step $\Delta t$ has no effect on the relative fidelity of quenches during the evolution but affects their absolute fidelity. As one would expect that for $\Delta t\rightarrow 0$, transport becomes adiabatic, and the fidelity at any time will become $1$. See that the shape of the curves looks similar in plots in the columns, but their magnitude decreases.
+Transport using quenches can be observed in Fig. \ref{fig:plotsFidelityQuenches}. The quenches are performed around paths with $\int_{a}^{b} \d s=\text{const}$ between every two neighboring points on ground-state manifold geodesic. If the system is measured periodically, the quenches jump smaller distances when the coordinates in parametric space are closer to the degeneracy. Decreasing the time step $\Delta t$ has no effect on the relative fidelity of quenches during the evolution but affects their absolute fidelity. As one would expect, for $\Delta t\rightarrow 0$ the transport becomes adiabatic, and the fidelity at any time becomes $1$. See that the shape of curves looks similar in plots in the columns, but their magnitude decreases.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=1.2]{../img/quenchFidelityFrom00.pdf}
-    \caption{Fidelity of quench from $(\lambda_i;\chi_i)=(0;0)$ to the coordinate $(\lambda;\chi)$. \greenn{Minimal line (green)} is plotted for comparison.}
+    \vspace{30pt}\includegraphics[scale=1.2]{../img/quenchFidelityFrom00.pdf}
+    \caption{Fidelity of quenches from $(\lambda_i;\chi_i)=(0;0)$ to the coordinate $(\lambda;\chi)$. \greenn{Minimal line (green)} is plotted for comparison.}
     \label{fig:quenchFidelityFrom00}    
 \end{figure}
 
@@ -21,7 +21,7 @@ Transport using quenches can be observed in Fig. \ref{fig:plotsFidelityQuenches}
     \centering
     \includegraphics[scale=1.2]{../img/bg123.pdf}
     \includegraphics[scale=1.2]{../img/plotsFidelityQuenches.pdf}
-    \caption{Fidelity for sequential quenches along geodesics (see green lines on top). Left (right) column corresponds to lower (upper) geodesic. Time steps from top are $\Delta t\in \{0.03,0.1,0.5\}$. Time difference between points in the plot on top is $\Delta t=0.5$.}
+    \caption{Fidelity for sequential quenches along geodesics (see green lines on top). Left (right) column corresponds to lower (upper) geodesic in the image above. Time steps from top are $\Delta t\in \{0.03,0.1,0.5\}$. Time difference between the points on geodesics in the plot on top is $\Delta t=0.5$.}
     \label{fig:plotsFidelityQuenches}    
 \end{figure}
 

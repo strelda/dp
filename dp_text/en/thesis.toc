@@ -48,11 +48,11 @@
 \contentsline {subsection}{\numberline {5.2.2}5-dimensional Hamiltonian}{58}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Infinite dimension limit}{60}{subsection.5.2.3}%
 \contentsline {section}{\numberline {5.3}General spectrum behavior}{61}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Transport using quenches}{65}{section.5.4}%
-\contentsline {chapter}{Conclusion}{67}{chapter*.55}%
-\contentsline {chapter}{Bibliography}{68}{chapter*.56}%
-\contentsline {chapter}{List of Figures}{70}{chapter*.57}%
-\contentsline {chapter}{\numberline {A}Geometrization of quantum mechanics}{73}{appendix.A}%
-\contentsline {section}{\numberline {A.1}From the projective Hilbert space to state manifolds}{73}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Restriction to eigenstate manifolds}{74}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Eigenvalues for Lipkin-Meshkov Glick model}{76}{appendix.B}%
+\contentsline {section}{\numberline {5.4}Transport using quenches}{64}{section.5.4}%
+\contentsline {chapter}{Conclusion}{66}{chapter*.55}%
+\contentsline {chapter}{Bibliography}{67}{chapter*.56}%
+\contentsline {chapter}{List of Figures}{69}{chapter*.57}%
+\contentsline {chapter}{\numberline {A}Geometrization of quantum mechanics}{72}{appendix.A}%
+\contentsline {section}{\numberline {A.1}From the projective Hilbert space to state manifolds}{72}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Restriction to eigenstate manifolds}{73}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Eigenvalues for Lipkin-Meshkov Glick model}{75}{appendix.B}%
