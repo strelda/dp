@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.28)  4 MAY 2022 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.11)  5 JUN 2022 19:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **/home/strelda/Documents/mff/dp/dp_text/en/thesis.tex
 (/home/strelda/Documents/mff/dp/dp_text/en/thesis.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (/usr/share/texmf-dist/tex/latex/base/report.cls
+L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
@@ -342,7 +342,7 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@height=\dimen152
 \Gin@req@width=\dimen153
 ) (/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
+Package: fancyvrb 2022/04/12 4.2 verbatim text (tvz,hv)
 \FV@CodeLineNo=\count283
 \FV@InFile=\read3
 \FV@TabBox=\box52
@@ -697,7 +697,7 @@ LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 15
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count333
 \l__pdf_internal_box=\box69
 ) (./thesis.aux (./title.aux) (./notation.aux) (./preface.aux) (./chap01_intro.aux) (./chap03_driving.aux) (./chap04_stateDriving.aux) (./chap06_twoLevel.aux) (./chap07_lipkin.aux) (./chap04_groundManifold.aux) (./epilog.aux) (./bibliography.aux) (./appendixGEOM.aux) (./appendix1.aux))
@@ -1389,15 +1389,15 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 4B92548A28ED64AD5C56B0DCC5D083FE;9132.
  ) 
 Here is how much of TeX's memory you used:
- 30026 strings out of 478276
- 548398 string characters out of 5853013
- 808790 words of memory out of 5000000
- 47069 multiletter control sequences out of 15000+600000
+ 30048 strings out of 478238
+ 549117 string characters out of 5850456
+ 809698 words of memory out of 5000000
+ 47122 multiletter control sequences out of 15000+600000
  557989 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,30n,80p,1463b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} </home/strelda/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk>{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmib7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (80 pages, 28325166 bytes).
+Output written on thesis.pdf (80 pages, 28325172 bytes).
 PDF statistics:
  2105 PDF objects out of 2487 (max. 8388607)
  1732 compressed objects within 18 object streams

@@ -1,0 +1,28 @@
+\begin{tikzpicture}[]
+    % \draw[red, dashed, very thick,rotate=30] (-6,0) -- (6,0);
+    \draw[] (-3,0) arc (0:17:3);
+    \draw[] (-4,0) arc (0:12:2);
+    \draw[rotate=13] (1.5,1.5) arc (0:7:2.5);
+    \draw[rotate=11] (-2,1.2) arc (0:5:4);
+    
+    \draw[<->] (-6,-0.9) -- (6,-0.9);
+    \draw[thick] (-6,0) -- (6,0);
+    \draw[] (-4,0) node[below] {$D_L$};
+    \draw[] (3,0) node[below] {$D_{LS}$};
+    \draw[] (0,-0.9) node[below] {$D_S$};
+    \draw[very thick,blue] (-6,0) -- (-1,1.5);
+    \draw[very thick,blue] (-1,1.5) -- (6,2.5);
+    \draw[thick,dashed] (-1,1.5) -- (6,3.6);
+    \draw[] (-1,0) -- (-1,1.5);
+    \draw[thick,dashed] (-6,0) -- (6,2.5);
+
+    \fill (-6,0) circle[radius=2pt] (-6.3,0) node[below] {pozorovatel ($O$)};
+    \fill (-1,0) circle[radius=2pt] (-1.6,0) node[below] {čočka ($L$)};
+    \fill (6,2.5) circle[radius=2pt] (5.5,2.5) node[above] {zdroj ($S$)};
+    \fill (6,3.6 ) circle[radius=2pt] (5.5,3.6) node[above] {obraz ($I$)};
+    \draw[] (-3.8,0.54) node[below] {$\beta$};
+    \draw[] (-2.85,0.62) node[below] {$\theta$};
+    \draw[] (-2,1.25) node[below] {$\alpha$};
+    \draw[] (1.4,2.3) node[below] {$\hat{\alpha}$};
+    \draw[] (-1,0.7) node[right] {$\xi$};
+  \end{tikzpicture}

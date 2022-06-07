@@ -1,0 +1,461 @@
+%%%
+%%%  Template to prepare a defense of Bc./Mgr./... thesis
+%%%  to be presented at MFF
+%%%  (unofficial)
+%%%
+%%%  AUTHOR:  Arnošt Komárek
+%%%           Department of Probability and Mathematical Statistics
+%%%           Faculty of Mathematics and Physics, Charles University in Prague
+%%%
+%%%  LOG:    20150505  created by modification of some previous personal presentations
+%%%          20170522  update related to new MFF logo
+%%%  
+%%%  ===========================================================================
+\documentclass[c, 10pt]{beamer}
+
+
+%%%%% Package needed if some accented letters in the presentation
+%%%%% -------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+
+
+%%%%% Most beamer settings and other LaTeX commands
+%%%%% are provided in the file below
+%%%%% -----------------------------------------------------
+\input{MFF_Present.sty}
+
+
+%%%%% \ifCZversion is defined inside MFF_Present.sty
+%%%%% to distinguish between Czech and English presentations
+%%%%% ------------------------------------------------------
+\CZversiontrue       %% for presentations in Czech (Slovak)
+%\CZversionfalse      %% for presentations in English
+
+
+%%%%% Uncomment appropriate choice below if you wish to create
+%%%%% notes for audience having 2 or 4 slides on each (A4) page.
+%%%%% -------------------------------------------------------------
+\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper, landscape, border shrink=5mm]
+%\pgfpagesuselayout{2 on 1}[a4paper, border shrink=5mm]
+
+
+%%%%% Basic settings of the document
+%%%%% (will be automatically used to create a title page, foots etc.)
+%%%%% --------------------------------------------------------------------
+
+  %%% Main title
+  %%% - short and long version
+  %%%   --> will appear on place where \inserttitle and \insertshorttitle commands used
+  %%%   --> if the full title is short enough, both short and long versions might be the same
+\title[Kratší název]{%                       
+       Plný název bakalářské práce}
+
+  %%% Subtitle (comment it if you do not want to have it)
+  %%%   --> will appear on place where \insertsubtitle and \insertshortsubtitle commands used
+\subtitle[]{Obhajoba bakalářské práce}
+
+  %%% Author
+  %%% - as "short" version, link to the author's webpage is used
+  %%%   (e.g., e-mail is also a useful alternative)
+  %%%   --> will appear on places where \insertauthor and \insertshortauthor commands used
+\author[http://msekce.karlin.mff.cuni.cz/\~{}komarek]{%
+        Arnošt Komárek}
+
+  %%% Author's affiliation
+  %%% - can be fully commented for defense presentation
+  %%%   --> will appear on places where \insertinstitute and \insertshortinstitute commands used
+\institute[KPMS]{%
+           Katedra pravděpodobnosti a~matematické statistiky}
+
+  %%% Date of presentation
+  %%% - replace it by real date in case of a defense presentation
+  %%%   --> will appear on places where \insertdate and \insertshortdate commands used
+\date[22.6.2017]{%
+      22. června 2017}
+
+
+\begin{document}
+
+%%%%% Title slide
+%%%%% =====================================================================================
+\frame[plain]{\titlepage}
+
+
+%%%%% Fictitious introductory section
+%%%%% =====================================================================================
+\section{Úvod}
+%\framesection{}     %%% Uncomment it to get a special slide with the section title
+                     %%% - not really needed for a presentation lasting 10 minutes
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Smysl prezentace}
+\framesubtitle{Bakalářská práce}
+
+\begin{itemize}\itemsep=1em
+\item Stručně seznámit komisi s~obsahem práce.
+\item Vysvětlit \alert{hlavní} myšlenky.
+\item Vysvětlit, v~čem spočívá \alert{hlavní přínos studenta} k~dané problematice.
+  \begin{itemize}\color{colTwo}\itemsep=1ex
+  \item Toto je nejdůležitější součást prezentace.
+  \item Komisi, jejíž většina členů nečetla podrobně celou bakalářskou práci,
+    je potřeba přesvědčit, že se nejedná o~překlad jakéhosi anglického textu 
+    do češtiny/slovenštiny.
+  \item V~rámci prezentace je vhodné zdůraznit, jaké (matematické) problémy musel
+    autor bakalářské práce samostatně vyřešit.
+  \end{itemize}
+\item Smyslem obhajoby bakalářské práce \alert{není} naučit posluchače 
+  matematiku obsaženou v~práci. Nejedná se o~obdobu klasické přednášky!
+\end{itemize}
+\end{frame}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Základní zásady prezentace}
+\framesubtitle{Bakalářská práce}
+
+\begin{itemize}\itemsep=1em
+\item Celková doba prezentace by neměla přesáhnout \alert{10 minut!}
+\item Méně je někdy více! Nicméně všeho s~mírou. Prezentace končící po pěti minutách též nebude působit příliš dobře.
+\end{itemize}
+\end{frame}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Další zásady prezentace}
+\framesubtitle{Bakalářská práce}
+
+\begin{itemize}\itemsep=1em
+\item V~prezentaci (na slidech) by se (až na výjimky) neměl objevit souvislý text.
+  \begin{itemize}\color{colTwo}\itemsep=1ex
+  \item Slidy obsahují pouze klíčovou část informace, kterou má prezentace posluchačům předat.
+  \item Předpokládá se, že slidy jsou doplňovány mluveným projevem, který je tvořen
+   \alert{souvislými} větami přednesenými \alert{spisovným} jazykem. 
+  \end{itemize}
+\item Nepůsobí dobře, je-li mluvený projev předčítán z~papíru drženého v~ruce
+   \textit{(obhajoba není projevem na stranickém kongresu/sjezdu).}
+  \begin{itemize}\color{colTwo}
+  \item Hlavní osnova prezentace by měla být zřejmá ze slidů, zbytek by měl být uložen
+    v~hlavě prezentujícího. 
+  \end{itemize}
+\item Taktéž však nepůsobí úplně dobře, připomíná-li prezentace doslovný přednes naučeného textu
+   \textit{(obhajoba není soutěží v~recitaci).}
+  \begin{itemize}\color{colTwo}
+  \item Mluvený projev by měl být přirozený. S~jistou nervozitou je počítáno.
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+%%%%% Fictitious main section
+%%%%% =====================================================================================
+\section{Hlavní část}
+%\framesection{}     %%% Uncomment it to get a special slide with the section title
+                     %%% - not really needed for a presentation lasting 10 minutes
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Zásadní poznatek}
+
+%\begin{beamercolorbox}[center, sep=-1em, rounded=true, shadow=true]{mffboxcol}
+\begin{displaymath}
+F(x) = \mathsf{P}(X \leq x),\qquad x\in\mathbb{R}.
+\end{displaymath}
+%\end{beamercolorbox}
+\begin{itemize}
+\item Toto je \alert{zprava} spojitá verze distribuční funkce.
+\end{itemize}
+\end{frame}
+
+
+%%%%% Fictitious final section
+%%%%% ===================================================================================
+\section{Závěr}
+%\framesection{Závěr}     %%% Uncomment it to get a special slide with the section title
+                          %%% - not really needed for a presentation lasting 10 minutes
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}[plain]         %%% plain = no title etc.
+
+%%% Rámeček
+\begin{beamercolorbox}[center, sep=2pt, rounded=true, shadow=true]{mffboxcol}
+\LARGE\bfseries \alert{Děkuji za pozornost!}
+\end{beamercolorbox}
+
+\vspace{5em}
+\begin{beamercolorbox}[center, sep=2pt, rounded=true, shadow=true]{mffboxcol}
+Za ochotu a~čas mně věnovaný při přípravě této bakalářské práce děkuji též svému vedoucímu \alert{prof. Janu Jakubovi}.
+\end{beamercolorbox}
+\end{frame}
+
+
+%%%%% Fictitious reactions to comments of the reviewer
+%%%%% ===================================================================================
+\section{Reakce na připomínky oponenta}
+%\framesection{}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Připomínky oponenta}
+
+\begin{itemize}\itemsep=1ex
+\item Uvedl-li oponent ve svém posudku zásadnější připomínky nebo dotazy, je vhodné 
+  si připravit relevantní odpovědi písemnou formou.
+\item Tyto se zařadí na konec prezentace (za poděkování) a~použijí se v~případě,
+  že je během obhajoby vyžadována podrobnější reakce na tu kterou připomínku.
+\item Písemné odpovědi není nutné připravovat pro formální připomínky, resp. pro
+  připomínky/dotazy, které lze odpovědět/vysvětlit jednou větou.
+\end{itemize}
+\end{frame}
+
+
+%%%%% Illustrations of use of some beamer capabilities
+%%%%% ===================================================================================
+\section{Ilustrace použití {\LaTeX} balíčku \texttt{beamer}}
+\framesection{}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Vysazený vzorec v rámečku}
+\framesubtitle{Pomocí příkazu \texttt{dmath} definovaného v~\texttt{MFF\_{}Present.sty}}
+
+\dmath{
+  F(x) = \mathsf{P}(X \leq x),\qquad x\in\mathbb{R}.
+}
+\begin{itemize}
+\item Toto je \alert{zprava} spojitá verze distribuční funkce.
+\end{itemize}
+\end{frame}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Vysazený vzorec v rámečku}
+\framesubtitle{Pomocí příkazu \texttt{dmath} definovaného v~\texttt{MFF\_{}Present.sty}, menší okraje}
+
+\dmath[-1.6em]{
+  F(x) = \mathsf{P}(X \leq x),\qquad x\in\mathbb{R}.
+}
+\begin{itemize}
+\item Toto je \alert{zprava} spojitá verze distribuční funkce.
+\end{itemize}
+\end{frame}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Vysazené vzorce v rámečku (zarovnané)}
+\framesubtitle{Pomocí příkazu \texttt{dalign} definovaného v~\texttt{MFF\_{}Present.sty}}
+
+\dalign{
+  F(t) &= \mathsf{P}(T \leq t),\qquad t > 0, \\[1ex]
+  S(t) &= \mathsf{P}(T > t).
+}
+\begin{itemize}
+\item Toto je \alert{zprava} spojitá verze distribuční funkce,
+  resp. funkce přežití.
+\end{itemize}
+\end{frame}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Vysazené vzorce v rámečku (vycentrované)}
+\framesubtitle{Pomocí příkazu \texttt{dgather} definovaného v~\texttt{MFF\_{}Present.sty}}
+
+\dgather{
+  F(t) = \mathsf{P}(T \leq t),\qquad t > 0, \\[1ex]
+  S(t) = \mathsf{P}(T > t).
+}
+\begin{itemize}
+\item Toto je \alert{zprava} spojitá verze distribuční funkce,
+  resp. funkce přežití.
+\end{itemize}
+\end{frame}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Matematika v~titulku: $\tw{F(t) = \mathsf{P}(T \leq t)}$}
+
+\begin{itemize}\itemsep=1em
+\item Matematický text (v~dolarech) má nastaven svůj styl (zejména barvu).
+\item Je-li matematika použita v~titulku slidu, je potřeba ji obarvit na
+   standardní barvu použitou v~titulcích (zde bílá, pro kterou máme 
+   ve stylovém souboru \texttt{MFF\_{}Present.sty} definován příkaz \texttt{tw}).
+\end{itemize}
+
+\end{frame}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Tučná a/nebo obarvená matematika}
+
+\begin{itemize}\itemsep=1ex
+\item Též v~rámci matematického textu můžeme zvýrazňovat (změnou barvy) nejdůležitější součásti vzorců:
+  \dmath{
+    \alert{F(t) = \mathsf{P}(T \leq t)}, \qquad t > 0.
+  }
+
+\item U~tučných symbolů získaných pomocí příkazu \texttt{boldsymbol} 
+  je (bohužel) potřeba měnit barvu po jednom. U~tučných matematických fontů
+  získaných pomocí \texttt{mathbf} toto potřeba není. Srovnej:
+  \dgather{
+    \tal{\widehat{\boldsymbol{\beta}} = \bigl(\mathbb{X}^\top\mathbb{X}\bigr)^{-1}\,\mathbb{X}^\top\mathbf{Y}}, \\[1ex]
+    \tal{\widehat{\boldsymbol{\beta}} = \bigl(\mathbb{X}^\top\mathbb{X}\bigr)^{-1}\,\mathbb{X}^\top\boldsymbol{Y}}, \\[1ex]
+    \tal{\widehat{\boldsymbol{\tal{\beta}}} = \bigl(\mathbb{X}^\top\mathbb{X}\bigr)^{-1}\,\mathbb{X}^\top\boldsymbol{\tal{Y}}}.
+  }
+  %%% \tal{} = \textcolor{alertCol}{}, see MFF_Present.sty
+\end{itemize}
+
+\end{frame}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Text v~barevném rámečku}
+\framesubtitle{Pomocí příkazu \texttt{mffbox} definovaného v~\texttt{MFF\_{}Present.sty}}
+
+\mffbox{
+  Příliš žluťoučký kůň úpěl ďábelské ódy.
+}
+
+\vspace{2em}
+Ještě jednou, nyní se změněnou velikostí okrajů:
+\mffbox[1em]{
+  Příliš žluťoučký kůň úpěl ďábelské ódy.
+}
+
+\end{frame}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Text v~barevném rámečku s~titulkem}
+\framesubtitle{Pomocí příkazu \texttt{mffboxTitle} definovaného v~\texttt{MFF\_{}Present.sty}}
+
+\mffboxTitle{Titulek}{
+  Příliš žluťoučký kůň úpěl ďábelské ódy.
+}
+
+\vspace{2em}
+Vhodné použít např. pro znění matematických vět:
+\mffboxTitle{\textbf{Věta}. O~žlutém koni a~úrokové limitě}{
+  Příliš žluťoučký kůň úpěl ďábelské ódy:
+  \begin{displaymath}
+  \lim_{n \to \infty} \biggl(1 + \frac{1}{n}\biggr)^n = \mathsf{e}.
+  \end{displaymath}
+}
+
+\end{frame}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Odrážky a~jejich postupné odkrývání}
+
+\begin{itemize}[<+->]\itemsep=1em
+\item Odrážky se budou postupně odkrývat.
+\item Obecně není dobré přehánět to s~efekty podobného typu, aby se prezentace nezvrhla
+  v~rychlou změť postupně se objevujících částí textu.
+\item Další řádek.
+\item Ještě jeden řádek.
+\end{itemize}
+
+\end{frame}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{Postupné odkrývání ještě jednou}
+\framesubtitle{Příkaz \texttt{pause}}
+
+\dgather{
+  F(t) = \mathsf{P}(T \leq t),\qquad t > 0, \\[1ex]
+  \mathbb{E}T = \int_0^\infty \bigl\{1 - F(t)\bigr\}\,\mathsf{d}t.
+}
+
+\pause
+\vspace{2em}
+\begin{itemize}
+\item Platí pro náhodné veličiny, které jsou skoro jistě nezáporné a~mají konečnou střední hodnotu.
+\end{itemize}
+
+\end{frame}
+
+  %%%%% Slide where fancyvrb environment used
+  % ----------------------------------------------------------------------------------------
+\begin{frame}[fragile]\frametitle{Ukázka kódu v~{\Rko}}   %%% [fragile] needed due to fancyvrb, otherwise LaTeX problem
+\framesubtitle{Užití prostředí \texttt{Rin} a~\texttt{Rout} definovaných v~\texttt{MFF\_{}Present.sty}}
+
+\alert{\bfseries Průměr}
+\begin{Rin}
+> mean(c(1, 2, 3, 4, 5))
+\end{Rin}
+
+\medskip
+\begin{Rout}
+[1] 3
+\end{Rout}
+
+\medskip
+\alert{\bfseries Průměr menším písmem}
+\begin{Rin}[fontsize=\scriptsize]
+> mean(c(1, 2, 3, 4, 5))
+\end{Rin}
+\end{frame}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+{
+\usebackgroundtemplate{\includegraphics[width = \paperwidth, height = \paperheight]{./FigureLayout/BackgroundRotunda}}
+\begin{frame}\frametitle{Speciální pozadí na jednom slidu}
+\framesubtitle{Formát hlavičky i~paty ponechán původní}
+
+\begin{itemize}\itemsep=1em
+\item \textcolor{rred}{Slide s~pozadím.}
+\end{itemize}
+
+\end{frame}
+}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+{
+\usebackgroundtemplate{\includegraphics[width = \paperwidth, height = \paperheight]{./FigureLayout/BackgroundRotunda}}
+\begin{frame}[plain]\frametitle{Speciální pozadí na jednom slidu}
+\framesubtitle{Pouze hlavička zůstala původní}
+
+\begin{itemize}\itemsep=1em
+\item \textcolor{rred}{Slide s~pozadím.}
+\end{itemize}
+
+\end{frame}
+}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+{\usebackgroundtemplate{\includegraphics[width = \paperwidth, height = \paperheight]{./FigureLayout/BackgroundRotunda}}
+\begin{frame}[plain]
+
+\begin{itemize}\itemsep=1em
+\item \textcolor{rred}{Slide s~pozadím (bez hlavičky).}
+\end{itemize}
+
+\end{frame}
+}
+
+  %%%%% Slide
+  % ----------------------------------------------------------------------------------------
+\begin{frame}\frametitle{{\LaTeX} balíček \texttt{beamer}}
+
+\begin{itemize}
+\item Mnoho dalších efektů vylepšujících (někdy) prezentaci lze
+  nalézt v~dokumentaci {\LaTeX}ového balíku \alert{\texttt{beamer}}, např.
+
+  \medskip
+  \begin{flushleft}\footnotesize
+  \tTwo{\texttt{http://ftp.cvut.cz/tex-archive/macros/latex/contrib/beamer/doc/}} \\
+  \tTwo{\texttt{beameruserguide.pdf}}
+  \end{flushleft}
+\end{itemize}
+\end{frame}
+
+
+
+
+\end{document}

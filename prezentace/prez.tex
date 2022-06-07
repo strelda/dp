@@ -1,0 +1,484 @@
+\documentclass{beamer}
+\usepackage{tikz}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools} %pro \dcases
+\usepackage{tcolorbox}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{braket}
+\usepackage{bbm}
+
+\usetikzlibrary{arrows} 
+\include{macros.tex}
+\setbeamercolor{block title}{bg=blue!4,fg=black}
+
+\newcommand*{\defeq}{\mathrel{\vcenter{\baselineskip0.5ex \lineskiplimit0pt
+                     \hbox{\scriptsize.}\hbox{\scriptsize.}}}=}
+\DeclareMathOperator\arctanh{arctanh}
+\newcommand{\abs}[1]{\left|{#1}\right|}
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/nevim%\inserttotalframenumber
+}
+\begin{document}
+
+\titlegraphic{\includegraphics[width=0.8\textwidth]{pics/mff_cz_color.pdf}}
+\title{Geometrický přístup k externě vedeným kvantovým systémům}   
+\author{\textbf{Bc. Jan Střeleček} \\ vedoucí práce: \textbf{prof. RNDr. Pavel Cejnar, Dr., DSc.}\\ Ústav částicové a jaderné fyziky}
+\date{16.5.2022} 
+
+\frame{\titlepage} 
+
+% \frame{
+%   \frametitle{Motivace}
+%   \framesubtitle{Proč nás zajímají Hamiltoniány s parametrem?}
+
+% \begin{block}{Adiabatické kvantové počítání}
+% \begin{enumerate}
+%   \item Systém lze snadno připravit do počátečího stavu.
+%   \item Metodou \emph{kvantového annealingu} je systém převeden do superpozice reprezentující matematickou úlohu.
+%   \item Systém je zkolabován do stavu s lokálně nejnižší energií.
+%   \item Proces se opakuje, dokud není nalezena celková nejnižší energie. Příslušný vlastní vektor reprezentuje výsledek úlohy.
+% \end{enumerate}
+% \begin{figure}
+%   \centering
+%   \begin{tikzpicture}
+%     \node[] at (0,0) {\includegraphics[width=0.6\textwidth]{../dp_text/img/introDriving.pdf}};
+%     \node[] at (-3.2,1.6) {$\blue E$};
+%     \node[] at (3.3,-1.3) {$t$};
+%   \end{tikzpicture}
+% \end{figure}
+% \end{block}
+% }
+
+\frame{
+  \frametitle{Geometrie problému}
+  \framesubtitle{Které kvantové struktury je výhodné popisovat geometricky a proč to dělat?}
+
+  \begin{block}{Hamiltonian s parametrem $\HH(\llambda)$ pro $\llambda\in\R^n$}
+    \begin{itemize}
+      \item změna $\llambda$ \emph{řídí} kvantový stav 
+      \item po měření stav kolabuje do vl. stavu pro aktuální parametr $\llambda$
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Stavová varieta}
+    \begin{equation}
+      \M_s\coloneqq \left\{\bigcup_{\varphi\in[0,2\pi)} \bigcup_{\llambda\in\mathcal U} e^{i\varphi}\ket{s(\llambda)}\right\}.
+    \end{equation}
+  \end{block}
+}
+
+\frame{
+  \frametitle{Geometrie problému}
+
+  \begin{figure}[h]
+    \centering
+    % \includegraphics[width=\textwidth]{../img/manifold_basic_1.png}
+    \begin{tikzpicture}
+        \node[] at (0,0) {\includegraphics[width=0.7\textwidth]{../dp_text/img/fullHilbert.pdf}};
+        \node[] at (3.0,-0.2) {$\greenn{\mathcal U}$};
+        \node[] at (4.6,-0.7) {$\gray{\R^n}$};
+        \node[] at (2.8,1.8) {$\H_{full}$};
+        \node[] at (-0.5,2) {$\blueee{\H(\llambda)}$};
+        \node[] at (1.0,1.83) {$\blueee{\H(\tilde\llambda)}$};
+        \node[] at (-0.8,0.95) {$\gray{\pi(\llambda)}$};
+        \node[] at (0.8,0.75) {$\gray{\pi(\tilde\llambda)}$};
+        \node[] at (-1,-0.17) {\green{$\llambda$}};
+        \node[] at (0.4,-0.4) {\green{$\tilde\llambda$}};
+    \end{tikzpicture}
+
+\caption{Base manifold $\greenn{\mathcal U}\subset \gray{\R^n}$. For every point $\green\llambda\in\greenn{\mathcal U}$ one \bluee{Hilbert space $\H(\llambda)$} is constructed as a \bluee{fiber}.}
+    \label{fig:wholeBundle}
+\end{figure}
+
+}
+
+\frame{
+  \frametitle{Geometrie problému}
+
+
+  \begin{figure}[h]
+    \centering
+    % \includegraphics[width=\textwidth]{../img/manifoldCutIntuition.png}
+        \begin{tikzpicture}
+        \node[] at (0,0) {\includegraphics[width=0.9\textwidth]{../dp_text/img/manifold_structure.pdf}};
+        \node[] at (3.7,-2.7) {$\mathcal U\subset \gray{\R^n}$};
+        \node[] at (-4.2,-1.0) {$\M_0$};
+        \node[] at (-4.2,1.1) {$\M_1$};
+        \node[] at (-2.6,2.0) {$\bluee{\ket{1(\llambda)}}$};
+        \node[] at (3.2,2.7) {$\blue{\ket{1(\tilde\llambda)}}$};
+        \node[] at (-2.4,-0.0) {$\bluee{\ket{o(\llambda)}}$};
+        \node[] at (3.4,0.5) {$\greennn{\ket{o(\tilde\llambda)}}$};
+        \node[] at (-1.3,-2.34) {$\llambda=\greenn{\mathcal J(0)}$};
+        \node[] at (3.7,-2.25) {$\tilde\llambda=\greenn{\mathcal J(T)}$};
+        \node[] at (1.2,-2.1) {$\greenn{\mathcal J(t)}$};
+        \node[] at (-1.1,-0.8) {$\gray{\pi(\llambda)}$};
+        \node[] at (3.3,-0.8) {$\gray{\pi(\tilde \llambda)}$};
+    \end{tikzpicture}
+  \end{figure}
+}
+
+\frame{
+  \frametitle{Geometrie stavových variet}
+
+ \begin{block}{Metrický tensor na stavových varietách}
+    \vspace{-22pt}\begin{equation}
+        \begin{split}
+            g_{\mu\nu}&: \redd{\mathbb T\mathcal U}\times \redd{\mathbb T\mathcal U}\rightarrow \R \\
+            g_{jk}\redd{\d \bm \lambda^j \d\bm \lambda^k}+\O(\lambda^3) \equiv \d s^2 &\coloneqq 1-\underbrace{\left|\braket{o(\bm\llambda+\delta\bm\llambda)|o(\bm\llambda)}\right|^2}_{F(\bm\llambda+\delta\bm\llambda,\bm\llambda)}.
+        \end{split}
+    \end{equation} 
+
+    \vspace{-5pt}{Na k-té stavové varietě lze ukázat:}
+    \begin{equation}
+      g_{\mu\nu}^{(k)} = \Re \sum_{j\neq k}\frac{\braket{k|\pder{\HH(\llambda)}{\lambda^\mu}|j}\braket{j|\pder{\HH(\llambda)}{\lambda^\nu}|k}}{(E_k-E_j)^2}.
+    \end{equation}
+  \end{block}
+\begin{block}{Fidelita}
+  \begin{itemize}
+    \item pro čisté stavy: $F: \H\times\H\mapsto [0;1]$,\quad $F(\ket{\rho},\ket{\sigma}) = \left| \braket{\rho|\sigma}\right|^2$
+    \item pravděpodobnost přechodu do nového stavu
+    \item Infidelita $\equiv F^*\coloneqq 1-F$
+  \end{itemize}
+\end{block}
+}
+
+
+\frame{
+  \frametitle{Řízení kvantových systémů (state driving)}
+  \framesubtitle{Jak výhodně (aniž by excitovaly) transportovat stavy?}
+
+Snaha dosáhnout co nejvyšší fidelity ($F=1$)
+  \begin{itemize}
+      \item téměř adiabatický transport — pomalá změna parametru $\llambda$
+      \item variace trajektorie — malé $\Delta E$ znamená snížení fidelity transportu
+      \item counter-diabatické řízení — excitaci lze zamezit opravou Hamiltoniánu (teorie kalibračních polí)
+  \end{itemize}
+
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}
+      \node[] at (0,0) {\includegraphics[width=0.6\textwidth]{../dp_text/img/introDriving.pdf}};
+      \node[] at (-3.2,1.6) {$\blue E$};
+      \node[] at (3.3,-1.3) {$t$};
+    \end{tikzpicture}
+  \end{figure}
+
+}
+
+
+\frame{
+  \frametitle{Dvouhladinový systém (toy model)}
+  \framesubtitle{Jaké jevy lze při řízení parametrických Hamiltonianů pozorovat?}
+  \begin{equation}
+    \HH(t)=\begin{pmatrix}
+        \Omega(t)&\Delta(t)\\
+        \Delta(t)&-\Omega(t)
+    \end{pmatrix}
+\end{equation}
+\begin{equation}
+  \HH(t)\ket{\psi(t)}=i\frac{\d}{\d t}\ket{\psi(t)}; \quad 
+  \ket{\psi(t)}\eqqcolon \begin{pmatrix}
+       a(t) \\
+       b(t)    
+  \end{pmatrix}
+\end{equation}
+\begin{equation}
+  \begin{pmatrix}
+    a(0)\\b(0)
+  \end{pmatrix}=\ket{0(0)}
+\end{equation}
+
+\begin{block}{Řešení}
+  \vspace{-25pt}
+  \begin{align}
+    0&= \ddot a(t)+ \gamma(t) \dot a(t)+\omega^2(t)a(t)\\
+    \gamma(t)&\coloneqq -\frac{\dot \Delta(t)}{\Delta(t)}\\
+    \omega^2(t) &\coloneqq i\left(\dot \Omega(t)-\frac{\dot\Delta(t)}{\Delta(t)}\Omega(t)\right)+\Delta^2(t)+\Omega^2(t)
+  \end{align}
+\end{block}
+}
+
+\frame{
+  \frametitle{Dvouhladinový systém (toy model)}
+  \framesubtitle{Geodetický driving}
+  \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad$\Delta E$
+  \vspace{-10pt}\begin{figure}[h]
+    \centering
+    \includegraphics[scale=1.1]{../dp_text/img/driving.pdf}
+\end{figure}
+
+
+}
+\frame{
+  \frametitle{Dvouhladinový systém (toy model)}
+  \framesubtitle{Poznatek \#1: Existují výjimečné finální časy, pro které je $F=1$}
+  
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.9]{../dp_text/img/infidelityTimePlotGeod.pdf}
+    \caption{Infidelita v čase pro finální čas $T=1$, geodetický driving.}
+  \label{fig:infidelityTimePlot}
+\end{figure}
+}
+\frame{
+  \frametitle{Dvouhladinový systém (toy model)}
+  \framesubtitle{Poznatek \#1: Existují výjimečné finální časy, pro které je $F=1$}
+  
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.8]{../dp_text/img/infidelityTfPlot.pdf}
+\end{figure}
+\vspace{-20pt}\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.8]{../dp_text/img/infidelityTfPlotLog.pdf}
+\end{figure}
+
+}
+
+
+\frame{
+  \frametitle{Dvouhladinový systém (toy model)}
+  \framesubtitle{Lineární driving}
+  \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad$\Delta E$
+  \vspace{-10pt}\begin{figure}[h]
+    \centering
+    \includegraphics[scale=1.]{../dp_text/img/drivingLin.pdf}
+\end{figure}
+}
+\frame{
+  \frametitle{Dvouhladinový systém (toy model)}
+    \framesubtitle{Poznatek \#2: přiblížení energetických hladin tvoří kmity, existuje \emph{kritický finální čas}}
+\vspace{-30pt}\begin{figure}[h]
+    \centering 
+    \includegraphics[scale=0.9]{../dp_text/img/infidelityInTimePlot1.pdf}
+\end{figure}
+
+\vspace{-20pt}\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.9]{../dp_text/img/infidelityTfPlotLogLinCombined1.pdf}
+\end{figure}
+
+}
+
+\frame{
+  \frametitle{Dvouhladinový systém (toy model)}
+    \framesubtitle{Poznatek \#3: Kritický finální čas je v bodě, kdy oscilace nabývají $F^*=0$}
+  \begin{figure}[h]
+      \centering
+      \includegraphics[scale=0.75]{../dp_text/img/undercritical.pdf}
+  \end{figure}
+  
+  \vspace{-15pt}\begin{figure}[h]
+      \centering
+      \includegraphics[scale=0.75]{../dp_text/img/overcritical.pdf}
+      \vspace{-10pt}\caption{$T=80<T_c$ (nahoře), $T=170>T_c$ (dole)}
+  \end{figure}
+}
+
+\frame{
+  \frametitle{Dvouhladinový systém (toy model)}
+    \framesubtitle{Poznatek \#4: Landau-Zener a adiabatická perturbační teorie}
+    \begin{figure}[h]
+      \centering 
+      \includegraphics[scale=0.8]{../dp_text/img/landauCompare.pdf}
+\caption{Zhlazená finální infidelita v závislosti na finálním čase, popsaná \green{součtem} of \red{Landau-Zenerovy rovnice} a \textcolor{purple}{adiabatickou perturbační teorií}.}
+      \label{fig:landauCompare}
+  \end{figure}
+
+}
+
+% \frame{
+%   \frametitle{Dvouhladinový systém (toy model)}
+%     \framesubtitle{Poznatek \#4: Landau-Zener a adiabatická perturbační teorie}
+% \begin{block}{Landau-Zener-Stueckelberg (LZS) pro lineární driving}
+%   Pro 
+%   \begin{itemize}
+%       \item dvouhladinový hamiltonian
+%       \item s degenerací pouze v jednom bodě,
+%       \item pro lineární křivku v parametrickém prostoru,
+%   \end{itemize}
+%   lze fidelitu pro fináltní časy $T\in(0,T_c)$ popsat, jako
+%   \begin{equation}
+%       F_T = \exp\left(-\frac{2 \pi A^2}{v|\Delta F|}\right),
+%       \label{eq:exponentialPart}
+%   \end{equation}
+%   pro \emph{diabatický coupling} $A$ a \emph{diabatický potenciálový rozdíl} $|\Delta F|$. 
+% \end{block}
+
+% }
+
+
+
+% \frame{
+%   \frametitle{Dvouhladinový systém (toy model)}
+%     \framesubtitle{Poznatek \#3: Kritický finální čas je v bodě, kdy oscilace nabývají $F^*=0$}
+%     \begin{figure}[h]
+%       \centering 
+%       \vspace{-2pt}\includegraphics[scale=0.6]{../dp_text/img/allInOne.pdf}
+%       \vspace{-17pt}\caption{Závislost Infidelity pro lineární driving při $\Delta=1$. Černá čára značí $t=T$, čárkovaně je vyznačen $t=T/2$, \redd{červená} čárkovaná čára je přibližná hodnota $T_c$. \bluee{Modře} jsou vyznačeny infidelity ke konci drivingu.}
+%       \label{fig:AllInOne}
+%   \end{figure}
+% }
+
+
+\frame{
+  \frametitle{Lipkin-Meshkov-Glick model}
+  \framesubtitle{Jak vypadá řízení v mnohočásticovém, zcela propojeném systému qubitů?}
+  
+  \begin{equation}
+    \HH(\lambda,\chi)=\J_3+\lambda\hat V_1 +\chi \hat V_2+\chi^2 \hat V_3,
+    \label{eq:firstOrderTransitionHamiltonian}
+\end{equation}
+pro
+\begin{align}
+    \hat V_1 &\coloneqq-\frac{1}{2j}\J_1^2\\
+    \hat V_2 &\coloneqq -\frac{1}{2j}\left[\J_1(\J_3+j\Id)+(\J_3+j\Id)\J_1\right]\\
+    \hat V_3 &\coloneqq -\frac{1}{2j}(\J_3+j\Id)^2,
+\end{align}
+a \emph{operátor momentu hybnosti} $\bm\J=(\J_1,\J_2,\J_3)^T$. Zvolíme $j=N/2$.
+}
+
+
+\frame{
+  \frametitle{Lipkin-Meshkov-Glick model}
+  \framesubtitle{$N=3$}
+  Pentadiagonální maticová reprezentace (baze sférických harmonických funkcí $\ket{j,m}$).
+  \begin{equation}
+    \HH=\left(
+        \begin{array}{cccc}
+         -\frac{ \lambda +6}{4} & -\frac{\chi }{2 \sqrt{3}} & -\frac{\lambda }{2 \sqrt{3}} & 0 \\
+         -\frac{\chi }{2 \sqrt{3}} & \frac{ \left(-7 \lambda -4 \chi ^2-6\right)}{12} & -\chi  & -\frac{\lambda }{2 \sqrt{3}} \\
+         -\frac{\lambda }{2 \sqrt{3}} & -\chi  & \frac{ \left(-7 \lambda -16 \chi ^2+6\right)}{12} & -\frac{5 \chi }{2 \sqrt{3}} \\
+         0 & -\frac{\lambda }{2 \sqrt{3}} & -\frac{5 \chi }{2 \sqrt{3}} & -\frac{\lambda }{4}-3 \chi ^2+\frac{3}{2} \\
+        \end{array}
+        \right)
+\end{equation}
+Spektrum je degenerované, lze zapsat jako
+\begin{align}
+        E_0 &= \left(G-F-\frac{\sqrt{D-E}}{2}\right)
+,\quad
+        E_1 = \left(G-F+\frac{\sqrt{D-E}}{2}\right)
+\\
+        E_2 &= \left(G+F-\frac{\sqrt{D+E}}{2}\right)
+,\quad
+        E_3 = \left(G+F+\frac{\sqrt{D+E}}{2}\right)
+\end{align}
+
+}
+
+
+\frame{
+  \frametitle{Lipkin-Meshkov-Glick model}
+  
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{../dp_text/img/N=3_Ricci.pdf}
+    \vspace{-5pt}\caption{Ricciho křivost základní stavové variety pro $N=3$.}
+    \label{fig:N=3_Ricci}
+\end{figure}
+}
+
+\frame{
+  \frametitle{Lipkin-Meshkov-Glick model}
+  \framesubtitle{}
+  
+
+  \begin{minipage}[t]{0.48\linewidth}
+    \begin{equation*}
+      (\lambda_l ;\pm\chi_l)= \begin{cases}
+          \left(1-\frac{N}{2};\sqrt{\frac{N}{N+2}}\right)\\
+          \left(1-N;\sqrt{\frac{N}{N+1}}\right)
+      \end{cases}
+      \label{eq:singularityCoordinateFormulaLeft}
+    \end{equation*}
+     
+    \begin{equation*}
+      \text{pro } N\geq 3 \begin{cases}
+        \text{liché} \\
+        \text{sudé}
+      \end{cases}
+     \end{equation*}
+
+     \bluee{Figure:} Degenerace vpravo jsou značeny mezi $E_0$ a $E_1$ pro dimenze 1,3,5,7 v prvním a 2,4,5,8 v druhém sloupci.
+  \end{minipage}%
+  \begin{minipage}[t]{0.48\linewidth}
+    \begin{figure}[h]
+      \centering
+      \vspace{-50pt}\includegraphics[scale=0.59]{../dp_text/img/singularitiesPlots.pdf}
+     
+  \end{figure}
+  \end{minipage}
+
+
+  
+}
+
+
+\frame{
+  \frametitle{Lipkin-Meshkov-Glick model}
+  \begin{figure}[H]
+    \centering
+    % \includegraphics{../img/N=3_geodesics.pdf}
+    \begin{tikzpicture}
+        \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[scale=0.7]{../dp_text/img/N=3_geodesics.pdf}};
+        % \draw[blueee,ultra thick] (4.5,9.56) -- (10.67,10.5);
+        % \draw[blueee,ultra thick] (4.5,2.71) -- (10.67,1.8);
+    \end{tikzpicture}
+    \vspace{-10pt}\caption{\green{Geodetiky} pro $N=3$ z bodu $(\lambda_i;\chi_i)=(0;0)$. V pozadí $\det g$.}
+    \label{fig:N=3_geodesics}    
+\end{figure}
+  
+
+}
+
+
+\frame{
+  \frametitle{Lipkin-Meshkov-Glick model}
+  Transport pomocí \emph{quenchů}.
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=1.]{../dp_text/img/bg123.pdf}
+    % \includegraphics[scale=1.]{../dp_text/img/plotsFidelityQuenches.pdf}
+    \caption{Dimenze $N=3$, 2 různé geodetiky, časový rozdíl mezi vedlejšími body $\Delta t=0.5$.}
+\end{figure}
+  
+}
+
+\frame{
+  \frametitle{Závěr}
+  \framesubtitle{Co jsme se dozvěděli a kudy dál?}
+  \begin{block}{Nové odpovědi}
+    
+    \begin{itemize}
+      \item přiblížení energetických hladin vede k oscilacím
+      \item význačné finální časy s velkou fidelitou
+      \item známe strukturu ground state manifoldu pro Lipkin-Meshkov-Glick model
+      \item modelování pomocí Landau-Zenerovy formule a adiabatické perturbační teorie
+    \end{itemize}
+  \end{block}
+
+\begin{block}{Nové otázky}
+  \begin{itemize}
+    \item Nalezení trajektorie s maximální fidelitou
+    \item korespondence fidelity s energetickou variancí
+    \item dokázání diabolických bodů v Lipkin-Meshkov-Glick modelu
+  \end{itemize}
+\end{block}
+}
+
+
+\frame{
+  \frametitle{Děkuji za pozornost}
+  \framesubtitle{Nechť je zbytek Vašeho dne krásný...}
+
+}
+
+\end{document}
+%parametry, ne souř.

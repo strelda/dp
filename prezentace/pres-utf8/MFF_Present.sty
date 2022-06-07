@@ -1,0 +1,285 @@
+%%%
+%%%  Style for MFF related presentations
+%%%  (unofficial)
+%%%
+%%%  AUTHOR:  Arnošt Komárek
+%%%           Department of Probability and Mathematical Statistics
+%%%           Faculty of Mathematics and Physics, Charles University in Prague
+%%%
+%%%  LOG:    20150430  created by modification of some previous personal presentations
+%%%          20170522  modified (new MFF logo)
+%%%  
+%%%  ===========================================================================
+
+%%%%% If to determine whether Czech or English version
+%%%%% of a presentation is to be produced
+%%%%% default = Czech
+%%%%% ------------------------------------------------------
+\newif\ifCZversion
+\CZversiontrue
+
+\ifCZversion\else\renewcommand{\uv}[1]{``#1''}\fi
+
+
+%%%%% Included packages
+%%%%% ----------------------------------------------------------
+\usepackage{helvet}                       % font
+\usepackage{amsmath, amssymb}
+\usepackage{delarray}
+\usepackage{multicol}
+\usepackage{graphicx, fancybox}
+\usepackage{psfrag}
+\usepackage{fancyvrb}
+\usepackage{eurosym}
+\usepackage{bbding}
+%\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage[czech]{babel}
+
+\usepackage[pdftex]{bookmark}
+
+
+%%%%% Some LaTeX commands
+%%%%% ----------------------------------------------------------
+\renewcommand{\arraystretch}{1.2}
+
+
+%%%%% Some colors and related commands
+%%%%% ----------------------------------------------------------
+
+  %% Pantone 186 = "official" red of MFF
+\definecolor{redmff}{rgb}{0.7892720,0.0651341,0.1455939}          
+
+  %% First level color = black
+\definecolor{colOne}{rgb}{0,0,0}
+\newcommand{\tOne}[1]{\textcolor{colOne}{#1}}
+\newcommand{\tOneb}[1]{\textcolor{colOne}{\textbf{#1}}}
+\newcommand{\tOnei}[1]{\textcolor{colOne}{\textit{#1}}}
+
+  %% Second level color = quite dark blue
+\definecolor{colTwo}{rgb}{0,0,0.3}                
+\newcommand{\tTwo}[1]{\textcolor{colTwo}{#1}}
+\newcommand{\tTwob}[1]{\textcolor{colTwo}{\textbf{#1}}}
+\newcommand{\tTwoi}[1]{\textcolor{colTwo}{\textit{#1}}}
+
+  %% Third level color = something between blue3 and blue4
+\definecolor{colThree}{rgb}{0,0,0.7}              
+\newcommand{\tThree}[1]{\textcolor{colThree}{#1}}
+\newcommand{\tThreeb}[1]{\textcolor{colThree}{\textbf{#1}}}
+\newcommand{\tThreei}[1]{\textcolor{colThree}{\textit{#1}}}
+
+  %% Color to alert (highlight) = MFF red
+\definecolor{alertCol}{rgb}{0.7892720,0.0651341,0.1455939}
+\newcommand{\tal}[1]{\alert{#1}}
+\newcommand{\talb}[1]{\textbf{\alert{#1}}}
+\newcommand{\tali}[1]{\textit{\alert{#1}}}
+
+  %% White
+\newcommand{\tw}[1]{\textcolor{white}{#1}}
+\newcommand{\twb}[1]{\textcolor{white}{\textbf{#1}}}
+\newcommand{\twi}[1]{\textcolor{white}{\textit{#1}}}
+
+  %% Some other colors used somewhere
+\definecolor{semiwhite}{gray}{0.98}
+\definecolor{mffgray}{gray}{0.95}
+\definecolor{semiblack}{gray}{0.5}
+\definecolor{rred}{rgb}{0.5,0,0}
+
+
+%%%%% Beamer stuff
+%%%%% ----------------------------------------------------------
+\mode<presentation> {
+
+    %%% General theme of a presentation (some pre-specified themes)
+    %%% ------------------------------------------------------------------
+    %\usetheme{CambridgeUS}
+    \usetheme{Warsaw}
+
+    %%% Color schemes that will be used unless redefined below
+    %%% ------------------------------------------------------------------
+    %\usecolortheme{wolverine}
+    \usecolortheme{beaver}
+
+
+    %%% Color schemes for different elements of a presentation
+    %%% ---------------------------------------------------------
+
+      %%% Uncomment the two rows below if some background file (layout) is to be used
+      %%% on all slides
+    %\usebackgroundtemplate{\includegraphics[width=\paperwidth, height=\paperheight]{./FigureLayout/BackgroundRotunda}}
+    %\setbeamercolor{background canvas}{bg=}                                                             
+
+      %%% Setting for "standard" slides
+      %%% - must be commented if background file used
+    \setbeamertemplate{background canvas}[vertical shading][bottom=semiwhite, top=white, middle=semiwhite!50!white]
+    \setbeamercolor{background canvas}{bg=white}                           %% NO EFFECT WHEN \setbeamertemplate{background canvas} WAS USED
+
+      %%% Colors of frametitle, normal, alerted and math texts
+    \setbeamercolor{frametitle}{fg=white, bg=redmff}
+    \setbeamercolor{normal text}{fg=black}
+    \setbeamercolor{alerted text}{fg=redmff}
+    \setbeamercolor{math text inlined}{fg=colTwo}
+    \setbeamercolor{math text displayed}{fg=colTwo}
+
+      %%% Colors for some special boxes defined below
+    \setbeamercolor{mffboxcol}{fg=colTwo, bg=mffgray}
+    \setbeamercolor{mffboxcolupper}{fg=white, bg=redmff}
+
+    %%% Set serif font (patkové písmo) in mathematics
+    %%% ------------------------------------------------
+    %\usefonttheme[onlymath]{serif}
+
+    %%% Itemize style (rectangles instead of bullets)
+    %%% ------------------------------------------------
+    %\useinnertheme{rectangles}
+
+    %%% Default content of a header of each slide
+    %%% (currently nothing)
+    %%% ------------------------------------------------
+    \setbeamertemplate{headline}{}
+
+    %%% Default content of a foot of each slide
+    %%% ------------------------------------------------
+    %\setbeamercolor{page number in head/foot}{fg=black, bg=white}
+    \setbeamertemplate{footline}{
+      \hspace*{2.5em}
+      \begin{beamercolorbox}{section in head/foot}
+      \vskip1pt
+      \tOne{\rule{\textwidth}{1pt}}
+      \vskip2pt
+
+      %%% Foot containing (a) page number/total number of pages, (b) name, (c) short title of presentation
+      {\small \tOne{\insertframenumber}\textcolor{semiblack}{/\inserttotalframenumber}}\hspace{1em}
+      \tOne{\footnotesize \insertauthor}\hfill
+      \textcolor{redmff}{\footnotesize\insertshorttitle\hspace{3em}}
+
+      %%% Foot containing (a) page number/total number of pages, (b) name, (c) short section title
+      %{\small \tOne{\insertframenumber}\textcolor{semiblack}{/\inserttotalframenumber}}\hspace{1em}
+      %\tOne{\footnotesize \insertauthor}\hfill
+      %\textcolor{redmff}{\footnotesize\thesection. \insertsection\hspace{3em}}
+    
+      \hspace*{3.5em}
+      \vskip3pt
+      \end{beamercolorbox}
+    }
+
+    %%% Title page
+    %%% -------------------
+    \setbeamertemplate{title page}{
+      %\vspace*{-0.5em}
+      \begin{center}
+      \textcolor{black}{\normalsize\bfseries\rmfamily \insertinstitute}
+
+      \vspace{1em}
+        
+      \ifCZversion
+        \includegraphics[width=0.8\textwidth]{./FigureLayout/mff_cz_color}
+      \else
+        \includegraphics[width=0.8\textwidth]{./FigureLayout/mff_en_color}
+      \fi
+
+      \medskip
+      \noindent\textcolor{redmff}{\rule{\textwidth}{2pt}}
+  
+      \bigskip
+      \textcolor{black}{\normalsize\bfseries \insertauthor} \\[0.5ex]
+
+      \bigskip
+      \textcolor{redmff}{\Large\bfseries \inserttitle}
+
+      \medskip
+      \textcolor{redmff}{\large\insertsubtitle}
+
+      \medskip
+      \noindent\textcolor{redmff}{\rule{\textwidth}{2pt}}
+      
+      \medskip
+      \textcolor{colTwo}{\small \insertdate}
+      \end{center}
+    }    
+
+    %%% Switch-off/on foot with navigation symbols    
+    %%% -----------------------------------------------
+    % \setbeamertemplate{navigation symbols}{}
+    \usenavigationsymbolstemplate{}
+
+    %%% Left and right margin
+    %%% --------------------------------
+    %\setbeamersize{text margin left=1cm}
+    %\setbeamersize{text margin right=1cm}
+
+
+    %%% Use of a logo on each slide
+    %%% (not really recommended, so commented)
+    %\logo{\includegraphics[height=1.5cm, width=1.5cm]{./FigureLayout/mff_logo}}
+}
+
+
+%%%%% Commands to produce slides at the beginning of each section
+%%%%% --------------------------------------------------------------
+\renewcommand{\thesection}{\arabic{section}}
+\newcommand{\framesection}{
+  \begin{frame}%[plain]
+
+  \vspace*{2em}
+  \begin{center}\Large
+  \ifCZversion Oddíl \thesection \else Section \thesection \fi
+  \end{center}
+
+  \begin{center}\color{rred}\Large
+  \insertsection
+  \end{center}
+
+  \end{frame}
+}
+
+
+%%%%% Style for software related stuff
+%%%%% ----------------------------------------------------------
+\newcommand{\Rko}{\includegraphics[width=5.094mm, height=3.876mm]{./FigureLayout/Rlogo}}
+\newcommand{\Rfun}[1]{\textcolor{redmff}{\texttt{#1}}}
+
+\DefineVerbatimEnvironment{Rin}{Verbatim}{formatcom=\color{redmff}, fontsize=\scriptsize, frame=single, framerule=1pt, framesep=2pt}
+\DefineVerbatimEnvironment{Rout}{Verbatim}{formatcom=\color{blue}, fontsize=\scriptsize, frame=single, framerule=1pt, framesep=2pt}
+
+
+%%%%% Boxes
+%%%%% ----------------------------------------------------------
+\newcommand{\mffbox}[2][0pt]{%
+  \begin{beamercolorbox}[center, sep=#1, rounded=true, shadow=true]{mffboxcol}
+  #2
+  \end{beamercolorbox}
+}
+
+\newcommand{\mffboxTitle}[2]{%
+  \begin{beamerboxesrounded}[lower=mffboxcol, upper=mffboxcolupper, shadow=true]{#1}
+  #2
+  \end{beamerboxesrounded}
+}
+
+
+%%%%% Some constructions for displayed math
+%%%%% ----------------------------------------------------------
+\newcommand{\dmath}[2][-1.4em]{%
+  \begin{beamercolorbox}[center, sep=#1, rounded=true, shadow=true]{mffboxcol}
+  \begin{displaymath}
+  #2
+  \end{displaymath}
+  \end{beamercolorbox}
+}
+
+\newcommand{\dalign}[2][-1.4em]{%
+  \begin{beamercolorbox}[center, sep=#1, rounded=true, shadow=true]{mffboxcol}
+  \begin{align*}
+  #2
+  \end{align*}
+  \end{beamercolorbox}
+}
+
+\newcommand{\dgather}[2][-1.4em]{%
+  \begin{beamercolorbox}[center, sep=#1, rounded=true, shadow=true]{mffboxcol}
+  \begin{gather*}
+  #2
+  \end{gather*}
+  \end{beamercolorbox}
+}
