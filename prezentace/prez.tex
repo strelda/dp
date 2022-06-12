@@ -11,6 +11,8 @@
 \usepackage{braket}
 \usepackage{bbm}
 
+\newcommand{\Subitem}[1]{\setlength\itemindent{15pt}}
+
 \usetikzlibrary{arrows} 
 \include{macros.tex}
 \setbeamercolor{block title}{bg=blue!4,fg=black}
@@ -66,12 +68,18 @@
       \item po měření stav kolabuje do vl. stavu pro aktuální parametr $\llambda$
     \end{itemize}
   \end{block}
-
-  \begin{block}{Stavová varieta}
-    \begin{equation}
-      \M_s\coloneqq \left\{\bigcup_{\varphi\in[0,2\pi)} \bigcup_{\llambda\in\mathcal U} e^{i\varphi}\ket{s(\llambda)}\right\}.
-    \end{equation}
+\vspace{20pt}
+  \begin{block}{Využití}
+    \begin{itemize}
+      \item kvantové počítače ($\llambda$ je síla interakce mezi qubity)
+      \item biologické struktury (např. fotosyntéza)
+    \end{itemize}
   \end{block}
+  % \begin{block}{Stavová varieta}
+  %   \begin{equation}
+  %     \M_s\coloneqq \left\{\bigcup_{\varphi\in[0,2\pi)} \bigcup_{\llambda\in\mathcal U} e^{i\varphi}\ket{s(\llambda)}\right\}.
+  %   \end{equation}
+  % \end{block}
 }
 
 \frame{
@@ -92,10 +100,17 @@
         \node[] at (-1,-0.17) {\green{$\llambda$}};
         \node[] at (0.4,-0.4) {\green{$\tilde\llambda$}};
     \end{tikzpicture}
-
+\vspace{-3pt}
 \caption{Base manifold $\greenn{\mathcal U}\subset \gray{\R^n}$. For every point $\green\llambda\in\greenn{\mathcal U}$ one \bluee{Hilbert space $\H(\llambda)$} is constructed as a \bluee{fiber}.}
     \label{fig:wholeBundle}
 \end{figure}
+
+\vspace{-15pt}
+\begin{block}{Základní stavová varieta}
+  \begin{equation}
+    \M_0\coloneqq \left\{\bigcup_{\varphi\in[0,2\pi)} \bigcup_{\llambda\in\mathcal U} e^{i\varphi}\ket{0(\llambda)}\right\}.
+  \end{equation}
+\end{block}
 
 }
 
@@ -213,34 +228,34 @@ Snaha dosáhnout co nejvyšší fidelity ($F=1$)
     \centering
     \includegraphics[scale=1.1]{../dp_text/img/driving.pdf}
 \end{figure}
-
-
 }
-\frame{
-  \frametitle{Dvouhladinový systém (toy model)}
-  \framesubtitle{Poznatek \#1: Existují výjimečné finální časy, pro které je $F=1$}
+
+
+% \frame{
+%   \frametitle{Dvouhladinový systém (toy model)}
+%   \framesubtitle{Poznatek \#1: Existují výjimečné finální časy, pro které je $F=1$}
   
-  \begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.9]{../dp_text/img/infidelityTimePlotGeod.pdf}
-    \caption{Infidelita v čase pro finální čas $T=1$, geodetický driving.}
-  \label{fig:infidelityTimePlot}
-\end{figure}
-}
-\frame{
-  \frametitle{Dvouhladinový systém (toy model)}
-  \framesubtitle{Poznatek \#1: Existují výjimečné finální časy, pro které je $F=1$}
+%   \begin{figure}[h]
+%     \centering
+%     \includegraphics[scale=0.9]{../dp_text/img/infidelityTimePlotGeod.pdf}
+%     \caption{Infidelita v čase pro finální čas $T=1$, geodetický driving.}
+%   \label{fig:infidelityTimePlot}
+% \end{figure}
+% }
+% \frame{
+%   \frametitle{Dvouhladinový systém (toy model)}
+%   \framesubtitle{Poznatek \#1: Existují výjimečné finální časy, pro které je $F=1$}
   
-  \begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.8]{../dp_text/img/infidelityTfPlot.pdf}
-\end{figure}
-\vspace{-20pt}\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.8]{../dp_text/img/infidelityTfPlotLog.pdf}
-\end{figure}
+%   \begin{figure}[h]
+%     \centering
+%     \includegraphics[scale=0.8]{../dp_text/img/infidelityTfPlot.pdf}
+% \end{figure}
+% \vspace{-20pt}\begin{figure}[h]
+%   \centering
+%   \includegraphics[scale=0.8]{../dp_text/img/infidelityTfPlotLog.pdf}
+% \end{figure}
 
-}
+% }
 
 
 \frame{
@@ -346,32 +361,32 @@ a \emph{operátor momentu hybnosti} $\bm\J=(\J_1,\J_2,\J_3)^T$. Zvolíme $j=N/2$
 }
 
 
-\frame{
-  \frametitle{Lipkin-Meshkov-Glick model}
-  \framesubtitle{$N=3$}
-  Pentadiagonální maticová reprezentace (baze sférických harmonických funkcí $\ket{j,m}$).
-  \begin{equation}
-    \HH=\left(
-        \begin{array}{cccc}
-         -\frac{ \lambda +6}{4} & -\frac{\chi }{2 \sqrt{3}} & -\frac{\lambda }{2 \sqrt{3}} & 0 \\
-         -\frac{\chi }{2 \sqrt{3}} & \frac{ \left(-7 \lambda -4 \chi ^2-6\right)}{12} & -\chi  & -\frac{\lambda }{2 \sqrt{3}} \\
-         -\frac{\lambda }{2 \sqrt{3}} & -\chi  & \frac{ \left(-7 \lambda -16 \chi ^2+6\right)}{12} & -\frac{5 \chi }{2 \sqrt{3}} \\
-         0 & -\frac{\lambda }{2 \sqrt{3}} & -\frac{5 \chi }{2 \sqrt{3}} & -\frac{\lambda }{4}-3 \chi ^2+\frac{3}{2} \\
-        \end{array}
-        \right)
-\end{equation}
-Spektrum je degenerované, lze zapsat jako
-\begin{align}
-        E_0 &= \left(G-F-\frac{\sqrt{D-E}}{2}\right)
-,\quad
-        E_1 = \left(G-F+\frac{\sqrt{D-E}}{2}\right)
-\\
-        E_2 &= \left(G+F-\frac{\sqrt{D+E}}{2}\right)
-,\quad
-        E_3 = \left(G+F+\frac{\sqrt{D+E}}{2}\right)
-\end{align}
+% \frame{
+%   \frametitle{Lipkin-Meshkov-Glick model}
+%   \framesubtitle{$N=3$}
+%   Pentadiagonální maticová reprezentace (baze sférických harmonických funkcí $\ket{j,m}$).
+%   \begin{equation}
+%     \HH=\left(
+%         \begin{array}{cccc}
+%          -\frac{ \lambda +6}{4} & -\frac{\chi }{2 \sqrt{3}} & -\frac{\lambda }{2 \sqrt{3}} & 0 \\
+%          -\frac{\chi }{2 \sqrt{3}} & \frac{ \left(-7 \lambda -4 \chi ^2-6\right)}{12} & -\chi  & -\frac{\lambda }{2 \sqrt{3}} \\
+%          -\frac{\lambda }{2 \sqrt{3}} & -\chi  & \frac{ \left(-7 \lambda -16 \chi ^2+6\right)}{12} & -\frac{5 \chi }{2 \sqrt{3}} \\
+%          0 & -\frac{\lambda }{2 \sqrt{3}} & -\frac{5 \chi }{2 \sqrt{3}} & -\frac{\lambda }{4}-3 \chi ^2+\frac{3}{2} \\
+%         \end{array}
+%         \right)
+% \end{equation}
+% Spektrum je degenerované, lze zapsat jako
+% \begin{align}
+%         E_0 &= \left(G-F-\frac{\sqrt{D-E}}{2}\right)
+% ,\quad
+%         E_1 = \left(G-F+\frac{\sqrt{D-E}}{2}\right)
+% \\
+%         E_2 &= \left(G+F-\frac{\sqrt{D+E}}{2}\right)
+% ,\quad
+%         E_3 = \left(G+F+\frac{\sqrt{D+E}}{2}\right)
+% \end{align}
 
-}
+% }
 
 
 \frame{
@@ -384,6 +399,29 @@ Spektrum je degenerované, lze zapsat jako
     \label{fig:N=3_Ricci}
 \end{figure}
 }
+
+
+
+
+\frame{
+  \frametitle{Lipkin-Meshkov-Glick model}
+  \begin{figure}[H]
+    \centering
+    % \includegraphics{../img/N=3_geodesics.pdf}
+    \begin{tikzpicture}
+        \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[scale=0.7]{../dp_text/img/N=3_geodesics.pdf}};
+        % \draw[blueee,ultra thick] (4.5,9.56) -- (10.67,10.5);
+        % \draw[blueee,ultra thick] (4.5,2.71) -- (10.67,1.8);
+    \end{tikzpicture}
+    \vspace{-10pt}\caption{\green{Geodetiky} pro $N=3$ z bodu $(\lambda_i;\chi_i)=(0;0)$. V pozadí $\det g$.}
+    \label{fig:N=3_geodesics}    
+\end{figure}
+  
+
+}
+
+
+
 
 \frame{
   \frametitle{Lipkin-Meshkov-Glick model}
@@ -421,22 +459,7 @@ Spektrum je degenerované, lze zapsat jako
 }
 
 
-\frame{
-  \frametitle{Lipkin-Meshkov-Glick model}
-  \begin{figure}[H]
-    \centering
-    % \includegraphics{../img/N=3_geodesics.pdf}
-    \begin{tikzpicture}
-        \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[scale=0.7]{../dp_text/img/N=3_geodesics.pdf}};
-        % \draw[blueee,ultra thick] (4.5,9.56) -- (10.67,10.5);
-        % \draw[blueee,ultra thick] (4.5,2.71) -- (10.67,1.8);
-    \end{tikzpicture}
-    \vspace{-10pt}\caption{\green{Geodetiky} pro $N=3$ z bodu $(\lambda_i;\chi_i)=(0;0)$. V pozadí $\det g$.}
-    \label{fig:N=3_geodesics}    
-\end{figure}
-  
 
-}
 
 
 \frame{
@@ -454,29 +477,50 @@ Spektrum je degenerované, lze zapsat jako
 \frame{
   \frametitle{Závěr}
   \framesubtitle{Co jsme se dozvěděli a kudy dál?}
-  \begin{block}{Nové odpovědi}
+  \begin{block}{Co jsme se dozvěděli}
     
     \begin{itemize}
-      \item přiblížení energetických hladin vede k oscilacím
-      \item význačné finální časy s velkou fidelitou
-      \item známe strukturu ground state manifoldu pro Lipkin-Meshkov-Glick model
-      \item modelování pomocí Landau-Zenerovy formule a adiabatické perturbační teorie
+      \item Reformulace některých geometrických struktur v teorii 
+      \item prozkoumána fidelita lineárního a geodetického drivingu ve dvouhladinovém systému
+      \begin{itemize}
+        \item vysvětlení oscilací a analyptické vztahy pro geodetický a lineární driving
+        \item význačné body finálního času (někdy je $F=1$, vysvětlení $T_C$)
+        \item aproximativní metody (\emph{Landau-Zener},\emph{adiabatická perturbační teorie})
+      \end{itemize}
+      \item Pro Lipkin-Meshkov-Glick model známe strukturu základní stavové veriety
+      \begin{itemize}
+        \item geometrické veličiny
+        \item geodetiky
+        \item body degenerace v závislosti na dimenzi
+      \end{itemize}
     \end{itemize}
   \end{block}
 
-\begin{block}{Nové otázky}
-  \begin{itemize}
-    \item Nalezení trajektorie s maximální fidelitou
-    \item korespondence fidelity s energetickou variancí
-    \item dokázání diabolických bodů v Lipkin-Meshkov-Glick modelu
-  \end{itemize}
-\end{block}
 }
 
 
 \frame{
   \frametitle{Děkuji za pozornost}
   \framesubtitle{Nechť je zbytek Vašeho dne krásný...}
+
+  Nejdůležitější odkazy zde:
+
+  \textbf{M. Kolodrubetz, P. Mehta, and A. Polkovnikov}. Geometry and non-adiabatic
+  response in quantum and classical systems. Physics Reports, 697:1–87, 2017.
+  ISSN 0370-1573.
+  
+  \textbf{M. V. Berry}. Quantal phase factors accompanying adiabatic changes. Proc.
+  R. Soc. Lond. A, 392(1802):45–57, 1984. doi: 10.1098/rspa.1984.0023.
+  
+  \textbf{M. V. Berry}. The quantum phase, five years after. A Shapere, F Wilczek.
+  (World Scientific) 7-28, 1989. Geometric phases in physics, 7–28, Adv. Ser.
+  Math. Phys., 5,.
+  
+  \textbf{M. V. Berry}. Transitionless quantum driving. Journal of Physics A: Math-
+  ematical and Theoretical, 42(36), 2009. doi: 10.1088/1751-8113/42/36/
+  365303.
+
+  \dots více brzy ve článcích spolu s Pavel Cejnar, Felipe Matus a Pavel Stránský.
 
 }
 

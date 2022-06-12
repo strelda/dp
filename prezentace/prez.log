@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.11)  6 JUN 2022 21:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.11)  9 JUN 2022 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -664,31 +664,31 @@ File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \arrowsize=\dimen315
 ))
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 15.
+LaTeX Warning: \include should only be used after \begin{document} on input line 17.
 
 (./macros.tex
 \c@thm=\count353
 ) (./prez.aux)
 \openout1 = `prez.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -743,7 +743,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 30.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -753,62 +753,62 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count360
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
  (./prez.out) (./prez.out)
 \@outlinefile=\write5
 \openout5 = `prez.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 28.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 30.
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 28.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 28.
+(Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 28.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 28.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 28.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 28.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 28.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 28.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 28.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 28.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 28.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 28.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 28.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 28.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 28.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 30.
  (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -824,34 +824,34 @@ Dictionary: translator-theorem-dictionary, Language: English
 ) (./prez.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 32.
+(hyperref)                setting the option has no effect on input line 34.
 
 <pics/mff_cz_color.pdf, id=13, 454.3383pt x 104.55081pt>
 File: pics/mff_cz_color.pdf Graphic file (type pdf)
 <use pics/mff_cz_color.pdf>
-Package pdftex.def Info: pics/mff_cz_color.pdf  used on input line 35.
+Package pdftex.def Info: pics/mff_cz_color.pdf  used on input line 37.
 (pdftex.def)             Requested size: 245.83282pt x 56.56985pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./pics/mff_cz_color.pdf>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 75.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 83.
  (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [2
 
 ]
-<../dp_text/img/fullHilbert.pdf, id=92, 332.76408pt x 183.18886pt>
+<../dp_text/img/fullHilbert.pdf, id=86, 332.76408pt x 183.18886pt>
 File: ../dp_text/img/fullHilbert.pdf Graphic file (type pdf)
 <use ../dp_text/img/fullHilbert.pdf>
-Package pdftex.def Info: ../dp_text/img/fullHilbert.pdf  used on input line 100.
+Package pdftex.def Info: ../dp_text/img/fullHilbert.pdf  used on input line 115.
 (pdftex.def)             Requested size: 215.10196pt x 118.41725pt.
  [3
 
@@ -859,24 +859,24 @@ Package pdftex.def Info: ../dp_text/img/fullHilbert.pdf  used on input line 100.
 <../dp_text/img/manifold_structure.pdf, id=121, 492.62045pt x 313.79848pt>
 File: ../dp_text/img/manifold_structure.pdf Graphic file (type pdf)
 <use ../dp_text/img/manifold_structure.pdf>
-Package pdftex.def Info: ../dp_text/img/manifold_structure.pdf  used on input line 125.
+Package pdftex.def Info: ../dp_text/img/manifold_structure.pdf  used on input line 140.
 (pdftex.def)             Requested size: 276.559pt x 176.17603pt.
  [4
 
  <../dp_text/img/manifold_structure.pdf>]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 150.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 165.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 150.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 165.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 150.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 165.
  [5
 
 ]
 <../dp_text/img/introDriving.pdf, id=241, 300.66928pt x 115.2361pt>
 File: ../dp_text/img/introDriving.pdf Graphic file (type pdf)
 <use ../dp_text/img/introDriving.pdf>
-Package pdftex.def Info: ../dp_text/img/introDriving.pdf  used on input line 173.
+Package pdftex.def Info: ../dp_text/img/introDriving.pdf  used on input line 188.
 (pdftex.def)             Requested size: 184.3758pt x 70.66667pt.
  [6
 
@@ -886,152 +886,126 @@ Package pdftex.def Info: ../dp_text/img/introDriving.pdf  used on input line 173
 <../dp_text/img/driving.pdf, id=296, 221.82875pt x 190.7125pt>
 File: ../dp_text/img/driving.pdf Graphic file (type pdf)
 <use ../dp_text/img/driving.pdf>
-Package pdftex.def Info: ../dp_text/img/driving.pdf  used on input line 218.
+Package pdftex.def Info: ../dp_text/img/driving.pdf  used on input line 231.
 (pdftex.def)             Requested size: 244.01234pt x 209.78438pt.
  [8
 
  <../dp_text/img/driving.pdf>]
-<../dp_text/img/infidelityTimePlotGeod.pdf, id=334, 325.215pt x 131.49126pt>
-File: ../dp_text/img/infidelityTimePlotGeod.pdf Graphic file (type pdf)
-<use ../dp_text/img/infidelityTimePlotGeod.pdf>
-Package pdftex.def Info: ../dp_text/img/infidelityTimePlotGeod.pdf  used on input line 229.
-(pdftex.def)             Requested size: 292.6908pt x 118.34102pt.
- [9
-
- <../dp_text/img/infidelityTimePlotGeod.pdf>]
-<../dp_text/img/infidelityTfPlot.pdf, id=370, 325.215pt x 131.49126pt>
-File: ../dp_text/img/infidelityTfPlot.pdf Graphic file (type pdf)
-<use ../dp_text/img/infidelityTfPlot.pdf>
-Package pdftex.def Info: ../dp_text/img/infidelityTfPlot.pdf  used on input line 243.
-(pdftex.def)             Requested size: 260.17235pt x 105.19313pt.
-<../dp_text/img/infidelityTfPlotLog.pdf, id=371, 325.215pt x 128.48pt>
-File: ../dp_text/img/infidelityTfPlotLog.pdf Graphic file (type pdf)
-<use ../dp_text/img/infidelityTfPlotLog.pdf>
-Package pdftex.def Info: ../dp_text/img/infidelityTfPlotLog.pdf  used on input line 243.
-(pdftex.def)             Requested size: 260.17235pt x 102.78412pt.
- [10
-
- <../dp_text/img/infidelityTfPlot.pdf> <../dp_text/img/infidelityTfPlotLog.pdf
-
-pdfTeX warning: pdflatex (file ../dp_text/img/infidelityTfPlotLog.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<../dp_text/img/drivingLin.pdf, id=419, 217.81375pt x 190.7125pt>
+<../dp_text/img/drivingLin.pdf, id=334, 217.81375pt x 190.7125pt>
 File: ../dp_text/img/drivingLin.pdf Graphic file (type pdf)
 <use ../dp_text/img/drivingLin.pdf>
-Package pdftex.def Info: ../dp_text/img/drivingLin.pdf  used on input line 254.
+Package pdftex.def Info: ../dp_text/img/drivingLin.pdf  used on input line 269.
 (pdftex.def)             Requested size: 217.8132pt x 190.71202pt.
- [11
+ [9
 
  <../dp_text/img/drivingLin.pdf>]
-<../dp_text/img/infidelityInTimePlot1.pdf, id=459, 376.40625pt x 130.4875pt>
+<../dp_text/img/infidelityInTimePlot1.pdf, id=375, 376.40625pt x 130.4875pt>
 File: ../dp_text/img/infidelityInTimePlot1.pdf Graphic file (type pdf)
 <use ../dp_text/img/infidelityInTimePlot1.pdf>
-Package pdftex.def Info: ../dp_text/img/infidelityInTimePlot1.pdf  used on input line 268.
+Package pdftex.def Info: ../dp_text/img/infidelityInTimePlot1.pdf  used on input line 283.
 (pdftex.def)             Requested size: 338.76248pt x 117.43765pt.
 
-Overfull \hbox (31.47261pt too wide) in paragraph at lines 268--268
+Overfull \hbox (31.47261pt too wide) in paragraph at lines 283--283
  [] 
  []
 
-<../dp_text/img/infidelityTfPlotLogLinCombined1.pdf, id=460, 364.36125pt x 152.57pt>
+<../dp_text/img/infidelityTfPlotLogLinCombined1.pdf, id=376, 364.36125pt x 152.57pt>
 File: ../dp_text/img/infidelityTfPlotLogLinCombined1.pdf Graphic file (type pdf)
 <use ../dp_text/img/infidelityTfPlotLogLinCombined1.pdf>
-Package pdftex.def Info: ../dp_text/img/infidelityTfPlotLogLinCombined1.pdf  used on input line 268.
+Package pdftex.def Info: ../dp_text/img/infidelityTfPlotLogLinCombined1.pdf  used on input line 283.
 (pdftex.def)             Requested size: 327.92209pt x 137.31172pt.
 
-Overfull \hbox (20.63222pt too wide) in paragraph at lines 268--268
+Overfull \hbox (20.63222pt too wide) in paragraph at lines 283--283
  [] 
  []
 
 
-Overfull \vbox (15.67627pt too high) detected at line 268
+Overfull \vbox (15.67627pt too high) detected at line 283
  []
 
-[12
+[10
 
  <../dp_text/img/infidelityInTimePlot1.pdf> <../dp_text/img/infidelityTfPlotLogLinCombined1.pdf
 
 pdfTeX warning: pdflatex (file ../dp_text/img/infidelityTfPlotLogLinCombined1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../dp_text/img/undercritical.pdf, id=509, 333.245pt x 135.50626pt>
+<../dp_text/img/undercritical.pdf, id=424, 333.245pt x 135.50626pt>
 File: ../dp_text/img/undercritical.pdf Graphic file (type pdf)
 <use ../dp_text/img/undercritical.pdf>
-Package pdftex.def Info: ../dp_text/img/undercritical.pdf  used on input line 283.
+Package pdftex.def Info: ../dp_text/img/undercritical.pdf  used on input line 298.
 (pdftex.def)             Requested size: 249.93312pt x 101.62943pt.
-<../dp_text/img/overcritical.pdf, id=510, 333.245pt x 134.5025pt>
+<../dp_text/img/overcritical.pdf, id=425, 333.245pt x 134.5025pt>
 File: ../dp_text/img/overcritical.pdf Graphic file (type pdf)
 <use ../dp_text/img/overcritical.pdf>
-Package pdftex.def Info: ../dp_text/img/overcritical.pdf  used on input line 283.
+Package pdftex.def Info: ../dp_text/img/overcritical.pdf  used on input line 298.
 (pdftex.def)             Requested size: 249.93312pt x 100.8766pt.
- [13
+ [11
 
  <../dp_text/img/undercritical.pdf> <../dp_text/img/overcritical.pdf
 
 pdfTeX warning: pdflatex (file ../dp_text/img/overcritical.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../dp_text/img/landauCompare.pdf, id=553, 333.245pt x 130.4875pt>
+<../dp_text/img/landauCompare.pdf, id=468, 333.245pt x 130.4875pt>
 File: ../dp_text/img/landauCompare.pdf Graphic file (type pdf)
 <use ../dp_text/img/landauCompare.pdf>
-Package pdftex.def Info: ../dp_text/img/landauCompare.pdf  used on input line 295.
+Package pdftex.def Info: ../dp_text/img/landauCompare.pdf  used on input line 310.
 (pdftex.def)             Requested size: 266.59634pt x 104.39012pt.
- [14
+ [12
 
  <../dp_text/img/landauCompare.pdf>]
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 346.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 361.
  (/usr/share/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [15
-
-] [16
+) [13
 
 ]
-<../dp_text/img/N=3_Ricci.pdf, id=649, 350.30875pt x 307.1475pt>
+<../dp_text/img/N=3_Ricci.pdf, id=540, 350.30875pt x 307.1475pt>
 File: ../dp_text/img/N=3_Ricci.pdf Graphic file (type pdf)
 <use ../dp_text/img/N=3_Ricci.pdf>
-Package pdftex.def Info: ../dp_text/img/N=3_Ricci.pdf  used on input line 386.
+Package pdftex.def Info: ../dp_text/img/N=3_Ricci.pdf  used on input line 401.
 (pdftex.def)             Requested size: 245.21445pt x 215.00177pt.
 
-Overfull \vbox (2.2731pt too high) detected at line 386
+Overfull \vbox (2.2731pt too high) detected at line 401
  []
 
-[17
+[14
 
  <../dp_text/img/N=3_Ricci.pdf>]
-Overfull \hbox (9.19943pt too wide) detected at line 421
+<../dp_text/img/N=3_geodesics.pdf, id=587, 311.1625pt x 308.15125pt>
+File: ../dp_text/img/N=3_geodesics.pdf Graphic file (type pdf)
+<use ../dp_text/img/N=3_geodesics.pdf>
+Package pdftex.def Info: ../dp_text/img/N=3_geodesics.pdf  used on input line 421.
+(pdftex.def)             Requested size: 217.81226pt x 215.70439pt.
+ [15
+
+ <../dp_text/img/N=3_geodesics.pdf>]
+Overfull \hbox (9.19943pt too wide) detected at line 459
 \OT1/cmss/m/n/10.95 (\OML/cmm/m/it/10.95 ^^U[]\OT1/cmss/m/n/10.95 ; \OMS/cmsy/m/n/10.95 ^^F\OML/cmm/m/it/10.95 ^^_[]\OT1/cmss/m/n/10.95 ) = [][] [][]
  []
 
-<../dp_text/img/singularitiesPlots.pdf, id=696, 289.08pt x 464.73625pt>
+<../dp_text/img/singularitiesPlots.pdf, id=621, 289.08pt x 464.73625pt>
 File: ../dp_text/img/singularitiesPlots.pdf Graphic file (type pdf)
 <use ../dp_text/img/singularitiesPlots.pdf>
-Package pdftex.def Info: ../dp_text/img/singularitiesPlots.pdf  used on input line 421.
+Package pdftex.def Info: ../dp_text/img/singularitiesPlots.pdf  used on input line 459.
 (pdftex.def)             Requested size: 170.55571pt x 274.192pt.
 
-Overfull \hbox (23.05789pt too wide) in paragraph at lines 421--421
+Overfull \hbox (23.05789pt too wide) in paragraph at lines 459--459
  [] 
  []
 
-[18
+[16
 
  <../dp_text/img/singularitiesPlots.pdf>]
-<../dp_text/img/N=3_geodesics.pdf, id=729, 311.1625pt x 308.15125pt>
-File: ../dp_text/img/N=3_geodesics.pdf Graphic file (type pdf)
-<use ../dp_text/img/N=3_geodesics.pdf>
-Package pdftex.def Info: ../dp_text/img/N=3_geodesics.pdf  used on input line 439.
-(pdftex.def)             Requested size: 217.81226pt x 215.70439pt.
- [19
-
- <../dp_text/img/N=3_geodesics.pdf>]
-<../dp_text/img/bg123.pdf, id=764, 275.0275pt x 157.58875pt>
+<../dp_text/img/bg123.pdf, id=654, 275.0275pt x 157.58875pt>
 File: ../dp_text/img/bg123.pdf Graphic file (type pdf)
 <use ../dp_text/img/bg123.pdf>
-Package pdftex.def Info: ../dp_text/img/bg123.pdf  used on input line 452.
+Package pdftex.def Info: ../dp_text/img/bg123.pdf  used on input line 475.
 (pdftex.def)             Requested size: 275.02682pt x 157.58835pt.
- [20
+ [17
 
- <../dp_text/img/bg123.pdf>] [21
+ <../dp_text/img/bg123.pdf>] [18
 
-] [22
+] [19
 
 ]
 \tf@nav=\write6
@@ -1048,18 +1022,18 @@ Package rerunfilecheck Info: File `prez.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28504 strings out of 478238
- 581340 string characters out of 5850456
- 912275 words of memory out of 5000000
- 46082 multiletter control sequences out of 15000+600000
- 501095 words of font info for 128 fonts, out of 8000000 for 9000
+ 28497 strings out of 478238
+ 581136 string characters out of 5850456
+ 908263 words of memory out of 5000000
+ 46086 multiletter control sequences out of 15000+600000
+ 501318 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,33n,122p,467b,735s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/strelda/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso1000.pfb>
-Output written on prez.pdf (22 pages, 7195736 bytes).
+Output written on prez.pdf (19 pages, 7091159 bytes).
 PDF statistics:
- 963 PDF objects out of 1000 (max. 8388607)
- 801 compressed objects within 9 object streams
- 52 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 853 PDF objects out of 1000 (max. 8388607)
+ 706 compressed objects within 8 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
