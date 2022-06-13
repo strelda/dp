@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.11)  9 JUN 2022 21:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.11)  13 JUN 2022 17:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -848,166 +848,189 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ) [2
 
 ]
-<../dp_text/img/fullHilbert.pdf, id=86, 332.76408pt x 183.18886pt>
-File: ../dp_text/img/fullHilbert.pdf Graphic file (type pdf)
-<use ../dp_text/img/fullHilbert.pdf>
-Package pdftex.def Info: ../dp_text/img/fullHilbert.pdf  used on input line 115.
-(pdftex.def)             Requested size: 215.10196pt x 118.41725pt.
- [3
-
- <../dp_text/img/fullHilbert.pdf>]
-<../dp_text/img/manifold_structure.pdf, id=121, 492.62045pt x 313.79848pt>
+<../dp_text/img/manifold_structure.pdf, id=86, 492.62045pt x 313.79848pt>
 File: ../dp_text/img/manifold_structure.pdf Graphic file (type pdf)
 <use ../dp_text/img/manifold_structure.pdf>
-Package pdftex.def Info: ../dp_text/img/manifold_structure.pdf  used on input line 140.
+Package pdftex.def Info: ../dp_text/img/manifold_structure.pdf  used on input line 139.
 (pdftex.def)             Requested size: 276.559pt x 176.17603pt.
- [4
+ [3
 
  <../dp_text/img/manifold_structure.pdf>]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 165.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 164.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 165.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 164.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 165.
- [5
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 164.
+ [4
 
 ]
-<../dp_text/img/introDriving.pdf, id=241, 300.66928pt x 115.2361pt>
+<../dp_text/img/introDriving.pdf, id=212, 300.66928pt x 115.2361pt>
 File: ../dp_text/img/introDriving.pdf Graphic file (type pdf)
 <use ../dp_text/img/introDriving.pdf>
-Package pdftex.def Info: ../dp_text/img/introDriving.pdf  used on input line 188.
+Package pdftex.def Info: ../dp_text/img/introDriving.pdf  used on input line 187.
 (pdftex.def)             Requested size: 184.3758pt x 70.66667pt.
- [6
+ [5
 
- <../dp_text/img/introDriving.pdf>] [7
+ <../dp_text/img/introDriving.pdf>] [6
 
 ]
-<../dp_text/img/driving.pdf, id=296, 221.82875pt x 190.7125pt>
-File: ../dp_text/img/driving.pdf Graphic file (type pdf)
-<use ../dp_text/img/driving.pdf>
-Package pdftex.def Info: ../dp_text/img/driving.pdf  used on input line 231.
-(pdftex.def)             Requested size: 244.01234pt x 209.78438pt.
- [8
-
- <../dp_text/img/driving.pdf>]
-<../dp_text/img/drivingLin.pdf, id=334, 217.81375pt x 190.7125pt>
+<../dp_text/img/drivingLin.pdf, id=266, 217.81375pt x 190.7125pt>
 File: ../dp_text/img/drivingLin.pdf Graphic file (type pdf)
 <use ../dp_text/img/drivingLin.pdf>
-Package pdftex.def Info: ../dp_text/img/drivingLin.pdf  used on input line 269.
+Package pdftex.def Info: ../dp_text/img/drivingLin.pdf  used on input line 259.
 (pdftex.def)             Requested size: 217.8132pt x 190.71202pt.
- [9
+ [7
 
  <../dp_text/img/drivingLin.pdf>]
-<../dp_text/img/infidelityInTimePlot1.pdf, id=375, 376.40625pt x 130.4875pt>
+<../dp_text/img/infidelityInTimePlot1.pdf, id=307, 376.40625pt x 130.4875pt>
 File: ../dp_text/img/infidelityInTimePlot1.pdf Graphic file (type pdf)
 <use ../dp_text/img/infidelityInTimePlot1.pdf>
-Package pdftex.def Info: ../dp_text/img/infidelityInTimePlot1.pdf  used on input line 283.
+Package pdftex.def Info: ../dp_text/img/infidelityInTimePlot1.pdf  used on input line 273.
 (pdftex.def)             Requested size: 338.76248pt x 117.43765pt.
 
-Overfull \hbox (31.47261pt too wide) in paragraph at lines 283--283
+Overfull \hbox (31.47261pt too wide) in paragraph at lines 273--273
  [] 
  []
 
-<../dp_text/img/infidelityTfPlotLogLinCombined1.pdf, id=376, 364.36125pt x 152.57pt>
+<../dp_text/img/infidelityTfPlotLogLinCombined1.pdf, id=308, 364.36125pt x 152.57pt>
 File: ../dp_text/img/infidelityTfPlotLogLinCombined1.pdf Graphic file (type pdf)
 <use ../dp_text/img/infidelityTfPlotLogLinCombined1.pdf>
-Package pdftex.def Info: ../dp_text/img/infidelityTfPlotLogLinCombined1.pdf  used on input line 283.
+Package pdftex.def Info: ../dp_text/img/infidelityTfPlotLogLinCombined1.pdf  used on input line 273.
 (pdftex.def)             Requested size: 327.92209pt x 137.31172pt.
 
-Overfull \hbox (20.63222pt too wide) in paragraph at lines 283--283
+Overfull \hbox (20.63222pt too wide) in paragraph at lines 273--273
  [] 
  []
 
 
-Overfull \vbox (15.67627pt too high) detected at line 283
+Overfull \vbox (15.67627pt too high) detected at line 273
  []
 
-[10
+[8
 
  <../dp_text/img/infidelityInTimePlot1.pdf> <../dp_text/img/infidelityTfPlotLogLinCombined1.pdf
 
 pdfTeX warning: pdflatex (file ../dp_text/img/infidelityTfPlotLogLinCombined1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../dp_text/img/undercritical.pdf, id=424, 333.245pt x 135.50626pt>
+<../dp_text/img/undercritical.pdf, id=356, 333.245pt x 135.50626pt>
 File: ../dp_text/img/undercritical.pdf Graphic file (type pdf)
 <use ../dp_text/img/undercritical.pdf>
-Package pdftex.def Info: ../dp_text/img/undercritical.pdf  used on input line 298.
+Package pdftex.def Info: ../dp_text/img/undercritical.pdf  used on input line 288.
 (pdftex.def)             Requested size: 249.93312pt x 101.62943pt.
-<../dp_text/img/overcritical.pdf, id=425, 333.245pt x 134.5025pt>
+<../dp_text/img/overcritical.pdf, id=357, 333.245pt x 134.5025pt>
 File: ../dp_text/img/overcritical.pdf Graphic file (type pdf)
 <use ../dp_text/img/overcritical.pdf>
-Package pdftex.def Info: ../dp_text/img/overcritical.pdf  used on input line 298.
+Package pdftex.def Info: ../dp_text/img/overcritical.pdf  used on input line 288.
 (pdftex.def)             Requested size: 249.93312pt x 100.8766pt.
- [11
+ [9
 
  <../dp_text/img/undercritical.pdf> <../dp_text/img/overcritical.pdf
 
 pdfTeX warning: pdflatex (file ../dp_text/img/overcritical.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../dp_text/img/landauCompare.pdf, id=468, 333.245pt x 130.4875pt>
+<../dp_text/img/landauCompare.pdf, id=401, 333.245pt x 130.4875pt>
 File: ../dp_text/img/landauCompare.pdf Graphic file (type pdf)
 <use ../dp_text/img/landauCompare.pdf>
-Package pdftex.def Info: ../dp_text/img/landauCompare.pdf  used on input line 310.
+Package pdftex.def Info: ../dp_text/img/landauCompare.pdf  used on input line 300.
 (pdftex.def)             Requested size: 266.59634pt x 104.39012pt.
- [12
+ [10
 
  <../dp_text/img/landauCompare.pdf>]
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 361.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 351.
  (/usr/share/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [13
+) [11
 
 ]
-<../dp_text/img/N=3_Ricci.pdf, id=540, 350.30875pt x 307.1475pt>
+<../dp_text/img/N=3_Ricci.pdf, id=471, 350.30875pt x 307.1475pt>
 File: ../dp_text/img/N=3_Ricci.pdf Graphic file (type pdf)
 <use ../dp_text/img/N=3_Ricci.pdf>
-Package pdftex.def Info: ../dp_text/img/N=3_Ricci.pdf  used on input line 401.
+Package pdftex.def Info: ../dp_text/img/N=3_Ricci.pdf  used on input line 391.
 (pdftex.def)             Requested size: 245.21445pt x 215.00177pt.
 
-Overfull \vbox (2.2731pt too high) detected at line 401
+Overfull \vbox (2.2731pt too high) detected at line 391
+ []
+
+[12
+
+ <../dp_text/img/N=3_Ricci.pdf>]
+<../dp_text/img/N=3_geodesics.pdf, id=519, 311.1625pt x 308.15125pt>
+File: ../dp_text/img/N=3_geodesics.pdf Graphic file (type pdf)
+<use ../dp_text/img/N=3_geodesics.pdf>
+Package pdftex.def Info: ../dp_text/img/N=3_geodesics.pdf  used on input line 411.
+(pdftex.def)             Requested size: 217.81226pt x 215.70439pt.
+ [13
+
+ <../dp_text/img/N=3_geodesics.pdf>]
+Overfull \hbox (9.19943pt too wide) detected at line 449
+\OT1/cmss/m/n/10.95 (\OML/cmm/m/it/10.95 ^^U[]\OT1/cmss/m/n/10.95 ; \OMS/cmsy/m/n/10.95 ^^F\OML/cmm/m/it/10.95 ^^_[]\OT1/cmss/m/n/10.95 ) = [][] [][]
+ []
+
+<../dp_text/img/singularitiesPlots.pdf, id=553, 289.08pt x 464.73625pt>
+File: ../dp_text/img/singularitiesPlots.pdf Graphic file (type pdf)
+<use ../dp_text/img/singularitiesPlots.pdf>
+Package pdftex.def Info: ../dp_text/img/singularitiesPlots.pdf  used on input line 449.
+(pdftex.def)             Requested size: 170.55571pt x 274.192pt.
+
+Overfull \hbox (23.05789pt too wide) in paragraph at lines 449--449
+ [] 
  []
 
 [14
 
- <../dp_text/img/N=3_Ricci.pdf>]
-<../dp_text/img/N=3_geodesics.pdf, id=587, 311.1625pt x 308.15125pt>
-File: ../dp_text/img/N=3_geodesics.pdf Graphic file (type pdf)
-<use ../dp_text/img/N=3_geodesics.pdf>
-Package pdftex.def Info: ../dp_text/img/N=3_geodesics.pdf  used on input line 421.
-(pdftex.def)             Requested size: 217.81226pt x 215.70439pt.
- [15
-
- <../dp_text/img/N=3_geodesics.pdf>]
-Overfull \hbox (9.19943pt too wide) detected at line 459
-\OT1/cmss/m/n/10.95 (\OML/cmm/m/it/10.95 ^^U[]\OT1/cmss/m/n/10.95 ; \OMS/cmsy/m/n/10.95 ^^F\OML/cmm/m/it/10.95 ^^_[]\OT1/cmss/m/n/10.95 ) = [][] [][]
- []
-
-<../dp_text/img/singularitiesPlots.pdf, id=621, 289.08pt x 464.73625pt>
-File: ../dp_text/img/singularitiesPlots.pdf Graphic file (type pdf)
-<use ../dp_text/img/singularitiesPlots.pdf>
-Package pdftex.def Info: ../dp_text/img/singularitiesPlots.pdf  used on input line 459.
-(pdftex.def)             Requested size: 170.55571pt x 274.192pt.
-
-Overfull \hbox (23.05789pt too wide) in paragraph at lines 459--459
- [] 
- []
-
-[16
-
  <../dp_text/img/singularitiesPlots.pdf>]
-<../dp_text/img/bg123.pdf, id=654, 275.0275pt x 157.58875pt>
+<../dp_text/img/bg123.pdf, id=586, 275.0275pt x 157.58875pt>
 File: ../dp_text/img/bg123.pdf Graphic file (type pdf)
 <use ../dp_text/img/bg123.pdf>
-Package pdftex.def Info: ../dp_text/img/bg123.pdf  used on input line 475.
+Package pdftex.def Info: ../dp_text/img/bg123.pdf  used on input line 465.
 (pdftex.def)             Requested size: 275.02682pt x 157.58835pt.
- [17
+ [15
 
- <../dp_text/img/bg123.pdf>] [18
+ <../dp_text/img/bg123.pdf>] [16
 
-] [19
+] [17
 
 ]
+<../dp_text/img/driving.pdf, id=669, 221.82875pt x 190.7125pt>
+File: ../dp_text/img/driving.pdf Graphic file (type pdf)
+<use ../dp_text/img/driving.pdf>
+Package pdftex.def Info: ../dp_text/img/driving.pdf  used on input line 527.
+(pdftex.def)             Requested size: 244.01234pt x 209.78438pt.
+ [18
+
+ <../dp_text/img/driving.pdf>]
+Overfull \hbox (18.7035pt too wide) detected at line 556
+[]\OT1/mathkerncmss/m/sl/10.95 g \OT1/cmss/m/n/10.95 = [] []
+ []
+
+[19
+
+]
+<../dp_text/img/2level_pla.pdf, id=734, 306.14375pt x 258.9675pt>
+File: ../dp_text/img/2level_pla.pdf Graphic file (type pdf)
+<use ../dp_text/img/2level_pla.pdf>
+Package pdftex.def Info: ../dp_text/img/2level_pla.pdf  used on input line 566.
+(pdftex.def)             Requested size: 214.29915pt x 181.27599pt.
+ [20
+
+ <../dp_text/img/2level_pla.pdf>]
+<../dp_text/img/2level_plb.pdf, id=774, 311.1625pt x 258.9675pt>
+File: ../dp_text/img/2level_plb.pdf Graphic file (type pdf)
+<use ../dp_text/img/2level_plb.pdf>
+Package pdftex.def Info: ../dp_text/img/2level_plb.pdf  used on input line 576.
+(pdftex.def)             Requested size: 217.81226pt x 181.27599pt.
+ [21
+
+ <../dp_text/img/2level_plb.pdf>]
+<../dp_text/img/2level_plc.pdf, id=819, 306.14375pt x 258.9675pt>
+File: ../dp_text/img/2level_plc.pdf Graphic file (type pdf)
+<use ../dp_text/img/2level_plc.pdf>
+Package pdftex.def Info: ../dp_text/img/2level_plc.pdf  used on input line 586.
+(pdftex.def)             Requested size: 214.29915pt x 181.27599pt.
+ [22
+
+ <../dp_text/img/2level_plc.pdf>]
 \tf@nav=\write6
 \openout6 = `prez.nav'.
 
@@ -1022,18 +1045,18 @@ Package rerunfilecheck Info: File `prez.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28497 strings out of 478238
- 581136 string characters out of 5850456
- 908263 words of memory out of 5000000
- 46086 multiletter control sequences out of 15000+600000
- 501318 words of font info for 128 fonts, out of 8000000 for 9000
+ 28518 strings out of 478238
+ 581617 string characters out of 5850456
+ 908237 words of memory out of 5000000
+ 46099 multiletter control sequences out of 15000+600000
+ 501451 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,33n,122p,467b,735s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,33n,122p,467b,738s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/strelda/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso1000.pfb>
-Output written on prez.pdf (19 pages, 7091159 bytes).
+Output written on prez.pdf (22 pages, 11298292 bytes).
 PDF statistics:
- 853 PDF objects out of 1000 (max. 8388607)
- 706 compressed objects within 8 object streams
- 45 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 977 PDF objects out of 1000 (max. 8388607)
+ 807 compressed objects within 9 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

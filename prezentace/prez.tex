@@ -25,7 +25,7 @@
     \usebeamerfont{footline}%
     \usebeamercolor[fg]{footline}%
     \hspace{1em}%
-    \insertframenumber/nevim%\inserttotalframenumber
+    \insertframenumber/17%\inserttotalframenumber
 }
 \begin{document}
 
@@ -82,43 +82,36 @@
   % \end{block}
 }
 
-\frame{
-  \frametitle{Geometrie problému}
+% \frame{
+%   \frametitle{Geometrie problému}
 
-  \begin{figure}[h]
-    \centering
-    % \includegraphics[width=\textwidth]{../img/manifold_basic_1.png}
-    \begin{tikzpicture}
-        \node[] at (0,0) {\includegraphics[width=0.7\textwidth]{../dp_text/img/fullHilbert.pdf}};
-        \node[] at (3.0,-0.2) {$\greenn{\mathcal U}$};
-        \node[] at (4.6,-0.7) {$\gray{\R^n}$};
-        \node[] at (2.8,1.8) {$\H_{full}$};
-        \node[] at (-0.5,2) {$\blueee{\H(\llambda)}$};
-        \node[] at (1.0,1.83) {$\blueee{\H(\tilde\llambda)}$};
-        \node[] at (-0.8,0.95) {$\gray{\pi(\llambda)}$};
-        \node[] at (0.8,0.75) {$\gray{\pi(\tilde\llambda)}$};
-        \node[] at (-1,-0.17) {\green{$\llambda$}};
-        \node[] at (0.4,-0.4) {\green{$\tilde\llambda$}};
-    \end{tikzpicture}
-\vspace{-3pt}
-\caption{Base manifold $\greenn{\mathcal U}\subset \gray{\R^n}$. For every point $\green\llambda\in\greenn{\mathcal U}$ one \bluee{Hilbert space $\H(\llambda)$} is constructed as a \bluee{fiber}.}
-    \label{fig:wholeBundle}
-\end{figure}
+%   \begin{figure}[h]
+%     \centering
+%     % \includegraphics[width=\textwidth]{../img/manifold_basic_1.png}
+%     \begin{tikzpicture}
+%         \node[] at (0,0) {\includegraphics[width=0.7\textwidth]{../dp_text/img/fullHilbert.pdf}};
+%         \node[] at (3.0,-0.2) {$\greenn{\mathcal U}$};
+%         \node[] at (4.6,-0.7) {$\gray{\R^n}$};
+%         \node[] at (2.8,1.8) {$\H_{full}$};
+%         \node[] at (-0.5,2) {$\blueee{\H(\llambda)}$};
+%         \node[] at (1.0,1.83) {$\blueee{\H(\tilde\llambda)}$};
+%         \node[] at (-0.8,0.95) {$\gray{\pi(\llambda)}$};
+%         \node[] at (0.8,0.75) {$\gray{\pi(\tilde\llambda)}$};
+%         \node[] at (-1,-0.17) {\green{$\llambda$}};
+%         \node[] at (0.4,-0.4) {\green{$\tilde\llambda$}};
+%     \end{tikzpicture}
+% \vspace{-3pt}
+% \caption{Base manifold $\greenn{\mathcal U}\subset \gray{\R^n}$. For every point $\green\llambda\in\greenn{\mathcal U}$ one \bluee{Hilbert space $\H(\llambda)$} is constructed as a \bluee{fiber}.}
+%     \label{fig:wholeBundle}
+% \end{figure}
 
-\vspace{-15pt}
-\begin{block}{Základní stavová varieta}
-  \begin{equation}
-    \M_0\coloneqq \left\{\bigcup_{\varphi\in[0,2\pi)} \bigcup_{\llambda\in\mathcal U} e^{i\varphi}\ket{0(\llambda)}\right\}.
-  \end{equation}
-\end{block}
-
-}
+% }
 
 \frame{
   \frametitle{Geometrie problému}
 
 
-  \begin{figure}[h]
+  \vspace{-15pt}\begin{figure}[h]
     \centering
     % \includegraphics[width=\textwidth]{../img/manifoldCutIntuition.png}
         \begin{tikzpicture}
@@ -137,6 +130,12 @@
         \node[] at (3.3,-0.8) {$\gray{\pi(\tilde \llambda)}$};
     \end{tikzpicture}
   \end{figure}
+  \vspace{-15pt}
+\begin{block}{Základní stavová varieta}
+  \vspace{-10pt}\begin{equation}
+    \M_0\coloneqq \left\{\bigcup_{\varphi\in[0,2\pi)} \bigcup_{\llambda\in\mathcal U} e^{i\varphi}\ket{0(\llambda)}\right\}.
+  \end{equation}
+\end{block}
 }
 
 \frame{
@@ -220,15 +219,6 @@ Snaha dosáhnout co nejvyšší fidelity ($F=1$)
 \end{block}
 }
 
-\frame{
-  \frametitle{Dvouhladinový systém (toy model)}
-  \framesubtitle{Geodetický driving}
-  \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad$\Delta E$
-  \vspace{-10pt}\begin{figure}[h]
-    \centering
-    \includegraphics[scale=1.1]{../dp_text/img/driving.pdf}
-\end{figure}
-}
 
 
 % \frame{
@@ -523,6 +513,78 @@ a \emph{operátor momentu hybnosti} $\bm\J=(\J_1,\J_2,\J_3)^T$. Zvolíme $j=N/2$
   \dots více brzy ve článcích spolu s Pavel Cejnar, Felipe Matus a Pavel Stránský.
 
 }
+
+
+
+\frame{
+  \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
+  \framesubtitle{Geodetický driving}
+  \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad$\Delta E$
+  \vspace{-10pt}\begin{figure}[h]
+    \centering
+    \includegraphics[scale=1.1]{../dp_text/img/driving.pdf}
+\end{figure}
+}
+
+\frame{
+  \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
+  \framesubtitle{Metrický tenzor}
+
+  \begin{equation}
+    g_{\mu\nu}^{(0)}=\Re\frac{\braket{0|\partial_\mu \HH|1}\braket{0|\partial_\nu \HH|1}}{(E_1-E_0)^2};\quad \mu,\nu\in\{0,1\}\leftrightarrow \{\Omega,\Delta\}
+  \end{equation}
+  Pro
+  \begin{equation}
+    \ket{0}=\begin{pmatrix}
+      a_0\\
+      b_0
+    \end{pmatrix};\quad 
+    \ket{1}=\begin{pmatrix}
+      a_1\\
+      b_1
+    \end{pmatrix}
+  \end{equation}
+  je metrický tenzor
+  \begin{equation}
+    g=\frac{1}{(E_1-E_0)^2}\begin{pmatrix}
+      4|b_0^*b_1|^2 & 4|b_0^* b_1|^2 \Re{(a_1^*b_0+b_1^*a_0)}\\
+      4|b_0^* b_1|^2 \Re{(a_1^*b_0+b_1^*a_0)} & |a_0^* b_1+b_0^* a_1|^2
+    \end{pmatrix}
+  \end{equation}
+
+  Geodetická rovnice pak má řešení pro $E_1-E_0=\text{konst.}$
+}
+
+\frame{
+  \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
+  \framesubtitle{Metrický tenzor $g_{00}$}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.7]{../dp_text/img/2level_pla.pdf}
+  \end{figure}  
+
+}
+
+\frame{
+  \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
+  \framesubtitle{Metrický tenzor $g_{01}$}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.7]{../dp_text/img/2level_plb.pdf}
+  \end{figure}  
+
+}
+
+\frame{
+  \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
+  \framesubtitle{Metrický tenzor $g_{11}$}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.7]{../dp_text/img/2level_plc.pdf}
+  \end{figure}  
+
+}
+
 
 \end{document}
 %parametry, ne souř.
