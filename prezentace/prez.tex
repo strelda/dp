@@ -157,7 +157,7 @@
 \begin{block}{Fidelita}
   \begin{itemize}
     \item pro čisté stavy: $F: \H\times\H\mapsto [0;1]$,\quad $F(\ket{\rho},\ket{\sigma}) = \left| \braket{\rho|\sigma}\right|^2$
-    \item pravděpodobnost přechodu do nového stavu
+    \item při drivingu na stavové varietě: pravděpodobnost neexcitace
     \item Infidelita $\equiv F^*\coloneqq 1-F$
   \end{itemize}
 \end{block}
@@ -189,7 +189,7 @@ Snaha dosáhnout co nejvyšší fidelity ($F=1$)
 
 \frame{
   \frametitle{Dvouhladinový systém (toy model)}
-  \framesubtitle{Jaké jevy lze při řízení parametrických Hamiltonianů pozorovat?}
+  \framesubtitle{Poznatek \#1: Fidelita se chová jako harmonický oscilátor.}
   \begin{equation}
     \HH(t)=\begin{pmatrix}
         \Omega(t)&\Delta(t)\\
@@ -454,7 +454,7 @@ a \emph{operátor momentu hybnosti} $\bm\J=(\J_1,\J_2,\J_3)^T$. Zvolíme $j=N/2$
 
 \frame{
   \frametitle{Lipkin-Meshkov-Glick model}
-  Transport pomocí \emph{quenchů}.
+  \framesubtitle{Zpomalování geodetik u singularit a jejich využití -- transport pomocí \emph{quenchů}.}
   \begin{figure}[h]
     \centering
     \includegraphics[scale=1.]{../dp_text/img/bg123.pdf}
@@ -572,7 +572,7 @@ a \emph{operátor momentu hybnosti} $\bm\J=(\J_1,\J_2,\J_3)^T$. Zvolíme $j=N/2$
 \frame{
   \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
   \framesubtitle{Metrický tenzor}
-  Zafixujme jednu souřadnici -- $(\Delta;\Omega(t))$ je
+  Zafixujme jednu souřadnici, $(\Delta;\Omega(t))$. Pak
   \begin{equation}
     g_{\Omega\Omega}=\frac{\Omega^2}{4(\Omega^2+\Delta^2)^2}.
   \end{equation}
@@ -580,7 +580,7 @@ a \emph{operátor momentu hybnosti} $\bm\J=(\J_1,\J_2,\J_3)^T$. Zvolíme $j=N/2$
   \begin{equation}
     \Omega(t) = \Delta \tan\Big(a_i+(a_f-a_i)\frac{t}{T}\Big);\quad a_{i,f}\coloneqq \arctan \frac{\Omega_{i,f}}{\Delta}
   \end{equation}
-  $\Rightarrow$ existuje závislost $\Omega(t),\Delta(t)$, že křivka lineární v parametrickém prostoru je geodetikou.
+  $\Rightarrow$ existuje závislost $\Omega(t)$, že křivka lineární v parametrickém prostoru je geodetikou.
 }
 
 % \frame{

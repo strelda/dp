@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1655226128 "/home/strelda/Documents/mff/dp/prezentace/prez.tex" "prez.pdf" "prez" 1655226130
+["pdflatex"] 1655235923 "/home/strelda/Documents/mff/dp/prezentace/prez.tex" "prez.pdf" "prez" 1655235925
   "../dp_text/img/N=3_Ricci.pdf" 1651486075 976678 c40121f75f736a4c1fa6604abf32b28a ""
   "../dp_text/img/N=3_geodesics.pdf" 1643821251 1062422 2bf04a6e4cd86307ff79ef230f32ca0f ""
   "../dp_text/img/bg123.pdf" 1645137937 497157 b651b2354eab51d659eef2422b3b1d5f ""
@@ -14,7 +14,7 @@
   "../dp_text/img/singularitiesPlots.pdf" 1643821251 2164249 9258402f9815f516f083cfd23d5b5c3e ""
   "../dp_text/img/undercritical.pdf" 1650656717 20407 a40508aa4f83f113c7862b36415114da ""
   "/home/strelda/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk" 1654450018 7808 9808b431aea5e8fa67672d43b5d21795 ""
-  "/home/strelda/Documents/mff/dp/prezentace/prez.tex" 1655226127 21774 0e65ac3a5f582d8d478d32dd8a11e2b7 ""
+  "/home/strelda/Documents/mff/dp/prezentace/prez.tex" 1655235923 21849 f79632bcc80b2c933f66bcc91d70557d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1650183167 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecso1000.tfm" 1650183167 3584 28de528d5eb276f96f1afe67dab24105 ""
@@ -296,10 +296,10 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1652275229 2927659 4fcd7efdb6365d51d854e52580dc5155 ""
   "macros.tex" 1654459763 2482 6f64cb4ddee2720a30590041ccadf4d2 ""
   "pics/mff_cz_color.pdf" 1654438411 490271 ef5af6b550bfed2eae7f26d388246ed3 ""
-  "prez.aux" 1655226129 4274 935d761f9e11ddc245b8261837a75823 "pdflatex"
-  "prez.nav" 1655226129 2132 9ecbcfc9f7de68c052dc9846a033acac "pdflatex"
+  "prez.aux" 1655235925 4274 935d761f9e11ddc245b8261837a75823 "pdflatex"
+  "prez.nav" 1655235925 2132 9ecbcfc9f7de68c052dc9846a033acac "pdflatex"
   "prez.out" 0 -1 0 "pdflatex"
-  "prez.tex" 1655226127 21774 0e65ac3a5f582d8d478d32dd8a11e2b7 ""
+  "prez.tex" 1655235923 21849 f79632bcc80b2c933f66bcc91d70557d ""
   (generated)
   "prez.aux"
   "prez.log"
