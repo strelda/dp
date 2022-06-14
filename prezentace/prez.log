@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.11)  13 JUN 2022 17:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.11)  14 JUN 2022 19:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -963,7 +963,7 @@ Package pdftex.def Info: ../dp_text/img/N=3_geodesics.pdf  used on input line 41
  [13
 
  <../dp_text/img/N=3_geodesics.pdf>]
-Overfull \hbox (9.19943pt too wide) detected at line 449
+Overfull \hbox (21.47498pt too wide) detected at line 449
 \OT1/cmss/m/n/10.95 (\OML/cmm/m/it/10.95 ^^U[]\OT1/cmss/m/n/10.95 ; \OMS/cmsy/m/n/10.95 ^^F\OML/cmm/m/it/10.95 ^^_[]\OT1/cmss/m/n/10.95 ) = [][] [][]
  []
 
@@ -999,38 +999,13 @@ Package pdftex.def Info: ../dp_text/img/driving.pdf  used on input line 527.
 (pdftex.def)             Requested size: 244.01234pt x 209.78438pt.
  [18
 
- <../dp_text/img/driving.pdf>]
-Overfull \hbox (18.7035pt too wide) detected at line 556
-[]\OT1/mathkerncmss/m/sl/10.95 g \OT1/cmss/m/n/10.95 = [] []
- []
+ <../dp_text/img/driving.pdf>] [19
 
-[19
+] [20
+
+] [21
 
 ]
-<../dp_text/img/2level_pla.pdf, id=734, 306.14375pt x 258.9675pt>
-File: ../dp_text/img/2level_pla.pdf Graphic file (type pdf)
-<use ../dp_text/img/2level_pla.pdf>
-Package pdftex.def Info: ../dp_text/img/2level_pla.pdf  used on input line 566.
-(pdftex.def)             Requested size: 214.29915pt x 181.27599pt.
- [20
-
- <../dp_text/img/2level_pla.pdf>]
-<../dp_text/img/2level_plb.pdf, id=774, 311.1625pt x 258.9675pt>
-File: ../dp_text/img/2level_plb.pdf Graphic file (type pdf)
-<use ../dp_text/img/2level_plb.pdf>
-Package pdftex.def Info: ../dp_text/img/2level_plb.pdf  used on input line 576.
-(pdftex.def)             Requested size: 217.81226pt x 181.27599pt.
- [21
-
- <../dp_text/img/2level_plb.pdf>]
-<../dp_text/img/2level_plc.pdf, id=819, 306.14375pt x 258.9675pt>
-File: ../dp_text/img/2level_plc.pdf Graphic file (type pdf)
-<use ../dp_text/img/2level_plc.pdf>
-Package pdftex.def Info: ../dp_text/img/2level_plc.pdf  used on input line 586.
-(pdftex.def)             Requested size: 214.29915pt x 181.27599pt.
- [22
-
- <../dp_text/img/2level_plc.pdf>]
 \tf@nav=\write6
 \openout6 = `prez.nav'.
 
@@ -1045,18 +1020,18 @@ Package rerunfilecheck Info: File `prez.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28518 strings out of 478238
- 581617 string characters out of 5850456
+ 28492 strings out of 478238
+ 580846 string characters out of 5850456
  908237 words of memory out of 5000000
- 46099 multiletter control sequences out of 15000+600000
- 501451 words of font info for 129 fonts, out of 8000000 for 9000
+ 46079 multiletter control sequences out of 15000+600000
+ 501318 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,33n,122p,467b,738s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/strelda/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso1000.pfb>
-Output written on prez.pdf (22 pages, 11298292 bytes).
+Output written on prez.pdf (21 pages, 7094449 bytes).
 PDF statistics:
- 977 PDF objects out of 1000 (max. 8388607)
- 807 compressed objects within 9 object streams
- 50 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 899 PDF objects out of 1000 (max. 8388607)
+ 751 compressed objects within 8 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

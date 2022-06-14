@@ -420,7 +420,7 @@ a \emph{operátor momentu hybnosti} $\bm\J=(\J_1,\J_2,\J_3)^T$. Zvolíme $j=N/2$
 
   \begin{minipage}[t]{0.48\linewidth}
     \begin{equation*}
-      (\lambda_l ;\pm\chi_l)= \begin{cases}
+      (\lambda_{l,r} ;\pm\chi_{l,r})= \begin{cases}
           \left(1-\frac{N}{2};\sqrt{\frac{N}{N+2}}\right)\\
           \left(1-N;\sqrt{\frac{N}{N+1}}\right)
       \end{cases}
@@ -518,7 +518,7 @@ a \emph{operátor momentu hybnosti} $\bm\J=(\J_1,\J_2,\J_3)^T$. Zvolíme $j=N/2$
 
 \frame{
   \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
-  \framesubtitle{Geodetický driving}
+  \framesubtitle{Důkaz, že oblouk na obrázku je geodetikou}
   \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad$\Delta E$
   \vspace{-10pt}\begin{figure}[h]
     \centering
@@ -529,62 +529,118 @@ a \emph{operátor momentu hybnosti} $\bm\J=(\J_1,\J_2,\J_3)^T$. Zvolíme $j=N/2$
 \frame{
   \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
   \framesubtitle{Metrický tenzor}
-
+  Od Hamiltonianu v souřadnicích $(\Delta(t);\Omega(t))$
   \begin{equation}
-    g_{\mu\nu}^{(0)}=\Re\frac{\braket{0|\partial_\mu \HH|1}\braket{0|\partial_\nu \HH|1}}{(E_1-E_0)^2};\quad \mu,\nu\in\{0,1\}\leftrightarrow \{\Omega,\Delta\}
-  \end{equation}
-  Pro
-  \begin{equation}
-    \ket{0}=\begin{pmatrix}
-      a_0\\
-      b_0
-    \end{pmatrix};\quad 
-    \ket{1}=\begin{pmatrix}
-      a_1\\
-      b_1
+    \HH(t)=\begin{pmatrix}
+        \Omega(t)&\Delta(t)\\
+        \Delta(t)&-\Omega(t)
     \end{pmatrix}
   \end{equation}
-  je metrický tenzor
+  přejdeme k polárním souřadnicím $(r(t),\phi(t))$, definovaným vztahy
+  \begin{align}
+    \Delta (t)&= r(t)\sin \phi(t),\quad \Omega(t) = r(t)\cos \phi(t).
+  \end{align}
+  V nich je metrický tenzor
   \begin{equation}
-    g=\frac{1}{(E_1-E_0)^2}\begin{pmatrix}
-      4|b_0^*b_1|^2 & 4|b_0^* b_1|^2 \Re{(a_1^*b_0+b_1^*a_0)}\\
-      4|b_0^* b_1|^2 \Re{(a_1^*b_0+b_1^*a_0)} & |a_0^* b_1+b_0^* a_1|^2
-    \end{pmatrix}
+    g_{\mu\nu}^{(0)}=\Re\frac{\braket{0|\partial_\mu \HH|1}\braket{1|\partial_\nu \HH|0}}{(E_1-E_0)^2}=
+    \begin{pmatrix}
+      0&0\\
+      0&\frac{1}{4}\\  
+    \end{pmatrix}.
   \end{equation}
 
-  Geodetická rovnice pak má řešení pro $E_1-E_0=\text{konst.}$
 }
 
 \frame{
   \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
-  \framesubtitle{Metrický tenzor $g_{00}$}
-  \begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.7]{../dp_text/img/2level_pla.pdf}
-  \end{figure}  
+  \framesubtitle{Metrický tenzor}
+  Geodetickou rovnici pak splňují drivingy s $\ddot\theta=0$, tedy
+  \begin{equation}
+    \theta(t) = \theta_i+(\theta_F-\theta_i)\frac{t}{T}
+  \end{equation}
+  \begin{itemize}
+    \item $\theta_i$ je počáteční úhel v čase $t=0$
+    \item $\theta_T$ je finální úhel v čase $T$
+  \end{itemize}
 
+  $\Omega(t)$ lze volit libovolně, v rámci práce byl zvolen geodetický driving $\Omega(t)= \text{konst}$.
+
+  \vspace{10pt}
+  Třída geodetik je ale mnohem širší\dots
 }
 
 \frame{
   \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
-  \framesubtitle{Metrický tenzor $g_{01}$}
-  \begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.7]{../dp_text/img/2level_plb.pdf}
-  \end{figure}  
-
+  \framesubtitle{Metrický tenzor}
+  Zafixujme jednu souřadnici -- $(\Delta;\Omega(t))$ je
+  \begin{equation}
+    g_{\Omega\Omega}=\frac{\Omega^2}{4(\Omega^2+\Delta^2)^2}.
+  \end{equation}
+  Z vlastnosti geodetiky $g_{\Omega\Omega}\dot\Omega^2=\text{konst.}$ plyne
+  \begin{equation}
+    \Omega(t) = \Delta \tan\Big(a_i+(a_f-a_i)\frac{t}{T}\Big);\quad a_{i,f}\coloneqq \arctan \frac{\Omega_{i,f}}{\Delta}
+  \end{equation}
+  $\Rightarrow$ existuje závislost $\Omega(t),\Delta(t)$, že křivka lineární v parametrickém prostoru je geodetikou.
 }
 
-\frame{
-  \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
-  \framesubtitle{Metrický tenzor $g_{11}$}
-  \begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.7]{../dp_text/img/2level_plc.pdf}
-  \end{figure}  
+% \frame{
+%   \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
+%   \framesubtitle{Metrický tenzor}
 
-}
+%   \begin{equation}
+%     g_{\mu\nu}^{(0)}=\Re\frac{\braket{0|\partial_\mu \HH|1}\braket{1|\partial_\nu \HH|0}}{(E_1-E_0)^2};\quad \mu,\nu\in\{0,1\}\leftrightarrow \{\Omega,\Delta\}
+%   \end{equation}
+%   Pro
+%   \begin{equation}
+%     \ket{0}=\begin{pmatrix}
+%       a_0\\
+%       b_0
+%     \end{pmatrix};\quad 
+%     \ket{1}=\begin{pmatrix}
+%       a_1\\
+%       b_1
+%     \end{pmatrix}
+%   \end{equation}
+%   je metrický tenzor
+%   \small\begin{equation}
+%     g_{\mu\nu}^{(0)}=\frac{1}{(E_1-E_0)^2}\begin{pmatrix}
+%       4|b_0^*b_1|^2 & 4|b_0^* b_1|^2 \Re{(a_1^*b_0+b_1^*a_0)}\\
+%       4|b_0^* b_1|^2 \Re{(a_1^*b_0+b_1^*a_0)} & |a_0^* b_1+b_0^* a_1|^2
+%     \end{pmatrix}
+%   \end{equation}
+
+%   Geodetická rovnice pak má řešení pro $E_1-E_0=\text{konst.}$
+% }
+
+% \frame{
+%   \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
+%   \framesubtitle{Metrický tenzor $g_{00}$}
+%   \begin{figure}[h]
+%     \centering
+%     \includegraphics[scale=0.7]{../dp_text/img/2level_pla.pdf}
+%   \end{figure}  
+
+% }
+
+% \frame{
+%   \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
+%   \framesubtitle{Metrický tenzor $g_{01}$}
+%   \begin{figure}[h]
+%     \centering
+%     \includegraphics[scale=0.7]{../dp_text/img/2level_plb.pdf}
+%   \end{figure}  
+
+% }
+
+% \frame{
+%   \frametitle{Otázka oponenta ohledně Dvouhladinového systému}
+%   \framesubtitle{Metrický tenzor $g_{11}$}
+%   \begin{figure}[h]
+%     \centering
+%     \includegraphics[scale=0.7]{../dp_text/img/2level_plc.pdf}
+%   \end{figure}  
+
+% }
 
 
 \end{document}
-%parametry, ne souř.
