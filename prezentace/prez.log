@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.11)  14 JUN 2022 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.11)  15 JUN 2022 12:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -991,19 +991,21 @@ Package pdftex.def Info: ../dp_text/img/bg123.pdf  used on input line 465.
 
 ] [17
 
+] [18
+
 ]
-<../dp_text/img/driving.pdf, id=669, 221.82875pt x 190.7125pt>
+<../dp_text/img/driving.pdf, id=694, 221.82875pt x 190.7125pt>
 File: ../dp_text/img/driving.pdf Graphic file (type pdf)
 <use ../dp_text/img/driving.pdf>
-Package pdftex.def Info: ../dp_text/img/driving.pdf  used on input line 527.
+Package pdftex.def Info: ../dp_text/img/driving.pdf  used on input line 534.
 (pdftex.def)             Requested size: 244.01234pt x 209.78438pt.
- [18
+ [19
 
- <../dp_text/img/driving.pdf>] [19
-
-] [20
+ <../dp_text/img/driving.pdf>] [20
 
 ] [21
+
+] [22
 
 ]
 \tf@nav=\write6
@@ -1020,18 +1022,18 @@ Package rerunfilecheck Info: File `prez.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28492 strings out of 478238
- 580846 string characters out of 5850456
+ 28496 strings out of 478238
+ 580881 string characters out of 5850456
  908237 words of memory out of 5000000
- 46079 multiletter control sequences out of 15000+600000
+ 46081 multiletter control sequences out of 15000+600000
  501318 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,33n,122p,467b,738s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/strelda/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso1000.pfb>
-Output written on prez.pdf (21 pages, 7095020 bytes).
+Output written on prez.pdf (22 pages, 7097025 bytes).
 PDF statistics:
- 899 PDF objects out of 1000 (max. 8388607)
- 751 compressed objects within 8 object streams
- 48 named destinations out of 1000 (max. 500000)
+ 925 PDF objects out of 1000 (max. 8388607)
+ 776 compressed objects within 8 object streams
+ 50 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
